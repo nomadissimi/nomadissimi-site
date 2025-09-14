@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import Script from "next/script";
+
 import "./globals.css";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 
@@ -27,8 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>{/* Cookiebot script… */}</head>
       <body
-        className={`${serif.variable} ${sans.variable} bg-[#FDFBF7] text-[#2B2B2B]`}
+        className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >
         {children}
       </body>

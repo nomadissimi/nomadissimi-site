@@ -3,7 +3,33 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import FAQ from "../components/ui/components/FAQ";
+import Link from "next/link";
+import CheckoutButton from "../components/ui/CheckoutButton";
+
+type CheckoutButtonProps = {
+  priceId: string;
+  plan: string;
+  label?: string;
+  className?: string;
+};
+
+function Aceituna({ className = "" }: { className?: string }) {
+  return (
+    // ↓ make the defaults tiny so the parent can control spacing easily
+    <div className={`mt-2 mb-2 flex justify-center ${className}`}>
+      <Image
+        src="/aceituna.png"
+        alt=""
+        width={600}
+        height={180}
+        aria-hidden
+        className="h-10 w-auto sm:h-14 drop-shadow-[0_2px_6px_rgba(0,0,0,.08)]"
+      />
+    </div>
+  );
+}
 
 function FadeIn({
   children,
@@ -27,7 +53,11 @@ function FadeIn({
 }
 
 export default function Page() {
-  return <NomadissimiLanding />;
+  return (
+    <>
+      <NomadissimiLanding /> {/* your real page */}
+    </>
+  );
 }
 
 // --- Olive sprig divider ---
@@ -164,22 +194,58 @@ function NomadissimiLanding() {
 
               <div className="mt-8 grid grid-cols-2 gap-4 text-sm sans">
                 <Feature
-                  icon="🗂️"
+                  icon={
+                    <Image
+                      src="/iconchecklist.png"
+                      alt=""
+                      width={28}
+                      height={28}
+                      className="h-7 w-7"
+                      priority
+                    />
+                  }
                   title="Clear checklists"
                   desc="English + Italian, explained simply."
                 />
+
                 <Feature
-                  icon="🗓️"
+                  icon={
+                    <Image
+                      src="/icontimeline.png"
+                      alt=""
+                      width={28}
+                      height={28}
+                      className="h-7 w-7"
+                    />
+                  }
                   title="Timeline plan"
                   desc="Milestones to your consulate day."
                 />
+
                 <Feature
-                  icon="🧰"
+                  icon={
+                    <Image
+                      src="/icontools.png"
+                      alt=""
+                      width={28}
+                      height={28}
+                      className="h-7 w-7"
+                    />
+                  }
                   title="Done-with-you tools"
                   desc="Notion tracker, templates & automations."
                 />
+
                 <Feature
-                  icon="🧭"
+                  icon={
+                    <Image
+                      src="/iconguidance.png"
+                      alt=""
+                      width={28}
+                      height={28}
+                      className="h-7 w-7"
+                    />
+                  }
                   title="Realistic guidance"
                   desc="Honest assessment. No false promises."
                 />
@@ -202,51 +268,37 @@ function NomadissimiLanding() {
         </div>
       </section>
 
+      {/* ——— Hero narrative ——— */}
       <FadeIn y={16}>
         <div className="card">
           <h2 className="serif text-3xl md:text-4xl font-semibold">
             Italy isn’t just a move, it’s an upgrade to your entire lifestyle.
           </h2>
-
-          {/* narrative + aperol */}
-          <div className="relative">
-            {/* Aperol image (unchanged) */}
-            <div className="hidden lg:block absolute right-0 top-0 w-64">
-              <Image
-                src="/spritz.png"
-                alt="Aperol spritz in the Italian sun"
-                width={512}
-                height={512}
-                className="w-full h-auto drop-shadow-[0_18px_40px_rgba(0,0,0,.12)] pointer-events-none select-none"
-              />
-            </div>
-
-            {/* Indented body copy */}
-            <div className="lg:pr-72">
-              {/* Add the left indent here; remove border-l if you don’t want the gold rule */}
-              <div className="pl-6 md:pl-8 lg:pl-12">
-                <p className="vibe-lead mt-4">
-                  Imagine an Aperitivo in Florence, remote work with Sicilian
-                  views, weekends in Rome… you name it. All this is possible
-                  thanks to Italy's new Digital Nomad Visa.{" "}
-                  <strong>
-                    But let’s be honest: applying solo is frustrating and slow.
-                  </strong>{" "}
-                  Information is scattered, requirements shift by consulate, and
-                  small mistakes cost months.
-                </p>
-              </div>
+          {/* Indented body copy */}
+          <div className="lg:pr-72">
+            <div className="pl-6 md:pl-8 lg:pl-12">
+              <p className="lead-soft mt-4">
+                Imagine an Aperitivo in Florence, remote work with Sicilian
+                views, weekends in Rome… you name it. All this is possible
+                thanks to Italy's new Digital Nomad Visa.
+              </p>
+              <p className="lead-soft mt-4">
+                <strong>
+                  But let’s be honest: applying solo is frustrating and slow.
+                </strong>{" "}
+                Information is scattered, requirements shift by consulate, and
+                small mistakes cost months.
+              </p>
             </div>
           </div>
-
-          {/* clear the float so the columns start below */}
-          <div className="clear-both" />
 
           {/* Reality vs How we help — luxe two columns */}
           <div className="mt-7 mx-auto max-w-4xl grid md:grid-cols-2 gap-5 md:gap-6">
             <div className="truth-card">
               {/* left card keeps the old pill */}
-              <span className="pill">The ugly truth</span>
+              <span className="pill inline-flex mb-4 md:mb-5">
+                The ugly truth
+              </span>
               <ul className="truth-list">
                 <li className="flex items-start gap-3">
                   <img
@@ -304,7 +356,9 @@ function NomadissimiLanding() {
 
             <div className="truth-card">
               {/* right card uses luxe green */}
-              <span className="pill pill-luxe-green">How we help</span>
+              <span className="pill pill-luxe-green inline-flex mb-4 md:mb-5">
+                How we help
+              </span>
 
               <ul className="mt-4 space-y-4 text-[#2B2B2B]/85">
                 <li className="flex items-start gap-3 leading-relaxed">
@@ -394,44 +448,77 @@ function NomadissimiLanding() {
             </div>
 
             {/* unified copy size */}
-            <p className="sans lux-copy mt-3">
+            <p className="sans text-[18px] md:text-[19px] leading-[1.85] text-[#2B2B2B]/90">
               We’re a specialized agency run by people who’ve lived through the
               Italian bureaucratic circus and know every trick. Big agencies
               treat you like a case number. We treat you like family moving into
               our neighborhood.
             </p>
 
-            {/* bigger, airier lemon bullets */}
-            <ul className="lux-list lux-copy">
-              <li className="lux-li">
-                <span className="lux-icon">🍋</span>
-                <span>
+            {/* Bullet list */}
+            <ul className="mt-7 md:mt-12 space-y-4 md:space-y-5">
+              <li className="flex items-start gap-4 md:gap-5">
+                <Image
+                  src="/iconspaghetti.png"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
+                  aria-hidden="true"
+                />
+                <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
                   We speak the language of visas, bureaucracy, and pasta.
-                </span>
+                </p>
               </li>
-              <li className="lux-li">
-                <span className="lux-icon">🍋</span>
-                <span>
+
+              <li className="flex items-start gap-4 md:gap-5">
+                <Image
+                  src="/iconlemon.png"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
+                  aria-hidden="true"
+                />
+                <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
                   We know the consulates, the pitfalls, the hidden tricks.
-                </span>
+                </p>
               </li>
-              <li className="lux-li">
-                <span className="lux-icon">🍋</span>
-                <span>We guide you with clarity and care.</span>
+
+              <li className="flex items-start gap-4 md:gap-5">
+                <Image
+                  src="/iconpizza.png"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
+                  aria-hidden="true"
+                />
+                <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
+                  We guide you with clarity and care.
+                </p>
               </li>
-              <li className="lux-li">
-                <span className="lux-icon">💙</span>
-                <span>
+
+              <li className="flex items-start gap-4 md:gap-5">
+                <Image
+                  src="/iconsinglewine.png"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
+                  aria-hidden="true"
+                />
+                <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
                   With us, you won’t just move to Italy… you’ll land softly into{" "}
                   <em>la dolce vita</em>.
-                </span>
+                </p>
               </li>
             </ul>
           </div>
 
           <div className="card">
             <h4 className="serif text-3xl md:text-4xl font-semibold">
-              Start your Italian chapter
+              Italy is calling...
             </h4>
 
             {/* add items-stretch + a hair more gap */}
@@ -481,7 +568,7 @@ function NomadissimiLanding() {
         <div className="text-center mb-6 md:mb-11">
           <FadeIn>
             <h3 className="serif text-4xl md:text-5xl font-semibold">
-              Choose your visa plan.
+              Choose your visa plan:
             </h3>
           </FadeIn>
           <FadeIn delay={0.05}>
@@ -527,7 +614,7 @@ function NomadissimiLanding() {
 
             <FadeIn delay={0.08} y={18}>
               <PackageCard
-                badge="💎 Guidance"
+                badge=" 🔍 Guidance"
                 price="€697"
                 accent="#D97B4E"
                 featured
@@ -557,13 +644,17 @@ function NomadissimiLanding() {
                   </>,
                 ]}
                 bestFor="Applicants who want reassurance and professional oversight."
-                ctaText="Choose Guidance"
-              />
+              >
+                <CheckoutButton
+                  plan="Guidance"
+                  priceId={process.env.NEXT_PUBLIC_PRICE_GUIDANCE!}
+                />
+              </PackageCard>
             </FadeIn>
 
             <FadeIn delay={0.16} y={18}>
               <PackageCard
-                badge="👑 Concierge"
+                badge="💎 Concierge"
                 price="€997"
                 accent="#C9A86A"
                 bullets={[
@@ -624,10 +715,12 @@ function NomadissimiLanding() {
           <h3 className="serif text-3xl md:text-4xl font-semibold">
             Once you’re in Italy…
           </h3>
-          <GoldRule />
-          <p className="sans text-[#2B2B2B]/70">
+          <Aceituna />
+          {/* remove p’s top margin; if you still want it closer, swap mt-0 → -mt-1 */}
+          <p className="sans text-[#2B2B2B]/70 mt-0 max-w-5xl mx-auto px-4">
+            {" "}
             Getting your Italian visa is just the beginning. We offer exclusive
-            add-ons for our visa clients that will help them settle in Italy.
+            add-ons for our visa clients that will help you settle in Italy.
           </p>
         </div>
 
@@ -638,9 +731,13 @@ function NomadissimiLanding() {
               title="Comune & Questura Essentials — €297"
               items={[
                 <>
-                  30-min consultation walking you through{" "}
-                  <strong>Permesso di Soggiorno</strong> (kit, appointments,
-                  fingerprints)
+                  Dedicated 30-min <strong>consultation</strong> walking you
+                  through your <strong>residence permit</strong> (yes, it's
+                  different from your visa and it's a crucial next step)
+                </>,
+                <>
+                  <strong>Permesso di soggiorno</strong> kit, appointments,
+                  fingerprints
                 </>,
                 <>
                   Instructions for{" "}
@@ -660,15 +757,15 @@ function NomadissimiLanding() {
               title="Partita IVA & Tax Regime Consultation — €397"
               items={[
                 <>
-                  30-min consultation to discuss opening a{" "}
-                  <strong>professional activity (Partita IVA)</strong>
+                  Personalized 30-min <strong>consultation</strong> to discuss
+                  opening a <strong>professional activity (Partita IVA)</strong>
                 </>,
                 <>
                   Breakdown of key <strong>tax benefits</strong> that could{" "}
                   <strong>save you thousands</strong>
                 </>,
                 <>
-                  <strong>Practical roadmap</strong> — things they don’t tell
+                  <strong>Practical roadmap</strong> of things they don’t tell
                   you (but we do)
                 </>,
               ]}
@@ -701,19 +798,31 @@ function NomadissimiLanding() {
             href="#book"
             className="btn bg-[#4B5D44] hover:brightness-95 text-white text-base md:text-lg px-6 py-4 rounded-full inline-flex items-center gap-2 shadow-lg"
           >
-            <span aria-hidden>🎁</span>
-            <span>
-              Welcome to Italy Bundle — <span className="price">€497</span>
+            <span aria-hidden className="mr-0 -ml-1">
+              <Image
+                src="/icongift.png"
+                alt=""
+                width={28}
+                height={28}
+                sizes="28px"
+                className="h-6 w-6 md:h-7 md:w-7 drop-shadow-[0_2px_6px_rgba(0,0,0,.12)]"
+                priority
+              />
+            </span>
+
+            <span className="leading-none">
+              "Welcome to Italy" Bundle: <span className="price">€497</span>
             </span>
           </a>
-          <p className="sans text-sm md:text-base text-[#2B2B2B]/70 text-center">
-            Get all 3 add-ons together (normally €694)
+          <p className="sans text-sm md:text-base text-[#2B2B2B]/70 text-center leading-relaxed">
+            <strong>Get all 3 add-ons together</strong>
+            <span className="block">(normally €694)</span>
           </p>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="section-divider-top max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <section className="section-divider-top max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16 pb-6 md:pb-8 mb-0">
         <div className="grid md:grid-cols-2 gap-6">
           <FadeIn y={14}>
             <blockquote className="card italic serif text-xl leading-relaxed">
@@ -730,6 +839,11 @@ function NomadissimiLanding() {
       </section>
 
       {/* Lead magnet */}
+
+      {/* --- FAQ --- */}
+      <section id="faq" className="mt-12 md:mt-16 scroll-mt-28">
+        <FAQ />
+      </section>
 
       <section
         id="guide"
@@ -787,10 +901,10 @@ function NomadissimiLanding() {
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
             <a href="#book" className="btn btn-primary">
-              Work With Nomadissimi
+              Contact us
             </a>
             <a href="#packages" className="btn btn-champagne">
-              Choose your visa plan
+              Let's get that visa
             </a>
           </div>
         </FadeIn>
@@ -808,12 +922,15 @@ function NomadissimiLanding() {
               </p>
             </div>
             <nav className="flex gap-6 sans text-sm">
-              <a href="#" className="hover:underline">
+              <Link href="/terms" className="underline">
                 Terms
-              </a>
-              <a href="#" className="hover:underline">
+              </Link>
+              <Link href="/privacy" className="underline">
                 Privacy
-              </a>
+              </Link>
+              <Link href="/cookies" className="underline">
+                Cookies
+              </Link>
               <a href="#book" className="hover:underline">
                 Contact
               </a>
@@ -825,23 +942,27 @@ function NomadissimiLanding() {
   );
 }
 
-function Feature({
-  icon,
-  title,
-  desc,
-}: {
-  icon: string;
+type FeatureProps = {
+  icon: ReactNode; // or: icon: string | ReactNode if you want to still allow emojis
   title: string;
   desc: string;
-}) {
+};
+
+function Feature({ icon, title, desc }: FeatureProps) {
   return (
-    <div className="flex items-start gap-3">
-      <div className="text-xl">{icon}</div>
+    <li className="flex items-start gap-3">
+      <span className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-black/5 ring-1 ring-black/10">
+        {typeof icon === "string" ? (
+          <span className="text-lg leading-none">{icon}</span>
+        ) : (
+          icon
+        )}
+      </span>
       <div>
-        <div className="sans font-semibold">{title}</div>
-        <p className="text-sm text-[#2B2B2B]/70">{desc}</p>
+        <p className="font-semibold">{title}</p>
+        <p className="text-[--ink-500]">{desc}</p>
       </div>
-    </div>
+    </li>
   );
 }
 
@@ -892,6 +1013,8 @@ function PackageCard({
   bullets,
   bestFor,
   ctaText,
+  className,
+  children,
   accent,
   featured,
 }: {
@@ -899,7 +1022,9 @@ function PackageCard({
   price: string;
   bullets: ReactNode[];
   bestFor: string;
-  ctaText: string;
+  ctaText?: string;
+  className?: string;
+  children?: React.ReactNode;
   accent: string;
   featured?: boolean;
 }) {
@@ -961,9 +1086,13 @@ function PackageCard({
       <p className="mt-5 text-sm text-[#2B2B2B]/70 sans">Best for: {bestFor}</p>
 
       <div className="mt-6 pt-6 border-t border-black/10">
-        <a href="#book" className="btn w-full bg-[#4B5D44] text-white">
-          {ctaText}
-        </a>
+        {children ? (
+          children
+        ) : ctaText ? (
+          <a href="#book" className="btn w-full bg-[#4B5D44] text-white">
+            {ctaText}
+          </a>
+        ) : null}
       </div>
     </div>
   );

@@ -647,3 +647,10 @@ p { line-height: 1.75; }
   border-color:rgba(47,58,43,.45);
   box-shadow:0 10px 26px rgba(47,58,43,.25), inset 0 1px 0 rgba(255,255,255,.18);
 }
+
+/* app/globals.css */
+html, body {
+  -webkit-font-smoothing: auto;      /* avoid the lighter antialiased look */
+  -moz-osx-font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+}
