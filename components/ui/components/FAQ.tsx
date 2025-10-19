@@ -10,10 +10,13 @@ const faqs: QA[] = [
     q: "Who is Italy’s Digital Nomad Visa for?",
     a: (
       <>
-        Non-EU citizens who work remotely for foreign clients/employers and can
-        demonstrate sufficient, stable income. Exact evidence can vary by
-        consulate — we verify your specifics and tailor the file to bring
-        exactly what <em>your</em> consulate wants.
+        Italy’s Digital Nomad Visa is designed for non-EU citizens who work
+        remotely using technology, whether you’re self-employed, freelance, or
+        employed by a company outside Italy. Applicants need to show
+        professional experience and a stable income, but don’t worry — we’ll
+        help you understand what “qualified” actually means in real life (not
+        just on government websites). In short: if you can do your job from
+        anywhere, why not do it from Italy?
       </>
     ),
   },
@@ -21,10 +24,23 @@ const faqs: QA[] = [
     q: "How long does the process take?",
     a: (
       <>
-        From first call to your visa sticker, plan on{" "}
-        <strong>6-12 weeks</strong>. Timelines depend on consulate backlogs and
-        how quickly you can gather a few documents we’ll list for you. We keep
-        you moving with a clear checklist and reminders.
+        From your first call to the visa sticker in your passport, plan for a
+        few months. Timelines vary depending on your consulate’s backlog and how
+        quickly you can gather the required documents. We’ll map it all out for
+        you step-by-step so you always know what’s next. (Italy runs on
+        espresso, not speed -- but we’ll keep you moving.)
+      </>
+    ),
+  },
+  {
+    q: "Why work with Nomadissimi instead of doing it myself?",
+    a: (
+      <>
+        Because we’ve been through it, and we know the many places where people
+        get stuck. Instead of losing months to confusing consulate websites or
+        unreliable online forums, you’ll have a clear, personalized roadmap,
+        expert oversight, and people who genuinely care about your Italian
+        dream.
       </>
     ),
   },
@@ -32,10 +48,20 @@ const faqs: QA[] = [
     q: "What do your packages include?",
     a: (
       <>
-        A personal checklist in plain English, document templates, coaching on
-        eligibility &amp; “what counts,” appointment guidance, and a full review
-        of your file before you submit. Higher tiers add mock interview prep and
-        hands-on help scheduling &amp; tracking.
+        Each package is designed for a different level of support: from an
+        initial roadmap to full concierge guidance. You can see the complete
+        breakdown on our Visa Packages page, or you can write to us and we can
+        help you pick the right fit.
+      </>
+    ),
+  },
+  {
+    q: "What happens after I buy one of your visa packages?",
+    a: (
+      <>
+        Once you book, you’ll receive an intake form so we can better understand
+        your specific profile, visa goals, and timeline. This helps us optimize
+        your consultation, so we can get straight into your tailored strategy.
       </>
     ),
   },
@@ -43,27 +69,27 @@ const faqs: QA[] = [
     q: "Will you book the consulate appointment for me?",
     a: (
       <>
-        Yes on our guided packages. Availability varies by consulate. We watch
-        openings, advise the best timing, and prep you so you walk in confident.
+        We’ll guide you on exactly how to secure your slot and what to expect,
+        but consulate bookings must be completed by the applicant directly for
+        privacy and security reasons. But don’t worry: we’ve got the tips and
+        timing tricks to help you land one successfully.
       </>
     ),
   },
   {
-    q: "Do I need an Italian bank account or lease first?",
+    q: "What happens after my visa is approved?",
     a: (
       <>
-        No. You apply with foreign income and proof of accommodation that fits
-        consulate rules (hotel/Airbnb/letter of invitation/lease depending on
-        location). We’ll tell you exactly what works in your jurisdiction.
-      </>
-    ),
-  },
-  {
-    q: "Can my spouse/partner and kids come?",
-    a: (
-      <>
-        Yes — family reunion is possible. We’ll map your path (timing, documents
-        and the right order of steps) so you don’t lose time.
+        That’s when the real Italian adventure begins! It's also one of the most
+        important (and time-sensitive) steps starts right away. Within days of
+        landing, you’ll need to register your residency and apply for your
+        Permesso di Soggiorno, your official residence permit. It’s a crucial
+        step that many people overlook or delay, and missing the deadline can
+        cause serious complications later. Our "Residence Registration" Add-On
+        gives you step-by-step guidance through the process: from completing
+        your kit to booking your appointments and submitting your fingerprints.
+        We make sure you get it done correctly and on time, so your new Italian
+        life begins without stress or surprises.
       </>
     ),
   },
@@ -71,9 +97,44 @@ const faqs: QA[] = [
     q: "What about taxes?",
     a: (
       <>
-        The visa is an immigration permission; taxes are separate. We brief you
-        on the basics and connect you to vetted cross-border tax pros when
-        you’re ready.
+        Your visa is an immigration permission, not a tax setup. They’re two
+        different worlds (and Italy’s tax world is a labyrinth of its own). We
+        offer a Tax & Partita IVA Consultation Add-On that gives you tips on how
+        to open your professional activity in Italy, understand key tax
+        benefits, and avoid the common pitfalls most newcomers face.
+      </>
+    ),
+  },
+  {
+    q: "Do I need an Italian bank account or lease first?",
+    a: (
+      <>
+        There's a lot of misinformation online, but this is one of the key
+        details we clarify during your consultation. We’ll make sure you know
+        what’s required (and what isn’t) before you take any big steps.
+      </>
+    ),
+  },
+  {
+    q: "Can my spouse/partner and kids come?",
+    a: (
+      <>
+        Yes, family reunion is possible in certain cases. La dolce vita is even
+        sweeter when shared. Please note that the request for family
+        reunification is done once you have already become an Italian resident.
+      </>
+    ),
+  },
+  {
+    q: "What if my visa is rejected?",
+    a: (
+      <>
+        Rejections are rare when everything is prepared correctly, but
+        ultimately, the final decision lies with the Italian government and its
+        affiliated entities. No consulting agency or law firm can guarantee an
+        approval, and if someone promises you that… run! Our role is to minimize
+        risk through careful strategy, organization, and personalized
+        preparation... giving you the strongest possible chance of success.
       </>
     ),
   },
@@ -81,9 +142,9 @@ const faqs: QA[] = [
     q: "What’s your refund policy?",
     a: (
       <>
-        If we review your profile and you’re truly ineligible, we’ll refund the
-        unused portion of your fee. If you change your mind mid-process, we
-        simply bill you for the work completed so far.
+        Because every Nomadissimi package is customized to your unique visa
+        path, all sales are final and non-refundable. We take pride in offering
+        attentive, high-touch support from the moment you join us.
       </>
     ),
   },

@@ -15,6 +15,51 @@
   .card { @apply rounded-3xl p-6 md:p-8 shadow-[0_8px_24px_rgba(0,0,0,0.06)] bg-white; }
 }
 
+
+@layer components {
+  .btn-champagne-luxe {
+    @apply inline-flex items-center justify-center rounded-full px-8 py-4 font-serif text-lg tracking-wide
+           bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
+           text-[#2F2F2F] 
+           ring-1 ring-[#C9A86A]/70 
+           shadow-[0_8px_24px_rgba(193,168,125,0.22)]
+           transition-all duration-300;
+  }
+
+  .btn-champagne-luxe:hover {
+    @apply shadow-[0_12px_36px_rgba(193,168,125,0.32)] scale-[1.02] brightness-[1.03];
+  }
+}
+
+
+@layer components {
+  .btn-bundle-luxe {
+    @apply inline-flex items-center justify-center gap-4
+           rounded-full px-14 py-6
+           font-serif text-2xl font-semibold tracking-wide
+           bg-[#4B5D44] text-white
+           shadow-[0_8px_24px_rgba(0,0,0,0.28)]
+           ring-1 ring-[#E9D9BD]/40
+           transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]
+           cursor-pointer;
+  }
+
+  .btn-bundle-luxe:hover {
+    @apply bg-[#43533D]
+           shadow-[0_12px_32px_rgba(233,217,189,0.35)]
+           scale-[1.04]
+           ring-[#E9D9BD]/60;
+  }
+
+  .bundle-icon {
+    @apply h-8 w-8 md:h-9 md:w-9 drop-shadow-[0_0_6px_rgba(255,255,255,0.6)];
+  }
+
+  .price-subtext {
+    @apply text-center mt-4 text-sm text-[#4B5D44]/90 font-sans;
+  }
+}
+
 /* — Luxe micro-interactions — */
 .btn { transition: transform .2s ease, filter .2s ease, background-color .2s ease, color .2s ease; }
 .btn:hover { transform: translateY(-1px); }
@@ -654,3 +699,63 @@ html, body {
   -moz-osx-font-smoothing: auto;
   text-rendering: optimizeLegibility;
 }
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.addon-card {
+  background-color: #EEF4EF; /* lighter sage */
+  border: 1px solid #D7E3D7;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.addon-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2F3A2F;
+}
+
+.addon-price {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: #4B5C44;
+}
+
+.addon-list li {
+  margin-top: 1rem;
+  line-height: 1.65;
+  color: #1E1E1E; /* improved readability */
+}
+
+.addon-bullet {
+  color: #B89257; /* muted gold-champagne bullet */
+  font-weight: bold;
+}
+
+@keyframes shimmer-slide {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.btn-bundle-luxe {
+  background-image: linear-gradient(
+    110deg,
+    rgba(255,255,255,0.12) 0%,
+    rgba(255,255,255,0.18) 15%,
+    rgba(255,255,255,0.12) 30%
+  );
+  background-size: 200% 100%;
+}
+
+.btn-bundle-luxe:hover {
+  animation: shimmer-slide 2.5s ease-in-out infinite;
+}
+

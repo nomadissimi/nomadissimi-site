@@ -1,9 +1,14 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import type { Metadata } from "next";
 
 import Script from "next/script";
 
 import "./globals.css";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+
+
 
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
