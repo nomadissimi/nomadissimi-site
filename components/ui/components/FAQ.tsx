@@ -81,8 +81,8 @@ const faqs: QA[] = [
     a: (
       <>
         That’s when the real Italian adventure begins! It's also one of the most
-        important (and time-sensitive) steps starts right away. Within days of
-        landing, you’ll need to register your residency and apply for your
+        important (and time-sensitive) steps that starts right away. Within days
+        of landing, you’ll need to register your residency and apply for your
         Permesso di Soggiorno, your official residence permit. It’s a crucial
         step that many people overlook or delay, and missing the deadline can
         cause serious complications later. Our "Residence Registration" Add-On

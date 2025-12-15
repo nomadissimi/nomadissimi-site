@@ -8,8 +8,6 @@ import Script from "next/script";
 import "./globals.css";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 
-
-
 const serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -22,9 +20,13 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nomadissimi — Escape the chaos. Move to Italy without the headaches.",
+  title:
+    "Nomadissi​mi — Escape the chaos. Move to Italy without the headaches.",
   description:
     "Boutique guidance for Italy’s Digital Nomad Visa. Clear checklists, expert reviews, and a soft landing into la dolce vita.",
+  icons: {
+    icon: "/favicon.png", // change the filename if your icon is something else
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +40,8 @@ export default function RootLayout({
       <body
         className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >
+        {/* Permanent portal root for the mobile drawer */}
+        <div id="drawer-root" />
         {children}
       </body>
     </html>

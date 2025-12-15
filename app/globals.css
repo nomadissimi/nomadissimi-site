@@ -33,23 +33,58 @@
 
 
 @layer components {
-  .btn-bundle-luxe {
-    @apply inline-flex items-center justify-center gap-4
-           rounded-full px-14 py-6
-           font-serif text-2xl font-semibold tracking-wide
-           bg-[#4B5D44] text-white
-           shadow-[0_8px_24px_rgba(0,0,0,0.28)]
-           ring-1 ring-[#E9D9BD]/40
-           transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]
-           cursor-pointer;
-  }
 
-  .btn-bundle-luxe:hover {
-    @apply bg-[#43533D]
-           shadow-[0_12px_32px_rgba(233,217,189,0.35)]
-           scale-[1.04]
-           ring-[#E9D9BD]/60;
-  }
+  .btn-bundle-luxe::before {
+  content: "";
+  position: absolute;
+  inset: 1px; /* creates the inner border */
+  border-radius: 16px; /* slightly smaller than outer 18px */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+}
+
+ .btn-bundle-luxe {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 1.15rem 2.6rem;
+  border-radius: 18px; /* ← THIS is the sweet spot */
+
+  background: #5d7866; /* your olive */
+  color: #ffffff;
+
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-bundle-luxe span:last-child {
+  font-weight: 600;
+}
+
+.price-subtext {
+  font-size: 0.95rem;
+  color: rgba(75, 93, 68, 0.75);
+  letter-spacing: 0.02em;
+}
+
+
+ .btn-bundle-luxe:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.22);
+}
+
 
   .bundle-icon {
     @apply h-8 w-8 md:h-9 md:w-9 drop-shadow-[0_0_6px_rgba(255,255,255,0.6)];
@@ -758,4 +793,73 @@ html, body {
 .btn-bundle-luxe:hover {
   animation: shimmer-slide 2.5s ease-in-out infinite;
 }
+
+
+@keyframes shimmer-move {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer-move 2.5s infinite;
+  opacity: 0.7;
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s ease-in-out infinite;
+}
+
+@keyframes italy-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Auto-moving image strip */
+.animate-italy-scroll {
+  animation: italy-scroll 40s linear infinite;
+}
+
+@keyframes couture-line {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.animate-couture-line {
+  animation-name: couture-line;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes shimmerOnce {
+  0% { transform: translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateX(520px); opacity: 0; }
+}
+
 

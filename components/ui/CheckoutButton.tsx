@@ -44,7 +44,7 @@ export default function CheckoutButton({
     <button
       onClick={handleClick}
       disabled={loading}
-      className={`btn w-full bg-[#4B5D44] text-white ${className}`}
+      className={`btn w-full ${className}`}
     >
       {loading ? "Redirecting…" : label}
     </button>

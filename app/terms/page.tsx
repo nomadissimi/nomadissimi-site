@@ -70,9 +70,8 @@ export default function TermsPage() {
             4) Fees & refunds
           </h2>
           <p className="sans text-[16px] leading-relaxed text-[#2B2B2B]/90">
-            Fees cover our time and expertise. Unless stated otherwise in
-            writing, fees are non-refundable once work has started. Rescheduling
-            or scope changes may incur additional fees.
+            Fees cover our time and expertise. As such, they are non-refundable.
+            Rescheduling or scope changes may incur additional fees.
           </p>
         </section>
 
@@ -103,7 +102,8 @@ export default function TermsPage() {
           </h2>
           <p className="sans text-[16px] leading-relaxed text-[#2B2B2B]/90">
             Checklists, templates, and materials we provide are for your
-            personal use only and may not be redistributed or resold.
+            personal use only and may not be redistributed or resold under any
+            circumstances.
           </p>
         </section>
 
@@ -126,7 +126,7 @@ export default function TermsPage() {
           <p className="sans text-[16px] leading-relaxed text-[#2B2B2B]/90">
             These terms are governed by the laws of Italy (without regard to
             conflict-of-law rules). Any disputes will be handled in the courts
-            of [City], Italy.
+            of Catania, Italy.
           </p>
         </section>
 
