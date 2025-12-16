@@ -22,6 +22,9 @@ export async function POST(req: Request) {
       },
     });
 
+    console.log("EMAIL_USER:", process.env.EMAIL_USER ? "SET" : "MISSING");
+console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "SET" : "MISSING");
+
     await transporter.sendMail({
       from: `"Nomadissimi Contact" <${process.env.EMAIL_USER}>`,
       to: "nomadissimi@gmail.com",
@@ -29,6 +32,20 @@ export async function POST(req: Request) {
       subject: subject || "New message from Nomadissimi",
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject || "(none)"}\n\nMessage:\n${message}`,
     });
+
+    await transporter.sendMail({
+  from: `"Nomadissimi" <${process.env.EMAIL_USER}>`,
+  to: email, // the user who submitted the form
+  subject: "We received your message — Nomadissimi",
+  text:
+    `Ciao! ${name || "there"},\n\n` +
+    `Thanks for reaching out. We have received your message, and we’ll reply soon.\n\n` +
+    `A copy of what you sent:\n` +
+    `Subject: ${subject || "(no subject)"}\n` +
+    `Message:\n${message}\n\n` +
+    `— Nomadissimi\n` +
+    `nomadissimi.com`,
+});
 
     return Response.json({ ok: true });
   } catch (err) {
