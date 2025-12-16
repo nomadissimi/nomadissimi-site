@@ -1,10 +1,25 @@
 import nodemailer from "nodemailer";
+import { contactRateLimit } from "@/lib/ratelimit";
 
 export const runtime = "nodejs";
 
 export async function POST(req: Request) {
   try {
     console.log("CONTACT ROUTE HIT ✅");
+
+    const ip =
+  req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+  req.headers.get("x-real-ip") ||
+  "unknown";
+
+const { success } = await contactRateLimit.limit(`contact:${ip}`);
+
+if (!success) {
+  return Response.json(
+    { ok: false, error: "Too many messages. Please try again in a few minutes." },
+    { status: 429 }
+  );
+}
 
     const { name, email, subject, message } = await req.json();
     console.log("New contact message:", { name, email, subject, message });
@@ -38,11 +53,12 @@ console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "SET" : "MISSING");
   to: email, // the user who submitted the form
   subject: "We received your message — Nomadissimi",
   text:
-    `Ciao! ${name || "there"},\n\n` +
+    `Ciao ${name || "there"},\n\n` +
     `Thanks for reaching out. We have received your message, and we’ll reply soon.\n\n` +
-    `A copy of what you sent:\n` +
+    `In the meantime, here's a copy of what you sent:\n` +
     `Subject: ${subject || "(no subject)"}\n` +
     `Message:\n${message}\n\n` +
+    `We take the stress, you take the plane\n` +
     `— Nomadissimi\n` +
     `nomadissimi.com`,
 });
