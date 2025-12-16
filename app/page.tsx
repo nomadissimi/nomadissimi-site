@@ -1100,7 +1100,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   </>,
                   <>
                     {" "}
-                    <strong>20% off</strong> our Residence Registration add-on{" "}
+                    <strong>15% off</strong> our Residence Registration add-on{" "}
                   </>,
                 ]}
                 bestFor="Nomads who want a trusted partner at every step."
@@ -1383,8 +1383,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 “I’d been sitting on the idea of moving to Europe for a while. I
                 found out about the new digital nomad visa for Italy but was
                 lost on the application. After my call with nomadissimi, it
-                stopped feeling impossible. I’m writing this from my flat in
-                Florence. Thanks again!”
+                stopped feeling impossible, and I have advanced a lot in
+                process. Thanks again!”
               </strong>{" "}
               --Rafael, Software Engineer from Illinois
             </blockquote>

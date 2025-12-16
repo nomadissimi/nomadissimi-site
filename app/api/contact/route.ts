@@ -1,10 +1,18 @@
 import nodemailer from "nodemailer";
+
+export const runtime = "nodejs";
+
 export async function POST(req: Request) {
   try {
     console.log("CONTACT ROUTE HIT ✅");
 
     const { name, email, subject, message } = await req.json();
     console.log("New contact message:", { name, email, subject, message });
+
+    // Basic guard (server-side)
+    if (!name || !email || !message) {
+      return Response.json({ ok: false, error: "Missing required fields" }, { status: 400 });
+    }
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -19,23 +27,12 @@ export async function POST(req: Request) {
       to: "nomadissimi@gmail.com",
       replyTo: email,
       subject: subject || "New message from Nomadissimi",
-      text: `
-Name: ${name}
-Email: ${email}
-Subject: ${subject || "(no subject)"}
-
-${message}
-      `,
+      text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject || "(none)"}\n\nMessage:\n${message}`,
     });
 
-    console.log("EMAIL SENT ✅");
-
     return Response.json({ ok: true });
-  } catch (error) {
-    console.error("EMAIL ERROR ❌", error);
-    return new Response(
-      JSON.stringify({ error: "Failed to send message" }),
-      { status: 500 }
-    );
+  } catch (err) {
+    console.error("CONTACT EMAIL ERROR ❌", err);
+    return Response.json({ ok: false, error: "Email failed to send" }, { status: 500 });
   }
 }
