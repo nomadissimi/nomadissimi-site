@@ -9,6 +9,9 @@ export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
   );
+  const [statusMsg, setStatusMsg] = useState("");
+
+  
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

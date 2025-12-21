@@ -31,6 +31,26 @@ type CheckoutButtonProps = {
   className?: string;
 };
 
+function AddonCtaLabel({
+  title,
+  amount,
+}: {
+  title: string;
+  amount: string; // "297", "197", "97"
+}) {
+  return (
+    <span className="flex flex-col items-center">
+      <span className="addon-cta-title">{title}</span>
+
+      <span className="addon-cta-priceRow">
+        <span className="addon-cta-euro">€</span>
+        <span className="addon-cta-amount">{amount}</span>
+        <span className="addon-cta-vat">+ VAT</span>
+      </span>
+    </span>
+  );
+}
+
 function Aceituna({ className = "" }: { className?: string }) {
   return (
     // ↓ make the defaults tiny so the parent can control spacing easily
@@ -240,20 +260,36 @@ function NomadissimiLanding() {
               </span>
             </a>
 
-            {/* Book — primary but restrained */}
+            {/* Book (desktop → visa plans top) */}
             <a
-              href="#book"
-              className="serif inline-flex items-center justify-center
-               px-4 py-2.5
-               border border-[#4B5D44]
-               bg-[#4B5D44] text-white
-               text-[18px] font-semibold tracking-[0.08em]
-               transition-all duration-300 ease-out
-               hover:bg-[#3E4E38] hover:-translate-y-[1px]
-               hover:shadow-[0_10px_26px_rgba(75,93,68,0.22)]"
+              href="#packages"
+              className="hidden md:inline-flex serif items-center justify-center
+    px-4 py-2.5
+    border border-[#4B5D44]
+    bg-[#4B5D44] text-white
+    text-[18px] font-semibold tracking-[0.08em]
+    transition-all duration-300 ease-out
+    hover:bg-[#3E4E38] hover:-translate-y-[1px]
+    hover:shadow-[0_10px_26px_rgba(75,93,68,0.22)]"
             >
               Book
             </a>
+
+            {/* Book (mobile → Guidance card) */}
+            <a
+              href="#guidance"
+              className="inline-flex md:hidden serif items-center justify-center
+    px-4 py-2.5
+    border border-[#4B5D44]
+    bg-[#4B5D44] text-white
+    text-[18px] font-semibold tracking-[0.08em]
+    transition-all duration-300 ease-out
+    hover:bg-[#3E4E38] hover:-translate-y-[1px]
+    hover:shadow-[0_10px_26px_rgba(75,93,68,0.22)]"
+            >
+              Book
+            </a>
+
             <span className="hidden md:inline-block mx-1 h-1 w-1 rounded-full bg-[#C9A86A]/70" />
           </div>
 
@@ -989,71 +1025,109 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             <FadeIn y={18}>
               <PackageCard
                 badge="💡 Clarity"
-                price="€297"
                 accent="#4B5D44"
                 bullets={[
                   <>
-                    {" "}
                     <strong>Personalized document checklist</strong> + detailed
-                    explanations{" "}
+                    explanations
                   </>,
                   <>
-                    {" "}
                     <strong>30 days</strong> of follow-up email support for
-                    quick clarifications{" "}
+                    quick clarifications
                   </>,
                   <>
-                    {" "}
-                    <strong>"Next Steps"</strong> Playbook{" "}
+                    <strong>"Next Steps"</strong> Playbook
                   </>,
                 ]}
                 bestFor="For independent nomads who want a clear, structured start"
-                ctaText="Choose Clarity"
-              />
+              >
+                <CheckoutButton
+                  plan="Clarity"
+                  priceId={process.env.NEXT_PUBLIC_PRICE_CLARITY!}
+                  className={packagesCta}
+                  label={
+                    <span className="flex flex-col items-center text-center">
+                      {/* Line 1 — title (slightly bigger, tighter) */}
+                      <span className="serif text-[20px] md:text-[24px] font-medium tracking-[0.045em] leading-[1.02]">
+                        Choose Clarity
+                      </span>
+
+                      {/* Line 2 — price (tightened + clearer hierarchy) */}
+                      <span className="-mt-1 flex items-baseline gap-1">
+                        <span className="sans tabular-nums text-[14px] text-white/65">
+                          €
+                        </span>
+
+                        <span className="sans tabular-nums text-[20px] md:text-[21px] font-semibold text-white leading-none">
+                          297
+                        </span>
+
+                        <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
+                          + VAT
+                        </span>
+                      </span>
+                    </span>
+                  }
+                />
+              </PackageCard>
             </FadeIn>
 
             <FadeIn delay={0.08} y={18}>
               <PackageCard
-                badge=" 🔍 Guidance"
-                price="€697"
-                accent="#aec2a1"
+                badge="🔍 Guidance"
+                accent="#AEC2A1"
                 featured
                 bullets={[
                   <>
-                    {" "}
                     <strong>📞 45-min strategy consultation call</strong>{" "}
-                    (eligibility, requirements, docs){" "}
+                    (eligibility, requirements, documents)
                   </>,
                   <>
-                    {" "}
-                    <strong>Personalized document checklist</strong> + detailed
-                    explanations{" "}
+                    <strong>Personalized document checklist</strong> with clear
+                    explanations
                   </>,
                   <>
-                    {" "}
-                    <strong>Professional document review</strong> with feedback{" "}
+                    <strong>Professional document review</strong> with feedback
                   </>,
                   <>
-                    {" "}
-                    <strong>60 days</strong> of follow-up email support{" "}
+                    <strong>60 days</strong> of follow-up email support
                   </>,
                   <>
-                    {" "}
-                    <strong>"Next Steps"</strong> Playbook{" "}
+                    <strong>"Next Steps"</strong> Playbook
                   </>,
                   <>
-                    {" "}
-                    <strong>10% off</strong> our Residence Registration add-on{" "}
+                    <strong>10% off</strong> Residence Registration add-on
                   </>,
                 ]}
                 bestFor="Applicants who want reassurance and professional oversight."
               >
-                <div id="book" className="scroll-mt-32 md:scroll-mt-40" />
-
                 <CheckoutButton
                   plan="Guidance"
                   priceId={process.env.NEXT_PUBLIC_PRICE_GUIDANCE!}
-                  className={packagesCta} // ✅ apply same luxe styling, including font-normal
+                  className={packagesCta}
+                  label={
+                    <span className="flex flex-col items-center text-center">
+                      {/* Line 1 — title (slightly bigger, tighter) */}
+                      <span className="serif text-[20px] md:text-[24px] font-medium tracking-[0.045em] leading-[1.02]">
+                        Choose Guidance
+                      </span>
+
+                      {/* Line 2 — price (tightened + clearer hierarchy) */}
+                      <span className="-mt-1 flex items-baseline gap-1">
+                        <span className="sans tabular-nums text-[14px] text-white/65">
+                          €
+                        </span>
+
+                        <span className="sans tabular-nums text-[20px] md:text-[21px] font-semibold text-white leading-none">
+                          697
+                        </span>
+
+                        <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
+                          + VAT
+                        </span>
+                      </span>
+                    </span>
+                  }
                 />
               </PackageCard>
             </FadeIn>
@@ -1061,51 +1135,71 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             <FadeIn delay={0.16} y={18}>
               <PackageCard
                 badge="💎 Concierge"
-                price="€997"
                 accent="#C9A86A"
                 bullets={[
                   <>
-                    {" "}
                     <strong>
                       📞 45-min deep-dive strategy consultation call
                     </strong>{" "}
-                    (eligibility, requirements, docs){" "}
+                    (eligibility, requirements, docs)
                   </>,
                   <>
-                    {" "}
                     <strong>Personalized document checklist</strong> + detailed
-                    explanations{" "}
+                    explanations
                   </>,
                   <>
-                    {" "}
                     <strong>Comprehensive document review</strong> with feedback
                   </>,
                   <>
-                    {" "}
                     <strong>📞 Additional 45-min refinement call</strong> +
-                    dedicated mock <strong> interview coaching</strong>{" "}
+                    dedicated mock <strong>interview coaching</strong> for your
+                    consulate appointment
                   </>,
                   <>
-                    {" "}
                     <strong>90 days</strong> of follow-up email support &{" "}
-                    <strong>PRIORITY</strong> response{" "}
+                    <strong>PRIORITY</strong> response
                   </>,
                   <>
-                    {" "}
                     <strong>Codice Fiscale</strong> breakdown
                   </>,
                   <>
-                    {" "}
-                    <strong>"Next Steps"</strong> Playbook{" "}
+                    <strong>"Next Steps"</strong> Playbook
                   </>,
                   <>
-                    {" "}
-                    <strong>15% off</strong> our Residence Registration add-on{" "}
+                    <strong>15% off</strong> our Residence Registration add-on
                   </>,
                 ]}
-                bestFor="Nomads who want a trusted partner at every step."
-                ctaText="Choose Concierge"
-              />
+                bestFor="Nomads who want a trusted partner at every step and a more detailed help."
+              >
+                <CheckoutButton
+                  plan="Concierge"
+                  priceId={process.env.NEXT_PUBLIC_PRICE_CONCIERGE!}
+                  className={packagesCta}
+                  label={
+                    <span className="flex flex-col items-center text-center">
+                      {/* Line 1 — title (slightly bigger, tighter) */}
+                      <span className="serif text-[20px] md:text-[24px] font-medium tracking-[0.045em] leading-[1.02]">
+                        Choose Concierge
+                      </span>
+
+                      {/* Line 2 — price (tightened + clearer hierarchy) */}
+                      <span className="-mt-1 flex items-baseline gap-1">
+                        <span className="sans tabular-nums text-[14px] text-white/65">
+                          €
+                        </span>
+
+                        <span className="sans tabular-nums text-[20px] md:text-[21px] font-semibold text-white leading-none">
+                          997
+                        </span>
+
+                        <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
+                          + VAT
+                        </span>
+                      </span>
+                    </span>
+                  }
+                />
+              </PackageCard>
             </FadeIn>
           </div>
         </div>
@@ -1150,7 +1244,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           {/* Card 1 — Residence Registration */}
           <FadeIn y={14}>
             <AddonCard
-              title="Residence Registration — €297"
+              title="Residence Registration"
               blurb={
                 <span className="text-[#1E1E1E] leading-relaxed">
                   <strong>
@@ -1198,15 +1292,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <CheckoutButton
                     plan="Residence Registration"
                     priceId={process.env.NEXT_PUBLIC_PRICE_RESIDENCE!}
-                    className="inline-flex items-center justify-center px-8 py-4 - rounded-full
-+ rounded-[14px] md:rounded-[16px]
-
-          bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-          text-[#1A1A1A] font-serif text-lg tracking-wide
-          ring-1 ring-[#C9A86A]/70 shadow-[0_8px_24px_rgba(193,168,125,0.22)]
-          hover:shadow-[0_12px_36px_rgba(193,168,125,0.32)]
-          hover:scale-[1.02] transition-all duration-300"
-                    label="Get Your Residence"
+                    className="addon-cta"
+                    label={
+                      <AddonCtaLabel title="Get Your Residence" amount="297" />
+                    }
                   />
                 </div>
               }
@@ -1217,7 +1306,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           {/* Card 2 — Tax & Partita IVA */}
           <FadeIn delay={0.08} y={14}>
             <AddonCard
-              title="Tax & Partita IVA Consultation — €197"
+              title="Tax & Partita IVA Consultation"
               blurb={
                 <span className="text-[#1E1E1E] leading-relaxed">
                   <strong>
@@ -1256,15 +1345,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <CheckoutButton
                     plan="Tax & Partita IVA"
                     priceId={process.env.NEXT_PUBLIC_PRICE_PARTITA!}
-                    label="Discover Tax Path"
-                    className="inline-flex items-center justify-center px-8 py-4 - rounded-full
-+ rounded-[14px] md:rounded-[16px]
-
-          bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-          text-[#1A1A1A] font-serif text-lg tracking-wide
-          ring-1 ring-[#C9A86A]/70 shadow-[0_8px_24px_rgba(193,168,125,0.22)]
-          hover:shadow-[0_12px_36px_rgba(193,168,125,0.32)]
-          hover:scale-[1.02] transition-all duration-300"
+                    className="addon-cta"
+                    label={
+                      <AddonCtaLabel title="Discover Tax Path" amount="197" />
+                    }
                   />
                 </div>
               }
@@ -1275,7 +1359,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           {/* Card 3 — La Dolce Vita */}
           <FadeIn delay={0.16} y={14}>
             <AddonCard
-              title="La Dolce Vita Integration — €97"
+              title="La Dolce Vita Integration"
               blurb={
                 <span className="text-[#1E1E1E] leading-relaxed">
                   This exclusive package gives you insider guidance on the
@@ -1314,17 +1398,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               footer={
                 <div className="text-center mt-8">
                   <CheckoutButton
-                    plan="La Dolce Vita Integration"
-                    priceId={process.env.NEXT_PUBLIC_PRICE_DOLCE!}
-                    label="Time to Settle In"
-                    className="inline-flex items-center justify-center px-8 py-4 - rounded-full
-+ rounded-[14px] md:rounded-[16px]
-
-          bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-          text-[#1A1A1A] font-serif text-lg tracking-wide
-          ring-1 ring-[#C9A86A]/70 shadow-[0_8px_24px_rgba(193,168,125,0.22)]
-          hover:shadow-[0_12px_36px_rgba(193,168,125,0.32)]
-          hover:scale-[1.02] transition-all duration-300"
+                    plan="Time to Settle In"
+                    priceId={process.env.NEXT_PUBLIC_PRICE_SETTLE!}
+                    className="addon-cta"
+                    label={
+                      <AddonCtaLabel title="Settle in Smoothly" amount="147" />
+                    }
                   />
                 </div>
               }
@@ -1335,7 +1414,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
         {/* The big welcome to italy bundle button */}
         <div className="flex flex-col items-center mt-8">
-          <button className="btn-bundle-luxe">
+          <button className="btn-bundle-luxe bundle-ray group relative overflow-hidden">
+            {" "}
             <Image
               src="/icongift.png"
               alt="Gift Icon"
@@ -1344,16 +1424,33 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               className="h-9 w-9 md:h-10 md:w-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]"
               priority
             />
-
-            <span className="font-semibold tracking-[0.02em] opacity-95">
+            {/* Title */}
+            <span className="serif font-semibold tracking-[0.03em] text-white/95">
               “Welcome to Italy”
             </span>
-            <span className="mx-2 opacity-40">—</span>
-            <span className="tracking-[0.04em]">€450</span>
+            {/* dot Separator */}
+            <span className="mx-3 opacity-35">•</span>
+            {/* Price group */}
+            <span className="flex items-baseline gap-1.5">
+              {/* Euro */}
+              <span className="sans tabular-nums text-[15px] text-white/70">
+                €
+              </span>
+
+              {/* Amount — readable, not serif */}
+              <span className="sans tabular-nums font-semibold text-[22px] md:text-[24px] leading-none text-white">
+                547
+              </span>
+
+              {/* VAT — clearer but secondary */}
+              <span className="ml-1 sans text-[13px] tracking-[0.12em] uppercase text-white/75">
+                + VAT
+              </span>
+            </span>
           </button>
           <p className="price-subtext">
             Get all 3 add-ons together <br />
-            <span className="text-[#4B5D44] font-medium">(valued at €594)</span>
+            <span className="text-[#4B5D44] font-medium">(valued at €641)</span>
           </p>
         </div>
       </section>
@@ -1570,17 +1667,48 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 Made with love and espresso.
               </p>
             </div>
-            <nav className="flex gap-6 sans text-sm">
-              <Link href="/terms" className="underline">
+            <nav
+              className="
+    flex items-center
+    gap-3
+    font-serif
+    text-[14px]
+    tracking-[0.12em]
+    uppercase
+    text-white/80
+  "
+            >
+              <Link
+                href="/terms"
+                className="relative transition hover:text-white after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-white/70 after:transition-transform hover:after:scale-x-100"
+              >
                 Terms
               </Link>
-              <Link href="/privacy" className="underline">
+
+              <span className="mx-2 text-white/40">·</span>
+
+              <Link
+                href="/privacy"
+                className="relative transition hover:text-white after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-white/70 after:transition-transform hover:after:scale-x-100"
+              >
                 Privacy
               </Link>
-              <Link href="/cookies" className="underline">
+
+              <span className="mx-2 text-white/40">·</span>
+
+              <Link
+                href="/cookies"
+                className="relative transition hover:text-white after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-white/70 after:transition-transform hover:after:scale-x-100"
+              >
                 Cookies
               </Link>
-              <a href="#book" className="hover:underline">
+
+              <span className="mx-2 text-white/40">·</span>
+
+              <a
+                href="/contact"
+                className="relative transition hover:text-white after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-white/70 after:transition-transform hover:after:scale-x-100"
+              >
                 Contact
               </a>
             </nav>
@@ -1656,6 +1784,26 @@ function GoldRule() {
   );
 }
 
+function WelcomeCtaLabel({ title, amount }: { title: string; amount: string }) {
+  return (
+    <span className="flex items-center gap-6">
+      <span className="serif text-[22px] md:text-[23px] font-semibold tracking-[0.04em] text-white">
+        {title}
+      </span>
+
+      <span className="flex items-baseline gap-1.5">
+        <span className="text-[14px] text-white/65">€</span>
+        <span className="text-[22px] md:text-[24px] font-semibold text-white leading-none">
+          {amount}
+        </span>
+        <span className="text-[13px] tracking-[0.14em] uppercase text-white/65 ml-1">
+          + VAT
+        </span>
+      </span>
+    </span>
+  );
+}
+
 // Elegant olive CTA (refined size + shimmer)
 const greenCta =
   "relative inline-flex items-center justify-center text-center px-6 py-3 md:px-7 md:py-3.5 rounded-2xl " +
@@ -1679,7 +1827,7 @@ function PackageCard({
   featured,
 }: {
   badge: string;
-  price: string;
+  price?: string;
   bullets: ReactNode[];
   bestFor: string;
   ctaText?: string;
@@ -1697,8 +1845,10 @@ function PackageCard({
       : "cap-gold";
 
   // split currency so we can gray-out the symbol
-  const trimmed = price.trim();
-  const isEuro = trimmed.startsWith("€");
+  const hasPrice = typeof price === "string" && price.length > 0;
+
+  const trimmed = hasPrice ? price.trim() : "";
+  const isEuro = hasPrice && trimmed.startsWith("€");
   const currency = isEuro ? "€" : "";
   const amount = isEuro ? trimmed.slice(1) : trimmed;
 
@@ -1717,20 +1867,29 @@ function PackageCard({
       }
     >
       {/* Header row — NOW with extra tom margin */}
-      <div className="w-full flex items-center justify-between gap-4 mb-4 md:mb-5">
-        <span className={`cap ${capClass} serif`}>{badge}</span>
-
-        <span
-          className="price serif text-2xl md:text-3xl font-bold tracking-[0.01em]"
-          style={{ color: accent }}
-        >
-          {currency && (
-            <span className="text-black/40 mr-1 align-[-0.05em]">
-              {currency}
-            </span>
-          )}
-          <span>{amount}</span>
-        </span>
+      <div
+        className={[
+          "w-full flex items-center gap-4 mb-4 md:mb-5",
+          hasPrice ? "justify-between" : "justify-center text-center",
+        ].join(" ")}
+      >
+        {" "}
+        <span className={`cap ${capClass} serif ${hasPrice ? "" : "mx-auto"}`}>
+          {badge}
+        </span>{" "}
+        {hasPrice && (
+          <span
+            className="price serif text-2xl md:text-3xl font-bold tracking-[0.01em]"
+            style={{ color: accent }}
+          >
+            {currency && (
+              <span className="text-black/40 mr-1 align-[-0.05em]">
+                {currency}
+              </span>
+            )}
+            <span>{amount}</span>
+          </span>
+        )}
       </div>
 
       {/* Bullets — add more top margin */}

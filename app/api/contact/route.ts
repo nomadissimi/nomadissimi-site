@@ -63,6 +63,8 @@ console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "SET" : "MISSING");
     `nomadissimi.com`,
 });
 
+
+
     return Response.json({ ok: true });
   } catch (err) {
     console.error("CONTACT EMAIL ERROR ❌", err);

@@ -9,7 +9,7 @@ export default function CheckoutButton({
 }: {
   priceId: string;
   plan: string;
-  label?: string;
+  label?: React.ReactNode;
   className?: string;
 }) {
   const [loading, setLoading] = useState(false);
