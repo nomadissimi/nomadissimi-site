@@ -1007,3 +1007,29 @@ animation: addonRaySweep 0.5s ease-out 1;}
 .btn-bundle-luxe.bundle-ray:hover .bundle-price-muted {
   color: rgba(255,255,255,.80);
 }
+
+/* — Subtle editorial section divider (Nomadissimi) — */
+.section-divider {
+  position: relative;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(201,168,106,0.45),
+    rgba(75,93,68,0.35),
+    rgba(201,168,106,0.45),
+    transparent
+  );
+  opacity: 0.55;
+}
+

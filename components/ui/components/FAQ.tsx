@@ -119,8 +119,8 @@ const faqs: QA[] = [
     q: "Can my spouse/partner and kids come?",
     a: (
       <>
-        Yes, family reunion is possible in certain cases. La dolce vita is even
-        sweeter when shared. Please note that the request for family
+        It depends, family reunion is possible in certain cases. La dolce vita
+        is even sweeter when shared, but please note that the request for family
         reunification is done once you have already become an Italian resident.
       </>
     ),
@@ -142,8 +142,7 @@ const faqs: QA[] = [
     q: "What’s your refund policy?",
     a: (
       <>
-        Because every Nomadissimi package is customized to your unique visa
-        path, all sales are final and non-refundable. We take pride in offering
+        All sales are final and non-refundable. We take pride in offering
         attentive, high-touch support from the moment you join us.
       </>
     ),
