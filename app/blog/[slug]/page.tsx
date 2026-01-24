@@ -4,15 +4,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostPage } from "@/lib/blog";
 
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
 export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata({ params }: PageProps) {
   const page = await getPostPage(params.slug);
   if (!page) return {};
   return {
