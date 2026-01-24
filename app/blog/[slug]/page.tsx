@@ -1,4 +1,11 @@
 // app/blog/[slug]/page.tsx
+
+type BlogPageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -14,21 +21,22 @@ export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps) {
-  const page = await getPostPage(params.slug);
+export async function generateMetadata({ params }: BlogPageProps) {
+  const { slug } = await params;
+
+  const page = await getPostPage(slug);
   if (!page) return {};
+
   return {
     title: `${page.meta.title} | Nomadissimi Journal`,
     description: page.meta.excerpt,
   };
 }
 
-export default async function BlogPostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const page = await getPostPage(params.slug);
+export default async function BlogPostPage({ params }: BlogPageProps) {
+  const { slug } = await params;
+
+  const page = await getPostPage(slug);
   if (!page) return notFound();
 
   const { meta, html } = page;

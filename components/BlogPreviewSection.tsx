@@ -1,8 +1,9 @@
 // components/BlogPreviewSection.tsx
-import BlogPreview from "@/components/BlogPreview";
+import BlogPreviewClient from "@/components/BlogPreviewClient";
 import { getAllPosts } from "@/lib/blog";
 
-export default function BlogPreviewSection() {
+export default async function BlogPreviewSection() {
   const posts = getAllPosts();
-  return <BlogPreview posts={posts} />;
+
+  return <BlogPreviewClient posts={posts} />;
 }

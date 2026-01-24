@@ -15,7 +15,7 @@ import BlogPreviewClient from "@/components/BlogPreviewClient";
 import type { BlogPostPreview } from "@/lib/blog-types";
 
 type Props = {
-  blogPosts: BlogPost[];
+  blogPosts: BlogPostPreview[];
 };
 
 export default function NomadissimiLanding({ blogPosts }: Props) {
