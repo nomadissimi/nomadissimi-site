@@ -161,7 +161,7 @@ export default function FAQ() {
           Frequently Asked Questions
         </h2>
         <p className="sans mt-2 text-[#2B2B2B]/70">
-          The essentials and more, answered.
+          The essentials and more, answered. Click on each question to expand.
         </p>
       </div>
 

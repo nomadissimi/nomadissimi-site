@@ -1,9 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 
 import type { Metadata } from "next";
-
-import Script from "next/script";
 
 import "./globals.css";
 import { Cormorant_Garamond, Inter } from "next/font/google";
@@ -41,8 +40,11 @@ export default function RootLayout({
         className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >
         {/* Permanent portal root for the mobile drawer */}
-        <div id="drawer-root" />
         {children}
+        <Script
+          src="https://f.convertkit.com/ckjs/ck.5.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

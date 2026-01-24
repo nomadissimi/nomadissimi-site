@@ -1033,3 +1033,251 @@ animation: addonRaySweep 0.5s ease-out 1;}
   opacity: 0.55;
 }
 
+/* --- Blog typography (Nomadissimi luxe) --- */
+@layer components {
+  .blog-prose {
+    /* body */
+    font-family: var(--font-sans);
+    font-size: 1.08rem;
+    line-height: 1.95;
+    color: rgba(43, 43, 43, 0.86);
+    max-width: 72ch;
+  }
+
+  /* Headings */
+  .blog-prose h1,
+  .blog-prose h2,
+  .blog-prose h3 {
+    font-family: var(--font-serif);
+    color: rgba(20, 20, 20, 0.96);
+    letter-spacing: 0.01em;
+  }
+
+  .blog-prose h1 {
+    font-size: clamp(2.1rem, 4vw, 3rem);
+    line-height: 1.08;
+    margin-top: 0.2rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .blog-prose h2 {
+    font-size: clamp(1.45rem, 2.2vw, 1.9rem);
+    line-height: 1.2;
+    margin-top: 2.2rem;
+    margin-bottom: 0.8rem;
+    padding-top: 0.2rem;
+    position: relative;
+  }
+
+  /* subtle divider above each H2 */
+  .blog-prose h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1.2rem;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(201, 168, 106, 0.55) 18%,
+      rgba(75, 93, 68, 0.55) 50%,
+      rgba(201, 168, 106, 0.55) 82%,
+      transparent
+    );
+    opacity: 0.6;
+  }
+
+  .blog-prose h3 {
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Paragraph + lists spacing */
+  .blog-prose p { margin: 0.9rem 0; }
+  .blog-prose ul, .blog-prose ol { margin: 0.9rem 0 1.2rem; padding-left: 1.2rem; }
+  .blog-prose li { margin: 0.5rem 0; }
+
+  /* Bold */
+  .blog-prose strong { color: rgba(20, 20, 20, 0.95); font-weight: 650; }
+
+  /* Links */
+  .blog-prose a {
+    color: rgba(75, 93, 68, 0.95);
+    text-decoration: underline;
+    text-decoration-color: rgba(201, 168, 106, 0.65);
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  }
+  .blog-prose a:hover {
+    color: rgba(62, 78, 56, 1);
+    text-decoration-color: rgba(201, 168, 106, 0.9);
+  }
+
+  /* Images inside blog content */
+  .blog-prose img {
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 18px 50px rgba(0,0,0,0.08);
+    margin: 1.2rem 0 1.6rem;
+  }
+
+  /* Captions (we'll use italic paragraph directly under image) */
+  .blog-prose .caption {
+    margin-top: -1.05rem;
+    margin-bottom: 1.6rem;
+    font-size: 0.95rem;
+    color: rgba(43,43,43,0.62);
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* Blockquotes for luxe callouts */
+  .blog-prose blockquote {
+    margin: 1.4rem 0;
+    padding: 1rem 1.1rem;
+    border-left: 3px solid rgba(201,168,106,0.7);
+    background: rgba(255, 249, 241, 0.75);
+    border-radius: 16px;
+    color: rgba(20, 20, 20, 0.88);
+  }
+
+  /* Inline code + code blocks */
+  .blog-prose code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.95em;
+    background: rgba(0,0,0,0.04);
+    padding: 0.12rem 0.35rem;
+    border-radius: 10px;
+  }
+  .blog-prose pre {
+    background: rgba(0,0,0,0.06);
+    padding: 1rem 1.1rem;
+    border-radius: 18px;
+    overflow: auto;
+    margin: 1.2rem 0 1.6rem;
+  }
+  .blog-prose pre code { background: transparent; padding: 0; }
+}
+
+@layer components {
+  /* Blog H2 couture divider */
+  .blog-prose h2 {
+    position: relative;
+    padding-top: 0.2rem;
+  }
+  .blog-prose h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1.2rem;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(201, 168, 106, 0.55) 18%,
+      rgba(75, 93, 68, 0.55) 50%,
+      rgba(201, 168, 106, 0.55) 82%,
+      transparent
+    );
+    opacity: 0.45;
+  }
+}
+
+@layer components {
+  /* Blog: luxe callout */
+  .nm-callout {
+    border: 1px solid rgba(201,168,106,.35);
+    background: linear-gradient(180deg, #FFFCF7 0%, #FFF6EB 100%);
+    box-shadow: 0 18px 44px rgba(75,93,68,.10), inset 0 1px 0 rgba(255,255,255,.85);
+    border-radius: 22px;
+    padding: 18px 18px;
+    margin: 22px 0;
+  }
+
+  .nm-callout-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: .02em;
+    color: #2B2B2B;
+    margin-bottom: 6px;
+  }
+
+  .nm-callout p {
+    margin: 0;
+    color: rgba(43,43,43,.78);
+  }
+
+  /* Blog: CTA block */
+  .nm-cta {
+    border: 1px solid rgba(75,93,68,.22);
+    background: radial-gradient(80% 80% at 50% 0%, rgba(201,168,106,.18), transparent 60%),
+                linear-gradient(180deg, #F9F5EE 0%, #EFE7DA 100%);
+    border-radius: 26px;
+    padding: 20px 18px;
+    margin: 28px 0;
+    text-align: center;
+    box-shadow: 0 18px 44px rgba(75,93,68,.10);
+  }
+
+  .nm-cta h3 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    letter-spacing: .01em;
+  }
+
+  .nm-cta p {
+    margin: 0 0 12px 0;
+    color: rgba(43,43,43,.75);
+  }
+
+  .nm-cta a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(201,168,106,.55);
+    background: #4B5D44;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 16px 40px rgba(75,93,68,.16);
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: .05em;
+  }
+
+  .nm-cta a:hover {
+    transform: translateY(-2px);
+    background: #3E4E38;
+    box-shadow: 0 22px 52px rgba(75,93,68,.22);
+  }
+
+  /* Blog: image + caption */
+  .nm-figure {
+    margin: 22px 0 28px;
+  }
+
+  .nm-figure img {
+    border-radius: 22px;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 18px 60px rgba(0,0,0,.08);
+  }
+
+  .nm-figure figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: .10em;
+    text-transform: uppercase;
+    color: rgba(43,43,43,.55);
+    text-align: center;
+    font-family: var(--font-sans);
+  }
+}
+
