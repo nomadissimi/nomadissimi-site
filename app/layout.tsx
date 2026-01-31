@@ -38,6 +38,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="086525e3-6bc3-4a7f-bff2-e99eb94fa83d"
+          data-blockingmode="auto"
+    type="text/javascript"
+    strategy="beforeInteractive"
+  />
+</head>
       <body
         className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >
@@ -47,8 +57,6 @@ export default function RootLayout({
           src="https://f.convertkit.com/ckjs/ck.5.js"
           strategy="afterInteractive"
         />
-        <AnalyticsGate />
-        <CookieBanner />
       </body>
     </html>
   );
