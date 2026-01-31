@@ -38,13 +38,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-<head>
-  <Script
-    src="https://plausible.io/js/script.js"
-    data-domain="nomadissimi.com"
-    strategy="afterInteractive"
-  />
-</head>
       <body
         className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >

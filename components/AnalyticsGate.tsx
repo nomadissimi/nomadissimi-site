@@ -20,26 +20,10 @@ export default function AnalyticsGate() {
 
   if (!allow) return null;
 
-  // Example: Google Analytics 4
-  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-
-  if (!GA_ID) return null;
-
   return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="ga4" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_ID}', { anonymize_ip: true });
-        `}
-      </Script>
-    </>
-  );
-}
-
+  <Script
+    src="https://plausible.io/js/script.js"
+    data-domain="nomadissimi.com"
+    strategy="afterInteractive"
+  />
+);
