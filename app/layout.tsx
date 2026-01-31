@@ -39,15 +39,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
+        <script
           id="cookiebot"
           src="https://consent.cookiebot.com/uc.js"
           data-cbid="086525e3-6bc3-4a7f-bff2-e99eb94fa83d"
           data-blockingmode="auto"
-    type="text/javascript"
-    strategy="beforeInteractive"
-  />
-</head>
+          type="text/javascript"
+          strategy="beforeInteractive"
+        ></script>
+      </head>
       <body
         className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >
