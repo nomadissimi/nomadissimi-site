@@ -45,7 +45,6 @@ export default function RootLayout({
           data-cbid="086525e3-6bc3-4a7f-bff2-e99eb94fa83d"
           data-blockingmode="auto"
           type="text/javascript"
-          strategy="beforeInteractive"
         ></script>
       </head>
       <body
