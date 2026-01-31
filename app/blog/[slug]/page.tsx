@@ -31,8 +31,10 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const page = await getPostPage(params.slug);
-  if (!page) return notFound();
+  const { slug } = params;
+
+  const page = await getPostPage(slug);
+  if (!page) notFound();
 
   const { meta, content } = page;
 
