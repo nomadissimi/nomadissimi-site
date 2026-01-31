@@ -28,25 +28,25 @@ export default function SiteNav() {
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8 lg:gap-12 text-[17px] font-serif tracking-wide">
           <a
-            href="#how"
+            href="/#how"
             className="hover:text-[#4B5D44] transition-colors duration-200"
           >
             Who We Are
           </a>
           <a
-            href="#packages"
+            href="/#packages"
             className="hover:text-[#4B5D44] transition-colors duration-200"
           >
             Visa Packages
           </a>
           <a
-            href="#settling"
+            href="/#settling"
             className="hover:text-[#4B5D44] transition-colors duration-200"
           >
             Settling in Italy
           </a>
           <a
-            href="#faq"
+            href="/#faq"
             className="hover:text-[#4B5D44] transition-colors duration-200 md:mr-2 lg:mr-0"
           >
             FAQ
@@ -60,7 +60,7 @@ export default function SiteNav() {
 
           {/* Free Guide — quiet couture */}
           <a
-            href="#guide"
+            href="/#guide"
             className="group serif relative hidden sm:inline-flex items-center justify-center
               px-4 py-2.5
               border border-[#C9A86A]/60
@@ -81,7 +81,7 @@ export default function SiteNav() {
 
           {/* Book (desktop → visa plans top) */}
           <a
-            href="#packages"
+            href="/#packages"
             className="hidden md:inline-flex serif items-center justify-center
               px-4 py-2.5
               border border-[#4B5D44]
@@ -96,7 +96,7 @@ export default function SiteNav() {
 
           {/* Book (mobile → Guidance card) */}
           <a
-            href="#guidance"
+            href="/#guidance"
             className="inline-flex md:hidden serif items-center justify-center
               px-4 py-2.5
               border border-[#4B5D44]

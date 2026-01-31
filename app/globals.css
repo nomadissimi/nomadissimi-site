@@ -1044,14 +1044,18 @@ animation: addonRaySweep 0.5s ease-out 1;}
     max-width: 72ch;
   }
 
-  /* Headings */
-  .blog-prose h1,
-  .blog-prose h2,
-  .blog-prose h3 {
-    font-family: var(--font-serif);
-    color: rgba(20, 20, 20, 0.96);
-    letter-spacing: 0.01em;
-  }
+/* Headings */
+.blog-prose h1,
+.blog-prose h2,
+.blog-prose h3 {
+  font-family: var(--font-serif);
+  color: #4B5D44; /* olive */
+  letter-spacing: 0.01em;
+}
+
+.blog-prose h2 {
+  font-weight: 600;
+}
 
   .blog-prose h1 {
     font-size: clamp(2.1rem, 4vw, 3rem);
@@ -1060,14 +1064,14 @@ animation: addonRaySweep 0.5s ease-out 1;}
     margin-bottom: 0.9rem;
   }
 
-  .blog-prose h2 {
-    font-size: clamp(1.45rem, 2.2vw, 1.9rem);
-    line-height: 1.2;
-    margin-top: 2.2rem;
-    margin-bottom: 0.8rem;
-    padding-top: 0.2rem;
-    position: relative;
-  }
+.blog-prose h2 {
+  font-size: clamp(1.65rem, 2.6vw, 2.15rem);
+  line-height: 1.25;
+  margin-top: 3rem;
+  margin-bottom: 1.1rem;
+  padding-top: 0.4rem;
+  position: relative;
+}
 
   /* subtle divider above each H2 */
   .blog-prose h2::before {
@@ -1280,4 +1284,20 @@ animation: addonRaySweep 0.5s ease-out 1;}
     font-family: var(--font-sans);
   }
 }
+
+.prose-reset {
+  all: revert;
+  font-family: inherit;
+}
+
+/* FORCE CTA title size inside blog prose */
+.blog-prose section.not-prose h2,
+  .blog-prose .not-prose h3 {
+    font-size: clamp(1.9rem, 3.2vw, 2.3rem);
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #4B5D44;
+    margin-bottom: 0.4rem;
+  }
 

@@ -1559,7 +1559,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
                 <p className="serif text-xl font-semibold">
-                  © 2025 Nomadissimi — All rights reserved.
+                  © 2026 Nomadissimi — All rights reserved.
                 </p>
                 <p className="sans text-white/80 text-sm">
                   Unauthorized use or reproduction is strictly prohibited.
@@ -1615,6 +1615,13 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 </a>
               </nav>
             </div>
+            <button
+  type="button"
+  className="underline underline-offset-4 hover:text-[#4B5D44] transition"
+  onClick={() => window.__openCookiePrefs?.()}
+>
+  Cookie Preferences
+</button> 
           </div>
         </footer>
       </div>

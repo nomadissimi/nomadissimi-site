@@ -4,6 +4,9 @@ import Script from "next/script";
 
 import type { Metadata } from "next";
 
+import CookieBanner from "@/components/CookieBanner";
+import AnalyticsGate from "@/components/AnalyticsGate";
+
 import "./globals.css";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 
@@ -35,16 +38,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>{/* Cookiebot script… */}</head>
+  <head />
       <body
         className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >
+        <Script
+  src="https://plausible.io/js/script.js"
+  data-domain="nomadissimi.com"
+  strategy="afterInteractive"
+/>
         {/* Permanent portal root for the mobile drawer */}
         {children}
         <Script
           src="https://f.convertkit.com/ckjs/ck.5.js"
           strategy="afterInteractive"
         />
+        <AnalyticsGate />
+        <CookieBanner />
       </body>
     </html>
   );

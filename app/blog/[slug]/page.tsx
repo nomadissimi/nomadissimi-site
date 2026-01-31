@@ -1,30 +1,27 @@
 // app/blog/[slug]/page.tsx
 
-type BlogPageProps = {
-  params: Promise<{
-    slug: string;
-  }>;
-};
-
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllPosts, getPostPage } from "@/lib/blog";
+import CTA from "@/components/blog/CTA";
+import ConsultCTA from "@/components/blog/ConsultCTA";
 
-interface PageProps {
+type Props = {
   params: {
     slug: string;
   };
-}
+};
 
 export async function generateStaticParams() {
-  return getAllPosts().map((post) => ({ slug: post.slug }));
+  return getAllPosts().map((post) => ({
+    slug: post.slug,
+  }));
 }
 
-export async function generateMetadata({ params }: BlogPageProps) {
-  const { slug } = await params;
-
-  const page = await getPostPage(slug);
+export async function generateMetadata({ params }: Props) {
+  const page = await getPostPage(params.slug);
   if (!page) return {};
 
   return {
@@ -33,13 +30,11 @@ export async function generateMetadata({ params }: BlogPageProps) {
   };
 }
 
-export default async function BlogPostPage({ params }: BlogPageProps) {
-  const { slug } = await params;
-
-  const page = await getPostPage(slug);
+export default async function BlogPostPage({ params }: Props) {
+  const page = await getPostPage(params.slug);
   if (!page) return notFound();
 
-  const { meta, html } = page;
+  const { meta, content } = page;
 
   return (
     <div className="bg-[#FFFCF7]">
@@ -81,32 +76,15 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           )}
         </header>
 
-        <article
-          className="
-    blog-prose prose prose-neutral max-w-none mt-10
-    prose-p:leading-[1.95]
-    prose-headings:font-semibold 
-prose-headings:tracking-[0.01em]
-prose-h2:!text-[#4B5D45]
-prose-h3:!text-[#4B5D45]
-prose-h2:mt-14
-prose-h2:mb-4
-prose-h3:mt-10
-prose-h3:mb-3
-    prose-h1:serif prose-h1:text-[clamp(2.1rem,4vw,3rem)] prose-h1:leading-[1.08]
-    prose-h2:serif prose-h2:text-[clamp(1.45rem,2.2vw,1.9rem)] prose-h2:leading-[1.2]
-    prose-h3:serif
-    prose-a:text-[#4B5D44] prose-a:underline prose-a:underline-offset-[3px]
-    prose-a:decoration-[#C9A86A]/60 hover:prose-a:decoration-[#C9A86A]/90
-    prose-img:rounded-[18px] prose-img:border prose-img:border-black/10
-    prose-img:shadow-[0_18px_50px_rgba(0,0,0,0.08)]
-    prose-blockquote:not-italic prose-blockquote:rounded-2xl
-    prose-blockquote:border-l-[#C9A86A]/70
-    prose-blockquote:bg-[#FFF9F1]/70
-    prose-code:rounded-xl prose-code:bg-black/[0.04] prose-code:px-2 prose-code:py-0.5
-  "
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <article className="blog-prose prose max-w-none mt-10">
+          <MDXRemote
+            source={content}
+            components={{
+              CTA,
+              ConsultCTA,
+            }}
+          />
+        </article>
       </main>
     </div>
   );

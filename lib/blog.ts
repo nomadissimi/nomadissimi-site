@@ -1,17 +1,9 @@
 // lib/blog.ts
 import "server-only";
-
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
-import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkGfm from "remark-gfm";
-import remarkRehype from "remark-rehype";
-import rehypeSanitize from "rehype-sanitize";
-import rehypeStringify from "rehype-stringify";
-
 import type { BlogPostPreview } from "./blog-types";
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
@@ -28,10 +20,12 @@ export function getAllPosts(): BlogPostPreview[] {
   // ✅ prevent ENOENT if folder doesn't exist yet
   if (!fs.existsSync(BLOG_DIR)) return [];
 
-  const files = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith(".md"));
-
+const files = fs
+  .readdirSync(BLOG_DIR)
+  .filter((f) => f.endsWith(".md") || f.endsWith(".mdx"));
+  
   const posts: BlogPostPreview[] = files.map((filename) => {
-    const slug = filename.replace(/\.md$/, "");
+const slug = filename.replace(/\.mdx?$/, "");
     const fullPath = path.join(BLOG_DIR, filename);
     const raw = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(raw);
@@ -60,44 +54,29 @@ export function getAllPosts(): BlogPostPreview[] {
   return posts;
 }
 
-export async function renderMarkdownToHtml(markdown: string) {
-  const file = await unified()
-    .use(remarkParse)
-    .use(remarkGfm)
-    .use(remarkRehype)
-    .use(rehypeSanitize)
-    .use(rehypeStringify)
-    .process(markdown);
-
-  return String(file);
-}
 
 export async function getPostPage(slug: string) {
-  const fullPath = path.join(BLOG_DIR, `${slug}.md`);
+  const fullPath = path.join(BLOG_DIR, `${slug}.mdx`);
   if (!fs.existsSync(fullPath)) return null;
 
   const raw = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(raw);
   const fm = data as Partial<BlogFrontmatter>;
 
-  if (!fm.title || !fm.date || !fm.excerpt) {
-    throw new Error(
-      `Missing required frontmatter in ${slug}.md. Required: title, date, excerpt.`
-    );
-  }
-
   const rt = readingTime(content);
 
-  const meta: BlogPostPreview = {
-    slug,
-    title: fm.title,
-    date: fm.date,
-    excerpt: fm.excerpt,
-    cover: fm.cover,
-    tags: fm.tags ?? [],
-    readingMinutes: Math.max(1, Math.round(rt.minutes)),
+  return {
+    meta: {
+      slug,
+      title: fm.title!,
+      date: fm.date!,
+      excerpt: fm.excerpt!,
+      cover: fm.cover,
+      tags: fm.tags ?? [],
+      readingMinutes: Math.max(1, Math.round(rt.minutes)),
+    },
+    content, // 👈 raw MDX
   };
-
-  const html = await renderMarkdownToHtml(content);
-  return { meta, html };
 }
+
+  
