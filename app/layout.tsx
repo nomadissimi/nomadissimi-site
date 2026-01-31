@@ -38,15 +38,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-  <head />
+<head>
+  <Script
+    src="https://plausible.io/js/script.js"
+    data-domain="nomadissimi.com"
+    strategy="afterInteractive"
+  />
+</head>
       <body
         className={`${serif.variable} ${sans.variable} subpixel-antialiased`}
       >
-        <Script
-  src="https://plausible.io/js/script.js"
-  data-domain="nomadissimi.com"
-  strategy="afterInteractive"
-/>
         {/* Permanent portal root for the mobile drawer */}
         {children}
         <Script
