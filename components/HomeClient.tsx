@@ -1398,30 +1398,30 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           </div>
         </section>
 
-        {/* ——— Subtle gold shimmer (tighter) ——— */}
-        <div className="flex justify-center mt-6 mb-3 md:mt-8 md:mb-4">
-          {" "}
-          <div className="relative">
-            <div className="w-24 h-[3px] bg-gradient-to-r from-[#C9A86A] via-[#E6D8B9] to-[#C9A86A] rounded-full overflow-hidden">
-              <div className="absolute inset-0 shimmer" />
-            </div>
-          </div>
-        </div>
-
         {/* Blog preview section */}
         <section
           id="blog"
-          className="scroll-mt-28 md:scroll-mt-36 pt-2 md:pt-2 pb-6 md:pb-16"
+          className="
+    scroll-mt-[96px] md:scroll-mt-[112px]
+    pt-6 md:pt-8
+    pb-8 md:pb-12
+  "
         >
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <BlogPreviewClient posts={blogPosts} />
           </div>
         </section>
 
-        {/* rest of your page */}
+        {/* Divider before FAQ */}
+        <div className="flex justify-center my-2">
+          <div className="relative w-24 h-[2px] rounded-full bg-gradient-to-r from-[#C9A86A] via-[#E6D8B9] to-[#C9A86A] overflow-hidden">
+            <div className="absolute inset-0 shimmer" />
+          </div>
+        </div>
+
         {/* --- FAQ --- */}
-        <div className="-mt-2 md:-mt-4 [&_h2]:mt-0 [&_section]:pt-0">
-          <section id="faq" className="scroll-mt-24 pt-6 md:pt-8">
+        <div className="relative">
+          <section id="faq" className="scroll-mt-24 pt-2">
             <FAQ />
           </section>
         </div>
@@ -1616,12 +1616,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               </nav>
             </div>
             <button
-  type="button"
-  className="underline underline-offset-4 hover:text-[#4B5D44] transition"
-  onClick={() => window.__openCookiePrefs?.()}
->
-  Cookie Preferences
-</button> 
+              type="button"
+              className="underline underline-offset-4 hover:text-[#4B5D44] transition"
+              onClick={() => window.__openCookiePrefs?.()}
+            >
+              Cookie Preferences
+            </button>
           </div>
         </footer>
       </div>

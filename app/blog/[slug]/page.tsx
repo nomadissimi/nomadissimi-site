@@ -8,21 +8,25 @@ import { getAllPosts, getPostPage } from "@/lib/blog";
 import CTA from "@/components/blog/CTA";
 import ConsultCTA from "@/components/blog/ConsultCTA";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
-
 export async function generateStaticParams() {
   return getAllPosts().map((post) => ({
     slug: post.slug,
   }));
 }
 
-export async function generateMetadata({ params }: Props) {
-  const page = await getPostPage(params.slug);
-  if (!page) return {};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const page = await getPostPage(slug);
+
+  if (!page) {
+    return {
+      title: "Nomadissimi Journal",
+    };
+  }
 
   return {
     title: `${page.meta.title} | Nomadissimi Journal`,
@@ -30,9 +34,12 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-export default async function BlogPostPage({ params }: Props) {
-  const { slug } = params;
-
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   const page = await getPostPage(slug);
   if (!page) notFound();
 
