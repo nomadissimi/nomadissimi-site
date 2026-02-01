@@ -56,6 +56,7 @@ export default function RootLayout({
           src="https://f.convertkit.com/ckjs/ck.5.js"
           strategy="afterInteractive"
         />
+        <AnalyticsGate />
       </body>
     </html>
   );
