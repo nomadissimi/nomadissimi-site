@@ -218,7 +218,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 </p>
 
                 <h1 className="serif text-4xl md:text-5xl xl:text-6xl leading-[1.1] font-semibold tracking-[0.01em]">
-                  Escape the chaos. Move to Italy without the headaches.
+                  Move to Italy without the headaches and expensive lawyers.
                 </h1>
 
                 <p className="sans mt-4 text-lg/7 text-[#2B2B2B]/80">
@@ -275,7 +275,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="Clear checklists"
-                    desc="What you need, in your language."
+                    desc="What you need, HOW to get it, and what others don't tell you."
                   />
 
                   <Feature
@@ -289,7 +289,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="More than the visa"
-                    desc="Insider tips and add-ons to settle in Italy like a pro."
+                    desc="Insider tips and add-ons to settle in Italy like a pro: from taxes to daily life."
                   />
 
                   <Feature
@@ -913,18 +913,25 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   accent="#4B5D44"
                   bullets={[
                     <>
-                      <strong>Personalized document checklist</strong> +
-                      detailed explanations
+                      <strong>
+                        The Nomadissimi Digital Nomad Visa Master Guide:{" "}
+                      </strong>
+                      our best-selling comprehensive manual covering
+                      eligibility, documents (and how to obtain them), consulate
+                      expectations, and what each step of the process actually
+                      looks like in real life. This is our 60+ page, long-form
+                      instructional manual, not an ambiguous quick doc.
                     </>,
                     <>
-                      <strong>30 days</strong> of follow-up email support for
-                      quick clarifications
+                      <strong>Clear document roadmap</strong> to keep you on
+                      track with everything you need.
                     </>,
+
                     <>
                       <strong>"Next Steps"</strong> Playbook
                     </>,
                   ]}
-                  bestFor="For independent nomads who want a clear, structured start"
+                  bestFor="For independent nomads who want a clear start."
                 >
                   <CheckoutButton
                     plan="Clarity"
@@ -944,12 +951,16 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           </span>
 
                           <span className="sans tabular-nums text-[20px] md:text-[21px] font-semibold text-white leading-none">
-                            297
+                            99
                           </span>
 
                           <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
                             + VAT
                           </span>
+                        </span>
+                        {/* Line 3 — anchor price */}
+                        <span className="text-s text-white/50 mt-[3px]">
+                          instead of €199
                         </span>
                       </span>
                     }
@@ -964,28 +975,44 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   featured
                   bullets={[
                     <>
-                      <strong>📞 45-min strategy consultation call</strong>{" "}
-                      (eligibility, requirements, documents)
+                      <strong>
+                        📞 45-min personalized strategy consultation call
+                      </strong>{" "}
+                      with our team
                     </>,
                     <>
-                      <strong>Personalized document checklist</strong> with
-                      clear explanations
+                      <strong>Professional document review</strong>
                     </>,
                     <>
-                      <strong>Professional document review</strong> with
-                      feedback
+                      <strong>
+                        The Nomadissimi Digital Nomad Visa Master Guide:{" "}
+                      </strong>
+                      our best-selling comprehensive manual covering
+                      eligibility, documents (and how to obtain them), consulate
+                      expectations, and what each step of the process actually
+                      looks like in real life. This is our 60+ page, long-form
+                      instructional manual, not an ambiguous quick doc.
                     </>,
                     <>
-                      <strong>60 days</strong> of follow-up email support
+                      <strong>Clear document roadmap</strong> to keep you on
+                      track with everything you need.
+                    </>,
+
+                    <>
+                      <strong>30 days</strong> of follow-up email support for
+                      quick clarifications
                     </>,
                     <>
                       <strong>"Next Steps"</strong> Playbook
                     </>,
                     <>
-                      <strong>10% off</strong> Residence Registration add-on
+                      <strong>
+                        10% off our Residence Registration add-on,
+                      </strong>{" "}
+                      for a smooth landing after your visa is granted.
                     </>,
                   ]}
-                  bestFor="Applicants who want reassurance and professional oversight."
+                  bestFor="Applicants who want reassurance and structure."
                 >
                   <CheckoutButton
                     plan="Guidance"
@@ -1005,12 +1032,16 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           </span>
 
                           <span className="sans tabular-nums text-[20px] md:text-[21px] font-semibold text-white leading-none">
-                            697
+                            399
                           </span>
 
                           <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
                             + VAT
                           </span>
+                        </span>
+                        {/* Line 3 — anchor price */}
+                        <span className="text-s text-white/50 mt-[3px]">
+                          instead of €599
                         </span>
                       </span>
                     }
@@ -1025,17 +1056,14 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   bullets={[
                     <>
                       <strong>
-                        📞 45-min deep-dive strategy consultation call
+                        📞 45-min deep-dive personalized strategy consultation
+                        call
                       </strong>{" "}
-                      (eligibility, requirements, docs)
-                    </>,
-                    <>
-                      <strong>Personalized document checklist</strong> +
-                      detailed explanations
+                      with our team
                     </>,
                     <>
                       <strong>Comprehensive document review</strong> with
-                      feedback
+                      detailed feedback
                     </>,
                     <>
                       <strong>📞 Additional 45-min refinement call</strong> +
@@ -1043,8 +1071,23 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       your consulate appointment
                     </>,
                     <>
-                      <strong>90 days</strong> of follow-up email support &{" "}
-                      <strong>PRIORITY</strong> response
+                      <strong>
+                        The Nomadissimi Digital Nomad Visa Master Guide:{" "}
+                      </strong>
+                      our best-selling comprehensive manual covering
+                      eligibility, documents (and how to obtain them), consulate
+                      expectations, and what each step of the process actually
+                      looks like in real life. This is our 60+ page, long-form
+                      instructional manual, not an ambiguous quick doc.
+                    </>,
+                    <>
+                      <strong>Clear document roadmap</strong> to keep you on
+                      track with everything you need.
+                    </>,
+
+                    <>
+                      <strong>60 days</strong> of follow-up email support from
+                      our team & <strong>PRIORITY</strong> response
                     </>,
                     <>
                       <strong>Codice Fiscale</strong> breakdown
@@ -1053,10 +1096,13 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       <strong>"Next Steps"</strong> Playbook
                     </>,
                     <>
-                      <strong>15% off</strong> our Residence Registration add-on
+                      <strong>
+                        15% off our Residence Registration add-on,
+                      </strong>{" "}
+                      for a smooth landing after your visa is granted.
                     </>,
                   ]}
-                  bestFor="Nomads who want a trusted partner at every step and a more detailed help."
+                  bestFor="Nomads who want a trusted partner at detailed professional oversight."
                 >
                   <CheckoutButton
                     plan="Concierge"
@@ -1076,12 +1122,16 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           </span>
 
                           <span className="sans tabular-nums text-[20px] md:text-[21px] font-semibold text-white leading-none">
-                            997
+                            699
                           </span>
 
                           <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
                             + VAT
                           </span>
+                        </span>
+                        {/* Line 3 — anchor price */}
+                        <span className="text-s text-white/50 mt-[3px]">
+                          instead of €999
                         </span>
                       </span>
                     }
@@ -1171,6 +1221,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     another essential)
                   </>,
                   <>
+                    <strong>Codice Fiscale</strong> guidance
+                  </>,
+                  <>
                     <strong>Email support</strong> for 30 days
                   </>,
                 ]}
@@ -1183,7 +1236,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       label={
                         <AddonCtaLabel
                           title="Get Your Residence"
-                          amount="297"
+                          amount="299"
+                          oldPrice="499"
                         />
                       }
                     />
@@ -1239,7 +1293,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       priceId={process.env.NEXT_PUBLIC_PRICE_PARTITA!}
                       className="addon-cta"
                       label={
-                        <AddonCtaLabel title="Discover Tax Path" amount="197" />
+                        <AddonCtaLabel
+                          title="Discover Tax Path"
+                          amount="299"
+                          oldPrice="499"
+                        />
                       }
                     />
                   </div>
@@ -1284,9 +1342,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     our local team: north/center/south, cities vs. coast, and
                     how each region shapes your lifestyle
                   </>,
-                  <>
-                    <strong>Email support</strong> for 30 days
-                  </>,
                 ]}
                 footer={
                   <div className="text-center mt-8">
@@ -1297,7 +1352,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       label={
                         <AddonCtaLabel
                           title="Settle in Smoothly"
-                          amount="147"
+                          amount="199"
+                          oldPrice="399"
                         />
                       }
                     />
@@ -1335,7 +1391,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                 {/* Amount — readable, not serif */}
                 <span className="sans tabular-nums font-semibold text-[22px] md:text-[24px] leading-none text-white">
-                  547
+                  699
                 </span>
 
                 {/* VAT — clearer but secondary */}
@@ -1347,7 +1403,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             <p className="price-subtext">
               Get all 3 add-ons together <br />
               <span className="text-[#4B5D44] font-medium">
-                (valued at €641)
+                (valued at €1,397)
               </span>
             </p>
           </div>
@@ -1651,19 +1707,28 @@ type CheckoutButtonProps = {
 function AddonCtaLabel({
   title,
   amount,
+  oldPrice,
 }: {
   title: string;
-  amount: string; // "297", "197", "97"
+  amount: string;
+  oldPrice?: string;
 }) {
   return (
     <span className="flex flex-col items-center">
+      {/* Title */}
       <span className="addon-cta-title">{title}</span>
 
+      {/* Price row */}
       <span className="addon-cta-priceRow">
         <span className="addon-cta-euro">€</span>
         <span className="addon-cta-amount">{amount}</span>
         <span className="addon-cta-vat">+ VAT</span>
       </span>
+
+      {/* Anchor price (NEW LINE) */}
+      {oldPrice && (
+        <span className="addon-cta-anchor">Regularly €{oldPrice}</span>
+      )}
     </span>
   );
 }
@@ -1716,10 +1781,10 @@ function CalloutIcon({
     name === "piggy"
       ? "/icons/piggy.svg"
       : name === "healthcare"
-      ? "/icons/healthcare.svg"
-      : name === "realingredients"
-      ? "/icons/realingredients.svg"
-      : "/icons/schengen.svg";
+        ? "/icons/healthcare.svg"
+        : name === "realingredients"
+          ? "/icons/realingredients.svg"
+          : "/icons/schengen.svg";
 
   return (
     <span
@@ -1902,8 +1967,8 @@ function PackageCard({
     accent === "#4B5D44"
       ? "cap-olive"
       : accent === "#D97B4E"
-      ? "cap-peach"
-      : "cap-gold";
+        ? "cap-peach"
+        : "cap-gold";
 
   // split currency so we can gray-out the symbol
   const hasPrice = typeof price === "string" && price.length > 0;

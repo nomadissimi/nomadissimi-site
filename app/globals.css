@@ -1301,3 +1301,11 @@ animation: addonRaySweep 0.5s ease-out 1;}
     margin-bottom: 0.4rem;
   }
 
+
+.addon-cta-anchor {
+  margin-top: 3px;
+  font-size: 13px;
+  opacity: 0.5;
+  letter-spacing: 0.04em;
+}
+
