@@ -1,52 +1,60 @@
 "use client";
+
 import { useState } from "react";
+
+type Props = {
+  priceId: string;
+  plan?: string;
+  className?: string;
+  label: React.ReactNode;
+};
 
 export default function CheckoutButton({
   priceId,
   plan,
-  label = "Choose Guidance",
-  className = "",
-}: {
-  priceId: string;
-  plan: string;
-  label?: React.ReactNode;
-  className?: string;
-}) {
+  className,
+  label,
+}: Props) {
   const [loading, setLoading] = useState(false);
 
-  async function handleClick() {
+  const onClick = async () => {
     try {
       setLoading(true);
+
       const res = await fetch("/api/checkout", {
         method: "POST",
-        headers: { "content-type": "application/json" }, // important
+        headers: { "content-type": "application/json" },
         body: JSON.stringify({ priceId, plan }),
       });
 
-      // Try to read JSON even on non-200
-      const data = await res.json().catch(() => ({} as any));
+      const data: { url?: string; error?: string } = await res.json();
 
-      if (!res.ok || !data?.url) {
-        // surface the real reason
-        throw new Error(data?.error || `HTTP ${res.status}`);
+      if (!res.ok || !data.url) {
+        throw new Error(data?.error || "Checkout failed");
       }
 
-      window.location.href = data.url as string;
-    } catch (err: any) {
-      console.error("Checkout start failed:", err);
-      alert(err?.message || "Could not start checkout.");
-    } finally {
+      // ✅ Stripe-approved redirect in 2026
+      window.location.href = data.url;
+    } catch (e: any) {
+      alert(e?.message || "Something went wrong");
       setLoading(false);
     }
-  }
+  };
 
   return (
     <button
-      onClick={handleClick}
+      type="button"
+      onClick={onClick}
       disabled={loading}
-      className={`btn w-full ${className}`}
+      className={className}
     >
-      {loading ? "Redirecting…" : label}
+      {loading ? (
+        <span className="serif text-[18px] md:text-[24px] font-medium tracking-[0.04em]">
+          Redirecting…
+        </span>
+      ) : (
+        label
+      )}
     </button>
   );
 }

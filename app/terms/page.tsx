@@ -177,7 +177,7 @@ export default function TermsPage() {
         <section className="section-divider">
           <h2 className="serif text-xl font-semibold mb-3">8. Refund Policy</h2>
           <p>
-            Due to the custom and advisory nature of our services, all sales are
+            Due to the special advisory nature of our services, all sales are
             final.
           </p>
           <p className="mt-3">

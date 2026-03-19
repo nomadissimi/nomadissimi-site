@@ -20,7 +20,7 @@ export default function CancelPage() {
             Back to packages
           </Link>
           <Link href="/#book" className="btn btn-outline">
-            Book a call
+            Homepage
           </Link>
         </div>
       </div>

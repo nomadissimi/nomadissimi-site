@@ -1366,40 +1366,41 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
           {/* The big welcome to italy bundle button */}
           <div className="flex flex-col items-center mt-8">
-            <button className="btn-bundle-luxe bundle-ray group relative overflow-hidden">
-              {" "}
-              <Image
-                src="/icongift.png"
-                alt="Gift Icon"
-                width={36} // increased size for better harmony
-                height={36}
-                className="h-9 w-9 md:h-10 md:w-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]"
-                priority
-              />
-              {/* Title */}
-              <span className="serif font-semibold tracking-[0.03em] text-white/95">
-                “Welcome to Italy”
-              </span>
-              {/* dot Separator */}
-              <span className="mx-3 opacity-35">•</span>
-              {/* Price group */}
-              <span className="flex items-baseline gap-1.5">
-                {/* Euro */}
-                <span className="sans tabular-nums text-[15px] text-white/70">
-                  €
-                </span>
+         
+         <CheckoutButton
+  plan="Welcome Bundle"
+  priceId={process.env.NEXT_PUBLIC_PRICE_BUNDLE!}
+  className="btn-bundle-luxe bundle-ray group relative overflow-hidden flex items-center justify-center gap-4"
+  label={
+    <span className="flex items-center justify-center gap-4 w-full">
+      <Image
+        src="/icongift.png"
+        alt="Gift Icon"
+        width={36}
+        height={36}
+        className="h-9 w-9 md:h-10 md:w-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]"
+        priority
+      />
 
-                {/* Amount — readable, not serif */}
-                <span className="sans tabular-nums font-semibold text-[22px] md:text-[24px] leading-none text-white">
-                  699
-                </span>
+      <span className="serif font-semibold tracking-[0.03em] text-white/95">
+        “Welcome to Italy”
+      </span>
 
-                {/* VAT — clearer but secondary */}
-                <span className="ml-1 sans text-[13px] tracking-[0.12em] uppercase text-white/75">
-                  + VAT
-                </span>
-              </span>
-            </button>
+      <span className="mx-3 opacity-35">•</span>
+
+      <span className="flex items-baseline gap-1.5">
+        <span className="sans tabular-nums text-[15px] text-white/70">€</span>
+        <span className="sans tabular-nums font-semibold text-[22px] md:text-[24px] leading-none text-white">
+          699
+        </span>
+        <span className="ml-1 sans text-[13px] tracking-[0.12em] uppercase text-white/75">
+          + VAT
+        </span>
+      </span>
+    </span>
+  }
+/>
+
             <p className="price-subtext">
               Get all 3 add-ons together <br />
               <span className="text-[#4B5D44] font-medium">
@@ -1710,25 +1711,22 @@ function AddonCtaLabel({
   oldPrice,
 }: {
   title: string;
-  amount: string;
-  oldPrice?: string;
+  amount: string; // "299", "199"
+  oldPrice?: string; // "499", "399"
 }) {
   return (
     <span className="flex flex-col items-center">
-      {/* Title */}
       <span className="addon-cta-title">{title}</span>
 
-      {/* Price row */}
       <span className="addon-cta-priceRow">
         <span className="addon-cta-euro">€</span>
         <span className="addon-cta-amount">{amount}</span>
         <span className="addon-cta-vat">+ VAT</span>
       </span>
 
-      {/* Anchor price (NEW LINE) */}
-      {oldPrice && (
-        <span className="addon-cta-anchor">Regularly €{oldPrice}</span>
-      )}
+      {oldPrice ? (
+        <span className="addon-cta-oldPrice">Regularly €{oldPrice}</span>
+      ) : null}
     </span>
   );
 }
