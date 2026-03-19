@@ -27,6 +27,8 @@ export async function POST(req: Request) {
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
+      automatic_tax: { enabled: true },
+tax_id_collection: { enabled: true }, // optional but recommended for B2B EU buyers
       line_items: [{ price: priceId, quantity: 1 }],
 
       // Optional metadata (shows in Stripe dashboard)
