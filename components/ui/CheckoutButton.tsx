@@ -21,6 +21,8 @@ export default function CheckoutButton({
     try {
       setLoading(true);
 
+      console.log("[CheckoutButton click]", { plan, priceId });
+
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "content-type": "application/json" },
