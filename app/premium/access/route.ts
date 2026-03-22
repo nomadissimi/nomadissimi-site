@@ -13,7 +13,7 @@ export async function GET(req: Request) {
     return NextResponse.redirect(new URL("/checkout/cancel", req.url));
   }
 
-  const tokenHash = sha256(token + process.env.MAGICLINK_SECRET!);
+const tokenHash = token;
 
   const { data: magicLink, error: magicLinkError } = await supabaseAdmin
     .from("magic_links")
