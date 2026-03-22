@@ -52,18 +52,32 @@ export async function POST(req: Request) {
     const expiresAt = new Date();
     expiresAt.setFullYear(expiresAt.getFullYear() + 1);
 
-    const { data: entitlement, error: entitlementError } = await supabaseAdmin
-      .from("entitlements")
-      .insert({
-        email: email.toLowerCase(),
-        product,
-        expires_at: expiresAt.toISOString(),
-        stripe_customer_id:
-          typeof session.customer === "string" ? session.customer : null,
-        stripe_checkout_session_id: session.id,
-      })
-      .select()
-      .single();
+  const { data: existingEntitlement } = await supabaseAdmin
+  .from("entitlements")
+  .select("id")
+  .eq("stripe_checkout_session_id", session.id)
+  .maybeSingle();
+
+let entitlement = existingEntitlement;
+let entitlementError = null;
+
+if (!existingEntitlement) {
+  const inserted = await supabaseAdmin
+    .from("entitlements")
+    .insert({
+      email: email.toLowerCase(),
+      product,
+      expires_at: expiresAt.toISOString(),
+      stripe_customer_id:
+        typeof session.customer === "string" ? session.customer : null,
+      stripe_checkout_session_id: session.id,
+    })
+    .select()
+    .single();
+
+  entitlement = inserted.data;
+  entitlementError = inserted.error;
+}
 
     if (entitlementError || !entitlement) {
       return NextResponse.json(
