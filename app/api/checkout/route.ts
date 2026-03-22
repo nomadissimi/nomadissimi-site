@@ -26,13 +26,11 @@ export async function POST(req: Request) {
       "https://www.nomadissimi.com";
 
     const session = await stripe.checkout.sessions.create({
+      metadata: plan ? { product: plan } : {},
       mode: "payment",
       automatic_tax: { enabled: true },
 tax_id_collection: { enabled: true }, // optional but recommended for B2B EU buyers
       line_items: [{ price: priceId, quantity: 1 }],
-
-      // Optional metadata (shows in Stripe dashboard)
-      metadata: plan ? { plan } : undefined,
 
       success_url: `${siteUrl}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/checkout/cancel`,
@@ -57,3 +55,4 @@ tax_id_collection: { enabled: true }, // optional but recommended for B2B EU buy
     );
   }
 }
+
