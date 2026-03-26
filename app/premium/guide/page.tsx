@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { sha256 } from "@/lib/crypto";
+import { getVisaGuideChapters } from "@/lib/guide";
 
 export default async function PremiumGuidePage() {
   const cookieStore = await cookies();
@@ -19,11 +21,7 @@ export default async function PremiumGuidePage() {
     .eq("session_hash", sessionHash)
     .single();
 
-  if (!session) {
-    redirect("/checkout/cancel");
-  }
-
-  if (session.revoked_at) {
+  if (!session || session.revoked_at) {
     redirect("/checkout/cancel");
   }
 
@@ -37,11 +35,7 @@ export default async function PremiumGuidePage() {
     .eq("id", session.entitlement_id)
     .single();
 
-  if (!entitlement) {
-    redirect("/checkout/cancel");
-  }
-
-  if (entitlement.revoked_at) {
+  if (!entitlement || entitlement.revoked_at) {
     redirect("/checkout/cancel");
   }
 
@@ -49,25 +43,50 @@ export default async function PremiumGuidePage() {
     redirect("/checkout/cancel");
   }
 
+  const chapters = getVisaGuideChapters();
+
   return (
-    <main className="min-h-screen bg-[#FBF8F2] px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-4xl rounded-[28px] border border-black/10 bg-white/70 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
-        <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
-          Private access
-        </p>
+    <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
+        <div className="overflow-hidden rounded-[32px] border border-black/10 bg-white/70 shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
+          <div className="h-[3px] w-full bg-gradient-to-r from-transparent via-[#C9A86A]/70 to-transparent" />
 
-        <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black">
-          Nomadissimi Premium Guide
-        </h1>
+          <div className="px-6 py-8 md:px-10 md:py-10">
+            <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
+              Private access
+            </p>
 
-        <p className="sans mt-4 text-[16px] leading-[1.8] text-black/65">
-          You’re in. This is your protected guide area.
-        </p>
+            <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
+              The Nomadissimi Digital Nomad Visa Master Guide
+            </h1>
 
-        <div className="mt-8 rounded-2xl border border-black/10 bg-[#FBF8F2] px-5 py-4">
-          <p className="sans text-[15px] leading-[1.8] text-black/70">
-            We’ll replace this placeholder with your actual guide content next.
-          </p>
+            <p className="sans mt-4 max-w-3xl text-[16px] md:text-[17px] leading-[1.85] text-black/65">
+              Your private guide portal. Open any chapter below to continue
+              reading.
+            </p>
+
+            <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {chapters.map((chapter, index) => (
+                <Link
+                  key={chapter.slug}
+                  href={`/premium/guide/${chapter.slug}`}
+                  className="group rounded-[24px] border border-black/10 bg-[#FFFCF7] p-5 shadow-[0_14px_40px_rgba(0,0,0,0.04)] transition hover:-translate-y-[2px] hover:bg-white"
+                >
+                  <p className="sans text-[11px] uppercase tracking-[0.18em] text-black/45">
+                    Chapter {index + 1}
+                  </p>
+
+                  <h2 className="serif mt-3 text-[24px] leading-snug text-[#2B2B2B] group-hover:text-[#4B5D44]">
+                    {chapter.title}
+                  </h2>
+
+                  <div className="mt-5 inline-flex items-center gap-2 sans text-sm text-[#4B5D44]">
+                    Open chapter <span aria-hidden>→</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </main>
