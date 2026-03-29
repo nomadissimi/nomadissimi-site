@@ -27,23 +27,54 @@
 
 # **Chapter 1 Welcome**
 
-_Before we get started, we want to say a genuine thank you for trusting Nomadissimi._  
+<GuideHeroAccent
+  title="Welcome"
+  subtitle="Before we get started, we want to say a genuine thank you for trusting Nomadissimi."
+/>
+
+<GuideBadge>Private guide</GuideBadge>
+<GuideBadge>Start here</GuideBadge>
+
+<GuideSpacer size="sm" />
+
 We know that moving to Italy is so much more than changing your address. It’s an important choice and a new chapter in your life. Perhaps it’s also about chasing a feeling, a dream you’ve probably had for years. It’s about waking up to a different pace of life. Moving to a new country takes guts, and it shouldn't be this hard.
+
+<GuideIllustrationCard icon="♡" title="A new chapter">
 
 We’re going to keep it real with you throughout the process, especially as we say that Italy's bureaucracy can break your heart. We know because it broke ours first… more than one time. We’re talking about endless paperwork, conflicting information, "come back next month" conversations... and worst of all? Getting your visa denied when you did everything you thought was right.
 
+</GuideIllustrationCard>
+
+<GuideTip title="Why Nomadissimi exists">
+
 That's why Nomadissimi exists\! Think of Nomadissimi as your big sister who moved out first. We have already tripped over the obstacles, felt the confusion, and learned the hard lessons… so you don’t have to. We want to protect your nervous system from that stress (and give you all the advice we wish we would have had along the way).
+
+</GuideTip>
+
+<GuideDivider />
+
+<GuideCallout title="What this guide is for">
 
 This guide is the sum of everything we know, experienced, and researched regarding the Digital Nomad Visa. We wrote it to help people who also share our dream and to guide you straight to that "Approved" stamp.  
 You're serious about Italy, and we're serious about making sure you actually get there.
 
-Andiamo? Let's get you to Italy!
+</GuideCallout>
 
-<GuideTip title="A gentle reminder">
+<GuideQuote author="Nomadissimi">
+Andiamo? Let's get you to Italy!
+</GuideQuote>
+
+<GuideWarning title="A gentle reminder">
+
 This guide and all accompanying materials and other guides are the exclusive intellectual property of **Nomadissimi** and are protected by copyright and other applicable intellectual property laws.
-</GuideTip>
+
+</GuideWarning>
+
+<GuideFlourish />
 
 ## **Copyright Notice**
+
+<GuideCard title="Copyright Notice">
 
 **© Nomadissimi. All rights reserved.**
 
@@ -56,6 +87,8 @@ Purchase or access to this material is granted **for the sole personal use of th
 Any unauthorized duplication, reproduction, redistribution, publication, or commercial use of Nomadissimi’s content, guides, frameworks, templates, or materials is strictly prohibited and will be treated as a violation of intellectual property rights. **Nomadissimi reserves the right to pursue all available legal remedies, including civil claims, injunctive relief, damages, and, where applicable, referral for criminal prosecution.**
 
 By accessing or using this material, you acknowledge and agree to these terms.
+
+</GuideCard>
 
 # **Chapter 2 Are you a "Remote Worker" or a “Digital Nomad”?**
 
@@ -166,10 +199,10 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 
 <GuideChecklist title="Starting Requirements (for either visa)">
 
-- ✅ **You are a citizen from a country NOT in the European Union**. Otherwise, just buy a plane ticket and come over\! (and then get set up as a _resident in Italy,_ but that’s a different story)
-- ✅ **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without skipping a beat.
-- ✅ **You are "Highly Qualified"**: You have the credentials: either a University Degree, a recognized 3-year professional qualification, OR proven work experience (3 years for Tech pros, 5 years for others).
-- ✅ **You have the Funds**: You earn at least €25,000 gross per year to support yourself.
+- **You are a citizen from a country NOT in the European Union**. Otherwise, just buy a plane ticket and come over\! (and then get set up as a _resident in Italy,_ but that’s a different story)
+- **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without skipping a beat.
+- **You are "Highly Qualified"**: You have the credentials: either a University Degree, a recognized 3-year professional qualification, OR proven work experience (3 years for Tech pros, 5 years for others).
+- **You have the Funds**: You earn at least €25,000 gross per year to support yourself.
 
 </GuideChecklist>
 
