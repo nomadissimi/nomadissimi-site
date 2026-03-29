@@ -39,7 +39,7 @@ We’re going to keep it real with you throughout the process, especially as we 
 
 <GuideDivider />
 
-<GuideCallout title="The Nomadissimi Digital Nomad Visa Master Guide">
+<GuideCallout>
 
 This guide is the sum of everything we know, experienced, and researched regarding the Digital Nomad Visa. We wrote it to help people who also share our dream and to guide you straight to that "Approved" stamp.  
 You're serious about Italy, and we're serious about making sure you actually get there.
@@ -83,17 +83,21 @@ But first, check if you qualify for the visa; and from there, determine if you�
 - **You have at least 6 months of experience** doing the kind of work you plan to do as a digital nomad or remote worker.
 - **Pick just one of the following:**
   1.  **Bachelor’s degree:**
-      <br />
+
       Italy welcomes people with a University degree obtained through a 3-year minimum education.  
        _This is the most common option, but it needs to be proven properly. We will explain to you how in this guide._
-  2.  **Professional qualification**:
-      <br />
-      If you don't have a traditional university degree, Italy accepts post-secondary professional qualifications: as long as they're at least 3 years long and issued by a recognized tertiary institution (like a polytechnic, higher technical institute, or university of applied sciences). You’ll need to prove that this qualification is equivalent to a Bachelor's degree. _We will also explain to you how to do so in this guide._
-  3.  **Proven Work Experience:**
-      <br />
-      No degree? No problem. You can also qualify by showing you've mastered your craft through actual work experience. - **For Tech Professionals** (Developers & IT Specialists): If you are a software developer, web engineer, systems administrator, IT manager, or similar, you only need 3 years of relevant work experience gained within these last 7 years. - **For Other Professions:** You need at least 5 years of professional experience in your specific sector (this would be somewhat comparable to a “Bachelor’s” level).
 
-           _Note: You’ll need solid proof like contracts, payslips, or reference letters. We’ll show you exactly what works later on in the guide._
+  2.  **Professional qualification**:
+
+      If you don't have a traditional university degree, Italy accepts post-secondary professional qualifications: as long as they're at least 3 years long and issued by a recognized tertiary institution (like a polytechnic, higher technical institute, or university of applied sciences). You’ll need to prove that this qualification is equivalent to a Bachelor's degree. _We will also explain to you how to do so in this guide._
+
+  3.  **Proven Work Experience:**
+
+      No degree? No problem. You can also qualify by showing you've mastered your craft through actual work experience.
+      - **For Tech Professionals** (Developers & IT Specialists): If you are a software developer, web engineer, systems administrator, IT manager, or similar, you only need 3 years of relevant work experience gained within these last 7 years.
+      - **For Other Professions:** You need at least 5 years of professional experience in your specific sector (this would be somewhat comparable to a “Bachelor’s” level).
+
+        _Note: You’ll need solid proof like contracts, payslips, or reference letters. We’ll show you exactly what works later on in the guide._
 
 </GuideChecklist>
 
@@ -131,6 +135,8 @@ This section applies to self-employed applicants: freelancers, consultants, or o
 _Take Barbara, for instance. She’s a web designer with her own site, where clients book and pay her directly. She invoices them, has no single employer, and handles her own taxes every year. That makes Barbara a digital nomad—and she’ll apply for the Digital Nomad Visa at the Italian embassy with Nomadissimi’s help._
 
 </GuideIllustrationCard>
+
+<GuideDivider />
 
 <GuideBadge>Remote Worker</GuideBadge>
 
@@ -240,7 +246,7 @@ To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to
 
 Sì\! That means YOU CAN DO THIS.
 
-Seriously, take a second to let that sink in. The bureaucracy is just details, and we can help you handle that. The important part is that Italy is actually an option for you.  
+The bureaucracy is just details, and we can help you handle that. The important part is that Italy is actually an option for you.  
 So, are you ready to stop dreaming and start packing?
 
 </GuideTip>
@@ -252,7 +258,7 @@ So, are you ready to stop dreaming and start packing?
 The place to apply for the Digital Nomad or Remote Worker visa is the Italian embassy or consulate in the jurisdiction where you currently reside.
 
 <GuideColumns>
-  <GuideMiniCard title="Example 1">
+  <GuideMiniCard>
     _Take Charlotte. Born in Chicago, now living in New York. She’s dreaming of Italy, so she’ll apply at the Italian Consulate in New York, since that’s where she’s legally resident._
   </GuideMiniCard>
 
@@ -276,7 +282,7 @@ _For example, if you're in Austin, Texas, go to the site above. Select “STATI 
 
 <GuideDivider />
 
-<GuideSectionIntro eyebrow="Appointments" title="How to book your appointment">
+# **How to book your appointment**
 
 Now that you know how to identify the right embassy or consulate to apply to, you should also know how to book your appointment.  
 Every appointment can be booked through this link: [https://prenotami.esteri.it/](https://prenotami.esteri.it/).  
@@ -286,14 +292,12 @@ Maybe you’ve logged in several times, hunting for a date, but everything alway
 <br />
 It happened to me, and now we want to share the trick that lets us snag a good spot for my application: The Italian government refreshes available dates right after midnight Italian time between Sunday and Monday. Just log in during that window (after converting the time zone), and you should be able to see open slots. For example, if you’re in the American East Coast, it would be at around 6pm your time.
 
-</GuideSectionIntro>
-
 <GuideWarning title="It's best to start early">
 
 This guide helps you gather all required documents as quickly and easily as possible. Even with our support, some documents take months to arrive, and others must be requested in a specific order.
-<br />
+
 Plan ahead by estimating your timeline and booking your Consulate/Embassy appointment with at least one or two extra months as a buffer.
-<br />
+
 If you need to reschedule, cancel the original and book a new one since they don’t take duplicate appointments.
 
 </GuideWarning>
@@ -365,14 +369,10 @@ The **National Visa Application Form** is the official form you must complete to
 
 ## **How to get it?**
 
-<GuideChecklist>
-
 - You can download it from the official website of the Italian Consulate or Embassy, from where you will apply for your visa.
 - You can download the standard official National Visa Application Form from the following link:  
   [https://www.esteri.it/mae/Servizi/Stranieri/Formulario_Visto_Nazionale_ING-ITA.pdf](https://www.esteri.it/mae/Servizi/Stranieri/Formulario_Visto_Nazionale_ING-ITA.pdf)
 - The National Visa Application Form stays pretty much the same across consulates. The main difference is just the document title.
-
-</GuideChecklist>
 
 <GuideCard>
 
@@ -418,7 +418,7 @@ Your passport sounds like the easiest item on the list… until it’s the reaso
 - **Blank pages**: You need at least 2 blank pages (visa sticker \+ stamps).
 - **Issued within these recent 10 years**: even if it “still looks fine”, ff your passport is older than 10 years, it can be considered not acceptable.
 
-## **​Big-sis reality check (don’t skip)**
+## **​Big-sis reality check**
 
 <GuideWarning>
 
@@ -426,19 +426,17 @@ If your passport expires somewhat close to the limit by a few months, it's best 
 
 </GuideWarning>
 
+<GuideDivider />
+
 <GuideTip title="Our safety buffer (recommended)">
 
 Even though the formal rule is “3 months after,” plan smarter: assume it may take time between (1) appointment day, (2) processing, (3) visa issuance, and (4) your actual entry to Italy… then add buffer months so you’re never on the edge.
 
 </GuideTip>
 
-<GuideDivider />
-
 ## **What to bring to the appointment**
 
-Do not forget to bring with you:
-
-<GuideChecklist title="Bring this to the appointment">
+<GuideChecklist title="Start building your application packet">
 
 - **Original passport**.
 - A **photocopy of the main passport data pages**, which include:
@@ -473,7 +471,9 @@ They ask for this photo because it’s the picture they will print on your visa 
 
 <GuideTip>
 
-Go to a real photo studio and say, “I need a 35×45 mm passport photo for an Italian national visa.” You’re beautiful no matter what, and passport photos are not meant to be photogenic magazine covers.
+Go to a real photo studio and say, “I need a 35×45mm passport photo for an Italian national visa.”
+<br />
+You’re beautiful no matter what, and passport photos are not meant to be photogenic magazine covers.
 
 </GuideTip>
 
@@ -483,16 +483,26 @@ Go to a real photo studio and say, “I need a 35×45 mm passport photo for an I
 
 #
 
-# **Chapter 8 item 4\. Residence permit (only if you live abroad)**
+# **Chapter 8 item 4: Residence Permit (only if you live abroad)**
 
-If you’re applying in a country that is not the country of your passport, the consulate needs proof that you’re legally allowed to live there. This is how you show them: “Yes, I’m applying in the right place, and yes, I’m legal here.”
+<GuideBadge>Only if you live abroad</GuideBadge>
 
-### **Who needs this (and who doesn’t)**
+If you’re applying in a country that is not the country of your passport, the consulate needs proof that you’re legally allowed to live there.
+
+## **Who needs this (and who doesn’t)**
+
+<GuideCard>
 
 You need it if you live in a different country from your nationality and you’re applying at the Italian consulate in that country.  
 You don’t need it if you’re applying in the same country that issued your passport.
 
-_Example (so it’s crystal clear): Josh is Canadian but lives in Barcelona, Spain. He’ll apply at the Italian consulate that covers Barcelona, so he must bring his Canadian passport \+ Spanish residence permit (his legal right to live in Spain)._
+</GuideCard>
+
+<GuideIllustrationCard icon="⌁" title="For example">
+
+_Josh is Canadian but lives in Barcelona, Spain. He’ll apply at the Italian consulate that covers Barcelona, so he must bring his Canadian passport \+ Spanish residence permit (his legal right to live in Spain)._
+
+</GuideIllustrationCard>
 
 ### **What counts as “residence permit”**
 
@@ -502,18 +512,23 @@ Bring the document that proves legal residence in that country (usually a reside
 
 - It must be valid on the day of your appointment (not expired, not “expiring tomorrow”)
 - Bring the original document (and a photocopy as an extra)
-- Expect the consulate to keep a copy, but you still need to show the original at the appointment.
+
+Expect the consulate to keep a copy, but you still need to show the original at the appointment.
 
 ### **If your permit is in renewal (read this carefully)**
 
 If your residence permit is currently being renewed, don’t assume the consulate will accept “I’m waiting for the new card” as proof of legal residence. Bring everything you have: your expired/expiring residence card (original), the official renewal receipt/confirmation (original \+ copy), and any extension letter that proves you’re still legally resident while the renewal is processed. Because each consulate may interpret “valid residence” differently in renewal cases, check your specific consulate’s instructions before appointment day. This is exactly the type of detail that can trigger a painful “come back next month.”
 
-### **Other tips (this avoids silly delays)**
+## **Other tips (this avoids silly delays)**
+
+<GuideTip>
 
 - Make one clean photocopy of the front/back of the card (or all pages, if it’s a paper permit) and keep it in your packet.
 - If you’ve had previous visas/residence permits, bring copies. Sometimes they ask to see your residence history, and when they do, they ask at the worst possible moment.
 
-​**What to bring to the appointment (quick recap)**
+</GuideTip>
+
+## ​**What to bring to the appointment (quick recap)**
 
 This is one of those documents that looks “obvious”… and then the officer asks for a copy, a back side, or a renewal receipt, and suddenly your stomach drops. So let’s make sure you walk in calm and prepared:
 
@@ -523,15 +538,15 @@ This is one of those documents that looks “obvious”… and then the officer 
 - **Copies of previous residence permits/long-term visas** (if applicable). You might not be asked, but if you are, you’ll be very happy you brought them.
 
 Okay, the procedural ID stuff is done. Now take a deep breath, because we are about to tackle the single most important part of your application: proving you are exactly the kind of talent Italy wants.  
-Let’s build your "Highly Qualified" profile.
+Let’s build your “Highly Qualified” profile.
 
-# **Chapter 9 item 5\. Proof of being a "highly qualified" worker**
+# **Chapter 9 item 5: Proof of being a “highly qualified” worker**
 
 _This is the part where most people hit the wall not because they’re unqualified, but because Italy only accepts a very specific paper trail that matches the legal definition of a “highly specialized worker.” But what does that even mean? We break it all down here so you don’t walk into your appointment with a packet that looks fine but doesn’t speak Italy’s specific bureaucracy language._
 
 ### **Why this is so hard (and so important)**
 
-Italy doesn’t give this visa to “anyone who works online.” The Digital Nomad/Remote Worker visa is specifically designed for **highly specialized workers**, and proving that on paper is often the longest, most bureaucratic, and most time-consuming part of the entire application.
+Italy doesn’t give this visa to “anyone who works online.” It's not an "online worker visa" for random people who make money from their laptop. The Digital Nomad/Remote Worker visa is specifically designed for **highly specialized workers**, and proving that on paper is often the longest, most bureaucratic, and most time-consuming part of the entire application.
 
 ### **Why Italy asks for it**
 
