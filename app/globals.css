@@ -1493,3 +1493,16 @@ animation: addonRaySweep 0.5s ease-out 1;}
   }
 }
 
+.guide-prose a {
+  color: rgba(75, 93, 68, 0.98);
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 168, 106, 0.72);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.guide-prose a:hover {
+  color: rgba(62, 78, 56, 1);
+  text-decoration-color: rgba(201, 168, 106, 0.95);
+}
+

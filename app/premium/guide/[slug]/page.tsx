@@ -28,6 +28,11 @@ import {
   GuideHighlight,
   GuideSpacer,
   GuideImageCard,
+  GuideFlourish,
+  GuideIcon,
+  GuideHeroAccent,
+  GuideStamp,
+  GuideIllustrationCard,
 } from "@/components/guide/GuideMDX";
 
 export default async function PremiumGuideChapterPage({
@@ -157,6 +162,11 @@ export default async function PremiumGuideChapterPage({
                 GuideHighlight,
                 GuideSpacer,
                 GuideImageCard,
+                GuideFlourish,
+                GuideIcon,
+                GuideHeroAccent,
+                GuideStamp,
+                GuideIllustrationCard,
               }}
             />
           </article>
@@ -198,4 +208,3 @@ export default async function PremiumGuideChapterPage({
     </main>
   );
 }
-

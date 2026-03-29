@@ -156,12 +156,15 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 
 # **Chapter 3 Eligibility**
 
-<GuideSectionIntro eyebrow="Chapter 3" title="Eligibility">
+<GuideHeroAccent
+  eyebrow="Chapter 3"
+  subtitle="To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes. If you have these, you are ready to start:"
+  icon="✦"
+/>
 
-To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes.  
-If you have these, you are ready to start:
+<GuideStamp>Italy-ready</GuideStamp>
 
-</GuideSectionIntro>
+<GuideFlourish />
 
 <GuideBadge>Eligibility</GuideBadge>
 <GuideBadge>Applies to everyone</GuideBadge>
@@ -177,11 +180,7 @@ If you have these, you are ready to start:
 
 </GuideChecklist>
 
-<GuideStat label="Boxes to tick" value="4" />
-
-<GuideTip title="A little reality check">
-
-Wait... is that a 4/4?
+<GuideTip title="Wait... is that a 4/4?">
 
 Sì\! That means YOU CAN DO THIS.
 
@@ -194,7 +193,7 @@ So, are you ready to stop dreaming and start packing?
 
 # **Where can I request my Italian Visa?**
 
-<GuideSectionIntro eyebrow="Application location" title="Where can I request my Italian Visa?">
+<GuideSectionIntro eyebrow="Application location">
 
 The place to apply for the Digital Nomad or Remote Worker visa is the Italian embassy or consulate in the jurisdiction where you currently reside.
 
@@ -206,7 +205,7 @@ The place to apply for the Digital Nomad or Remote Worker visa is the Italian em
   </GuideMiniCard>
 
   <GuideMiniCard title="Example 2">
-    _Then there’s Olivia, a super-smart American woman who moved to Toronto three years ago. She’s done with those brutal Canadian winters but wants to keep her job benefits. Her spot? Italian Consulate in Toronto._
+    _Then there’s Olivia, a super-smart American woman who moved to Toronto three years ago. She’s done with those brutal Canadian winters but wants to keep her job benefits. She would apply through the Italian Consulate in Toronto._
   </GuideMiniCard>
 </GuideColumns>
 

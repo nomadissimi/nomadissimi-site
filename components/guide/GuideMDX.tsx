@@ -9,9 +9,7 @@ export function GuideCallout({ title, children }: BoxProps) {
   return (
     <div className="nm-guide-callout">
       {title ? <div className="nm-guide-callout-title">{title}</div> : null}
-      <div className="sans text-[16px] leading-[1.9] text-black/80">
-        {children}
-      </div>
+      <div className="guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -25,9 +23,7 @@ export function GuideTip({ title = "Big-sis tip", children }: BoxProps) {
       <div className="mt-2 serif text-[24px] leading-tight text-[#2B2B2B]">
         ✦
       </div>
-      <div className="mt-3 sans text-[16px] leading-[1.9] text-black/80">
-        {children}
-      </div>
+      <div className="mt-3 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -38,9 +34,7 @@ export function GuideWarning({ title = "Important", children }: BoxProps) {
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#9B6B1E]/80">
         {title}
       </div>
-      <div className="mt-3 sans text-[16px] leading-[1.9] text-black/82">
-        {children}
-      </div>
+      <div className="mt-3 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -57,9 +51,7 @@ export function GuideCard({ title, children }: BoxProps) {
           {title}
         </h3>
       ) : null}
-      <div className="sans text-[16px] leading-[1.9] text-black/80">
-        {children}
-      </div>
+      <div className="guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -153,9 +145,7 @@ export function GuideNote({
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
         {title}
       </div>
-      <div className="mt-3 sans text-[16px] leading-[1.9] text-black/80">
-        {children}
-      </div>
+      <div className="mt-3 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -275,9 +265,7 @@ export function GuideIconRow({
         <h3 className="serif text-[24px] font-semibold text-[#2B2B2B]">
           {title}
         </h3>
-        <div className="mt-3 sans text-[16px] leading-[1.9] text-black/80">
-          {children}
-        </div>
+        <div className="mt-3 guide-prose max-w-none">{children}</div>
       </div>
     </div>
   );
@@ -360,6 +348,110 @@ export function GuideImageCard({
       <img src={src} alt={alt} />
       {caption ? <figcaption>{caption}</figcaption> : null}
     </figure>
+  );
+}
+
+export function GuideFlourish() {
+  return (
+    <div className="my-8 flex items-center justify-center" aria-hidden="true">
+      <div className="flex items-center gap-3">
+        <span className="h-px w-10 bg-gradient-to-r from-transparent to-[#C9A86A]/70" />
+        <span className="text-[#C9A86A] text-[18px]">✦</span>
+        <span className="h-px w-16 bg-gradient-to-r from-[#C9A86A]/70 via-[#4B5D44]/45 to-transparent" />
+        <span className="text-[#4B5D44]/80 text-[14px]">❦</span>
+        <span className="h-px w-10 bg-gradient-to-r from-[#C9A86A]/70 to-transparent" />
+      </div>
+    </div>
+  );
+}
+
+export function GuideIcon({ children }: { children: ReactNode }) {
+  return (
+    <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#C9A86A]/40 bg-[#FFF8EE] text-[#4B5D44] shadow-[0_10px_24px_rgba(201,168,106,0.10)]">
+      <span className="text-[20px] leading-none">{children}</span>
+    </span>
+  );
+}
+
+export function GuideHeroAccent({
+  eyebrow,
+  title,
+  subtitle,
+  icon,
+}: {
+  eyebrow?: string;
+  title: string;
+  subtitle?: ReactNode;
+  icon?: ReactNode;
+}) {
+  return (
+    <div className="relative overflow-hidden rounded-[30px] border border-[#D8D1C5] bg-gradient-to-br from-[#FFFCF7] via-[#FBF8F2] to-[#F4EEE2] px-6 py-7 shadow-[0_18px_50px_rgba(0,0,0,0.06)] my-6">
+      <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#C9A86A]/10 blur-2xl" />
+      <div className="pointer-events-none absolute -left-6 bottom-0 h-24 w-24 rounded-full bg-[#4B5D44]/8 blur-2xl" />
+      <div className="pointer-events-none absolute right-6 top-5 text-[#C9A86A]/60 text-[14px]">
+        ✦ ✦
+      </div>
+
+      <div className="flex items-start gap-4">
+        {icon ? <GuideIcon>{icon}</GuideIcon> : null}
+
+        <div className="min-w-0">
+          {eyebrow ? (
+            <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
+              {eyebrow}
+            </div>
+          ) : null}
+
+          <h2 className="serif mt-2 text-[32px] md:text-[42px] leading-[1.08] font-semibold text-[#2B2B2B]">
+            {title}
+          </h2>
+
+          {subtitle ? (
+            <div className="mt-3 sans text-[16px] leading-[1.85] text-black/72 max-w-3xl">
+              {subtitle}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function GuideStamp({ children }: { children: ReactNode }) {
+  return (
+    <div className="inline-flex items-center justify-center rounded-full border border-dashed border-[#C9A86A]/55 px-4 py-2 text-[#9B6B1E]/85 bg-[#FFF8EE] shadow-[0_8px_20px_rgba(201,168,106,0.08)] rotate-[-4deg]">
+      <span className="sans text-[11px] uppercase tracking-[0.16em]">
+        {children}
+      </span>
+    </div>
+  );
+}
+
+export function GuideIllustrationCard({
+  icon,
+  title,
+  children,
+}: {
+  icon?: ReactNode;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="relative overflow-hidden rounded-[26px] border border-[#D8D1C5] bg-gradient-to-br from-white to-[#FBF8F2] px-5 py-5 shadow-[0_14px_34px_rgba(0,0,0,0.05)] my-6">
+      <div className="pointer-events-none absolute right-0 top-0 h-20 w-20 rounded-full bg-[#C9A86A]/8 blur-2xl" />
+      <div className="pointer-events-none absolute left-0 bottom-0 h-16 w-16 rounded-full bg-[#4B5D44]/8 blur-2xl" />
+
+      <div className="flex items-start gap-4">
+        {icon ? <GuideIcon>{icon}</GuideIcon> : null}
+
+        <div>
+          <h3 className="serif text-[24px] font-semibold text-[#2B2B2B]">
+            {title}
+          </h3>
+          <div className="mt-3 guide-prose max-w-none">{children}</div>
+        </div>
+      </div>
+    </div>
   );
 }
 
