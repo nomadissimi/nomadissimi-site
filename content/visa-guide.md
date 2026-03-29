@@ -27,7 +27,9 @@
 
 # **Chapter 1 Welcome**
 
+<GuideBigSis>
 **Before we get started, we want to say a genuine thank you for trusting Nomadissimi.**
+</GuideBigSis>
 
 <GuideSpacer size="sm" />
 
@@ -239,7 +241,7 @@ To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to
 <GuideChecklist title="Starting Requirements (for either visa)">
 
 - **You are a citizen from a country NOT in the European Union**. Otherwise, just buy a plane ticket and come over\! (and then get set up as a _resident in Italy,_ but that’s a different story)
-- **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without skipping a beat.
+- **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without any problems.
 - **You are "Highly Qualified"**: You have the credentials: either a University Degree, a recognized 3-year professional qualification, OR proven work experience (3 years for Tech pros, 5 years for others).
 - **You have the Funds**: You earn at least €25,000 gross per year to support yourself.
 
@@ -270,7 +272,9 @@ The place to apply for the Digital Nomad or Remote Worker visa is the Italian em
   </GuideMiniCard>
 </GuideColumns>
 
-<GuideNote title="What if there is not an Italian embassy/consulate in the city where I live?">
+### **What if there is not an Italian embassy/consulate in the city where I live?**
+
+<GuideNote>
 
 You can find the Italian embassy/consulate in your jurisdiction through the following official website:  
 [https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
@@ -295,7 +299,7 @@ Maybe you’ve logged in several times, hunting for a date, but everything alway
 
 It happened to me, and now we want to share the trick that lets us snag a good spot for my application: The Italian government refreshes available dates right after midnight Italian time between Sunday and Monday. Just log in during that window (after converting the time zone), and you should be able to see open slots. For example, if you’re in the American East Coast, it would be at around 6pm your time.
 
-<GuideWarning title="It's best to start early">
+<GuideTip title="It's best to start early">
 
 This guide helps you gather all required documents as quickly and easily as possible. Even with our support, some documents take months to arrive, and others must be requested in a specific order.
 
@@ -303,7 +307,7 @@ Plan ahead by estimating your timeline and booking your Consulate/Embassy appoin
 
 If you need to reschedule, cancel the original and book a new one since they don’t take duplicate appointments.
 
-</GuideWarning>
+</GuideTip>
 
 # **Chapter 4 Keys to Italy: Your Must-Have Document Checklist**
 
@@ -1265,27 +1269,15 @@ Now you have everything you need to turn your degree into proof that Italy can a
 
 <GuideSpacer size="sm" />
 
-**Option B is basically the same recognition logic as Option A** (CIMEA or Dichiarazione di Valore), **just applied to a qualification that doesn’t have the words “Bachelor’s Degree” on the front**—so the paperwork has a bit more explaining to do.
+**Option B is basically a similar recognition logic as Option A (CIMEA or Dichiarazione di Valore)**, **but just applied to a qualification that doesn’t have the words “Bachelor’s Degree” on the front, **so the paperwork has a bit more explaining to do.
 
-<GuideTOC title="In this chapter">
-
-- Option B: The “Not a Bachelor’s, Still Valid” Route
-- Why Option B exists
-- What counts
-- Why Option B can be trickier
-- The “hidden” requirement
-- CIMEA vs DV (for Option B specifically)
-- What to collect (Option B checklist)
-
-</GuideTOC>
-
-## **Option B: The “Not a Bachelor’s, Still Valid” Route**
+## **No Bachelor’s Degree but Still Valid**
 
 <GuideCard>
 
 Option B is for people who don’t have a traditional university Bachelor’s degree, but do have a **post-secondary professional qualification that is at least 3 years long and issued by a recognized tertiary institution** (polytechnic, higher technical institute, university of applied sciences, etc.).
 
-_In Nomadissimi terms:_ your qualification is real, serious, and higher-education level, but it just comes with a different label. So your job is to make it obvious on paper, usually with the same validation logic you saw in Option A: CIMEA or a Dichiarazione di Valore (DV), depending on what your consulate accepts.
+In other words: your qualification is real, serious, and higher-education level, but it just comes with a different label. So your job is to make it obvious on paper, usually with the same validation logic you saw in Option A: CIMEA or a Dichiarazione di Valore (DV), depending on what your consulate accepts.
 
 </GuideCard>
 
@@ -1298,7 +1290,7 @@ So if your education path was more technical, applied, or career-focused (and no
 
 </GuideNote>
 
-## **What counts**
+<GuideDivider />
 
 A professional qualification can work for this visa when:
 
@@ -1399,38 +1391,26 @@ What you should do in practice:
 
 <GuideRecap title="Final reminder">
 
-With Option B, your consulate’s interpretation matters even more than it does with a standard university degree. Email your consulate with the exact details of your qualification (program name, institution type, duration, country) and ask how they want it proven—specifically whether they accept CIMEA Statements and/or a Dichiarazione di Valore (DV) for professional qualifications, and whether legalization or translation steps apply in your case.
-
-_Your goal isn’t to win an argument with bureaucracy; your goal is to walk out with that visa sticker. Let the consulate define what “right” looks like at their desk._
+With Option B, your consulate’s interpretation matters even more than it does with a standard university degree. Email your consulate with the exact details of your qualification (program name, institution type, duration, country) and ask how they want it proven, specifically whether they accept CIMEA Statements and/or a Dichiarazione di Valore (DV) for professional qualifications, and whether legalization or translation steps apply in your case.
 
 </GuideRecap>
 
 # **Chapter 12 item 5 Option C: the Work Experience Route**
 
-<GuideHeroAccent
-  title="Option C: the Work Experience Route"
-  subtitle="No Degree, But Still Highly Qualified"
- />
-
-<GuideBadge>Option C</GuideBadge>
-<GuideBadge>Work experience route</GuideBadge>
-<GuideBadge>No degree path</GuideBadge>
+<GuideSoftPink> 
+No Degree, But Still Highly Qualified
+</GuideSoftPink>
 
 <GuideSpacer size="sm" />
 
-If Option A and B are “show your education,” Option C is “show your receipts.” This path is totally legitimate, but it’s the one where Italy doesn’t care how talented you are in real life—it cares whether your experience can be proven on paper, in a way a consular officer can verify in 3 minutes.
+If Option A and B are “show your education,” Option C is “show your receipts.” This path is totally legitimate, but it’s the one where Italy doesn’t care how talented you are in real life; it cares whether your experience can be proven on paper, in a way a consular officer can verify in 3 minutes.
 
 <GuideTOC title="In this chapter">
 
-- What Option C is (and who it’s for)
 - The Time Thresholds Requirements
-- How to check which threshold applies
-- Quick self-check (before collecting documents)
-- What to collect (The option C kit)
 - Formalities warning
 - DV/CIMEA vs Option C: different tools, different goal
 - What to collect (Option C checklist)
-- One Last Big-Sis Tip (Before You Hit “Submit”)
 
 </GuideTOC>
 
@@ -1533,11 +1513,11 @@ For each employer/client folder, aim to include these three items (they’re the
 
 <GuideBigSis title="Quick reminder">
 
-_Quick reminder (we’ll unpack this later):_ if you’re applying as a remote worker, your current employment contract or binding offer goes in the “remote worker-specific” part of your visa file. Make sure it lines up with what you’re claiming in this section*. Italy is romantic but it doesn’t love plot twists or vagueness.*
+_Quick reminder (we’ll unpack this later):_ if you’re applying as a remote worker, your current employment contract or binding offer goes in the “remote worker-specific” part of your visa file. Make sure it lines up with what you’re claiming in this section. **Italy is romantic but it doesn’t love plot twists or vagueness.**
 
 </GuideBigSis>
 
-### **2. Papers from official bodies (the “trust me, I exist” proof)**
+### **2. Papers from official entities**
 
 Some consulates don’t want only private letters, but they also want documents issued by a **public authority** in the country where you gained the experience.
 
@@ -1600,25 +1580,18 @@ Here’s how we suggest you proceed: build an “easy-to-verify” experience fi
 
 </GuideSteps>
 
-<GuideRecap title="One Last Big-Sis Tip (Before You Hit “Submit”)">
+<GuideTip title="One Last Big-Sis Tip for this Section">
 
-You now have everything you need to apply through Option C with a clean, consulate-proof file.  
-_One last big-sis reminder:_ your embassy or consulate is the final decision-maker, and each office can apply extra document rules or format requests, even for the exact same visa.  
-So send your consulate a quick email confirming what they want for Option C (especially the “official proof” part).​
+Your embassy or consulate is the final decision-maker, and each office can apply extra document rules or format requests, even for the exact same visa.  
+So it's best to check with your consulate a quick email confirming what they want for Option C (especially the “official proof” part).​
 
-Do that, and you’ll walk into your appointment calm, prepared, and ready for that “Approved” stamp.
-
-</GuideRecap>
+</GuideTip>
 
 # **Chapter 13 The “Highly Qualified Worker” recap**
 
-<GuideHeroAccent
-  title='The “Highly Qualified Worker” recap'
-  subtitle="That “Highly Qualified Worker” section was long on purpose, because it’s usually the part that makes or breaks approval at the consulate."
-/>
+<GuideBadge>Core Requirement</GuideBadge>
 
-<GuideBadge>Quick recap</GuideBadge>
-<GuideBadge>Core requirement</GuideBadge>
+This “Highly Qualified Worker” section was long on purpose, because it’s usually the part that makes or breaks approval at the consulate.
 
 <GuideSpacer size="sm" />
 
@@ -1659,25 +1632,20 @@ _For your specific situation:_ If your profession might trigger this requirement
 
 </GuideSoftPink>
 
-<GuideBigSis title="Big-sis bubble thing">
+<GuideBigSis title="One step closer">
 
-_You’ve just conquered the hardest part of the bureaucracy. You’ve proven your brain and skills are valuable to the Italian authorities, yay\!_  
-_Now you just need to prove your bank account is stable._  
-_Next up: The Money._  
+You’ve just conquered the hardest part of the bureaucracy. You’ve proven your brain and skills are valuable to the Italian authorities, yay\!
+Now you just need to prove your bank account is stable.
+Next up: The Money.  
 _Money talks, money talks…_
 
 </GuideBigSis>
 
 # **Chapter 14 item 6: Proof of minimum annual gross income**
 
-<GuideHeroAccent
-  title="Proof of minimum annual gross income"
-  subtitle="Italy wants proof that your income is real, stable, legal, and strong enough to support your life there. This is one of those sections where clean presentation matters almost as much as the numbers themselves."
-/>
+<GuideBadge>Financial requirement</GuideBadge>
 
-<GuideBadge>Income requirement</GuideBadge>
-<GuideBadge>Money section</GuideBadge>
-<GuideBadge>Consulate-proof packet</GuideBadge>
+Italy wants proof that your income is real, stable, legal, and strong enough to support your life there. This is one of those sections where clean presentation matters almost as much as the numbers themselves.
 
 <GuideSpacer size="sm" />
 
@@ -1765,16 +1733,13 @@ Show up with one clean “Income Proof” packet (yeah, paper world), organized 
 
 <GuideItaliaNote title="Italian curiosity">
 
-_You’re on fire\! By the way, did you know Italy hosts Europe's only three active volcanoes: Etna, Stromboli, and Vesuvius? Our favorite is the Etna in Catania, Sicily._
+You’re on fire\! By the way, did you know Italy hosts Europe's only three active volcanoes: Etna, Stromboli, and Vesuvius? Our favorite is the Etna in Catania, Sicily.
 
 </GuideItaliaNote>
 
 # **Chapter 15 item 7: Proof of at least a six-month-long highly professional experience**
 
-<GuideHeroAccent
-  title="Proof of at least a six-month-long highly professional experience"
-  subtitle="This section is less about proving that you’re talented and more about proving that your work is already established, continuous, and real."
-/>
+This section is less about proving that you’re talented and more about proving that your work is already established, continuous, and real.
 
 <GuideBadge>Experience requirement</GuideBadge>
 <GuideBadge>Timeline matters</GuideBadge>
@@ -1797,7 +1762,7 @@ _In Nomadissimi terms:_ they want to see that you have already been doing this j
 
 </GuideCard>
 
-## **How to prove it (let’s talk strategy)**
+## **How to prove it**
 
 <GuideSectionBreak label="Remote Worker (Employee)" />
 
@@ -1867,12 +1832,6 @@ If you are brand new to this career path (e.g., you were a dentist until last mo
 
 </GuideWarning>
 
-<GuideItaliaNote title="Random Italian curiosity">
-
-**Random Italian curiosity:** in Italy there’s this thing called _Colpo d'aria_, meaning “hit of air.” This is a popular cultural belief that a sudden exposure to cold, moving air can cause several ailments, like a stiff neck (“_la cervicale”_), colds, the flu, headaches, digestive issues, or even muscle pain. Italian grandmas swear by it and will definitely tell you to put on a scarf or avoid going out to the street with wet hair to avoid the feared “_colpo d'aria_.”
-
-</GuideItaliaNote>
-
 <GuideBigSis title="What comes next">
 
 _Ready? You’ve proven you’re qualified, you’ve proven you’re experienced on the job…_  
@@ -1882,12 +1841,15 @@ _Next up: Health Insurance._
 
 </GuideBigSis>
 
+<GuideItaliaNote title="Random Italian curiosity">
+
+**Random Italian curiosity:** in Italy there’s this thing called _Colpo d'aria_, meaning “hit of air.” This is a popular cultural belief that a sudden exposure to cold, moving air can cause several ailments, like a stiff neck (“_la cervicale”_), colds, the flu, headaches, digestive issues, or even muscle pain. Italian grandmas swear by it and will definitely tell you to put on a scarf or avoid going out to the street with wet hair to avoid the feared “_colpo d'aria_.”
+
+</GuideItaliaNote>
+
 # **Chapter 16 item 8: Health insurance valid in Italy**
 
-<GuideHeroAccent
-  title="Health insurance valid in Italy"
-  subtitle="Italy doesn't want you arriving and becoming a medical (or financial) emergency. That's why the consulate requires proof of health insurance (covering medical expenses and hospitalization for your entire stay) before they issue the visa."
-/>
+Italy doesn't want you arriving and becoming a medical (or financial) emergency. That's why the consulate requires proof of health insurance (covering medical expenses and hospitalization for your entire stay) before they issue the visa.
 
 <GuideBadge>Insurance requirement</GuideBadge>
 <GuideBadge>Core document</GuideBadge>
@@ -1926,7 +1888,7 @@ Do not just bring your plastic insurance ID card or a screenshot from an app. Th
 
 Most insurance problems at the consulate come from tiny details that weren’t spelled out clearly enough. If you pay attention to the points below while choosing and printing your policy, you can quietly eliminate a whole category of last-minute surprises at the window.
 
-<GuideWarning title="Common friction points">
+<GuideWarning title="Don't make these mistakes">
 
 - **Relying on a simple plastic ID card**.  
   Bringing just your wallet-sized insurance card or a quick screenshot of an app is rarely enough. The officer needs to file a formal document that proves the extent of your coverage, so you must provide the full policy certificate or an official confirmation letter.
@@ -1950,11 +1912,11 @@ When you print your policy certificate or confirmation letter, check that it cle
 
 </GuideChecklist>
 
-<GuideBigSis title="Formatting tip">
+<GuideSoftPurple title="Formatting tip">
 
 Highlight these four items directly on the page with a highlighter, so the officer doesn’t need to hunt for them.
 
-</GuideBigSis>
+</GuideSoftPurple>
 
 ## **If you can’t get the “right” insurance document in time**
 
@@ -1984,11 +1946,7 @@ Bring a clean “Health Insurance” mini-packet (originals \+ one copy set). Ke
 
 </GuideChecklist>
 
-<GuideItaliaNote title="Italian curiosity">
-
 In Italy, healthcare conversations are often much less dramatic than in countries where medical care can feel financially terrifying. That doesn’t mean you can skip the insurance paperwork, but it does mean the logic behind this requirement is very practical: the consulate wants to know you’re covered, not that you’ve purchased the fanciest policy on Earth.
-
-</GuideItaliaNote>
 
 <GuideBigSis title="What comes next">
 
@@ -1999,14 +1957,9 @@ _Next up: Accommodation._
 
 # **Chapter 17 item 9: Accommodation in Italy**
 
-<GuideHeroAccent
-  title="Accommodation in Italy"
-  subtitle="You have proven your income, your skills, and your health coverage. Now comes the one requirement that grounds everything in reality: Where are you actually going to sleep?"
-/>
+<GuideBadge>Housing</GuideBadge>
 
-<GuideBadge>Accommodation requirement</GuideBadge>
-<GuideBadge>Residency logic</GuideBadge>
-<GuideBadge>Stability matters</GuideBadge>
+You have proven your income, your skills, and your health coverage. Now comes the one requirement that grounds everything in reality: Where are you actually going to sleep?
 
 <GuideSpacer size="sm" />
 
@@ -2189,32 +2142,24 @@ Do not try to fake stability. If your housing proof looks temporary, the officer
 
 </GuideBigSis>
 
-<GuideBigSis title="What comes next">
-
-_Now, let's figure out how you’re actually going to get to Italy (and demonstrate that)._  
+Now, let's figure out how you’re actually going to get to Italy (and demonstrate that).  
 _Next up: Flight reservation to Italy._
-
-</GuideBigSis>
 
 # **Chapter 18 item 10: Flight reservation to Italy**
 
-<GuideHeroAccent
-  title="Flight reservation to Italy"
-  subtitle="You have a home, you have insurance, and you have a job. In today’s economy, we’re super grateful for those things lol. Now the consulate simply wants to know: _When are you actually showing up?_"
-/>
-
-<GuideBadge>Travel proof</GuideBadge>
 <GuideBadge>Timing matters</GuideBadge>
+
+You have a home, you have insurance, and you have a job. In today’s economy, we’re super grateful for those things lol. Now the consulate simply wants to know: _When are you actually showing up?_
 
 <GuideSpacer size="sm" />
 
-## **What is it?**
+### **What is it?**
 
-<GuideCard>
+<GuideTip>
 
 A confirmed travel reservation showing your entry into Italy.
 
-</GuideCard>
+</GuideTip>
 
 ## **The "Timing" Strategy (Read this before booking)**
 
@@ -2248,22 +2193,14 @@ Purchase a fully refundable ticket or one with a flexible cancellation policy. T
 
 </GuideChecklist>
 
-<GuideBigSis title="What comes next">
-
-_One quick step before you head to the consulate. You need to pay them for their time._  
-_Next up: The Visa Fees._
-
-</GuideBigSis>
+One quick step before you head to the consulate. You need to pay them for their time.  
+Next up: The Visa Fees
 
 # **Chapter 19 Visa Fees**
 
-<GuideHeroAccent
-  title="Visa Fees"
-  subtitle="This is the final requirement for every applicant. You cannot pay online, and you cannot pay with a credit card at the window."
-/>
-
-<GuideBadge>Final universal step</GuideBadge>
 <GuideBadge>Cash only</GuideBadge>
+
+Starting off bluntly: you cannot pay online, and you cannot pay with a credit card at the window.
 
 <GuideSpacer size="sm" />
 
@@ -2289,23 +2226,16 @@ You have every single document you need to build your visa packet. You can now s
 
 ## **If you are a Remote Worker (Employee)**
 
-<GuideWarning>
-
 Not so fast\! You have one final, crucial chapter to cover. Because you are an employee, Italy requires specific documents from your company to prove your employment is real and safe.
 
 _Next up: Employment Contract and Employer Declaration._
 
-</GuideWarning>
-
 # **Chapter 20 Only for Remote workers**
-
-<GuideHeroAccent
-  title="Only for Remote workers"
-  subtitle="If you are a freelancer, you are done collecting documents\! Skip straight to the last chapter to organize your packet. If you are an employee, you have two final—but critical—pieces of paper to collect."
-/>
 
 <GuideBadge>Remote Worker only</GuideBadge>
 <GuideBadge>Final two documents</GuideBadge>
+
+If you are a freelancer, you are done collecting documents\! Skip straight to the last chapter to organize your packet. If you are an employee, you have a couple of final yet critical components to collect.
 
 <GuideSpacer size="sm" />
 
@@ -2316,8 +2246,6 @@ If you are a freelancer, you are done collecting documents\! Skip straight to th
 If you are an employee, you have two final—but critical—pieces of paper to collect.
 
 </GuideDecisionBox>
-
-<GuideSectionBreak label="1st Extra for remote workers: Employment contract or binding offer" />
 
 ## **1st Extra for remote workers: Employment contract or binding offer**
 
@@ -2404,21 +2332,6 @@ _The Reality: If you are earning €35,000 or more, you are almost certainly saf
 
 </GuideCard>
 
-### **What to bring to the appointment (Checklist)**
-
-<GuideChecklist title="Employment contract / binding offer packet">
-
-- **The Contract/Offer**:  
-  The original signed copy. If you have an electronically signed PDF, print it in high quality. The consulate considers the digital signature valid, but they still need a physical paper copy for their file.
-
-- (If applicable) **The Remote Addendum**:  
-  If the "remote work in Italy" permission isn't explicitly written in your main contract, bring the separate addendum signed by your HR. This single page is often the difference between approval and rejection.
-
-- (If applicable) **Previous Contracts**:  
-  If you are using a new Binding Offer for a job you haven't started yet, include your previous employment contracts here to prove the 6-month experience requirement we discussed in Chapter 7\.
-
-</GuideChecklist>
-
 <GuideSectionBreak label="2nd Extra for remote workers: Employer Declaration" />
 
 ## **2nd Extra for remote workers: Employer Declaration**
@@ -2474,6 +2387,19 @@ Yes\! Most consulates provide a standard form for this. Download it from your sp
 
 ### **What to bring to the appointment (Checklist)**
 
+<GuideChecklist title="Employment contract / binding offer packet">
+
+- **The Contract/Offer**:  
+  The original signed copy. If you have an electronically signed PDF, print it in high quality. The consulate considers the digital signature valid, but they still need a physical paper copy for their file.
+
+- (If applicable) **The Remote Addendum**:  
+  If the "remote work in Italy" permission isn't explicitly written in your main contract, bring the separate addendum signed by your HR. This single page is often the difference between approval and rejection.
+
+- (If applicable) **Previous Contracts**:  
+  If you are using a new Binding Offer for a job you haven't started yet, include your previous employment contracts here to prove the 6-month experience requirement we discussed in Chapter 7\.
+
+</GuideChecklist>
+
 <GuideChecklist title="Employer declaration packet">
 
 - **The Employer Declaration**: Original signed document (wet ink preferred, but high-quality digital print is usually accepted).
@@ -2482,45 +2408,33 @@ Yes\! Most consulates provide a standard form for this. Download it from your sp
 
 </GuideChecklist>
 
-<GuideSoftPurple title="You did it">
-
-_You have the contract. You have the declaration. You have the skills, the home, and the insurance. You have done it all._  
+You did it! You have the contract. You have the declaration. You have the skills, the home, and the insurance. You have done it all.
 _Now it’s just a matter of compiling your "Perfect Packet" so the consulate has no choice but to say YES._
 
 </GuideSoftPurple>
 
 # **Chapter 21 The "Perfect Packet" Strategy**
 
-<GuideHeroAccent
-  title='The "Perfect Packet" Strategy'
-  subtitle="Now, you have the winning hand. Let's play it perfectly."
-/>
-
-<GuideBadge>Final assembly</GuideBadge>
-<GuideBadge>Grand finale</GuideBadge>
-<GuideBadge>Packet strategy</GuideBadge>
+<GuideBadge>Grand Finale</GuideBadge>
 
 <GuideSpacer size="sm" />
 
 <GuideSoftPurple title="Take a breath">
 
-_Stop for a second and take a deep breath. If you have made it to this chapter and you have all the documents we listed, you have just accomplished something M A S S I V E._  
-_More than filling out forms, you've been navigating international bureaucracy, chased down employers, translated your life into Italian, and built a rock-solid case for your future. Most people quit halfway, yet here you are! You should be incredibly proud (we are also super proud of you)!_  
+Pause for a second. If you have made it to this chapter and you have all the documents we listed, you have just accomplished something M A S S I V E. More than filling out forms, you've been navigating international bureaucracy, chased down employers, translated your life into Italian, and built a rock-solid case for your future. Most people quit halfway, yet here you are! You should be incredibly proud (we are also super proud of you)!\_  
 _Now, you have the winning hand. Let's play it perfectly._
 
 </GuideSoftPurple>
 
-The goal of this chapter is simple: Psychological Engineering.
-
-Consular officers are overworked, tired, and used to seeing messy, incomplete applications. If you hand them a disorganized pile of papers, they will be annoyed before they even read your name. They’ve also got a nervous system.
+Let's talk Psychological Engineering. Consular officers are overworked, tired, and used to seeing messy, incomplete applications. If you hand them a disorganized pile of papers, they will be annoyed before they even read your name. They’ve also got a nervous system.
 
 If you hand them a perfectly organized, labeled packet, you are signaling: “Hey, _I am a professional. I have done my homework. Approving me is easy_.”
 
-<GuideBigSis title="Do not forget this">
+<GuideTip title="Do not forget this">
 
 Something important: keep the original documents and photocopies of the packet you will bring with you to the embassy. Keep it safely and bring it with you to Italy, once your visa is granted. You will need these documents once you’re in Italy as well.
 
-</GuideBigSis>
+</GuideTip>
 
 ## **The Golden Rules of the Packet**
 
@@ -2566,16 +2480,16 @@ Use this list to assemble your final packet. Check the boxes as you place them i
 
 <GuideChecklist title='The " highly qualified " Proof (Pick your specific route)'>
 
-- Route A (Degree): Certified Diploma + Transcript (+ Apostille/CIMEA/DV if needed).
-- Route B (Professional Qual.): Certificate + Transcript (+ Apostille/CIMEA/DV if needed).
-- Route C (Experience): Contracts + Payslips + Reference letters covering 5 years (or 3 for IT).
+- Route A (University Degree): Certified Diploma + Transcript (+ Apostilles and Translations/CIMEA/Dichiarazione di Valore).
+- Route B (Professional Qualification): Certificate + Transcript (+ Apostille/CIMEA/DV if needed).
+- Route C (Work Experience): Contracts + Payslips + Reference letters covering 5 years (or 3 for IT).
 
 </GuideChecklist>
 
 <GuideChecklist title='The Job Proof (Pick one)'>
 
 - For Digital Nomads: Recent invoices, client contracts, company registration.
-- For Remote Workers: Employment contract (with remote clause) + Employer Declaration + Signer’s ID.
+- For Remote Workers: Employment contract (with explicit remote international work clause) + Employer Declaration + Signer’s ID.
 
 </GuideChecklist>
 
@@ -2606,14 +2520,10 @@ _Walk into that appointment with a smile. You are ready. We are cheering you on.
 
 </GuideSoftPurple>
 
-<GuideItaliaNote title="Benvenuti in Italia">
-
 **Benvenuti in Italia**
-
-</GuideItaliaNote>
 
 # **Chapter 22 Nomadissimi contacts**
 
 If one document is confusing or feels "impossible," or if you just want that extra layer of safety, we are here.
 
-Inserisci qui come contattarci
+If you purchased a package with a consultation, we go over key things in our private call. If you'd like to book a separate call, it may be booked for a fee in the portal below:
