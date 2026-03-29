@@ -20,6 +20,14 @@ import {
   GuideCompare,
   GuideTOC,
   GuideStat,
+  GuideColumns,
+  GuideQuote,
+  GuideIconRow,
+  GuideMiniCard,
+  GuideSectionIntro,
+  GuideHighlight,
+  GuideSpacer,
+  GuideImageCard,
 } from "@/components/guide/GuideMDX";
 
 export default async function PremiumGuideChapterPage({
@@ -141,6 +149,14 @@ export default async function PremiumGuideChapterPage({
                 GuideCompare,
                 GuideTOC,
                 GuideStat,
+                GuideColumns,
+                GuideQuote,
+                GuideIconRow,
+                GuideMiniCard,
+                GuideSectionIntro,
+                GuideHighlight,
+                GuideSpacer,
+                GuideImageCard,
               }}
             />
           </article>
@@ -182,3 +198,4 @@ export default async function PremiumGuideChapterPage({
     </main>
   );
 }
+

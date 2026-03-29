@@ -231,3 +231,135 @@ export function GuideStat({
     </div>
   );
 }
+
+export function GuideColumns({ children }: { children: ReactNode }) {
+  return <div className="grid gap-4 md:grid-cols-2 my-6">{children}</div>;
+}
+
+export function GuideQuote({
+  children,
+  author,
+}: {
+  children: ReactNode;
+  author?: ReactNode;
+}) {
+  return (
+    <figure className="rounded-[24px] border border-[#D8D1C5] bg-gradient-to-br from-[#FFF9F1] to-[#FFF4E6] px-6 py-6 shadow-[0_12px_30px_rgba(201,168,106,0.08)] my-6">
+      <blockquote className="serif text-[28px] leading-[1.45] text-[#2B2B2B]">
+        {children}
+      </blockquote>
+      {author ? (
+        <figcaption className="mt-4 sans text-sm tracking-[0.08em] uppercase text-[#7E7566]">
+          {author}
+        </figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
+export function GuideIconRow({
+  icon,
+  title,
+  children,
+}: {
+  icon: ReactNode;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="flex items-start gap-4 rounded-[22px] border border-black/10 bg-white/85 px-5 py-5 shadow-[0_10px_24px_rgba(0,0,0,0.04)] my-6">
+      <div className="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#EEF5EC] text-[#4B5D44] text-[20px]">
+        {icon}
+      </div>
+      <div>
+        <h3 className="serif text-[24px] font-semibold text-[#2B2B2B]">
+          {title}
+        </h3>
+        <div className="mt-3 sans text-[16px] leading-[1.9] text-black/80">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function GuideMiniCard({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[20px] border border-black/10 bg-[#FFFCF7] px-4 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.03)]">
+      <h4 className="serif text-[20px] font-semibold text-[#2B2B2B]">
+        {title}
+      </h4>
+      <div className="mt-2 sans text-[15px] leading-[1.85] text-black/80">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export function GuideSectionIntro({
+  eyebrow,
+  title,
+  children,
+}: {
+  eyebrow?: string;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[28px] border border-[#D8D1C5] bg-gradient-to-br from-[#FBF8F2] to-[#F7F2E8] px-6 py-6 shadow-[0_12px_34px_rgba(0,0,0,0.05)] my-6">
+      {eyebrow ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
+          {eyebrow}
+        </div>
+      ) : null}
+      <h2 className="serif mt-3 text-[30px] md:text-[38px] leading-[1.12] font-semibold text-[#2B2B2B]">
+        {title}
+      </h2>
+      <div className="mt-4 sans text-[16px] leading-[1.9] text-black/80">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export function GuideHighlight({ children }: { children: ReactNode }) {
+  return (
+    <span className="rounded-[10px] bg-[#FFF4DE] px-2 py-1 text-black/90">
+      {children}
+    </span>
+  );
+}
+
+export function GuideSpacer({ size = "md" }: { size?: "sm" | "md" | "lg" }) {
+  const map = {
+    sm: "h-4",
+    md: "h-8",
+    lg: "h-12",
+  };
+
+  return <div className={map[size]} aria-hidden="true" />;
+}
+
+export function GuideImageCard({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption?: string;
+}) {
+  return (
+    <figure className="nm-figure my-6">
+      <img src={src} alt={alt} />
+      {caption ? <figcaption>{caption}</figcaption> : null}
+    </figure>
+  );
+}
+

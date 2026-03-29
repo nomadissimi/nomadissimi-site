@@ -156,16 +156,30 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 
 # **Chapter 3 Eligibility**
 
-Let’s cut through the noise. To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes.  
+<GuideSectionIntro eyebrow="Chapter 3" title="Eligibility">
+
+To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes.  
 If you have these, you are ready to start:
 
-✅ **You are a citizen from a country NOT in the European Union**. Otherwise, just buy a plane ticket and come over\! (and then get set up as a _resident in Italy,_ but that’s a different story)
+</GuideSectionIntro>
 
-✅ **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without skipping a beat.
+<GuideBadge>Eligibility</GuideBadge>
+<GuideBadge>Applies to everyone</GuideBadge>
 
-✅ **You are "Highly Qualified"**: You have the credentials: either a University Degree, a recognized 3-year professional qualification, OR proven work experience (3 years for Tech pros, 5 years for others).
+<GuideSpacer size="sm" />
 
-✅ **You have the Funds**: You earn at least €25,000 gross per year to support yourself.
+<GuideChecklist title="The 4 boxes to tick">
+
+- ✅ **You are a citizen from a country NOT in the European Union**. Otherwise, just buy a plane ticket and come over\! (and then get set up as a _resident in Italy,_ but that’s a different story)
+- ✅ **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without skipping a beat.
+- ✅ **You are "Highly Qualified"**: You have the credentials: either a University Degree, a recognized 3-year professional qualification, OR proven work experience (3 years for Tech pros, 5 years for others).
+- ✅ **You have the Funds**: You earn at least €25,000 gross per year to support yourself.
+
+</GuideChecklist>
+
+<GuideStat label="Boxes to tick" value="4" />
+
+<GuideTip title="A little reality check">
 
 Wait... is that a 4/4?
 
@@ -174,20 +188,44 @@ Sì\! That means YOU CAN DO THIS.
 Seriously, take a second to let that sink in. The bureaucracy is just details, and we can help you handle that. The important part is that Italy is actually an option for you.  
 So, are you ready to stop dreaming and start packing?
 
+</GuideTip>
+
+<GuideDivider />
+
 # **Where can I request my Italian Visa?**
+
+<GuideSectionIntro eyebrow="Application location" title="Where can I request my Italian Visa?">
 
 The place to apply for the Digital Nomad or Remote Worker visa is the Italian embassy or consulate in the jurisdiction where you currently reside.
 
-_Take Charlotte. Born in Chicago, now living in New York. She’s dreaming of Italy, so she’ll apply at the Italian Consulate in New York, since that’s where she’s legally resident._
+</GuideSectionIntro>
 
-_Then there’s Olivia, a super-smart American woman who moved to Toronto three years ago. She’s done with those brutal Canadian winters but wants to keep her job benefits. Her spot? Italian Consulate in Toronto._
+<GuideColumns>
+  <GuideMiniCard title="Example 1">
+    _Take Charlotte. Born in Chicago, now living in New York. She’s dreaming of Italy, so she’ll apply at the Italian Consulate in New York, since that’s where she’s legally resident._
+  </GuideMiniCard>
 
-And if there is not an Italian embassy/consulate in the city where I live?
+  <GuideMiniCard title="Example 2">
+    _Then there’s Olivia, a super-smart American woman who moved to Toronto three years ago. She’s done with those brutal Canadian winters but wants to keep her job benefits. Her spot? Italian Consulate in Toronto._
+  </GuideMiniCard>
+</GuideColumns>
+
+<GuideNote title="And if there is not an Italian embassy/consulate in the city where I live?">
 
 You can find the Italian embassy/consulate in your jurisdiction through the following official website:  
 [https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
 
+</GuideNote>
+
+<GuideCallout title="Example">
+
 _For example, if you're in Austin, Texas, go to the site above. Select “STATI UNITI D’AMERICA” (Italian translation for United States of America) under Country, enter “AUSTIN, TX,” and hit Search. You'll land at the Italian Consulate in Houston, Texas._
+
+</GuideCallout>
+
+<GuideDivider />
+
+<GuideSectionIntro eyebrow="Appointments" title="How to book your appointment">
 
 Now that you know how to identify the right embassy or consulate to apply to, you should also know how to book your appointment.  
 Every appointment can be booked through this link: [https://prenotami.esteri.it/](https://prenotami.esteri.it/).  
@@ -195,7 +233,13 @@ But have you already tried to find an available slot?
 Maybe you’ve logged in several times, hunting for a date, but everything always seems booked (or broken).  
 It happened to me, and now we want to share the trick that lets us snag a good spot for my application: The Italian government refreshes available dates right after midnight Italian time between Sunday and Monday. Just log in during that window (after converting the time zone), and you should be able to see open slots. For example, if you’re in the American East Coast, it would be at around 6pm your time.
 
+</GuideSectionIntro>
+
+<GuideWarning title="Important tip">
+
 **\*Important tip:** This guide helps you gather all required documents as quickly and easily as possible. Even with our support, some documents take months to arrive, and others must be requested in a specific order. Plan ahead by estimating your timeline and booking your Consulate/Embassy appointment with at least one or two extra months as a buffer. If you need to reschedule, cancel the original and book a new one since they don’t take duplicate appointments.\*
+
+</GuideWarning>
 
 # **Chapter 4 Keys to Italy: Your Must-Have Document Checklist**
 
