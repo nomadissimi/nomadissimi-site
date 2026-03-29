@@ -588,6 +588,7 @@ In the next subsections, we’ll guide you through each path with a clear, step-
 <GuideBadge>Most common route</GuideBadge>
 
 <GuideHeroAccent
+  title="Option A: Higher Education Degree"
   subtitle="If you have a university degree, you're taking the path most consulates know how to manage best. This is the most common route, and if you qualify for it, this is the one we recommend to follow."
 />
 
@@ -597,7 +598,7 @@ Arecognized tertiary degree is the clearest, most straightforward way to prove t
 
 <GuideTOC title="In this chapter">
 
-- What “Higher” Actually Means (& Why “3 YearsMatter)
+- What “Higher” Actually Means (& Why “3 Years” Matter)
 - Why Having Your Degree Recognized in Italy Isn't So Straightforward
 - From University to Consulate: The Paper Trail
 - Diploma + Transcript: Request Them Together
@@ -671,13 +672,12 @@ So if your degree comes from the United States, you'll have one document pathway
 
 In this guide, you’ll find a clear explanation of the documents consulates usually ask for, so if they mention a “_dichiarazione di valore_” or a “_traduzione certificata_,” you’ll know what they mean and how to get it.
 
-**One thing to remember:** always confirm the exact requirements with your specific consulate if you can.\*\*
-
+**One thing to remember:** always confirm the exact requirements with your specific consulate if you can.
 </GuideWarning>
 
 <GuideTip>
 
-A lot of people find out mid-process that their consulate wants extra pieces, like a notarized transcript of records (which can take weeks to get from your university), an apostille, or a certified translation done by someone with very specific credentials. Those “small” details can quietly add weeks {or even months} to your timeline if you don’t spot them early.
+A lot of people find out mid-process that their consulate wants extra pieces, like a notarized transcript of records (which can take weeks to get from your university), an apostille, or a certified translation done by someone with very specific credentials. Those “small” details can quietly add weeks (or even months) to your timeline if you don’t spot them early.
 
 But here’s the flip side: double-checking requirements with your specific consulate can bring pleasant surprises, too. You might learn they don’t require apostilles, or they don’t want a “certified translation” at all. When that happens, you save time, money, and stress (and you can focus only on the items this guide actually applies to).
 
@@ -1285,7 +1285,7 @@ These are some of the most important components of your application:
 
 Now you have everything you need to turn your degree into proof that Italy can actually read and accept. Follow the sequence, keep your packet clean, and don’t waste energy guessing what’s next: you already have the roadmap. And if anything gets confusing, you’re not supposed to muscle through alone: Nomadissimi is your big sister on the bureaucratic battlefield, and we’re walking you to the “Approved” visa stamp.
 
-# **Chapter 11 item 5 option B: Professional Qualification (when your qualification isn’t a university degree)**
+# **Chapter 11 item 5 option B: Professional Qualification (not university degree)**
 
 Using a classic university Bachelor’s/Master’s degree (Option A) is the most common way to prove you’re “highly qualified”… but it’s not the only way.
 
@@ -1382,8 +1382,9 @@ With Option B, your consulate’s interpretation matters even more than it does 
 
 _Your goal isn’t to win an argument with bureaucracy; your goal is to walk out with that visa sticker. Let the consulate define what “right” looks like at their desk._
 
-# **Chapter 12 item 5 Option C: No Degree, But Still Highly Qualified (The Work-Experience Route)**
+# **Chapter 12 item 5 Option C: the Work Experience Route)**
 
+No Degree, But Still Highly Qualified
 If Option A and B are “show your education,” Option C is “show your receipts.” This path is totally legitimate, but it’s the one where Italy doesn’t care how talented you are in real life—it cares whether your experience can be proven on paper, in a way a consular officer can verify in 3 minutes.
 
 ### **What Option C is (and who it’s for)**
