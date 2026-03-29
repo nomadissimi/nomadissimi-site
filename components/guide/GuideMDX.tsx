@@ -69,25 +69,22 @@ type ListProps = {
   items: ReactNode[];
 };
 
-export function GuideChecklist({ title = "Checklist", items }: ListProps) {
+export function GuideChecklist({
+  title = "Checklist",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
   return (
     <div className="rounded-[24px] border border-black/10 bg-white/85 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] my-6">
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#4B5D44]/70">
         {title}
       </div>
 
-      <ul className="mt-4 space-y-3">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-start gap-3">
-            <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#EEF5EC] text-[#4B5D44]">
-              ✓
-            </span>
-            <div className="sans text-[16px] leading-[1.9] text-black/82">
-              {item}
-            </div>
-          </li>
-        ))}
-      </ul>
+      <div className="mt-4 sans text-[16px] leading-[1.9] text-black/82">
+        {children}
+      </div>
     </div>
   );
 }

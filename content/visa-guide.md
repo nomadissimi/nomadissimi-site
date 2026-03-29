@@ -372,14 +372,13 @@ Because legally, this visa falls under the rules for highly qualified work (in t
 
 ### **The 3 qualification routes (pick ONE and follow it)**
 
-<GuideChecklist
-title="Qualification routes"
-items={[
-<>Higher education degree: If you have a Bachelor’s degree (or higher), this is usually the most straightforward route.</>,
-<>Professional qualification: similar to “university education-level” proof. This would be used if you don’t have a traditional Bachelor’s degree, but you have a recognized post-secondary qualification.</>,
-<>Proven Work Experience (often described by consulates as “higher professional qualification + experience”): for people who don’t have the above, but can prove strong professional experience with the right kind of evidence.</>,
-]}
-/>
+<GuideChecklist title="Qualification routes">
+
+- Higher education degree: If you have a Bachelor’s degree (or higher), this is usually the most straightforward route.
+- Professional qualification: similar to “university education-level” proof. This would be used if you don’t have a traditional Bachelor’s degree, but you have a recognized post-secondary qualification.
+- Proven Work Experience (often described by consulates as “higher professional qualification + experience”): for people who don’t have the above, but can prove strong professional experience with the right kind of evidence.
+
+</GuideChecklist>
 
 Here’s the big picture: there are three main ways to prove you qualify, and your task is to choose the path that best fits your real situation and that you can document cleanly.
 
