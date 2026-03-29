@@ -104,21 +104,17 @@ But which one?
 
 The difference lies mostly in your contract. Italy splits the same “work remotely from Italy” pathway into two buckets because the legal responsibilities (and the documents that prove them) are different.
 
-<GuideColumns>
-  <GuideMiniCard title="Digital Nomad = self-employed">
+<GuideCard title="Digital Nomad = self-employed">
 
 **You count as a “digital nomad” in Italy if you work for yourself:** freelancer, consultant, or other independent professional with no employer payroll.
 
-  </GuideMiniCard>
+</GuideCard>
 
-  <GuideMiniCard title="Remote Worker = employee">
+<GuideCard title="Remote Worker = employee">
 
 **You count as a “remote worker” when you’re on a company payroll and that company officially lets you do your job 100% remotely.**
 
-  </GuideMiniCard>
-</GuideColumns>
-
-## **Digital Nomad \= self-employed**
+</GuideCard>
 
 <GuideBadge>Digital Nomad</GuideBadge>
 
