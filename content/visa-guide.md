@@ -77,19 +77,23 @@ But first, check if you qualify for the visa; and from there, determine if you�
 
 <GuideChecklist title="Both visas require">
 
-- Being a non-EU citizen (EU folks can simply move to Italy by being European).
-- Your work is fully location-independent, meaning you can deliver everything online as long as you have a stable Internet connection.
-- You earn at least €25,000 gross per year. (It doesn’t matter whether the monthly payments differ. What matters is the yearly sum).
-- You have at least 6 months of experience doing the kind of work you plan to do as a digital nomad or remote worker.
-- Pick just one of the following:
-  1. **Bachelor’s degree:** Italy welcomes people with a University degree obtained through a 3-year minimum education.  
-     _This is the most common option, but it needs to be proven properly. We will explain to you how in this guide._
-  2. **Professional qualification**: If you don't have a traditional university degree, Italy accepts post-secondary professional qualifications: as long as they're at least 3 years long and issued by a recognized tertiary institution (like a polytechnic, higher technical institute, or university of applied sciences). You’ll need to prove that this qualification is equivalent to a Bachelor's degree. _We will also explain to you how to do so in this guide._
-  3. **Proven Work Experience:** No degree? No problem. You can also qualify by showing you've mastered your craft through actual work experience.
-     - **For Tech Professionals** (Developers & IT Specialists): If you are a software developer, web engineer, systems administrator, IT manager, or similar, you only need 3 years of relevant work experience gained within these last 7 years.
-     - **For Other Professions:** You need at least 5 years of professional experience in your specific sector (this would be somewhat comparable to a “Bachelor’s” level).
+- **Being a non-EU citizen** (EU folks can simply move to Italy by being European).
+- **Your work is fully location-independent,** meaning you can deliver everything online as long as you have a stable Internet connection.
+- **You earn at least €25,000 gross per year.** (It doesn’t matter whether the monthly payments differ. What matters is the yearly sum).
+- **You have at least 6 months of experience** doing the kind of work you plan to do as a digital nomad or remote worker.
+- **Pick just one of the following:**
+  1.  **Bachelor’s degree:**
+      <br />
+      Italy welcomes people with a University degree obtained through a 3-year minimum education.  
+       _This is the most common option, but it needs to be proven properly. We will explain to you how in this guide._
+  2.  **Professional qualification**:
+      <br />
+      If you don't have a traditional university degree, Italy accepts post-secondary professional qualifications: as long as they're at least 3 years long and issued by a recognized tertiary institution (like a polytechnic, higher technical institute, or university of applied sciences). You’ll need to prove that this qualification is equivalent to a Bachelor's degree. _We will also explain to you how to do so in this guide._
+  3.  **Proven Work Experience:**
+      <br />
+      No degree? No problem. You can also qualify by showing you've mastered your craft through actual work experience. - **For Tech Professionals** (Developers & IT Specialists): If you are a software developer, web engineer, systems administrator, IT manager, or similar, you only need 3 years of relevant work experience gained within these last 7 years. - **For Other Professions:** You need at least 5 years of professional experience in your specific sector (this would be somewhat comparable to a “Bachelor’s” level).
 
-     _Note: You’ll need solid proof like contracts, payslips, or reference letters. We’ll show you exactly what works later on in the guide._
+           _Note: You’ll need solid proof like contracts, payslips, or reference letters. We’ll show you exactly what works later on in the guide._
 
 </GuideChecklist>
 
@@ -169,45 +173,45 @@ You prove employment, and you attach employer-specific items (company contract \
 Let’s play a quick quiz game to determine whether you are a Digital Nomad or a Remote Worker.  
 _Instructions:_ For each question, pick A or B. Count your A’s and B’s at the end.
 
-<GuideSteps title="Quick quiz">
+<GuideQuiz title="Quick quiz">
 
-**Who pays you?**
+<GuideQuizItem
+    question="Who pays you?"
+    a="Multiple clients (or one client, but as a contractor)."
+    b="One employer through payroll."
+  />
 
-A. Multiple clients (or one client, but as a contractor).
-<br />
-B. One employer through payroll.
+<GuideQuizItem
+    question="What document best describes your work relationship?"
+    a="Client contract/service agreement/invoice-based work."
+    b="Employment contract (or a formal binding job offer)."
+  />
 
-**What document best describes your work relationship?**
+<GuideQuizItem
+    question="When you “take a day off,” what happens?"
+    a="You tell your clients and manage deliverables."
+    b="You request leave from your manager/HR."
+  />
 
-A. Client contract/service agreement/invoice-based work.
-<br />
-B. Employment contract (or a formal binding job offer).
+<GuideQuizItem
+    question="If Italy asks: “Who is responsible for your work activity?”"
+    a="You (you run the show, and the admin)."
+    b="Your employer (they’re the company in charge)."
+  />
 
-**When you “take a day off,” what happens?**
+<GuideQuizItem
+    question="If your company suddenly says, “No more remote from abroad,” then…"
+    a="You switch clients or renegotiate because your work isn’t tied to one employer."
+    b="Your whole plan is at risk because your visa mostly relies on that specific employment setup."
+  />
 
-A. You tell your clients and manage deliverables.
-<br />
-B. You request leave from your manager/HR.
+<GuideQuizItem
+    question="Your income proof will mostly look like…"
+    a="Invoices + bank incoming payments from clients."
+    b="Payslips + employment contract salary details."
+  />
 
-**If Italy asks: “Who is responsible for your work activity?”**
-
-A. You (you run the show, and the admin).
-<br />
-B. Your employer (they’re the company in charge).
-
-**If your company suddenly says, “No more remote from abroad,” then…**
-
-A. You switch clients or renegotiate because your work isn’t tied to one employer.
-<br />
-B. Your whole plan is at risk because your visa mostly relies on that specific employment setup.
-
-**Your income proof will mostly look like…**
-
-A. Invoices \+ bank incoming payments from clients.
-<br />
-B. Payslips \+ employment contract salary details.
-
-</GuideSteps>
+</GuideQuiz>
 
 <GuideRecap title="Your result">
 
@@ -357,15 +361,11 @@ _We'll break down each item in detail so you can handle Italian bureaucracy like
 
 ## **What is it?**
 
-<GuideCard title="What is it?">
-
 The **National Visa Application Form** is the official form you must complete to apply for the Digital Nomad visa. You might see it labeled as a D-type visa, which simply means it’s for stays longer than 90 days.
-
-</GuideCard>
 
 ## **How to get it?**
 
-<GuideChecklist title="How to get it">
+<GuideChecklist>
 
 - You can download it from the official website of the Italian Consulate or Embassy, from where you will apply for your visa.
 - You can download the standard official National Visa Application Form from the following link:  
@@ -374,24 +374,22 @@ The **National Visa Application Form** is the official form you must complete to
 
 </GuideChecklist>
 
-<GuideNote title="So how do you get the right one?">
+<GuideCard>
 
 As previously explained, you can find the right embassy/consulate from which to apply through the website:  
 [https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
 
-</GuideNote>
+</GuideCard>
 
 <GuideSteps title="What to do next">
 
-Click through to your embassy or consulate's site and search for “Digital nomad/Remote worker.” You'll quickly find the dedicated page for this visa—then download the “NATIONAL VISA APPLICATION FORM” (or the general form for stays over 90 days).
+Click through to your embassy or consulate's site and search for “Digital nomad/Remote worker.” You'll quickly find the dedicated page for this visa, and then download the “NATIONAL VISA APPLICATION FORM” (or the general form for stays over 90 days).
 
 </GuideSteps>
 
 <GuideDivider />
 
-## **One important tip from your big sis Nomadissimi**
-
-<GuideTip title="One important tip from your big sis Nomadissimi">
+<GuideTip title="Big sis tip">
 
 Each embassy or consulate runs its own show, with rules that can slightly differ from others.
 
@@ -403,9 +401,9 @@ You also know that your possibility to accomplish your dream and move to Italy d
 
 ## **Need help filling it out?**
 
-<GuideWarning title="Need help filling it out?">
+<GuideWarning title="We've got you!">
 
-\*We know this form can be tricky, and making a mistake means starting over. If you don't want to risk it, you can book an extra 30-minute “Kit-Filling Call” with us for €65, and we will fill out the entire thing together on screen. \*\*\*\*
+We know this form can be tricky, and making a mistake means starting over. If you don't want to risk it, you can book an extra 30-minute “Kit-Filling Call” with us for €65, and we will fill out the entire thing together on screen.
 
 </GuideWarning>
 
@@ -418,38 +416,50 @@ Your passport sounds like the easiest item on the list… until it’s the reaso
 - **Validity**: Your passport must be valid for at least 3 months beyond the end of the visa you’re requesting.  
   _For example, if you’re applying for a 1-year visa ending on 30 June 2027, your passport must be valid at least until 30 September 2027\. In other words, the passport can’t “die” right after your visa ends. You need that extra buffer built in._
 - **Blank pages**: You need at least 2 blank pages (visa sticker \+ stamps).
-- **Issued within these recent 10 years**: If your passport is older than 10 years, it can be considered not acceptable even if it “still looks fine.”
+- **Issued within these recent 10 years**: even if it “still looks fine”, ff your passport is older than 10 years, it can be considered not acceptable.
 
-### **​Big-sis reality check (don’t skip)**
+## **​Big-sis reality check (don’t skip)**
 
-If your passport expires somewhat close to the limit, don’t gamble. Consulates don’t care that you intend to renew it. They only care about what’s in your hands on appointment day, and it’s better to be safe than sorry.
+<GuideWarning>
 
-### **Our safety buffer (recommended)**
+If your passport expires somewhat close to the limit by a few months, it's best to renew your passport prior to applying for the visa. Consulates don’t care that you intend to renew it. Consulates don't care about "good intentions" and wishful thinking. They only care about what’s in your hands on appointment day, and it’s better to be safe than sorry.
+
+</GuideWarning>
+
+<GuideTip title="Our safety buffer (recommended)">
 
 Even though the formal rule is “3 months after,” plan smarter: assume it may take time between (1) appointment day, (2) processing, (3) visa issuance, and (4) your actual entry to Italy… then add buffer months so you’re never on the edge.
 
-### **What to bring to the appointment**
+</GuideTip>
+
+<GuideDivider />
+
+## **What to bring to the appointment**
 
 Do not forget to bring with you:
+
+<GuideChecklist title="Bring this to the appointment">
 
 - **Original passport**.
 - A **photocopy of the main passport data pages**, which include:
   - Your personal data
   - The passport expiration date
   - Your signature
-  - Every previous Visa or Stamp _(better to overprepare)_
+  - Every other Visa or Stamp _(better to overprepare because they can also request to see those things)_
+
+</GuideChecklist>
 
 ###
 
 # **Chapter 7 item 3\. Your photo**
 
-This is not just “a random picture for paperwork.” It’s your official identity photo for the Italian authorities, so it needs to look exactly the way they expect. Otherwise, you risk hearing: “Your photo is not compliant, please come back later.”
+Even if this step is super simple, make sure it follows the required format. It’s your official identity photo for the Italian authorities, so it needs to look exactly the way they expect. Otherwise, you risk hearing: “Your photo is not compliant, please come back later.”
 
 ### **Why do they ask for a specific type of picture?**
 
 They ask for this photo because it’s the picture they will print on your visa sticker inside your passport. That visa is an official ID document, so they need a photo that matches international passport standards and can be scanned/archived correctly.
 
-### **Photo requirements (non-negotiable)**
+### **Photo requirements:**
 
 - In color (not black and white).
 - Size: 35x45 mm.
@@ -461,7 +471,11 @@ They ask for this photo because it’s the picture they will print on your visa 
 
 ### **Follow the specific standards**
 
+<GuideTip>
+
 Go to a real photo studio and say, “I need a 35×45 mm passport photo for an Italian national visa.” You’re beautiful no matter what, and passport photos are not meant to be photogenic magazine covers.
+
+</GuideTip>
 
 ### **What to bring to the appointment**
 

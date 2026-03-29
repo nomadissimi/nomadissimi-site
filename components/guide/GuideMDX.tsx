@@ -14,24 +14,32 @@ export function GuideCallout({ title, children }: BoxProps) {
   );
 }
 
-export function GuideTip({ title = "Big-sis tip", children }: BoxProps) {
+export function GuideTip({ title, children }: BoxProps) {
   return (
     <div className="nm-guide-tip">
-      <div className="sans text-xs tracking-[0.18em] uppercase text-[#4B5D44]/70">
-        {title}
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#4B5D44]/70">
+          {title}
+        </div>
+      ) : null}
+      <div className={`${title ? "mt-2" : ""} guide-prose max-w-none`}>
+        {children}
       </div>
-      <div className="mt-2 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
 
-export function GuideWarning({ title = "Important", children }: BoxProps) {
+export function GuideWarning({ title, children }: BoxProps) {
   return (
     <div className="nm-guide-warning">
-      <div className="sans text-xs tracking-[0.18em] uppercase text-[#9B6B1E]/80">
-        {title}
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#9B6B1E]/80">
+          {title}
+        </div>
+      ) : null}
+      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
+        {children}
       </div>
-      <div className="mt-3 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -71,9 +79,7 @@ export function GuideChecklist({
         {title}
       </div>
 
-      <div className="mt-4 guide-checklist max-w-none">
-        {children}
-      </div>
+      <div className="mt-4 guide-checklist max-w-none">{children}</div>
     </div>
   );
 }
@@ -122,19 +128,17 @@ export function GuideBadge({ children }: { children: ReactNode }) {
   );
 }
 
-export function GuideNote({
-  title = "Note",
-  children,
-}: {
-  title?: string;
-  children: ReactNode;
-}) {
+export function GuideNote({ title, children }: BoxProps) {
   return (
     <div className="rounded-[22px] border border-[#D8D1C5] bg-[#FBF8F2] px-5 py-5 shadow-[0_10px_24px_rgba(0,0,0,0.03)] my-6">
-      <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
-        {title}
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
+          {title}
+        </div>
+      ) : null}
+      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
+        {children}
       </div>
-      <div className="mt-3 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -439,6 +443,56 @@ export function GuideIllustrationCard({
             {title}
           </h3>
           <div className="mt-3 guide-prose max-w-none">{children}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type QuizItemProps = {
+  question: string;
+  a: ReactNode;
+  b: ReactNode;
+};
+
+export function GuideQuiz({
+  title = "Quick quiz",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[26px] border border-[#D8D1C5] bg-[#FFFCF7] px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] my-6">
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
+        {title}
+      </div>
+
+      <div className="mt-5 space-y-5">{children}</div>
+    </div>
+  );
+}
+
+export function GuideQuizItem({ question, a, b }: QuizItemProps) {
+  return (
+    <div className="rounded-[20px] border border-black/8 bg-white/80 px-4 py-4 shadow-[0_8px_20px_rgba(0,0,0,0.03)]">
+      <h4 className="serif text-[24px] font-semibold text-[#2B2B2B] leading-snug">
+        {question}
+      </h4>
+
+      <div className="mt-4 space-y-3">
+        <div className="rounded-[16px] border border-[#D8D1C5] bg-[#FBF8F2] px-4 py-3">
+          <p className="sans text-[15px] uppercase tracking-[0.14em] text-[#7E7566]">
+            A
+          </p>
+          <div className="mt-1 guide-prose max-w-none">{a}</div>
+        </div>
+
+        <div className="rounded-[16px] border border-[#D8D1C5] bg-[#FBF8F2] px-4 py-3">
+          <p className="sans text-[15px] uppercase tracking-[0.14em] text-[#7E7566]">
+            B
+          </p>
+          <div className="mt-1 guide-prose max-w-none">{b}</div>
         </div>
       </div>
     </div>

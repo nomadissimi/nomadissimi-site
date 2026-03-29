@@ -29,10 +29,12 @@ import {
   GuideSpacer,
   GuideImageCard,
   GuideFlourish,
+  GuideQuiz,
   GuideIcon,
   GuideHeroAccent,
   GuideStamp,
   GuideIllustrationCard,
+  GuideQuizItem,
 } from "@/components/guide/GuideMDX";
 
 export default async function PremiumGuideChapterPage({
@@ -143,9 +145,11 @@ export default async function PremiumGuideChapterPage({
               components={{
                 GuideCallout,
                 GuideTip,
+                GuideQuizItem,
                 GuideWarning,
                 GuideDivider,
                 GuideCard,
+                GuideQuiz,
                 GuideChecklist,
                 GuideSteps,
                 GuideRecap,
