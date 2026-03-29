@@ -258,7 +258,7 @@ So, are you ready to stop dreaming and start packing?
 The place to apply for the Digital Nomad or Remote Worker visa is the Italian embassy or consulate in the jurisdiction where you currently reside.
 
 <GuideColumns>
-  <GuideMiniCard>
+  <GuideMiniCard title="Example 1">
     _Take Charlotte. Born in Chicago, now living in New York. She’s dreaming of Italy, so she’ll apply at the Italian Consulate in New York, since that’s where she’s legally resident._
   </GuideMiniCard>
 
@@ -274,7 +274,7 @@ You can find the Italian embassy/consulate in your jurisdiction through the foll
 
 </GuideNote>
 
-<GuideCallout title="Example">
+<GuideCallout>
 
 _For example, if you're in Austin, Texas, go to the site above. Select “STATI UNITI D’AMERICA” (Italian translation for United States of America) under Country, enter “AUSTIN, TX,” and hit Search. You'll land at the Italian Consulate in Houston, Texas._
 
@@ -285,11 +285,11 @@ _For example, if you're in Austin, Texas, go to the site above. Select “STATI 
 # **How to book your appointment**
 
 Now that you know how to identify the right embassy or consulate to apply to, you should also know how to book your appointment.  
-Every appointment can be booked through this link: [https://prenotami.esteri.it/](https://prenotami.esteri.it/).  
-<br />
+Every appointment can be booked through this link: [https://prenotami.esteri.it/](https://prenotami.esteri.it/).
+
 But have you already tried to find an available slot?  
-Maybe you’ve logged in several times, hunting for a date, but everything always seems booked (or broken).  
-<br />
+Maybe you’ve logged in several times, hunting for a date, but everything always seems booked (or broken).
+
 It happened to me, and now we want to share the trick that lets us snag a good spot for my application: The Italian government refreshes available dates right after midnight Italian time between Sunday and Monday. Just log in during that window (after converting the time zone), and you should be able to see open slots. For example, if you’re in the American East Coast, it would be at around 6pm your time.
 
 <GuideWarning title="It's best to start early">
@@ -309,15 +309,13 @@ If you need to reschedule, cancel the original and book a new one since they don
 <GuideSpacer size="sm" />
 
 So far we've determined what visa you will apply for. By now, you also know how to book an appointment at the Italian Embassy/Consulate.  
-Now it’s time to prove it.  
-<br />
+Now it’s time to prove it.
 
-The Italian bureaucracy loves paper, but don't let that scare you. Think of this as gathering the keys to your new villa in front of the Ionian Sea, or your cozy condo in Northern Italy.  
-<br />
+The Italian bureaucracy loves paper, but don't let that scare you. Think of this as gathering the keys to your new villa in front of the Ionian Sea, or your cozy condo in Northern Italy.
 
 Below is the complete list of documents you will need to present at the Italian Consulate. Don't worry about the "How" just yet. For now, just scan the list to get the big picture. In the next sections of this guide, we will break down every single item. We will explain exactly where to get it, how to translate it, and how to make it "Consulate-proof."
 
-<GuideNote title='How to use this chapter'>
+<GuideNote>
 
 For now, just scan the list to get the big picture. In the next sections of this guide, we will break down every single item.
 
@@ -345,7 +343,7 @@ Both Digital Nomads (freelancers) and Remote Workers (employees) have to collect
 
 <GuideDivider />
 
-If you are a Remote Worker (=employee), you also need:
+## **If you are a Remote Worker (=employee), you also need:**
 
 <GuideChecklist title="Remote Worker only">
 
@@ -354,9 +352,9 @@ If you are a Remote Worker (=employee), you also need:
 
 </GuideChecklist>
 
-<GuideRecap title="So much more than a checklist">
+<GuideRecap title="this is So much more than a checklist">
 
-It's one thing to have a list, it's another thing to have each item explained in full detail. That's what the rest of this guide is about.
+It's one thing to have a list, it's another thing to have each item explained in full detail. That's what The Nomadissimi Digital Nomad Visa Master Guide is all about. We've given you this as a quick overview so you can have an idea of what to expect.
 _We'll break down each item in detail so you can handle Italian bureaucracy like a pro._
 
 </GuideRecap>
@@ -449,7 +447,7 @@ Even though the formal rule is “3 months after,” plan smarter: assume it may
 
 ###
 
-# **Chapter 7 item 3\. Your photo**
+# **Chapter 7 item 3: Your photo**
 
 Even if this step is super simple, make sure it follows the required format. It’s your official identity photo for the Italian authorities, so it needs to look exactly the way they expect. Otherwise, you risk hearing: “Your photo is not compliant, please come back later.”
 
@@ -472,12 +470,11 @@ They ask for this photo because it’s the picture they will print on your visa 
 <GuideTip>
 
 Go to a real photo studio and say, “I need a 35×45mm passport photo for an Italian national visa.”
-<br />
 You’re beautiful no matter what, and passport photos are not meant to be photogenic magazine covers.
 
 </GuideTip>
 
-### **What to bring to the appointment**
+## **What to bring to the appointment**
 
 - Bring your **photo** with you, ideally with an extra copy too (some embassies/consulates may ask for more than one).
 
@@ -485,7 +482,7 @@ You’re beautiful no matter what, and passport photos are not meant to be photo
 
 # **Chapter 8 item 4: Residence Permit (only if you live abroad)**
 
-<GuideBadge>Only if you live abroad</GuideBadge>
+<GuideBadge>skip this section if you're applying from your country of citizenship</GuideBadge>
 
 If you’re applying in a country that is not the country of your passport, the consulate needs proof that you’re legally allowed to live there.
 
@@ -494,11 +491,11 @@ If you’re applying in a country that is not the country of your passport, the 
 <GuideCard>
 
 You need it if you live in a different country from your nationality and you’re applying at the Italian consulate in that country.  
-You don’t need it if you’re applying in the same country that issued your passport.
+Remember that you can skip this section if you’re applying in the same country that issued your passport.
 
 </GuideCard>
 
-<GuideIllustrationCard icon="⌁" title="For example">
+<GuideIllustrationCard title="For example">
 
 _Josh is Canadian but lives in Barcelona, Spain. He’ll apply at the Italian consulate that covers Barcelona, so he must bring his Canadian passport \+ Spanish residence permit (his legal right to live in Spain)._
 
@@ -508,16 +505,20 @@ _Josh is Canadian but lives in Barcelona, Spain. He’ll apply at the Italian co
 
 Bring the document that proves legal residence in that country (usually a residence card/permit). Some consulates are strict about what they accept, so don’t assume a short-term tourist status is enough.
 
-### **Requirements (non-negotiable)**
+<GuideDivider />
+
+## **Requirements (non-negotiable)**
 
 - It must be valid on the day of your appointment (not expired, not “expiring tomorrow”)
 - Bring the original document (and a photocopy as an extra)
 
 Expect the consulate to keep a copy, but you still need to show the original at the appointment.
 
-### **If your permit is in renewal (read this carefully)**
+## **If your permit is in renewal (read this carefully)**
 
+<GuideWarning>
 If your residence permit is currently being renewed, don’t assume the consulate will accept “I’m waiting for the new card” as proof of legal residence. Bring everything you have: your expired/expiring residence card (original), the official renewal receipt/confirmation (original \+ copy), and any extension letter that proves you’re still legally resident while the renewal is processed. Because each consulate may interpret “valid residence” differently in renewal cases, check your specific consulate’s instructions before appointment day. This is exactly the type of detail that can trigger a painful “come back next month.”
+</GuideWarning>
 
 ## **Other tips (this avoids silly delays)**
 
@@ -542,17 +543,33 @@ Let’s build your “Highly Qualified” profile.
 
 # **Chapter 9 item 5: Proof of being a “highly qualified” worker**
 
-_This is the part where most people hit the wall not because they’re unqualified, but because Italy only accepts a very specific paper trail that matches the legal definition of a “highly specialized worker.” But what does that even mean? We break it all down here so you don’t walk into your appointment with a packet that looks fine but doesn’t speak Italy’s specific bureaucracy language._
+<GuideHeroAccent
+  title='Proof of being a “highly qualified” worker'
+  subtitle='This is the part where most people hit the wall not because they’re unqualified, but because Italy only accepts a very specific paper trail that matches the legal definition of a “highly specialized worker.” But what does that even mean? We break it all down here so you don’t walk into your appointment with a packet that looks fine but doesn’t speak Italy’s specific bureaucracy language.'
+/>
 
-### **Why this is so hard (and so important)**
+<GuideBadge>Core requirement</GuideBadge>
+<GuideBadge>High-stakes section</GuideBadge>
+
+<GuideSpacer size="sm" />
+
+## **Why this is so hard (and so important)**
+
+<GuideWarning>
 
 Italy doesn’t give this visa to “anyone who works online.” It's not an "online worker visa" for random people who make money from their laptop. The Digital Nomad/Remote Worker visa is specifically designed for **highly specialized workers**, and proving that on paper is often the longest, most bureaucratic, and most time-consuming part of the entire application.
 
-### **Why Italy asks for it**
+</GuideWarning>
+
+## **Why Italy asks for it**
+
+<GuideCard>
 
 Because legally, this visa falls under the rules for highly qualified work (in the Italian immigration framework), so the consulate must verify that your professional profile matches the category before they can approve you.
 
-### **The 3 qualification routes (pick ONE and follow it)**
+</GuideCard>
+
+## **The 3 qualification routes (pick ONE and follow it)**
 
 <GuideChecklist title="Qualification routes">
 
@@ -562,13 +579,25 @@ Because legally, this visa falls under the rules for highly qualified work (in t
 
 </GuideChecklist>
 
+<GuideNote>
+
 Here’s the big picture: there are three main ways to prove you qualify, and your task is to choose the path that best fits your real situation and that you can document cleanly.
+
+</GuideNote>
+
+<GuideSteps title="Choose one route and follow it">
 
 1. **Higher education degree:** If you have a Bachelor’s degree (or higher), this is usually the most straightforward route.
 2. **Professional qualification**: similar to “university education-level” proof. This would be used if you don’t have a traditional Bachelor’s degree, but you have a recognized post-secondary qualification.
 3. **Proven Work Experience** (often described by consulates as “**higher professional qualification \+ experience**”): for people who don’t have the above, but can prove strong professional experience with the right kind of evidence.
 
+</GuideSteps>
+
+<GuideRecap title="What comes next">
+
 In the next subsections, we’ll guide you through each path with a clear, step-by-step document sequence, so you know exactly what to request, in what order, and how to build a complete consulate-ready packet.
+
+</GuideRecap>
 
 # **Chapter 10 item 5 Option A: Higher Education Degree**
 
