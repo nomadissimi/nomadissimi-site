@@ -580,3 +580,53 @@ export function GuideSectionBreak({
   );
 }
 
+export function GuideBigSis({
+  title = "Big-sis aside",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="relative my-8 rounded-[28px] border border-[#E7D7C7] bg-gradient-to-br from-[#FFFDF8] via-[#FFF8F2] to-[#FFF3EA] px-5 py-5 shadow-[0_14px_30px_rgba(187,140,92,0.08)]">
+      <div className="absolute -top-3 left-6 h-6 w-6 rounded-full border border-[#E7D7C7] bg-[#FFF8F2]" />
+      <div className="absolute -top-1 left-12 h-4 w-4 rounded-full border border-[#E7D7C7] bg-[#FFF8F2]" />
+      <div className="absolute top-4 right-5 text-[18px] opacity-60">☁️</div>
+
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#A06A4B]">
+        {title}
+      </div>
+
+      <div className="mt-3 guide-prose max-w-none">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+
+export function GuideItaliaNote({
+  title = "Italian curiosity",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="relative my-8 overflow-hidden rounded-[24px] border border-[#C9D7C4] bg-gradient-to-br from-[#F8FFF7] via-[#F4FBF3] to-[#EEF7EC] px-5 py-5 shadow-[0_12px_28px_rgba(75,93,68,0.06)]">
+      <div className="absolute right-0 top-0 h-24 w-24 rounded-full bg-[#DDEAD8] blur-2xl opacity-60" />
+      <div className="absolute left-0 bottom-0 h-20 w-20 rounded-full bg-[#F5E8C8] blur-2xl opacity-40" />
+
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#4B5D44]/80">
+        {title}
+      </div>
+
+      <div className="mt-3 guide-prose max-w-none">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+
+
