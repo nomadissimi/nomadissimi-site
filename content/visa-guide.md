@@ -157,16 +157,14 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 # **Chapter 3 Eligibility**
 
 <GuideHeroAccent
-  title="Eligibility"
-  subtitle="Let’s cut through the noise. To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes. If you have these, you are ready to start:"
+  subtitle="To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes. If you have these, you are ready to start:"
 />
 
-<GuideBadge>Eligibility</GuideBadge>
 <GuideBadge>Applies to everyone</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-<GuideChecklist title="The 4 boxes to tick">
+<GuideChecklist title="Starting Requirements (for either visa)">
 
 - ✅ **You are a citizen from a country NOT in the European Union**. Otherwise, just buy a plane ticket and come over\! (and then get set up as a _resident in Italy,_ but that’s a different story)
 - ✅ **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without skipping a beat.
