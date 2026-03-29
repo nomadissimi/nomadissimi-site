@@ -28,7 +28,7 @@
 # **Chapter 1 Welcome**
 
 _Before we get started, we want to say a genuine thank you for trusting Nomadissimi._  
-We know that moving to Italy is so much more than changing your address. It’s an important choice and a new chapter in your life. Perhaps it’s also about chasing a feeling, a dream you’ve probably had for years. It’s about waking up to a different pace of life. Moving to a new country takes guts. And honestly? It shouldn't be this hard.
+We know that moving to Italy is so much more than changing your address. It’s an important choice and a new chapter in your life. Perhaps it’s also about chasing a feeling, a dream you’ve probably had for years. It’s about waking up to a different pace of life. Moving to a new country takes guts, and it shouldn't be this hard.
 
 We’re going to keep it real with you throughout the process, especially as we say that Italy's bureaucracy can break your heart. We know because it broke ours first… more than one time. We’re talking about endless paperwork, conflicting information, "come back next month" conversations... and worst of all? Getting your visa denied when you did everything you thought was right.
 
@@ -37,7 +37,11 @@ That's why Nomadissimi exists\! Think of Nomadissimi as your big sister who move
 This guide is the sum of everything we know, experienced, and researched regarding the Digital Nomad Visa. We wrote it to help people who also share our dream and to guide you straight to that "Approved" stamp.  
 You're serious about Italy, and we're serious about making sure you actually get there.
 
-Andiamo? Let's get you to Italy\!
+Andiamo? Let's get you to Italy!
+
+<GuideTip title="Private client note">
+This guide and all accompanying materials and other guides are the exclusive intellectual property of **Nomadissimi** and are protected by copyright and other applicable intellectual property laws.
+</GuideTip>
 
 ## **Copyright Notice**
 
@@ -828,19 +832,19 @@ But here’s the good news: you don’t have to keep all of that in your head an
 Here are the core concepts to remember:
 
 1. **What Italy wants to see:**  
-   A real tertiary degree (typically at least 3 years) that can be clearly understood and “classified” in Italy’s system.  
+   A real tertiary degree (typically at least 3 years) that can be clearly understood and “classified” in Italy’s system.
 
 2. **Start from the right documents (always)**:  
-   Request both your diploma certificate and your full transcript of records (NOT a portal printout), because the transcript is often essential for either validation route.  
+   Request both your diploma certificate and your full transcript of records (NOT a portal printout), because the transcript is often essential for either validation route.
 
 3. **Make the documents “trustworthy” internationally (when required):**  
-   Depending on your country/consulate, you may need notarization and then an apostille—and if they apply, do it for both diploma and transcript.  
+   Depending on your country/consulate, you may need notarization and then an apostille—and if they apply, do it for both diploma and transcript.
 
 4. **Translation is not automatic:**  
-   Certified Italian translation is sometimes required (especially in DV-style workflows), but sometimes it’s not—so don’t translate “just in case” until you know your route and your consulate’s rule.  
+   Certified Italian translation is sometimes required (especially in DV-style workflows), but sometimes it’s not—so don’t translate “just in case” until you know your route and your consulate’s rule.
 
 5. **Choose one validation route (this is the key fork)**:
-   1. CIMEA \= usually the smoother, online path if your consulate accepts it (often fewer formalities, especially with English documents).  
+   1. CIMEA \= usually the smoother, online path if your consulate accepts it (often fewer formalities, especially with English documents).
 
    2. Dichiarazione di Valore (DV) \= the more traditional consular route, often requested by stricter consulates and more commonly tied to apostille \+ certified translation requirements.
 

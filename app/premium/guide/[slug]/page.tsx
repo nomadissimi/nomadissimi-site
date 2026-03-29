@@ -6,6 +6,14 @@ import { sha256 } from "@/lib/crypto";
 import { getVisaGuideChapter, getVisaGuideChapters } from "@/lib/guide";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
+import {
+  GuideCallout,
+  GuideTip,
+  GuideWarning,
+  GuideDivider,
+  GuideCard,
+} from "@/components/guide/GuideMDX";
+
 export default async function PremiumGuideChapterPage({
   params,
 }: {
@@ -109,7 +117,16 @@ export default async function PremiumGuideChapterPage({
           </h1>
 
           <article className="mt-8 guide-prose max-w-none">
-            <MDXRemote source={chapter.content} />
+            <MDXRemote
+              source={chapter.content}
+              components={{
+                GuideCallout,
+                GuideTip,
+                GuideWarning,
+                GuideDivider,
+                GuideCard,
+              }}
+            />
           </article>
 
           <div className="mt-10 flex flex-col gap-3 border-t border-black/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
