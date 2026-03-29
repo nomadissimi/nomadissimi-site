@@ -70,7 +70,6 @@ By accessing or using this material, you acknowledge and agree to these terms.
 
 # **Chapter 2 Are you a “Remote Worker” or a “Digital Nomad”?**
 
-<GuideBadge>Foundational chapter</GuideBadge>
 <GuideBadge>Choose your visa path</GuideBadge>
 
 Time to turn that dream into reality.
@@ -117,15 +116,15 @@ The difference lies mostly in your contract. Italy splits the same “work remot
 
 </GuideCard>
 
+<GuideDivider />
+
 <GuideBadge>Digital Nomad</GuideBadge>
 
-<GuideNote title="At a glance">
 This section applies to self-employed applicants: freelancers, consultants, or other independent professionals with no employer payroll.
-</GuideNote>
 
 **You count as a “digital nomad” in Italy if you work for yourself:** freelancer, consultant, or other independent professional with no employer payroll.
 
-<GuideIllustrationCard icon="⌁" title="Example">
+<GuideIllustrationCard title="Example">
 
 _Take Barbara, for instance. She’s a web designer with her own site, where clients book and pay her directly. She invoices them, has no single employer, and handles her own taxes every year. That makes Barbara a digital nomad—and she’ll apply for the Digital Nomad Visa at the Italian embassy with Nomadissimi’s help._
 
@@ -135,13 +134,10 @@ _Take Barbara, for instance. She’s a web designer with her own site, where cli
 
 <GuideBadge>Remote Worker</GuideBadge>
 
-<GuideNote title="At a glance">
 This section applies to employees whose company officially lets them do their job 100% remotely.
-</GuideNote>
-
 **You count as a “remote worker” when you’re on a company payroll and that company officially lets you do your job 100% remotely.**
 
-<GuideIllustrationCard icon="⌁" title="Example">
+<GuideIllustrationCard title="Example">
 
 _For example John. He is a software developer at “Fancy Applications Company”. He has an employment contract, and the company takes care of withholding and paying his taxes. John is a remote worker, and he’ll apply for the Remote Worker Visa at the Italian embassy._
 
@@ -151,7 +147,7 @@ _For example John. He is a software developer at “Fancy Applications Company�
 
 ## **Why Italy separates them**
 
-<GuideCallout title="Why Italy separates them">
+<GuideCallout>
 
 Italy splits “Digital Nomad” and “Remote Worker” for one unsexy reason: taxes. Italy needs to know whether you will handle Italian tax/social-security obligations like a self-employed person, or whether an employer/relationship exists that may trigger employer-side duties and checks. That’s why the rules explicitly talk about verifying compliance with fiscal and contribution obligations, and why digital nomads are treated like “lavoratori autonomi” (autonomous workers). In this case, they will most likely open a Partita IVA once in Italy.
 
@@ -163,13 +159,13 @@ On the other hand, if you’re a remote worker (employee/collaborator), Italy al
 
 <GuideCard title="Digital nomad path">
 
-**_Digital nomad path_**: you prove you’re self-employed and actively working with clients (contracts/invoices/tax evidence).
+You prove you’re self-employed and actively working with clients (contracts/invoices/tax evidence).
 
 </GuideCard>
 
 <GuideCard title="Remote worker path">
 
-**_Remote worker path:_** you prove employment, and you attach employer-specific items (company contract \+ employer declaration/letter; salary checks).
+You prove employment, and you attach employer-specific items (company contract \+ employer declaration/letter; salary checks).
 
 </GuideCard>
 
@@ -181,37 +177,35 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 
 **Who pays you?**
 
-1. Multiple clients (or one client, but as a contractor).
-2. One employer through payroll.
+A. Multiple clients (or one client, but as a contractor).
+B. One employer through payroll.
 
 **What document best describes your work relationship?**
 
-1. Client contract/service agreement/invoice-based work.
-2. Employment contract (or a formal binding job offer).
+A. Client contract/service agreement/invoice-based work.
+B. Employment contract (or a formal binding job offer).
 
 **When you “take a day off,” what happens?**
 
-1. You tell your clients and manage deliverables.
-2. You request leave from your manager/HR.
+A. You tell your clients and manage deliverables.
+B. You request leave from your manager/HR.
 
 **If Italy asks: “Who is responsible for your work activity?”**
 
-1. You (you run the show, and the admin).
-2. Your employer (they’re the company in charge).
+A. You (you run the show, and the admin).
+B. Your employer (they’re the company in charge).
 
 **If your company suddenly says, “No more remote from abroad,” then…**
 
-1. You switch clients or renegotiate because your work isn’t tied to one employer.
-2. Your whole plan is at risk because your visa mostly relies on that specific employment setup.
+A. You switch clients or renegotiate because your work isn’t tied to one employer.
+B. Your whole plan is at risk because your visa mostly relies on that specific employment setup.
 
 **Your income proof will mostly look like…**
 
-1. Invoices \+ bank incoming payments from clients.
-2. Payslips \+ employment contract salary details.
+A. Invoices \+ bank incoming payments from clients.
+B. Payslips \+ employment contract salary details.
 
 </GuideSteps>
-
-### **Your result (read this like a fortune cookie)**
 
 <GuideRecap title="Your result">
 
