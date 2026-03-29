@@ -2220,38 +2220,36 @@ _Next up: Employment Contract and Employer Declaration._
 <GuideBadge>Remote Worker only</GuideBadge>
 <GuideBadge>Final two documents</GuideBadge>
 
-If you are a freelancer, you are done collecting documents\! Skip straight to the last chapter to organize your packet. If you are an employee, you have a couple of final yet critical components to collect.
-
-<GuideSpacer size="sm" />
-
-<GuideDecisionBox title="Who needs this chapter?">
-
 If you are a freelancer, you are done collecting documents\! Skip straight to the last chapter to organize your packet.
 
-If you are an employee, you have two final—but critical—pieces of paper to collect.
+If you are an employee, you have a couple of final yet critical components to collect.
 
-</GuideDecisionBox>
+<GuideSpacer size="sm" />
 
 ## **1st Extra for remote workers: Employment contract or binding offer**
 
 ### **What is it?**
 
-<GuideCard>
+<GuideDecisionBox title="What is it?">
 
 This is the document that connects you to your employer. It proves you aren't just "working online," but that you have a stable, long-term role with a specific company that permits you to work from Italy.
 
-</GuideCard>
+</GuideDecisionBox>
 
 ### **What counts as "Employment"? (The Tax Test)**
 
 Before you ask your HR department for anything, we need to apply the "Tax Test" to see if Italy considers you an Employee or a Freelancer.
 
-<GuideCard title="The Tax Test">
+<GuideNote>
 
 **Standard Employment:**  
 You are on the company payroll. The company calculates your taxes, withholds them from your paycheck, and pays them to the government on your behalf (like a W-2 worker in the US, or PAYE in the UK).
 
 _Verdict:_ You are a Remote Worker. You need this chapter and the next one.
+
+</GuideNote>
+
+<GuideCard>
 
 **Collaboration or Contractor:**  
 This is the grey area. You might have a contract that says "Consultant" or "Collaborator," but you work full-time for one company. Here is how to decide:
@@ -2372,9 +2370,9 @@ Yes\! Most consulates provide a standard form for this. Download it from your sp
 
 </GuideBigSis>
 
-### **What to bring to the appointment (Checklist)**
+## **What to bring to the appointment (Checklist)**
 
-<GuideChecklist title="Remote workers extras">
+<GuideChecklist title="Contract and remote work authorization">
 
 - **The Contract/Offer**:  
   The original signed copy. If you have an electronically signed PDF, print it in high quality. The consulate considers the digital signature valid, but they still need a physical paper copy for their file.
