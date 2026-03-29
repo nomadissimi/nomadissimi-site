@@ -73,7 +73,8 @@ By accessing or using this material, you acknowledge and agree to these terms.
 <GuideBadge>Foundational chapter</GuideBadge>
 <GuideBadge>Choose your visa path</GuideBadge>
 
-Time to turn that dream into reality. But first, check if you qualify for the visa; and from there, determine if you’re a “Remote Worker” or “Digital Nomad.” We can help you in either case, no worries. It’s just a matter of understanding what specific visa you’re applying to. They’re quite similar, but you need to specify which one is your case.
+Time to turn that dream into reality.
+But first, check if you qualify for the visa; and from there, determine if you’re a “Remote Worker” or “Digital Nomad.” We can help you in either case, no worries. It’s just a matter of understanding what specific visa you’re applying to. They’re quite similar, but you need to specify which one is your case.
 
 <GuideSpacer size="sm" />
 
@@ -160,15 +161,17 @@ On the other hand, if you’re a remote worker (employee/collaborator), Italy al
 
 ## **What changes in the application**
 
-<GuideColumns>
-  <GuideMiniCard title="Digital nomad path">
-    **_Digital nomad path_**: you prove you’re self-employed and actively working with clients (contracts/invoices/tax evidence).
-  </GuideMiniCard>
+<GuideCard title="Digital nomad path">
 
-  <GuideMiniCard title="Remote worker path">
-    **_Remote worker path:_** you prove employment, and you attach employer-specific items (company contract \+ employer declaration/letter; salary checks).
-  </GuideMiniCard>
-</GuideColumns>
+**_Digital nomad path_**: you prove you’re self-employed and actively working with clients (contracts/invoices/tax evidence).
+
+</GuideCard>
+
+<GuideCard title="Remote worker path">
+
+**_Remote worker path:_** you prove employment, and you attach employer-specific items (company contract \+ employer declaration/letter; salary checks).
+
+</GuideCard>
 
 Which one are you?  
 Let’s play a quick quiz game to determine whether you are a Digital Nomad or a Remote Worker.  
