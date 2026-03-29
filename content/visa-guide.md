@@ -585,22 +585,19 @@ In the next subsections, we’ll guide you through each path with a clear, step-
 
 # **Chapter 10 item 5 Option A: Higher Education Degree**
 
+<GuideBadge>Most common route</GuideBadge>
+
 <GuideHeroAccent
-  title="Option A: Higher Education Degree"
   subtitle="If you have a university degree, you're taking the path most consulates know how to manage best. This is the most common route, and if you qualify for it, this is the one we recommend to follow."
 />
 
-<GuideBadge>Option A</GuideBadge>
-<GuideBadge>Most common route</GuideBadge>
-<GuideBadge>Higher Education Degree</GuideBadge>
-
 <GuideSpacer size="sm" />
 
-Why? Because a recognized tertiary degree is the clearest, most straightforward way to prove to Italy that you're “highly qualified.” You don't need to prove years of work experience, and it’s a great choice if you’re a younger applicant. However, you need to validate your degree the right way.
+Arecognized tertiary degree is the clearest, most straightforward way to prove to Italy that you're “highly qualified.” You don't need to prove years of work experience, and it’s a great choice if you’re a younger applicant. However, you need to validate your degree the right way.
 
 <GuideTOC title="In this chapter">
 
-- What "Higher" Actually Means (& Why “3 Years” Matter)
+- What “Higher” Actually Means (& Why “3 YearsMatter)
 - Why Having Your Degree Recognized in Italy Isn't So Straightforward
 - From University to Consulate: The Paper Trail
 - Diploma + Transcript: Request Them Together
@@ -648,13 +645,14 @@ Why? Because a recognized tertiary degree is the clearest, most straightforward 
 
 <GuideCard>
 
-Here's where a lot of confusion starts. When Italy says your degree must be "higher education," they're being very specific. It means your qualification must be at a tertiary level, which translates to a program that took at least three years to complete.
+Here's where a lot of confusion starts. When Italy says your degree must be “higher education,” they're being very specific. It means your qualification must be at a tertiary level, which translates to a program that took at least three years to complete.
 
 Think of it this way: if you completed a University degree in 4 years, or a Master's in 2 years after your Bachelor's, you're good. If you did a 2-year diploma program at a technical school, that probably doesn't count, but we'll circle back to that.
 
-The legal language calls this “EQF Level 6 or equivalent,” which is the European qualification framework way of saying "university-level."  
-**If your degree is a Bachelor's, Master's, or Doctorate from a recognized institution, and it took at least 3 years, you meet the threshold.**  
-The Major or Minor of your degree doesn't matter for this visa. You don't need to be an engineer or a lawyer specifically. A degree in Literature, Marketing, Biology, Business, Graphic Design, or anything else at the tertiary level works, as long as you can prove you actually earned it.
+The legal language calls this “EQF Level 6 or equivalent,” which is the European qualification framework way of saying “university-level.”  
+**If your degree is a Bachelor's, Master's, or Doctorate from a recognized institution, and it took at least 3 years, you meet the threshold.**
+
+The specific Major or Minor of your degree doesn't matter for this visa. You don't need to be an engineer or a lawyer specifically. A degree in Literature, Marketing, Biology, Business, Graphic Design, or anything else at the tertiary level works, as long as you can prove you completed it successfully.
 
 </GuideCard>
 
@@ -662,39 +660,42 @@ The Major or Minor of your degree doesn't matter for this visa. You don't need t
 
 <GuideWarning>
 
-Here's the reality: getting your degree officially recognized as “equivalent” to an Italian university degree is not a one-size-fits-all process.  
+Getting your degree officially recognized as “equivalent” to an Italian university degree is not an easy process.  
 The number of documents you'll need, the time it takes, and the exact procedure depend on two main variables that you cannot control: **where** you earned your degree and which **consulate** you're applying to.
 
-Your consulate didn't invent these rules. Each embassy and consulate follows guidelines from the Italian Ministry of Foreign Affairs (_Ministero degli Affari esteri e della Cooperazione internazionale_), but they interpret them with some flexibility. The Italian consulate in Houston might ask for different documents than the consulate in Paris. A consulate in Paris might have stricter requirements than one in Mexico City.  
+Your consulate didn't invent these rules. Each embassy and consulate follows guidelines from the Italian Ministry of Foreign Affairs (_Ministero degli Affari esteri e della Cooperazione internazionale_), but they interpret them with some flexibility. The Italian consulate in Houston might ask for different documents than the consulate in Paris. A consulate in Paris might have stricter requirements than one in Mexico City.
+
 I know, this is bureaucratic chaos, but this is how international education recognition works. Each country's education system is different, and Italy's consulates adapt their approach accordingly _(sometimes turning a simple thing into a puzzle)._ As much as we love Italy, we can’t deny that their bureaucracy is very fragmented.
 
 So if your degree comes from the United States, you'll have one document pathway. If it's from India, the pathway might be different. If it's from a European country within the Bologna Process, it might be different again.
 
 In this guide, you’ll find a clear explanation of the documents consulates usually ask for, so if they mention a “_dichiarazione di valore_” or a “_traduzione certificata_,” you’ll know what they mean and how to get it.
 
-One thing to remember: **the document list isn’t fixed.**  
-**Before you start collecting anything, always confirm the exact requirements with your specific consulate.**
+**One thing to remember:** always confirm the exact requirements with your specific consulate if you can.\*\*
 
 </GuideWarning>
 
 <GuideTip>
 
-A lot of people find out mid-process that their consulate wants extra pieces—like a notarized transcript of records (which can take weeks to get from your university), an apostille, or a certified translation done by someone with very specific credentials. Those “small” details can quietly add weeks—or even months—to your timeline if you don’t spot them early.
+A lot of people find out mid-process that their consulate wants extra pieces, like a notarized transcript of records (which can take weeks to get from your university), an apostille, or a certified translation done by someone with very specific credentials. Those “small” details can quietly add weeks {or even months} to your timeline if you don’t spot them early.
 
-But here’s the flip side: double-checking requirements with your specific consulate can bring pleasant surprises, too. You might learn they don’t require apostilles, or they don’t want a “certified translation” at all. When that happens, you save time, money, and stress—and you can focus only on the items this guide actually applies to.
+But here’s the flip side: double-checking requirements with your specific consulate can bring pleasant surprises, too. You might learn they don’t require apostilles, or they don’t want a “certified translation” at all. When that happens, you save time, money, and stress (and you can focus only on the items this guide actually applies to).
 
-This is exactly why Nomadissimi exists. Because we've seen the timelines slip, the "come back next time" conversations, and applications get rejected because just a single document was missing or formatted incorrectly. You're not going to be that person\!
+We've seen the timelines slip, the "come back next time" conversations, and applications get rejected because just a single document was missing or formatted incorrectly. You're not going to be that person\!
 
 </GuideTip>
+
+<GuideDivider />
 
 <GuideSectionBreak label="From University to Consulate: The Paper Trail" />
 
 ### **1. Diploma \+ Transcript: Request Them Together**
 
-<GuideTip>
+<GuideTip title="Here’s another big-sis tip you’ll love">
 
-​*Here’s another big-sis tip you’ll love:* **when you contact your university, ask for your degree diploma and your transcript of records in the same request**, like it’s one single mission.  
-This tiny choice saves you time, money, and that horrible “wait… you also need this other paper” moment that tends to happen right when you thought you were done. (Believe me: been there, done that)
+**When you contact your university, ask for your degree diploma and your transcript of records in the same request**, like it’s one single mission.  
+This tiny choice saves you time, money, and that horrible “wait… you also need this other paper” moment that tends to happen right when you thought you were done.
+(Believe me: been there, done that)
 
 _Why?_ Because many applicants request only the diploma, then discover (often too late) that to obtain a “Dichiarazione di Valore” (declaration of value) or a CIMEA statement, the transcript is usually needed to validate the structure and duration of the degree. And the worst part is: the transcript is not always written clearly on some consulate checklists, even though it ends up being essential for the Dichiarazione di Valore/CIMEA step. It’s pretty much a document to obtain another document: a step within another step.
 
@@ -713,8 +714,9 @@ _You obviously know what a diploma is, but being crystal clear prevents stupid m
 
 <GuideNote title="To be safe, your transcript should clearly include">
 
-Your full name (matching your passport), the University name, the degree/program name, dates/period of attendance (or graduation date), and a list of courses/exams with results (grades) and, when available, credits/credit hours or another workload indicator.  
-If your university issues both a “full academic transcript” and a “short transcript,” always pick the **full** one; Italy rarely approves minimalism.​
+Your full name (matching your passport), the University name, the degree/program name, dates/period of attendance (or graduation date), and a list of courses/exams with results (grades) and, when available, credits/credit hours or another workload indicator.
+
+If your university issues both a “full academic transcript” and a “short transcript,” always pick the **full** one. Italy rarely approves minimalism.​
 
 </GuideNote>
 
@@ -722,7 +724,7 @@ If your university issues both a “full academic transcript” and a “short t
 
 <GuideWarning>
 
-When the consulate asks for your degree and transcript, there is only one standard that counts: It must be an **original document issued directly by the university**.
+When the consulate asks for your degree and transcript, there is only one standard that counts: **It must be an original document issued directly by the university**.
 
 In the world of Italian visas, a "printout" is not a document. It is just a piece of paper.
 
@@ -734,18 +736,18 @@ _Big-sis Reality Check_: We know everything is digital now, but the consulate st
 
 </GuideWarning>
 
-### **What “notarized” means (and why it is not an apostille)**
+### **What “notarized” means (and why it is NOT an apostille)**
 
 <GuideCard>
 
 Notarization is the crucial first step in making your university documents legally recognized abroad.  
 When a document is notarized, a legally authorized public official (like a Notary Public) inspects it, verifies its authenticity, and adds their official seal and signature.
 
-_Why does Italy ask for it?_ Because the Italian consulate needs a way to trust foreign education documents it didn’t issue. Even if you have a real university degree, consulates use formalities like notarization (and the legalization steps that follow) to assess authenticity and reduce fraud risk. They are relying on the notary to tell them: _"I have personally verified that this document is genuine, and the signature it has is a legitimate signature."_
+**_Why does Italy ask for it?_** Because the Italian consulate needs a way to trust foreign education documents it didn’t issue. Even if you have a real university degree, consulates use formalities like notarization (and the legalization steps that follow) to assess authenticity and reduce fraud risk. They are relying on the notary to tell them: _"I have personally verified that this document is genuine, and the signature it has is a legitimate signature."_
 
-- _What it is NOT_: A notarization is not an apostille. An apostille is a separate, international stamp (which we will cover in the very next section).
+- **What it is NOT:** A notarization is not an apostille. An apostille is a separate, international stamp (which we will cover in the very next section).
 
-- _Why you care_: In many countries, the government authority that issues apostilles will only stamp a document if it has already been notarized. If you try to skip notarization and jump straight to the apostille step, you will likely get rejected and lose precious time.
+- _Why you should care_: In many countries, the government authority that issues apostilles will only stamp a document if it has already been notarized. If you try to skip notarization and jump straight to the apostille step, you will likely get rejected and lose precious time.
 
 </GuideCard>
 
@@ -753,25 +755,14 @@ _Why does Italy ask for it?_ Because the Italian consulate needs a way to trust 
 
 <GuideSteps title="The safest sequence">
 
-1. Ask your university first: Call the Registrar’s office and ask if they can issue a notarized degree diploma or a notarized transcript directly (many universities offer this as a standard service).
-2. The backup plan: If they can’t, ask them to issue a "certified" copy (a sealed transcript or a registrar letter confirming authenticity).
-3. The Notary Public: Only then, if your consulate or your recognition route requires it, take those official university documents to a local Notary Public to have them formally notarized.
+**Ask your university first:** Call the Registrar’s office and ask if they can issue a notarized degree diploma or a notarized transcript directly (many universities offer this as a standard service).
+**The backup plan:** If they can’t, ask them to issue a "certified" copy (a sealed transcript or a registrar letter confirming authenticity).
+
+**The Notary Public:** Only then, if your consulate or your recognition route requires it, take those official university documents to a local Notary Public to have them formally notarized.
 
 </GuideSteps>
 
-### **What to bring to the appointment**
-
-These are some of the most important components of your application:
-
-<GuideChecklist title="Bring these items to the appointment">
-
-- **Your degree diploma**: original university-issued document or the most official certified version your university provides (hard physical copy).
-- **Your transcript of records:** official transcript, not a screenshot or student-portal printout. You need the authentic version.
-- One clean photocopy set of both (diploma \+ transcript), kept in the same order as your originals.
-- **Notarization pages** (and copies of them).
-- Any university cover letter/registrar statement that confirms degree award and transcript authenticity (if your school can issue it).
-
-</GuideChecklist>
+<GuideDivider />
 
 <GuideSectionBreak label="2. Apostille: The International Stamp That Makes Italy Trust You" />
 
@@ -780,11 +771,11 @@ These are some of the most important components of your application:
 This is one of those steps that sounds weird because it has a mysterious name… but in real life, it’s just a very official stamp.  
 Yes, it can feel like bureaucracy-on-top-of-bureaucracy (and it kind of is). But you’re not doing it “because Italian authorities love to make applicants suffer.” You’re doing it because this stamp is what helps a foreign document enter an Italian office and be taken seriously.
 
-​*Think of an apostille like this*: your diploma and transcript are valid in your country… but Italy doesn’t automatically trust that. The apostille is the _international “verification jacket”_ that tells Italy: “Relax, this seal is legit. This signature is real.”
+​**Think of an apostille like this:** your diploma and transcript are valid in your country… but Italy doesn’t automatically trust that. The apostille is the step that tells Italy: “Relax, this seal is valid. This signature is real.”
 
 </GuideSoftPurple>
 
-### **What an apostille is (in normal-human language)**
+### **What an apostille is (simplified version)**
 
 <GuideSoftPurple>
 
@@ -795,9 +786,9 @@ An apostille doesn’t evaluate your degree, and it doesn’t “approve” your
 
 </GuideSoftPurple>
 
-### **Apostille vs. Notarization (The difference)**
+### **Apostille vs. Notarization**
 
-_Remember the notarization we just talked about?_ Here is how they connect:
+_Remember the notarization we've just talked about?_ Here is how they connect:
 
 <GuideChecklist title="How they connect">
 
@@ -816,7 +807,7 @@ Apostille and “legalizzazione” (legalization) do the same job: they prove a 
 
 </GuideSoftPurple>
 
-<GuideNote title="When Apostille is available (Hague Convention countries)">
+<GuideTip title="When Apostille is available (Hague Convention countries)">
 
 If the country that issued your document is part of the Hague Apostille Convention, you’ll typically use an apostille.  
 The member list is long, but the big ones include: the USA, all EU countries, the UK, Canada, Australia, Japan, South Korea, New Zealand, Mexico, and many South American countries (for example Argentina, Brazil, Chile, Colombia, and Peru).
@@ -825,16 +816,16 @@ In practical terms, you get the apostille from the competent authority in the co
 
 _We’ll get into the how-to soon_, but you’ve got two common paths: handle it yourself (in person or by mail) or use a third-party apostille service. Either way, the apostille can only be issued by the same competent authority.
 
-</GuideNote>
+</GuideTip>
 
 <GuideNote title="When Apostille is not available (non-Hague countries, or limited cases)">
 
-If the country that issued your document isn’t part of the Hague Apostille Convention, an apostille isn’t an option—so you’ll usually need consular legalization instead.  
+If the country that issued your document isn’t part of the Hague Apostille Convention, an apostille isn’t an option, so you’ll usually need consular legalization instead.  
 This would include the United Arab Emirates, Saudi Arabia, China, Egypt, Lebanon, Iran, and several Southeast Asian countries such as Indonesia, Thailand, the Philippines, and Malaysia.
 
 In practice, the Italian Embassy/Consulate in (or responsible for) the country where the document was issued verifies the signature or seal and adds its own legalization stamp. That’s why this route is often slower and depends on appointments.
 
-_Quick example (so it sticks):_ A diploma issued in the United States typically follows the apostille route, while a diploma issued in Saudi Arabia typically follows the legalization route.
+_Quick example:_ A diploma issued in the United States typically follows the apostille route, while a diploma issued in Saudi Arabia typically follows the legalization route.
 
 </GuideNote>
 
@@ -867,16 +858,17 @@ Don’t spend money on apostilles until you’ve confirmed whether you’re goin
 
 </GuideChecklist>
 
-​This is where people mess up: they apostille the diploma (because it feels “more important”), then later discover the transcript must be apostilled too…so they have to repeat the process, lose weeks, and curse Italy in three languages.
+​This is where people mess up: they apostille the diploma (because it feels “more important”), but then they later discover the transcript must be apostilled too… so they have to repeat the process, lose weeks, and curse Italy in three languages.
 
 ### **Quick pause: do not skip Step 1 (Notarization)**
 
 <GuideWarning>
 
-Before you even search for an apostille office or service, make sure you’ve completed the previous step: **getting your diploma \+ transcript notarized/certified** (in the format your country requires).  
+Before you even search for an apostille office or service, make sure you’ve completed the previous step: **getting your diploma \+ transcript notarized/certified** (in the format your country requires).
+
 In many countries, the apostille authority can only apostille documents that are already properly notarized/certified. This means that if you try to apostille a plain university printout, you may get rejected and lose time.​
 
-That’s why this guide follows a simple, safer method: **notarize first, then apostille**—in that order.  
+That’s why this guide follows a simple, safer method: **notarize first, then apostille**, in that order.  
 That said, only in a few lucky cases, your diploma or transcript can be apostilled directly if it was issued or signed in a format the apostille authority accepts without notarization. But that’s rare.
 
 </GuideWarning>
@@ -894,13 +886,9 @@ _Example (USA-specific)_: many apostilles are handled at the state level (often 
 
 ### **Which jurisdiction should you use?**
 
-<GuideNote>
-
 In many cases, it’s the jurisdiction connected to the public official signature on the document (for example, where it was notarized or issued),
 
 If your diploma was issued by a university in one place but notarized/certified in another, the apostille is often tied to the authority that can verify the signature/seal you’re apostilling—so always follow the instructions of the apostille office you’re using.
-
-</GuideNote>
 
 ### **Option 1 (best when doable): Do it yourself in person**
 
@@ -931,12 +919,17 @@ _Let’s go through a more detailed example to help illustrate this further. Sup
 
 <GuideSteps title="Example: Laura in Texas">
 
-1. Get the **original diploma** from the University Registrar’s Office.
-2. Get it **notarized** by a Texas Notary Public. Remember that universities will notarize their own diplomas or provide certified copies for apostille purposes, so this might already be part of step 1 (it would need to be requested explicitly)
-3. Complete the **Request Form**: Fill out the [Form 2102 \- Request for Universal Apostille](https://www.google.com/search?q=Form+2102+-+Request+for+Universal+Apostille&rlz=1C5CHFA_enCO1022US1037&oq=how+to+apostille+a+diploma+in+the+texas+secretary+of+state&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigATIHCAEQIRigATIGCAIQIRgVMgYIAxAhGBUyBwgEECEYnwUyBwgFECEYnwUyBwgGECEYnwXSAQg3NTM2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&mstk=AUtExfDh33K9C3SPn3Dft5w4lGSs7JWI4KT3Z3GwuHTAJ5BpbhActvw6LpRiSxLyB1YWKDOf7sZGpPF_VJtesNec9HI4Qbs5pvUiLY8wiNTDc9a0R85aqNFUlYXglDX8HHMXqtAh14n_kLhTOP7fygQ9AICz2Z9RkDNbdwJYsaSvlpXlelA&csui=3&ved=2ahUKEwir5MLQ_sqSAxWAhP0HHdr6PPkQgK4QegQIAxAD), available from the Texas Secretary of State's website.
-4. Prepare Return Shipping: Include a self-addressed, postage-paid return envelope (FedEx or UPS preferred) for the apostilled document. Yes, it’s an envelope within the big envelope she’d be sending.
-5. Pay the Fee: there’s usually a small fee when processing directly with the Texas Secretary of State. It would be approximately a $15 fee per document (check, money order, or credit card). For the most recent updates and specific fees, we recommend checking the [_Texas Secretary of State_](https://www.sos.state.tx.us/) website. This is an example of how the process works, at the time of writing this guide.
-6. Submit the full request and mail it. Send everything to the Authentications Unit.
+1.Get the **original diploma** from the University Registrar’s Office.
+
+2.Get it **notarized** by a Texas Notary Public. Remember that universities will notarize their own diplomas or provide certified copies for apostille purposes, so this might already be part of step 1 (it would need to be requested explicitly)
+
+3.Complete the **Request Form**: Fill out the [Form 2102 \- Request for Universal Apostille](https://www.google.com/search?q=Form+2102+-+Request+for+Universal+Apostille&rlz=1C5CHFA_enCO1022US1037&oq=how+to+apostille+a+diploma+in+the+texas+secretary+of+state&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORigATIHCAEQIRigATIGCAIQIRgVMgYIAxAhGBUyBwgEECEYnwUyBwgFECEYnwUyBwgGECEYnwXSAQg3NTM2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&mstk=AUtExfDh33K9C3SPn3Dft5w4lGSs7JWI4KT3Z3GwuHTAJ5BpbhActvw6LpRiSxLyB1YWKDOf7sZGpPF_VJtesNec9HI4Qbs5pvUiLY8wiNTDc9a0R85aqNFUlYXglDX8HHMXqtAh14n_kLhTOP7fygQ9AICz2Z9RkDNbdwJYsaSvlpXlelA&csui=3&ved=2ahUKEwir5MLQ_sqSAxWAhP0HHdr6PPkQgK4QegQIAxAD), available from the Texas Secretary of State's website.
+
+4.Prepare Return Shipping: Include a self-addressed, postage-paid return envelope (FedEx or UPS preferred) for the apostilled document. Yes, it’s an envelope within the big envelope she’d be sending.
+
+5.Pay the Fee: there’s usually a small fee when processing directly with the Texas Secretary of State. It would be approximately a $15 fee per document (check, money order, or credit card). For the most recent updates and specific fees, we recommend checking the [_Texas Secretary of State_](https://www.sos.state.tx.us/) website. This is an example of how the process works, at the time of writing this guide.
+
+6.Submit the full request and mail it. Send everything to the Authentications Unit.
 
 </GuideSteps>
 
@@ -972,7 +965,7 @@ Before you pay anything, ask yourself:
 
 This is how you avoid the classic “I apostilled the wrong thing” tragedy.
 
-### **Please don’t “tidy it up”**
+### **Please please please don’t “tidy it up”**
 
 <GuideWarning>
 
@@ -982,18 +975,7 @@ If you separate the apostille from the document it certifies, you risk destroyin
 
 </GuideWarning>
 
-### **What to bring to the appointment**
-
-Bring these items to your visa appointment (traditional paper world, remember):
-
-<GuideChecklist title="Bring these items to your visa appointment">
-
-- Your degree diploma (notarized official paper version).
-- Your transcript of records (notarized official paper version).
-- The **apostille of both documents** (if it applies to your route/consulate).
-- Photocopies of everything (because many consulates want originals \+ copies).
-
-</GuideChecklist>
+<GuideDivider />
 
 <GuideSectionBreak label="3. Certified Translation: when Italy says “Ok… but in Italian.”" />
 
@@ -1006,7 +988,7 @@ You can have the perfect document… and still get the dreaded Italian bureaucra
 When Italy says “**certified translation**,” they mean an Italian translation that a real person officially stands behind. It basically means that it was done by someone who takes responsibility that the translation is faithful to the original text (in Italy this is referred to as “_traduzione giurata/asseverata_”).  
 It’s not enough to speak “decent” Italian, since this is more about having a translation that an authority accepts as official.
 
-_Here’s the sneaky part:_ some consulates accept a simple (non-sworn) translation for the Dichiarazione di Valore (Declaration of Value), and then they authenticate it themselves. However, other consulates require the sworn/”_asseverata”_ version before you apply, so it’s best to not assume.
+**_Here’s the sneaky part:_** some consulates accept a simple (non-sworn) translation for the Dichiarazione di Valore (Declaration of Value), and then they authenticate it themselves. However, other consulates require the sworn/”_asseverata”_ version before you apply, so it’s best to not assume.
 
 </GuideCard>
 
@@ -1031,7 +1013,7 @@ You need a certified translation if:
 
 If a certified translation is required, the components that usually require it are:
 
-<GuideChecklist title="Which documents usually need it">
+<GuideChecklist>
 
 - Your notarized diploma.​
 - The apostille pages attached to the diploma
@@ -1049,9 +1031,10 @@ There are 3 realistic paths. Pick the one your consulate accepts.
 1. **Through an Italian consulate** (often the DV consulate)  
    Some consulates handle the translation/certification inside their DV workflow, or they authenticate the translation as part of issuing the DV.  
    _This is why the smartest question to ask is:_ “Do you require a sworn/certified translation before I submit the DV? However, each consulate may charge a fee per page.
+
 2. **Sworn translation in Italy** (“Tribunale” route)  
    Yes, it’s possible: a translator in Italy can prepare the Italian translation and then swear it at a Tribunal.  
-   This is often the cheapest “official-looking” solution because the main extra cost is about \~€20 (you just need to buy a bunch of “marca da bollo” i.e. some Italian stamps).
+   This is often the cheapest “official-looking” solution because the main extra cost is about \~€20 (you just need to buy a bunch of “marche da bollo” i.e. some Italian stamps).
 
    This way has two problems that you should evaluate:
    1. Confirm your consulate accepts an Italy-issued sworn translation for the visa application and/or for the DV.
@@ -1063,8 +1046,6 @@ There are 3 realistic paths. Pick the one your consulate accepts.
 
 </GuideSteps>
 
-### **“Please don’t tidy it up.” (We mean it)**
-
 <GuideWarning>
 
 Repeat after me: **keep each set together\!**  
@@ -1074,15 +1055,17 @@ That’s how you can accidentally destroy the validity of the packet and ruin ev
 
 </GuideWarning>
 
-### **Don’t translate yet (seriously)**
+### **Don’t translate yet (wait, what?)**
 
 <GuideTip>
 
 ​Here’s the good news: in some cases, the certified translation is not requested at all—so you might be able to skip it completely and save time and money. The not-so-good news is that whether you can skip it depends on the exact consulate rules and on the method you choose to validate your degree.
 
-So don’t translate “just in case” yet. First, go to the next section and decide your path: CIMEA or Dichiarazione di Valore (DV). Once you’ve made that choice, come back here and apply the correct translation strategy for your route (because DV procedures often involve Italian translations in some form, while CIMEA is usually more flexible—especially when your documents are already in English).
+So don’t rush to do the certified translations just yet. First, go to the next section and decide your path: CIMEA or Dichiarazione di Valore (DV). Once you’ve made that choice, come back here and apply the correct translation strategy for your route (because DV procedures often involve Italian translations in some form, while CIMEA is usually more flexible—especially when your documents are already in English).
 
 </GuideTip>
+
+<GuideDivider />
 
 <GuideSectionBreak label="4. CIMEA vs Dichiarazione di Valore (choose one)" />
 
@@ -1108,7 +1091,7 @@ What is it? The **Dichiarazione di Valore** (**DV**) is issued by an Italian emb
 <GuideSoftPink title="CIMEA">
 
 CIMEA (Centro di Informazione sulla Mobilità e le Equivalenze Accademiche) is basically Italy’s official “degree translator.”  
-CIMEA is Italy’s ENIC-NARIC centre _(yes—two acronyms, but they matter)_, which means it sits in the official European network for evaluating foreign degrees.
+CIMEA is Italy’s ENIC-NARIC centre _(yes, two weird acronyms lol)_, which means it sits in the official European network for evaluating foreign degrees.
 
 In simple terms, CIMEA checks your foreign qualification and then issues official statements that Italian institutions (including consulates) can use to understand what your degree is in Italy-equivalents. More than the language itself, it’s about the essence of what professional training you have obtained and explaining it in a way that Italy would understand it.
 
@@ -1126,7 +1109,7 @@ The **Statement of Verification** is requested when the authority also wants an 
 
 _Big-sis tip_: always follow your consulate’s checklist and email them, asking if they want Comparability only or Comparability **AND** Verification.
 
-_Important to know_: these statements support an assessment, but they are not “formal recognition” that automatically binds every institution—consulates still have discretion.​
+These statements support an assessment, but they are not “formal recognition” that automatically binds every institution. Consulates still have discretion.​
 
 <GuideChecklist title="What CIMEA issues">
 
@@ -1135,36 +1118,33 @@ _Important to know_: these statements support an assessment, but they are not �
 
 </GuideChecklist>
 
-### **How CIMEA works (the flow)**
+### **How CIMEA works**
 
-<GuideSoftPink title="How CIMEA works">
+<GuideSoftPink title="the flow">
 
-1. Create a DiploMe account and select the service you need (comparability, or comparability \+ verification, depending on what your consulate expects).​
-2. Upload the core documents (usually: diploma \+ full transcript \+ ID), in the format requested for your “country of education system.”​
-3. _If Verification is required, be ready for an extra authenticity step:_ in many cases, CIMEA may require an official transcript to be sent directly by the university (this is one way CIMEA verifies authenticity without relying on apostilles in many scenarios).​
-4. Receive the statement(s) and include them in your visa packet as proof that your degree has been evaluated in an Italy-readable way.
+1.Create a DiploMe account and select the service you need (comparability, or comparability \+ verification, depending on what your consulate expects).​
+
+2.Upload the core documents (usually: diploma \+ full transcript \+ ID), in the format requested for your “country of education system.”​
+
+3.If Verification is required, be ready for an extra authenticity step: in many cases, CIMEA may require an official transcript to be sent directly by the university (this is one way CIMEA verifies authenticity without relying on apostilles in many scenarios).​
+
+4.Receive the statement(s) and include them in your visa packet as proof that your degree has been evaluated in an Italy-readable way.
 
 </GuideSoftPink>
 
 ### **Why CIMEA could be the best choice**
 
-<GuideSoftPink>
-
 CIMEA is usually the most practical route for non-Italian speakers because the process is online and produces standardized documents used widely by Italian institutions.  
 In many common scenarios (especially for English-language degrees like those from universities in the United States), CIMEA often avoids the “apostille \+ sworn Italian translation” spiral that Dichiarazione di Valore procedures are traditionally anchored to.  
 That’s why many applicants use CIMEA as the fastest path to a clean, consulate-friendly proof of qualification, when their consulate accepts it.
 
-</GuideSoftPink>
+<GuideDivider />
 
 ### **CIMEA has a cousin: meet the “Dichiarazione di Valore”**
-
-<GuideCard>
 
 Now that you’ve met CIMEA (the modern, online “degree translator”), it’s time to meet its older, more traditional cousin: the Dichiarazione di Valore (Declaration of Value or DV for short).​
 
 It’s not “better” or “worse” by nature. Sometimes it’s simply the route your specific consulate expects, so it becomes the safest path to approval.
-
-</GuideCard>
 
 ### **What does the DV prove?**
 
@@ -1172,7 +1152,8 @@ It’s not “better” or “worse” by nature. Sometimes it’s simply the ro
 
 The DV (Dichiarazione di Valore \= “Declaration of Value”) is a document issued by an Italian embassy/consulate that **explains what your foreign degree means in the education system where you earned it.**
 
-_In plain English_, it helps Italy understand if your degree is a real university-level qualification, how long it is, and what “level” it has in that country (so your visa officer can classify you as “highly qualified” on paper, not by mere claims).  
+_In simple terms_, it helps Italy understand if your degree is a real university-level qualification, how long it is, and what “level” it has in that country (so your visa officer can classify you as “highly qualified” on paper, not by mere claims).
+
 It’s widely used in Italy for recognition procedures and also for highly skilled immigration-style checks, which is why it shows up in Digital Nomad/Remote Worker visa applications too.
 
 </GuideCard>
@@ -1182,9 +1163,9 @@ It’s widely used in Italy for recognition procedures and also for highly skill
 <GuideWarning>
 
 The DV is usually the right move when your consulate is “strict-mode” and explicitly asks for a DV (or clearly follows the more formal EU Blue Card-style document approach).  
-**\*Safer option\*\*\***: if your consulate is unclear or inconsistent, DV is often the “classic” format they’re most used to seeing, which can reduce back-and-forth requests.\*\*
+**Safer option**: if your consulate is unclear or inconsistent, DV is often the “classic” format they’re most used to seeing, which can reduce back-and-forth requests.
 
-_Big-sis wisdom:_ your goal is not to win an argument with the checklist. Your goal is to walk out with that visa sticker.
+_Big-sis wisdom:_ your goal is not to win an argument with the Italian authorities regarding why they require certain documents. Your goal is to walk out with that visa sticker.
 
 </GuideWarning>
 
@@ -1192,7 +1173,7 @@ _Big-sis wisdom:_ your goal is not to win an argument with the checklist. Your g
 
 Here’s the trap: the DV is typically issued by the Italian embassy/consulate **in the country/state where the degree was obtained (where the university is)**, not necessarily where you live now.
 
-Let’s look at some examples (so it sticks):
+For example:
 
 - _Sofía lives in Minneapolis, but she got her degree from Caltech in Pasadena, California—so she’ll request her DV through the Italian Consulate in Los Angeles._
 
@@ -1205,17 +1186,18 @@ This guide is about method—so here’s the full Dichiarazione di Valore path, 
 
 <GuideSteps title="DV method">
 
-1. Collect your core school documents: diploma \+ transcript, original and notarized.
-2. Apostille your diploma **AND** your transcript.
-3. Check whether your consulate also requires a certified translation—and if they do, ask whether they can process it together with the DV.
-   1. If they want a certified translation but don’t handle it in-house, follow the instructions in the dedicated section above to get it done correctly.
-4. Submit the DV request following the exact instructions of the consulate that issues DV for your degree’s location (process can be appointment-based, mail-based, or both—depending on the office).
+1.Collect your core school documents: diploma \+ transcript, original and notarized.
+2.Apostille your diploma **AND** your transcript.
+3.Check whether your consulate also requires a certified translation—and if they do, ask whether they can process it together with the DV.
+
+1.  If they want a certified translation but don’t handle it in-house, follow the instructions in the dedicated section above to get it done correctly.
+    4.Submit the DV request following the exact instructions of the consulate that issues DV for your degree’s location (process can be appointment-based, mail-based, or both—depending on the office).
 
 </GuideSteps>
 
 <GuideWarning>
 
-_Note: In rare cases, you may not need notarization and/or an apostille and/or a certified translation to get the DV. To avoid wasting time and money, double-check the DV requirements on the website of the consulate where you’ll submit your request before you start gathering documents. However, just keep in mind that if they do require it, the Dichiarazione di Valore is a document that takes a while to obtain, given all the “substeps” (notarizing the diploma, getting the apostille, notarizing the transcript and apostilling them, etc…)._ It’s best to plan ahead to avoid delays.
+_Note:_ In rare cases, you may not need notarization and/or an apostille and/or a certified translation to get the DV. To avoid wasting time and money, double-check the DV requirements on the website of the consulate where you’ll submit your request before you start gathering documents. However, just keep in mind that if they do require it, the Dichiarazione di Valore is a document that takes a while to obtain, given all the “substeps” (notarizing the diploma, getting the apostille, notarizing the transcript and apostilling them, etc…). It’s best to plan ahead to avoid delays.
 
 </GuideWarning>
 
@@ -1243,21 +1225,23 @@ The path to take depends on what your consulate explicitly asks for. If they don
 
 Two big-sis warnings (so you don’t waste weeks)
 
-<GuideWarning>
+<GuideSoftPink>
 
 1. **CIMEA is NOT a blanket shortcut either:** requirements can change by country, and sometimes the “Verification” component requires the university to send transcripts directly, which can slow things down if your school takes a while to process these things.​
 2. If your consulate asks for a “certified translation,” sometimes it can be smart to coordinate DV \+ certified translation through the same office workflow (if the certified translation is a service that is available at the consulate).
 
-</GuideWarning>
+</GuideSoftPink>
+
+<GuideDivider />
 
 ## **Option A (Higher Education Degree): The Final Wrap-Up**
 
-I know, reading (and applying) this whole section takes real focus, because it asks you to hold a lot of moving pieces in your head at the same time: the degree rules, the consulate’s habits, and the “paper format” Italy expects.  
-But here’s the good news: you don’t have to keep all of that in your head anymore. You just need the order—one step at a time—and this guide gives you that roadmap.
+I know, reading (and applying) this whole section takes a lot of focus, because it asks you to hold many moving pieces in your head at the same time: the degree rules, the consulate’s habits, and the “paper format” Italy expects.  
+But here’s the good news: you don’t have to keep all of that in your head anymore. You just need the order (one step at a time), and this guide gives you that roadmap.
 
 Here are the core concepts to remember:
 
-<GuideRecap title="Option A (Higher Education Degree): The Final Wrap-Up">
+<GuideRecap title="The Higher Education Degree Rout">
 
 1. **What Italy wants to see:**  
    A real tertiary degree (typically at least 3 years) that can be clearly understood and “classified” in Italy’s system.
@@ -1272,14 +1256,32 @@ Here are the core concepts to remember:
    Certified Italian translation is sometimes required (especially in DV-style workflows), but sometimes it’s not—so don’t translate “just in case” until you know your route and your consulate’s rule.
 
 5. **Choose one validation route (this is the key fork)**:
-   1. CIMEA \= usually the smoother, online path if your consulate accepts it (often fewer formalities, especially with English documents).
-   2. Dichiarazione di Valore (DV) \= the more traditional consular route, often requested by stricter consulates and more commonly tied to apostille \+ certified translation requirements.
+   -CIMEA = usually the smoother, online path if your consulate accepts it (often fewer formalities, especially with English documents).
+   -Dichiarazione di Valore (DV) = the more traditional consular route, often requested by stricter consulates and more commonly tied to apostille \+ certified translation requirements.
 
 6. **Assemble one “easy-to-check” packet:**  
-   Keep your diploma \+ transcript \+ any certification/notarization/apostille/translation pages together, in the right order, so the officer can confirm your qualifications at a glance (instead of going on a scavenger hunt in your folder).  
-   _And repeat after me:_ if an office stapled it, sealed it, or bound it—leave it alone. Never separate what they put together.
+   Keep your diploma \+ transcript \+ any certification/notarization/apostille/translation pages together, in the right order, so the officer can confirm your qualifications at a glance (instead of going on a scavenger hunt in your folder).
+
+   **_And repeat after me:_ if an office stapled it, sealed it, or bound it—leave it alone. Never separate what they put together because it can no longer be valid if you manipulate the documents.**
 
 </GuideRecap>
+
+### **What to bring to the Visa appointment**
+
+These are some of the most important components of your application:
+
+<GuideChecklist title="Add these items to your packet">
+
+- **Your apostilled degree diploma**: original university-issued document or the most official certified version your university provides (hard physical copy).
+- **The certified Italian translation** of your apostilled degree
+- **Your notarized transcript of records:** official transcript, not a screenshot or student-portal printout. You need the authentic version.
+- One clean photocopy set of both (diploma \+ transcript), kept in the same order as your originals.
+- **Dichiarazione di valore**
+
+- **CIMEA**
+- Optional:Any university cover letter/registrar statement that confirms degree award and transcript authenticity (if your school can issue it).
+
+</GuideChecklist>
 
 Now you have everything you need to turn your degree into proof that Italy can actually read and accept. Follow the sequence, keep your packet clean, and don’t waste energy guessing what’s next: you already have the roadmap. And if anything gets confusing, you’re not supposed to muscle through alone: Nomadissimi is your big sister on the bureaucratic battlefield, and we’re walking you to the “Approved” visa stamp.
 
