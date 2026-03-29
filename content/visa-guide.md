@@ -1258,18 +1258,11 @@ Now you have everything you need to turn your degree into proof that Italy can a
 
 # **Chapter 11 item 5 option B: Professional Qualification (not university degree)**
 
-<GuideHeroAccent
-  title="Option B: Professional Qualification"
-  subtitle="Using a classic university Bachelor’s/Master’s degree (Option A) is the most common way to prove you’re “highly qualified”… but it’s not the only way."
-/>
-
-<GuideBadge>Option B</GuideBadge>
-<GuideBadge>Professional qualification</GuideBadge>
-<GuideBadge>Not a university degree</GuideBadge>
+Even though using a classic university Bachelor’s/Master’s degree (Option A) is the most common way to prove you’re “highly qualified", there are two other routes you can use.
 
 <GuideSpacer size="sm" />
 
-**Option B is basically a similar recognition logic as Option A (CIMEA or Dichiarazione di Valore)**, **but just applied to a qualification that doesn’t have the words “Bachelor’s Degree” on the front, **so the paperwork has a bit more explaining to do.
+**Option B is basically a similar recognition logic as Option A (CIMEA or Dichiarazione di Valore)**, but just applied to a qualification that doesn’t have the words “Bachelor’s Degree” on the front, so the paperwork has a bit more explaining to do.
 
 ## **No Bachelor’s Degree but Still Valid**
 
@@ -1283,12 +1276,12 @@ In other words: your qualification is real, serious, and higher-education level,
 
 ## **Why Option B exists**
 
-<GuideNote>
+<GuideTip>
 
 Italy’s “highly qualified” standard is not limited to classic university degrees or grad school; it also allows certain post-secondary professional qualifications, as long as they meet the level and duration threshold.​  
 So if your education path was more technical, applied, or career-focused (and not called “Bachelor’s”), Option B is your way to still fit the “highly qualified” category on paper.
 
-</GuideNote>
+</GuideTip>
 
 <GuideDivider />
 
@@ -1307,13 +1300,13 @@ A professional qualification can work for this visa when:
 
 </GuideChecklist>
 
-<GuideSoftPurple title="Examples that often fit Option B">
+<GuideTip title="Examples that often fit Option B">
 
 - Polytechnic diplomas (technical/engineering/business programs).
 - Higher Technical Institute-type programs.
 - Universities of Applied Sciences qualifications.
 
-</GuideSoftPurple>
+</GuideTip>
 
 <GuideWarning title="Examples that usually do not fit">
 
@@ -1397,9 +1390,7 @@ With Option B, your consulate’s interpretation matters even more than it does 
 
 # **Chapter 12 item 5 Option C: the Work Experience Route**
 
-<GuideSoftPink> 
-No Degree, But Still Highly Qualified
-</GuideSoftPink>
+<GuideBadge>No Degree, But Still Highly Qualified</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -1513,7 +1504,7 @@ For each employer/client folder, aim to include these three items (they’re the
 
 <GuideBigSis title="Quick reminder">
 
-_Quick reminder (we’ll unpack this later):_ if you’re applying as a remote worker, your current employment contract or binding offer goes in the “remote worker-specific” part of your visa file. Make sure it lines up with what you’re claiming in this section. **Italy is romantic but it doesn’t love plot twists or vagueness.**
+If you’re applying as a remote worker, your current employment contract or binding offer goes in the “remote worker-specific” part of your visa file. Make sure it lines up with what you’re claiming in this section. **Italy is romantic but it doesn’t love plot twists or vagueness.**
 
 </GuideBigSis>
 
@@ -1589,7 +1580,7 @@ So it's best to check with your consulate a quick email confirming what they wan
 
 # **Chapter 13 The “Highly Qualified Worker” recap**
 
-<GuideBadge>Core Requirement</GuideBadge>
+<GuideBadge>Core Section</GuideBadge>
 
 This “Highly Qualified Worker” section was long on purpose, because it’s usually the part that makes or breaks approval at the consulate.
 
@@ -1978,7 +1969,7 @@ Bring a copy of your Deed of Sale _(“Atto di Compravendita”)_ or a recent La
 
 </GuideCard>
 
-<GuideSectionBreak label="The Golden Key: The Codice Fiscale" />
+<GuideDivider />
 
 ## **The "Golden Key": The Codice Fiscale**
 
@@ -1999,7 +1990,7 @@ We explain exactly what this code is and why it’s legally mandatory in your se
 
 </GuideBigSis>
 
-<GuideSectionBreak label="Strategy A: If you have a Codice Fiscale" />
+<GuideDivider />
 
 ## **Strategy A: If you have a Codice Fiscale (The Smooth Path)**
 
@@ -2230,11 +2221,7 @@ If you are an employee, you have a couple of final yet critical components to co
 
 ### **What is it?**
 
-<GuideDecisionBox title="What is it?">
-
-This is the document that connects you to your employer. It proves you aren't just "working online," but that you have a stable, long-term role with a specific company that permits you to work from Italy.
-
-</GuideDecisionBox>
+This is the official document that legally connects you to your employer. It proves you aren't just "working online," but that you have a stable, long-term role with a specific company that permits you to work from Italy.
 
 ### **What counts as "Employment"? (The Tax Test)**
 
@@ -2269,13 +2256,13 @@ _Verdict_: You are a Remote Worker (Employee). Even if your job title is "contra
 
 ### **The "Magic Words" (Crucial)**
 
-<GuideWarning>
+<GuideTip>
 
 Your contract can be perfect, but if it doesn't explicitly mention remote work, it will fail.
 
 The contract (or an _addendum_) MUST state that **you are authorized to perform your work duties fully remotely AND from Italy** or abroad.
 
-</GuideWarning>
+</GuideTip>
 
 <GuideBigSis title="Big-sis tip">
 
