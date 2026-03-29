@@ -12,6 +12,10 @@ import {
   GuideWarning,
   GuideDivider,
   GuideCard,
+  GuideChecklist,
+  GuideSteps,
+  GuideRecap,
+  GuideBadge,
 } from "@/components/guide/GuideMDX";
 
 export default async function PremiumGuideChapterPage({
@@ -125,6 +129,10 @@ export default async function PremiumGuideChapterPage({
                 GuideWarning,
                 GuideDivider,
                 GuideCard,
+                GuideChecklist,
+                GuideSteps,
+                GuideRecap,
+                GuideBadge,
               }}
             />
           </article>
