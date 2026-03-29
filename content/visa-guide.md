@@ -1597,9 +1597,9 @@ This “Highly Qualified Worker” section was long on purpose, because it’s u
 
 Here’s the quick recap to lock in the main ideas.
 
-## **The 3 routes (pick your best)**
+## **The 3 routes**
 
-<GuideChecklist title="The 3 routes">
+<GuideChecklist title="Pick the option you can document best">
 
 - **Route A — Bachelor’s Degree or Higher**: You prove you’re highly qualified with a university degree (the “classic, easiest-to-understand” path when you can document it cleanly).
 - **Route B — Professional qualification**: You prove you’re highly qualified with a serious post-secondary qualification (not called a Bachelor’s, but still higher-education level).
@@ -1686,23 +1686,21 @@ Good proof usually includes:
 
 </GuideChecklist>
 
-## **Time window: what they ask vs what’s safe**
+## **Time window: what they ask vs. what’s safe**
 
-<GuideDecisionBox title="Time window">
+<GuideTip title="Time window">
 
-Your current text says the documents must refer to the **3 months preceding the embassy appointment.**​
+Your current text says the documents must refer to the 3 months preceding the embassy appointment.
 
 _Big-sis tip_: prepare 6 months of evidence anyway, because it makes your income look more consistent and reduces “yes but…” questions at the desk.
 
 _Another safety buffer:_ Put a one-page “Income Summary” on top of your packet. Include your annual gross income (claimed), which documents support it, and the currency conversion you used (if any).
 
-</GuideDecisionBox>
+</GuideTip>
 
 ## **​What to bring to the appointment (simple checklist)**
 
-Show up with one clean “Income Proof” packet (yeah, paper world), organized so the officer can verify your income quite quickly. Bring the originals and one complete photocopy set.
-
-**Your “Income Proof” packet (in this order):**
+Show up with one clean “Income Proof” packet, nicely organized so the officer can verify your income quite quickly. Bring the originals and one complete photocopy set.
 
 <GuideChecklist title="Income Proof packet">
 
@@ -1740,9 +1738,6 @@ You’re on fire\! By the way, did you know Italy hosts Europe's only three acti
 # **Chapter 15 item 7: Proof of at least a six-month-long highly professional experience**
 
 This section is less about proving that you’re talented and more about proving that your work is already established, continuous, and real.
-
-<GuideBadge>Experience requirement</GuideBadge>
-<GuideBadge>Timeline matters</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -1851,10 +1846,6 @@ _Next up: Health Insurance._
 
 Italy doesn't want you arriving and becoming a medical (or financial) emergency. That's why the consulate requires proof of health insurance (covering medical expenses and hospitalization for your entire stay) before they issue the visa.
 
-<GuideBadge>Insurance requirement</GuideBadge>
-<GuideBadge>Core document</GuideBadge>
-<GuideBadge>Clarity matters</GuideBadge>
-
 <GuideSpacer size="sm" />
 
 <GuideBigSis title="Big-sis advice">
@@ -1928,11 +1919,11 @@ _Important_: Not every consulate offers this flexibility, so treat it as a Plan 
 
 </GuideDecisionBox>
 
-<GuideWarning title="A serious warning from your big sister">
+<GuideTip title="A serious warning from your big sister">
 
 Even if your consulate accepts this "promise to buy" method, be very careful. Once you land in Italy, you only have 8 days to apply for your residence permit (Permesso di Soggiorno), and you must have your active insurance policy in hand to do that. That leaves you almost zero time to research, buy, and receive documents after your flight. Unless you love stress, buying your policy before you fly is always the safer move.
 
-</GuideWarning>
+</GuideTip>
 
 ## **What to bring to the appointment (simple checklist)**
 
@@ -1983,7 +1974,7 @@ If you have already bought your dream villa in Tuscany or a flat in Milan, you c
 Since you own the property, the requirement is automatically satisfied. You just need to prove it.
 
 **What to show:**  
-Bring a copy of your Deed of Sale _(“Atto di Compravendita”)_ or a recent Land Registry Record _(Visura Catastale)_ to the appointment. That’s it—you’re done with this chapter.
+Bring a copy of your Deed of Sale _(“Atto di Compravendita”)_ or a recent Land Registry Record _(Visura Catastale)_ to the appointment.
 
 </GuideCard>
 
@@ -2048,13 +2039,13 @@ Once you have your Codice Fiscale, you have access to the same market as any Ita
 
 ## **The document that proves it all**
 
-<GuideDecisionBox title="The document that proves it all">
+<GuideSoftPurple title="The document that proves it all">
 
 Regardless of whether you use a Finder or Corporate Housing, the piece of paper that gets your visa approved is the same: the “**Ricevuta di Registrazione**” (Registration Receipt) issued by the “**Agenzia delle Entrate**” (Italian Revenue Agency).
 
 _Big-sis rule:_ No receipt, no visa. Make sure your landlord knows you need this specific document before you sign anything.
 
-</GuideDecisionBox>
+</GuideSoftPurple>
 
 <GuideSectionBreak label="Strategy B: If you do NOT have a Codice Fiscale yet" />
 
@@ -2085,15 +2076,15 @@ Since you are likely not in Italy yet, someone else must do this physical step f
 Of course, the most direct way to handle "in-person" requirements is to… well, be there in person.  
 You enter Italy as a tourist, find a place you actually love (instead of trusting photos), sign the deal, and walk into the Agenzia delle Entrate yourself to get the registration stamp.
 
-_The bonus:_ Sure, it requires a trip before the move, but look at the bright side: you get to secure your dream home, handle the paperwork with zero intermediaries, and—most importantly—get your first taste of your new life (and a real cappuccino) before the visa process even officially begins.
+_The bonus:_ Sure, it requires a trip before the move, but look at the bright side: you get to secure your dream home, handle the paperwork with zero intermediaries, and most importantly, get your first taste of your new life (and a real cappuccino) before the visa process even officially begins.
 
 </GuideItaliaNote>
 
-## **What usually leads to rejection (The "Don'ts" and the "Be Carefuls")**
+## **What usually leads to rejection**
 
 Consulates have seen every trick in the book. If your housing proof looks like a temporary vacation plan, they will treat your entire application as temporary.
 
-<GuideWarning title="What usually leads to rejection">
+<GuideWarning title="Mistakes to avoid">
 
 - **Standard Airbnb/Booking.com receipts:**  
   A simple booking confirmation email is often rejected because it is not a registered lease.  
@@ -2102,10 +2093,10 @@ Consulates have seen every trick in the book. If your housing proof looks like a
 - **Hotel bookings:**  
   A 30-day hotel reservation screams "tourist." Most consulates will not accept this for a long-stay residency visa because it doesn't show long-term stability.
 
-- **Hospitality Letters:**  
-  _Staying at a friend's house?_ While valid for tourism, many consulates explicitly ban "hospitality" for Digital Nomad visas because they want you to be financially independent, not relying on someone's couch.  
-  _The exception_: If your specific consulate does allow it, you will need a formal Dichiarazione di Ospitalità signed by your host, plus a copy of their ID and deed/lease.  
-  _Big-sis warning_: This isn't just a favor. Your host is legally required to file a "Cessione di Fabbricato" report with the local police (Questura) within 48 hours of your arrival. If they forget, they face a hefty fine. Make sure they know what they are signing up for\!
+- **Vague Hospitality Letters:**  
+  _Will you be staying at a friend's house?_ While valid for tourism, many consulates explicitly ban "hospitality" for Digital Nomad visas because they want you to be financially independent, not relying on someone's couch.  
+  There might be some exceptions! If your specific consulate does allow it, you will need a formal Dichiarazione di Ospitalità signed by your host, plus a copy of their ID and deed/lease.  
+  _Big-sis warning_: If you're going through this route, your host in Italy is legally required to file a "Cessione di Fabbricato" report with the local police (Questura) within 48 hours of your arrival. If they forget, they face a hefty fine. Make sure they know what they are signing up for\!
 
 </GuideWarning>
 
@@ -2136,11 +2127,11 @@ Prepare an "Accommodation" packet based on your specific situation:
 
 </GuideChecklist>
 
-<GuideBigSis title="Reality check">
+<GuideTip title="Reality check">
 
 Do not try to fake stability. If your housing proof looks temporary, the officer will assume your intentions are temporary. Give them a registered contract (or a property deed), and you give them the certainty they need to approve you.
 
-</GuideBigSis>
+</GuideTip>
 
 Now, let's figure out how you’re actually going to get to Italy (and demonstrate that).  
 _Next up: Flight reservation to Italy._
@@ -2151,13 +2142,9 @@ _Next up: Flight reservation to Italy._
 
 You have a home, you have insurance, and you have a job. In today’s economy, we’re super grateful for those things lol. Now the consulate simply wants to know: _When are you actually showing up?_
 
-<GuideSpacer size="sm" />
-
-### **What is it?**
-
 <GuideTip>
 
-A confirmed travel reservation showing your entry into Italy.
+This is just proving that you have a real travel reservation showing your planned entry into Italy.
 
 </GuideTip>
 
@@ -2201,8 +2188,6 @@ Next up: The Visa Fees
 <GuideBadge>Cash only</GuideBadge>
 
 Starting off bluntly: you cannot pay online, and you cannot pay with a credit card at the window.
-
-<GuideSpacer size="sm" />
 
 ## **The Golden Rule: Cash is King**
 
@@ -2261,26 +2246,28 @@ This is the document that connects you to your employer. It proves you aren't ju
 
 Before you ask your HR department for anything, we need to apply the "Tax Test" to see if Italy considers you an Employee or a Freelancer.
 
-<GuideChecklist title="The Tax Test">
+<GuideCard title="The Tax Test">
 
-- **Standard Employment:**  
-  You are on the company payroll. The company calculates your taxes, withholds them from your paycheck, and pays them to the government on your behalf (like a W-2 worker in the US, or PAYE in the UK).
+**Standard Employment:**  
+You are on the company payroll. The company calculates your taxes, withholds them from your paycheck, and pays them to the government on your behalf (like a W-2 worker in the US, or PAYE in the UK).
 
-  _Verdict:_ You are a Remote Worker. You need this chapter and the next one.
+_Verdict:_ You are a Remote Worker. You need this chapter and the next one.
 
-- **Collaboration or Contractor:**  
-  This is the grey area. You might have a contract that says "Consultant" or "Collaborator," but you work full-time for one company. Here is how to decide:
+**Collaboration or Contractor:**  
+This is the grey area. You might have a contract that says "Consultant" or "Collaborator," but you work full-time for one company. Here is how to decide:
 
-- Case A: **You receive the Gross Amount**. The company sends you the full money, and you are responsible for setting aside money and paying your own taxes at the end of the year.
+**Case A: You receive the Gross Amount.**  
+The company sends you the full money, and you are responsible for setting aside money and paying your own taxes at the end of the year.
 
-  _Verdict:_ For the Italian Consulate, you are a Digital Nomad (Freelancer).  
-  _Good news:_ You do NOT need an employment contract or employer declaration. You are done with requirements\! Skip straight to Chapter 14\.
+_Verdict:_ For the Italian Consulate, you are a Digital Nomad (Freelancer).  
+_Good news:_ You do NOT need an employment contract or employer declaration. You are done with requirements\! Skip straight to Chapter 14\.
 
-- Case B: **The company handles the taxes**. You work through an "Employer of Record" (like Deel or Remote.com) or a local branch that handles tax withholding for you.
+**Case B: The company handles the taxes.**  
+You work through an "Employer of Record" (like Deel or Remote.com) or a local branch that handles tax withholding for you.
 
-  _Verdict_: You are a Remote Worker (Employee). Even if your job title is "contractor," the tax setup makes you an employee in Italy's eyes. You need to continue with this chapter.
+_Verdict_: You are a Remote Worker (Employee). Even if your job title is "contractor," the tax setup makes you an employee in Italy's eyes. You need to continue with this chapter.
 
-</GuideChecklist>
+</GuideCard>
 
 ### **The "Magic Words" (Crucial)**
 
@@ -2356,16 +2343,18 @@ It's a background check on your boss. Italy wants to ensure they aren't granting
 
 The declaration must be signed by your employer's legal representative (CEO, Director, or authorized HR manager) and must explicitly state that:
 
-<GuideChecklist title="What must it contain">
+<GuideCard title="What must it contain">
+
+The declaration must be signed by your employer's legal representative (CEO, Director, or authorized HR manager) and must explicitly state that:
 
 1. The company has not been convicted in the last 5 years for:
-   1. Aiding or abetting illegal immigration.
-   2. Trafficking or exploitation of labor.
-   3. Employing irregular foreign workers.
+   - Aiding or abetting illegal immigration.
+   - Trafficking or exploitation of labor.
+   - Employing irregular foreign workers.
 
 2. The company commits to complying with Italian labor and tax laws regarding your employment (where applicable).
 
-</GuideChecklist>
+</GuideCard>
 
 ### **What to attach to it**
 
@@ -2449,7 +2438,7 @@ Something important: keep the original documents and photocopies of the packet y
    3. _Big-sis tip on stapling_: Do not staple your own documents (like bank statements or tax returns) unless you are 100% sure they want it that way. Use paper clips. It's easier for the officer to scan/copy them if needed.
 
 2. **The "Don't Touch" Rule (Bound Documents)**:  
-   This is the critical exception to the rule above. If a document has been officially bound, stapled, or sealed by an authority—like your Apostille, your Dichiarazione di Valore, or a Notarized translation—do not touch it.
+   This is the critical exception to the rule above. If a document has been officially bound, stapled, or sealed by an authority—like your Apostille, your Dichiarazione di Valore, or a Notarized translation—do NOT touch it or remove the staples.
 
    Do not remove the staple. Do not "fix" the binding. Those metal staples are part of the legal validity of the document. If you remove them, you might invalidate the entire paperwork.
 
@@ -2509,7 +2498,7 @@ Use this list to assemble your final packet. Check the boxes as you place them i
 
 </GuideWarning>
 
-<GuideSoftPurple title="Last words before the appointment">
+<GuideTip title="Last words before the appointment">
 
 _Breathe in, and breathe out._  
 _Visualize your visa being approved._
@@ -2518,7 +2507,7 @@ _You have done the hard work. The bureaucracy is a beast, but you have tamed it 
 
 _Walk into that appointment with a smile. You are ready. We are cheering you on._
 
-</GuideSoftPurple>
+</GuideTip>
 
 **Benvenuti in Italia**
 
