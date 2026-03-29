@@ -83,6 +83,12 @@ The difference lies mostly in your contract. Italy splits the same “work remot
 
 ## **Digital Nomad \= self-employed**
 
+<GuideBadge>Digital Nomad</GuideBadge>
+
+<GuideNote title="At a glance">
+This section applies to self-employed applicants: freelancers, consultants, or other independent professionals with no employer payroll.
+</GuideNote>
+
 **You count as a “digital nomad” in Italy if you work for yourself:** freelancer, consultant, or other independent professional with no employer payroll.
 
 _Take Barbara, for instance. She’s a web designer with her own site, where clients book and pay her directly. She invoices them, has no single employer, and handles her own taxes every year. That makes Barbara a digital nomad—and she’ll apply for the Digital Nomad Visa at the Italian embassy with Nomadissimi’s help._

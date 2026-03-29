@@ -16,6 +16,10 @@ import {
   GuideSteps,
   GuideRecap,
   GuideBadge,
+  GuideNote,
+  GuideCompare,
+  GuideTOC,
+  GuideStat,
 } from "@/components/guide/GuideMDX";
 
 export default async function PremiumGuideChapterPage({
@@ -133,6 +137,10 @@ export default async function PremiumGuideChapterPage({
                 GuideSteps,
                 GuideRecap,
                 GuideBadge,
+                GuideNote,
+                GuideCompare,
+                GuideTOC,
+                GuideStat,
               }}
             />
           </article>

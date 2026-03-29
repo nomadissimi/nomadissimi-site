@@ -140,3 +140,94 @@ export function GuideBadge({ children }: { children: ReactNode }) {
     </span>
   );
 }
+
+export function GuideNote({
+  title = "Note",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[22px] border border-[#D8D1C5] bg-[#FBF8F2] px-5 py-5 shadow-[0_10px_24px_rgba(0,0,0,0.03)] my-6">
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
+        {title}
+      </div>
+      <div className="mt-3 sans text-[16px] leading-[1.9] text-black/80">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export function GuideCompare({
+  leftTitle,
+  rightTitle,
+  left,
+  right,
+}: {
+  leftTitle: string;
+  rightTitle: string;
+  left: ReactNode;
+  right: ReactNode;
+}) {
+  return (
+    <div className="grid gap-4 md:grid-cols-2 my-6">
+      <div className="rounded-[24px] border border-black/10 bg-white/85 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)]">
+        <h3 className="serif text-[24px] font-semibold text-[#2B2B2B]">
+          {leftTitle}
+        </h3>
+        <div className="mt-3 sans text-[16px] leading-[1.9] text-black/80">
+          {left}
+        </div>
+      </div>
+
+      <div className="rounded-[24px] border border-black/10 bg-white/85 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)]">
+        <h3 className="serif text-[24px] font-semibold text-[#2B2B2B]">
+          {rightTitle}
+        </h3>
+        <div className="mt-3 sans text-[16px] leading-[1.9] text-black/80">
+          {right}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function GuideTOC({
+  title = "In this chapter",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[24px] border border-[#D8D1C5] bg-gradient-to-br from-[#FBF8F2] to-[#F7F2E8] px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] my-6">
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
+        {title}
+      </div>
+      <div className="mt-4 sans text-[16px] leading-[1.9] text-black/80">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export function GuideStat({
+  label,
+  value,
+}: {
+  label: string;
+  value: ReactNode;
+}) {
+  return (
+    <div className="inline-flex flex-col rounded-[20px] border border-[#C9A86A]/35 bg-[#FFF8EE] px-4 py-3 shadow-[0_10px_24px_rgba(201,168,106,0.08)] my-3">
+      <span className="sans text-[11px] uppercase tracking-[0.14em] text-[#7E7566]">
+        {label}
+      </span>
+      <span className="serif mt-1 text-[28px] leading-none text-[#2B2B2B]">
+        {value}
+      </span>
+    </div>
+  );
+}
