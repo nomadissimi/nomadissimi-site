@@ -1987,11 +1987,11 @@ In Italy, you generally cannot sign and register a rental contract without this 
 
 ### **How to get it:**
 
-<GuideNote>
+<GuideTip>
 
 You can usually request a Codice Fiscale for free at the same Italian Consulate where you are applying for the visa.
 
-</GuideNote>
+</GuideTip>
 
 <GuideBigSis title="Big-sis note for Concierge customers">
 
@@ -2343,9 +2343,7 @@ It's a background check on your boss. Italy wants to ensure they aren't granting
 
 The declaration must be signed by your employer's legal representative (CEO, Director, or authorized HR manager) and must explicitly state that:
 
-<GuideCard title="What must it contain">
-
-The declaration must be signed by your employer's legal representative (CEO, Director, or authorized HR manager) and must explicitly state that:
+<GuideCard>
 
 1. The company has not been convicted in the last 5 years for:
    - Aiding or abetting illegal immigration.
@@ -2376,7 +2374,7 @@ Yes\! Most consulates provide a standard form for this. Download it from your sp
 
 ### **What to bring to the appointment (Checklist)**
 
-<GuideChecklist title="Employment contract / binding offer packet">
+<GuideChecklist title="Remote workers extras">
 
 - **The Contract/Offer**:  
   The original signed copy. If you have an electronically signed PDF, print it in high quality. The consulate considers the digital signature valid, but they still need a physical paper copy for their file.
@@ -2397,6 +2395,7 @@ Yes\! Most consulates provide a standard form for this. Download it from your sp
 
 </GuideChecklist>
 
+<GuideSoftPurple>
 You did it! You have the contract. You have the declaration. You have the skills, the home, and the insurance. You have done it all.
 _Now it’s just a matter of compiling your "Perfect Packet" so the consulate has no choice but to say YES._
 
@@ -2509,7 +2508,7 @@ _Walk into that appointment with a smile. You are ready. We are cheering you on.
 
 </GuideTip>
 
-**Benvenuti in Italia**
+**Benvenuti in Italia. Vi aspettiamo!**
 
 # **Chapter 22 Nomadissimi contacts**
 
