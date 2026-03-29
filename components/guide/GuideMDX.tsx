@@ -81,46 +81,38 @@ export function GuideChecklist({
   );
 }
 
-export function GuideSteps({ title = "Step by step", items }: ListProps) {
+export function GuideSteps({
+  title = "Step by step",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
   return (
     <div className="rounded-[24px] border border-[#D8D1C5] bg-[#FFFCF7] px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] my-6">
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
         {title}
       </div>
 
-      <ol className="mt-4 space-y-4">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-start gap-4">
-            <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#4B5D44] text-white sans text-sm">
-              {index + 1}
-            </span>
-            <div className="sans text-[16px] leading-[1.9] text-black/82 pt-0.5">
-              {item}
-            </div>
-          </li>
-        ))}
-      </ol>
+      <div className="mt-4 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
 
-export function GuideRecap({ title = "Quick recap", items }: ListProps) {
+export function GuideRecap({
+  title = "Quick recap",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
   return (
     <div className="rounded-[24px] border border-[#C9A86A]/35 bg-gradient-to-br from-[#FFFAF2] to-[#FFF4E6] px-5 py-5 shadow-[0_14px_34px_rgba(201,168,106,0.10)] my-6">
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#9B6B1E]/80">
         {title}
       </div>
 
-      <ul className="mt-4 space-y-3">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-start gap-3">
-            <span className="mt-[6px] h-2.5 w-2.5 shrink-0 rounded-full bg-[#C9A86A]" />
-            <div className="sans text-[16px] leading-[1.9] text-black/82">
-              {item}
-            </div>
-          </li>
-        ))}
-      </ul>
+      <div className="mt-4 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
