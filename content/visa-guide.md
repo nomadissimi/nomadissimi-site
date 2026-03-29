@@ -27,56 +27,34 @@
 
 # **Chapter 1 Welcome**
 
-<GuideHeroAccent
-  title="Welcome"
-  subtitle="Before we get started, we want to say a genuine thank you for trusting Nomadissimi."
-/>
-
-<GuideBadge>Private guide</GuideBadge>
-<GuideBadge>Start here</GuideBadge>
+Before we get started, we want to say a genuine thank you for trusting Nomadissimi
 
 <GuideSpacer size="sm" />
 
 We know that moving to Italy is so much more than changing your address. It’s an important choice and a new chapter in your life. Perhaps it’s also about chasing a feeling, a dream you’ve probably had for years. It’s about waking up to a different pace of life. Moving to a new country takes guts, and it shouldn't be this hard.
 
-<GuideIllustrationCard icon="♡" title="A new chapter">
-
 We’re going to keep it real with you throughout the process, especially as we say that Italy's bureaucracy can break your heart. We know because it broke ours first… more than one time. We’re talking about endless paperwork, conflicting information, "come back next month" conversations... and worst of all? Getting your visa denied when you did everything you thought was right.
 
-</GuideIllustrationCard>
-
-<GuideTip title="Why Nomadissimi exists">
-
+<GuideTip>
 That's why Nomadissimi exists\! Think of Nomadissimi as your big sister who moved out first. We have already tripped over the obstacles, felt the confusion, and learned the hard lessons… so you don’t have to. We want to protect your nervous system from that stress (and give you all the advice we wish we would have had along the way).
-
 </GuideTip>
 
 <GuideDivider />
 
-<GuideCallout title="What this guide is for">
+<GuideCallout title="The Nomadissimi Digital Nomad Visa Master Guide">
 
 This guide is the sum of everything we know, experienced, and researched regarding the Digital Nomad Visa. We wrote it to help people who also share our dream and to guide you straight to that "Approved" stamp.  
 You're serious about Italy, and we're serious about making sure you actually get there.
 
 </GuideCallout>
 
-<GuideQuote author="Nomadissimi">
 Andiamo? Let's get you to Italy!
-</GuideQuote>
-
-<GuideWarning title="A gentle reminder">
-
-This guide and all accompanying materials and other guides are the exclusive intellectual property of **Nomadissimi** and are protected by copyright and other applicable intellectual property laws.
-
-</GuideWarning>
-
-<GuideFlourish />
 
 ## **Copyright Notice**
 
-<GuideCard title="Copyright Notice">
+<GuideBadge>© Nomadissimi. All rights reserved.</GuideBadge>
 
-**© Nomadissimi. All rights reserved.**
+<GuideCard>
 
 This guide and all accompanying materials and other guides are the exclusive intellectual property of **Nomadissimi** and are protected by copyright and other applicable intellectual property laws.
 
@@ -90,13 +68,19 @@ By accessing or using this material, you acknowledge and agree to these terms.
 
 </GuideCard>
 
-# **Chapter 2 Are you a "Remote Worker" or a “Digital Nomad”?**
+# **Chapter 2 Are you a “Remote Worker” or a “Digital Nomad”?**
 
-Time to turn that dream into reality. But first, check if you qualify for the visa; and from there, determine if you’re a “Remote Worker” or “Digital Nomad.” We can help you in either case, no worries. It’s just a matter of understanding what specific visa you’re applying to. They’re quite similar, but you need to specify which one is your case.  
-Both visas require:
+<GuideBadge>Foundational chapter</GuideBadge>
+<GuideBadge>Choose your visa path</GuideBadge>
+
+Time to turn that dream into reality. But first, check if you qualify for the visa; and from there, determine if you’re a “Remote Worker” or “Digital Nomad.” We can help you in either case, no worries. It’s just a matter of understanding what specific visa you’re applying to. They’re quite similar, but you need to specify which one is your case.
+
+<GuideSpacer size="sm" />
+
+<GuideChecklist title="Both visas require">
 
 - Being a non-EU citizen (EU folks can simply move to Italy by being European).
-- Your work is fully location‑independent, meaning you can deliver everything online as long as you have a stable Internet connection.
+- Your work is fully location-independent, meaning you can deliver everything online as long as you have a stable Internet connection.
 - You earn at least €25,000 gross per year. (It doesn’t matter whether the monthly payments differ. What matters is the yearly sum).
 - You have at least 6 months of experience doing the kind of work you plan to do as a digital nomad or remote worker.
 - Pick just one of the following:
@@ -109,10 +93,30 @@ Both visas require:
 
      _Note: You’ll need solid proof like contracts, payslips, or reference letters. We’ll show you exactly what works later on in the guide._
 
+</GuideChecklist>
+
+<GuideTip title="So far, so good">
+
 Do you meet those? Great\! You’re technically eligible for either visa so far\!  
 But which one?
 
+</GuideTip>
+
 The difference lies mostly in your contract. Italy splits the same “work remotely from Italy” pathway into two buckets because the legal responsibilities (and the documents that prove them) are different.
+
+<GuideColumns>
+  <GuideMiniCard title="Digital Nomad = self-employed">
+
+**You count as a “digital nomad” in Italy if you work for yourself:** freelancer, consultant, or other independent professional with no employer payroll.
+
+  </GuideMiniCard>
+
+  <GuideMiniCard title="Remote Worker = employee">
+
+**You count as a “remote worker” when you’re on a company payroll and that company officially lets you do your job 100% remotely.**
+
+  </GuideMiniCard>
+</GuideColumns>
 
 ## **Digital Nomad \= self-employed**
 
@@ -124,30 +128,57 @@ This section applies to self-employed applicants: freelancers, consultants, or o
 
 **You count as a “digital nomad” in Italy if you work for yourself:** freelancer, consultant, or other independent professional with no employer payroll.
 
+<GuideIllustrationCard icon="⌁" title="Example">
+
 _Take Barbara, for instance. She’s a web designer with her own site, where clients book and pay her directly. She invoices them, has no single employer, and handles her own taxes every year. That makes Barbara a digital nomad—and she’ll apply for the Digital Nomad Visa at the Italian embassy with Nomadissimi’s help._
+
+</GuideIllustrationCard>
 
 ## **Remote Worker \= employee**
 
+<GuideBadge>Remote Worker</GuideBadge>
+
+<GuideNote title="At a glance">
+This section applies to employees whose company officially lets them do their job 100% remotely.
+</GuideNote>
+
 **You count as a “remote worker” when you’re on a company payroll and that company officially lets you do your job 100% remotely.**
+
+<GuideIllustrationCard icon="⌁" title="Example">
 
 _For example John. He is a software developer at “Fancy Applications Company”. He has an employment contract, and the company takes care of withholding and paying his taxes. John is a remote worker, and he’ll apply for the Remote Worker Visa at the Italian embassy._
 
+</GuideIllustrationCard>
+
+<GuideDivider />
+
 ## **Why Italy separates them**
+
+<GuideCallout title="Why Italy separates them">
 
 Italy splits “Digital Nomad” and “Remote Worker” for one unsexy reason: taxes. Italy needs to know whether you will handle Italian tax/social-security obligations like a self-employed person, or whether an employer/relationship exists that may trigger employer-side duties and checks. That’s why the rules explicitly talk about verifying compliance with fiscal and contribution obligations, and why digital nomads are treated like “lavoratori autonomi” (autonomous workers). In this case, they will most likely open a Partita IVA once in Italy.
 
 On the other hand, if you’re a remote worker (employee/collaborator), Italy also wants extra guarantees from the company behind your paycheck. For this reason, the process expects an employment contract/binding offer and an employer declaration (including a statement about no relevant convictions in the last 5 years).
 
+</GuideCallout>
+
 ## **What changes in the application**
 
-The core visa packet overlaps heavily (qualifications, income, health insurance, accommodation, etc...), but the “proof of work” section is where your path differs. In practice:
+<GuideColumns>
+  <GuideMiniCard title="Digital nomad path">
+    **_Digital nomad path_**: you prove you’re self-employed and actively working with clients (contracts/invoices/tax evidence).
+  </GuideMiniCard>
 
-- **_Digital nomad path_**: you prove you’re self-employed and actively working with clients (contracts/invoices/tax evidence).
-- **_Remote worker path:_** you prove employment, and you attach employer-specific items (company contract \+ employer declaration/letter; salary checks).
+  <GuideMiniCard title="Remote worker path">
+    **_Remote worker path:_** you prove employment, and you attach employer-specific items (company contract \+ employer declaration/letter; salary checks).
+  </GuideMiniCard>
+</GuideColumns>
 
 Which one are you?  
 Let’s play a quick quiz game to determine whether you are a Digital Nomad or a Remote Worker.  
 _Instructions:_ For each question, pick A or B. Count your A’s and B’s at the end.
+
+<GuideSteps title="Quick quiz">
 
 **Who pays you?**
 
@@ -179,13 +210,17 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 1. Invoices \+ bank incoming payments from clients.
 2. Payslips \+ employment contract salary details.
 
+</GuideSteps>
+
 ### **Your result (read this like a fortune cookie)**
 
+<GuideRecap title="Your result">
+
 - Mostly A’s: You’re the Digital Nomad type (self-employed).
-
-- Mostly B’s: You’re the Remote Worker type (employee with a non‑Italian employer who allows 100% remote work).
-
+- Mostly B’s: You’re the Remote Worker type (employee with a non-Italian employer who allows 100% remote work).
 - It’s a tie: Choose based on what you can document cleanly and thoroughly. Italy doesn’t approve ambiguous applications. It approves paperwork that matches one category perfectly.
+
+</GuideRecap>
 
 # **Chapter 3 Eligibility**
 
