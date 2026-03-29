@@ -385,24 +385,25 @@ export function GuideHeroAccent({
   icon?: ReactNode;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-[30px] border border-[#D8D1C5] bg-gradient-to-br from-[#FFFCF7] via-[#FBF8F2] to-[#F4EEE2] px-6 py-7 shadow-[0_18px_50px_rgba(0,0,0,0.06)] my-6">
-      <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#C9A86A]/10 blur-2xl" />
-      <div className="pointer-events-none absolute -left-6 bottom-0 h-24 w-24 rounded-full bg-[#4B5D44]/8 blur-2xl" />
-      <div className="pointer-events-none absolute right-6 top-5 text-[#C9A86A]/60 text-[14px]">
-        ✦ ✦
-      </div>
+    <div className="relative overflow-hidden rounded-[30px] border border-[#D8D1C5] bg-gradient-to-br from-[#FFFCF7] via-[#FBF8F2] to-[#F6F1E8] px-7 py-7 shadow-[0_18px_50px_rgba(0,0,0,0.05)] my-6">
+      <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-[#C9A86A]/8 blur-3xl" />
+      <div className="pointer-events-none absolute left-0 bottom-0 h-20 w-20 rounded-full bg-[#4B5D44]/6 blur-3xl" />
 
-      <div className="flex items-start gap-4">
-        {icon ? <GuideIcon>{icon}</GuideIcon> : null}
+      {eyebrow ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
+          {eyebrow}
+        </div>
+      ) : null}
+
+      <div className="mt-3 flex items-start gap-4">
+        {icon ? (
+          <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#C9A86A]/35 bg-[#FFF8EE] text-[#4B5D44]">
+            <span className="text-[16px] leading-none">{icon}</span>
+          </div>
+        ) : null}
 
         <div className="min-w-0">
-          {eyebrow ? (
-            <div className="sans text-xs tracking-[0.18em] uppercase text-[#7E7566]">
-              {eyebrow}
-            </div>
-          ) : null}
-
-          <h2 className="serif mt-2 text-[32px] md:text-[42px] leading-[1.08] font-semibold text-[#2B2B2B]">
+          <h2 className="serif text-[32px] md:text-[42px] leading-[1.08] font-semibold text-[#2B2B2B]">
             {title}
           </h2>
 
@@ -454,4 +455,3 @@ export function GuideIllustrationCard({
     </div>
   );
 }
-

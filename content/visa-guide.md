@@ -157,14 +157,9 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 # **Chapter 3 Eligibility**
 
 <GuideHeroAccent
-  eyebrow="Chapter 3"
-  subtitle="To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes. If you have these, you are ready to start:"
-  icon="✦"
+  title="Eligibility"
+  subtitle="Let’s cut through the noise. To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes. If you have these, you are ready to start:"
 />
-
-<GuideStamp>Italy-ready</GuideStamp>
-
-<GuideFlourish />
 
 <GuideBadge>Eligibility</GuideBadge>
 <GuideBadge>Applies to everyone</GuideBadge>
@@ -236,7 +231,8 @@ It happened to me, and now we want to share the trick that lets us snag a good s
 
 <GuideWarning title="Important tip">
 
-**\*Important tip:** This guide helps you gather all required documents as quickly and easily as possible. Even with our support, some documents take months to arrive, and others must be requested in a specific order. Plan ahead by estimating your timeline and booking your Consulate/Embassy appointment with at least one or two extra months as a buffer. If you need to reschedule, cancel the original and book a new one since they don’t take duplicate appointments.\*
+This guide helps you gather all required documents as quickly and easily as possible. Even with our support, some documents take months to arrive, and others must be requested in a specific order. Plan ahead by estimating your timeline and booking your Consulate/Embassy appointment with at least one or two extra months as a buffer.
+If you need to reschedule, cancel the original and book a new one since they don’t take duplicate appointments.\
 
 </GuideWarning>
 
