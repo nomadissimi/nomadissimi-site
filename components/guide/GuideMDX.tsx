@@ -501,3 +501,82 @@ export function GuideQuizItem({ question, a, b }: QuizItemProps) {
     </div>
   );
 }
+
+
+export function GuideSoftPink({
+  title,
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[24px] border border-[#E7C9D3] bg-gradient-to-br from-[#FFF8FB] to-[#FFF2F7] px-5 py-5 shadow-[0_12px_30px_rgba(180,90,120,0.06)] my-6">
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#A06A7A]">
+          {title}
+        </div>
+      ) : null}
+      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export function GuideSoftPurple({
+  title,
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[24px] border border-[#D9D2F3] bg-gradient-to-br from-[#FAF8FF] to-[#F3EFFF] px-5 py-5 shadow-[0_12px_30px_rgba(110,90,180,0.06)] my-6">
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#6F61A8]">
+          {title}
+        </div>
+      ) : null}
+      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export function GuideDecisionBox({
+  title = "Decision point",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[26px] border border-[#C9A86A]/35 bg-gradient-to-br from-[#FFFCF7] via-[#FFF8EE] to-[#F8F2E8] px-5 py-5 shadow-[0_14px_34px_rgba(201,168,106,0.10)] my-6">
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#9B6B1E]/80">
+        {title}
+      </div>
+      <div className="mt-4 guide-prose max-w-none">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export function GuideSectionBreak({
+  label,
+}: {
+  label: string;
+}) {
+  return (
+    <div className="my-10 flex items-center gap-4" aria-hidden="true">
+      <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#C9A86A]/55" />
+      <span className="sans text-[11px] uppercase tracking-[0.18em] text-[#7E7566] whitespace-nowrap">
+        {label}
+      </span>
+      <div className="h-px flex-1 bg-gradient-to-r from-[#C9A86A]/55 to-transparent" />
+    </div>
+  );
+}
+
