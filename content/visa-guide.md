@@ -27,15 +27,15 @@
 
 # **Chapter 1 Welcome**
 
-<GuideBigSis>
+<GuideBigSis title="Grazie mille!">
 **Before we get started, we want to say a genuine thank you for trusting Nomadissimi.**
+We know that moving to Italy is so much more than changing your address. It’s an important choice and a new chapter in your life. Perhaps it’s also about chasing a feeling, a dream you’ve probably had for years. It’s about waking up to a different pace of life. Moving to a new country takes a lot of courage, and the bureaucratical process shouldn't be this hard.
+
 </GuideBigSis>
 
 <GuideSpacer size="sm" />
 
-We know that moving to Italy is so much more than changing your address. It’s an important choice and a new chapter in your life. Perhaps it’s also about chasing a feeling, a dream you’ve probably had for years. It’s about waking up to a different pace of life. Moving to a new country takes guts, and it shouldn't be this hard.
-
-We’re going to keep it real with you throughout the process, especially as we say that Italy's bureaucracy can break your heart. We know because it broke ours first… more than one time. We’re talking about endless paperwork, conflicting information, "come back next month" conversations... and worst of all? Getting your visa denied when you did everything you thought was right.
+We’re going to keep it real with you throughout the process, especially as we say that Italy's bureaucracy can break your heart. We know because it broke ours first… more than one time. We’re talking about endless paperwork, conflicting information, "come back next month" conversations, unreliable reddit advice, and heaps of frustration...
 
 **That's why Nomadissimi exists!** Think of Nomadissimi as your big sister who moved out first. We have already tripped over the obstacles, felt the confusion, and learned the hard lessons… so you don’t have to. We want to protect your nervous system from that stress (and give you all the advice we wish we would have had along the way).
 
@@ -47,6 +47,8 @@ This guide is the sum of everything we know, have experienced, and have thorough
 You're serious about Italy, and we're serious about making sure you actually get there. Trust us, it will be super worth it.
 
 </GuideCallout>
+
+Welcome to your Visa Portal.
 
 **Andiamo? Let's get you to Italy!**
 
