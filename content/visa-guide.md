@@ -27,7 +27,7 @@
 
 # **Chapter 1 Welcome**
 
-Before we get started, we want to say a genuine thank you for trusting Nomadissimi
+**Before we get started, we want to say a genuine thank you for trusting Nomadissimi.**
 
 <GuideSpacer size="sm" />
 
@@ -35,9 +35,7 @@ We know that moving to Italy is so much more than changing your address. It’s 
 
 We’re going to keep it real with you throughout the process, especially as we say that Italy's bureaucracy can break your heart. We know because it broke ours first… more than one time. We’re talking about endless paperwork, conflicting information, "come back next month" conversations... and worst of all? Getting your visa denied when you did everything you thought was right.
 
-<GuideTip>
-That's why Nomadissimi exists\! Think of Nomadissimi as your big sister who moved out first. We have already tripped over the obstacles, felt the confusion, and learned the hard lessons… so you don’t have to. We want to protect your nervous system from that stress (and give you all the advice we wish we would have had along the way).
-</GuideTip>
+**That's why Nomadissimi exists!** Think of Nomadissimi as your big sister who moved out first. We have already tripped over the obstacles, felt the confusion, and learned the hard lessons… so you don’t have to. We want to protect your nervous system from that stress (and give you all the advice we wish we would have had along the way).
 
 <GuideDivider />
 
@@ -48,7 +46,7 @@ You're serious about Italy, and we're serious about making sure you actually get
 
 </GuideCallout>
 
-Andiamo? Let's get you to Italy!
+**Andiamo? Let's get you to Italy!**
 
 ## **Copyright Notice**
 
@@ -56,11 +54,11 @@ Andiamo? Let's get you to Italy!
 
 <GuideCard>
 
-This guide and all accompanying materials and other guides are the exclusive intellectual property of **Nomadissimi** and are protected by copyright and other applicable intellectual property laws.
+This guide and all accompanying materials and other guides are the exclusive intellectual property of Nomadissimi and are protected by copyright and other applicable intellectual property laws.
 
 No part of our guides, or any Nomadissimi content, may be copied, reproduced, republished, uploaded, posted, shared, distributed, transmitted, translated, resold, or stored in any form or by any means, whether digital, electronic, mechanical, photocopying, recording, or otherwise, without the prior written consent of Nomadissimi.
 
-Purchase or access to this material is granted **for the sole personal use of the client**. It does **not** transfer any ownership, licensing rights, resale rights, teaching rights, or redistribution rights.
+Purchase or access to this material is granted for the sole personal use of the client. It does NOT transfer any ownership, licensing rights, resale rights, teaching rights, or redistribution rights.
 
 Any unauthorized duplication, reproduction, redistribution, publication, or commercial use of Nomadissimi’s content, guides, frameworks, templates, or materials is strictly prohibited and will be treated as a violation of intellectual property rights. **Nomadissimi reserves the right to pursue all available legal remedies, including civil claims, injunctive relief, damages, and, where applicable, referral for criminal prosecution.**
 
@@ -130,20 +128,16 @@ _Take Barbara, for instance. She’s a web designer with her own site, where cli
 
 </GuideIllustrationCard>
 
-## **Remote Worker \= employee**
-
 <GuideBadge>Remote Worker</GuideBadge>
 
-This section applies to employees whose company officially lets them do their job 100% remotely.
-**You count as a “remote worker” when you’re on a company payroll and that company officially lets you do your job 100% remotely.**
+**This section applies to employees whose company officially lets them do their job 100% remotely.**
+You count as a “remote worker” when you’re on a company payroll and that company officially lets you do your job 100% remotely.
 
 <GuideIllustrationCard title="Example">
 
 _For example John. He is a software developer at “Fancy Applications Company”. He has an employment contract, and the company takes care of withholding and paying his taxes. John is a remote worker, and he’ll apply for the Remote Worker Visa at the Italian embassy._
 
 </GuideIllustrationCard>
-
-<GuideDivider />
 
 ## **Why Italy separates them**
 
@@ -169,7 +163,9 @@ You prove employment, and you attach employer-specific items (company contract \
 
 </GuideCard>
 
-Which one are you?  
+<GuideDivider />
+
+**Which one are you?**  
 Let’s play a quick quiz game to determine whether you are a Digital Nomad or a Remote Worker.  
 _Instructions:_ For each question, pick A or B. Count your A’s and B’s at the end.
 
@@ -178,50 +174,52 @@ _Instructions:_ For each question, pick A or B. Count your A’s and B’s at th
 **Who pays you?**
 
 A. Multiple clients (or one client, but as a contractor).
+<br />
 B. One employer through payroll.
 
 **What document best describes your work relationship?**
 
 A. Client contract/service agreement/invoice-based work.
+<br />
 B. Employment contract (or a formal binding job offer).
 
 **When you “take a day off,” what happens?**
 
 A. You tell your clients and manage deliverables.
+<br />
 B. You request leave from your manager/HR.
 
 **If Italy asks: “Who is responsible for your work activity?”**
 
 A. You (you run the show, and the admin).
+<br />
 B. Your employer (they’re the company in charge).
 
 **If your company suddenly says, “No more remote from abroad,” then…**
 
 A. You switch clients or renegotiate because your work isn’t tied to one employer.
+<br />
 B. Your whole plan is at risk because your visa mostly relies on that specific employment setup.
 
 **Your income proof will mostly look like…**
 
 A. Invoices \+ bank incoming payments from clients.
+<br />
 B. Payslips \+ employment contract salary details.
 
 </GuideSteps>
 
 <GuideRecap title="Your result">
 
-- Mostly A’s: You’re the Digital Nomad type (self-employed).
-- Mostly B’s: You’re the Remote Worker type (employee with a non-Italian employer who allows 100% remote work).
-- It’s a tie: Choose based on what you can document cleanly and thoroughly. Italy doesn’t approve ambiguous applications. It approves paperwork that matches one category perfectly.
+- **Mostly A’s:** You’re the Digital Nomad type (self-employed).
+- **Mostly B’s:** You’re the Remote Worker type (employee with a non-Italian employer who allows 100% remote work).
+- **It’s a tie:** Choose based on what you can document accurately and thoroughly. Italy doesn’t approve ambiguous applications. It approves paperwork that matches one category clearly.
 
 </GuideRecap>
 
 # **Chapter 3 Eligibility**
 
-<GuideHeroAccent
-  subtitle="To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes. If you have these, you are ready to start:"
-/>
-
-<GuideBadge>Applies to everyone</GuideBadge>
+To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to tick these 4 boxes. If you have these, you are ready to start.
 
 <GuideSpacer size="sm" />
 
@@ -247,11 +245,7 @@ So, are you ready to stop dreaming and start packing?
 
 # **Where can I request my Italian Visa?**
 
-<GuideSectionIntro eyebrow="Application location">
-
 The place to apply for the Digital Nomad or Remote Worker visa is the Italian embassy or consulate in the jurisdiction where you currently reside.
-
-</GuideSectionIntro>
 
 <GuideColumns>
   <GuideMiniCard title="Example 1">
@@ -263,7 +257,7 @@ The place to apply for the Digital Nomad or Remote Worker visa is the Italian em
   </GuideMiniCard>
 </GuideColumns>
 
-<GuideNote title="And if there is not an Italian embassy/consulate in the city where I live?">
+<GuideNote title="What if there is not an Italian embassy/consulate in the city where I live?">
 
 You can find the Italian embassy/consulate in your jurisdiction through the following official website:  
 [https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
@@ -282,29 +276,52 @@ _For example, if you're in Austin, Texas, go to the site above. Select “STATI 
 
 Now that you know how to identify the right embassy or consulate to apply to, you should also know how to book your appointment.  
 Every appointment can be booked through this link: [https://prenotami.esteri.it/](https://prenotami.esteri.it/).  
+<br />
 But have you already tried to find an available slot?  
 Maybe you’ve logged in several times, hunting for a date, but everything always seems booked (or broken).  
+<br />
 It happened to me, and now we want to share the trick that lets us snag a good spot for my application: The Italian government refreshes available dates right after midnight Italian time between Sunday and Monday. Just log in during that window (after converting the time zone), and you should be able to see open slots. For example, if you’re in the American East Coast, it would be at around 6pm your time.
 
 </GuideSectionIntro>
 
-<GuideWarning title="Important tip">
+<GuideWarning title="It's best to start early">
 
-This guide helps you gather all required documents as quickly and easily as possible. Even with our support, some documents take months to arrive, and others must be requested in a specific order. Plan ahead by estimating your timeline and booking your Consulate/Embassy appointment with at least one or two extra months as a buffer.
-If you need to reschedule, cancel the original and book a new one since they don’t take duplicate appointments.\
+This guide helps you gather all required documents as quickly and easily as possible. Even with our support, some documents take months to arrive, and others must be requested in a specific order.
+<br />
+Plan ahead by estimating your timeline and booking your Consulate/Embassy appointment with at least one or two extra months as a buffer.
+<br />
+If you need to reschedule, cancel the original and book a new one since they don’t take duplicate appointments.
 
 </GuideWarning>
 
 # **Chapter 4 Keys to Italy: Your Must-Have Document Checklist**
+
+<GuideHeroAccent
+  title="Keys to Italy: Your Must-Have Document Checklist"
+  subtitle="You’ve checked the eligibility boxes, and you also know how to book an appointment at the Italian Embassy/Consulate."
+/>
+
+<GuideBadge>Checklist overview</GuideBadge>
+<GuideBadge>Core documents</GuideBadge>
+
+<GuideSpacer size="sm" />
 
 You’ve checked the eligibility boxes, and you also know how to book an appointment at the Italian Embassy/Consulate.  
 Now it’s time to prove it.  
 The Italian bureaucracy loves paper, but don't let that scare you. Think of this as gathering the keys to your new villa in front of the Ionian Sea, or your cozy condo in Northern Italy.  
 Below is the complete list of documents you will need to present at the Italian Consulate. Don't worry about the "How" just yet. For now, just scan the list to get the big picture. In the next sections of this guide, we will break down every single item. We will explain exactly where to get it, how to translate it, and how to make it "Consulate-proof."
 
-### **The "Must-Haves" List:**
+<GuideNote title='How to use this chapter'>
+
+For now, just scan the list to get the big picture. In the next sections of this guide, we will break down every single item.
+
+</GuideNote>
+
+## **The "Must-Haves" List:**
 
 Both Digital Nomads (“freelancers”) and Remote Workers (“employees") have to collect the following documents:
+
+<GuideChecklist title="Must-have documents for both visa types">
 
 1. **National Visa Application Form** completed and signed
 2. Valid **passport** with at least 3 months remaining validity and 2 blank pages
@@ -318,13 +335,25 @@ Both Digital Nomads (“freelancers”) and Remote Workers (“employees") have 
 10. Confirmed **travel booking to Italy**
 11. **Visa Fees** (usually €116 in cash)
 
+</GuideChecklist>
+
+<GuideDivider />
+
 If you are a Remote Worker (=employee), you also need:
+
+<GuideWarning title="Remote Worker only">
 
 12. **Employment contract** or **binding offer**
 13. **Employer declaration**
 
+</GuideWarning>
+
+<GuideRecap title="Before you move on">
+
 _Here's the checklist to review before you pack and head to Italy._  
 _From the next section on, we'll break down each item in detail so you can handle Italian bureaucracy like a pro._
+
+</GuideRecap>
 
 # **Chapter 5 item 1\. National Visa Application form, completed and signed**
 

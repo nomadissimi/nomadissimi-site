@@ -20,9 +20,6 @@ export function GuideTip({ title = "Big-sis tip", children }: BoxProps) {
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#4B5D44]/70">
         {title}
       </div>
-      <div className="mt-2 serif text-[24px] leading-tight text-[#2B2B2B]">
-        ✦
-      </div>
       <div className="mt-2 guide-prose max-w-none">{children}</div>
     </div>
   );
