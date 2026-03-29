@@ -66,12 +66,12 @@ export function GuideChecklist({
   children: ReactNode;
 }) {
   return (
-    <div className="rounded-[24px] border border-black/10 bg-white/85 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] my-6">
+    <div className="rounded-[26px] border border-black/10 bg-white/88 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] my-6">
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#4B5D44]/70">
         {title}
       </div>
 
-      <div className="mt-4 sans text-[16px] leading-[1.9] text-black/82">
+      <div className="mt-4 guide-checklist max-w-none">
         {children}
       </div>
     </div>

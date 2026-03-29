@@ -296,19 +296,17 @@ If you need to reschedule, cancel the original and book a new one since they don
 
 # **Chapter 4 Keys to Italy: Your Must-Have Document Checklist**
 
-<GuideHeroAccent
-  title="Keys to Italy: Your Must-Have Document Checklist"
-  subtitle="You’ve checked the eligibility boxes, and you also know how to book an appointment at the Italian Embassy/Consulate."
-/>
-
-<GuideBadge>Checklist overview</GuideBadge>
 <GuideBadge>Core documents</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-You’ve checked the eligibility boxes, and you also know how to book an appointment at the Italian Embassy/Consulate.  
+So far we've determined what visa you will apply for. By now, you also know how to book an appointment at the Italian Embassy/Consulate.  
 Now it’s time to prove it.  
+<br />
+
 The Italian bureaucracy loves paper, but don't let that scare you. Think of this as gathering the keys to your new villa in front of the Ionian Sea, or your cozy condo in Northern Italy.  
+<br />
+
 Below is the complete list of documents you will need to present at the Italian Consulate. Don't worry about the "How" just yet. For now, just scan the list to get the big picture. In the next sections of this guide, we will break down every single item. We will explain exactly where to get it, how to translate it, and how to make it "Consulate-proof."
 
 <GuideNote title='How to use this chapter'>
@@ -317,23 +315,23 @@ For now, just scan the list to get the big picture. In the next sections of this
 
 </GuideNote>
 
-## **The "Must-Haves" List:**
+## **The “Must-Haves” List:**
 
-Both Digital Nomads (“freelancers”) and Remote Workers (“employees") have to collect the following documents:
+Both Digital Nomads (freelancers) and Remote Workers (employees) have to collect the following documents:
 
 <GuideChecklist title="Must-have documents for both visa types">
 
-1. **National Visa Application Form** completed and signed
-2. Valid **passport** with at least 3 months remaining validity and 2 blank pages
-3. **Color passport photo** with white background, recent
-4. Valid **residence permit** from the country where you currently reside (only if you leave abroad)
-5. Complete documentation to prove you are a **“highly qualified worker”.**
-6. Proof of **minimum annual income** of at least €25,000 gross
-7. Proof that you have **at least six months of professional experience** in the kind of work you’ll do as a digital nomad or remote worker
-8. **Health insurance valid in Italy** for the entire duration of your stay
-9. Proof of **accommodation in Italy**
-10. Confirmed **travel booking to Italy**
-11. **Visa Fees** (usually €116 in cash)
+- **National Visa Application Form** completed and signed
+- Valid **passport** with at least 3 months remaining validity and 2 blank pages
+- **Color passport photo** with white background, recent
+- Valid **residence permit** from the country where you currently reside (only if you leave abroad)
+- Complete documentation to prove you are a **“highly qualified worker”.**
+- Proof of **minimum annual income** of at least €25,000 gross
+- Proof that you have **at least six months of professional experience** in the kind of work you’ll do as a digital nomad or remote worker
+- **Health insurance valid in Italy** for the entire duration of your stay
+- Proof of **accommodation in Italy**
+- Confirmed **travel booking to Italy**
+- **Visa Fees** (usually €116 in cash)
 
 </GuideChecklist>
 
@@ -341,43 +339,59 @@ Both Digital Nomads (“freelancers”) and Remote Workers (“employees") have 
 
 If you are a Remote Worker (=employee), you also need:
 
-<GuideWarning title="Remote Worker only">
+<GuideChecklist title="Remote Worker only">
 
-12. **Employment contract** or **binding offer**
-13. **Employer declaration**
+- **Employment contract** or **binding offer**
+- **Employer declaration**
 
-</GuideWarning>
+</GuideChecklist>
 
-<GuideRecap title="Before you move on">
+<GuideRecap title="So much more than a checklist">
 
-_Here's the checklist to review before you pack and head to Italy._  
-_From the next section on, we'll break down each item in detail so you can handle Italian bureaucracy like a pro._
+It's one thing to have a list, it's another thing to have each item explained in full detail. That's what the rest of this guide is about.
+_We'll break down each item in detail so you can handle Italian bureaucracy like a pro._
 
 </GuideRecap>
 
-# **Chapter 5 item 1\. National Visa Application form, completed and signed**
+# **Chapter 5 item 1: National Visa Application form**
 
-### **What is it?**
+## **What is it?**
+
+<GuideCard title="What is it?">
 
 The **National Visa Application Form** is the official form you must complete to apply for the Digital Nomad visa. You might see it labeled as a D-type visa, which simply means it’s for stays longer than 90 days.
 
-### **How to get it?**
+</GuideCard>
 
-You can download it from the official website of the Italian Consulate or Embassy, from where you will apply for your visa.
+## **How to get it?**
 
-You can download the standard official National Visa Application Form from the following link:  
-[https://www.esteri.it/mae/Servizi/Stranieri/Formulario_Visto_Nazionale_ING-ITA.pdf](https://www.esteri.it/mae/Servizi/Stranieri/Formulario_Visto_Nazionale_ING-ITA.pdf)
+<GuideChecklist title="How to get it">
 
-The National Visa Application Form stays pretty much the same across consulates. The main difference is just the document title.
+- You can download it from the official website of the Italian Consulate or Embassy, from where you will apply for your visa.
+- You can download the standard official National Visa Application Form from the following link:  
+  [https://www.esteri.it/mae/Servizi/Stranieri/Formulario_Visto_Nazionale_ING-ITA.pdf](https://www.esteri.it/mae/Servizi/Stranieri/Formulario_Visto_Nazionale_ING-ITA.pdf)
+- The National Visa Application Form stays pretty much the same across consulates. The main difference is just the document title.
 
-_So how do you get the right one?_
+</GuideChecklist>
+
+<GuideNote title="So how do you get the right one?">
 
 As previously explained, you can find the right embassy/consulate from which to apply through the website:  
 [https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
 
+</GuideNote>
+
+<GuideSteps title="What to do next">
+
 Click through to your embassy or consulate's site and search for “Digital nomad/Remote worker.” You'll quickly find the dedicated page for this visa—then download the “NATIONAL VISA APPLICATION FORM” (or the general form for stays over 90 days).
 
-### **One important tip from your big sis Nomadissimi**
+</GuideSteps>
+
+<GuideDivider />
+
+## **One important tip from your big sis Nomadissimi**
+
+<GuideTip title="One important tip from your big sis Nomadissimi">
 
 Each embassy or consulate runs its own show, with rules that can slightly differ from others.
 
@@ -385,11 +399,17 @@ You also know that your possibility to accomplish your dream and move to Italy d
 
 **Here's the pro tip:** Visit your embassy or consulate's website early. Scope out the staff directory, office hours, any reviews _(usually they are bad, but sometimes you can get some useful info)_, and most importantly, dig into their Digital Nomad/Remote Worker Visa page (if they have one) to catch any office-specific rules they might apply.
 
-### **Need help filling it out?**
+</GuideTip>
+
+## **Need help filling it out?**
+
+<GuideWarning title="Need help filling it out?">
 
 \*We know this form can be tricky, and making a mistake means starting over. If you don't want to risk it, you can book an extra 30-minute “Kit-Filling Call” with us for €65, and we will fill out the entire thing together on screen. \*\*\*\*
 
-# **Chapter 6 item 2\. Passport**
+</GuideWarning>
+
+# **Chapter 6 item 2: Passport**
 
 Your passport sounds like the easiest item on the list… until it’s the reason a perfect application gets delayed or rejected. This is one of those “small detail, huge consequence” moments, so let’s make it bulletproof.
 
