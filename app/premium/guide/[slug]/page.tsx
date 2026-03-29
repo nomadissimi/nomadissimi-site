@@ -4,6 +4,7 @@ import { redirect, notFound } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { sha256 } from "@/lib/crypto";
 import { getVisaGuideChapter, getVisaGuideChapters } from "@/lib/guide";
+import { MDXRemote } from "next-mdx-remote/rsc";
 
 export default async function PremiumGuideChapterPage({
   params,
@@ -107,9 +108,9 @@ export default async function PremiumGuideChapterPage({
             {chapter.title}
           </h1>
 
-          <div className="mt-8 guide-prose max-w-none whitespace-pre-line">
-            {chapter.content}
-          </div>
+          <article className="mt-8 guide-prose max-w-none">
+            <MDXRemote source={chapter.content} />
+          </article>
 
           <div className="mt-10 flex flex-col gap-3 border-t border-black/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
             <div>
