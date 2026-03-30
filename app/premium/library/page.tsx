@@ -12,32 +12,41 @@ type GuideCard = {
   description: string;
   href: string;
   buttonClass: string;
+  badgeLabel: string;
+  badgeClass: string;
 };
 
 const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
   visa: {
     key: "visa",
     title: "Visa Guide",
-    description: "Your Digital Nomad Visa master guide.",
+    description: "Your Digital Nomad Visa master guide, step by step.",
     href: "/premium/guide/visa-welcome",
     buttonClass:
       "bg-[#4B5D44] text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] hover:bg-[#3E4E38]",
+    badgeLabel: "Visa portal",
+    badgeClass: "border-[#D9CFB7] bg-[#FBF6EA] text-[#8B6B2F]",
   },
   residence: {
     key: "residence",
     title: "Residence Registration Guide",
-    description: "From tourist to official Italian resident.",
+    description:
+      "From tourist to official Italian resident, in the right order.",
     href: "/premium/guide/residence-welcome-home-your-italian-chapter-begins",
     buttonClass:
       "bg-[#2F466B] text-white shadow-[0_14px_40px_rgba(47,70,107,0.25)] hover:bg-[#263A59]",
+    badgeLabel: "Residence portal",
+    badgeClass: "border-[#AEBBD1] bg-[#F4F8FC] text-[#2F466B]",
   },
   tax: {
     key: "tax",
     title: "Tax & Partita IVA Guide",
-    description: "Your Italian tax and Partita IVA path.",
+    description: "Your Italian tax and Partita IVA path, clearly explained.",
     href: "/premium/guide/tax-welcome",
     buttonClass:
       "bg-[#6E4B7E] text-white shadow-[0_14px_40px_rgba(110,75,126,0.25)] hover:bg-[#5C3D69]",
+    badgeLabel: "Tax portal",
+    badgeClass: "border-[#D8C6E0] bg-[#FBF5FC] text-[#6E4B7E]",
   },
   "codice-fiscale": {
     key: "codice-fiscale",
@@ -46,6 +55,8 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     href: "/premium/guide/codice-fiscale-welcome",
     buttonClass:
       "bg-[#3B6F69] text-white shadow-[0_14px_40px_rgba(59,111,105,0.25)] hover:bg-[#315E59]",
+    badgeLabel: "Mini guide",
+    badgeClass: "border-[#BFD9D4] bg-[#F3FBF8] text-[#3B6F69]",
   },
 };
 
@@ -112,14 +123,25 @@ export default async function PremiumLibraryPage() {
           Logged in as {buyerEmail}.
         </p>
 
+        <p className="mt-1 sans text-[15px] leading-[1.8] text-black/50">
+          You currently have access to {ownedGuides.length} private guide
+          {ownedGuides.length === 1 ? "" : "s"}.
+        </p>
+
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {ownedGuides.length > 0 ? (
             ownedGuides.map((guide) => (
               <div
                 key={guide.key}
-                className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-5 shadow-[0_12px_34px_rgba(0,0,0,0.04)]"
+                className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6 shadow-[0_14px_36px_rgba(0,0,0,0.05)] transition hover:-translate-y-[1px]"
               >
-                <h2 className="serif text-2xl leading-tight text-black">
+                <span
+                  className={`inline-flex rounded-full border px-3 py-1 sans text-[11px] uppercase tracking-[0.14em] ${guide.badgeClass}`}
+                >
+                  {guide.badgeLabel}
+                </span>
+
+                <h2 className="mt-4 serif text-2xl leading-tight text-black">
                   {guide.title}
                 </h2>
 
