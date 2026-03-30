@@ -75,41 +75,24 @@ To make this as smooth as possible, we have broken down your first few months in
 
 Here is your exact path to becoming a fully established resident:
 
-<GuideRoadmap
-title="Your exact path"
-items={[
-{
-step: "Step 1",
-title: "Sending the Poste Italiane Kit (Within 8 Days!)",
-description:
-"Securing your receipt and booking your police appointment. This key step must be done within the specified timeframe, so be careful!",
-},
-{
-step: "Step 2",
-title: "Attending your Questura Appointment",
-description:
-"Collecting your fingerprints at the police station at the time given to you.",
-},
-{
-step: "Step 3",
-title: "Collecting Your Permesso di Soggiorno",
-description:
-"Picking up your official physical residence permit.",
-},
-{
-step: "Step 4",
-title: "Registering your Residency at the Comune",
-description:
-"Officially registering your home address with the town hall (remember that the residency is different from the visa).",
-},
-{
-step: "Step 5",
-title: "The Italian ID Card (CIE)",
-description:
-"Securing your digital key to the Italian system.",
-},
-]}
-/>
+<GuideChecklist title="Your exact path">
+
+- **Step 1: Sending the Poste Italiane Kit (Within 8 Days!)**  
+  Securing your receipt and booking your police appointment. This key step must be done within the specified timeframe, so be careful!
+
+- **Step 2: Attending your Questura Appointment**  
+  Collecting your fingerprints at the police station at the time given to you.
+
+- **Step 3: Collecting Your Permesso di Soggiorno**  
+  Picking up your official physical residence permit.
+
+- **Step 4: Registering your Residency at the Comune**  
+  Officially registering your home address with the town hall (remember that the residency is different from the visa).
+
+- **Step 5: The Italian ID Card (CIE)**  
+  Securing your digital key to the Italian system.
+
+</GuideChecklist>
 
 <GuideWarning title="The one golden rule">
 
@@ -428,29 +411,18 @@ _The problem?_ To log into any of these online portals, you need an Italian digi
 
 Because of this, as a first-time foreign registrant, you have three different routes to get around the digital block:
 
-<GuideRoadmap
-title="Your 3 possible routes"
-items={[
-{
-step: "Route 1",
-title: "The Remote Email Route",
-description:
-"Many Comunes allow foreigners without a digital identity to bypass the portal and submit their residency applications via standard email. Go to your specific Comune’s website, search for 'Iscrizione anagrafica stranieri', and look for the specific email address. You simply download the PDF form, fill it out, attach your documents, and email it in.",
-},
-{
-step: "Route 2",
-title: "The “Roommate” SPID Route",
-description:
-"If you are moving in with a partner, family member, friend, or roommate who already has an active Italian SPID or CIE, they can usually log into the portal and submit the joint residency registration on behalf of the entire household. You can also try to use the SPID/CIE of someone not living with you, but more likely, they can ask you for further documentation or reject it.",
-},
-{
-step: "Route 3",
-title: "The In-Person Route",
-description:
-"If your Comune doesn't allow email submissions and you live alone, you must go physically to the Ufficio Anagrafe. Do not assume they are open 9-to-5, Monday through Friday. Italian offices have weird schedules. Check their specific opening hours and book an appointment online if possible. If the clerk asks you to 'just do it online with the SPID,' calmly explain that you are an extra-EU citizen doing your first registration and you do NOT have a digital identity yet.",
-},
-]}
-/>
+<GuideChecklist title="Your 3 possible routes">
+
+- **Route 1: The Remote Email Route**  
+  Many Comunes allow foreigners without a digital identity to bypass the portal and submit their residency applications via standard email. Go to your specific Comune’s website, search for “Iscrizione anagrafica stranieri”, and look for the specific email address. You simply download the PDF form, fill it out, attach your documents, and email it in.
+
+- **Route 2: The “Roommate” SPID Route**  
+  If you are moving in with a partner, family member, friend, or roommate who already has an active Italian SPID or CIE, they can usually log into the portal and submit the joint residency registration on behalf of the entire household. You can also try to use the SPID/CIE of someone not living with you, but more likely, they can ask you for further documentation or reject it.
+
+- **Route 3: The In-Person Route**  
+  If your Comune doesn't allow email submissions and you live alone, you must go physically to the Ufficio Anagrafe. Do not assume they are open 9-to-5, Monday through Friday. Italian offices have weird schedules. Check their specific opening hours and book an appointment online if possible. If the clerk asks you to “just do it online with the SPID,” calmly explain that you are an extra-EU citizen doing your first registration and you do NOT have a digital identity yet.
+
+</GuideChecklist>
 
 ## **What Documents Do You Need?**
 
@@ -651,4 +623,3 @@ That is why your big sister is not abandoning you now. Just like we navigated th
 **Benvenuti in Italia**
 
 </GuideItaliaNote>
-
