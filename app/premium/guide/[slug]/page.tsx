@@ -197,58 +197,77 @@ export default async function PremiumGuideChapterPage({
             {chapter.title}
           </h1>
 
-          <article className="mt-8 guide-prose max-w-none">
-            <MDXRemote
-              source={chapter.content}
-              components={{
-                GuideCallout,
-                GuideTip,
-                GuideQuizItem,
-                NavyBadge,
-                PlumBadge,
-                TealBadge,
-                GuideTaxSnapshot,
-                GuideUnlockCard,
-                GuideTaxCompare,
-                GuideQuickFacts,
-                GuideMistakeBox,
-                GuideWarning,
-                GuideDivider,
-                GuideBigSis,
-                GuideItaliaNote,
-                GuideCard,
-                GuideRoadmap,
-                GuideOfficeCard,
-                GuideBlueNote,
-                GuideQuiz,
-                GuideChecklist,
-                GuideSteps,
-                GuideRecap,
-                GuideBadge,
-                GuideNote,
-                GuideCompare,
-                GuideTOC,
-                GuideStat,
-                GuideColumns,
-                GuideQuote,
-                GuideIconRow,
-                GuideMiniCard,
-                GuideSoftPink,
-                GuideSoftPurple,
-                GuideDecisionBox,
-                GuideSectionBreak,
-                GuideSectionIntro,
-                GuideHighlight,
-                GuideSpacer,
-                GuideImageCard,
-                GuideFlourish,
-                GuideIcon,
-                GuideHeroAccent,
-                GuideStamp,
-                GuideIllustrationCard,
-              }}
-            />
-          </article>
+          <div className="relative mt-8 overflow-hidden rounded-[20px]">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.045]"
+            >
+              <div className="rotate-[-18deg] text-center serif text-3xl leading-[1.8] text-black whitespace-pre-line">
+                {buyerEmail
+                  ? `${buyerEmail}\nNomadissimi Private Access`
+                  : "Nomadissimi Private Access"}
+              </div>
+            </div>
+
+            <article
+              className="relative z-10 guide-prose max-w-none select-none"
+              onCopy={(e) => e.preventDefault()}
+              onCut={(e) => e.preventDefault()}
+              onDragStart={(e) => e.preventDefault()}
+              onContextMenu={(e) => e.preventDefault()}
+            >
+              <MDXRemote
+                source={chapter.content}
+                components={{
+                  GuideCallout,
+                  GuideTip,
+                  GuideQuizItem,
+                  GuideWarning,
+                  GuideDivider,
+                  GuideBigSis,
+                  GuideItaliaNote,
+                  GuideCard,
+                  GuideRoadmap,
+                  GuideOfficeCard,
+                  GuideBlueNote,
+                  GuideQuiz,
+                  GuideChecklist,
+                  GuideSteps,
+                  GuideRecap,
+                  GuideBadge,
+                  NavyBadge,
+                  PlumBadge,
+                  TealBadge,
+                  GuideNote,
+                  GuideCompare,
+                  GuideTOC,
+                  GuideStat,
+                  GuideColumns,
+                  GuideQuote,
+                  GuideIconRow,
+                  GuideMiniCard,
+                  GuideSoftPink,
+                  GuideSoftPurple,
+                  GuideDecisionBox,
+                  GuideSectionBreak,
+                  GuideSectionIntro,
+                  GuideHighlight,
+                  GuideSpacer,
+                  GuideImageCard,
+                  GuideFlourish,
+                  GuideIcon,
+                  GuideHeroAccent,
+                  GuideStamp,
+                  GuideIllustrationCard,
+                  GuideTaxSnapshot,
+                  GuideUnlockCard,
+                  GuideTaxCompare,
+                  GuideQuickFacts,
+                  GuideMistakeBox,
+                }}
+              />
+            </article>
+          </div>
 
           <div className="mt-10 flex flex-col gap-3 border-t border-black/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
             <div>
