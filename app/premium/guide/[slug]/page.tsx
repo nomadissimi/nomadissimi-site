@@ -202,9 +202,10 @@ export default async function PremiumGuideChapterPage({
           <div className="relative mt-8 overflow-hidden rounded-[20px]">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.045]"
+              className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.09]"
             >
-              <div className="rotate-[-18deg] text-center serif text-3xl leading-[1.8] text-black whitespace-pre-line">
+              <div className="rotate-[-18deg] text-center serif text-4xl leading-[2] text-black/70 whitespace-pre-line">
+                {" "}
                 {buyerEmail
                   ? `${buyerEmail}\nNomadissimi Private Access`
                   : "Nomadissimi Private Access"}
