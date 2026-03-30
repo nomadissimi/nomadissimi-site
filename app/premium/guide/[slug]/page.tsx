@@ -209,13 +209,7 @@ export default async function PremiumGuideChapterPage({
               </div>
             </div>
 
-            <article
-              className="relative z-10 guide-prose max-w-none select-none"
-              onCopy={(e) => e.preventDefault()}
-              onCut={(e) => e.preventDefault()}
-              onDragStart={(e) => e.preventDefault()}
-              onContextMenu={(e) => e.preventDefault()}
-            >
+            <article className="relative z-10 guide-prose max-w-none select-none">
               <MDXRemote
                 source={chapter.content}
                 components={{
