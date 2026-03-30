@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import { redirect, notFound } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { getGuideAccessFromProducts } from "@/lib/portalAccess";
+import { GuideContentGuard } from "@/components/guide/GuideContentGuard";
 import { sha256 } from "@/lib/crypto";
 import {
   detectGuideThemeFromSlug,
@@ -189,6 +190,7 @@ export default async function PremiumGuideChapterPage({
         </aside>
 
         <section className="rounded-[28px] border border-black/10 bg-white/70 p-7 md:p-10 shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
+          <GuideContentGuard />
           <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
             Chapter {chapterIndex + 1}
           </p>
