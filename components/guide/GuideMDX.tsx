@@ -841,3 +841,28 @@ export function GuideMistakeBox({
     </div>
   );
 }
+
+
+export function NavyBadge({ children }: { children: ReactNode }) {
+  return (
+    <span className="mb-3 mr-2 inline-flex rounded-full border border-[#AEBBD1] bg-[#F4F8FC] px-4 py-2 sans text-[11px] uppercase tracking-[0.14em] text-[#2F466B]">
+      {children}
+    </span>
+  );
+}
+
+export function PlumBadge({ children }: { children: ReactNode }) {
+  return (
+    <span className="mb-3 mr-2 inline-flex rounded-full border border-[#D8C6E0] bg-[#FBF5FC] px-4 py-2 sans text-[11px] uppercase tracking-[0.14em] text-[#6E4B7E]">
+      {children}
+    </span>
+  );
+}
+
+export function TealBadge({ children }: { children: ReactNode }) {
+  return (
+    <span className="mb-3 mr-2 inline-flex rounded-full border border-[#BFD9D4] bg-[#F3FBF8] px-4 py-2 sans text-[11px] uppercase tracking-[0.14em] text-[#3B6F69]">
+      {children}
+    </span>
+  );
+}
