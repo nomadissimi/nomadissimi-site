@@ -502,7 +502,6 @@ export function GuideQuizItem({ question, a, b }: QuizItemProps) {
   );
 }
 
-
 export function GuideSoftPink({
   title,
   children,
@@ -557,18 +556,12 @@ export function GuideDecisionBox({
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#9B6B1E]/80">
         {title}
       </div>
-      <div className="mt-4 guide-prose max-w-none">
-        {children}
-      </div>
+      <div className="mt-4 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
 
-export function GuideSectionBreak({
-  label,
-}: {
-  label: string;
-}) {
+export function GuideSectionBreak({ label }: { label: string }) {
   return (
     <div className="my-10 flex items-center gap-4" aria-hidden="true">
       <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#C9A86A]/55" />
@@ -597,13 +590,10 @@ export function GuideBigSis({
         {title}
       </div>
 
-      <div className="mt-3 guide-prose max-w-none">
-        {children}
-      </div>
+      <div className="mt-3 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
-
 
 export function GuideItaliaNote({
   title = "Italian curiosity",
@@ -621,7 +611,103 @@ export function GuideItaliaNote({
         {title}
       </div>
 
-      <div className="mt-3 guide-prose max-w-none">
+      <div className="mt-3 guide-prose max-w-none">{children}</div>
+    </div>
+  );
+}
+
+export function GuideRoadmap({
+  title = "Roadmap",
+  items,
+}: {
+  title?: string;
+  items: Array<{
+    step: string;
+    title: string;
+    description: string;
+  }>;
+}) {
+  return (
+    <div className="my-8 rounded-[28px] border border-[#D8D1C5] bg-gradient-to-br from-[#FFFCF8] to-[#F7F5F0] px-5 py-5 shadow-[0_14px_34px_rgba(0,0,0,0.05)]">
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#2F466B]/80">
+        {title}
+      </div>
+
+      <div className="mt-5 space-y-4">
+        {items.map((item, index) => (
+          <div
+            key={`${item.step}-${index}`}
+            className="rounded-[20px] border border-[#D8D1C5] bg-white/72 px-4 py-4"
+          >
+            <div className="flex items-start gap-4">
+              <div className="inline-flex min-w-[72px] items-center justify-center rounded-full border border-[#2F466B]/18 bg-[#EEF3FA] px-3 py-1 sans text-[11px] uppercase tracking-[0.14em] text-[#2F466B]">
+                {item.step}
+              </div>
+
+              <div className="min-w-0">
+                <div className="serif text-[28px] leading-none text-[#2B2B2B]">
+                  {item.title}
+                </div>
+                <div className="mt-2 sans text-[16px] leading-[1.75] text-black/75">
+                  {item.description}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function GuideOfficeCard({
+  office,
+  title,
+  children,
+}: {
+  office?: string;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="my-8 overflow-hidden rounded-[26px] border border-[#D8D1C5] bg-gradient-to-br from-[#FFFCF8] via-[#FBF8F2] to-[#F6F3EE] shadow-[0_14px_34px_rgba(0,0,0,0.05)]">
+      <div className="border-b border-[#D8D1C5] px-5 py-4">
+        {office ? (
+          <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#2F466B]/80">
+            {office}
+          </div>
+        ) : null}
+
+        <div
+          className={`${office ? "mt-2" : ""} serif text-[42px] leading-[1.02] text-[#2B2B2B]`}
+        >
+          {title}
+        </div>
+      </div>
+
+      <div className="px-5 py-5">
+        <div className="guide-prose max-w-none">{children}</div>
+      </div>
+    </div>
+  );
+}
+
+export function GuideBlueNote({
+  title,
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="my-8 rounded-[24px] border border-[#CAD6E8] bg-gradient-to-br from-[#F8FBFF] to-[#F1F5FB] px-5 py-5 shadow-[0_12px_28px_rgba(47,70,107,0.06)]">
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#2F466B]/80">
+          {title}
+        </div>
+      ) : null}
+
+      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
         {children}
       </div>
     </div>
@@ -629,4 +715,129 @@ export function GuideItaliaNote({
 }
 
 
+export function GuideTaxSnapshot({
+  title,
+  subtitle,
+  children,
+}: {
+  title: string;
+  subtitle?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="my-8 overflow-hidden rounded-[26px] border border-[#DCCFE3] bg-gradient-to-br from-[#FFF9FD] via-[#FBF5FC] to-[#F6EEF8] shadow-[0_14px_34px_rgba(103,64,122,0.08)]">
+      <div className="border-b border-[#E6D9EC] px-5 py-4">
+        <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#6E4B7E]/80">
+          Tax snapshot
+        </div>
+        <div className="mt-2 serif text-[40px] leading-[1.02] text-[#2B2B2B]">
+          {title}
+        </div>
+        {subtitle ? (
+          <div className="mt-2 sans text-[15px] leading-[1.65] text-black/65">
+            {subtitle}
+          </div>
+        ) : null}
+      </div>
 
+      <div className="px-5 py-5">
+        <div className="guide-prose max-w-none">{children}</div>
+      </div>
+    </div>
+  );
+}
+
+export function GuideUnlockCard({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="my-8 overflow-hidden rounded-[26px] border border-[#C9DDD9] bg-gradient-to-br from-[#F7FFFD] via-[#F1FBF8] to-[#EAF6F3] shadow-[0_14px_34px_rgba(56,110,102,0.08)]">
+      <div className="border-b border-[#D7E8E4] px-5 py-4">
+        <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#3B6F69]/80">
+          Unlocks
+        </div>
+        <div className="mt-2 serif text-[40px] leading-[1.02] text-[#2B2B2B]">
+          {title}
+        </div>
+      </div>
+
+      <div className="px-5 py-5">
+        <div className="guide-prose max-w-none">{children}</div>
+      </div>
+    </div>
+  );
+}
+
+export function GuideTaxCompare({
+  leftTitle,
+  rightTitle,
+  leftContent,
+  rightContent,
+}: {
+  leftTitle: string;
+  rightTitle: string;
+  leftContent: ReactNode;
+  rightContent: ReactNode;
+}) {
+  return (
+    <div className="my-8 grid gap-4 md:grid-cols-2">
+      <div className="rounded-[24px] border border-[#DCCFE3] bg-gradient-to-br from-[#FFF9FD] to-[#F8F0FA] px-5 py-5 shadow-[0_12px_28px_rgba(103,64,122,0.06)]">
+        <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#6E4B7E]/80">
+          Option A
+        </div>
+        <div className="mt-2 serif text-[34px] leading-[1.08] text-[#2B2B2B]">
+          {leftTitle}
+        </div>
+        <div className="mt-4 guide-prose max-w-none">{leftContent}</div>
+      </div>
+
+      <div className="rounded-[24px] border border-[#DCCFE3] bg-gradient-to-br from-[#FFF9FD] to-[#F8F0FA] px-5 py-5 shadow-[0_12px_28px_rgba(103,64,122,0.06)]">
+        <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#6E4B7E]/80">
+          Option B
+        </div>
+        <div className="mt-2 serif text-[34px] leading-[1.08] text-[#2B2B2B]">
+          {rightTitle}
+        </div>
+        <div className="mt-4 guide-prose max-w-none">{rightContent}</div>
+      </div>
+    </div>
+  );
+}
+
+export function GuideQuickFacts({
+  title = "Quick facts",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="my-8 rounded-[24px] border border-[#D8D1C5] bg-gradient-to-br from-[#FFFDF8] to-[#F8F5EE] px-5 py-5 shadow-[0_12px_28px_rgba(0,0,0,0.04)]">
+      <div className="sans text-xs tracking-[0.18em] uppercase text-black/50">
+        {title}
+      </div>
+      <div className="mt-4 guide-prose max-w-none">{children}</div>
+    </div>
+  );
+}
+
+export function GuideMistakeBox({
+  title = "Costly mistake to avoid",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="my-8 rounded-[24px] border border-[#E6D8C5] bg-gradient-to-br from-[#FFF9F2] via-[#FFF6EC] to-[#F9EFE1] px-5 py-5 shadow-[0_12px_28px_rgba(176,124,66,0.08)]">
+      <div className="sans text-xs tracking-[0.18em] uppercase text-[#9A6A2B]/85">
+        {title}
+      </div>
+      <div className="mt-4 guide-prose max-w-none">{children}</div>
+    </div>
+  );
+}

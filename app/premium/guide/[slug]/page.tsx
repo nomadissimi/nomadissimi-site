@@ -2,8 +2,14 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect, notFound } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
+import { getGuideAccessFromProducts } from "@/lib/portalAccess";
 import { sha256 } from "@/lib/crypto";
-import { getVisaGuideChapter, getVisaGuideChapters } from "@/lib/guide";
+import {
+  detectGuideThemeFromSlug,
+  getGuideChapter,
+  getGuideChapters,
+  getGuidePortal,
+} from "@/lib/guide";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import {
@@ -13,6 +19,11 @@ import {
   GuideDivider,
   GuideCard,
   GuideChecklist,
+  GuideTaxSnapshot,
+  GuideUnlockCard,
+  GuideTaxCompare,
+  GuideQuickFacts,
+  GuideMistakeBox,
   GuideSteps,
   GuideRecap,
   GuideBadge,
@@ -32,6 +43,9 @@ import {
   GuideQuiz,
   GuideIcon,
   GuideBigSis,
+  GuideRoadmap,
+  GuideOfficeCard,
+  GuideBlueNote,
   GuideItaliaNote,
   GuideSoftPink,
   GuideSoftPurple,
@@ -59,7 +73,7 @@ export default async function PremiumGuideChapterPage({
 
   const { data: session } = await supabaseAdmin
     .from("sessions")
-    .select("id, entitlement_id, expires_at, revoked_at")
+    .select("id, email, entitlement_id, expires_at, revoked_at")
     .eq("session_hash", sessionHash)
     .single();
 
@@ -71,23 +85,40 @@ export default async function PremiumGuideChapterPage({
     redirect("/checkout/cancel");
   }
 
-  const { data: entitlement } = await supabaseAdmin
+  const buyerEmail = session.email?.toLowerCase();
+
+  if (!buyerEmail) {
+    redirect("/checkout/cancel");
+  }
+
+  const { data: entitlements } = await supabaseAdmin
     .from("entitlements")
-    .select("id, product, expires_at, revoked_at")
-    .eq("id", session.entitlement_id)
-    .single();
+    .select("product, expires_at, revoked_at")
+    .eq("email", buyerEmail);
 
-  if (!entitlement || entitlement.revoked_at) {
-    redirect("/checkout/cancel");
-  }
-
-  if (new Date(entitlement.expires_at).getTime() < Date.now()) {
-    redirect("/checkout/cancel");
-  }
+  const activeProducts =
+    entitlements
+      ?.filter(
+        (item) =>
+          !item.revoked_at &&
+          new Date(item.expires_at).getTime() >= Date.now() &&
+          !!item.product,
+      )
+      .map((item) => item.product as string) ?? [];
 
   const { slug } = await params;
-  const chapters = getVisaGuideChapters();
-  const chapter = getVisaGuideChapter(slug);
+
+  const guideTheme = detectGuideThemeFromSlug(slug) ?? "visa";
+  const portal = getGuidePortal(guideTheme);
+
+  const ownedGuideKeys = getGuideAccessFromProducts(activeProducts);
+
+  if (!ownedGuideKeys.includes(guideTheme)) {
+    redirect("/premium/library");
+  }
+
+  const chapters = getGuideChapters(guideTheme);
+  const chapter = getGuideChapter(guideTheme, slug);
 
   if (!chapter) {
     notFound();
@@ -98,6 +129,24 @@ export default async function PremiumGuideChapterPage({
   const nextChapter =
     chapterIndex < chapters.length - 1 ? chapters[chapterIndex + 1] : null;
 
+  const activeChapterClasses =
+    guideTheme === "residence"
+      ? "bg-[#2F466B] text-white shadow-[0_12px_30px_rgba(47,70,107,0.22)]"
+      : guideTheme === "tax"
+        ? "bg-[#6E4B7E] text-white shadow-[0_12px_30px_rgba(110,75,126,0.22)]"
+        : guideTheme === "codice-fiscale"
+          ? "bg-[#3B6F69] text-white shadow-[0_12px_30px_rgba(59,111,105,0.22)]"
+          : "bg-[#4B5D44] text-white shadow-[0_12px_30px_rgba(75,93,68,0.22)]";
+
+  const primaryButtonClasses =
+    guideTheme === "residence"
+      ? "bg-[#2F466B] text-white shadow-[0_14px_40px_rgba(47,70,107,0.25)] hover:bg-[#263A59]"
+      : guideTheme === "tax"
+        ? "bg-[#6E4B7E] text-white shadow-[0_14px_40px_rgba(110,75,126,0.25)] hover:bg-[#5C3D69]"
+        : guideTheme === "codice-fiscale"
+          ? "bg-[#3B6F69] text-white shadow-[0_14px_40px_rgba(59,111,105,0.25)] hover:bg-[#315E59]"
+          : "bg-[#4B5D44] text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] hover:bg-[#3E4E38]";
+
   return (
     <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl grid gap-8 lg:grid-cols-[300px_minmax(0,1fr)]">
@@ -107,7 +156,7 @@ export default async function PremiumGuideChapterPage({
           </p>
 
           <h2 className="serif mt-3 text-2xl font-semibold text-black leading-tight">
-            The Nomadissimi Digital Nomad Visa Master Guide
+            {portal.title}
           </h2>
 
           <div className="mt-6 space-y-2 max-h-[72vh] overflow-auto pr-1">
@@ -120,7 +169,7 @@ export default async function PremiumGuideChapterPage({
                   href={`/premium/guide/${item.slug}`}
                   className={`block rounded-2xl px-4 py-3 transition ${
                     isActive
-                      ? "bg-[#4B5D44] text-white shadow-[0_12px_30px_rgba(75,93,68,0.22)]"
+                      ? activeChapterClasses
                       : "bg-[#FBF8F2] text-black/70 hover:bg-white"
                   }`}
                 >
@@ -152,11 +201,19 @@ export default async function PremiumGuideChapterPage({
                 GuideCallout,
                 GuideTip,
                 GuideQuizItem,
+                GuideTaxSnapshot,
+                GuideUnlockCard,
+                GuideTaxCompare,
+                GuideQuickFacts,
+                GuideMistakeBox,
                 GuideWarning,
                 GuideDivider,
                 GuideBigSis,
                 GuideItaliaNote,
                 GuideCard,
+                GuideRoadmap,
+                GuideOfficeCard,
+                GuideBlueNote,
                 GuideQuiz,
                 GuideChecklist,
                 GuideSteps,
@@ -205,14 +262,14 @@ export default async function PremiumGuideChapterPage({
               {nextChapter ? (
                 <Link
                   href={`/premium/guide/${nextChapter.slug}`}
-                  className="inline-flex items-center gap-2 rounded-full bg-[#4B5D44] px-5 py-3 text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] transition hover:bg-[#3E4E38]"
+                  className={`inline-flex items-center gap-2 rounded-full px-5 py-3 transition ${primaryButtonClasses}`}
                 >
                   {nextChapter.title} →
                 </Link>
               ) : (
                 <Link
                   href="/premium/guide"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#4B5D44] px-5 py-3 text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] transition hover:bg-[#3E4E38]"
+                  className={`inline-flex items-center gap-2 rounded-full px-5 py-3 transition ${primaryButtonClasses}`}
                 >
                   Back to guide home →
                 </Link>

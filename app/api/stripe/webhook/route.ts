@@ -2,6 +2,7 @@ import Stripe from "stripe";
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { randomToken, sha256 } from "@/lib/crypto";
+import { getProductFromPriceId } from "@/lib/portalAccess";
 import { sendMagicLinkEmail } from "@/lib/email";
 
 export const runtime = "nodejs";
@@ -40,7 +41,12 @@ export async function POST(req: Request) {
       session.customer_email ||
       null;
 
-    const product = session.metadata?.product || null;
+const lineItems = await stripe.checkout.sessions.listLineItems(session.id, {
+  limit: 1,
+});
+
+const priceId = lineItems.data[0]?.price?.id ?? null;
+const product = getProductFromPriceId(priceId);
 
     if (!email || !product) {
       return NextResponse.json(

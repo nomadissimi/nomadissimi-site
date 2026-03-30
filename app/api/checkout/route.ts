@@ -26,7 +26,7 @@ export async function POST(req: Request) {
       "https://www.nomadissimi.com";
 
     const session = await stripe.checkout.sessions.create({
-      metadata: plan ? { product: plan } : {},
+metadata: plan ? { plan } : {},
       mode: "payment",
       allow_promotion_codes: true,
       automatic_tax: { enabled: true },

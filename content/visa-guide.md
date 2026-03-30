@@ -612,8 +612,8 @@ A recognized tertiary degree is the clearest, most straightforward way to prove 
 - How to get an apostille
 - Certified Translation (yes, more certifications)
 - CIMEA vs Dichiarazione di Valore (choose one)
-- How CIMEA works (the flow)
-- DV method (simple steps)
+- How CIMEA works
+- DV method
 
 </GuideTOC>
 
@@ -2167,7 +2167,7 @@ Purchase a fully refundable ticket or one with a flexible cancellation policy. T
 <GuideChecklist title="Flight reservation packet">
 
 - **Flight Reservation:** A printout of the flight confirmation email or receipt showing:
-  - Passenger name (You).
+  - Passenger name (your full name as it appears in your passport).
   - Departure and Arrival airports (Arrival must be in Italy).
   - Flight dates.
 
