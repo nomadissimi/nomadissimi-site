@@ -2,6 +2,7 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
+import { ensurePortalSession } from "@/lib/portalSessions";
 import { getGuideAccessFromProducts } from "@/lib/portalAccess";
 import type { GuideTheme } from "@/lib/guide";
 
@@ -63,7 +64,7 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
 };
 
 export default async function PremiumLibraryPage() {
-    const supabase = await createSupabaseServerClient();
+  const supabase = await createSupabaseServerClient();
 
   const {
     data: { user },
@@ -75,7 +76,14 @@ export default async function PremiumLibraryPage() {
 
   const buyerEmail = user.email.toLowerCase();
 
+  const portalSession = await ensurePortalSession({
+    userId: user.id,
+    email: buyerEmail,
+  });
 
+  if (portalSession.isRevoked) {
+    redirect("/login?next=/premium/library");
+  }
 
   const { data: entitlements } = await supabaseAdmin
     .from("entitlements")
@@ -122,6 +130,10 @@ export default async function PremiumLibraryPage() {
         <p className="mt-1 sans text-[15px] leading-[1.8] text-black/50">
           You currently have access to {ownedGuides.length} private portal
           {ownedGuides.length === 1 ? "" : "s"}.
+        </p>
+        <p className="mt-3 max-w-2xl sans text-[13px] leading-[1.7] text-black/40">
+          For content protection, portal access is limited to two active devices.
+          Older sessions may be signed out automatically.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { getGuideAccessFromProducts } from "@/lib/portalAccess";
+import { ensurePortalSession } from "@/lib/portalSessions";
 import { GuideContentGuard } from "@/components/guide/GuideContentGuard";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
@@ -79,6 +80,15 @@ export default async function PremiumGuideChapterPage({
   }
 
   const buyerEmail = user.email.toLowerCase();
+
+  const portalSession = await ensurePortalSession({
+  userId: user.id,
+  email: buyerEmail,
+});
+
+if (portalSession.isRevoked) {
+  redirect(`/login?next=/premium/guide/${slug}`);
+}
 
   const { data: entitlements } = await supabaseAdmin
     .from("entitlements")

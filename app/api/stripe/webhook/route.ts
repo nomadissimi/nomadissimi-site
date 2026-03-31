@@ -1,9 +1,9 @@
 import Stripe from "stripe";
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
-import { randomToken, sha256 } from "@/lib/crypto";
 import { getProductFromPriceId } from "@/lib/portalAccess";
-import { sendMagicLinkEmail } from "@/lib/email";
+import { sendPortalAccessEmail } from "@/lib/email";
+
 
 export const runtime = "nodejs";
 
@@ -92,30 +92,8 @@ if (!existingEntitlement) {
       );
     }
 
-    const rawToken = randomToken(32);
-    const tokenHash = sha256(rawToken + process.env.MAGICLINK_SECRET!);
-
-    const magicLinkExpires = new Date(Date.now() + 15 * 60 * 1000);
-
-    const { error: magicLinkError } = await supabaseAdmin
-      .from("magic_links")
-      .insert({
-        entitlement_id: entitlement.id,
-        token_hash: tokenHash,
-        expires_at: magicLinkExpires.toISOString(),
-      });
-
-    if (magicLinkError) {
-      return NextResponse.json(
-        { error: magicLinkError.message },
-        { status: 500 }
-      );
-    }
-
-    const url = `${process.env.NEXT_PUBLIC_SITE_URL}/premium/access?token=${rawToken}`;
-
-    await sendMagicLinkEmail(email, url);
-  }
+const url = `${process.env.NEXT_PUBLIC_SITE_URL}/create-account?email=${encodeURIComponent(email)}`;
+await sendPortalAccessEmail(email, url);  }
 
   return NextResponse.json({ received: true });
 }
