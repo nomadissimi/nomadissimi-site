@@ -278,10 +278,10 @@ export default async function PremiumGuideChapterPage({
                 </Link>
               ) : (
                 <Link
-                  href="/premium/guide"
+                  href="/premium/library"
                   className={`inline-flex items-center gap-2 rounded-full px-5 py-3 transition ${primaryButtonClasses}`}
                 >
-                  Back to guide home →
+                  Back to your private library →
                 </Link>
               )}
             </div>
