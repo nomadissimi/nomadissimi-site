@@ -714,7 +714,6 @@ export function GuideBlueNote({
   );
 }
 
-
 export function GuideTaxSnapshot({
   title,
   subtitle,
@@ -772,38 +771,28 @@ export function GuideUnlockCard({
   );
 }
 
-export function GuideTaxCompare({
-  leftTitle,
-  rightTitle,
-  leftContent,
-  rightContent,
+export function GuideTaxCompare({ children }: { children: ReactNode }) {
+  return <div className="my-8 grid gap-4 md:grid-cols-2">{children}</div>;
+}
+
+export function GuideTaxCompareCard({
+  label,
+  title,
+  children,
 }: {
-  leftTitle: string;
-  rightTitle: string;
-  leftContent: ReactNode;
-  rightContent: ReactNode;
+  label: string;
+  title: string;
+  children: ReactNode;
 }) {
   return (
-    <div className="my-8 grid gap-4 md:grid-cols-2">
-      <div className="rounded-[24px] border border-[#DCCFE3] bg-gradient-to-br from-[#FFF9FD] to-[#F8F0FA] px-5 py-5 shadow-[0_12px_28px_rgba(103,64,122,0.06)]">
-        <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#6E4B7E]/80">
-          Option A
-        </div>
-        <div className="mt-2 serif text-[34px] leading-[1.08] text-[#2B2B2B]">
-          {leftTitle}
-        </div>
-        <div className="mt-4 guide-prose max-w-none">{leftContent}</div>
+    <div className="rounded-[24px] border border-[#DCCFE3] bg-gradient-to-br from-[#FFF9FD] to-[#F8F0FA] px-5 py-5 shadow-[0_12px_28px_rgba(103,64,122,0.06)]">
+      <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#6E4B7E]/80">
+        {label}
       </div>
-
-      <div className="rounded-[24px] border border-[#DCCFE3] bg-gradient-to-br from-[#FFF9FD] to-[#F8F0FA] px-5 py-5 shadow-[0_12px_28px_rgba(103,64,122,0.06)]">
-        <div className="sans text-[11px] uppercase tracking-[0.18em] text-[#6E4B7E]/80">
-          Option B
-        </div>
-        <div className="mt-2 serif text-[34px] leading-[1.08] text-[#2B2B2B]">
-          {rightTitle}
-        </div>
-        <div className="mt-4 guide-prose max-w-none">{rightContent}</div>
+      <div className="mt-2 serif text-[34px] leading-[1.08] text-[#2B2B2B]">
+        {title}
       </div>
+      <div className="mt-4 guide-prose max-w-none">{children}</div>
     </div>
   );
 }
@@ -841,7 +830,6 @@ export function GuideMistakeBox({
     </div>
   );
 }
-
 
 export function NavyBadge({ children }: { children: ReactNode }) {
   return (

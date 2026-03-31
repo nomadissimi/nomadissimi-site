@@ -59,6 +59,7 @@ import {
   GuideStamp,
   GuideIllustrationCard,
   GuideQuizItem,
+  GuideTaxCompareCard,
 } from "@/components/guide/GuideMDX";
 
 export default async function PremiumGuideChapterPage({
@@ -246,6 +247,7 @@ export default async function PremiumGuideChapterPage({
                 GuideTaxSnapshot,
                 GuideUnlockCard,
                 GuideTaxCompare,
+                GuideTaxCompareCard,
                 GuideQuickFacts,
                 GuideMistakeBox,
               }}
