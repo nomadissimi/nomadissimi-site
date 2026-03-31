@@ -86,12 +86,19 @@ export default function LoginForm() {
         </button>
       </form>
 
-      <div className="mt-8 flex flex-col gap-3 sans text-sm text-black/55">
-        <Link href="/forgot-password" className="hover:text-black/75">
-          Forgot your password?
-        </Link>
-        <Link href="/create-account" className="hover:text-black/75">
+      <div className="mt-8 flex flex-col gap-4">
+        <Link
+          href="/create-account"
+          className="inline-flex w-fit items-center justify-center rounded-full border border-black/10 bg-[#FBF8F2] px-5 py-3 sans text-sm text-black/75 transition hover:bg-white hover:text-black"
+        >
           Create your portal account
+        </Link>
+
+        <Link
+          href="/forgot-password"
+          className="sans text-sm text-black/55 transition hover:text-black/75"
+        >
+          Forgot your password?
         </Link>
       </div>
     </>

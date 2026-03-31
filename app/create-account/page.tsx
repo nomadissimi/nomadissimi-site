@@ -7,6 +7,7 @@ import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 export default function CreateAccountPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
@@ -16,6 +17,11 @@ export default function CreateAccountPage() {
     setLoading(true);
     setError(null);
     setSuccess(false);
+    if (password !== confirmPassword) {
+      setLoading(false);
+      setError("Your passwords do not match.");
+      return;
+    }
 
     const supabase = createSupabaseBrowserClient();
 
@@ -82,6 +88,21 @@ export default function CreateAccountPage() {
               placeholder="At least 8 characters"
             />
           </div>
+          
+          <div>
+  <label className="mb-2 block sans text-sm text-black/70">
+    Confirm password
+  </label>
+  <input
+    type="password"
+    required
+    minLength={8}
+    value={confirmPassword}
+    onChange={(e) => setConfirmPassword(e.target.value)}
+    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+    placeholder="Repeat your password"
+  />
+</div>
 
           {error ? (
             <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
