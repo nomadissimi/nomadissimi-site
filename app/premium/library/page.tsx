@@ -116,7 +116,7 @@ export default async function PremiumLibraryPage() {
         </p>
 
         <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
-          Your Nomadissimi guides
+          Your Nomadissimi Portal
         </h1>
 
         <p className="mt-4 sans text-[16px] leading-[1.8] text-black/70">
@@ -124,16 +124,19 @@ export default async function PremiumLibraryPage() {
         </p>
 
         <p className="mt-1 sans text-[15px] leading-[1.8] text-black/50">
-          You currently have access to {ownedGuides.length} private guide
+          Everything you’ve purchased lives here, beautifully organized and
+          ready whenever you need it. You currently have access to{" "}
+          {ownedGuides.length} private guide
           {ownedGuides.length === 1 ? "" : "s"}.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {ownedGuides.length > 0 ? (
             ownedGuides.map((guide) => (
-              <div
+              <Link
                 key={guide.key}
-                className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6 shadow-[0_14px_36px_rgba(0,0,0,0.05)] transition hover:-translate-y-[1px]"
+                href={guide.href}
+                className="group block rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6 shadow-[0_14px_36px_rgba(0,0,0,0.05)] transition duration-200 hover:-translate-y-[3px] hover:border-black/15 hover:bg-white/80 hover:shadow-[0_20px_48px_rgba(0,0,0,0.08)]"
               >
                 <span
                   className={`inline-flex rounded-full border px-3 py-1 sans text-[11px] uppercase tracking-[0.14em] ${guide.badgeClass}`}
@@ -150,14 +153,13 @@ export default async function PremiumLibraryPage() {
                 </p>
 
                 <div className="mt-5">
-                  <Link
-                    href={guide.href}
-                    className={`inline-flex items-center gap-2 rounded-full px-5 py-3 transition ${guide.buttonClass}`}
+                  <span
+                    className={`inline-flex items-center gap-2 rounded-full px-5 py-3 transition group-hover:scale-[1.02] ${guide.buttonClass}`}
                   >
                     Open guide →
-                  </Link>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))
           ) : (
             <div className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-5">
