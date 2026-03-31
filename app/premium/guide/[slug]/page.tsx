@@ -152,6 +152,15 @@ export default async function PremiumGuideChapterPage({
           ? "bg-[#3B6F69] text-white shadow-[0_14px_40px_rgba(59,111,105,0.25)] hover:bg-[#315E59]"
           : "bg-[#4B5D44] text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] hover:bg-[#3E4E38]";
 
+  const topLibraryButtonClasses =
+    guideTheme === "residence"
+      ? "bg-[#2F466B] text-white shadow-[0_10px_28px_rgba(47,70,107,0.20)] hover:bg-[#263A59]"
+      : guideTheme === "tax"
+        ? "bg-[#6E4B7E] text-white shadow-[0_10px_28px_rgba(110,75,126,0.20)] hover:bg-[#5C3D69]"
+        : guideTheme === "codice-fiscale"
+          ? "bg-[#3B6F69] text-white shadow-[0_10px_28px_rgba(59,111,105,0.20)] hover:bg-[#315E59]"
+          : "bg-[#4B5D44] text-white shadow-[0_10px_28px_rgba(75,93,68,0.20)] hover:bg-[#3E4E38]";
+
   return (
     <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl grid gap-8 lg:grid-cols-[300px_minmax(0,1fr)]">
@@ -192,9 +201,18 @@ export default async function PremiumGuideChapterPage({
 
         <section className="rounded-[28px] border border-black/10 bg-white/70 p-7 md:p-10 shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
           <GuideContentGuard />
-          <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
-            Chapter {chapterIndex + 1}
-          </p>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
+              Chapter {chapterIndex + 1}
+            </p>
+
+            <Link
+              href="/premium/library"
+              className={`inline-flex items-center gap-2 rounded-full px-4 py-2 transition ${topLibraryButtonClasses}`}
+            >
+              ← Back to your private library
+            </Link>
+          </div>
 
           <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
             {chapter.title}
@@ -277,14 +295,18 @@ export default async function PremiumGuideChapterPage({
                   {nextChapter.title} →
                 </Link>
               ) : (
-                <Link
-                  href="/premium/library"
-                  className={`inline-flex items-center gap-2 rounded-full px-5 py-3 transition ${primaryButtonClasses}`}
-                >
-                  Back to your private library →
-                </Link>
+                <div />
               )}
             </div>
+          </div>
+
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/premium/library"
+              className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-5 py-3 text-black/70 transition hover:bg-white"
+            >
+              • Back to your private library
+            </Link>
           </div>
         </section>
       </div>
