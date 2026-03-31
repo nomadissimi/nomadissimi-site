@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { cookies } from "next/headers";
 import { redirect, notFound } from "next/navigation";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { getGuideAccessFromProducts } from "@/lib/portalAccess";
 import { GuideContentGuard } from "@/components/guide/GuideContentGuard";
-import { sha256 } from "@/lib/crypto";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 import {
   detectGuideThemeFromSlug,
   getGuideChapter,
@@ -67,34 +66,19 @@ export default async function PremiumGuideChapterPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const cookieStore = await cookies();
-  const rawSession = cookieStore.get("nm_session")?.value;
+  const { slug } = await params;
 
-  if (!rawSession) {
-    redirect("/checkout/cancel");
+  const supabase = await createSupabaseServerClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user?.email) {
+    redirect(`/login?next=/premium/guide/${slug}`);
   }
 
-  const sessionHash = sha256(rawSession + process.env.SESSION_SECRET!);
-
-  const { data: session } = await supabaseAdmin
-    .from("sessions")
-    .select("id, email, entitlement_id, expires_at, revoked_at")
-    .eq("session_hash", sessionHash)
-    .single();
-
-  if (!session || session.revoked_at) {
-    redirect("/checkout/cancel");
-  }
-
-  if (new Date(session.expires_at).getTime() < Date.now()) {
-    redirect("/checkout/cancel");
-  }
-
-  const buyerEmail = session.email?.toLowerCase();
-
-  if (!buyerEmail) {
-    redirect("/checkout/cancel");
-  }
+  const buyerEmail = user.email.toLowerCase();
 
   const { data: entitlements } = await supabaseAdmin
     .from("entitlements")
@@ -110,8 +94,6 @@ export default async function PremiumGuideChapterPage({
           !!item.product,
       )
       .map((item) => item.product as string) ?? [];
-
-  const { slug } = await params;
 
   const guideTheme = detectGuideThemeFromSlug(slug) ?? "visa";
   const portal = getGuidePortal(guideTheme);
@@ -303,10 +285,10 @@ export default async function PremiumGuideChapterPage({
               </div>
             </div>
 
-            <div className="mt-10 flex justify-center border-t border-black/10 pt-6">
+            <div className="mt-12 flex justify-center border-t border-black/10 pt-8">
               <Link
                 href="/premium/library"
-                className="inline-flex items-center justify-center rounded-[14px] border border-black/10 bg-white px-4 py-3 text-[15px] text-black/60 transition hover:bg-[#FBF8F2] hover:text-black/80"
+                className="inline-flex items-center justify-center rounded-[14px] border border-black/10 bg-[#FBF8F2] px-4 py-3 text-[15px] text-black/60 transition hover:bg-[#FBF8F2] hover:text-black/80"
               >
                 Back to your private library
               </Link>

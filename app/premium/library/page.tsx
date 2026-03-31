@@ -1,8 +1,7 @@
-import { cookies } from "next/headers";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
-import { sha256 } from "@/lib/crypto";
 import { getGuideAccessFromProducts } from "@/lib/portalAccess";
 import type { GuideTheme } from "@/lib/guide";
 
@@ -32,7 +31,7 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     key: "residence",
     title: "Residence Registration Guide",
     description:
-      "From tourist to official Italian resident. Permesso di soggiorno, Comune, Italian ID card and all that...",
+      "How to seamlessly go from tourist to official Italian resident. Permesso di soggiorno, Comune, Italian ID card and all that...",
     href: "/premium/guide/residence-welcome-home-your-italian-chapter-begins",
     buttonClass:
       "bg-[#2F466B] text-white shadow-[0_14px_40px_rgba(47,70,107,0.25)] hover:bg-[#263A59]",
@@ -54,44 +53,29 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     key: "codice-fiscale",
     title: "Codice Fiscale Guide",
     description:
-      "Your practical guide to Italy’s essential fiscal code. How to obtain it and what it’s useful for.",
+      "Your practical guide to Italy’s essential fiscal code. This is an important yet often misunderstood component. How do you obtain a codice fiscale? Why is it useful?",
     href: "/premium/guide/codice-fiscale-welcome",
     buttonClass:
       "bg-[#3B6F69] text-white shadow-[0_14px_40px_rgba(59,111,105,0.25)] hover:bg-[#315E59]",
-    badgeLabel: "Mini guide",
+    badgeLabel: "Codice Fiscale",
     badgeClass: "border-[#BFD9D4] bg-[#F3FBF8] text-[#3B6F69]",
   },
 };
 
 export default async function PremiumLibraryPage() {
-  const cookieStore = await cookies();
-  const rawSession = cookieStore.get("nm_session")?.value;
+    const supabase = await createSupabaseServerClient();
 
-  if (!rawSession) {
-    redirect("/checkout/cancel");
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user?.email) {
+    redirect("/login?next=/premium/library");
   }
 
-  const sessionHash = sha256(rawSession + process.env.SESSION_SECRET!);
+  const buyerEmail = user.email.toLowerCase();
 
-  const { data: session } = await supabaseAdmin
-    .from("sessions")
-    .select("id, email, expires_at, revoked_at")
-    .eq("session_hash", sessionHash)
-    .single();
 
-  if (!session || session.revoked_at) {
-    redirect("/checkout/cancel");
-  }
-
-  if (new Date(session.expires_at).getTime() < Date.now()) {
-    redirect("/checkout/cancel");
-  }
-
-  const buyerEmail = session.email?.toLowerCase();
-
-  if (!buyerEmail) {
-    redirect("/checkout/cancel");
-  }
 
   const { data: entitlements } = await supabaseAdmin
     .from("entitlements")
@@ -114,9 +98,18 @@ export default async function PremiumLibraryPage() {
   return (
     <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-5xl rounded-[28px] border border-black/10 bg-white/70 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
-        <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
-          Private library
-        </p>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
+            Private library
+          </p>
+
+          <Link
+            href="/account"
+            className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-4 py-2 text-black/70 transition hover:bg-white"
+          >
+            Account
+          </Link>
+        </div>
 
         <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
           Your Nomadissimi Portal
@@ -127,9 +120,7 @@ export default async function PremiumLibraryPage() {
         </p>
 
         <p className="mt-1 sans text-[15px] leading-[1.8] text-black/50">
-          Everything you’ve purchased lives here, beautifully organized and
-          ready whenever you need it. You currently have access to{" "}
-          {ownedGuides.length} private guide
+          You currently have access to {ownedGuides.length} private portal
           {ownedGuides.length === 1 ? "" : "s"}.
         </p>
 
