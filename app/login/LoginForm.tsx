@@ -89,9 +89,9 @@ export default function LoginForm() {
       <div className="mt-8 flex flex-col gap-4">
         <Link
           href="/create-account"
-          className="inline-flex w-fit items-center justify-center rounded-full border border-black/10 bg-[#FBF8F2] px-5 py-3 sans text-sm text-black/75 transition hover:bg-white hover:text-black"
+          className="inline-flex w-fit items-center gap-2 sans text-[15px] text-black/70 transition hover:text-black"
         >
-          Create your portal account
+          Create your portal account →
         </Link>
 
         <Link
