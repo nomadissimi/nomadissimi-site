@@ -25,13 +25,18 @@ export async function ensurePortalSession(params: {
   if (!rawToken) {
     rawToken = randomToken();
 
-    cookieStore.set(PORTAL_SESSION_COOKIE, rawToken, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "lax",
-      path: "/",
-      maxAge: 60 * 60 * 24 * 30, // 30 days
-    });
+    try {
+      cookieStore.set(PORTAL_SESSION_COOKIE, rawToken, {
+        httpOnly: true,
+        secure: true,
+        sameSite: "lax",
+        path: "/",
+        maxAge: 60 * 60 * 24 * 30, // 30 days
+      });
+    } catch {
+      // In some Server Component contexts, setting cookies is not allowed.
+      // We still continue so the request can complete safely.
+    }
   }
 
   const sessionTokenHash = sha256(
