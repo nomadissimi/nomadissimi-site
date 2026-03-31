@@ -302,18 +302,16 @@ export default async function PremiumGuideChapterPage({
                 )}
               </div>
             </div>
-          </section>
-        </div>
 
-        <div className="relative left-1/2 mt-8 w-screen -translate-x-1/2 px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center">
-            <Link
-              href="/premium/library"
-              className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white/70 px-5 py-3 text-black/70 shadow-[0_12px_28px_rgba(0,0,0,0.05)] transition hover:bg-white"
-            >
-              Back to your private library
-            </Link>
-          </div>
+            <div className="mt-10 flex justify-center border-t border-black/10 pt-6">
+              <Link
+                href="/premium/library"
+                className="inline-flex items-center justify-center rounded-[14px] border border-black/10 bg-white px-4 py-3 text-[15px] text-black/60 transition hover:bg-[#FBF8F2] hover:text-black/80"
+              >
+                Back to your private library
+              </Link>
+            </div>
+          </section>
         </div>
       </div>
     </main>

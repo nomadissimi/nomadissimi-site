@@ -20,7 +20,8 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
   visa: {
     key: "visa",
     title: "Visa Guide",
-    description: "Your Digital Nomad Visa master guide, step by step.",
+    description:
+      "Whether you are a digital nomad (freelancer) or remote worker (employee), we show you what you need, step by step.",
     href: "/premium/guide/visa-welcome",
     buttonClass:
       "bg-[#4B5D44] text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] hover:bg-[#3E4E38]",
@@ -31,7 +32,7 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     key: "residence",
     title: "Residence Registration Guide",
     description:
-      "From tourist to official Italian resident, in the right order.",
+      "From tourist to official Italian resident. Permesso di soggiorno, Comune, Italian ID card and all that...",
     href: "/premium/guide/residence-welcome-home-your-italian-chapter-begins",
     buttonClass:
       "bg-[#2F466B] text-white shadow-[0_14px_40px_rgba(47,70,107,0.25)] hover:bg-[#263A59]",
@@ -41,7 +42,8 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
   tax: {
     key: "tax",
     title: "Tax & Partita IVA Guide",
-    description: "Your Italian tax and Partita IVA path, clearly explained.",
+    description:
+      "Avoid headaches and understand the Italian Tax Regimes, deductions, and how to set up your business in Italy",
     href: "/premium/guide/tax-welcome",
     buttonClass:
       "bg-[#6E4B7E] text-white shadow-[0_14px_40px_rgba(110,75,126,0.25)] hover:bg-[#5C3D69]",
@@ -50,8 +52,9 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
   },
   "codice-fiscale": {
     key: "codice-fiscale",
-    title: "Codice Fiscale Mini Guide",
-    description: "Your practical guide to Italy’s essential fiscal code.",
+    title: "Codice Fiscale Guide",
+    description:
+      "Your practical guide to Italy’s essential fiscal code. How to obtain it and what it’s useful for.",
     href: "/premium/guide/codice-fiscale-welcome",
     buttonClass:
       "bg-[#3B6F69] text-white shadow-[0_14px_40px_rgba(59,111,105,0.25)] hover:bg-[#315E59]",
