@@ -31,6 +31,8 @@ export default function EmailConfirmedPage() {
             Go to your library →
           </Link>
         </div>
+
+        
       </div>
     </main>
   );
