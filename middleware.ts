@@ -1,11 +1,12 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
-import crypto from "crypto";
 
 const PORTAL_SESSION_COOKIE = "nm_portal_device";
 
 function randomToken() {
-  return crypto.randomBytes(32).toString("hex");
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+  return Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
 }
 
 export async function middleware(request: NextRequest) {
@@ -55,4 +56,3 @@ export const config = {
     "/account",
   ],
 };
-
