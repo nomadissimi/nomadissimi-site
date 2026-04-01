@@ -245,19 +245,21 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                     Get the free starter guide
                   </a>
 
-              <a
+              <Link
   href="#packages"
-  className="hidden md:inline-flex serif items-center justify-center
-    px-4 py-2.5
-    border border-[#4B5D44]
-    bg-[#4B5D44] text-white
-    text-[18px] font-semibold tracking-[0.08em]
-    transition-all duration-300 ease-out
-    hover:bg-[#3E4E38] hover:-translate-y-[1px]
-    hover:shadow-[0_10px_26px_rgba(75,93,68,0.22)]"
+  className="relative inline-flex items-center justify-center text-center px-6 py-3 md:px-7 md:py-3.5 rounded-2xl
+    bg-[#4B5D44]
+    text-white font-serif text-base md:text-lg leading-tight tracking-wide
+    shadow-[0_2px_12px_rgba(75,93,68,0.25)]
+    transition-all duration-300 ease-out overflow-hidden
+    w-full sm:w-auto
+    before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent)]
+    before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
+    hover:before:opacity-80 hover:before:translate-x-[100%]
+    hover:shadow-[0_4px_20px_rgba(75,93,68,0.4)] hover:scale-[1.02]"
 >
   Choose your plan
-</a>
+</Link>
                 </div>
 
                 <div className="mt-8 grid grid-cols-2 gap-4 text-sm sans">
