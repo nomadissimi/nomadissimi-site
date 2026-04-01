@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 
 export default function LoginForm() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const next = searchParams.get("next") || "/premium/library";
 
@@ -22,20 +21,24 @@ export default function LoginForm() {
 
     const supabase = createSupabaseBrowserClient();
 
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
 
-    setLoading(false);
-
     if (error) {
+      setLoading(false);
       setError(error.message);
       return;
     }
 
-    router.push(next);
-    router.refresh();
+    if (!data.session) {
+      setLoading(false);
+      setError("We couldn’t start your session. Please try again.");
+      return;
+    }
+
+    window.location.assign(next);
   }
 
   return (
@@ -46,7 +49,9 @@ export default function LoginForm() {
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         <div>
-          <label className="mb-2 block sans text-sm text-black/70">Email</label>
+          <label className="mb-2 block sans text-sm text-black/70">
+            Email
+          </label>
           <input
             type="email"
             required
@@ -84,6 +89,10 @@ export default function LoginForm() {
         >
           {loading ? "Logging in..." : "Log in"}
         </button>
+
+        <p className="sans text-sm text-black/45">
+          After login, we’ll take you straight into your private library.
+        </p>
       </form>
 
       <div className="mt-8 flex flex-col gap-4">
@@ -104,3 +113,4 @@ export default function LoginForm() {
     </>
   );
 }
+
