@@ -47,9 +47,9 @@ export default function ResetPasswordPage() {
     setSuccess(true);
 
     setTimeout(() => {
-      router.push("/login");
+      router.push("/password-reset-success");
       router.refresh();
-    }, 1200);
+    }, 900);
   }
 
   return (
@@ -96,7 +96,7 @@ export default function ResetPasswordPage() {
 
             {success ? (
               <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-                Password updated. Redirecting you to login...
+                Password updated. Taking you to the next step...
               </div>
             ) : null}
 

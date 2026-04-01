@@ -20,13 +20,13 @@ export default async function AccountPage() {
 
   const buyerEmail = user.email.toLowerCase();
 
-    const portalSession = await ensurePortalSession({
+  const portalSession = await ensurePortalSession({
     userId: user.id,
     email: buyerEmail,
   });
 
   if (portalSession.isRevoked) {
-    redirect("/login?next=/account");
+    redirect("/session-expired");
   }
 
   const [sessions, currentSessionHash] = await Promise.all([
@@ -44,10 +44,5 @@ export default async function AccountPage() {
       : false,
   }));
 
-  return (
-    <AccountClient
-      email={buyerEmail}
-      sessions={sessionSummaries}
-    />
-  );
+  return <AccountClient email={buyerEmail} sessions={sessionSummaries} />;
 }

@@ -40,7 +40,7 @@ export default function CreateAccountForm() {
       email,
       password,
       options: {
-        emailRedirectTo: `${window.location.origin}/premium/library`,
+        emailRedirectTo: `${window.location.origin}/email-confirmed`,
       },
     });
 
@@ -57,14 +57,13 @@ export default function CreateAccountForm() {
   return (
     <>
       <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
-        Use the same email address you used at checkout so your purchases can appear inside your private library.
+        Use the same email address you used at checkout so your purchases can
+        appear inside your private library.
       </p>
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         <div>
-          <label className="mb-2 block sans text-sm text-black/70">
-            Email
-          </label>
+          <label className="mb-2 block sans text-sm text-black/70">Email</label>
           <input
             type="email"
             required
@@ -113,7 +112,8 @@ export default function CreateAccountForm() {
 
         {success ? (
           <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-            Account created. Check your email to confirm your address, then log in.
+            Account created. Check your email to confirm your address, then log
+            in.
           </div>
         ) : null}
 

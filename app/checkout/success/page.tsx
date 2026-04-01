@@ -29,9 +29,15 @@ export default function SuccessPage() {
           </h1>
 
           <p className="sans mt-4 text-[16px] md:text-[17px] leading-[1.75] text-black/65 max-w-2xl">
-            We’ve received your order and emailed you with next steps. If you
-            don’t see it within a few minutes, check your spam/promotions
-            folder.
+            We’ve received your order and emailed you with next steps to access
+            your private portal. If you don’t see the email within a few
+            minutes, check your spam or promotions folder.
+          </p>
+
+          <p className="sans mt-4 text-[16px] md:text-[17px] leading-[1.75] text-black/65 max-w-2xl">
+            Use the same email address you used at checkout when creating your
+            portal account, and your purchases will appear automatically inside
+            your private library.
           </p>
 
           <p className="sans mt-4 text-[16px] md:text-[17px] leading-[1.75] text-black/65 max-w-2xl">
@@ -41,27 +47,44 @@ export default function SuccessPage() {
           {/* Cozy reassurance */}
           <div className="mt-7 rounded-2xl border border-black/10 bg-white/65 px-5 py-4 shadow-[0_10px_28px_rgba(0,0,0,0.05)]">
             <p className="sans text-[15px] md:text-[16px] text-black/75 leading-[1.7]">
-              If you purchased a package with a consultation, you’ll receive a
-              separate email with your scheduling link. Otherwise, you’ll get
-              access to your materials and instructions by email shortly.
+              Depending on what you purchased, your deliverables may include
+              private portal access, PDF resources, and/or separate consultation
+              scheduling emails. If your package includes portal materials (most
+              do), just create your account using the same email you used at
+              checkout and your access will appear inside your private library
+              automatically.
             </p>
           </div>
 
           {/* Single CTA */}
           <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <Link
-              href="/"
+              href="/create-account"
               className="
-                inline-flex items-center justify-center text-center whitespace-nowrap
-                rounded-full px-7 py-3
-                serif text-[18px] font-semibold tracking-[0.08em]
-                bg-[#4B5D44] text-white
-                shadow-[0_14px_40px_rgba(75,93,68,0.28)]
-                hover:bg-[#3E4E38] hover:-translate-y-[1px]
-                transition-all duration-300
-              "
+      inline-flex items-center justify-center text-center whitespace-nowrap
+      rounded-full px-7 py-3
+      serif text-[18px] font-semibold tracking-[0.08em]
+      bg-[#4B5D44] text-white
+      shadow-[0_14px_40px_rgba(75,93,68,0.28)]
+      hover:bg-[#3E4E38] hover:-translate-y-[1px]
+      transition-all duration-300
+    "
             >
-              Homepage
+              Create your portal account
+            </Link>
+
+            <Link
+              href="/login"
+              className="
+      inline-flex items-center justify-center text-center whitespace-nowrap
+      rounded-full px-6 py-3
+      sans text-[15px] text-black/70
+      border border-black/10 bg-white/70
+      hover:bg-white hover:text-black
+      transition-all duration-300
+    "
+            >
+              Log in
             </Link>
 
             <Link
@@ -73,8 +96,8 @@ export default function SuccessPage() {
           </div>
 
           <p className="sans mt-6 text-sm text-black/50 leading-relaxed">
-            FYI: some banks add an extra verification step. If yours did, the
-            confirmation email may arrive a few minutes later than usual.
+            FYI: some banks add an extra verification step. If yours did, your
+            portal access email may arrive a few minutes later than usual.
           </p>
         </div>
       </div>

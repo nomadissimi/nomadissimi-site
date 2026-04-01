@@ -955,7 +955,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           </span>
 
                           <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
-                            + VAT
+                      
                           </span>
                         </span>
                         {/* Line 3 — anchor price */}
@@ -1036,7 +1036,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           </span>
 
                           <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
-                            + VAT
+                          
                           </span>
                         </span>
                         {/* Line 3 — anchor price */}
@@ -1126,7 +1126,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           </span>
 
                           <span className="sans tabular-nums text-[13px] tracking-[0.12em] text-white/65">
-                            + VAT
+                        
                           </span>
                         </span>
                         {/* Line 3 — anchor price */}
@@ -1394,7 +1394,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           699
         </span>
         <span className="ml-1 sans text-[13px] tracking-[0.12em] uppercase text-white/75">
-          + VAT
+        - limited slots for the bundle
         </span>
       </span>
     </span>
@@ -1921,7 +1921,7 @@ function WelcomeCtaLabel({ title, amount }: { title: string; amount: string }) {
           {amount}
         </span>
         <span className="text-[13px] tracking-[0.14em] uppercase text-white/65 ml-1">
-          + VAT
+          " "
         </span>
       </span>
     </span>

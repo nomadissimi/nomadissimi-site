@@ -82,13 +82,13 @@ export default async function PremiumGuideChapterPage({
   const buyerEmail = user.email.toLowerCase();
 
   const portalSession = await ensurePortalSession({
-  userId: user.id,
-  email: buyerEmail,
-});
+    userId: user.id,
+    email: buyerEmail,
+  });
 
-if (portalSession.isRevoked) {
-  redirect(`/login?next=/premium/guide/${slug}`);
-}
+  if (portalSession.isRevoked) {
+    redirect("/session-expired");
+  }
 
   const { data: entitlements } = await supabaseAdmin
     .from("entitlements")
@@ -111,7 +111,7 @@ if (portalSession.isRevoked) {
   const ownedGuideKeys = getGuideAccessFromProducts(activeProducts);
 
   if (!ownedGuideKeys.includes(guideTheme)) {
-    redirect("/premium/library");
+    redirect("/access-denied");
   }
 
   const chapters = getGuideChapters(guideTheme);

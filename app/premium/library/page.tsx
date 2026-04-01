@@ -82,7 +82,7 @@ export default async function PremiumLibraryPage() {
   });
 
   if (portalSession.isRevoked) {
-    redirect("/login?next=/premium/library");
+    redirect("/session-expired");
   }
 
   const { data: entitlements } = await supabaseAdmin
@@ -132,8 +132,8 @@ export default async function PremiumLibraryPage() {
           {ownedGuides.length === 1 ? "" : "s"}.
         </p>
         <p className="mt-3 max-w-2xl sans text-[13px] leading-[1.7] text-black/40">
-          For content protection, portal access is limited to two active devices.
-          Older sessions may be signed out automatically.
+          For content protection, portal access is limited to two active
+          devices. Older sessions may be signed out automatically.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2">
