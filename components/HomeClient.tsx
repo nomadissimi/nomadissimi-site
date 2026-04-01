@@ -228,39 +228,39 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                   nightmare.
                 </p>
 
-                <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                  <a
-                    href="#guide"
-                    className="relative inline-flex items-center justify-center text-center px-6 py-3 md:px-7 md:py-3.5 rounded-2xl
-             bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-             text-[#1A1A1A] font-serif text-base md:text-lg leading-tight tracking-wide
-             ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
-             transition-all duration-300 ease-out
-             overflow-hidden w-full sm:w-auto
-             before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)]
-             before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
-             hover:before:opacity-80 hover:before:translate-x-[100%]
-             hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
-                  >
-                    Get the free starter guide
-                  </a>
+                <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-row">
+  <a
+    href="#guide"
+    className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
+      bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
+      text-[#1A1A1A] font-serif text-[15px] md:text-lg leading-tight tracking-wide
+      ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
+      transition-all duration-300 ease-out
+      overflow-hidden w-full
+      before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)]
+      before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
+      hover:before:opacity-80 hover:before:translate-x-[100%]
+      hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
+  >
+    Get the free starter guide
+  </a>
 
-              <Link
-  href="#packages"
-  className="relative inline-flex items-center justify-center text-center px-6 py-3 md:px-7 md:py-3.5 rounded-2xl
-    bg-[#4B5D44]
-    text-white font-serif text-base md:text-lg leading-tight tracking-wide
-    shadow-[0_2px_12px_rgba(75,93,68,0.25)]
-    transition-all duration-300 ease-out overflow-hidden
-    w-full sm:w-auto
-    before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent)]
-    before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
-    hover:before:opacity-80 hover:before:translate-x-[100%]
-    hover:shadow-[0_4px_20px_rgba(75,93,68,0.4)] hover:scale-[1.02]"
->
-  Choose your plan
-</Link>
-                </div>
+  <Link
+    href="#packages"
+    className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
+      bg-[#4B5D44]
+      text-white font-serif text-[15px] md:text-lg leading-tight tracking-wide
+      shadow-[0_2px_12px_rgba(75,93,68,0.25)]
+      transition-all duration-300 ease-out overflow-hidden
+      w-full
+      before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.4),transparent)]
+      before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
+      hover:before:opacity-80 hover:before:translate-x-[100%]
+      hover:shadow-[0_4px_20px_rgba(75,93,68,0.4)] hover:scale-[1.02]"
+  >
+    Choose your plan
+  </Link>
+</div>
 
                 <div className="mt-8 grid grid-cols-2 gap-4 text-sm sans">
                   <Feature
