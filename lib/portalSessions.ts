@@ -9,9 +9,7 @@ function sha256(value: string) {
   return crypto.createHash("sha256").update(value).digest("hex");
 }
 
-function randomToken() {
-  return crypto.randomBytes(32).toString("hex");
-}
+
 
 export async function ensurePortalSession(params: {
   userId: string;
@@ -20,23 +18,10 @@ export async function ensurePortalSession(params: {
   const cookieStore = await cookies();
   const headerStore = await headers();
 
-  let rawToken = cookieStore.get(PORTAL_SESSION_COOKIE)?.value;
+    const rawToken = cookieStore.get(PORTAL_SESSION_COOKIE)?.value;
 
   if (!rawToken) {
-    rawToken = randomToken();
-
-    try {
-      cookieStore.set(PORTAL_SESSION_COOKIE, rawToken, {
-        httpOnly: true,
-        secure: true,
-        sameSite: "lax",
-        path: "/",
-        maxAge: 60 * 60 * 24 * 30, // 30 days
-      });
-    } catch {
-      // In some Server Component contexts, setting cookies is not allowed.
-      // We still continue so the request can complete safely.
-    }
+    return { isRevoked: false as const };
   }
 
   const sessionTokenHash = sha256(
