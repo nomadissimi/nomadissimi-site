@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
@@ -8,7 +9,11 @@ const ADMIN_EMAILS = [
   "marco.bellomo1997@gmail.com",
 ];
 
-export default async function AdminIntakesPage() {
+export default async function AdminIntakesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ type?: string }>;
+}) {
   const supabase = await createSupabaseServerClient();
 
   const {
@@ -25,10 +30,22 @@ export default async function AdminIntakesPage() {
     redirect("/login?next=/admin/intakes");
   }
 
-  const { data: intakes, error } = await supabaseAdmin
+  const { type } = await searchParams;
+
+  const allowedTypes = ["visa", "tax", "residence", "dolce-vita", "general"];
+
+  const selectedType = type && allowedTypes.includes(type) ? type : "all";
+
+  let query = supabaseAdmin
     .from("client_intakes")
     .select("*")
     .order("created_at", { ascending: false });
+
+  if (selectedType !== "all") {
+    query = query.eq("intake_type", selectedType);
+  }
+
+  const { data: intakes, error } = await query;
 
   if (error) {
     throw new Error("Failed to load intake submissions.");
@@ -50,6 +67,47 @@ export default async function AdminIntakesPage() {
             Review new onboarding submissions here before sending private
             booking links.
           </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <FilterChip href="/admin/intakes" active={selectedType === "all"}>
+              All
+            </FilterChip>
+
+            <FilterChip
+              href="/admin/intakes?type=visa"
+              active={selectedType === "visa"}
+            >
+              Visa
+            </FilterChip>
+
+            <FilterChip
+              href="/admin/intakes?type=tax"
+              active={selectedType === "tax"}
+            >
+              Tax
+            </FilterChip>
+
+            <FilterChip
+              href="/admin/intakes?type=residence"
+              active={selectedType === "residence"}
+            >
+              Residence
+            </FilterChip>
+
+            <FilterChip
+              href="/admin/intakes?type=dolce-vita"
+              active={selectedType === "dolce-vita"}
+            >
+              Dolce Vita
+            </FilterChip>
+
+            <FilterChip
+              href="/admin/intakes?type=general"
+              active={selectedType === "general"}
+            >
+              General
+            </FilterChip>
+          </div>
 
           <div className="mt-8 space-y-5">
             {intakes && intakes.length > 0 ? (
@@ -199,5 +257,28 @@ function StatusBadge({ status }: { status?: string | null }) {
     >
       {normalized}
     </span>
+  );
+}
+
+function FilterChip({
+  href,
+  active,
+  children,
+}: {
+  href: string;
+  active?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      className={`inline-flex items-center rounded-full px-4 py-2 sans text-[13px] uppercase tracking-[0.14em] transition ${
+        active
+          ? "bg-[#4B5D44] text-white shadow-[0_10px_24px_rgba(75,93,68,0.18)]"
+          : "border border-black/10 bg-[#FBF8F2] text-black/55 hover:bg-white hover:text-black/75"
+      }`}
+    >
+      {children}
+    </Link>
   );
 }
