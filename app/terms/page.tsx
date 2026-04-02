@@ -192,31 +192,105 @@ export default function TermsPage() {
         {/* 9 */}
         <section className="section-divider">
           <h2 className="serif text-xl font-semibold mb-3">
-            9. Consultation Scheduling, Cancellations &amp; No-Shows
+            9. Consultation Scheduling, Cancellations, Rescheduling, &amp;
+            No-Shows
           </h2>
           <p>
-            Certain packages include a personalized consultation call scheduled
-            in advance. By booking a consultation, you acknowledge that this
-            time is reserved exclusively for you.
+            Certain Nomadissimi services include, or may be purchased with, a
+            personalized consultation call scheduled in advance. By booking a
+            consultation, the client acknowledges that the appointment time is
+            reserved exclusively for them and may require preparation in
+            advance.
           </p>
 
-          <p className="mt-3 font-medium">Client cancellations or no-shows</p>
+          <p className="mt-3 font-medium">
+            {" "}
+            a. Standalone Consultations and Bonus Calls
+          </p>
+          <p>
+            A “Standalone Consultation” refers to a consultation purchased
+            separately as its own service and not included within a package. A
+            "Bonus Call" refers to an extra consultation purchased separately as
+            its own service and not already included within a package.
+          </p>
+
           <ul className="mt-2 list-disc pl-6 space-y-1">
-            <li>More than 24 hours before: reschedule at no additional cost</li>
-            <li>Between 12 and 24 hours: reduced fee of EUR 73.50</li>
-            <li>Less than 12 hours or no-show: fee of EUR 147</li>
+            <li>
+              Rescheduling with more than 24 hours’ notice: If the client
+              requests to reschedule a Standalone Consultation more than 24
+              hours before the scheduled start time, the consultation may be
+              rescheduled at no additional cost, subject to availability.
+            </li>
+            <li>
+              Rescheduling or cancellation between 12 and 24 hours before the
+              scheduled start time: If the client cancels or requests to
+              reschedule a Standalone Consultation between 12 and 24 hours
+              before the scheduled start time, a reduced late cancellation or
+              rescheduling fee of EUR 73.50 will apply.
+            </li>
+            <li>
+              Cancellation with less than 12 hours’ notice or no-show: If the
+              client cancels a Standalone Consultation less than 12 hours before
+              the scheduled start time, or does not attend the scheduled
+              consultation without notice, a fee of EUR 147 will apply.
+            </li>
           </ul>
 
           <p className="mt-3">
-            These fees reflect the reserved time and the inability to reallocate
-            the appointment on short notice.
+            These fees reflect the reserved appointment time, preparation time,
+            and the difficulty of reallocating the slot on short notice.
           </p>
 
-          <p className="mt-3 font-medium">Nomadissimi rescheduling</p>
+          <p className="mt-3 font-medium"> b. Package-Included Consultations</p>
+          <p>
+            A “Package-Included Consultation” means a consultation that is
+            included as part of a purchased package or bundled service.
+          </p>
+
+          <ul className="mt-2 list-disc pl-6 space-y-1">
+            <li>
+              Rescheduling with more than 24 hours’ notice If the client
+              requests to reschedule a Package-Included Consultation more than
+              24 hours before the scheduled start time, the consultation may be
+              rescheduled at no additional cost, subject to availability.
+            </li>
+            <li>
+              Cancellation with less than 24 hours’ notice or no-show If the
+              client cancels a Package-Included Consultation less than 24 hours
+              before the scheduled start time, or does not attend the scheduled
+              consultation without notice, Nomadissimi reserves the right to
+              treat that consultation as redeemed. This means the consultation
+              will count as used and may not be rebooked without an additional
+              fee or separate purchase.
+            </li>
+          </ul>
+
+          <p className="mt-3 font-medium">c. Nomadissimi rescheduling</p>
           <p className="mt-1">
-            If Nomadissimi needs to reschedule a consultation, we will notify
-            you as soon as reasonably possible and offer alternative dates. No
-            rescheduling fees will be charged to the client in such cases.
+            If Nomadissimi needs to reschedule a consultation for any reason,
+            the client will be notified as soon as reasonably possible and will
+            then be offered alternative dates or times. No rescheduling fee will
+            be charged to the client in such cases.
+          </p>
+
+          <p className="mt-3 font-medium">d. Payment Authorization</p>
+          <p className="mt-1">
+            Where a payment method is provided in connection with a Standalone
+            Consultation booking, the client authorizes Nomadissimi to charge
+            any applicable late cancellation, rescheduling, or no-show fee in
+            accordance with these Terms. Where a consultation is included within
+            a package, the client acknowledges and agrees that the missed or
+            late-cancelled consultation may be treated as redeemed in accordance
+            with these Terms.
+          </p>
+
+          <p className="mt-3 font-medium">e. General</p>
+          <p className="mt-1">
+            Nomadissimi reserves the right to refuse repeated rescheduling
+            requests, abuse of the booking system, or conduct that interferes
+            with the orderly scheduling and delivery of services. Nothing in
+            this section limits any mandatory consumer rights that may apply
+            under governing law.
           </p>
         </section>
 

@@ -229,9 +229,9 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-row">
-  <a
-    href="#guide"
-    className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
+                  <a
+                    href="#guide"
+                    className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
       bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
       text-[#1A1A1A] font-serif text-[15px] md:text-lg leading-tight tracking-wide
       ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
@@ -241,13 +241,13 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
       before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
       hover:before:opacity-80 hover:before:translate-x-[100%]
       hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
-  >
-    Get the free starter guide
-  </a>
+                  >
+                    Get the free starter guide
+                  </a>
 
-  <Link
-    href="#packages"
-    className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
+                  <Link
+                    href="#packages"
+                    className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
       bg-[#4B5D44]
       text-white font-serif text-[15px] md:text-lg leading-tight tracking-wide
       shadow-[0_2px_12px_rgba(75,93,68,0.25)]
@@ -257,10 +257,10 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
       before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
       hover:before:opacity-80 hover:before:translate-x-[100%]
       hover:shadow-[0_4px_20px_rgba(75,93,68,0.4)] hover:scale-[1.02]"
-  >
-    Choose your plan
-  </Link>
-</div>
+                  >
+                    Choose your plan
+                  </Link>
+                </div>
 
                 <div className="mt-8 grid grid-cols-2 gap-4 text-sm sans">
                   <Feature
@@ -358,7 +358,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
         <FadeIn y={16}>
           <div className="card">
             <h2 className="serif text-3xl md:text-4xl font-semibold text-center">
-              Italy isn’t just a move, it’s an upgrade to your entire lifestyle.
+              Italy is so much more than just a move: it’s an upgrade to your
+              entire lifestyle.
             </h2>
             {/* Centered + constrained */}
             <div className="mx-auto max-w-4xl px-4 text-center mt-4 space-y-6">
@@ -367,7 +368,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 done: done with burnout, expensive housing, artificial food, and
                 the feeling that life’s happening somewhere else. You’ve
                 scrolled the dreamy Italy photos, saved the “move abroad”
-                TikToks, maybe even searched “how to get an Italian visa” at 2
+                videos, maybe even searched “how to get an Italian visa” at 2
                 am. You don’t need more dry information:{" "}
                 <strong>
                   you need a roadmap, and someone who’s actually done it.
@@ -390,8 +391,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <p className="lead-soft">
                 Information is scattered, requirements are unclear, and small
                 mistakes cost months. That’s where Nomadissimi comes in: your
-                boutique guide through the red tape, helping you turn the
-                Italian daydream into your next real address.
+                boutique guide through the bureaucracy, helping you turn the
+                Italian daydream into your next real address, and protecting
+                your nervous system in the process!
               </p>
               {/* Baby luxe divider */}
               <hr className="my-8 border-0 h-[1px] bg-gradient-to-r from-transparent via-[#C8A86B]/40 to-transparent" />
@@ -1389,7 +1391,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       699
                     </span>
                     <span className="ml-1 sans text-[13px] tracking-[0.12em] uppercase text-white/75">
-                      - limited slots for the bundle
+                      - subject to availability
                     </span>
                   </span>
                 </span>

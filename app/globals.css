@@ -907,12 +907,7 @@ html, body {
     color: rgba(26,26,26,.95);
   }
 
-  .addon-cta-vat {
-    @apply sans tabular-nums;
-    font-size: 13px;
-    letter-spacing: 0.12em;
-    color: rgba(26,26,26,.55);
-  }
+
 }
 
 /* --- Ray of light hover sweep (addon CTA) --- */
