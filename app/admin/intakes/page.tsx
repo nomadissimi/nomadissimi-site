@@ -1,0 +1,167 @@
+import { redirect } from "next/navigation";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { supabaseAdmin } from "@/lib/supabaseAdmin";
+
+const ADMIN_EMAILS = [
+  "sylviasanchez1506@gmail.com",
+  "marco.bellomo1997@gmail.com",
+];
+
+export default async function AdminIntakesPage() {
+  const supabase = await createSupabaseServerClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const isAdmin =
+    !!user?.email &&
+    ADMIN_EMAILS.map((email) => email.toLowerCase()).includes(
+      user.email.toLowerCase(),
+    );
+
+  if (!isAdmin) {
+    redirect("/login?next=/admin/intakes");
+  }
+
+  const { data: intakes, error } = await supabaseAdmin
+    .from("client_intakes")
+    .select("*")
+    .order("created_at", { ascending: false });
+
+  if (error) {
+    throw new Error("Failed to load intake submissions.");
+  }
+
+  return (
+    <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
+        <div className="rounded-[28px] border border-black/10 bg-white/70 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.08)] md:p-10">
+          <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
+            Nomadissimi admin
+          </p>
+
+          <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
+            Client intake submissions
+          </h1>
+
+          <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
+            Review new onboarding submissions here before sending private
+            booking links.
+          </p>
+
+          <div className="mt-8 space-y-5">
+            {intakes && intakes.length > 0 ? (
+              intakes.map((intake) => (
+                <article
+                  key={intake.id}
+                  className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6"
+                >
+                  <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                    <div>
+                      <p className="sans text-xs uppercase tracking-[0.18em] text-black/40">
+                        {intake.intake_type} intake
+                      </p>
+                      <h2 className="serif mt-2 text-2xl text-black">
+                        {intake.first_name} {intake.last_name}
+                      </h2>
+                      <p className="mt-1 sans text-[15px] text-black/60">
+                        {intake.email}
+                      </p>
+                    </div>
+
+                    <div className="sans text-sm text-black/45">
+                      {new Date(intake.created_at).toLocaleString()}
+                    </div>
+                  </div>
+
+                  <div className="mt-6 grid gap-5 md:grid-cols-2">
+                    <Info label="City">{intake.city}</Info>
+                    <Info label="Country">{intake.country}</Info>
+                    <Info label="Citizenship(s)">{intake.citizenships}</Info>
+                    <Info label="Occupation">{intake.occupation}</Info>
+                    <Info label="Work setup">{intake.work_setup}</Info>
+                    <Info label="Degree title">{intake.degree_title}</Info>
+                    <Info label="Work experience">
+                      {intake.work_experience}
+                    </Info>
+                    <Info label="Visa pathway">{intake.pathway}</Info>
+                    <Info label="Target move date">{intake.move_date}</Info>
+                    <Info label="Consulate">{intake.consulate}</Info>
+                    <Info label="Contacted consulate">
+                      {intake.contacted_consulate}
+                    </Info>
+                    <Info label="Documents started">
+                      {intake.documents_started}
+                    </Info>
+                    <Info label="Stage">{intake.stage}</Info>
+                  </div>
+
+                  <div className="mt-6 space-y-4">
+                    <LongInfo label="Work situation">
+                      {intake.work_situation}
+                    </LongInfo>
+
+                    <LongInfo label="Top questions">
+                      {intake.top_questions}
+                    </LongInfo>
+
+                    <LongInfo label="Biggest stress">
+                      {intake.biggest_stress}
+                    </LongInfo>
+
+                    <LongInfo label="Additional notes">{intake.notes}</LongInfo>
+                  </div>
+                </article>
+              ))
+            ) : (
+              <div className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
+                <p className="sans text-[15px] text-black/60">
+                  No intake submissions yet.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+function Info({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div>
+      <p className="mb-1 sans text-xs uppercase tracking-[0.16em] text-black/40">
+        {label}
+      </p>
+      <p className="sans text-[15px] leading-[1.7] text-black/75">
+        {children || "—"}
+      </p>
+    </div>
+  );
+}
+
+function LongInfo({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="rounded-2xl border border-black/10 bg-white px-4 py-4">
+      <p className="mb-2 sans text-xs uppercase tracking-[0.16em] text-black/40">
+        {label}
+      </p>
+      <p className="sans whitespace-pre-wrap text-[15px] leading-[1.75] text-black/75">
+        {children || "—"}
+      </p>
+    </div>
+  );
+}
