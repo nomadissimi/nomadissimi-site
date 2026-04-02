@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
+import StatusSelect from "./StatusSelect";
 
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
@@ -57,17 +58,30 @@ export default async function AdminIntakesPage() {
                   key={intake.id}
                   className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6"
                 >
-                  <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                  <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                     <div>
-                      <p className="sans text-xs uppercase tracking-[0.18em] text-black/40">
-                        {intake.intake_type} intake
-                      </p>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="sans text-xs uppercase tracking-[0.18em] text-black/40">
+                          {intake.intake_type} intake
+                        </p>
+
+                        <StatusBadge status={intake.status} />
+                      </div>
+
                       <h2 className="serif mt-2 text-2xl text-black">
                         {intake.first_name} {intake.last_name}
                       </h2>
+
                       <p className="mt-1 sans text-[15px] text-black/60">
                         {intake.email}
                       </p>
+
+                      <div className="mt-3">
+                        <StatusSelect
+                          intakeId={intake.id}
+                          currentStatus={intake.status}
+                        />
+                      </div>
                     </div>
 
                     <div className="sans text-sm text-black/45">
@@ -117,7 +131,8 @@ export default async function AdminIntakesPage() {
             ) : (
               <div className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
                 <p className="sans text-[15px] text-black/60">
-                  No intake submissions yet.
+                  No intake submissions yet. New client onboarding forms will
+                  appear here.
                 </p>
               </div>
             )}
@@ -163,5 +178,26 @@ function LongInfo({
         {children || "—"}
       </p>
     </div>
+  );
+}
+
+function StatusBadge({ status }: { status?: string | null }) {
+  const normalized = (status ?? "new").toLowerCase();
+
+  const styles =
+    normalized === "completed"
+      ? "bg-[#E8F3E6] text-[#355B32] border-[#CFE3CB]"
+      : normalized === "booking link sent"
+        ? "bg-[#EEF3FB] text-[#35506B] border-[#D7E4F3]"
+        : normalized === "reviewed"
+          ? "bg-[#F6EFE3] text-[#7A5A22] border-[#E9D9B6]"
+          : "bg-[#F3ECE7] text-[#7A4B3A] border-[#E7D2C8]";
+
+  return (
+    <span
+      className={`inline-flex items-center rounded-full border px-3 py-1 sans text-[11px] uppercase tracking-[0.14em] ${styles}`}
+    >
+      {normalized}
+    </span>
   );
 }
