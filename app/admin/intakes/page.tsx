@@ -6,6 +6,7 @@ import StatusSelect from "./StatusSelect";
 import SendBookingLink from "./SendBookingLink";
 import AdminNotes from "./AdminNotes";
 import AdminOpsPanel from "./AdminOpsPanel";
+import IntakeCardShell from "./IntakeCardShell";
 
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
@@ -121,80 +122,109 @@ export default async function AdminIntakesPage({
           <div className="mt-8 space-y-5">
             {intakes && intakes.length > 0 ? (
               intakes.map((intake) => (
-                <article
+                <IntakeCardShell
                   key={intake.id}
-                  className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6"
-                >
-                  <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                    <div>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <p className="sans text-xs uppercase tracking-[0.18em] text-black/40">
-                          {intake.intake_type} intake
+                  header={
+                    <>
+                      <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                        <div>
+                          <div className="flex flex-wrap items-center gap-2">
+                            <p className="sans text-xs uppercase tracking-[0.18em] text-black/40">
+                              {intake.intake_type} intake
+                            </p>
+
+                            <StatusBadge status={intake.status} />
+
+                            {intake.admin_priority ? (
+                              <MetaBadge variant="priority">
+                                {intake.admin_priority}
+                              </MetaBadge>
+                            ) : null}
+
+                            {intake.admin_owner ? (
+                              <MetaBadge variant="owner">
+                                {intake.admin_owner}
+                              </MetaBadge>
+                            ) : null}
+
+                            {intake.admin_next_action ? (
+                              <MetaBadge variant="action">
+                                {intake.admin_next_action}
+                              </MetaBadge>
+                            ) : null}
+
+                            {intake.consultation_completed ? (
+                              <MetaBadge variant="completed">
+                                Consultation done
+                              </MetaBadge>
+                            ) : null}
+
+                            {getFollowUpState(intake.admin_follow_up_date) ===
+                            "today" ? (
+                              <MetaBadge variant="dueToday">
+                                Follow-up today
+                              </MetaBadge>
+                            ) : null}
+
+                            {getFollowUpState(intake.admin_follow_up_date) ===
+                            "overdue" ? (
+                              <MetaBadge variant="overdue">
+                                Follow-up overdue
+                              </MetaBadge>
+                            ) : null}
+                          </div>
+
+                          <h2 className="serif mt-2 text-2xl text-black">
+                            {intake.first_name} {intake.last_name}
+                          </h2>
+
+                          <p className="mt-1 sans text-[15px] text-black/60">
+                            {intake.email}
+                          </p>
+
+                          <div className="mt-3">
+                            <StatusSelect
+                              intakeId={intake.id}
+                              currentStatus={intake.status}
+                            />
+                          </div>
+                        </div>
+
+                        <div className="sans text-sm text-black/45">
+                          {new Date(intake.created_at).toLocaleString()}
+                        </div>
+                      </div>
+
+                      <div className="mt-6 rounded-[22px] border border-black/10 bg-white px-4 py-4 shadow-[0_8px_24px_rgba(0,0,0,0.03)]">
+                        <p className="mb-3 sans text-xs uppercase tracking-[0.16em] text-black/40">
+                          At a glance
                         </p>
 
-                        <StatusBadge status={intake.status} />
-
-                        {intake.admin_priority ? (
-                          <MetaBadge variant="priority">
-                            {intake.admin_priority}
-                          </MetaBadge>
-                        ) : null}
-
-                        {intake.admin_owner ? (
-                          <MetaBadge variant="owner">
-                            {intake.admin_owner}
-                          </MetaBadge>
-                        ) : null}
-
-                        {intake.admin_next_action ? (
-                          <MetaBadge variant="action">
-                            {intake.admin_next_action}
-                          </MetaBadge>
-                        ) : null}
-
-                        {intake.consultation_completed ? (
-                          <MetaBadge variant="completed">
-                            Consultation done
-                          </MetaBadge>
-                        ) : null}
-
-                        {getFollowUpState(intake.admin_follow_up_date) ===
-                        "today" ? (
-                          <MetaBadge variant="dueToday">
-                            Follow-up today
-                          </MetaBadge>
-                        ) : null}
-
-                        {getFollowUpState(intake.admin_follow_up_date) ===
-                        "overdue" ? (
-                          <MetaBadge variant="overdue">
-                            Follow-up overdue
-                          </MetaBadge>
-                        ) : null}
+                        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                          <SummaryPill
+                            label="Location"
+                            value={[intake.city, intake.country]
+                              .filter(Boolean)
+                              .join(", ")}
+                          />
+                          <SummaryPill
+                            label="Consulate"
+                            value={intake.consulate}
+                          />
+                          <SummaryPill
+                            label="Move date"
+                            value={intake.move_date}
+                          />
+                          <SummaryPill
+                            label="Work setup"
+                            value={intake.work_setup}
+                          />
+                        </div>
                       </div>
-
-                      <h2 className="serif mt-2 text-2xl text-black">
-                        {intake.first_name} {intake.last_name}
-                      </h2>
-
-                      <p className="mt-1 sans text-[15px] text-black/60">
-                        {intake.email}
-                      </p>
-
-                      <div className="mt-3">
-                        <StatusSelect
-                          intakeId={intake.id}
-                          currentStatus={intake.status}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="sans text-sm text-black/45">
-                      {new Date(intake.created_at).toLocaleString()}
-                    </div>
-                  </div>
-
-                  <div className="mt-6 grid gap-5 md:grid-cols-2">
+                    </>
+                  }
+                >
+                  <div className="grid gap-5 md:grid-cols-2">
                     <Info label="City">{intake.city}</Info>
                     <Info label="Country">{intake.country}</Info>
                     <Info label="Citizenship(s)">{intake.citizenships}</Info>
@@ -278,7 +308,7 @@ export default async function AdminIntakesPage({
                       updatedBy={intake.admin_notes_updated_by}
                     />
                   </div>
-                </article>
+                </IntakeCardShell>
               ))
             ) : (
               <div className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
@@ -419,7 +449,7 @@ function getFollowUpState(dateValue?: string | null) {
   const todayOnly = new Date(
     today.getFullYear(),
     today.getMonth(),
-    today.getDate()
+    today.getDate(),
   );
 
   const followUp = new Date(`${dateValue}T00:00:00`);
@@ -433,4 +463,23 @@ function getFollowUpState(dateValue?: string | null) {
   }
 
   return null;
+}
+
+function SummaryPill({
+  label,
+  value,
+}: {
+  label: string;
+  value?: React.ReactNode;
+}) {
+  return (
+    <div className="rounded-2xl border border-black/10 bg-[#FBF8F2] px-4 py-3">
+      <p className="mb-1 sans text-[11px] uppercase tracking-[0.14em] text-black/40">
+        {label}
+      </p>
+      <p className="sans text-[14px] leading-[1.7] text-black/70">
+        {value || "—"}
+      </p>
+    </div>
+  );
 }
