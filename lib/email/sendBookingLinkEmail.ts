@@ -21,7 +21,7 @@ export async function sendBookingLinkEmail({
     throw new Error("Missing Resend configuration.");
   }
 
-  const subject = "Your Nomadissimi consultation booking link";
+const subject = "Your private Nomadissimi booking link";
 
   const intakeLine =
     intakeType && intakeType.trim().length > 0
@@ -35,12 +35,12 @@ export async function sendBookingLinkEmail({
           Nomadissimi
         </p>
 
-        <h1 style="font-size:40px; line-height:1.1; margin:0 0 20px;">
-          Your consultation booking link
-        </h1>
+<h1 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:42px; line-height:1.06; margin:0 0 24px; font-weight:500; letter-spacing:-0.03em; color:#1f1f1f;">
+  Your private consultation booking link
+</h1>
 
         <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.8; color:rgba(0,0,0,0.72); margin:0 0 16px;">
-          Hi ${clientName},
+          Ciao ${clientName},
         </p>
 
         <p style="font-family: Arial, sans-serif; font-size:16px; line-height:1.8; color:rgba(0,0,0,0.72); margin:0 0 16px;">
@@ -62,7 +62,7 @@ export async function sendBookingLinkEmail({
         </div>
 
         <p style="font-family: Arial, sans-serif; font-size:15px; line-height:1.8; color:rgba(0,0,0,0.68); margin:24px 0 0;">
-          Warmly,<br />
+          Cheers,<br />
           Nomadissimi
         </p>
       </div>

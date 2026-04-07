@@ -18,6 +18,13 @@ type Props = {
   blogPosts: BlogPostPreview[];
 };
 
+const PRICE_IDS = {
+  residence: "price_1TCZe1QnDSGgUETvSo0TTqMz",
+  partita: "price_1TCZf5QnDSGgUETvLgvOOghB",
+  settle: "price_1TCZfuQnDSGgUETvfoegwJ4J",
+  bundle: "price_1TCZgvQnDSGgUETvyzjPlw0M",
+};
+
 export default function NomadissimiLanding({ blogPosts }: Props) {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -1227,7 +1234,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <div className="text-center mt-8">
                     <CheckoutButton
                       plan="Residence Registration"
-                      priceId={process.env.NEXT_PUBLIC_PRICE_RESIDENCE!}
+                      priceId={PRICE_IDS.residence}
                       className="addon-cta"
                       label={
                         <AddonCtaLabel
@@ -1286,7 +1293,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <div className="text-center mt-8">
                     <CheckoutButton
                       plan="Tax & Partita IVA"
-                      priceId={process.env.NEXT_PUBLIC_PRICE_PARTITA!}
+                      priceId={PRICE_IDS.partita}
                       className="addon-cta"
                       label={
                         <AddonCtaLabel
@@ -1343,7 +1350,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <div className="text-center mt-8">
                     <CheckoutButton
                       plan="Time to Settle In"
-                      priceId={process.env.NEXT_PUBLIC_PRICE_SETTLE!}
+                      priceId={PRICE_IDS.settle}
                       className="addon-cta"
                       label={
                         <AddonCtaLabel
@@ -1364,7 +1371,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           <div className="flex flex-col items-center mt-8">
             <CheckoutButton
               plan="Welcome Bundle"
-              priceId={process.env.NEXT_PUBLIC_PRICE_BUNDLE!}
+              priceId={PRICE_IDS.bundle}
               className="btn-bundle-luxe bundle-ray group relative overflow-hidden flex items-center justify-center gap-4"
               label={
                 <span className="flex items-center justify-center gap-4 w-full">
