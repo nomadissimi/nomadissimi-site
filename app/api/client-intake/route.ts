@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
+import { sendIntakeNotification } from "@/lib/email/sendIntakeNotification";
 
 export async function POST(req: Request) {
   try {
@@ -36,6 +37,7 @@ export async function POST(req: Request) {
       );
     }
 
+   
     const { error } = await supabaseAdmin.from("client_intakes").insert({
       intake_type: intakeType,
       first_name: firstName,
@@ -68,7 +70,25 @@ export async function POST(req: Request) {
       );
     }
 
+    try {
+      await sendIntakeNotification({
+        intakeType,
+        firstName,
+        lastName,
+        email,
+        city,
+        country,
+        topQuestions,
+        biggestStress,
+        adminUrl: "https://www.nomadissimi.com/admin/intakes",
+      });
+    } catch (emailError) {
+      console.error("intake notification email error:", emailError);
+    }
+
     return NextResponse.json({ ok: true });
+
+
   } catch (error) {
     console.error("client intake route error:", error);
     return NextResponse.json(

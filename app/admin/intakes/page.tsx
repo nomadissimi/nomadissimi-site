@@ -109,6 +109,12 @@ export default async function AdminIntakesPage({
             </FilterChip>
           </div>
 
+          <p className="mt-4 sans text-sm text-black/45">
+            Showing {intakes?.length ?? 0}{" "}
+            {selectedType === "all" ? "total" : selectedType} submission
+            {(intakes?.length ?? 0) === 1 ? "" : "s"}.
+          </p>
+
           <div className="mt-8 space-y-5">
             {intakes && intakes.length > 0 ? (
               intakes.map((intake) => (
