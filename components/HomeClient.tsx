@@ -13,16 +13,10 @@ import ItalyImageStrip from "../components/ui/components/ItalyImageStrip";
 import FadeInOnScroll from "../components/ui/components/FadeInOnScroll";
 import BlogPreviewClient from "@/components/BlogPreviewClient";
 import type { BlogPostPreview } from "@/lib/blog-types";
+import { STRIPE_PRICE_IDS } from "@/lib/stripe-price-ids";
 
 type Props = {
   blogPosts: BlogPostPreview[];
-};
-
-const PRICE_IDS = {
-  residence: "price_1TCZe1QnDSGgUETvSo0TTqMz",
-  partita: "price_1TCZf5QnDSGgUETvLgvOOghB",
-  settle: "price_1TCZfuQnDSGgUETvfoegwJ4J",
-  bundle: "price_1TCZgvQnDSGgUETvyzjPlw0M",
 };
 
 export default function NomadissimiLanding({ blogPosts }: Props) {
@@ -1234,7 +1228,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <div className="text-center mt-8">
                     <CheckoutButton
                       plan="Residence Registration"
-                      priceId={PRICE_IDS.residence}
+                      priceId={STRIPE_PRICE_IDS.residence}
                       className="addon-cta"
                       label={
                         <AddonCtaLabel
@@ -1293,7 +1287,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <div className="text-center mt-8">
                     <CheckoutButton
                       plan="Tax & Partita IVA"
-                      priceId={PRICE_IDS.partita}
+                      priceId={STRIPE_PRICE_IDS.partita}
                       className="addon-cta"
                       label={
                         <AddonCtaLabel
@@ -1350,7 +1344,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <div className="text-center mt-8">
                     <CheckoutButton
                       plan="Time to Settle In"
-                      priceId={PRICE_IDS.settle}
+                      priceId={STRIPE_PRICE_IDS.settle}
                       className="addon-cta"
                       label={
                         <AddonCtaLabel
@@ -1371,7 +1365,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           <div className="flex flex-col items-center mt-8">
             <CheckoutButton
               plan="Welcome Bundle"
-              priceId={PRICE_IDS.bundle}
+              priceId={STRIPE_PRICE_IDS.bundle}
               className="btn-bundle-luxe bundle-ray group relative overflow-hidden flex items-center justify-center gap-4"
               label={
                 <span className="flex items-center justify-center gap-4 w-full">
