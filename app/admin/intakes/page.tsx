@@ -4,6 +4,8 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import StatusSelect from "./StatusSelect";
 import SendBookingLink from "./SendBookingLink";
+import AdminNotes from "./AdminNotes";
+import AdminOpsPanel from "./AdminOpsPanel";
 
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
@@ -131,6 +133,44 @@ export default async function AdminIntakesPage({
                         </p>
 
                         <StatusBadge status={intake.status} />
+
+                        {intake.admin_priority ? (
+                          <MetaBadge variant="priority">
+                            {intake.admin_priority}
+                          </MetaBadge>
+                        ) : null}
+
+                        {intake.admin_owner ? (
+                          <MetaBadge variant="owner">
+                            {intake.admin_owner}
+                          </MetaBadge>
+                        ) : null}
+
+                        {intake.admin_next_action ? (
+                          <MetaBadge variant="action">
+                            {intake.admin_next_action}
+                          </MetaBadge>
+                        ) : null}
+
+                        {intake.consultation_completed ? (
+                          <MetaBadge variant="completed">
+                            Consultation done
+                          </MetaBadge>
+                        ) : null}
+
+                        {getFollowUpState(intake.admin_follow_up_date) ===
+                        "today" ? (
+                          <MetaBadge variant="dueToday">
+                            Follow-up today
+                          </MetaBadge>
+                        ) : null}
+
+                        {getFollowUpState(intake.admin_follow_up_date) ===
+                        "overdue" ? (
+                          <MetaBadge variant="overdue">
+                            Follow-up overdue
+                          </MetaBadge>
+                        ) : null}
                       </div>
 
                       <h2 className="serif mt-2 text-2xl text-black">
@@ -218,6 +258,24 @@ export default async function AdminIntakesPage({
                       intakeId={intake.id}
                       clientEmail={intake.email}
                       initialBookingUrl={intake.booking_link_url}
+                    />
+
+                    <AdminOpsPanel
+                      intakeId={intake.id}
+                      initialNextAction={intake.admin_next_action}
+                      initialPriority={intake.admin_priority}
+                      initialOwner={intake.admin_owner}
+                      initialFollowUpDate={intake.admin_follow_up_date}
+                      initialConsultationCompleted={
+                        intake.consultation_completed
+                      }
+                    />
+
+                    <AdminNotes
+                      intakeId={intake.id}
+                      initialNotes={intake.admin_notes}
+                      updatedAt={intake.admin_notes_updated_at}
+                      updatedBy={intake.admin_notes_updated_by}
                     />
                   </div>
                 </article>
@@ -317,4 +375,62 @@ function FilterChip({
       {children}
     </Link>
   );
+}
+
+function MetaBadge({
+  children,
+  variant,
+}: {
+  children: React.ReactNode;
+  variant:
+    | "priority"
+    | "owner"
+    | "action"
+    | "completed"
+    | "dueToday"
+    | "overdue";
+}) {
+  const styles =
+    variant === "priority"
+      ? "bg-[#F6EFE3] text-[#7A5A22] border-[#E9D9B6]"
+      : variant === "owner"
+        ? "bg-[#EEF3FB] text-[#35506B] border-[#D7E4F3]"
+        : variant === "completed"
+          ? "bg-[#E8F3E6] text-[#355B32] border-[#CFE3CB]"
+          : variant === "dueToday"
+            ? "bg-[#FFF4D9] text-[#7A5A22] border-[#F1DFA8]"
+            : variant === "overdue"
+              ? "bg-[#FBE7E3] text-[#8A3D2E] border-[#EBC6BD]"
+              : "bg-[#F3ECE7] text-[#7A4B3A] border-[#E7D2C8]";
+
+  return (
+    <span
+      className={`inline-flex items-center rounded-full border px-3 py-1 sans text-[11px] uppercase tracking-[0.14em] ${styles}`}
+    >
+      {children}
+    </span>
+  );
+}
+
+function getFollowUpState(dateValue?: string | null) {
+  if (!dateValue) return null;
+
+  const today = new Date();
+  const todayOnly = new Date(
+    today.getFullYear(),
+    today.getMonth(),
+    today.getDate()
+  );
+
+  const followUp = new Date(`${dateValue}T00:00:00`);
+
+  if (followUp.getTime() < todayOnly.getTime()) {
+    return "overdue";
+  }
+
+  if (followUp.getTime() === todayOnly.getTime()) {
+    return "today";
+  }
+
+  return null;
 }
