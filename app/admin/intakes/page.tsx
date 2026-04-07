@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import StatusSelect from "./StatusSelect";
+import SendBookingLink from "./SendBookingLink";
 
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
@@ -189,6 +190,11 @@ export default async function AdminIntakesPage({
                     </LongInfo>
 
                     <LongInfo label="Additional notes">{intake.notes}</LongInfo>
+
+                    <SendBookingLink
+                      intakeId={intake.id}
+                      clientEmail={intake.email}
+                    />
                   </div>
                 </article>
               ))
