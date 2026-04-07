@@ -86,7 +86,7 @@ export const PRODUCTS: Record<string, ProductConfig> = {
   generalConsultation: {
     key: "generalConsultation",
     label: "General Consultation",
-    priceId: "REPLACE_WITH_REAL_GENERAL_CONSULTATION_PRICE_ID",
+    priceId: "price_1TJYKKQnDSGgUETvjeWQIpn4",
     portalKeys: [],
     intakeType: "general",
     sendIntakeEmail: true,
