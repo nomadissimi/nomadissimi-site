@@ -204,8 +204,8 @@ export default function CookiesPage() {
           <p>
             If you have questions about our use of cookies or similar
             technologies, please contact us at:{" "}
-            <a className="underline" href="mailto:nomadissimi@gmail.com">
-              nomadissimi@gmail.com
+            <a className="underline" href="mailto:info@nomadissimi.com">
+              info@nomadissimi.com
               <br />
             </a>
           </p>

@@ -306,7 +306,7 @@ export default function PrivacyPage() {
           </p>
           <p className="mt-3">
             To exercise your rights, contact us at{" "}
-            <a href="mailto:nomadissimi@gmail.com">nomadissimi@gmail.com</a>.
+            <a href="mailto:info@nomadissimi.com">info@nomadissimi.com</a>.
           </p>
         </section>
 

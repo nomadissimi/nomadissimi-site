@@ -560,8 +560,8 @@ export default function TermsPage() {
             Nomadissimi
             <br />
             Email:{" "}
-            <a href="mailto:nomadissimi@gmail.com" className="underline">
-              nomadissimi@gmail.com
+            <a href="mailto:info@nomadissimi.com" className="underline">
+              info@nomadissimi.com
             </a>
             <br />
             Website:{" "}

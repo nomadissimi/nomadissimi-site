@@ -42,7 +42,7 @@ console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "SET" : "MISSING");
 
     await transporter.sendMail({
       from: `"Nomadissimi Contact" <${process.env.EMAIL_USER}>`,
-      to: "nomadissimi@gmail.com",
+      to: "info@nomadissimi.com",
       replyTo: email,
       subject: subject || "New message from Nomadissimi",
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject || "(none)"}\n\nMessage:\n${message}`,

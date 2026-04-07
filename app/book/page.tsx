@@ -96,6 +96,12 @@ export default function BookPage() {
               </p>
 
               <p>
+                By providing your payment method, you authorize Nomadissimi to
+                charge the relevant fee if you miss your appointment or cancel
+                outside the permitted window.
+              </p>
+
+              <p>
                 By purchasing, you agree to the consultation terms in our{" "}
                 <Link href="/terms" className="underline underline-offset-4">
                   Terms

@@ -78,9 +78,11 @@ export default function SuccessPage() {
               className="
       inline-flex items-center justify-center text-center whitespace-nowrap
       rounded-full px-6 py-3
-      sans text-[15px] text-black/70
-      border border-black/10 bg-white/70
-      hover:bg-white hover:text-black
+      serif text-[18px] font-semibold tracking-[0.08em]
+      text-black/75
+      border border-black/10 bg-white/75
+      shadow-[0_10px_24px_rgba(0,0,0,0.04)]
+      hover:bg-white hover:text-black hover:-translate-y-[1px]
       transition-all duration-300
     "
             >
