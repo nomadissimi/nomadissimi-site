@@ -16,30 +16,58 @@ export default function BookPage() {
           </h1>
 
           <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
-            This page is for clients purchasing a Standalone Consultation or a
-            Bonus Call as a separate paid service outside our standard packages.
-            After purchase, you’ll receive a private onboarding form. Once we
-            review it, we’ll send your private consultation booking link by
-            email.
+            This page is for existing package clients who need focused paid
+            guidance outside a package, including standalone consultations,
+            bonus calls, extra support, or one-off strategy help. Subject to
+            availability and approval.
           </p>
 
-          <div className="mt-8 rounded-2xl border border-black/10 bg-[#FBF8F2] px-5 py-5">
-            <h2 className="serif text-2xl text-black">How it works</h2>
+          <div className="mt-8 rounded-2xl border border-black/10 bg-white px-5 py-8 text-center shadow-[0_18px_50px_rgba(0,0,0,0.05)]">
+            <p className="sans text-sm tracking-[0.18em] uppercase text-black/40">
+              Private consultation access
+            </p>
 
-            <div className="mt-4 space-y-3 sans text-[15px] leading-[1.8] text-black/70">
-              <p>Purchase your standalone consultation below.</p>
-              <p>
-                After checkout, we’ll email you a short intake form so we can
-                understand your situation before the call.
-              </p>
-              <p>
-                Once your form is reviewed, we’ll send your private booking link
-                by email.
-              </p>
-              <p>
-                Your Calendly link is not public and is only shared with paid
-                clients after onboarding.
-              </p>
+            <h2 className="serif mt-3 text-3xl text-black">Book your call</h2>
+
+            <p className="mx-auto mt-3 max-w-xl sans text-[15px] leading-[1.8] text-black/60">
+              After purchase, you’ll receive a private onboarding form. Once we
+              review it, we’ll send your private consultation booking link by
+              email.
+            </p>
+
+            <p className="mx-auto mt-4 max-w-xl rounded-2xl border border-black/10 bg-[#FBF8F2] px-4 py-3 sans text-[14px] leading-[1.75] text-black/65">
+              Buy only if you are already a Nomadissimi client of at least one
+              of our existing packages. Purchases made by individuals or
+              businesses who are not existing Nomadissimi package clients may be
+              declined and refunded.
+            </p>
+
+            <div className="mt-8 flex justify-center">
+              <CheckoutButton
+                plan={PRODUCTS.generalConsultation.label}
+                priceId={PRODUCTS.generalConsultation.priceId}
+                className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-7 py-3.5 text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] transition hover:bg-[#3E4E38]"
+                label={
+                  <span className="flex flex-col items-center text-center">
+                    <span className="serif text-[22px] font-medium tracking-[0.03em] leading-tight">
+                      Buy Standalone Consultation
+                    </span>
+                  </span>
+                }
+              />
+            </div>
+
+            <p className="mt-5 sans text-sm text-black/45">
+              You’ll receive your onboarding form immediately after purchase.
+            </p>
+
+            <div className="mt-6 flex justify-center">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-6 py-3 text-black/70 transition hover:bg-[#FBF8F2] hover:text-black"
+              >
+                Need help first?
+              </Link>
             </div>
           </div>
 
@@ -74,59 +102,6 @@ export default function BookPage() {
                 </Link>
                 .
               </p>
-            </div>
-          </div>
-
-          <div className="mt-8 rounded-2xl border border-black/10 bg-white px-5 py-8 text-center shadow-[0_18px_50px_rgba(0,0,0,0.05)]">
-            <p className="sans text-sm tracking-[0.18em] uppercase text-black/40">
-              Private consultation access
-            </p>
-
-            <h2 className="serif mt-3 text-3xl text-black">
-              Purchase your consultation
-            </h2>
-
-            <p className="mx-auto mt-3 max-w-xl sans text-[15px] leading-[1.8] text-black/60">
-              Ideal for existing package clients who need focused paid guidance
-              outside a package, including standalone consultations, bonus
-              calls, extra support, or one-off strategy help. Subject to
-              availability and approval.
-            </p>
-
-            <p className="mx-auto mt-4 max-w-xl rounded-2xl border border-black/10 bg-[#FBF8F2] px-4 py-3 sans text-[14px] leading-[1.75] text-black/65">
-              Purchase only if you are already a Nomadissimi client. Purchases
-              made by individuals who are not existing Nomadissimi package
-              clients may be declined and refunded.
-            </p>
-
-            <div className="mt-8 flex justify-center">
-              <CheckoutButton
-                plan={PRODUCTS.generalConsultation.label}
-                priceId={PRODUCTS.generalConsultation.priceId}
-                className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-7 py-3.5 text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] transition hover:bg-[#3E4E38]"
-                label={
-                  <span className="flex flex-col items-center text-center">
-                    <span className="serif text-[22px] font-medium tracking-[0.03em] leading-tight">
-                      Purchase your consultation (only if you're already a
-                      client). Purchases made by people who are not already
-                      Nomadissimi package clients will be declined.
-                    </span>
-                  </span>
-                }
-              />
-            </div>
-
-            <p className="mt-5 sans text-sm text-black/45">
-              You’ll receive your onboarding form immediately after purchase.
-            </p>
-
-            <div className="mt-6 flex justify-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-6 py-3 text-black/70 transition hover:bg-[#FBF8F2] hover:text-black"
-              >
-                Need help first?
-              </Link>
             </div>
           </div>
 

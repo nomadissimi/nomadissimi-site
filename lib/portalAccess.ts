@@ -1,6 +1,7 @@
 import type { GuideTheme } from "@/lib/guide";
+import { getProductByPriceId } from "@/lib/products";
 
-export type ProductCode =
+export type LegacyProductCode =
   | "visa-clarity"
   | "visa-guidance"
   | "visa-concierge"
@@ -9,17 +10,9 @@ export type ProductCode =
   | "addon-settle"
   | "bundle";
 
-export const PRICE_ID_TO_PRODUCT: Record<string, ProductCode> = {
-  [process.env.NEXT_PUBLIC_PRICE_CLARITY!]: "visa-clarity",
-  [process.env.NEXT_PUBLIC_PRICE_GUIDANCE!]: "visa-guidance",
-  [process.env.NEXT_PUBLIC_PRICE_CONCIERGE!]: "visa-concierge",
-  [process.env.NEXT_PUBLIC_PRICE_RESIDENCE!]: "addon-residence",
-  [process.env.NEXT_PUBLIC_PRICE_PARTITA!]: "addon-partita",
-  [process.env.NEXT_PUBLIC_PRICE_SETTLE!]: "addon-settle",
-  [process.env.NEXT_PUBLIC_PRICE_BUNDLE!]: "bundle",
-};
+export type AccessCode = LegacyProductCode | GuideTheme;
 
-export const PRODUCT_PORTAL_ACCESS: Record<ProductCode, GuideTheme[]> = {
+const LEGACY_PRODUCT_PORTAL_ACCESS: Record<LegacyProductCode, GuideTheme[]> = {
   "visa-clarity": ["visa"],
   "visa-guidance": ["visa"],
   "visa-concierge": ["visa", "codice-fiscale"],
@@ -31,11 +24,20 @@ export const PRODUCT_PORTAL_ACCESS: Record<ProductCode, GuideTheme[]> = {
   bundle: ["residence", "tax", "codice-fiscale"],
 };
 
+const DIRECT_PORTAL_ACCESS: Record<GuideTheme, GuideTheme[]> = {
+  visa: ["visa"],
+  residence: ["residence"],
+  tax: ["tax"],
+  "codice-fiscale": ["codice-fiscale"],
+};
+
 export function getProductFromPriceId(
   priceId: string | null | undefined
-): ProductCode | null {
+): string | null {
   if (!priceId) return null;
-  return PRICE_ID_TO_PRODUCT[priceId] ?? null;
+
+  const product = getProductByPriceId(priceId);
+  return product?.key ?? null;
 }
 
 export function productCanAccessGuide(
@@ -44,18 +46,32 @@ export function productCanAccessGuide(
 ): boolean {
   if (!product) return false;
 
-  const access = PRODUCT_PORTAL_ACCESS[product as ProductCode];
-  if (!access) return false;
+  const directAccess = DIRECT_PORTAL_ACCESS[product as GuideTheme];
+  if (directAccess) {
+    return directAccess.includes(guideTheme);
+  }
 
-  return access.includes(guideTheme);
+  const legacyAccess =
+    LEGACY_PRODUCT_PORTAL_ACCESS[product as LegacyProductCode];
+  if (legacyAccess) {
+    return legacyAccess.includes(guideTheme);
+  }
+
+  return false;
 }
 
 export function getGuideAccessFromProducts(products: string[]): GuideTheme[] {
   const set = new Set<GuideTheme>();
 
   for (const product of products) {
-    const guides = PRODUCT_PORTAL_ACCESS[product as ProductCode] ?? [];
-    for (const guide of guides) {
+    const directAccess = DIRECT_PORTAL_ACCESS[product as GuideTheme] ?? [];
+    for (const guide of directAccess) {
+      set.add(guide);
+    }
+
+    const legacyAccess =
+      LEGACY_PRODUCT_PORTAL_ACCESS[product as LegacyProductCode] ?? [];
+    for (const guide of legacyAccess) {
       set.add(guide);
     }
   }
