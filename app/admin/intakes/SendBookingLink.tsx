@@ -6,12 +6,14 @@ import { useState } from "react";
 export default function SendBookingLink({
   intakeId,
   clientEmail,
+  initialBookingUrl = "",
 }: {
   intakeId: string;
   clientEmail: string;
+  initialBookingUrl?: string | null;
 }) {
   const router = useRouter();
-  const [bookingUrl, setBookingUrl] = useState("");
+  const [bookingUrl, setBookingUrl] = useState(initialBookingUrl ?? "");
   const [sending, setSending] = useState(false);
 
   async function handleSend() {

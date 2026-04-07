@@ -191,9 +191,33 @@ export default async function AdminIntakesPage({
 
                     <LongInfo label="Additional notes">{intake.notes}</LongInfo>
 
+                    {intake.booking_link_url ? (
+                      <div className="rounded-2xl border border-black/10 bg-white px-4 py-4">
+                        <p className="mb-2 sans text-xs uppercase tracking-[0.16em] text-black/40">
+                          Booking link sent
+                        </p>
+
+                        <a
+                          href={intake.booking_link_url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="block break-all sans text-[15px] leading-[1.7] text-[#4B5D44] underline underline-offset-4"
+                        >
+                          {intake.booking_link_url}
+                        </a>
+
+                        <p className="mt-3 sans text-sm text-black/45">
+                          {intake.booking_link_sent_at
+                            ? `Sent on ${new Date(intake.booking_link_sent_at).toLocaleString()}`
+                            : "Sent time unavailable"}
+                        </p>
+                      </div>
+                    ) : null}
+
                     <SendBookingLink
                       intakeId={intake.id}
                       clientEmail={intake.email}
+                      initialBookingUrl={intake.booking_link_url}
                     />
                   </div>
                 </article>

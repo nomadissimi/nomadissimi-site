@@ -58,7 +58,11 @@ export async function POST(req: Request) {
 
     const { error: updateError } = await supabaseAdmin
       .from("client_intakes")
-      .update({ status: "booking link sent" })
+      .update({
+        status: "booking link sent",
+        booking_link_url: bookingUrl,
+        booking_link_sent_at: new Date().toISOString(),
+      })
       .eq("id", intakeId);
 
     if (updateError) {

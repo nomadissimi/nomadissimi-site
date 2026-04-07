@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   priceId: string;
@@ -16,6 +16,16 @@ export default function CheckoutButton({
   label,
 }: Props) {
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const resetLoading = () => setLoading(false);
+
+    window.addEventListener("pageshow", resetLoading);
+
+    return () => {
+      window.removeEventListener("pageshow", resetLoading);
+    };
+  }, []);
 
   const onClick = async () => {
     try {
