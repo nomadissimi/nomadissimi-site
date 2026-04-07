@@ -20,12 +20,12 @@ export default function BlogIndexPage() {
           NOMADISSIMI JOURNAL
         </p>
         <h1 className="serif text-4xl md:text-5xl font-semibold mt-3">
-          Italy, unfiltered.
+          Italy with no filters.
         </h1>
         <div className="mt-6 h-px w-44 mx-auto bg-gradient-to-r from-transparent via-[#C9A86A]/70 to-transparent" />
         <p className="sans mt-6 text-[#2B2B2B]/75 text-[17px] md:text-[18px] leading-relaxed">
-          Practical, boutique guidance for digital nomads who want the dream —
-          without the bureaucracy spiral.
+          Practical, boutique guidance for digital nomads who want the Italian
+          dream but without the bureaucracy spiral.
         </p>
       </div>
 
