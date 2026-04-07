@@ -2,7 +2,7 @@ import Stripe from "stripe";
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { getProductFromPriceId } from "@/lib/portalAccess";
-import { sendPortalAccessEmail } from "@/lib/email";
+import { sendPortalAccessEmail } from "@/lib/email/sendPortalAccessEmail";
 
 
 export const runtime = "nodejs";
