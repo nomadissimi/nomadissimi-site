@@ -584,7 +584,7 @@ export function GuideBigSis({
     <div className="relative my-8 rounded-[28px] border border-[#E7D7C7] bg-gradient-to-br from-[#FFFDF8] via-[#FFF8F2] to-[#FFF3EA] px-5 py-5 shadow-[0_14px_30px_rgba(187,140,92,0.08)]">
       <div className="absolute -top-3 left-6 h-6 w-6 rounded-full border border-[#E7D7C7] bg-[#FFF8F2]" />
       <div className="absolute -top-1 left-12 h-4 w-4 rounded-full border border-[#E7D7C7] bg-[#FFF8F2]" />
-      <div className="absolute top-4 right-5 text-[18px] opacity-60">☁️</div>
+      <div className="absolute top-4 right-5 text-[18px] opacity-60">✈️</div>
 
       <div className="sans text-xs tracking-[0.18em] uppercase text-[#A06A4B]">
         {title}

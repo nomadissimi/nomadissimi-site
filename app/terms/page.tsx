@@ -66,7 +66,15 @@ export default function TermsPage() {
             materials, or communications constitutes legal advice, and nothing
             creates an attorney–client relationship. Where legal advice is
             required, clients should consult a qualified and licensed
-            professional.
+            professional. We offer tax suggestions, but we are not accountants
+            who will set up your tax activity. You understand we offer
+            suggestions based on our experience and research, but we are not
+            responsible for the tax implications of your decisions. You are
+            responsible for deadlines, tax filings, and any tax-related
+            obligations. We are not liable for any tax consequences resulting
+            from your actions or inactions. You should consult a qualified tax
+            professional for personalized advice regarding your specific
+            situation.
           </p>
         </section>
 

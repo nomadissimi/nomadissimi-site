@@ -991,15 +991,15 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   bullets={[
                     <>
                       <strong>
-                        Private access to the Nomadissimi Visa Portal
-                      </strong>{" "}
-                      with structured guidance on the full visa process.
-                    </>,
-                    <>
-                      <strong>
                         📞 45-minute personalized strategy consultation
                       </strong>{" "}
                       to review your case, timing, and application direction.
+                    </>,
+                    <>
+                      <strong>
+                        Private access to the Nomadissimi Visa Portal
+                      </strong>{" "}
+                      with structured guidance on the full visa process.
                     </>,
                     <>
                       <strong>Professional document review</strong>

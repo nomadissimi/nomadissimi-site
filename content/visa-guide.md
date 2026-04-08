@@ -2497,8 +2497,8 @@ _Walk into that appointment with a smile. You are ready. We are cheering you on.
 
 **Benvenuti in Italia. Vi aspettiamo!**
 
-# **Chapter 22 Nomadissimi contacts**
+# **Next Steps Playbook**
 
 If one document is confusing or feels "impossible," or if you just want that extra layer of safety, we are here.
 
-If you purchased a package with a consultation, we go over key things in our private call. If you'd like to book a separate call, it may be booked for a fee in the portal below:
+If you purchased a package with a consultation, we go over key things in our private call. If you'd like to book a separate call, it may be booked for a fee in the portal below: https://www.nomadissimi.com/book 
