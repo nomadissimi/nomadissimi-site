@@ -611,7 +611,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 lived, local, and proven. Big agencies treat you like a generic
                 case number. We treat you like family moving into our
                 neighborhood.
-                <br> </br>
+                <br />
                 We believe relocation support should feel clear, professional,
                 and respectful. Nomadissimi welcomes clients of all backgrounds,
                 orientations, and identities. You are safe here.
