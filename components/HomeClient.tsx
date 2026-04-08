@@ -225,8 +225,11 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 <p className="sans mt-4 text-lg/7 text-[#2B2B2B]/80">
                   Nomadissimi is the specialized relocation agency for digital
                   nomads, remote workers, and online freelancers who want{" "}
-                  <em>la dolce vita</em>... minus the Italian bureaucracy
-                  nightmare.
+                  <em>la dolce vita</em>
+                  without drowning in Italian bureaucracy. We combine private
+                  member portals, clear step-by-step guidance, and personalized
+                  support so your move feels structured, calm, and genuinely
+                  possible.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-row">
@@ -275,8 +278,8 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                         priority
                       />
                     }
-                    title="Clear checklists"
-                    desc="What you need, HOW to get it, and what others don't tell you."
+                    title="Private member portals"
+                    desc="Structured guidance, resources, and next steps in an interactive, organized way."
                   />
 
                   <Feature
@@ -289,8 +292,8 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                         className="h-7 w-7"
                       />
                     }
-                    title="More than the visa"
-                    desc="Insider tips and add-ons to settle in Italy like a pro: from taxes to daily life."
+                    title="Beyond the visa"
+                    desc="Support for real life in Italy too: residence, taxes, codice fiscale, and settling in well."
                   />
 
                   <Feature
@@ -303,8 +306,8 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                         className="h-7 w-7"
                       />
                     }
-                    title="Done-with-you tools"
-                    desc="Trackers and templates to ensure you're ready."
+                    title="Step-by-step structure"
+                    desc="Clear roadmaps, practical tools, and guidance that reduce overwhelm."
                   />
 
                   <Feature
@@ -608,11 +611,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 That’s why our guidance isn’t theoretical or abstract. It’s
                 lived, local, and proven. Big agencies treat you like a generic
                 case number. We treat you like family moving into our
-                neighborhood. 
-                <br>{" "} </br> 
-                We believe relocation support should feel clear,
-                professional, and respectful. Nomadissimi welcomes clients of all
-                backgrounds, orientations, and identities. You are safe here.
+                neighborhood.
+                <br> </br>
+                We believe relocation support should feel clear, professional,
+                and respectful. Nomadissimi welcomes clients of all backgrounds,
+                orientations, and identities. You are safe here.
                 {/* Baby luxe divider */}
                 <hr className="my-8 border-0 h-[1px] bg-gradient-to-r from-transparent via-[#C8A86B]/40 to-transparent" />
               </p>
@@ -901,12 +904,19 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             </FadeIn>
             <FadeIn delay={0.05}>
               <p className="sans text-[#2B2B2B]/70 mt-4 md:mt-3">
-                How much support would you like on your journey to Italy?
+                From self-guided clarity to high-touch private support, each
+                option is designed to move you forward with more confidence and
+                less chaos.
               </p>
               <p className="sans text-[#2B2B2B]/70 mt-2 md:mt-1">
                 Let’s turn the dream into a clear, confident plan
               </p>
             </FadeIn>
+            <p className="sans text-sm md:text-base text-[#2B2B2B]/60 mt-3 italic">
+              Your support can include private digital portals, structured
+              roadmaps, professional review, and personalized consultations
+              depending on the level you choose.
+            </p>
             <p className="sans text-sm md:text-base text-[#2B2B2B]/70 mt-1 italic">
               ✨ Special pricing for a limited time ✨
             </p>
@@ -923,24 +933,22 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   bullets={[
                     <>
                       <strong>
-                        The Nomadissimi Digital Nomad Visa Master Guide:{" "}
-                      </strong>
-                      our best-selling comprehensive manual covering
-                      eligibility, documents (and how to obtain them), consulate
-                      expectations, and what each step of the process actually
-                      looks like in real life. This is our 60+ page, long-form
-                      instructional manual, not an ambiguous quick doc.
+                        Private access to the Nomadissimi Visa Portal:
+                      </strong>{" "}
+                      a structured self-guided experience covering eligibility,
+                      documents, consulate expectations, how to obtain each
+                      document, and more.
                     </>,
                     <>
-                      <strong>Clear document roadmap</strong> to keep you on
-                      track with everything you need.
+                      <strong>Clear document roadmap</strong> so you know what
+                      to gather, in what order, and how to stay on track.
                     </>,
 
                     <>
                       <strong>"Next Steps"</strong> Playbook
                     </>,
                   ]}
-                  bestFor="For independent nomads who want a clear start."
+                  bestFor="Best for independent applicants who want a calm, self-guided start with real structure."
                 >
                   <CheckoutButton
                     plan="Clarity"
@@ -983,43 +991,40 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   bullets={[
                     <>
                       <strong>
-                        📞 45-min personalized strategy consultation call
+                        Private access to the Nomadissimi Visa Portal
                       </strong>{" "}
-                      with our team
-                    </>,
-                    <>
-                      <strong>Professional document review</strong>
+                      with structured guidance on eligibility, documents,
+                      timing, and what the process actually looks like in real
+                      life.
                     </>,
                     <>
                       <strong>
-                        The Nomadissimi Digital Nomad Visa Master Guide:{" "}
-                      </strong>
-                      our best-selling comprehensive manual covering
-                      eligibility, documents (and how to obtain them), consulate
-                      expectations, and what each step of the process actually
-                      looks like in real life. This is our 60+ page, long-form
-                      instructional manual, not an ambiguous quick doc.
-                    </>,
-                    <>
-                      <strong>Clear document roadmap</strong> to keep you on
-                      track with everything you need.
-                    </>,
-
-                    <>
-                      <strong>30 days</strong> of follow-up email support for
-                      quick clarifications
-                    </>,
-                    <>
-                      <strong>"Next Steps"</strong> Playbook
-                    </>,
-                    <>
-                      <strong>
-                        10% off our Residence Registration add-on,
+                        📞 45-minute personalized strategy consultation
                       </strong>{" "}
-                      for a smooth landing after your visa is granted.
+                      to review your case, timing, and application direction.
+                    </>,
+                    <>
+                      <strong>Professional document review</strong> so you can
+                      catch issues before they slow you down.
+                    </>,
+                    <>
+                      <strong>Clear document roadmap</strong> to keep you
+                      organized and moving with confidence.
+                    </>,
+                    <>
+                      <strong>30 days of follow-up email support</strong> for
+                      clarifications as you move through the process.
+                    </>,
+                    <>
+                      <strong>Next Steps playbook</strong> so you know what to
+                      do after each stage.
+                    </>,
+                    <>
+                      <strong>10% off our Residence Registration add-on</strong>{" "}
+                      for a smoother landing once your visa is approved.
                     </>,
                   ]}
-                  bestFor="Applicants who want reassurance and structure."
+                  bestFor="Best for applicants who want private portal access plus professional reassurance and review."
                 >
                   <CheckoutButton
                     plan="Guidance"
@@ -1061,53 +1066,49 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   bullets={[
                     <>
                       <strong>
-                        📞 45-min deep-dive personalized strategy consultation
-                        call
+                        📞 45-minute deep-dive strategy consultation
                       </strong>{" "}
-                      with our team
-                    </>,
-                    <>
-                      <strong>Comprehensive document review</strong> with
-                      detailed feedback
-                    </>,
-                    <>
-                      <strong>📞 Additional 45-min refinement call</strong> +
-                      dedicated mock <strong>interview coaching</strong> for
-                      your consulate appointment
+                      tailored to your case and timeline.
                     </>,
                     <>
                       <strong>
-                        The Nomadissimi Digital Nomad Visa Master Guide:{" "}
-                      </strong>
-                      our best-selling comprehensive manual covering
-                      eligibility, documents (and how to obtain them), consulate
-                      expectations, and what each step of the process actually
-                      looks like in real life. This is our 60+ page, long-form
-                      instructional manual, not an ambiguous quick doc.
+                        Private access to the Nomadissimi Visa Portal
+                      </strong>{" "}
+                      with our full step-by-step digital guidance.
                     </>,
                     <>
-                      <strong>Clear document roadmap</strong> to keep you on
-                      track with everything you need.
+                      <strong>Early access to the Codice Fiscale Portal</strong>{" "}
+                      so you can understand one of the first practical pieces of
+                      life in Italy.
                     </>,
 
                     <>
-                      <strong>60 days</strong> of follow-up email support from
-                      our team & <strong>PRIORITY</strong> response
+                      <strong>📞 Additional 45-minute refinement call</strong>{" "}
+                      plus
+                      <strong> interview coaching</strong> for your consulate
+                      appointment.
                     </>,
                     <>
-                      <strong>Codice Fiscale</strong> breakdown
+                      <strong>Comprehensive document review</strong> with more
+                      detailed oversight and feedback.
                     </>,
                     <>
-                      <strong>"Next Steps"</strong> Playbook
+                      <strong>60 days of follow-up email support</strong> with
+                      priority response from our team.
                     </>,
                     <>
                       <strong>
-                        15% off our Residence Registration add-on,
+                        Clear document roadmap + Next Steps playbook
                       </strong>{" "}
-                      for a smooth landing after your visa is granted.
+                      so you feel supported before, during, and after the key
+                      stages.
+                    </>,
+                    <>
+                      <strong>15% off our Residence Registration add-on</strong>{" "}
+                      for a soft landing after approval.
                     </>,
                   ]}
-                  bestFor="Nomads who want a trusted partner at detailed professional oversight."
+                  bestFor="Best for clients who want the most hands-on, high-touch Nomadissimi experience."
                 >
                   <CheckoutButton
                     plan="Concierge"
@@ -1195,7 +1196,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     <strong>
                       This is what makes your stay in Italy official and legal!
                     </strong>{" "}
-                    ⚠️ Get set up in Italy as a resident smoothly.{" "}
+                    ⚠️ Get guided support for the residence steps that usually
+                    confuse newcomers most.{" "}
                     <em>
                       Permesso di soggiorno, Comune registration, Italian ID
                       card...
@@ -1262,12 +1264,13 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
                     <strong>
-                      Italy has tax opportunities most newcomers don’t know
-                      exist.
+                      Italy has tax opportunities most newcomers miss at the
+                      start.
                     </strong>{" "}
-                    Discover the different tax regimes. Choosing the right path
-                    from the start can mean keeping thousands more in your
-                    pocket.{" "}
+                    Get clearer guidance on regimes, structure, and practical
+                    setup so you can make informed decisions early. Choosing the
+                    right path from the start can mean keeping thousands more in
+                    your pocket.{" "}
                   </span>
                 }
                 items={[
@@ -1573,7 +1576,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               time. Give yourself the chance to see what life feels like when
               you stop waiting for it to start. You can keep Googling and
               getting frustrated… or you can get on a plane and start enjoying
-              your Italian dream.
+              your Italian dream. You’re in good hands.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <a

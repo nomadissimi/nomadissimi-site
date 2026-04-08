@@ -559,7 +559,7 @@ You simply hold the card to the back of your phone (using NFC), type in your PIN
 
 <GuideDecisionBox title="CIE vs SPID">
 
-If you have spent any time on Italian expat forums, you have probably seen people stressing out about getting their _SPID,_ which stands for _Sistema Pubblico di Identità Digitale_ (public system of digital identity).
+If you have spent any time on online forums, you have probably seen people stressing out about getting their _SPID,_ which stands for _Sistema Pubblico di Identità Digitale_ (public system of digital identity).
 
 _Here is the best news:_ **you can completely ignore it\! SPID and CIE do the exact same job.**  
 They are both simply digital keys used to log into Italian government portals.

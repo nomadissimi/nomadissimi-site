@@ -268,7 +268,7 @@ _Understanding the Regime Ordinario is essential because it is the default trap 
 
 If you move to Italy and do not specifically set up a special tax regime, the Regime Ordinario is what you will get stuck with by default. It is the standard, progressive tax system that applies to the vast majority of Italian taxpayers.
 
-For freelancers (Digital Nomads), this means your _commercialista_ (accountant) opens a standard Partita IVA for you. For employees (Remote Workers), this is basically the standard tax bracket system that your company applies to your monthly paycheck. It is called "ordinary" because it is the ordinary way Italy taxes people. **But for expats moving to Italy for a better life, it is definitely not the optimal choice.**
+For freelancers (Digital Nomads), this means your _commercialista_ (accountant) opens a standard Partita IVA for you. For employees (Remote Workers), this is basically the standard tax bracket system that your company applies to your monthly paycheck. It is called "ordinary" because it is the ordinary way Italy taxes people. **But for internationals moving to Italy for a better life, it is definitely not the optimal choice.**
 
 Under this regime, you are dealing with three main layers of taxation:
 
