@@ -612,6 +612,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 case number. We treat you like family moving into our
                 neighborhood.
                 <br />
+                <br />
                 We believe relocation support should feel clear, professional,
                 and respectful. Nomadissimi welcomes clients of all backgrounds,
                 orientations, and identities. You are safe here.
@@ -911,10 +912,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 Let’s turn the dream into a clear, confident plan
               </p>
             </FadeIn>
-            <p className="sans text-sm md:text-base text-[#2B2B2B]/60 mt-3 italic">
-              Your support can include private digital portals, structured
-              roadmaps, professional review, and personalized consultations
-              depending on the level you choose.
+            <p className="sans mt-3 max-w-3xl mx-auto px-4 text-[15px] md:text-[16px] leading-[1.75] text-[#2B2B2B]/55">
+              Depending on the level you choose, your support may include
+              private digital portals, structured roadmaps, professional review,
+              and personalized consultations.
             </p>
             <p className="sans text-sm md:text-base text-[#2B2B2B]/70 mt-1 italic">
               ✨ Special pricing for a limited time ✨
@@ -992,9 +993,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       <strong>
                         Private access to the Nomadissimi Visa Portal
                       </strong>{" "}
-                      with structured guidance on eligibility, documents,
-                      timing, and what the process actually looks like in real
-                      life.
+                      with structured guidance on the full visa process.
                     </>,
                     <>
                       <strong>
@@ -1003,20 +1002,17 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       to review your case, timing, and application direction.
                     </>,
                     <>
-                      <strong>Professional document review</strong> so you can
-                      catch issues before they slow you down.
+                      <strong>Professional document review</strong>
                     </>,
                     <>
                       <strong>Clear document roadmap</strong> to keep you
                       organized and moving with confidence.
                     </>,
                     <>
-                      <strong>30 days of follow-up email support</strong> for
-                      clarifications as you move through the process.
+                      <strong>30 days of follow-up email support</strong>
                     </>,
                     <>
-                      <strong>Next Steps playbook</strong> so you know what to
-                      do after each stage.
+                      <strong>Next Steps playbook</strong>
                     </>,
                     <>
                       <strong>10% off our Residence Registration add-on</strong>{" "}
