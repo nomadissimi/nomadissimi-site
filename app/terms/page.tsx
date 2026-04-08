@@ -576,6 +576,18 @@ export default function TermsPage() {
           </p>
         </section>
 
+        {/* 20 */}
+        <section className="section-divider">
+          <h2 className="serif text-xl font-semibold mb-3">20. Safe space</h2>
+          <p>
+            Nomadissimi welcomes clients of all backgrounds and identities. We
+            lead with clarity, discretion, and respect to make this a safe space
+            for everyone. We do not tolerate discrimination, harassment, or
+            disrespectful behaviour of any kind. We are committed to providing
+            an inclusive and supportive environment for all parties involved.
+          </p>
+        </section>
+
         {/* Back */}
         <p className="pt-6">
           <Link href="/" className="underline">

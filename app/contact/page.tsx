@@ -106,10 +106,19 @@ export default function ContactPage() {
           <div className="h-px w-44 bg-gradient-to-r from-transparent via-[#C9A86A]/70 to-transparent" />
         </div>
 
-        <p className="sans mt-6 text-center text-[#2B2B2B]/75">
-          Tell us what questions you have, and we’ll point you to the right next
-          step.
-        </p>
+      <div className="mt-6 space-y-3 text-center">
+  <p className="sans text-[#2B2B2B]/75">
+    Tell us what questions you have, and we’ll point you to the right next
+    step.
+  </p>
+
+  <p className="sans text-sm leading-[1.8] text-[#2B2B2B]/55 max-w-2xl mx-auto">
+    Nomadissimi supports clients of all backgrounds and identities with
+    clarity, discretion, and respect.
+  </p>
+</div>
+
+
 
         {/* Form */}
         <div className="mt-10 border border-black/10 bg-white shadow-[0_18px_60px_rgba(0,0,0,0.06)]">

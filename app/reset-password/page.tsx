@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
+import PasswordField from "@/components/ui/PasswordField";
 
 export default function ResetPasswordPage() {
   const router = useRouter();
@@ -64,7 +65,8 @@ export default function ResetPasswordPage() {
         </h1>
 
         <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
-          Set a new password for your portal account.
+          Set a new password for your portal account. Use something secure that
+          you can comfortably retype.
         </p>
 
         {checkingSession ? (
@@ -73,20 +75,17 @@ export default function ResetPasswordPage() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-            <div>
-              <label className="mb-2 block sans text-sm text-black/70">
-                New password
-              </label>
-              <input
-                type="password"
-                required
-                minLength={8}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                placeholder="At least 8 characters"
-              />
-            </div>
+            <PasswordField
+              label="New password"
+              name="password"
+              value={password}
+              onChange={setPassword}
+              autoComplete="new-password"
+              required
+              minLength={8}
+              placeholder="At least 8 characters"
+              helperText="You can reveal your password if you want to double-check your typing before saving."
+            />
 
             {error ? (
               <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">

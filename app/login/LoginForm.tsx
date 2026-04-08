@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
+import PasswordField from "@/components/ui/PasswordField";
 
 export default function LoginForm() {
   const searchParams = useSearchParams();
@@ -44,14 +45,13 @@ export default function LoginForm() {
   return (
     <>
       <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
-        Access your private library, guides, and portal content.
+        Access your private library, guides, and portal content. Use the same
+        email address you used at checkout whenever possible.{" "}
       </p>
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         <div>
-          <label className="mb-2 block sans text-sm text-black/70">
-            Email
-          </label>
+          <label className="mb-2 block sans text-sm text-black/70">Email</label>
           <input
             type="email"
             required
@@ -62,19 +62,16 @@ export default function LoginForm() {
           />
         </div>
 
-        <div>
-          <label className="mb-2 block sans text-sm text-black/70">
-            Password
-          </label>
-          <input
-            type="password"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-            placeholder="Your password"
-          />
-        </div>
+        <PasswordField
+          label="Password"
+          name="password"
+          value={password}
+          onChange={setPassword}
+          autoComplete="current-password"
+          required
+          placeholder="Your password"
+          helperText="You can reveal your password if you want to double-check your typing."
+        />
 
         {error ? (
           <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
@@ -107,10 +104,9 @@ export default function LoginForm() {
           href="/forgot-password"
           className="sans text-sm text-black/55 transition hover:text-black/75"
         >
-          Forgot your password?
+          Forgot your password? No worries! Click here to reset it.
         </Link>
       </div>
     </>
   );
 }
-

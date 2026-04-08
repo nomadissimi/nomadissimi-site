@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
+import PasswordField from "@/components/ui/PasswordField";
 
 export default function CreateAccountForm() {
   const searchParams = useSearchParams();
@@ -74,35 +75,28 @@ export default function CreateAccountForm() {
           />
         </div>
 
-        <div>
-          <label className="mb-2 block sans text-sm text-black/70">
-            Password
-          </label>
-          <input
-            type="password"
-            required
-            minLength={8}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-            placeholder="At least 8 characters"
-          />
-        </div>
+        <PasswordField
+          label="Password"
+          name="password"
+          value={password}
+          onChange={setPassword}
+          autoComplete="new-password"
+          required
+          minLength={8}
+          placeholder="At least 8 characters"
+          helperText="Use at least 8 characters and choose something you can comfortably retype."
+        />
 
-        <div>
-          <label className="mb-2 block sans text-sm text-black/70">
-            Confirm password
-          </label>
-          <input
-            type="password"
-            required
-            minLength={8}
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-            placeholder="Repeat your password"
-          />
-        </div>
+        <PasswordField
+          label="Confirm password"
+          name="confirmPassword"
+          value={confirmPassword}
+          onChange={setConfirmPassword}
+          autoComplete="new-password"
+          required
+          minLength={8}
+          placeholder="Repeat your password"
+        />
 
         {error ? (
           <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
@@ -112,8 +106,8 @@ export default function CreateAccountForm() {
 
         {success ? (
           <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-            Account created. Check your email to confirm your address, then log
-            in.
+            Your account has been created successfully! Just one more step: check your email to confirm your
+            address, then log in when you’re ready.
           </div>
         ) : null}
 

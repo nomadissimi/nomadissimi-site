@@ -598,15 +598,18 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
               {/* unified copy size */}
               <p className="sans text-[18px] md:text-[19px] leading-[1.85] text-[#2B2B2B]/90">
-                We are a specialized agency built by two worlds: expats who
-                successfully made the move to Italy and Italian locals who know
-                the systems, the culture, and the shortcuts...{" "}
+                We are a specialized agency built by two worlds: international
+                professionals who successfully made the move to Italy and
+                Italian locals who know the systems, the culture, and the
+                shortcuts...{" "}
                 <strong>
                   we’ve lived both sides: the dreamer and the insider.
                 </strong>{" "}
-                That’s why our guidance isn’t theoretical. It’s lived, local,
+                That’s why our guidance isn’t theoretical or abstract. It’s lived, local,
                 and proven. Big agencies treat you like a generic case number.
-                We treat you like family moving into our neighborhood.
+                We treat you like family moving into our neighborhood. We
+                believe relocation support should feel clear, respectful, and
+                safe. Nomadissimi welcomes clients of all backgrounds and identities.
                 {/* Baby luxe divider */}
                 <hr className="my-8 border-0 h-[1px] bg-gradient-to-r from-transparent via-[#C8A86B]/40 to-transparent" />
               </p>
@@ -1683,6 +1686,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
     </>
   );
 }
+
 
 // Elegant olive CTA for the package cards (smaller than hero)
 const packagesCta =
