@@ -19,11 +19,11 @@ _Relax, we’ve got you covered also for this._
 
 <GuideSoftTeal title="What this code really is">
 
-Think of the Codice Fiscale as Italy’s way of saying, “We see you, we acknowledge you exist, and now you can actually do business here.” Without it, you are basically invisible to the Italian administrative system. **With it, you unlock the ability to live like a real resident.**
+Think of the Codice Fiscale as Italy’s way of saying, “We see you, we acknowledge you exist, and now you can do business here.” Without it, you are basically invisible to the Italian administrative system. **With it, you unlock the ability to live like a real resident.**
 
 </GuideSoftTeal>
 
-The Codice Fiscale is an absolute must-have to live in Italy, but here’s the catch: in many cases, you might actually need it _before_ your visa is even approved (like when you are trying to secure your rental contract).
+The Codice Fiscale is an absolute must-have to live in Italy, but here’s the catch: in many cases, you might need it _before_ your visa is even approved (like when you are trying to secure your rental contract).
 
 <GuideDecisionBox title="What you need to know right now">
 
@@ -33,11 +33,11 @@ For now, just know that there are a few different moments in your timeline when 
 
 <GuideQuickFacts title="What this portal will help you understand">
 
-- What a Codice Fiscale actually is
+- What a Codice Fiscale is
 - Why Italy asks for it everywhere
 - When in your timeline you can request it
 - The different ways to obtain it
-- Where you will actually keep it once it exists
+- Where you will keep it once it exists
 
 </GuideQuickFacts>
 
@@ -141,7 +141,7 @@ Also, **having a codice fiscale does NOT automatically create any tax obligation
 
 If you are wondering why we are making such a big deal out of a 16-character code, it is because your Codice Fiscale is the master key to your new life in Italy. The Italian system is incredibly interconnected, and this code is the thread that ties all your legal, financial, and daily activities together.
 
-Here is what it actually unlocks for you on a practical level.
+Here is what it unlocks for you on a practical level.
 
 ## **1. Setting Up Your Life (Housing, Banking, and Bills)**
 
@@ -168,7 +168,7 @@ Whenever you go to a private doctor, book a specialist visit, see a psychologist
 
 <GuideBigSis title="A quick side note on Italian healthcare">
 
-When we talk about paying for “medical expenses” in Italy, we need to clarify what that actually means, because it is probably completely different from what you might be used to. If you are coming from the US and the idea of calling an ambulance gives you financial anxiety, you can officially let that go.
+When we talk about paying for “medical expenses” in Italy, we need to clarify what that means, because it is probably completely different from what you might be used to. If you are coming from the US and the idea of calling an ambulance gives you financial anxiety, you can officially let that go.
 
 If you are in a genuine emergency and an ambulance takes you to the public hospital ER (_Pronto Soccorso_), that life-saving care (the ride, the IV, the doctors, the days in the hospital) is generally free of charge, even for foreigners. **Zero outrageous bills in the mail.**
 
@@ -321,7 +321,7 @@ Let's walk through them, starting with our absolute favorite strategy, down to t
 <GuideDecisionBox title="Our favorite route">
 
 The earliest time to secure your _Codice Fiscale_ is while you are still sitting comfortably in your home country.  
-**You can actually request it directly from the Italian Consulate or Embassy that handles your jurisdiction, ideally even before your visa application appointment.**  
+**You can request it directly from the Italian Consulate or Embassy that handles your jurisdiction, ideally even before your visa application appointment.**  
 _This is the route we recommend in most cases._
 
 </GuideDecisionBox>
