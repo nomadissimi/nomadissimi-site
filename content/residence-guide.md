@@ -105,9 +105,11 @@ Let's not waste any time and get straight into your very first mission.
 
 # **Chapter 3 Step 1: The Poste Italiane Kit**
 
-<GuideCard>
-  subtitle="Remember one of our golden rules: you must complete this step WITHIN 8 working days following your entry into Italy."
-<GuideCard>
+<GuideBlueNote title="Important timing rule">
+
+Remember one of our golden rules: you must complete this step WITHIN 8 working days following your entry into Italy.
+
+</GuideBlueNote>
 
 <NavyBadge>Step 1</NavyBadge>
 <GuideBadge>8 working days</GuideBadge>
@@ -245,8 +247,10 @@ We recommend taking some photocopies of that receipt, to be on the safe side. Ta
 # **Chapter 4 Step 2: The Questura Appointment (fingerprints & paperwork)**
 
 <GuideCard>
- By this step, you’ll have survived the Italian post office system (you’ll know what we mean), and you’ll be enjoying your best life in Italy with your super important post office receipt.
- <GuideCard>
+
+By this step, you’ll have survived the Italian post office system (you’ll know what we mean), and you’ll be enjoying your best life in Italy with your super important post office receipt.
+
+</GuideCard>
 
 <NavyBadge>Step 2</NavyBadge>
 <GuideBadge>Bring everything</GuideBadge>
