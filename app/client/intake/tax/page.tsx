@@ -54,7 +54,9 @@ export default function TaxIntakePage() {
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert("Something went wrong while submitting the form. Please try again.");
+      alert(
+        "Something went wrong while submitting the form. Please try again.",
+      );
     } finally {
       setSubmitting(false);
     }
@@ -187,10 +189,15 @@ export default function TaxIntakePage() {
             </section>
 
             <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
-              <h2 className="serif text-2xl text-black">Work and income context</h2>
+              <h2 className="serif text-2xl text-black">
+                Work and income context
+              </h2>
 
               <div className="mt-5 grid gap-5 md:grid-cols-2">
-                <Field label="Which best describes your current work setup?" required>
+                <Field
+                  label="Which best describes your current work setup?"
+                  required
+                >
                   <select
                     name="workSetup"
                     required
@@ -200,7 +207,7 @@ export default function TaxIntakePage() {
                     <option value="" disabled>
                       Select an option
                     </option>
-                    <option>Freelancer / self-employed</option>
+                    <option>Freelancer/self-employed</option>
                     <option>Remote employee</option>
                     <option>Business owner</option>
                     <option>Mixed income</option>
@@ -208,28 +215,12 @@ export default function TaxIntakePage() {
                   </select>
                 </Field>
 
-                <Field label="Current occupation / professional title" required>
+                <Field label="Current occupation - professional title" required>
                   <input
                     name="occupation"
                     required
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
-                </Field>
-
-                <Field label="Do you already have a Partita IVA?" required>
-                  <select
-                    name="partitaStatus"
-                    required
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Yes</option>
-                    <option>No</option>
-                    <option>I’m considering opening one</option>
-                  </select>
                 </Field>
 
                 <Field label="Estimated annual income range">
@@ -260,14 +251,18 @@ export default function TaxIntakePage() {
                     </option>
                     <option>EUR</option>
                     <option>USD</option>
-                    <option>Mixed currencies</option>
-                    <option>Crypto</option>
-                    <option>Other</option>
+                    <option>GBP</option>
+                    <option>Other fiat currencies</option>
+                    <option>Crypto (including stablecoins)</option>
+                    <option>More than one payment method</option>
                   </select>
                 </Field>
               </div>
 
-              <Field label="What is your main source of income?" className="mt-5">
+              <Field
+                label="What is your main source of income?"
+                className="mt-5"
+              >
                 <textarea
                   name="incomeContext"
                   rows={4}
@@ -311,22 +306,6 @@ export default function TaxIntakePage() {
                   </select>
                 </Field>
 
-                <Field label="Are you currently exploring a specific tax regime?">
-                  <select
-                    name="taxPath"
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Regime Forfettario</option>
-                    <option>Regime Impatriati</option>
-                    <option>Regime Ordinario</option>
-                    <option>Not sure</option>
-                  </select>
-                </Field>
-
                 <Field label="Are you receiving or planning to receive income in crypto?">
                   <select
                     name="cryptoIncome"
@@ -342,7 +321,10 @@ export default function TaxIntakePage() {
                   </select>
                 </Field>
 
-                <Field label="What is the main thing you want clarity on?" required>
+                <Field
+                  label="What is the main thing you want clarity on?"
+                  required
+                >
                   <select
                     name="mainNeed"
                     required
@@ -356,7 +338,7 @@ export default function TaxIntakePage() {
                     <option>Choosing a tax regime</option>
                     <option>Tax residency</option>
                     <option>Crypto taxation</option>
-                    <option>Deductibility / expenses</option>
+                    <option>Deductibility/expenses</option>
                     <option>All of the above</option>
                   </select>
                 </Field>
@@ -367,6 +349,10 @@ export default function TaxIntakePage() {
               <h2 className="serif text-2xl text-black">
                 Consultation priorities
               </h2>
+
+              <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
+                You can share as much or as little context as feels relevant.
+              </p>
 
               <div className="mt-5 space-y-5">
                 <Field
@@ -393,7 +379,7 @@ export default function TaxIntakePage() {
                   />
                 </Field>
 
-                <Field label="Is there anything important you want us to know before the call?">
+                <Field label="Is there anything else you'd like us to know before the call?">
                   <textarea
                     name="notes"
                     rows={4}
@@ -415,6 +401,11 @@ export default function TaxIntakePage() {
               <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
                 We review each submission personally before sending your private
                 scheduling link.
+              </p>
+
+              <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
+                {" "}
+                We'll be in touch soon. Looking forward to our session together!
               </p>
             </div>
           </form>
@@ -444,5 +435,3 @@ function Field({
     </div>
   );
 }
-
-

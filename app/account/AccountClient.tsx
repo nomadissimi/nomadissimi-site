@@ -126,7 +126,7 @@ export default function AccountClient({
 
     if (newPassword !== confirmPassword) {
       setLoadingPassword(false);
-      setPasswordError("Your passwords do not match.");
+      setPasswordError("Your passwords do not match yet.");
       return;
     }
 

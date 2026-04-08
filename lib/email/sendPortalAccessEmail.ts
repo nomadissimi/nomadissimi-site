@@ -10,25 +10,29 @@ export async function sendPortalAccessEmail(to: string, url: string) {
     },
   });
 
-  const subject = "Create your Nomadissimi portal account";
+const subject = "Your Nomadissimi Portal Access";
 
-  const html = renderEmailShell({
-    eyebrow: "Nomadissimi portal",
-    title: "Your portal is ready",
-    bodyHtml: `
-      <p style="margin:0 0 18px;">
-        Welcome in. Your purchase has been added to your Nomadissimi portal.
-      </p>
+const html = renderEmailShell({
+  eyebrow: "Nomadissimi portal",
+  title: "Your portal is ready",
+  bodyHtml: `
+    <p style="margin:0 0 18px;">
+      Your purchase has been added to your Nomadissimi portal.
+    </p>
 
-      <p style="margin:0;">
-        Click below to create your password and access your private library.
-      </p>
-    `,
-    ctaLabel: "Create your portal account",
-    ctaUrl: url,
-    footerNote:
-      "Use the same email address you used at checkout so your guides appear correctly in your private library.",
-  });
+    <p style="margin:0 0 18px;">
+      To access your private library, create your password using the secure link below.
+    </p>
+
+    <p style="margin:0;">
+      Once your account is set up, your available materials will appear automatically inside your portal.
+    </p>
+  `,
+  ctaLabel: "Create your portal account",
+  ctaUrl: url,
+  footerNote:
+    "For the smoothest setup, use the same email address you used at checkout.",
+});
 
   await transporter.sendMail({
     from: `Nomadissimi <${process.env.EMAIL_USER!}>`,

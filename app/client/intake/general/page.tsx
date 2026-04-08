@@ -54,7 +54,9 @@ export default function GeneralIntakePage() {
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert("Something went wrong while submitting the form. Please try again.");
+      alert(
+        "Something went wrong while submitting the form. Please try again.",
+      );
     } finally {
       setSubmitting(false);
     }
@@ -186,14 +188,16 @@ export default function GeneralIntakePage() {
             </section>
 
             <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
-              <h2 className="serif text-2xl text-black">Consultation context</h2>
+              <h2 className="serif text-2xl text-black">
+                Consultation context
+              </h2>
 
               <div className="mt-5 grid gap-5 md:grid-cols-2">
                 <Field label="What is this consultation mainly about?" required>
                   <input
                     name="consultationType"
                     required
-                    placeholder="e.g. extra visa support, form help, follow-up call"
+                    placeholder="ex: extra visa support, form help, follow-up call"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
@@ -201,7 +205,7 @@ export default function GeneralIntakePage() {
                 <Field label="Which Nomadissimi service or purchase does this relate to, if any?">
                   <input
                     name="relatedService"
-                    placeholder="e.g. Guidance package, Residence add-on"
+                    placeholder="ex: Guidance package, Residence add-on"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
@@ -210,16 +214,19 @@ export default function GeneralIntakePage() {
                   <input
                     name="currentStage"
                     required
-                    placeholder="e.g. researching, gathering documents, already in Italy"
+                    placeholder="ex: researching, gathering docs, already in Italy"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
 
-                <Field label="What outcome are you hoping for from this call?" required>
+                <Field
+                  label="What outcome are you hoping for from this call?"
+                  required
+                >
                   <input
                     name="callGoal"
                     required
-                    placeholder="e.g. clarity, troubleshooting, next steps"
+                    placeholder="ex: troubleshooting, next steps"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
@@ -230,7 +237,10 @@ export default function GeneralIntakePage() {
               <h2 className="serif text-2xl text-black">Support needed</h2>
 
               <div className="mt-5 space-y-5">
-                <Field label="Please describe the issue, question, or support you need" required>
+                <Field
+                  label="Please describe the issue, question, or support you need"
+                  required
+                >
                   <textarea
                     name="mainIssue"
                     required
@@ -239,25 +249,10 @@ export default function GeneralIntakePage() {
                   />
                 </Field>
 
-                <Field label="Have you already taken any steps on this issue?">
-                  <select
-                    name="stepsTaken"
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Yes</option>
-                    <option>No</option>
-                    <option>Partially</option>
-                  </select>
-                </Field>
-
                 <Field label="Is there a specific deadline or timing we should know about?">
                   <input
                     name="deadline"
-                    placeholder="e.g. appointment next week, move in June, urgent form deadline"
+                    placeholder="ex: appointment next week, move in June, urgent form deadline"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
@@ -266,23 +261,11 @@ export default function GeneralIntakePage() {
 
             <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
               <h2 className="serif text-2xl text-black">
-                Consultation priorities
+                Consultation comments
               </h2>
 
               <div className="mt-5 space-y-5">
-                <Field
-                  label="What are your top questions for this consultation?"
-                  required
-                >
-                  <textarea
-                    name="topQuestions"
-                    required
-                    rows={5}
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  />
-                </Field>
-
-                <Field label="Is there anything important you want us to know before the call?">
+                <Field label="Is there anything else about your specific context you'd like us to know before the call?">
                   <textarea
                     name="notes"
                     rows={4}
@@ -304,6 +287,11 @@ export default function GeneralIntakePage() {
               <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
                 We review each submission personally before sending your private
                 scheduling link.
+              </p>
+
+              <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
+                {" "}
+                We'll be in touch soon. Looking forward to our session together!
               </p>
             </div>
           </form>
@@ -333,5 +321,3 @@ function Field({
     </div>
   );
 }
-
-

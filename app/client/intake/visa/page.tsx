@@ -164,7 +164,7 @@ export default function VisaIntakePage() {
                   />
                 </Field>
 
-                <Field label="Current city of residence">
+                <Field label="Current city of residence" required>
                   <input
                     name="city"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
@@ -183,7 +183,7 @@ export default function VisaIntakePage() {
                   <input
                     name="citizenships"
                     required
-                    placeholder="e.g. United States, Canada"
+                    placeholder="(if multiple, separate with commas)"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
@@ -197,7 +197,7 @@ export default function VisaIntakePage() {
               </h2>
 
               <div className="mt-5 grid gap-5 md:grid-cols-2">
-                <Field label="Current occupation / professional title" required>
+                <Field label="Current occupation/professional title" required>
                   <input
                     name="occupation"
                     required
@@ -216,10 +216,32 @@ export default function VisaIntakePage() {
                       Select an option
                     </option>
                     <option>Digital nomad</option>
-                    <option>Freelancer / self-employed</option>
+                    <option>Freelancer/self-employed</option>
                     <option>Remote employee</option>
                     <option>Business owner</option>
                     <option>Other</option>
+                  </select>
+                </Field>
+
+                <Field
+                  label="What is your highest level of education?"
+                  required
+                >
+                  <select
+                    name="educationLevel"
+                    required
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>High school or equivalent diploma</option>
+                    <option>Associate degree</option>
+                    <option>Bachelor's degree</option>
+                    <option>Master's degree</option>
+                    <option>Doctoral degree</option>
+                    <option>Other (please specify in next question)</option>
                   </select>
                 </Field>
 
@@ -228,6 +250,22 @@ export default function VisaIntakePage() {
                     name="degreeTitle"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
+                </Field>
+
+                <Field label="Do you work in the tech sector?" required>
+                  <select
+                    name="ICT"
+                    required
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>Not sure</option>
+                  </select>
                 </Field>
 
                 <Field
@@ -266,7 +304,7 @@ export default function VisaIntakePage() {
             {/* Section 3 */}
             <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
               <h2 className="serif text-2xl text-black">
-                Visa / relocation context
+                Visa/relocation context
               </h2>
 
               <div className="mt-5 grid gap-5 md:grid-cols-2">
@@ -292,7 +330,7 @@ export default function VisaIntakePage() {
                 <Field label="When would you ideally like to move to Italy?">
                   <input
                     name="moveDate"
-                    placeholder="e.g. September 2026"
+                    placeholder="ex: December 2026"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
@@ -300,7 +338,7 @@ export default function VisaIntakePage() {
                 <Field label="Do you know which Italian consulate you will likely apply through?">
                   <input
                     name="consulate"
-                    placeholder="e.g. Los Angeles, Miami, London"
+                    placeholder="ex: Houston, London..."
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
@@ -356,7 +394,23 @@ export default function VisaIntakePage() {
                     <option>Comparing options</option>
                     <option>Gathering documents</option>
                     <option>Nearly ready to apply</option>
-                    <option>Already booked / attended an appointment</option>
+                    <option>Already booked/attended an appointment</option>
+                  </select>
+                </Field>
+                <Field label="Will you be moving to Italy alone?" required>
+                  <select
+                    name="movingWith"
+                    required
+                    defaultValue=""
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes, alone</option>
+                    <option>With a partner/spouse</option>
+                    <option>With kids and/or extended family</option>
+                    <option>Not sure yet</option>
                   </select>
                 </Field>
               </div>
@@ -367,6 +421,10 @@ export default function VisaIntakePage() {
               <h2 className="serif text-2xl text-black">
                 Consultation priorities
               </h2>
+
+              <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
+                You can share as much or as little context as feels relevant.
+              </p>
 
               <div className="mt-5 space-y-5">
                 <Field
@@ -393,7 +451,7 @@ export default function VisaIntakePage() {
                   />
                 </Field>
 
-                <Field label="Is there anything important you want us to know before the call?">
+                <Field label="Is there anything else about your specific context you'd like us to know before the call?">
                   <textarea
                     name="notes"
                     rows={4}
@@ -415,6 +473,11 @@ export default function VisaIntakePage() {
               <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
                 We review each submission personally before sending your private
                 scheduling link.
+              </p>
+
+              <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
+                {" "}
+                We'll be in touch soon. Looking forward to our session together!
               </p>
             </div>
           </form>

@@ -22,7 +22,7 @@ export async function sendBookingLinkEmail({
     throw new Error("Missing Resend configuration.");
   }
 
-const subject = "Your private Nomadissimi booking link";
+const subject = "Your private consultation link";
 
  
   const normalizedType = (intakeType ?? "").toLowerCase();
@@ -41,35 +41,38 @@ const subject = "Your private Nomadissimi booking link";
               : "We’ve reviewed your onboarding form and your next step is ready.";
 
    const html = renderEmailShell({
-    eyebrow: "Nomadissimi",
-    title: "Your private consultation booking link",
-    bodyHtml: `
-      <p style="margin:0 0 16px;">Ciao ${clientName},</p>
+  eyebrow: "Nomadissimi",
+  title: "Your private consultation link",
+  bodyHtml: `
+    <p style="margin:0 0 16px;">Ciao ${clientName},</p>
 
-      <p style="margin:0 0 16px;">
-        ${intakeLine}
-      </p>
+    <p style="margin:0 0 16px;">
+      ${intakeLine}
+    </p>
 
-      <p style="margin:0;">
-        ${
-          normalizedType === "visa"
-            ? "When you’re ready, you can use the private link below to choose your visa consultation time."
-            : normalizedType === "tax"
-              ? "When you’re ready, you can use the private link below to choose your tax consultation time."
-              : normalizedType === "residence"
-                ? "When you’re ready, you can use the private link below to choose your residence consultation time."
-                : normalizedType === "dolce-vita"
-                  ? "When you’re ready, you can use the private link below to choose your private lifestyle consultation time."
-                  : "When you’re ready, you can use the private link below to choose a time that feels right for you."
-        }
-      </p>
-    `,
-    ctaLabel: "Book your consultation",
-    ctaUrl: bookingUrl,
-    footerNote:
-      "Please book using the same email address associated with your Nomadissimi purchase whenever possible.",
-  });
+    <p style="margin:0 0 16px;">
+      ${
+        normalizedType === "visa"
+          ? "You can now choose a time for your visa consultation using the private link below."
+          : normalizedType === "tax"
+            ? "You can now choose a time for your tax consultation using the private link below."
+            : normalizedType === "residence"
+              ? "You can now choose a time for your residence consultation using the private link below."
+              : normalizedType === "dolce-vita"
+                ? "You can now choose a time for your La Dolce Vita consultation using the private link below."
+                : "You can now choose a time for your consultation using the private link below."
+      }
+    </p>
 
+    <p style="margin:0;">
+      If you need to reschedule later, please refer to the consultation terms on our website.
+    </p>
+  `,
+  ctaLabel: "Choose your consultation time",
+  ctaUrl: bookingUrl,
+  footerNote:
+    "For the smoothest experience, please book using the same email address associated with your Nomadissimi purchase whenever possible.",
+});
 
   await resend.emails.send({
     from,

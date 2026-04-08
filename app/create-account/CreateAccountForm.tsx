@@ -31,7 +31,7 @@ export default function CreateAccountForm() {
 
     if (password !== confirmPassword) {
       setLoading(false);
-      setError("Your passwords do not match.");
+      setError("Your passwords do not match yet.");
       return;
     }
 

@@ -118,13 +118,13 @@ export default function DolceVitaIntakePage() {
           </p>
 
           <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
-            Before we prepare your La Dolce Vita consultation
+            Before we prepare your consultation
           </h1>
 
           <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
-            Please complete this short onboarding form before your consultation.
-            It helps us understand the kind of life you are hoping to build in
-            Italy so we can tailor the conversation to your priorities,
+            Please complete this short onboarding form before your call. It
+            helps us understand the kind of life you are hoping to build in
+            Italy so we can best tailor the consultation to your priorities,
             concerns, and lifestyle vision.
           </p>
 
@@ -208,27 +208,10 @@ export default function DolceVitaIntakePage() {
                     <option>No</option>
                   </select>
                 </Field>
-
-                <Field label="Are you planning to move..." required>
-                  <select
-                    name="movingWith"
-                    required
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Alone</option>
-                    <option>With a partner</option>
-                    <option>With family</option>
-                    <option>Not sure yet</option>
-                  </select>
-                </Field>
               </div>
 
               <Field
-                label="Which regions or cities are you currently considering?"
+                label="Which regions or cities are you currently considering? If you've already moved, where are you based in?"
                 className="mt-5"
               >
                 <textarea
@@ -254,8 +237,8 @@ export default function DolceVitaIntakePage() {
                     "Walkability",
                     "Cost of living",
                     "Food culture",
-                    "Beach / sea",
-                    "Arts / culture",
+                    "Beach/sea",
+                    "Arts/culture",
                     "Slower pace of life",
                     "International community",
                     "Safety",
@@ -280,6 +263,7 @@ export default function DolceVitaIntakePage() {
 
               <Field
                 label="What kind of lifestyle are you hoping to create in Italy?"
+                required
                 className="mt-5"
               >
                 <textarea
@@ -291,6 +275,7 @@ export default function DolceVitaIntakePage() {
 
               <Field
                 label="What concerns you most about daily life in Italy?"
+                required
                 className="mt-5"
               >
                 <textarea
@@ -301,12 +286,13 @@ export default function DolceVitaIntakePage() {
               </Field>
 
               <Field
-                label="Which of these topics would you most like help with?"
+                label="Which topics would you most like help with?"
+                required
                 className="mt-5"
               >
                 <textarea
                   name="helpTopics"
-                  placeholder="e.g. where to live, renting, healthcare, cultural adaptation, regional differences..."
+                  placeholder="ex: where to live, renting, healthcare, cultural adaptation, regional differences, Italian vacation itineraries..."
                   rows={4}
                   className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                 />
@@ -331,7 +317,7 @@ export default function DolceVitaIntakePage() {
                   />
                 </Field>
 
-                <Field label="Is there anything important you want us to know before the call?">
+                <Field label="Is there anything else about your specific context you'd like us to know before the call?">
                   <textarea
                     name="notes"
                     rows={4}
@@ -353,6 +339,11 @@ export default function DolceVitaIntakePage() {
               <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
                 We review each submission personally before sending your private
                 scheduling link.
+              </p>
+
+              <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
+                {" "}
+                We'll be in touch soon. Looking forward to our session together!
               </p>
             </div>
           </form>
@@ -382,5 +373,3 @@ function Field({
     </div>
   );
 }
-
-

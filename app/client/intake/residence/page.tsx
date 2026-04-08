@@ -54,7 +54,9 @@ export default function ResidenceIntakePage() {
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert("Something went wrong while submitting the form. Please try again.");
+      alert(
+        "Something went wrong while submitting the form. Please try again.",
+      );
     } finally {
       setSubmitting(false);
     }
@@ -119,14 +121,15 @@ export default function ResidenceIntakePage() {
 
           <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
             Please complete this short onboarding form before your consultation.
-            It helps us understand where you are in the Italian residence process
-            so we can make your session practical, targeted, and efficient.
+            It helps us understand where you are in the Italian residence
+            process so we can make your session practical, targeted, and
+            efficient.
           </p>
 
           <div className="mt-7 rounded-2xl border border-black/10 bg-[#FBF8F2] px-5 py-4">
             <p className="sans text-[15px] leading-[1.75] text-black/70">
-              This form should take around 5 minutes. Once reviewed, we’ll send
-              your private scheduling link by email.
+              This form should take around 3-5 minutes. Once reviewed, we’ll
+              send your private scheduling link by email.
             </p>
           </div>
 
@@ -186,9 +189,38 @@ export default function ResidenceIntakePage() {
             </section>
 
             <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
-              <h2 className="serif text-2xl text-black">Current Italy status</h2>
+              <h2 className="serif text-2xl text-black">
+                Current Italy status
+              </h2>
 
               <div className="mt-5 grid gap-5 md:grid-cols-2">
+                <Field label="Was your visa already approved?" required>
+                  <select
+                    name="currentStatus"
+                    required
+                    defaultValue=""
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>I don't know</option>
+                  </select>
+                </Field>
+
+                <Field
+                  label="What type of visa or entry status are you using?"
+                  required
+                >
+                  <input
+                    name="entryStatus"
+                    placeholder="ex: Digital Nomad Visa"
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
                 <Field label="Are you currently in Italy?" required>
                   <select
                     name="currentStatus"
@@ -204,31 +236,47 @@ export default function ResidenceIntakePage() {
                   </select>
                 </Field>
 
-                <Field label="When did you arrive in Italy?">
+                <Field
+                  label="When did you arrive in Italy? Or when do you plan to arrive?"
+                  required
+                >
                   <input
                     name="arrivalDate"
-                    placeholder="e.g. March 2026"
+                    placeholder="ex: April 2026"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
 
-                <Field label="If you are in Italy, in which city / comune are you living?">
+                <Field
+                  label="What city/region are you living in (or plan to live in)?"
+                  required
+                >
                   <input
                     name="comune"
-                    placeholder="e.g. Florence"
+                    placeholder="ex: Florence, Catania, Milan..."
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
 
-                <Field label="What type of visa or entry status are you using?">
-                  <input
-                    name="entryStatus"
-                    placeholder="e.g. Digital Nomad Visa"
+                <Field label="Do you already have a Codice Fiscale?" required>
+                  <select
+                    name="codiceFiscale"
+                    defaultValue=""
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  />
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes</option>
+                    <option>Not yet</option>
+                    <option>I don't know</option>
+                  </select>
                 </Field>
 
-                <Field label="Do you already have a rental contract or declared place of residence?">
+                <Field
+                  label="Do you already have a rental contract or declared place of residence?"
+                  required
+                >
                   <select
                     name="housingStatus"
                     defaultValue=""
@@ -239,93 +287,7 @@ export default function ResidenceIntakePage() {
                     </option>
                     <option>Yes</option>
                     <option>No</option>
-                    <option>In progress</option>
-                  </select>
-                </Field>
-              </div>
-            </section>
-
-            <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
-              <h2 className="serif text-2xl text-black">
-                Residence / bureaucracy status
-              </h2>
-
-              <div className="mt-5 grid gap-5 md:grid-cols-2">
-                <Field label="Have you already applied for your Permesso di Soggiorno kit?" required>
-                  <select
-                    name="permessoStatus"
-                    required
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Yes</option>
-                    <option>No</option>
-                    <option>Not yet but planning to</option>
-                  </select>
-                </Field>
-
-                <Field label="Do you already have a Codice Fiscale?">
-                  <select
-                    name="codiceFiscale"
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
-                </Field>
-
-                <Field label="Have you already registered your residency at the Comune?">
-                  <select
-                    name="residencyRegistered"
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Yes</option>
-                    <option>No</option>
-                    <option>Not sure</option>
-                  </select>
-                </Field>
-
-                <Field label="Do you already have a CIE (Carta d’Identità Elettronica)?">
-                  <select
-                    name="cieStatus"
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
-                </Field>
-
-                <Field label="Which area do you most need help with?" required>
-                  <select
-                    name="mainNeed"
-                    required
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Permesso di Soggiorno</option>
-                    <option>Comune registration</option>
-                    <option>Codice Fiscale</option>
-                    <option>CIE</option>
-                    <option>Timeline / sequencing</option>
-                    <option>All of the above</option>
+                    <option>In the process</option>
                   </select>
                 </Field>
               </div>
@@ -335,6 +297,10 @@ export default function ResidenceIntakePage() {
               <h2 className="serif text-2xl text-black">
                 Consultation priorities
               </h2>
+
+              <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
+                You can share as much or as little context as feels relevant.
+              </p>
 
               <div className="mt-5 space-y-5">
                 <Field
@@ -350,7 +316,7 @@ export default function ResidenceIntakePage() {
                 </Field>
 
                 <Field
-                  label="What part of the residence process feels most confusing right now?"
+                  label="What part of the residence registration process feels most confusing right now?"
                   required
                 >
                   <textarea
@@ -361,7 +327,7 @@ export default function ResidenceIntakePage() {
                   />
                 </Field>
 
-                <Field label="Is there anything important you want us to know before the call?">
+                <Field label="Is there anything else about your specific context you'd like us to know before the call?">
                   <textarea
                     name="notes"
                     rows={4}
@@ -383,6 +349,11 @@ export default function ResidenceIntakePage() {
               <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
                 We review each submission personally before sending your private
                 scheduling link.
+              </p>
+
+              <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
+                {" "}
+                We'll be in touch soon. Looking forward to our session together!
               </p>
             </div>
           </form>
@@ -412,4 +383,3 @@ function Field({
     </div>
   );
 }
-

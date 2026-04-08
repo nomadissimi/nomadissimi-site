@@ -42,9 +42,16 @@ export async function sendPostPurchaseIntakeEmail({
         To prepare your <strong>${serviceLabel}</strong> experience properly, please complete your private onboarding form using the link below.
       </p>
 
+       <p style="margin:0;">
+      You do not need to phrase everything perfectly. This is just to help us understand where you are in your journey so we can best offer a personalized experience.
+    </p>
+
       <p style="margin:0;">
-        Once we review your answers, we’ll send your next steps by email.
+        Once we review your answers, we’ll send your next steps and booking link by email.
       </p>
+
+       
+
     `,
     ctaLabel: "Complete your onboarding form",
     ctaUrl: intakeUrl,

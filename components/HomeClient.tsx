@@ -601,15 +601,18 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 We are a specialized agency built by two worlds: international
                 professionals who successfully made the move to Italy and
                 Italian locals who know the systems, the culture, and the
-                shortcuts...{" "}
+                shortcuts.{" "}
                 <strong>
-                  we’ve lived both sides: the dreamer and the insider.
+                  We’ve lived both sides: the dreamer and the insider.
                 </strong>{" "}
-                That’s why our guidance isn’t theoretical or abstract. It’s lived, local,
-                and proven. Big agencies treat you like a generic case number.
-                We treat you like family moving into our neighborhood. We
-                believe relocation support should feel clear, respectful, and
-                safe. Nomadissimi welcomes clients of all backgrounds and identities.
+                That’s why our guidance isn’t theoretical or abstract. It’s
+                lived, local, and proven. Big agencies treat you like a generic
+                case number. We treat you like family moving into our
+                neighborhood. 
+                <br>{" "} </br> 
+                We believe relocation support should feel clear,
+                professional, and respectful. Nomadissimi welcomes clients of all
+                backgrounds, orientations, and identities. You are safe here.
                 {/* Baby luxe divider */}
                 <hr className="my-8 border-0 h-[1px] bg-gradient-to-r from-transparent via-[#C8A86B]/40 to-transparent" />
               </p>
@@ -1165,11 +1168,16 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <p className="sans text-[#2B2B2B]/70 mt-0 md:mt-1 px-3">
                 But once that approval lands, real life in Italy begins: more
                 paperwork, residency registration, taxes, and all those little
-                <em> “Wait, how do I ____ ?”</em> moments.{" "}
-                <strong>That’s where we stay by your side. </strong>
-                Because settling in should feel like a soft landing, not another
-                guessing game. Our "In-Italy" Add-ons help you register, settle,
-                and actually enjoy the life you came here for.
+                <em> “Wait, how do I ____ ?”</em> moments, as you
+                navigateanother culture, language, and way of doing things.{" "}
+                <strong>
+                  You do not need to figure this out alone. That’s where we stay
+                  by your side.{" "}
+                </strong>
+                With Nomadissimi, settling in will feel like a soft landing, not
+                a stressful guessing game. Our "In-Italy" Add-ons are carefully
+                designed to help you register, settle, and fully enjoy the life
+                you came here for.
               </p>
               Welcome to la dolce vita, done the right way.
             </p>
@@ -1686,7 +1694,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
     </>
   );
 }
-
 
 // Elegant olive CTA for the package cards (smaller than hero)
 const packagesCta =
