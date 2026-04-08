@@ -2,14 +2,9 @@
 
 # **Chapter 1 Welcome**
 
-<GuideHeroAccent
-  title="Welcome to Your NOMADISSIMI Tax & Partita IVA Consultation Guide"
-  subtitle="You have protected your Italian dream this far. Now let’s protect your bank account."
-/>
+You have protected your Italian dream this far. Now let’s protect your bank account.
 
 <PlumBadge>2026 Edition</PlumBadge>
-<PlumBadge>Tax & Partita IVA</PlumBadge>
-<GuideBadge>Money-saving strategy</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -1017,15 +1012,14 @@ _Big-sis tip: Start a physical "730 Folder" in your house on January 1st. Every 
 <PlumBadge>2026 version</PlumBadge>
 <GuideBadge>High-attention chapter</GuideBadge>
 
-
 <GuideSpacer size="sm" />
 
 <GuideSoftPurple title="Why this chapter matters">
 
 If you are a Digital Nomad or a Remote Worker, there is a very high chance you hold some crypto. You might just be holding Bitcoin as a personal investment, or you might actually be invoicing your freelance clients in USDC or Ethereum.  
-Whatever your situation is, you need to know this: **Italy does not consider crypto a "Wild West" anymore.** The Italian tax agency (*Agenzia delle Entrate*) has very strict, highly regulated rules for how digital assets are tracked and taxed. If you hold cryptocurrencies as an Italian resident, Italy expects you to understand how they are tracked and taxed.
+Whatever your situation is, you need to know this: **Italy does not consider crypto a "Wild West" anymore.** The Italian tax agency (_Agenzia delle Entrate_) has very strict, highly regulated rules for how digital assets are tracked and taxed. If you hold cryptocurrencies as an Italian resident, Italy expects you to understand how they are tracked and taxed.
 
-*Here is the Nomadissimi breakdown of exactly how crypto works in Italy as of 2026\.*
+_Here is the Nomadissimi breakdown of exactly how crypto works in Italy as of 2026\._
 
 </GuideSoftPurple>
 
@@ -1036,25 +1030,26 @@ If you bought crypto with your own personal savings just to invest or hold, the 
 If you make a profit on that sale, Italy treats it as a capital gain.
 
 <GuideTaxSnapshot
-  title="The 2026 update"
-  subtitle="This is the number you need to remember."
+title="The 2026 update"
+subtitle="This is the number you need to remember."
+
 >
 
 **Starting January 1, 2026, the capital gains tax on standard cryptocurrencies (like Bitcoin, Ethereum, Solana, etc.) has officially been raised to 33%.**
 
-*Note*: There is a tiny exception. If you are dealing strictly with specific EU-regulated Electronic Money Tokens (EMTs) tied to the Euro, the rate remains at 26%, but for the vast majority of standard crypto portfolios, expect to pay 33% on your profits.
+_Note_: There is a tiny exception. If you are dealing strictly with specific EU-regulated Electronic Money Tokens (EMTs) tied to the Euro, the rate remains at 26%, but for the vast majority of standard crypto portfolios, expect to pay 33% on your profits.
 
 </GuideTaxSnapshot>
 
 ## **2. Getting Paid in Crypto (The Freelancer Trap)**
 
-What if you don't just invest in crypto, but you actually let your freelance clients pay your *Partita IVA* invoices in crypto?
+What if you don't just invest in crypto, but you actually let your freelance clients pay your _Partita IVA_ invoices in crypto?
 
 This is where Digital Nomads can get confused. **Crypto received as payment** for your work is NOT treated as a capital gain. It **is treated as standard business income**.
 
 <GuideQuickFacts title="The first taxable layer">
 
-If a client pays you €5,000 worth of Bitcoin for a web design project, that €5,000 is simply added to your *Partita IVA* revenue. It will be taxed according to whatever tax regime you are in (Regime Ordinario, Regime Forfettario, or the 50% Regime Impatriati discount).
+If a client pays you €5,000 worth of Bitcoin for a web design project, that €5,000 is simply added to your _Partita IVA_ revenue. It will be taxed according to whatever tax regime you are in (Regime Ordinario, Regime Forfettario, or the 50% Regime Impatriati discount).
 
 </GuideQuickFacts>
 
@@ -1066,11 +1061,11 @@ Once that Bitcoin hits your wallet and you pay your normal freelance income tax 
 
 ## **3. The "Hidden" Rules: Monitoring and Wealth Taxes**
 
-Even if you are the ultimate *"HODLer"* and you never sell a single coin all year, you still have legal obligations in Italy:
+Even if you are the ultimate _"HODLer"_ and you never sell a single coin all year, you still have legal obligations in Italy:
 
 <GuideChecklist title="The hidden rules to know">
 
-- **Il Quadro RW** (*The Monitoring Rule*): If you hold even €1 of crypto on December 31st, you are legally required to declare it on your annual tax return in a specific section called the *Quadro RW*. Italy wants to know exactly how much wealth you have sitting in digital wallets or foreign exchanges.
+- **Il Quadro RW** (_The Monitoring Rule_): If you hold even €1 of crypto on December 31st, you are legally required to declare it on your annual tax return in a specific section called the _Quadro RW_. Italy wants to know exactly how much wealth you have sitting in digital wallets or foreign exchanges.
 
 - **The Crypto Wealth Tax (IVCA):** Because Italy tracks your crypto, they also charge a tiny annual wealth tax on it. You must pay 0.20% (2 per mille) on the total value of your crypto portfolio at the end of the year.
 
@@ -1088,7 +1083,7 @@ One wrong detail, like miscalculating the exact EUR value on the day a client pa
 
 <GuideBigSis title="What this means in practice">
 
-This is exactly why a standard, old-school accountant will not work for you. If you touch crypto, you must hire a modern, tech-forward *commercialista* who specifically understands blockchain taxation. They will tell you exactly what transaction history to export, how to document your wallet addresses, and how to stay 100% compliant without accidentally overpaying the government.
+This is exactly why a standard, old-school accountant will not work for you. If you touch crypto, you must hire a modern, tech-forward _commercialista_ who specifically understands blockchain taxation. They will tell you exactly what transaction history to export, how to document your wallet addresses, and how to stay 100% compliant without accidentally overpaying the government.
 
 </GuideBigSis>
 
@@ -1172,8 +1167,6 @@ If you hold crypto, do not leave this as a vague “I’ll figure it out later�
 
 To fill in and finish this chapter but just leaving this here for now\*
 
-
-
 # **Ch 7: Taking Action**
 
 <GuideHeroAccent
@@ -1186,19 +1179,19 @@ To fill in and finish this chapter but just leaving this here for now\*
 
 <GuideSpacer size="sm" />
 
-## **Opening Your Partita IVA: What You MUST Have First *(for Digital Nomads)***
+## **Opening Your Partita IVA: What You MUST Have First _(for Digital Nomads)_**
 
-You’ve survived the visa process, you understand the tax brackets, and you are finally ready to officially launch your freelance business in Italy. *Yay\!*
+You’ve survived the visa process, you understand the tax brackets, and you are finally ready to officially launch your freelance business in Italy. _Yay\!_
 
 <GuideSoftPurple title="The good news">
 
-**Opening a *Partita IVA* is actually the easiest part of this entire journey.** It takes a good *commercialista* about 24 to 48 hours to open it, and you don’t have to step foot inside a single government building. Your accountant does it all digitally.
+**Opening a _Partita IVA_ is actually the easiest part of this entire journey.** It takes a good _commercialista_ about 24 to 48 hours to open it, and you don’t have to step foot inside a single government building. Your accountant does it all digitally.
 
-However, you cannot just land at the Rome airport, drop your bags, and immediately open a *Partita IVA*. There is a strict sequence of bureaucratic milestones you must conquer first.
+However, you cannot just land at the Rome airport, drop your bags, and immediately open a _Partita IVA_. There is a strict sequence of bureaucratic milestones you must conquer first.
 
 </GuideSoftPurple>
 
-### **The Magic Key: Your CIE *(Carta d’Identità Elettronica)***
+### **The Magic Key: Your CIE _(Carta d’Identità Elettronica)_**
 
 To open a Partita IVA, your commercialista needs to officially identify you in the eyes of the Italian government. To do this, they need two things:
 
@@ -1206,9 +1199,9 @@ To open a Partita IVA, your commercialista needs to officially identify you in t
 
 - Your Italian **Codice Fiscale** (which you likely got during your visa process).
 
-- Your **CIE** (*Carta d’Identità Elettronica*).  
-  The *CIE* is the Italian Electronic Identity Card. It looks like a standard plastic driver’s license, but it has a microchip inside that grants you access to Italy’s entire digital public administration system.  
-  *Note: You might hear people talking about getting a "SPID" to access government sites. While SPID is still used, the CIE is the new, modern gold standard for foreigners entering Italy. As a Digital Nomad, the CIE is the only digital identity key you need to care about.*
+- Your **CIE** (_Carta d’Identità Elettronica_).  
+  The _CIE_ is the Italian Electronic Identity Card. It looks like a standard plastic driver’s license, but it has a microchip inside that grants you access to Italy’s entire digital public administration system.  
+  _Note: You might hear people talking about getting a "SPID" to access government sites. While SPID is still used, the CIE is the new, modern gold standard for foreigners entering Italy. As a Digital Nomad, the CIE is the only digital identity key you need to care about._
 
 </GuideChecklist>
 
@@ -1220,7 +1213,7 @@ To get it, you have to complete a strict sequence of legal registrations, starti
 <GuideBigSis title="Big-sis tip">
 
 If the thought of navigating multiple Italian government offices makes your heart rate spike, take a breath. We explain the exact step-by-step process of getting your CIE inside our specialized **"Residence Registration Add-On Package".**  
-*We give you the complete roadmap to conquer the bureaucracy without losing your mind, so you can get that card in your hands as fast as legally possible.*
+_We give you the complete roadmap to conquer the bureaucracy without losing your mind, so you can get that card in your hands as fast as legally possible._
 
 </GuideBigSis>
 
@@ -1228,40 +1221,41 @@ If the thought of navigating multiple Italian government offices makes your hear
 
 This is a massive question for Digital Nomads trying to time their taxes perfectly.  
 You do not become an Italian tax resident the day your plane lands. According to Italian law, you officially become a tax resident if you spend the majority of the year (at least 183 days) living in Italy.  
-However, the clock often starts ticking the moment you officially register your residency at the Comune (*Iscrizione Anagrafica*). Once you are in that registry, the *Italian Fisco* assumes you live there. This is why timing your Comune registration is a highly strategic move that you should discuss with your commercialista\!
+However, the clock often starts ticking the moment you officially register your residency at the Comune (_Iscrizione Anagrafica_). Once you are in that registry, the _Italian Fisco_ assumes you live there. This is why timing your Comune registration is a highly strategic move that you should discuss with your commercialista\!
 
 ### **Your Call to Action: Hire the Right Bodyguard**
 
 <GuideMistakeBox title="Do not DIY this to save a little money">
 
 **Once you have your Codice Fiscale and your CIE in hand, it is time to hire your commercialista.**  
-Do not try to DIY your *Partita IVA* online to save €50. Your commercialista will not just open the VAT number; they will select the correct ATECO code (which defines your exact profession and dictates how much you pay in taxes/INPS), apply your *Regime Impatriati* or *Forfettario* status, and connect you to their electronic invoicing software.
+Do not try to DIY your _Partita IVA_ online to save €50. Your commercialista will not just open the VAT number; they will select the correct ATECO code (which defines your exact profession and dictates how much you pay in taxes/INPS), apply your _Regime Impatriati_ or _Forfettario_ status, and connect you to their electronic invoicing software.
 
-Find a *commercialista* you can easily communicate with, who understands cross-border freelance work, and isn't afraid of the words "Digital Nomad." Send them your CIE, and let them handle the bureaucracy\!
+Find a _commercialista_ you can easily communicate with, who understands cross-border freelance work, and isn't afraid of the words "Digital Nomad." Send them your CIE, and let them handle the bureaucracy\!
 
 </GuideMistakeBox>
 
 ## **Regime Impatriati For Employees: How To Get It (For Remote Workers)**
 
-If you are moving to Italy as a Remote Worker (meaning you are a standard employee, not a freelancer with a *Partita IVA*), you are likely employed through an Italian branch of your company or an Employer of Record (EOR) like Deel, Remote, or Oyster.  
-This means you receive a standard Italian monthly paycheck (*busta paga*).  
-So, *if you qualify for the famous 50% Regime Impatriati tax discount, how do you actually get it applied to your salary?*  
+If you are moving to Italy as a Remote Worker (meaning you are a standard employee, not a freelancer with a _Partita IVA_), you are likely employed through an Italian branch of your company or an Employer of Record (EOR) like Deel, Remote, or Oyster.  
+This means you receive a standard Italian monthly paycheck (_busta paga_).  
+So, _if you qualify for the famous 50% Regime Impatriati tax discount, how do you actually get it applied to your salary?_  
 Unlike freelancers who claim the discount on their annual tax return, **employees get the discount applied directly to their monthly paycheck.**  
 Here is exactly how the process works and the deadlines you need to watch out for.
 
 ### **The Magic Document: L'Autocertificazione**
 
-You do not need to submit a complex application to the Italian government or wait months for an official pre-approval letter from the *Agenzia delle Entrate.*  
+You do not need to submit a complex application to the Italian government or wait months for an official pre-approval letter from the _Agenzia delle Entrate._  
 Instead, the process is handled entirely between you and your employer's HR department (or your EOR).
 
 <GuideTaxSnapshot
-  title="The key document"
-  subtitle="This is what activates the regime on your paycheck."
+title="The key document"
+subtitle="This is what activates the regime on your paycheck."
+
 >
 
-**To activate the regime, you must hand your employer a formal document called an *Autocertificazione*** (Self-Certification).  
-This is a written declaration where you legally take responsibility for stating that you meet all the strict requirements of the *2026 Regime Impatriati law* (such as having a highly qualified degree, not having lived in Italy for the past three years, and committing to stay in Italy for at least four years).  
-Once you hand this signed document to your employer, they are legally authorized to act as your withholding agent *(sostituto d'imposta)* and instantly cut your income taxes by 50% (or 60% if you have a minor child) on your very next paycheck.
+**To activate the regime, you must hand your employer a formal document called an _Autocertificazione_** (Self-Certification).  
+This is a written declaration where you legally take responsibility for stating that you meet all the strict requirements of the _2026 Regime Impatriati law_ (such as having a highly qualified degree, not having lived in Italy for the past three years, and committing to stay in Italy for at least four years).  
+Once you hand this signed document to your employer, they are legally authorized to act as your withholding agent _(sostituto d'imposta)_ and instantly cut your income taxes by 50% (or 60% if you have a minor child) on your very next paycheck.
 
 </GuideTaxSnapshot>
 
@@ -1275,9 +1269,8 @@ The timing of your Autocertificazione is crucial.
   You should submit the document to your HR department the exact same month you officially transfer your tax residency to Italy. This allows your employer to apply the tax cut from your very first eligible Italian paycheck.
 
 - **The "I Was Late" Scenario:**  
-  *What if you moved to Italy in March, but you didn't give your employer the paperwork until August? Don't panic.* You have not permanently lost the tax discount for those first few months. Your employer will simply start applying the discount from your September paycheck onward.
-
-  - **How to Get the Missing Money Back:** For the months you missed (March to August), you simply wait until the following spring. When you file your annual tax return (the *Modello 730* we talked about earlier\!), you will declare those early months as *Impatriati* income. The government will recalculate your taxes and refund you the extra money you overpaid during that time.
+  _What if you moved to Italy in March, but you didn't give your employer the paperwork until August? Don't panic._ You have not permanently lost the tax discount for those first few months. Your employer will simply start applying the discount from your September paycheck onward.
+  - **How to Get the Missing Money Back:** For the months you missed (March to August), you simply wait until the following spring. When you file your annual tax return (the _Modello 730_ we talked about earlier\!), you will declare those early months as _Impatriati_ income. The government will recalculate your taxes and refund you the extra money you overpaid during that time.
 
 </GuideChecklist>
 
@@ -1286,9 +1279,6 @@ The timing of your Autocertificazione is crucial.
 Do not sign an Autocertificazione just because you read an article online saying you qualify. When you sign that document, you take 100% of the legal liability. If the government audits you in three years and decides your university degree doesn't technically meet the "highly qualified" definition, they will demand all that saved tax money back, plus massive penalties. Always have an independent commercialista review your specific background and give you the green light before you hand that document to your employer\!
 
 </GuideBigSis>
-
-
-
 
 # **Ch 8: Conclusion**
 
@@ -1306,28 +1296,28 @@ Do not sign an Autocertificazione just because you read an article online saying
 
 We just threw a massive amount of Italian tax brackets, legal terms, and electronic invoicing rules at you. Time for an espresso break.
 
-*But you now know the real secret:* in Italy, taxes aren’t just "what you pay." They are a highly structured system that you can strategically navigate.  
-***Understanding the rules is exactly how you turn a bureaucratic nightmare into thousands of euros staying in your pocket instead of disappearing into the system.***
+_But you now know the real secret:_ in Italy, taxes aren’t just "what you pay." They are a highly structured system that you can strategically navigate.  
+**_Understanding the rules is exactly how you turn a bureaucratic nightmare into thousands of euros staying in your pocket instead of disappearing into the system._**
 
 </GuideSoftPurple>
 
 <GuideQuickFacts title="What you can now spot">
 
-You now have the tools to spot the traps, like the terrifying baseline rates of the *Regime Ordinario*, the hidden capital gains taxes on crypto, or the brutal consequences of charging 22% IVA to the wrong foreign client.
+You now have the tools to spot the traps, like the terrifying baseline rates of the _Regime Ordinario_, the hidden capital gains taxes on crypto, or the brutal consequences of charging 22% IVA to the wrong foreign client.
 
-More importantly, you know how to recognize the golden opportunities. Whether you are leveraging the flat-tax simplicity of the *Regime Forfettario*, slashing your remote salary in half with the *Regime Impatriati*, or clawing back your medical expenses with the *Modello 730*, you are officially equipped to protect your income.
+More importantly, you know how to recognize the golden opportunities. Whether you are leveraging the flat-tax simplicity of the _Regime Forfettario_, slashing your remote salary in half with the _Regime Impatriati_, or clawing back your medical expenses with the _Modello 730_, you are officially equipped to protect your income.
 
 </GuideQuickFacts>
 
 <GuideBigSis title="The real shift">
 
-You can now speak the same language as your *commercialista*. And that is the exact moment when Italian bureaucracy finally starts to feel simple.
+You can now speak the same language as your _commercialista_. And that is the exact moment when Italian bureaucracy finally starts to feel simple.
 
 </GuideBigSis>
 
 ### **You Don't Have to Do This Alone**
 
-Understanding the rules is one thing, but actually executing them while trying to run your freelance business or remote job can be exhausting. You don’t have to DIY your tax strategy or cross your fingers hoping you filled out your *Autocertificazione* correctly.
+Understanding the rules is one thing, but actually executing them while trying to run your freelance business or remote job can be exhausting. You don’t have to DIY your tax strategy or cross your fingers hoping you filled out your _Autocertificazione_ correctly.
 
 <GuideSoftPurple title="What we want for you">
 
@@ -1338,11 +1328,12 @@ We created this agency because we’ve been exactly where you are. We are here t
 </GuideSoftPurple>
 
 <GuideTaxSnapshot
-  title="Your next step"
-  subtitle="Ready to stop guessing and get your finances sorted?"
+title="Your next step"
+subtitle="Ready to stop guessing and get your finances sorted?"
+
 >
 
-*Ready to conquer your Italian taxes with zero stress? Book a 1-on-1 consultation call with the Nomadissimi team today, and let's get your finances sorted.*
+_Ready to conquer your Italian taxes with zero stress? Book a 1-on-1 consultation call with the Nomadissimi team today, and let's get your finances sorted._
 
 </GuideTaxSnapshot>
 
@@ -1350,19 +1341,10 @@ We created this agency because we’ve been exactly where you are. We are here t
   **Benvenuti in Italia**
 </GuideQuote>
 
-
-
-
-
-
-
-
 <GuideHeroAccent
   title="Your Path to La Dolce Vita (Without Tax Nightmares)***"
   subtitle="You now know the real secret: in Italy, taxes aren’t just “what you pay” — they’re a system you can navigate."
 />
-
-
 
 <GuideSpacer size="sm" />
 
