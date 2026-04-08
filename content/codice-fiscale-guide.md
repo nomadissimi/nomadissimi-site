@@ -2,32 +2,26 @@
 
 # **Chapter 1 Welcome**
 
-<GuideHeroAccent
-  title="Welcome"
-  subtitle="Welcome to your Nomadissimi Codice Fiscale Breakdown: the guide that decodes everything you need to know about this 16-character string that will follow you throughout your entire Italian adventure."
-/>
+<GuideSoftTeal>
+  Welcome to your Nomadissimi Codice Fiscale Breakdown: the guide that decodes everything you need to know about this 16-character string that will follow you throughout your entire Italian adventure.
+</GuideSoftTeal>
 
-<TealBadge>Essential guide</TealBadge>
 <TealBadge>Codice Fiscale</TealBadge>
 <GuideBadge>Italy access key</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-If you’re reading this, you’re probably wondering what exactly a **Codice Fiscale (CF)** is, why everyone keeps talking about it, and exactly when you are supposed to get one.
+If you’re here, you’re probably wondering what exactly a **Codice Fiscale (CF)** is, why everyone keeps talking about it, and exactly when you are supposed to get one.
 
 Maybe a potential landlord just asked for it, or you read that you need it to open an Italian bank account, and now you’re panicking because you aren't sure if you’ve missed a crucial step.
 
-<GuideBigSis title="Relax, we’ve got you covered">
-
 _Relax, we’ve got you covered also for this._
 
-</GuideBigSis>
-
-<GuideSoftPurple title="What this code really is">
+<GuideSoftTeal title="What this code really is">
 
 Think of the Codice Fiscale as Italy’s way of saying, “We see you, we acknowledge you exist, and now you can actually do business here.” Without it, you are basically invisible to the Italian administrative system. **With it, you unlock the ability to live like a real resident.**
 
-</GuideSoftPurple>
+</GuideSoftTeal>
 
 The Codice Fiscale is an absolute must-have to live in Italy, but here’s the catch: in many cases, you might actually need it _before_ your visa is even approved (like when you are trying to secure your rental contract).
 
@@ -75,13 +69,12 @@ By accessing or using this material, you acknowledge and agree to these terms.
 
 # **Chapter 2 What Is a Codice Fiscale?**
 
-<GuideHeroAccent
-  title="What Is a Codice Fiscale?"
-  subtitle="The *Codice Fiscale* literally translates to “Fiscal Code,” but it’s much more useful to think of it as your ultimate Italian access pass."
-/>
+<GuideSoftTeal>
+
+The _Codice Fiscale_ literally translates to “Fiscal Code,” but it’s much more useful to think of it as your ultimate Italian access pass.
+</GuideSoftTeal>
 
 <TealBadge>Core concept</TealBadge>
-<GuideBadge>Know this well</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -92,11 +85,11 @@ You might also hear people call it a “Tax Code,” but honestly, that makes it
 Instead of thinking about taxes, think of the Codice Fiscale as your ultimate Italian access pass. If you are coming from the US, it is _similar_ to your Social Security Number (SSN).  
 **It is a 16-character alphanumeric code that uniquely identifies you as an individual in Italy**. Everyone breathing and living legally in Italy gets one.
 
-<GuideSoftPurple title="The cool part">
+<GuideSoftTeal title="Not a coincidence">
 
 _Here’s the cool part:_ it is not just a randomly assigned string of letters and numbers that you’ll never remember. The Codice Fiscale is actually generated directly from your personal information using a very specific formula.
 
-</GuideSoftPurple>
+</GuideSoftTeal>
 
 The 16 characters are built like this:
 
@@ -146,23 +139,13 @@ Also, **having a codice fiscale does NOT automatically create any tax obligation
 
 # **Chapter 3 What Can You Use It For?**
 
-<GuideHeroAccent
-  title="What Can You Use It For?"
-  subtitle="Your Codice Fiscale is the master key to your new life in Italy."
-/>
-
-<TealBadge>Real-life use cases</TealBadge>
-<GuideBadge>Master key</GuideBadge>
-
-<GuideSpacer size="sm" />
-
 If you are wondering why we are making such a big deal out of a 16-character code, it is because your Codice Fiscale is the master key to your new life in Italy. The Italian system is incredibly interconnected, and this code is the thread that ties all your legal, financial, and daily activities together.
 
 Here is what it actually unlocks for you on a practical level.
 
-## **1. Setting Up Your Life (Housing, Banking & Bills)**
+## **1. Setting Up Your Life (Housing, Banking, and Bills)**
 
-<GuideOfficeCard office="Housing, banking & utilities" title="Your setup code">
+<GuideOfficeCard>
 
 **The Codice Fiscale is the very first thing you will need to establish yourself as a resident.**  
 If you want to open an Italian bank account so you can pay your rent without insane international transfer fees, the bank will ask for your CF.
@@ -175,17 +158,17 @@ You will need the codice fiscale to activate the electricity, set up the gas, an
 
 ## **2. All Things Healthcare (Public, Private, and Pharmacy)**
 
-<GuideSoftPurple title="Yes, healthcare too">
+<GuideSoftTeal title="Yes, healthcare too">
 
 Here is something that surprises a lot of immigrants in Italy: **the Codice Fiscale is deeply tied to the Italian healthcare system**, regardless of whether you are using public or private services.
 
 Whenever you go to a private doctor, book a specialist visit, see a psychologist, or even buy a box of painkillers or a specific cream at the local pharmacy (_farmacia_), they will ask for your Codice Fiscale so they can issue a proper receipt.
 
-</GuideSoftPurple>
+</GuideSoftTeal>
 
 <GuideBigSis title="A quick side note on Italian healthcare">
 
-When we talk about paying for “medical expenses” in Italy, we need to clarify what that actually means, because it is probably completely different from what you are used to. If you are coming from the US and the idea of calling an ambulance gives you financial anxiety, you can officially let that go.
+When we talk about paying for “medical expenses” in Italy, we need to clarify what that actually means, because it is probably completely different from what you might be used to. If you are coming from the US and the idea of calling an ambulance gives you financial anxiety, you can officially let that go.
 
 If you are in a genuine emergency and an ambulance takes you to the public hospital ER (_Pronto Soccorso_), that life-saving care (the ride, the IV, the doctors, the days in the hospital) is generally free of charge, even for foreigners. **Zero outrageous bills in the mail.**
 
@@ -212,17 +195,17 @@ The same goes for things like charitable donations or certain insurance premiums
 
 To claim these tax deductions, the Italian government requires a certain “digital paper trail.” That means you must pay for your medical expenses or pharmacy runs with a credit or debit card (no cash), provide your Codice Fiscale, and save the receipt.
 
-We dive deep into exactly how these deductions work in our _Tax & Partita IVA Consultation_, but for now, just make it a habit: _always pay by card, always give your CF, and always keep the receipt\!_
+We discuss in more details exactly how these deductions work in our _Tax & Partita IVA Consultation_, but for now, just make it a habit: _always pay by card, always give your Codice Fiscale, and always keep the receipt\!_
 
 </GuideMistakeBox>
 
 ## **4. Life’s Big Bureaucratic Milestones**
 
-<GuideDecisionBox title="Your bureaucratic anchor">
+<GuideDecisionBox>
 
 Beyond your daily errands, the codice fiscale is the anchor for all your official paperwork.
 
-If you eventually go to the town hall (_Comune_) to register your residency or apply for your Italian ID card (CIE: _Carta di Identità Elettronica_), your codice fiscale is required.
+If you eventually go to the town hall _(Comune)_ to register your residency or apply for your Italian ID card (CIE: _Carta di Identità Elettronica_), your codice fiscale is required.
 
 If you decide to buy a Vespa to zip around town, or a countryside villa, your codice fiscale goes on the deed.
 
@@ -232,13 +215,9 @@ Regardless of whether you are signing an employment contract, a freelance agreem
 
 # **Chapter 4 Codice Fiscale vs. Partita IVA**
 
-<GuideHeroAccent
-  title="Codice Fiscale vs. Partita IVA"
-  subtitle="This is the exact spot where most newcomers to Italy get completely tangled up in translation, so let’s clear it up right now."
-/>
+This is the exact spot where most newcomers to Italy get completely tangled up in translation, so let’s clear it up right now.
 
 <TealBadge>Important distinction</TealBadge>
-<GuideBadge>Do not confuse these</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -327,14 +306,7 @@ _Let's break down the three exact paths you can take._
 
 # **Chapter 5 How and When to Get Your Codice Fiscale: The 3 Paths**
 
-<GuideHeroAccent
-  title="How and When to Get Your Codice Fiscale"
-  subtitle="The honest answer is simple: it’s better to have it as soon as possible."
-/>
-
-<TealBadge>3 paths</TealBadge>
 <TealBadge>Timing matters</TealBadge>
-<GuideBadge>Most practical chapter</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -344,13 +316,13 @@ The honest answer is that **it's better to have it as soon as possible**. But de
 
 Let's walk through them, starting with our absolute favorite strategy, down to the slowest option.
 
-## **Path 1: The “Big Sister Approved” Route (before you fly)**
+## **Path 1: Before You Move to Italy**
 
 <GuideDecisionBox title="Our favorite route">
 
-The absolute best time to secure your _Codice Fiscale_ is while you are still sitting comfortably in your home country.  
+The earliest time to secure your _Codice Fiscale_ is while you are still sitting comfortably in your home country.  
 **You can actually request it directly from the Italian Consulate or Embassy that handles your jurisdiction, ideally even before your visa application appointment.**  
-_This is the route we recommend for everyone._
+_This is the route we recommend in most cases._
 
 </GuideDecisionBox>
 
@@ -396,11 +368,11 @@ Maybe you did not know you could request the Codice Fiscale before you left, or 
 
 If you find yourself on Italian soil needing your code to open a standard bank account, buy a car, or set up utilities in your new home, but you cannot afford to wait months for the immigration office to issue it _(which we will cover in Path 3)_, you can take matters into your own hands.
 
-<GuideOfficeCard office="Agenzia delle Entrate" title="Path 2 in one sentence">
+<GuideSoftTeal>
 
 As soon as you arrive, **you can head directly to any local branch of the _Agenzia delle Entrate_ (the Italian Revenue Agency) to request your code in person.**
 
-</GuideOfficeCard>
+</GuideSoftTeal>
 
 ### **The Action Plan**
 
@@ -437,7 +409,7 @@ Once they process your paperwork, the turnaround is usually quite fast. In many 
 
 </GuideSteps>
 
-## **Path 3: The "Wait and See" Route (Via the _Questura_)**
+## **Path 3: The Questura Route**
 
 What happens if you arrive in Italy without a Codice Fiscale, and you genuinely do not need one right away? Maybe you are moving into a fully serviced corporate apartment with all utilities included, or you are moving in with a partner who already has an Italian bank account and handles all the household bills.
 
@@ -470,17 +442,9 @@ We generally suggest getting your code earlier so you aren't stuck if an emergen
 
 # **Chapter 6 Where Will I Keep My Codice Fiscale?**
 
-<GuideHeroAccent
-  title="Where Will I Keep My Codice Fiscale?"
-  subtitle="Once you successfully get your *Codice Fiscale*, you might be wondering what exactly it looks like and where you are supposed to keep it."
-/>
-
-<TealBadge>Practical question</TealBadge>
-<GuideBadge>What it looks like</GuideBadge>
-
 <GuideSpacer size="sm" />
 
-_Will you get a fancy plastic card right away? A digital barcode? Just a piece of paper?_
+Will you get a fancy plastic card right away? A digital barcode? Just a piece of paper?
 
 Depending on which path you took above, your initial _Codice Fiscale_ might literally just be a printed PDF certificate from the Consulate or the _Agenzia delle Entrate_.
 
@@ -488,14 +452,14 @@ But as you settle into your Italian life, your 16-character code will eventually
 
 ## **1. Your _Permesso di Soggiorno_ (Residence Permit)**
 
-<GuideOfficeCard office="Questura / Residence Permit" title="Your first major plastic card">
+<GuideSoftTeal">
 
 Once your residence permit is fully processed and approved, the _Questura_ (police headquarters) will hand you a physical, electronic card.  
 **Your official Codice Fiscale is permanently printed right on the front of this card**.
 
 Because you are legally required to carry your _Permesso di Soggiorno_ with you at all times as a foreigner in Italy, you will always have your Codice Fiscale in your pocket.
 
-</GuideOfficeCard>
+</GuideSoftTeal>
 
 ## **2. Your _Carta d'Identità Elettronica_ (CIE)**
 
@@ -504,7 +468,7 @@ Because you are legally required to carry your _Permesso di Soggiorno_ with you 
 The _CIE (Carta d’Identità Elettronica)_ is the most important Italian document you need to get after the _Permesso di Soggiorno._  
 The CIE acts as a digital key, letting you log into almost every single government and public service website in Italy. It is even mandatory to open a _Partita IVA_ _(Digital Nomads & freelancers, I’m talking to you)._
 
-_We walk you through exactly how to get this powerful little card in our Residence Registration add-on._
+_We walk you through exactly how to get this important document in our Residence Registration add-on._
 
 **Your _codice fiscale_ is also printed on that plastic card.**
 
@@ -530,29 +494,23 @@ If you choose to voluntarily pay the annual fee to join the public healthcare sy
 
 <GuideBigSis title="Big-sis tip">
 
-Until you get your hard plastic Italian ID cards, keep a PDF copy of your original Agenzia delle Entrate / Consulate certificate on your phone, and download an app (like "Codice Fiscale" on iOS or Android) that generates a scannable barcode of your code.
+Until you get your hard plastic Italian ID cards, keep a PDF copy of your original Agenzia delle Entrate/Consulate certificate on your phone, and download an app (like "Codice Fiscale" on iOS or Android) that generates a scannable barcode of your code.
 
 </GuideBigSis>
 
 # **Chapter 7 You’ve Got This (and We’ve Got You)**
 
-<GuideHeroAccent
-  title="You’ve Got This (and We’ve Got You)"
-  subtitle="If you made it to the end of this guide, congratulations\! You officially know more about the Codice Fiscale than most people who have lived in Italy for years."
-/>
-
 <TealBadge>Guide complete</TealBadge>
-<GuideBadge>You’re ready</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-<GuideSoftPurple title="You’re already ahead">
+<GuideSoftTeal title="You’re already ahead">
 
 Italian bureaucracy has a terrifying reputation, but the truth is, it’s just a beast that needs to be tamed with the right preparation. Yes, the systems are incredibly interconnected and fragmented at the same time. Yes, the love for paper trails is real. And yes, patience is absolutely essential.
 
 But once you secure that magical 16-character code, you are one step closer to transitioning from a tourist to a recognized resident with access to all the beautiful chaos and incredible opportunities Italy has to offer.
 
-</GuideSoftPurple>
+</GuideSoftTeal>
 
 <GuideBigSis title="Remember this">
 
@@ -564,19 +522,17 @@ Getting your Codice Fiscale is just step one. If you are feeling overwhelmed abo
 
 <GuideSoftPink title="Why we built this">
 
-_We’ve been exactly where you are, staring at confusing government websites and wishing someone would just explain it in an accessible and accurate way. So we did\!_
+We’ve been exactly where you are, staring at confusing government websites and wishing someone would just explain it in an accessible and accurate way. So we did\!
 
 </GuideSoftPink>
 
 <GuideDecisionBox title="What to do next">
 
-If you want us to hold your hand through the rest of your relocation journey, explore our full suite of practical guides, consultation calls, and step-by-step add-ons at **Nomadissimi**.
+If you want us to hold your hand through the rest of your relocation journey, explore our full suite of practical guides, consultation calls, and step-by-step add-ons at **Nomadissimi.com**.
 
 </GuideDecisionBox>
 
 <GuideItaliaNote title="La dolce vita is waiting for you">
-
-_La dolce vita is waiting for you._
 
 **Benvenuti in Italia**
 

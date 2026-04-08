@@ -854,3 +854,24 @@ export function TealBadge({ children }: { children: ReactNode }) {
     </span>
   );
 }
+
+export function GuideSoftTeal({
+  title,
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[24px] border border-[#BFD9D4] bg-gradient-to-br from-[#F5FCFA] to-[#ECF8F5] px-5 py-5 shadow-[0_12px_30px_rgba(59,111,105,0.06)] my-6">
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#3B6F69]">
+          {title}
+        </div>
+      ) : null}
+      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
+        {children}
+      </div>
+    </div>
+  );
+}
