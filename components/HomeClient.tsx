@@ -228,8 +228,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                   <em>la dolce vita</em>
                   without drowning in Italian bureaucracy. We combine private
                   member portals, clear step-by-step guidance, and personalized
-                  support so your move feels structured, calm, and genuinely
-                  possible.
+                  support so your move feels structured, calm, and professional.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-row">
@@ -1414,7 +1413,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             />
 
             <p className="price-subtext">
-              Get all 3 add-ons together <br />
+              Get all 3 add-ons together
               <span className="text-[#4B5D44] font-medium">
                 (valued at €1,397)
               </span>
