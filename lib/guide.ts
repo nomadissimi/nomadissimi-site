@@ -17,6 +17,8 @@ export type GuidePortal = {
   chapterPrefix: string;
 };
 
+//here is where the guide portals are defined, with their corresponding markdown file paths and chapter slug prefixes and portal titles. This allows us to easily manage multiple guides in a structured way.
+
 const GUIDE_PORTALS: Record<GuideTheme, GuidePortal> = {
   visa: {
     key: "visa",
@@ -32,13 +34,13 @@ const GUIDE_PORTALS: Record<GuideTheme, GuidePortal> = {
   },
   tax: {
     key: "tax",
-    title: "Tax & Partita IVA Guide",
+    title: "Tax & Partita IVA Portal",
     filePath: path.join(process.cwd(), "content", "tax-guide.md"),
     chapterPrefix: "tax",
   },
   "codice-fiscale": {
     key: "codice-fiscale",
-    title: "Codice Fiscale Mini Guide",
+    title: "Codice Fiscale Portal",
     filePath: path.join(process.cwd(), "content", "codice-fiscale-guide.md"),
     chapterPrefix: "codice-fiscale",
   },

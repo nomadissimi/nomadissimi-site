@@ -56,6 +56,8 @@ Any unauthorized duplication, reproduction, redistribution, publication, or comm
 
 By accessing or using this material, you acknowledge and agree to these terms.
 
+For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/terms
+
 </GuideCard>
 
 # **Chapter 2 The Italian Resident Roadmap**

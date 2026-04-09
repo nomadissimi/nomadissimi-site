@@ -14,7 +14,7 @@ export default function TermsPage() {
       <h1 className="serif text-3xl md:text-4xl font-semibold">
         Terms &amp; Conditions
       </h1>
-      <p className="sans text-[#2B2B2B]/70 mt-2">Last updated: 21 March 2026</p>
+      <p className="sans text-[#2B2B2B]/70 mt-2">Last updated: 9 April 2026</p>
 
       {/* Content */}
       <div className="mt-10 space-y-10 sans text-[17px] leading-relaxed text-[#2B2B2B]/85">
@@ -55,11 +55,13 @@ export default function TermsPage() {
         {/* 2 */}
         <section className="section-divider">
           <h2 className="serif text-xl font-semibold mb-3">
-            2. Not Legal Advice
+            2. Not Legal or Financial Advice
           </h2>
           <p>
-            Nomadissimi is not a law firm and does <strong>not</strong> provide
-            legal representation.
+            Nomadissimi is not a law firm or accounting firm and does{" "}
+            <strong>not</strong> provide legal representation or accounting
+            services. We are not licensed attorneys or accountants. Our services
+            do not constitute legal advice, tax advice, or financial planning.
           </p>
           <p className="mt-3">
             Nothing provided through our website, consultations, written
@@ -72,9 +74,9 @@ export default function TermsPage() {
             responsible for the tax implications of your decisions. You are
             responsible for deadlines, tax filings, and any tax-related
             obligations. We are not liable for any tax consequences resulting
-            from your actions or inactions. You should consult a qualified tax
-            professional for personalized advice regarding your specific
-            situation.
+            from your actions or inactions. You should consult a registered tax
+            professional to set up your tax affairs in Italy and provide
+            personalized instructions regarding your specific situation.
           </p>
         </section>
 
@@ -205,7 +207,7 @@ export default function TermsPage() {
           </h2>
           <p>
             Certain Nomadissimi services include, or may be purchased with, a
-            personalized consultation call scheduled in advance. By booking a
+            personalized consultation call(s) scheduled in advance. By booking a
             consultation, the client acknowledges that the appointment time is
             reserved exclusively for them and may require preparation in
             advance.
@@ -588,11 +590,12 @@ export default function TermsPage() {
         <section className="section-divider">
           <h2 className="serif text-xl font-semibold mb-3">20. Safe space</h2>
           <p>
-            Nomadissimi welcomes clients of all backgrounds and identities. We
-            lead with clarity, discretion, and respect to make this a safe space
-            for everyone. We do not tolerate discrimination, harassment, or
-            disrespectful behaviour of any kind. We are committed to providing
-            an inclusive and supportive environment for all parties involved.
+            Nomadissimi welcomes clients of all backgrounds, orientations, and
+            identities. We lead with clarity, discretion, and respect to make
+            this a safe space for everyone. We do NOT tolerate discrimination,
+            harassment, or disrespectful behaviour of any kind. We are committed
+            to providing an inclusive and supportive environment for all parties
+            involved.
           </p>
         </section>
 

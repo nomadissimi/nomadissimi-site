@@ -1728,7 +1728,6 @@ function AddonCtaLabel({
       <span className="addon-cta-priceRow">
         <span className="addon-cta-euro">€</span>
         <span className="addon-cta-amount">{amount}</span>
-        <span className="addon-cta-vat">+ VAT</span>
       </span>
 
       {oldPrice ? (

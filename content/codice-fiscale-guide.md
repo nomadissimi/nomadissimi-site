@@ -65,6 +65,8 @@ Any unauthorized duplication, reproduction, redistribution, publication, or comm
 
 By accessing or using this material, you acknowledge and agree to these terms.
 
+For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/terms
+
 </GuideCard>
 
 # **Chapter 2 What Is a Codice Fiscale?**
@@ -478,11 +480,11 @@ _We walk you through exactly how to get this important document in our Residence
 
 If you speak to Italian locals about the Codice Fiscale, they will almost always assume you are talking about the _Tessera Sanitaria_, a blue plastic card issued by the public healthcare system.
 
-For Italians, these two things are practically synonymous because the health card acts as the official, physical carrier of the CF.
+For Italians, these two things are practically synonymous because the health card acts as the official, physical carrier of the CF. However, for internationals, it can be a bit different.
 
 <GuideDecisionBox title="Important distinction for Digital Nomads and Remote Workers">
 
-However, as a Digital Nomad or Remote Worker, you are required to have private health insurance for your visa, which means you are not automatically enrolled in the public Italian National Health Service (_Sistema Sanitario Nazionale_).
+As a Digital Nomad or Remote Worker, you are required to have private health insurance for your visa, which means you are not automatically enrolled in the public Italian National Health Service (_Sistema Sanitario Nazionale_).
 
 This is an incredibly important distinction: _you can absolutely live legally in Italy and have a valid Codice Fiscale without ever having a Tessera Sanitaria._
 

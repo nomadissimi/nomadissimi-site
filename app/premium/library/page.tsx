@@ -21,7 +21,7 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     key: "visa",
     title: "Visa Guide",
     description:
-      "Whether you are a digital nomad (freelancer) or remote worker (employee), we show you what you need, step by step.",
+      "Whether you are a digital nomad (freelancer) or remote worker (employee), we show you what you need and how to get it, step by step.",
     href: "/premium/guide/visa-welcome",
     buttonClass:
       "bg-[#4B5D44] text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] hover:bg-[#3E4E38]",
@@ -32,7 +32,7 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     key: "residence",
     title: "Residence Registration Guide",
     description:
-      "How to seamlessly go from tourist to official Italian resident. Permesso di soggiorno, Comune, Italian ID card and all that...",
+      "How to seamlessly go from tourist to official Italian resident. A tricky yet essential administrative process: Permesso di soggiorno, Comune, Italian ID card and all that...",
     href: "/premium/guide/residence-welcome-home-your-italian-chapter-begins",
     buttonClass:
       "bg-[#2F466B] text-white shadow-[0_14px_40px_rgba(47,70,107,0.25)] hover:bg-[#263A59]",
@@ -43,7 +43,7 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     key: "tax",
     title: "Tax & Partita IVA Guide",
     description:
-      "Avoid headaches and understand the Italian Tax Regimes, deductions, and how to set up your business in Italy",
+      "Avoid headaches and understand the Italian Tax Regimes, deductions, and how to set up your business in Italy. What to expect from your Italian accountant and how to stay compliant without losing your mind.",
     href: "/premium/guide/tax-welcome",
     buttonClass:
       "bg-[#6E4B7E] text-white shadow-[0_14px_40px_rgba(110,75,126,0.25)] hover:bg-[#5C3D69]",
@@ -179,4 +179,3 @@ export default async function PremiumLibraryPage() {
     </main>
   );
 }
-

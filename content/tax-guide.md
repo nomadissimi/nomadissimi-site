@@ -8,12 +8,12 @@ You have protected your Italian dream this far. Now let’s protect your bank ac
 
 <GuideSpacer size="sm" />
 
-<GuideSoftPurple title="Why this guide matters">
+<GuideSoftPurple title="Tax Time">
 
-_You have decided to move to Italy for a more balanced life, a lower cost of living, and the peace of mind that comes with universal healthcare. Your hard-earned money is meant to fund weekend train trips to Florence and endless plates of fresh pasta, not to be swallowed up by a convoluted tax system you don't even understand._
+You have decided to move to Italy for a more balanced life, a lower cost of living, and the peace of mind that comes with universal healthcare. Your hard-earned money is meant to fund weekend train trips to Florence and endless plates of fresh pasta, not to be swallowed up by a convoluted tax system you don't even understand.
 
-_But here is the absolute best-kept secret about moving here:_ while the Italian tax system is layered and complex, it is actually packed with incredible, **money-saving opportunities for newcomers**.  
-_Howeverrr,_ you have to know they exist, because the government certainly isn't going to hand them to you on a silver platter with Prosecco on the side.
+_But here is a big secret about moving here:_ even though the Italian tax system is layered and complex, it is actually packed with helpful **money-saving opportunities for newcomers**.  
+Howeverrr, you have to know they exist, because the government certainly isn't going to hand them to you on a silver platter with Prosecco on the side. That's why we're here.
 
 </GuideSoftPurple>
 
@@ -21,7 +21,7 @@ Whether you are currently sitting on your couch thousands of miles away, crunchi
 
 <GuideDecisionBox title="Who this guide is for">
 
-This guide is designed to decode the bureaucracy into a digestible format, and it is built for both sides of the visa spectrum.
+This guide is designed to decode the Italian tax system into a digestible format, and it is built for both sides of the visa spectrum: Digital Nomad Visa holders and Remote Worker Visa holders.
 
 </GuideDecisionBox>
 
@@ -50,15 +50,15 @@ title="Remote Workers"
 
 <GuideMistakeBox title="Very important">
 
-_To be clear:_ **this guide won't replace your commercialista (Italian accountant).** You will absolutely still need one since they handle registrations in Italy. But instead of leaving you to blindly trust a professional who might not necessarily understand international clients’ particular needs, this guide turns you into an educated client.
+_To be clear:_ this guide won't replace your commercialista (Italian accountant). You will absolutely still need one since they handle registrations in Italy and they're the ones who will set up your tax profile. But instead of leaving you to blindly trust a professional who might not necessarily understand international clients’ particular needs, this guide turns you into an educated client.
 
 You will know exactly what to ask for, deadlines to expect, and for the first time, you'll know when they are doing a brilliant job, and when they are making you pay way more than you should.
 
 </GuideMistakeBox>
 
-<GuideBigSis title="The real goal">
+<GuideBigSis title="It sounds scary, but it's not">
 
-_As you’ve seen by now, Italian bureaucracy is a beast, but it’s a beast that can be tamed with the right preparation. You’ve protected your Italian dream this far. Now let’s protect your bank account._  
+International taxation can be a pain, but it becomes less scary when it's all laid out. As you’ve seen by now, Italian bureaucracy is messy, and taxation is no different. Let's decode it together.  
 Let’s go\!
 
 </GuideBigSis>
@@ -68,15 +68,15 @@ Let’s go\!
 - Which tax regime may fit your situation best
 - Whether you need a _Partita IVA_ or not
 - What the _Regime Impatriati_ could save you
-- What _Modello 730_ actually is
+- What _Modello 730_ is
 - What to watch for with crypto in Italy
 - How to become a smarter client when working with an Italian accountant
 
 </GuideQuickFacts>
 
-<GuideSoftPink title="Before we go deeper">
+<GuideSoftPink title="Fundamental Classification">
 
-_International taxation can be a pain, but it becomes less scary when it's all laid out. But before we start throwing around intimidating terms like Partita IVA and tax regimes, we have to clear up one major detail: how the Italian government actually views your job._
+Before we start throwing around intimidating terms like Partita IVA and tax regimes, we have to clear up one major detail: how the Italian government actually views your job and the category it would fit in. We will talk about that in the next chapter.
 
 </GuideSoftPink>
 
@@ -98,14 +98,13 @@ Any unauthorized duplication, reproduction, redistribution, publication, or comm
 
 By accessing or using this material, you acknowledge and agree to these terms.
 
+For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/terms
+
 </GuideCard>
 
-# **Chapter 2 Tax Foundations (For Everyone)**
+# **Chapter 2 Tax Foundations (for everyone)**
 
-<GuideHeroAccent
-  title="Tax Foundations"
-  subtitle="Before we can even talk about saving money, we need to draw a very clear line in the sand regarding exactly who you are in the eyes of the Italian government."
-/>
+Before we can even talk about saving money, we need to draw a very clear line in the sand regarding exactly who you are in the eyes of the Italian government
 
 <PlumBadge>For everyone</PlumBadge>
 <GuideBadge>Foundational chapter</GuideBadge>
@@ -116,7 +115,7 @@ By accessing or using this material, you acknowledge and agree to these terms.
 
 Italy splits the "working remotely" pathway into two completely different buckets, and your tax responsibilities depend entirely on which bucket you fall into.
 
-If you've already read our NOMADISSIMI Master Guide, you are probably familiar with this distinction. Let's review it through a purely financial lens, because getting this wrong is the fastest way to trigger a costly tax nightmare.
+If you've already checked out our full Nomadissimi Visa Portal, you are probably familiar with this distinction. Let's review it through a purely financial lens, because getting this wrong is the fastest way to trigger a costly tax nightmare from the start.
 
 <GuideTaxCompare>
   <GuideTaxCompareCard label="Profile" title="Digital Nomad (Freelancer)">
@@ -125,7 +124,7 @@ If you've already read our NOMADISSIMI Master Guide, you are probably familiar w
       <li>Work for yourself, balancing multiple clients (or even one main client, but as an independent contractor).</li>
       <li>Issue invoices directly for your services.</li>
     </ul>
-    <p><strong>Tax Reality:</strong> You are 100% responsible for your own taxes and social security contributions. <strong>You must open a Partita IVA</strong> (an Italian VAT number) to legally work in Italy, which means choosing the right tax regime is completely up to you.</p>
+    <p><strong>Tax Reality:</strong> You are 100% responsible for your own taxes and social security contributions. <strong>You must open a Partita IVA</strong> (an Italian VAT number) to legally work in Italy, which means you have more flexibility in choosing your right tax regime (provided certain conditions are met).</p>
   </GuideTaxCompareCard>
 
   <GuideTaxCompareCard label="Profile" title="Remote Worker (Employee)">
@@ -134,21 +133,21 @@ If you've already read our NOMADISSIMI Master Guide, you are probably familiar w
       <li>Work for ONE specific employer through a standard employment contract (you are on their payroll).</li>
       <li>Receive a regular salary instead of issuing invoices.</li>
     </ul>
-    <p><strong>Tax Reality:</strong> Your employer (or an Employer of Record like Deel) is the one legally responsible for managing, withholding, and paying your taxes and social security directly to the Italian government. You do not need a Partita IVA.</p>
+    <p><strong>Tax Reality:</strong> Your employer (or an Employer of Record) is the one legally responsible for managing, withholding, and paying your taxes and social security directly to the Italian government. You most likely do not need a Partita IVA.</p>
   </GuideTaxCompareCard>
 </GuideTaxCompare>
 
 <GuideBigSis title="The Tax Test">
 
-_Not sure if you are a freelancer or an employee?_ Apply the simple "Tax Test." If the company sends you the gross amount and leaves you to figure out your own taxes at the end of the year, Italy considers you a Digital Nomad. If they withhold taxes for you, you are a Remote Worker.
+If you're still unsure if you are a freelancer or an employee, apply the simple "Tax Test." If the company sends you the gross amount and leaves you to figure out your own taxes at the end of the year, Italy considers you a Digital Nomad. If they withhold taxes for you, you are a Remote Worker.
 
 </GuideBigSis>
 
 <GuideChecklist title="The difference at a glance">
 
 - **Work structure**
-  - Digital Nomad: Multiple clients / independent contractor
-  - Remote Worker: ONE employer
+  - Digital Nomad: Multiple clients/independent contractor
+  - Remote Worker: usually just ONE employer
 
 - **How are you paid?**
   - Digital Nomad: You issue invoices
@@ -160,59 +159,55 @@ _Not sure if you are a freelancer or an employee?_ Apply the simple "Tax Test." 
 
 - **Who handles the taxes?**
   - Digital Nomad: YOU (with your commercialista)
-  - Remote Worker: YOUR EMPLOYER
+  - Remote Worker: your employer
 
 </GuideChecklist>
 
 ## **How to Read This Guide Based on Your Profile**
 
-Because the tax rules are so different depending on your profile, we have organized the rest of this guide so you don't waste time reading things that don't apply to you. That said, you can definitely read the whole thing if you’re curious or your work situation might change later. Anyway, here is your roadmap:
+Because the tax rules are so different depending on your profile, we have organized the rest of this guide so you optimize your reading time on what best applies to you. That said, you can definitely read the whole thing if you’re curious or your work situation might change later. Anyway, here is your roadmap:
 
 <GuideQuickFacts title="Your roadmap">
 
 - **If you are a Digital Nomad (_Freelancer_):**  
-  This entire guide is your new best friend. You need to read Chapters 2, 3, 4, and 5 very carefully, because you will be making active choices about your tax regime, your social security, and your business expenses.
+  This entire guide is your new best friend. You need to read Chapters 3, 4, 5, and 7 very carefully, because you will be making active choices about your tax regime, your social security, and your business expenses.
 
 - **If you are a Remote Worker (_Employee_):**  
-  Your employer handles the heavy lifting, so you can skip the sections about _Forfettario_, _INPS_, and electronic invoicing. However, you absolutely must read about the _Regime Impatriati_ in Chapter 2 (which could potentially slash your income tax in half), the _Modello 730_ in Chapter 4 (your yearly tax return), and how to activate your benefits in Chapter 5.
+  Your employer handles the heavy lifting, so you can skip the sections about _Forfettario_, _INPS_, and electronic invoicing. However, you absolutely must read about the _Regime Impatriati_ in Chapter 3 (which could potentially slash your income tax in half), the _Modello 730_ in Chapter 5 (your yearly tax return), and how to activate your benefits.
 
 - **For Everyone:**  
-  Chapter 5 covers the new 2026 Crypto Tax laws. Whether you are issuing invoices or collecting a salary, if you own crypto/stablecoins, this section applies to you.
+  Chapter 6 covers the new 2026 Crypto Tax laws. Whether you are issuing invoices or collecting a salary, if you own any form of cryptocurrencies/stablecoins, this section applies to you.
 
 </GuideQuickFacts>
 
 <GuideSoftPink title="Next up">
 
-_Now that you know exactly which label the Italian government has given you, it is time for the fun part._  
-_Let's talk about the actual tax regimes, how they work, and most importantly, how to use them to keep more of your hard-earned money._
+Now that you know exactly which work category the Italian government will most likely place you in, it is time for the fun part.
+Let's talk about the actual tax regimes, how they work, and most importantly, how to use them to keep more of your hard-earned money.
 
 </GuideSoftPink>
 
 # **Chapter 3 Italian Tax Regimes**
 
-<GuideHeroAccent
-  title="Italian Tax Regimes"
-  subtitle="When you move to Italy, your tax rate isn’t just a single, unavoidable number. Italy actually offers multiple tax regimes, and choosing the right one can save you thousands of euros every single year."
-/>
+When you move to Italy, your tax rate isn’t necessarily a fixed number. Italy offers multiple tax regimes, and choosing the right one can save you thousands of euros every single year.
 
 <PlumBadge>Most important chapter</PlumBadge>
-<PlumBadge>Read carefully</PlumBadge>
-<GuideBadge>Financial foundation</GuideBadge>
+<GuideBadge>For Everyone</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-_This is not a trivial decision, so read carefully. This is the financial foundation of your new life._
+This is not a trivial decision, so read carefully. This is the financial foundation of your new life in Italy.
 
 Normally, actively "choosing" a tax regime is something only self-employed freelancers (Digital Nomads) get to do. If you are an employee (Remote Worker), your company usually handles everything through the standard system.
 
-_But here is the secret:_ **there is one advantageous tax opportunity that bridges the gap, allowing both freelancers and employees to drastically cut their taxes.**
+_But here is the secret:_ there is one advantageous tax opportunity that bridges the gap, allowing both freelancers and employees to drastically cut their taxes.
 
 ## **The Big Picture: Three Paths Forward**
 
 <GuideTaxCompare>
   <GuideTaxCompareCard label="Overview" title="The 3 regimes you need to know">
     <ul>
-      <li><strong>Regime Ordinario (Ordinary Tax Regime):</strong> The default system with progressive rates. <em>(For Digital Nomads)</em></li>
+      <li><strong>Regime Ordinario (Ordinary Tax Regime):</strong> The default system with progressive rates. <em> </em></li>
       <li><strong>Regime Impatriati (Impatriates/Returning Workers):</strong> A powerful incentive designed for newcomers to Italy. <em>(The Golden Opportunity for BOTH Digital Nomads and Remote Workers)</em></li>
       <li><strong>Regime Forfettario (Flat-Rate Scheme):</strong> A simplified, low-tax option for small businesses. <em>(Best for some Digital Nomads)</em></li>
     </ul>
@@ -220,7 +215,7 @@ _But here is the secret:_ **there is one advantageous tax opportunity that bridg
 
   <GuideTaxCompareCard label="Strategy" title="The most important thing to understand">
     <p>
-      We are going to examine all three in detail, but let’s get one thing straight upfront: our strong recommendation is to <strong>avoid Regime Ordinario if possible</strong>.
+      We are going to examine all three in detail, but let’s get one thing straight upfront: our strong recommendation is to legally <strong>avoid Regime Ordinario if possible</strong> and choose a different regime (if you qualify).
     </p>
     <p>
       It is the highest-tax option for most freelancers, and adds up to be a heavy burden.
@@ -234,9 +229,9 @@ _But here is the secret:_ **there is one advantageous tax opportunity that bridg
 <GuideChecklist title="The regimes at a glance">
 
 - **Forfettario (Freelancers only)**  
-  Effective tax: **5% or 15% + INPS**  
+  Effective tax: **5% (or 15%) + INPS**  
   Income limit: **Max €85,000/year**  
-  Duration: **Unlimited (while eligible)**
+  Duration: **Technically unlimited (while eligible)**
 
 - **Impatriati (Freelancers & Employees)**  
   Effective tax: **50–60% exemption + progressive rates**  
@@ -252,18 +247,18 @@ _But here is the secret:_ **there is one advantageous tax opportunity that bridg
 
 <GuideMistakeBox title="The baseline you want to avoid">
 
-_Before we get to the regimes that could save you money, we need to cover the baseline._  
-_Understanding the Regime Ordinario is essential because it is the default trap you want to make sure your commercialista keeps you out of._
+Before we discuss in detail the regimes that could save you money, we need to cover the baseline.
+_Understanding the Regime Ordinario is essential because it is the default trap you want to make sure your commercialista keeps you out of (if you are eligible)._
 
 </GuideMistakeBox>
 
-## **Regime Ordinario: The One to Avoid If You Can (Digital Nomads)**
+# **Chapter 4 Regime Ordinario**
 
 ### **What Is It?**
 
 If you move to Italy and do not specifically set up a special tax regime, the Regime Ordinario is what you will get stuck with by default. It is the standard, progressive tax system that applies to the vast majority of Italian taxpayers.
 
-For freelancers (Digital Nomads), this means your _commercialista_ (accountant) opens a standard Partita IVA for you. For employees (Remote Workers), this is basically the standard tax bracket system that your company applies to your monthly paycheck. It is called "ordinary" because it is the ordinary way Italy taxes people. **But for internationals moving to Italy for a better life, it is definitely not the optimal choice.**
+For freelancers (Digital Nomads), this means your _commercialista_ (accountant) opens a standard Partita IVA for you. For employees (Remote Workers), this is basically the standard tax bracket system that your company applies to your monthly paycheck. It is called "ordinary" because it is the ordinary way Italy taxes people. **But for internationals moving to Italy for a better life, it is not the optimal choice.**
 
 Under this regime, you are dealing with three main layers of taxation:
 
@@ -284,13 +279,13 @@ Under this regime, you are dealing with three main layers of taxation:
   _Plus a regional surtax of 1–3% and a municipal surtax up to 0.8%, varying by where you choose to live._
 
 - **3. The IVA (Value Added Tax) — Freelancers Only**  
-  If you are a freelancer operating under the Regime Ordinario, you cannot hide from the IVA (Italy's version of VAT). You are required to charge the standard 22% IVA on top of your invoices.
+  If you are a freelancer operating under the Regime Ordinario, you cannot hide from the IVA (Italy's version of VAT). You are usually required to charge the standard 22% IVA on top of your invoices (but there are exceptions to this also).
 
 </GuideQuickFacts>
 
 <GuideBigSis title="Important IVA reminder">
 
-_IVA rules depend heavily on where your client is located, not where you are. We will cover exactly when you must charge IVA and when you are exempt later in this guide._
+_IVA rules depend heavily on where your client is located, not where you are._ We will cover exactly when you must charge IVA and when you are exempt later in this guide.
 
 </GuideBigSis>
 
@@ -305,8 +300,8 @@ Regime Ordinario adds up to be a heavy tax burden. When you combine the IRPEF br
 _Is there a real advantage?_ If you are a freelancer with incredibly high business expenses that offset your income significantly, the Regime Ordinario might occasionally compete with the other options.  
 But for most Digital Nomads and Remote Workers, this is simply not the case.
 
-_The golden rule:_ If you qualify for either the Regime Forfettario (freelancers) or the Regime Impatriati (freelancers and employees), the Regime Ordinario should be your absolute last choice.  
-_Our goal is to keep you out of this bracket so you can keep your money for the dolce vita._
+_The golden rule:_ If you qualify for either the Regime Forfettario (freelancers) or the Regime Impatriati (freelancers and employees), the Regime Ordinario should be your last choice.  
+_Our goal is to ideally and legally keep you out of this bracket so you can keep your money for the dolce vita._
 
 </GuideMistakeBox>
 
@@ -328,26 +323,24 @@ If you fall into one of these categories, do not panic. Yes, the Regime Ordinari
 
 <GuideSoftPink title="Now for the good news">
 
-_Even the “worst-case scenario” is not so bad. Now let’s talk about the absolute best-case scenario. If you are moving your life and your laptop to Italy for the first time, this is a golden opportunity for you._
+_Even the “worst-case scenario” is not so bad in that case._ Now let’s talk about the absolute best-case scenario. If you are moving your life and your laptop to Italy for the first time, this is a golden opportunity for you.
 
 </GuideSoftPink>
 
-## **Regime Impatriati: The Golden Opportunity for Digital Nomads (Both Digital Nomads and Remote Workers)**
+# **Chapter 5 Regime Impatriati**
 
-The Regime Impatriati is Italy’s most beneficial tax incentive designed specifically to attract highly qualified foreign talent to the country. If you are moving to Italy for the first time, this is very likely the best option available to you.
+## **The Golden Opportunity (for qualifying digital nomads and remote workers)**
 
-<GuideTaxSnapshot
-title="The magic of Regime Impatriati"
-subtitle="This is the regime that makes people say, wait... Italy can actually be tax-smart?"
+The Regime Impatriati is Italy’s most beneficial tax incentive designed specifically to attract highly qualified foreign talent into the country. If you are moving to Italy for the first time, this is very likely the best option available to you.
 
->
+<GuideSoftPurple>
 
 _Here is the magic:_ **50% of your qualifying income is completely tax-exempt. You only pay income tax on the remaining 50%.**  
 And if you have at least one minor dependent **child**, it gets even better: your exemption jumps to 60%\!
 
-_This is the exact reason why moving to Italy can actually be a massive financial upgrade, not just a lifestyle one._
+_This is a big reason why moving to Italy can actually be a massive financial upgrade, not just a lifestyle one._
 
-</GuideTaxSnapshot>
+</GuideSoftPurple>
 
 ### **How It Works Based On Your Profile**
 
@@ -359,7 +352,7 @@ This regime is the ultimate crossover because it applies to both freelancers and
     title="Employees"
   >
     <p>
-      This is your undisputed golden ticket. Since you cannot use the <em>Regime Forfettario</em> (which is only for freelancers), <strong>the <em>Regime Impatriati</em> is your primary weapon to drastically lower your tax bill.</strong>
+      This is your undisputed golden ticket. Since you cannot use the <em>Regime Forfettario</em> (which is only for freelancers), <strong>the <em>Regime Impatriati</em> is your primary weapon to drastically lower your tax bill,</strong> instead of the Regime Ordinario. 
     </p>
     <p>
       Your employer will simply apply the 50% exemption to your monthly paycheck, meaning your net take-home salary is significantly higher than it would be under the standard system.
@@ -373,7 +366,7 @@ title="Freelancers"
 >
 
     <p>
-      You actually have a choice to make. Depending on your specific income and expenses, you and your <em>commercialista</em> will have to <strong>run the numbers to decide whether the <em>Regime Impatriati</em> or the <em>Regime Forfettario</em></strong> saves you the most money.
+      You actually have a choice to make. Depending on your specific income and expenses, you and your <em>commercialista</em> will have to <strong>run the numbers to decide whether the <em>Regime Impatriati</em> or the <em>Regime Forfettario</em></strong> saves you the most money. This also depends on your total income. Remember that the Regime Forfettario is capped at €85,000.
     </p>
 
   </GuideTaxCompareCard>
@@ -382,7 +375,7 @@ title="Freelancers"
 ### **The Magic of the 50% Exemption**
 
 _How does taxing only 50% of your income affect your total taxation?_ Because Italy’s tax brackets are progressive, cutting your taxable income in half usually drops you into a much lower tax bracket.  
-**This means you actually save more than just 50% on your tax bill.**
+**This means you end up saving more than just 50% on your tax bill.**
 
 Here is a rough idea of how the _Regime Impatriati_ crushes the _Regime Ordinario_ at different income levels:
 
@@ -406,7 +399,7 @@ Here is a rough idea of how the _Regime Impatriati_ crushes the _Regime Ordinari
 
 </GuideChecklist>
 
-Now you can see the real power of the Regime Impatriati: even for very high incomes, the total taxation remains steadily and beautifully low\!
+Now you can see the real power of the Regime Impatriati: even for higher incomes, the total taxation remains steadily and relatively low\!
 
 <GuideBigSis title="Important disclaimer">
 
@@ -416,29 +409,28 @@ These percentages are just orientative estimates to show you the impact. They in
 
 ### **What About Deductions and IVA? _(Freelancers Only)_**
 
-If you use the Regime Impatriati as a freelancer, you get the best of both worlds. **You get the 50% tax exemption, and you are still allowed to deduct legitimate business expenses to lower your taxable income even further\!**  
+If you use the Regime Impatriati as a freelancer, you get the best of both worlds. **You get the 50% tax exemption, AND you are still allowed to deduct legitimate business expenses to lower your taxable income even further\!**  
 We will explain exactly what it means to deduct business expenses in Italy in Chapter 5.
 
-**You will also be required to handle IVA** (Value Added Tax) on your invoices, but don't worry, we also have a dedicated section coming up later in the guide that explains exactly when you must charge IVA and when you are exempt.
+**You will also be required to handle IVA** (Value Added Tax, or VAT) on your invoices, but don't worry, we also have a dedicated section coming up later in the guide that explains exactly when you must charge IVA and when you are exempt.
 
 ### **2026 Eligibility Requirements**
 
-Italy doesn't hand out this incredible tax break to just anyone.  
-To access the Regime Impatriati in 2026, you must meet ALL of these specific conditions:
+Italy doesn't hand out this tax break to just anyone. To access the Regime Impatriati in 2026, you must meet ALL of these specific conditions:
 
 <GuideChecklist title="Eligibility requirements">
 
 - **Non-residence history:** You must NOT have been an Italian tax resident for at least the 3 consecutive tax years before moving to Italy.
 
-- **New Italian tax resident:** You must officially become an Italian tax resident by moving your life here and registering your residency at the local Comune (_Anagrafe_).  
+- **New Italian tax resident:** You must officially become an Italian tax resident by moving your life here and registering your residency at the local Comune _(Anagrafe)_.  
   _We guide you through your residency registration and all the other mandatory steps to settle in Italy inside our Residence Registration add-on._
 
 - **Commitment to stay:** You must commit to remaining an Italian tax resident for at least 4 consecutive tax years.  
-  If you leave before this period ends, you will lose the benefit and have to pay back the saved taxes with interest.
+  If you leave before this period ends, you will lose the benefit and will most likely have to pay back the saved taxes with interest. Ouch.
 
 - **High qualification:** You must be highly qualified. Thankfully, if you hold the Digital Nomad or Remote Worker visa, you have already proven this to the consulate via your university degree or professional experience\!
 
-- **Work performed in Italy:** You must spend the majority of the year (at least 183 days per year) actually living and performing your work activity in Italy.
+- **Work performed in Italy:** You must spend the majority of the year (at least 183 days per year) living and performing your work activity in Italy.
 
 - **Income cap:** The 50% exemption applies to a maximum annual income of €600,000.  
   If you make more than that, the excess is taxed under the standard regime.
@@ -475,7 +467,7 @@ If you are a freelancer, we have to break some bad news to you: **you cannot com
 _So, if you are a salaried Remote Worker, congratulations, you have found your tax regime\!_  
 _However, if you are a Digital Nomad issuing invoices, there is one more major contender stepping into the ring: the incredibly simple, low-tax beauty known as the Regime Forfettario._
 
-## **Regime Forfettario: The Simplified Champion for Small Businesses _(Digital Nomads)_**
+# **Chapter 6 Regime Forfettario (Digital Nomads Only)**
 
 ### **What Is It?**
 
@@ -595,7 +587,7 @@ Alright, you have survived the heaviest part of Italian tax law. To quickly reca
 
 </GuideChecklist>
 
-# **Chapter 4 The Freelancer Essentials _(Digital Nomads Only)_**
+# **Chapter 7 The Freelancer Essentials _(Digital Nomads Only)_**
 
 <GuideHeroAccent
   title="The Freelancer Essentials"
@@ -801,7 +793,7 @@ Your _commercialista_ should be your strategic financial bodyguard, not just a t
 
 To fill in and finish this chapter but just leaving this here for now\*
 
-# **Chapter 5 Business Deductions**
+# **Chapter 8 Business Deductions**
 
 <GuideHeroAccent
   title="Business Deductions"
@@ -1002,7 +994,7 @@ _Big-sis tip: Start a physical "730 Folder" in your house on January 1st. Every 
 
 </GuideBigSis>
 
-# **Chapter 6 Crypto in Italy (2026) — What You Must Know**
+# **Chapter 9 Crypto in Italy (2026) — What You Must Know**
 
 <GuideHeroAccent
   title="Crypto in Italy (2026)"
@@ -1167,7 +1159,7 @@ If you hold crypto, do not leave this as a vague “I’ll figure it out later�
 
 To fill in and finish this chapter but just leaving this here for now\*
 
-# **Ch 7: Taking Action**
+# **Chapter 10 Taking Action**
 
 <GuideHeroAccent
   title="Taking Action"
@@ -1280,7 +1272,7 @@ Do not sign an Autocertificazione just because you read an article online saying
 
 </GuideBigSis>
 
-# **Ch 8: Conclusion**
+# **Chapter 11 Conclusion**
 
 <GuideHeroAccent
   title="Conclusion"
