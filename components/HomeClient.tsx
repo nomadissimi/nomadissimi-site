@@ -225,10 +225,10 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 <p className="sans mt-4 text-lg/7 text-[#2B2B2B]/80">
                   Nomadissimi is the specialized relocation agency for digital
                   nomads, remote workers, and online freelancers who want{" "}
-                  <em>la dolce vita</em>
-                  without drowning in Italian bureaucracy. We combine private
-                  member portals, clear step-by-step guidance, and personalized
-                  support so your move feels structured, calm, and professional.
+                  <em>la dolce vita</em> without drowning in Italian
+                  bureaucracy. We combine private member portals, clear
+                  step-by-step guidance, and personalized support so your move
+                  feels structured, calm, and professional.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-row">
@@ -278,7 +278,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="Private member portals"
-                    desc="Structured guidance, resources, and next steps in an interactive, organized way."
+                    desc="Structured guidance, resources, and tips in an interactive, organized way."
                   />
 
                   <Feature
@@ -306,7 +306,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="Step-by-step structure"
-                    desc="Clear roadmaps, practical tools, and guidance that reduce overwhelm."
+                    desc="Clear roadmaps and practical tools that reduce overwhelm."
                   />
 
                   <Feature
@@ -377,7 +377,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   you need a roadmap, and someone who’s actually done it.
                 </strong>{" "}
                 Imagine aperitivo in Florence, remote work with Sicilian views,
-                and weekends in Rome — all possible now thanks to Italy’s new
+                and weekends in Rome... all possible now thanks to Italy’s new
                 Digital Nomad Visa.
               </p>
 
@@ -1390,8 +1390,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <span className="serif font-semibold tracking-[0.03em] text-white/95">
                     “Welcome to Italy” Bundle
                   </span>
-
-          
 
                   <span className="flex items-baseline gap-1.5">
                     <span className="sans tabular-nums text-[15px] text-white/70">

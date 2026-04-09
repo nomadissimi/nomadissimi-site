@@ -3,6 +3,8 @@ import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { sendBookingLinkEmail } from "@/lib/email/sendBookingLinkEmail";
 
+//whoever is listed here will be able to send booking links and update intake status to "booking link sent"
+
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
   "marco.bellomo1997@gmail.com",

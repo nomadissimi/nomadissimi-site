@@ -41,8 +41,8 @@ export default async function AdminIntakesPage({
     "tax",
     "residence",
     "dolce-vita",
-    "general",
     "bundle",
+    "general",
   ];
   const allowedSorts = ["newest", "oldest", "urgency", "follow-up"];
 

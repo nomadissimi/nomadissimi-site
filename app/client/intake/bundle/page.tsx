@@ -156,12 +156,12 @@ export default function BundleIntakePage() {
           </p>
 
           <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
-            Before we prepare your Welcome to Italy consultation
+            Before we prepare your consultation
           </h1>
 
           <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
-            Please complete this onboarding form before your private Welcome to
-            Italy session. It helps us understand your residence setup, tax
+            Please complete this onboarding form before your private "Welcome to
+            Italy" session. It helps us understand your residence setup, tax
             context, and settling-in priorities so we can make the call focused,
             strategic, and genuinely useful.
           </p>
@@ -333,28 +333,6 @@ export default function BundleIntakePage() {
                     <option>In the process</option>
                   </select>
                 </Field>
-
-                <Field
-                  label="What is your current residence / permesso situation?"
-                  required
-                >
-                  <select
-                    name="permessoStatus"
-                    required
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Not started yet</option>
-                    <option>I need to file my poste kit</option>
-                    <option>I already filed the poste kit</option>
-                    <option>I’m waiting for my Questura appointment</option>
-                    <option>I already have my permesso</option>
-                    <option>Not sure</option>
-                  </select>
-                </Field>
               </div>
             </section>
 
@@ -514,22 +492,7 @@ export default function BundleIntakePage() {
                 Settling-in priorities
               </h2>
 
-              <div className="mt-5 grid gap-5 md:grid-cols-2">
-                <Field label="Have you spent time in Italy before?" required>
-                  <select
-                    name="italyExperience"
-                    required
-                    defaultValue=""
-                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
-                  >
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
-                </Field>
-              </div>
+            
 
               <div className="mt-5">
                 <p className="mb-3 sans text-sm text-black/70">
@@ -650,8 +613,7 @@ export default function BundleIntakePage() {
               </p>
 
               <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
-                We’ll be in touch soon. Looking forward to your Welcome to Italy
-                session together!
+                We’ll be in touch soon. Looking forward to our session together!
               </p>
             </div>
           </form>
@@ -681,4 +643,3 @@ function Field({
     </div>
   );
 }
-

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 
+
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
   "marco.bellomo1997@gmail.com",

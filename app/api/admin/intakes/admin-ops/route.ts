@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 
+//whoever is listed here will be able to update the admin ops workflow fields on intakes (admin next action, priority, owner, follow-up date, consultation completed)
+
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
   "marco.bellomo1997@gmail.com",

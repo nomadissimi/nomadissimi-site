@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 
+//whoever is listed here will be able to update admin notes on intakes 
+// this is separate from the admin ops workflow, and is meant for more free-form notes that don't fit into the structured workflow fields
+
+
 const ADMIN_EMAILS = [
   "sylviasanchez1506@gmail.com",
   "marco.bellomo1997@gmail.com",
