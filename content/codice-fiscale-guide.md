@@ -452,7 +452,7 @@ But as you settle into your Italian life, your 16-character code will eventually
 
 ## **1. Your _Permesso di Soggiorno_ (Residence Permit)**
 
-<GuideSoftTeal">
+<GuideSoftTeal>
 
 Once your residence permit is fully processed and approved, the _Questura_ (police headquarters) will hand you a physical, electronic card.  
 **Your official Codice Fiscale is permanently printed right on the front of this card**.
@@ -506,7 +506,7 @@ Until you get your hard plastic Italian ID cards, keep a PDF copy of your origin
 
 <GuideSoftTeal title="You’re already ahead">
 
-Italian bureaucracy has a terrifying reputation, but the truth is, it’s just a beast that needs to be tamed with the right preparation. Yes, the systems are incredibly interconnected and fragmented at the same time. Yes, the love for paper trails is real. And yes, patience is absolutely essential.
+Italian bureaucracy has a terrifying reputation (and rightfully so), but the truth is, it’s just a beast that needs to be tamed with the right preparation. Yes, the systems are incredibly interconnected and fragmented at the same time. Yes, the love for old-fashioned paper trails is still real. And yes, patience is absolutely essential.
 
 But once you secure that magical 16-character code, you are one step closer to transitioning from a tourist to a recognized resident with access to all the beautiful chaos and incredible opportunities Italy has to offer.
 
