@@ -523,6 +523,27 @@ export function GuideSoftPink({
   );
 }
 
+export function GuideSoftTeal({
+  title,
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="rounded-[24px] border border-[#BFD9D4] bg-gradient-to-br from-[#F5FCFA] to-[#ECF8F5] px-5 py-5 shadow-[0_12px_30px_rgba(59,111,105,0.06)] my-6">
+      {title ? (
+        <div className="sans text-xs tracking-[0.18em] uppercase text-[#3B6F69]">
+          {title}
+        </div>
+      ) : null}
+      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
 export function GuideSoftPurple({
   title,
   children,
@@ -852,26 +873,5 @@ export function TealBadge({ children }: { children: ReactNode }) {
     <span className="mb-3 mr-2 inline-flex rounded-full border border-[#BFD9D4] bg-[#F3FBF8] px-4 py-2 sans text-[11px] uppercase tracking-[0.14em] text-[#3B6F69]">
       {children}
     </span>
-  );
-}
-
-export function GuideSoftTeal({
-  title,
-  children,
-}: {
-  title?: string;
-  children: ReactNode;
-}) {
-  return (
-    <div className="rounded-[24px] border border-[#BFD9D4] bg-gradient-to-br from-[#F5FCFA] to-[#ECF8F5] px-5 py-5 shadow-[0_12px_30px_rgba(59,111,105,0.06)] my-6">
-      {title ? (
-        <div className="sans text-xs tracking-[0.18em] uppercase text-[#3B6F69]">
-          {title}
-        </div>
-      ) : null}
-      <div className={`${title ? "mt-3" : ""} guide-prose max-w-none`}>
-        {children}
-      </div>
-    </div>
   );
 }

@@ -319,7 +319,7 @@ Once they have your fingerprints, they will hand you back your post office recei
 
 </GuideCard>
 
-# **Chapter 5 Step 3: The Permesso di Soggiorno (Picking up your card)**
+# **Chapter 5 Step 3: The Permesso di Soggiorno (picking up your card)**
 
 You’ve done the paperwork, you’ve given your fingerprints, and now you are officially waiting for the physical plastic card that proves you are a resident of Italy.
 
@@ -371,7 +371,7 @@ You have the residence permit (the actual physical card instead of the receipt f
 
 </GuideBigSis>
 
-# **Chapter 6 Step 4: The Comune Residency Registration (Making Your Address Official)**
+# **Chapter 6 Step 4: The Comune Residency Registration (making your address official)**
 
 Now that you have your physical _Permesso di Soggiorno_, it is time to tell the Italian government exactly where you live.
 
@@ -481,14 +481,16 @@ You are now officially a registered resident of Italy with a fully verified addr
 
 </GuideBigSis>
 
-# **Chapter 7 Step 5: Your Italian ID Card (The Ultimate Access Key)**
+# **Chapter 7 Step 5: Your Italian ID Card**
+
+This is the last step of your administrative setup as an Italian resident. It's time to get your official Italian ID card, your ultimate access key!
 
 <NavyBadge>Step 5</NavyBadge>
 <GuideBadge>CIE</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-This is the official Italian ID card, your ultimate access key! More importantly, it unlocks your digital identification for almost every public service in the country through the "Entra con CIE" system.
+More importantly, the Italian ID card unlocks your digital identification for almost every public service in the country through the "Entra con CIE" system, which we will cover below.
 
 <GuideBlueNote title="Why this step comes last">
 
@@ -522,7 +524,7 @@ When you apply at the counter, the clerk will give you security codes called **P
 For security reasons, **these arrive split into two halves.**
 
 The first half is given to you right away on a paper receipt at the Comune.  
-The second half will arrive a few days later, hidden inside the sealed envelope that contains your physical CIE card.
+The second half will arrive a few days later, hidden inside the sealed envelope that contains your physical ID card.
 
 **Treat these codes like gold.** Keep the paper receipt, scan it, laminate it, and save the numbers in a secure password manager. You need both halves combined to use the digital features of the card. They serve as an authentication.
 
@@ -531,7 +533,7 @@ The second half will arrive a few days later, hidden inside the sealed envelope 
 <GuideBigSis title="Pro tip: set up the CieID app immediately">
 
 **Pro tip: set up the CieID app as soon as possible**  
-Once you have the physical card and the full PIN, you can register your CIE on the official _CieID app_. _This turns your smartphone into a digital key._  
+Once you have the physical card and the full PIN, you can register the electronic version (Carta di Identità Elettronica, also known as CIE) on the official _CieID app_. _This turns your smartphone into a digital key._  
 You simply hold the card to the back of your phone (using NFC), type in your PIN, and you can instantly log into government websites without needing a separate SPID.
 
 </GuideBigSis>
@@ -562,7 +564,7 @@ If you are a Digital Nomad (freelancer), this entire trail was actually about un
 <PlumBadge>What comes next</PlumBadge>
 
 <GuideTaxSnapshot
-title="Tax & Partita IVA Consultation"
+title="Let's talk taxes"
 subtitle="Your tax setup in Italy matters more than most people realize."
 
 >
@@ -579,8 +581,7 @@ With this guide, you will know exactly which tax opportunities are available to 
 
 You navigated the consulates, tamed the local offices, and built your new life from the ground up.
 
-<NavyBadge>Administrative chapter complete</NavyBadge>
-<GuideBadge>You did it</GuideBadge>
+<NavyBadge>You Did it</NavyBadge>
 
 <GuideSpacer size="sm" />
 
