@@ -3,6 +3,7 @@ export type IntakeType =
   | "tax"
   | "residence"
   | "dolce-vita"
+  | "bundle"
   | "general";
 
 export type PortalKey =
@@ -79,7 +80,7 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     label: "Welcome to Italy Bundle",
     priceId: "price_1TCZgvQnDSGgUETvyzjPlw0M",
     portalKeys: ["residence", "tax", "codice-fiscale"],
-    intakeType: "general",
+    intakeType: "bundle",
     sendIntakeEmail: true,
   },
 

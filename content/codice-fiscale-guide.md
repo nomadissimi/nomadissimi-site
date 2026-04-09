@@ -7,7 +7,6 @@
 </GuideSoftTeal>
 
 <TealBadge>Codice Fiscale</TealBadge>
-<GuideBadge>Italy access key</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -65,7 +64,8 @@ Any unauthorized duplication, reproduction, redistribution, publication, or comm
 
 By accessing or using this material, you acknowledge and agree to these terms.
 
-For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/terms
+For our full list of Terms & Conditions, visit [nomadissimi.com/terms](https://www.nomadissimi.com/terms).
+
 
 </GuideCard>
 
@@ -75,8 +75,6 @@ For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/term
 
 The _Codice Fiscale_ literally translates to “Fiscal Code,” but it’s much more useful to think of it as your ultimate Italian access pass.
 </GuideSoftTeal>
-
-<TealBadge>Core concept</TealBadge>
 
 <GuideSpacer size="sm" />
 
@@ -349,8 +347,8 @@ _For instance_, to give you an idea of what a clear procedure looks like, these 
 [https://ambwashingtondc.esteri.it/en/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/codice-fiscale/](https://ambwashingtondc.esteri.it/en/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/codice-fiscale/)
 
 **2. Download the AA4/8 form**  
-No matter which consulate you belong to, the core of the application is the exact same piece of paper: the AA4/8 form. You will probably find this document buried somewhere on your consulate's website, but to save you the bureaucratic treasure hunt, you can download the English-friendly, editable version directly from the Italian Revenue Agency right here:  
-[https://www.agenziaentrate.gov.it/portale/documents/20143/278995/Form+AA48+Editable_AA4_8_Modello_ING.pdf/e32d806e-92e3-05a5-37ac-ab270ff86a74](https://www.agenziaentrate.gov.it/portale/documents/20143/278995/Form+AA48+Editable_AA4_8_Modello_ING.pdf/e32d806e-92e3-05a5-37ac-ab270ff86a74)
+No matter which consulate you belong to, the core of the application is the exact same piece of paper: the AA4/8 form. You will probably find this document buried somewhere on your consulate's website, but to save you the bureaucratic treasure hunt, you can download the English-friendly, editable version directly from the Italian Revenue Agency [right here.](https://www.agenziaentrate.gov.it/portale/documents/20143/278995/Form+AA48+Editable_AA4_8_Modello_ING.pdf/e32d806e-92e3-05a5-37ac-ab270ff86a74).
+
 
 **3. Submit your request**  
 Follow your consulate's specific instructions to the letter. Usually, this means digitally filling out the AA4/8 form, printing it, physically signing it, scanning it back in, and sending it off along with a scan of your passport and a utility bill to prove you live in their jurisdiction.
@@ -380,8 +378,8 @@ As soon as you arrive, **you can head directly to any local branch of the _Agenz
 
 Your goal here is to apply for your code and get out without letting the legendary Italian bureaucracy eat up your entire afternoon.
 
-_For official reference, you can read the Agenzia delle Entrate's exact requirements for foreign citizens on their dedicated English page here:_  
-[https://www.agenziaentrate.gov.it/portale/web/english/nse/individuals/tax-identification-number-for-foreign-citizens](https://www.agenziaentrate.gov.it/portale/web/english/nse/individuals/tax-identification-number-for-foreign-citizens)
+
+For official reference, you can read the Agenzia delle Entrate's exact requirements for foreign citizens on their [dedicated English page here.](https://www.agenziaentrate.gov.it/portale/web/english/nse/individuals/tax-identification-number-for-foreign-citizens).
 
 <GuideBigSis title="One translation note">
 
@@ -500,9 +498,8 @@ Until you get your hard plastic Italian ID cards, keep a PDF copy of your origin
 
 </GuideBigSis>
 
-# **Chapter 7 You’ve Got This (and We’ve Got You)**
+# **Chapter 7 You’ve Got This (and we’ve got tou)**
 
-<TealBadge>Guide complete</TealBadge>
 
 <GuideSpacer size="sm" />
 

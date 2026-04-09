@@ -1,7 +1,7 @@
 # **Chapter 1 Welcome Home: Your Italian Chapter Begins**
 
 <GuideBigSis title="Cheers! Salute!">
-  subtitle="Grab a glass of Prosecco (or whatever you’re into) and look around: you’ve made it to Italy\! You conquered the hardest part of this journey by securing your visa, and you should be so incredibly proud of yourself."
+  Grab a glass of Prosecco (or whatever you’re into) and look around: you’ve made it to Italy\! You conquered the hardest part of this journey by securing your visa, and you should be so incredibly proud of yourself.
 </GuideBigSis>
 
 <GuideBadge>Residence Registration Guide</GuideBadge>
@@ -56,7 +56,8 @@ Any unauthorized duplication, reproduction, redistribution, publication, or comm
 
 By accessing or using this material, you acknowledge and agree to these terms.
 
-For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/terms
+For our full list of Terms & Conditions, visit [nomadissimi.com/terms](https://www.nomadissimi.com/terms).
+
 
 </GuideCard>
 

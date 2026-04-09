@@ -34,14 +34,21 @@ export default async function AdminIntakesPage({
     redirect("/login?next=/admin/intakes");
   }
 
-const { type, sort, q } = await searchParams;
+  const { type, sort, q } = await searchParams;
 
-  const allowedTypes = ["visa", "tax", "residence", "dolce-vita", "general"];
+  const allowedTypes = [
+    "visa",
+    "tax",
+    "residence",
+    "dolce-vita",
+    "general",
+    "bundle",
+  ];
   const allowedSorts = ["newest", "oldest", "urgency", "follow-up"];
 
-const selectedType = type && allowedTypes.includes(type) ? type : "all";
-const selectedSort = sort && allowedSorts.includes(sort) ? sort : "newest";
-const searchQuery = (q ?? "").trim().toLowerCase();
+  const selectedType = type && allowedTypes.includes(type) ? type : "all";
+  const selectedSort = sort && allowedSorts.includes(sort) ? sort : "newest";
+  const searchQuery = (q ?? "").trim().toLowerCase();
 
   let query = supabaseAdmin
     .from("client_intakes")
@@ -58,57 +65,53 @@ const searchQuery = (q ?? "").trim().toLowerCase();
     throw new Error("Failed to load intake submissions.");
   }
 
- 
-const filteredIntakes = (intakes ?? []).filter((intake) => {
-  if (!searchQuery) return true;
+  const filteredIntakes = (intakes ?? []).filter((intake) => {
+    if (!searchQuery) return true;
 
-  const haystack = [
-    intake.first_name,
-    intake.last_name,
-    intake.email,
-    intake.city,
-    intake.country,
-    intake.consulate,
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
+    const haystack = [
+      intake.first_name,
+      intake.last_name,
+      intake.email,
+      intake.city,
+      intake.country,
+      intake.consulate,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
 
-  return haystack.includes(searchQuery);
-});
+    return haystack.includes(searchQuery);
+  });
 
-const sortedIntakes = [...filteredIntakes].sort((a, b) => {
-  if (selectedSort === "oldest") {
-    return (
-      new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
-    );
-  }
+  const sortedIntakes = [...filteredIntakes].sort((a, b) => {
+    if (selectedSort === "oldest") {
+      return (
+        new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+      );
+    }
 
-  if (selectedSort === "urgency") {
-    const scoreA = getUrgencyScore(a);
-    const scoreB = getUrgencyScore(b);
-    if (scoreA !== scoreB) return scoreB - scoreA;
+    if (selectedSort === "urgency") {
+      const scoreA = getUrgencyScore(a);
+      const scoreB = getUrgencyScore(b);
+      if (scoreA !== scoreB) return scoreB - scoreA;
 
-    return (
-      new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
-    );
-  }
+      return (
+        new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+      );
+    }
 
-  if (selectedSort === "follow-up") {
-    const timeA = getFollowUpSortValue(a.admin_follow_up_date);
-    const timeB = getFollowUpSortValue(b.admin_follow_up_date);
-    if (timeA !== timeB) return timeA - timeB;
+    if (selectedSort === "follow-up") {
+      const timeA = getFollowUpSortValue(a.admin_follow_up_date);
+      const timeB = getFollowUpSortValue(b.admin_follow_up_date);
+      if (timeA !== timeB) return timeA - timeB;
 
-    return (
-      new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
-    );
-  }
+      return (
+        new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+      );
+    }
 
-  return (
-    new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
-  );
-});
-  
+    return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+  });
 
   return (
     <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
@@ -166,103 +169,109 @@ const sortedIntakes = [...filteredIntakes].sort((a, b) => {
             >
               General
             </FilterChip>
+
+            <FilterChip
+              href="/admin/intakes?type=bundle"
+              active={selectedType === "bundle"}
+            >
+              Bundle
+            </FilterChip>
           </div>
 
           <div className="mt-4 flex flex-wrap gap-3">
-  <SortChip
-    href={
-      selectedType === "all"
-        ? "/admin/intakes?sort=newest"
-        : `/admin/intakes?type=${selectedType}&sort=newest`
-    }
-    active={selectedSort === "newest"}
-  >
-    Newest
-  </SortChip>
+            <SortChip
+              href={
+                selectedType === "all"
+                  ? "/admin/intakes?sort=newest"
+                  : `/admin/intakes?type=${selectedType}&sort=newest`
+              }
+              active={selectedSort === "newest"}
+            >
+              Newest
+            </SortChip>
 
-  <SortChip
-    href={
-      selectedType === "all"
-        ? "/admin/intakes?sort=oldest"
-        : `/admin/intakes?type=${selectedType}&sort=oldest`
-    }
-    active={selectedSort === "oldest"}
-  >
-    Oldest
-  </SortChip>
+            <SortChip
+              href={
+                selectedType === "all"
+                  ? "/admin/intakes?sort=oldest"
+                  : `/admin/intakes?type=${selectedType}&sort=oldest`
+              }
+              active={selectedSort === "oldest"}
+            >
+              Oldest
+            </SortChip>
 
-  <SortChip
-    href={
-      selectedType === "all"
-        ? "/admin/intakes?sort=urgency"
-        : `/admin/intakes?type=${selectedType}&sort=urgency`
-    }
-    active={selectedSort === "urgency"}
-  >
-    Urgency
-  </SortChip>
+            <SortChip
+              href={
+                selectedType === "all"
+                  ? "/admin/intakes?sort=urgency"
+                  : `/admin/intakes?type=${selectedType}&sort=urgency`
+              }
+              active={selectedSort === "urgency"}
+            >
+              Urgency
+            </SortChip>
 
-  <SortChip
-    href={
-      selectedType === "all"
-        ? "/admin/intakes?sort=follow-up"
-        : `/admin/intakes?type=${selectedType}&sort=follow-up`
-    }
-    active={selectedSort === "follow-up"}
-  >
-    Follow-up
-  </SortChip>
-</div>
+            <SortChip
+              href={
+                selectedType === "all"
+                  ? "/admin/intakes?sort=follow-up"
+                  : `/admin/intakes?type=${selectedType}&sort=follow-up`
+              }
+              active={selectedSort === "follow-up"}
+            >
+              Follow-up
+            </SortChip>
+          </div>
 
-         <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-  <form method="GET" className="w-full max-w-xl">
-    <div className="flex flex-col gap-3 sm:flex-row">
-      <input type="hidden" name="type" value={selectedType} />
-      <input type="hidden" name="sort" value={selectedSort} />
+          <div className="mt-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <form method="GET" className="w-full max-w-xl">
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <input type="hidden" name="type" value={selectedType} />
+                <input type="hidden" name="sort" value={selectedSort} />
 
-      <input
-        type="text"
-        name="q"
-        defaultValue={q ?? ""}
-        placeholder="Search by name, email, city, country, or consulate..."
-        className="w-full rounded-full border border-black/10 bg-white px-5 py-3 sans text-[15px] text-black/75 outline-none transition placeholder:text-black/35 focus:border-black/20"
-      />
+                <input
+                  type="text"
+                  name="q"
+                  defaultValue={q ?? ""}
+                  placeholder="Search by name, email, city, country, or consulate..."
+                  className="w-full rounded-full border border-black/10 bg-white px-5 py-3 sans text-[15px] text-black/75 outline-none transition placeholder:text-black/35 focus:border-black/20"
+                />
 
-      <button
-        type="submit"
-        className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-5 py-3 text-white shadow-[0_10px_24px_rgba(75,93,68,0.16)] transition hover:bg-[#3E4E38]"
-      >
-        Search
-      </button>
-    </div>
-  </form>
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-5 py-3 text-white shadow-[0_10px_24px_rgba(75,93,68,0.16)] transition hover:bg-[#3E4E38]"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
 
-  <p className="sans text-sm text-black/45">
-    Showing {sortedIntakes.length}{" "}
-    {selectedType === "all" ? "total" : selectedType} submission
-    {sortedIntakes.length === 1 ? "" : "s"}.
-  </p>
-</div>
+            <p className="sans text-sm text-black/45">
+              Showing {sortedIntakes.length}{" "}
+              {selectedType === "all" ? "total" : selectedType} submission
+              {sortedIntakes.length === 1 ? "" : "s"}.
+            </p>
+          </div>
 
-{searchQuery ? (
-  <div className="mt-3">
-    <Link
-      href={
-        selectedType === "all"
-          ? `/admin/intakes?sort=${selectedSort}`
-          : `/admin/intakes?type=${selectedType}&sort=${selectedSort}`
-      }
-      className="inline-flex items-center rounded-full border border-black/10 bg-white px-4 py-2 sans text-[12px] uppercase tracking-[0.14em] text-black/55 transition hover:bg-[#FBF8F2] hover:text-black/75"
-    >
-      Clear search
-    </Link>
-  </div>
-) : null}
-
+          {searchQuery ? (
+            <div className="mt-3">
+              <Link
+                href={
+                  selectedType === "all"
+                    ? `/admin/intakes?sort=${selectedSort}`
+                    : `/admin/intakes?type=${selectedType}&sort=${selectedSort}`
+                }
+                className="inline-flex items-center rounded-full border border-black/10 bg-white px-4 py-2 sans text-[12px] uppercase tracking-[0.14em] text-black/55 transition hover:bg-[#FBF8F2] hover:text-black/75"
+              >
+                Clear search
+              </Link>
+            </div>
+          ) : null}
 
           <div className="mt-8 space-y-5">
-          {sortedIntakes.length > 0 ? (
-             sortedIntakes.map((intake) => (
+            {sortedIntakes.length > 0 ? (
+              sortedIntakes.map((intake) => (
                 <IntakeCardShell
                   key={intake.id}
                   header={
@@ -661,7 +670,10 @@ function getUrgencyScore(intake: any) {
   else if (intake.admin_priority === "Normal") score += 20;
   else if (intake.admin_priority === "Low") score += 10;
 
-  if (!intake.consultation_completed && intake.admin_next_action === "Send booking link") {
+  if (
+    !intake.consultation_completed &&
+    intake.admin_next_action === "Send booking link"
+  ) {
     score += 25;
   }
 

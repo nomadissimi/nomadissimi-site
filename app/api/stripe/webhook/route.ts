@@ -110,16 +110,18 @@ export async function POST(req: Request) {
   }
 
   if (purchasedProduct.sendIntakeEmail && purchasedProduct.intakeType) {
-    const intakeUrl =
-      purchasedProduct.intakeType === "visa"
-        ? INTAKE_LINKS.visa
-        : purchasedProduct.intakeType === "tax"
-          ? INTAKE_LINKS.tax
-          : purchasedProduct.intakeType === "residence"
-            ? INTAKE_LINKS.residence
-            : purchasedProduct.intakeType === "dolce-vita"
-              ? INTAKE_LINKS.dolceVita
-              : INTAKE_LINKS.general;
+  const intakeUrl =
+  purchasedProduct.intakeType === "visa"
+    ? INTAKE_LINKS.visa
+    : purchasedProduct.intakeType === "tax"
+      ? INTAKE_LINKS.tax
+      : purchasedProduct.intakeType === "residence"
+        ? INTAKE_LINKS.residence
+        : purchasedProduct.intakeType === "dolce-vita"
+          ? INTAKE_LINKS.dolceVita
+          : purchasedProduct.intakeType === "bundle"
+            ? INTAKE_LINKS.bundle
+            : INTAKE_LINKS.general;
 
     await sendPostPurchaseIntakeEmail({
       customerEmail: email,

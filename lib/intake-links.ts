@@ -7,6 +7,7 @@ export const INTAKE_LINKS = {
   tax: `${SITE_URL}/client/intake/tax`,
   residence: `${SITE_URL}/client/intake/residence`,
   dolceVita: `${SITE_URL}/client/intake/dolce-vita`,
+  bundle: `${SITE_URL}/client/intake/bundle`,
   general: `${SITE_URL}/client/intake/general`,
 } as const;
 

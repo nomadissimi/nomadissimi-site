@@ -27,15 +27,17 @@ const subject = "Your private consultation link";
  
   const normalizedType = (intakeType ?? "").toLowerCase();
 
-  const intakeLine =
-    normalizedType === "visa"
-      ? "We’ve reviewed your visa onboarding form and your next step is ready."
-      : normalizedType === "tax"
-        ? "We’ve reviewed your tax onboarding form and your consultation step is ready."
-        : normalizedType === "residence"
-          ? "We’ve reviewed your residence onboarding form and your next step in Italy is ready."
-          : normalizedType === "dolce-vita"
-            ? "We’ve reviewed your La Dolce Vita onboarding form and your private consultation step is ready."
+ const intakeLine =
+  normalizedType === "visa"
+    ? "We’ve reviewed your visa onboarding form and your next step is ready."
+    : normalizedType === "tax"
+      ? "We’ve reviewed your tax onboarding form and your consultation step is ready."
+      : normalizedType === "residence"
+        ? "We’ve reviewed your residence onboarding form and your next step in Italy is ready."
+        : normalizedType === "dolce-vita"
+          ? "We’ve reviewed your La Dolce Vita onboarding form and your private consultation step is ready."
+          : normalizedType === "bundle"
+            ? "We’ve reviewed your Welcome to Italy Bundle onboarding form and your next step is ready."
             : normalizedType === "general"
               ? "We’ve reviewed your onboarding form and your consultation step is ready."
               : "We’ve reviewed your onboarding form and your next step is ready.";
@@ -51,17 +53,19 @@ const subject = "Your private consultation link";
     </p>
 
     <p style="margin:0 0 16px;">
-      ${
-        normalizedType === "visa"
-          ? "You can now choose a time for your visa consultation using the private link below."
-          : normalizedType === "tax"
-            ? "You can now choose a time for your tax consultation using the private link below."
-            : normalizedType === "residence"
-              ? "You can now choose a time for your residence consultation using the private link below."
-              : normalizedType === "dolce-vita"
-                ? "You can now choose a time for your La Dolce Vita consultation using the private link below."
-                : "You can now choose a time for your consultation using the private link below."
-      }
+    ${
+  normalizedType === "visa"
+    ? "You can now choose a time for your visa consultation using the private link below."
+    : normalizedType === "tax"
+      ? "You can now choose a time for your tax consultation using the private link below."
+      : normalizedType === "residence"
+        ? "You can now choose a time for your residence consultation using the private link below."
+        : normalizedType === "dolce-vita"
+          ? "You can now choose a time for your La Dolce Vita consultation using the private link below."
+          : normalizedType === "bundle"
+            ? "You can now choose a time for your comprehensive \"Welcome to Italy\" consultation covering your residence, tax, and settling-in priorities using the private link below."
+            : "You can now choose a time for your consultation using the private link below."
+}
     </p>
 
     <p style="margin:0;">

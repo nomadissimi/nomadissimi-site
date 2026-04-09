@@ -98,7 +98,8 @@ Any unauthorized duplication, reproduction, redistribution, publication, or comm
 
 By accessing or using this material, you acknowledge and agree to these terms.
 
-For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/terms
+For our full list of Terms & Conditions, visit [nomadissimi.com/terms](https://www.nomadissimi.com/terms).
+
 
 </GuideCard>
 
@@ -361,7 +362,7 @@ This regime is the ultimate crossover because it applies to both freelancers and
       This is your undisputed golden ticket. Since you cannot use the <em>Regime Forfettario</em> (which is only for freelancers), <strong>the <em>Regime Impatriati</em> is your primary weapon to drastically lower your tax bill,</strong> instead of the Regime Ordinario. 
     </p>
     <p>
-      Your employer will simply apply the 50% exemption to your monthly paycheck, meaning your net take-home salary is significantly higher than it would be under the standard system.
+      Your employer will apply the 50% exemption to your monthly paycheck, meaning your net take-home salary is significantly higher than it would be under the standard system. We discuss this more in our "Taking Action" chapter later in this guide.
     </p>
   </GuideTaxCompareCard>
 
@@ -1220,7 +1221,9 @@ You can now be more aligned with your _commercialista_ and not be a clueless for
 
 </GuideQuickFacts>
 
-### **In Boca Al Lupo (good luck)**
+### **In Boca Al Lupo!**
+
+That's an Italian way to say "Good luck!"
 
 <GuideSoftPurple>
 
@@ -1228,6 +1231,6 @@ We created this agency because we’ve been exactly where you are. We are here t
 
 We're not saying it will be perfect (there's no perfect place, and we're not here to sell you something that doesn't exist). But what we aim to do through our work is to make you feel supported and lighten the load of navigating Italian bureaucracy.
 
-We wish you the best in your Italian life, and are grateful you have chosen to include us in the process. In boca al lupo! Good luck!
+We wish you the best in your Italian life, and are truly grateful you have chosen to include us in the process. You can do this. In boca al lupo! Good luck!
 
 </GuideSoftPurple>

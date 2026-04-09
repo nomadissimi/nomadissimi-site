@@ -1388,20 +1388,20 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   />
 
                   <span className="serif font-semibold tracking-[0.03em] text-white/95">
-                    “Welcome to Italy”
+                    “Welcome to Italy” Bundle
                   </span>
 
-                  <span className="mx-3 opacity-35">•</span>
+          
 
                   <span className="flex items-baseline gap-1.5">
                     <span className="sans tabular-nums text-[15px] text-white/70">
                       €
                     </span>
                     <span className="sans tabular-nums font-semibold text-[22px] md:text-[24px] leading-none text-white">
-                      699
+                      599
                     </span>
                     <span className="ml-1 sans text-[13px] tracking-[0.12em] uppercase text-white/75">
-                      - subject to availability
+                      - valued at €1,397
                     </span>
                   </span>
                 </span>
@@ -1409,10 +1409,14 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             />
 
             <p className="price-subtext">
-              Get all 3 add-ons together
-              <span className="text-[#4B5D44] font-medium">
-                (valued at €1,397)
-              </span>
+              • Get access to all the written materials and portals from the
+              Residence, Tax, and Dolce Vita packages.
+            </p>
+
+            <p className="price-subtext">
+              • Private comprehensive 1-hr “Welcome to Italy" consultation
+              covering residence registration, taxation, and lifestyle
+              integration.
             </p>
           </div>
         </section>

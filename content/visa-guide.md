@@ -70,7 +70,7 @@ Any unauthorized duplication, reproduction, redistribution, publication, or comm
 
 By accessing or using this material, you acknowledge and agree to these terms.
 
-For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/terms 
+For our full list of Terms & Conditions, visit [nomadissimi.com/terms](https://www.nomadissimi.com/terms).
 
 </GuideCard>
 
@@ -2499,8 +2499,10 @@ _Walk into that appointment with a smile. You are ready. We are cheering you on.
 
 **Benvenuti in Italia. Vi aspettiamo!**
 
-# **Next Steps Playbook**
+# **Chapter 22 Next Steps Playbook**
 
 If one document is confusing or feels "impossible," or if you just want that extra layer of safety, we are here.
 
 If you purchased a package with a consultation, we go over key things in our private call. If you'd like to book a separate call, it may be booked for a fee in the portal below: https://www.nomadissimi.com/book
+
+
