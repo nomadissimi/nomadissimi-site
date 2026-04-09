@@ -102,12 +102,12 @@ For our full list of Terms & Conditions, visit: https://www.nomadissimi.com/term
 
 </GuideCard>
 
-# **Chapter 2 Tax Foundations (for everyone)**
+# **Chapter 2 Tax Foundations and Work Classifications**
 
 Before we can even talk about saving money, we need to draw a very clear line in the sand regarding exactly who you are in the eyes of the Italian government
 
-<PlumBadge>For everyone</PlumBadge>
-<GuideBadge>Foundational chapter</GuideBadge>
+<PlumBadge>First step</PlumBadge>
+<GuideBadge>For Everyone</GuideBadge>
 
 <GuideSpacer size="sm" />
 
@@ -170,13 +170,13 @@ Because the tax rules are so different depending on your profile, we have organi
 <GuideQuickFacts title="Your roadmap">
 
 - **If you are a Digital Nomad (_Freelancer_):**  
-  This entire guide is your new best friend. You need to read Chapters 3, 4, 5, and 7 very carefully, because you will be making active choices about your tax regime, your social security, and your business expenses.
+  This entire guide is your new best friend. You need to pay close attention to Chapters 3-8, because you will be making active choices about your tax regime, your social security, and your business expenses.
 
 - **If you are a Remote Worker (_Employee_):**  
-  Your employer handles the heavy lifting, so you can skip the sections about _Forfettario_, _INPS_, and electronic invoicing. However, you absolutely must read about the _Regime Impatriati_ in Chapter 3 (which could potentially slash your income tax in half), the _Modello 730_ in Chapter 5 (your yearly tax return), and how to activate your benefits.
+  In this case you can skip Chapters 6-8 since they only apply to Digital Nomads (Freelancers). However, you absolutely must read about the _Regime Impatriati_ in Chapter 5 (which could potentially slash your income tax in half), the _Modello 730_ in Chapter 8 (your yearly tax return), and how to activate your benefits.
 
-- **For Everyone:**  
-  Chapter 6 covers the new 2026 Crypto Tax laws. Whether you are issuing invoices or collecting a salary, if you own any form of cryptocurrencies/stablecoins, this section applies to you.
+- **For Crypto Holders (regardless of your work setup):**  
+  Chapter 10 covers the new 2026 Crypto Tax laws. Whether you are issuing invoices or collecting a salary, if you own any form of cryptocurrencies/stablecoins, this section applies to you.
 
 </GuideQuickFacts>
 
@@ -187,11 +187,11 @@ Let's talk about the actual tax regimes, how they work, and most importantly, ho
 
 </GuideSoftPink>
 
-# **Chapter 3 Italian Tax Regimes**
+# **Chapter 3 Italian Tax Regimes At a Glance**
 
 When you move to Italy, your tax rate isn’t necessarily a fixed number. Italy offers multiple tax regimes, and choosing the right one can save you thousands of euros every single year.
 
-<PlumBadge>Most important chapter</PlumBadge>
+<PlumBadge>Overview</PlumBadge>
 <GuideBadge>For Everyone</GuideBadge>
 
 <GuideSpacer size="sm" />
@@ -253,6 +253,9 @@ _Understanding the Regime Ordinario is essential because it is the default trap 
 </GuideMistakeBox>
 
 # **Chapter 4 Regime Ordinario**
+
+<PlumBadge>Default option</PlumBadge>
+<GuideBadge>Heavy tax burden</GuideBadge>
 
 ### **What Is It?**
 
@@ -328,6 +331,9 @@ _Even the “worst-case scenario” is not so bad in that case._ Now let’s tal
 </GuideSoftPink>
 
 # **Chapter 5 Regime Impatriati**
+
+<PlumBadge>Important tax savings</PlumBadge>
+<GuideBadge>Conditions apply</GuideBadge>
 
 ## **The Golden Opportunity (for qualifying digital nomads and remote workers)**
 
@@ -467,7 +473,10 @@ If you are a freelancer, we have to break some bad news to you: **you cannot com
 _So, if you are a salaried Remote Worker, congratulations, you have found your tax regime\!_  
 _However, if you are a Digital Nomad issuing invoices, there is one more major contender stepping into the ring: the incredibly simple, low-tax beauty known as the Regime Forfettario._
 
-# **Chapter 6 Regime Forfettario (Digital Nomads Only)**
+# **Chapter 6 Regime Forfettario (digital nomads only)**
+
+<PlumBadge>Digital nomads/Freelancers</PlumBadge>
+<GuideBadge>Income cap</GuideBadge>
 
 ### **What Is It?**
 
@@ -587,12 +596,9 @@ Alright, you have survived the heaviest part of Italian tax law. To quickly reca
 
 </GuideChecklist>
 
-# **Chapter 7 The Freelancer Essentials _(Digital Nomads Only)_**
+# **Chapter 7 The Freelancer Essentials (digital nomads only)**
 
-<GuideHeroAccent
-  title="The Freelancer Essentials"
-  subtitle="If you are a Digital Nomad, this is the operational mechanics of how your business actually runs in Italy."
-/>
+If you are a Digital Nomad, this is the operational mechanics of how your business actually runs in Italy.
 
 <PlumBadge>Digital Nomads only</PlumBadge>
 <GuideBadge>Operational chapter</GuideBadge>
@@ -601,8 +607,8 @@ Alright, you have survived the heaviest part of Italian tax law. To quickly reca
 
 <GuideDecisionBox title="Who should read this chapter?">
 
-_If you are a Remote Worker (Employee), your company handles everything in this chapter for you. You can skip ahead to Chapter 5._  
-_If you are a Digital Nomad, grab a coffee and stick with us. This is the operational mechanics of how your business runs in Italy._
+_If you are a Remote Worker (Employee), your company most likely handles everything in this chapter for you. You can skip ahead to the next chapter._  
+**If you are a Digital Nomad, grab a nice coffee and stick with us.** This is the operational mechanics of how your business runs in Italy. Read closely.
 
 </GuideDecisionBox>
 
@@ -610,7 +616,7 @@ _If you are a Digital Nomad, grab a coffee and stick with us. This is the operat
 
 Let’s talk about the elephant in the room: _INPS: Istituto Nazionale della Previdenza Sociale_ (Italian social security institute).
 
-When you start researching Italian taxes, _INPS_ is usually the acronym that causes the most panic. You see numbers like "26%" being thrown around and immediately assume the government is taking a chunk of your money just for fun.
+When you start researching Italian taxes, _INPS_ is usually the acronym that causes the most panic. You see numbers like "26%" being thrown around and immediately assume the government is taking a chunk of your money just for the hell of it.
 
 <GuideSoftPurple title="What INPS actually is">
 
@@ -620,7 +626,7 @@ Let's reframe this. INPS is not a "tax" in the traditional sense; it is Italy’
 
 ### **The Gestione Separata (The Freelancer Fund)**
 
-As a Digital Nomad, you don't fit into the traditional boxes of "lawyer" or "doctor," which have their own private pension funds. Instead, you will be enrolled in the INPS fund designed specifically for modern freelancers, consultants, and independent contractors: the _Gestione Separata_ (Separate Management Fund).
+As a Digital Nomad, you don't really fit into Italy's traditional boxes of "lawyer" or "doctor," which have their own private pension funds. Instead, you will be enrolled in the INPS fund designed specifically for modern freelancers, consultants, and independent contractors: the _Gestione Separata_ (Separate Management Fund).
 
 <GuideQuickFacts title="Why this fund is less scary than it sounds">
 
@@ -647,17 +653,13 @@ But wait\! You do not pay 26.07% on every single euro you earn. **You only pay i
 
 ### **The Good Thing: INPS is Tax-Deductible**
 
-<GuideTaxSnapshot
-title="Why INPS is less painful than it first appears"
-subtitle="This is the part most people miss."
-
->
+<GuideSoftPurple>
 
 Here is the thing that makes INPS much less painful: **the INPS contributions you pay this year are fully tax-deductible next year.**
 
 Yes, even if you are in the strict _Regime Forfettario_ (which normally doesn't allow deductions), the Italian government makes a special exception for INPS. Before they calculate your income tax for the year, they subtract the exact amount of INPS you paid the previous year. This significantly lowers your taxable income, meaning paying your social security actually saves you money on your income tax down the line.
 
-</GuideTaxSnapshot>
+</GuideSoftPurple>
 
 ## **The IVA: When To Include It In Your Invoice And When Not**
 
@@ -691,13 +693,13 @@ When you (an Italian freelancer) provide a service to another business (B2B), th
   You **DO NOT charge Italian IVA.**  
   _Why?_ Because the client is not in Italy, so the service is not "consumed" in Italy.
   - **If they are in the EU:** They handle their own local VAT through a mechanism called Reverse Charge (_Inversione Contabile_). You just write "Reverse Charge" on your invoice.
-  - **If they are outside the EU (e.g. USA):** It is completely outside the scope of European VAT. You just write _"Operazione non soggetta"_ (Operation not subject to VAT) on your invoice.
+  - **If they are outside the EU (like the USA):** It is completely outside the scope of European VAT. You just write _"Operazione non soggetta"_ (Operation not subject to VAT) on your invoice.
 
 </GuideChecklist>
 
 <GuideBigSis title="Why this matters so much">
 
-This is a massive advantage\! If you are a freelancer with clients primarily in the US or UK, **you can use the Regime Impatriati to get the 50% income tax cut, AND you still won't have to charge them 22% IVA because they are foreign businesses.**
+This is a massive advantage\! If you are a freelancer with clients primarily in the US or UK, **you can use the Regime Impatriati to get the 50% income tax cut, AND you still will not have to charge them 22% IVA because they are foreign businesses** (depending on the speficic work or service you do).
 
 </GuideBigSis>
 
@@ -707,7 +709,7 @@ This is a massive advantage\! If you are a freelancer with clients primarily in 
 
 When you provide a service to a private individual, the territoriality rule flips: **the service is taxed in the country where the freelancer is located.**
 
-It does not matter where the client lives: even if your private client lives in New York, the Italian government says, "You are in Italy, and the client isn't a business, so this service is taxed in Italy."
+It does not matter where the client lives: even if your private client lives in New York, the Italian government says, "You are in Italy, and the client isn't a business, so this service is taxed in Italy." Sorry.
 
 <GuideWarning title="The result">
 
@@ -719,13 +721,13 @@ It does not matter where the client lives: even if your private client lives in 
 
 There is a specific exception for automated digital services, like downloadable courses, e-books, or software subscriptions, sold to private clients in other EU countries. If your cross-border European sales exceed €10,000, the tax rules shift slightly.
 
-If this sounds like your business model, make sure to flag it so your commercialista can track it for you. It’s always important to research if there are exceptions that might apply to your particular situation.
+**If this sounds like your business model, make sure to flag it so your commercialista can track it for you.** It’s always important to research if there are exceptions that might apply to your particular situation.
 
 </GuideMistakeBox>
 
 ### **3. The E-Commerce Exception (Selling Physical Goods)**
 
-_But wait, what if you aren't selling your knowledge or digital skills? What if you run an e-commerce store selling actual, physical products, like a line of artisan shoes?_
+_But what if you aren't selling your knowledge or digital skills? What if you run an e-commerce store selling tangible, physical products, like a line of artisan shoes or jewelry?_
 
 The rules we just talked about change entirely. Services are invisible, but physical goods have to actually cross international borders. Because of this, the **Italian tax agency cares less about who the client is (B2B vs. B2C), and much more about the map.**
 
@@ -741,21 +743,23 @@ For physical goods, the golden rule is based on logistics: **Where is the packag
 
 - **If the goods are shipped within the EU** (like to Portugal or Germany):  
   This is where e-commerce gets a bit spicy. The EU has a special system for this (called the OSS, or _One-Stop Shop_).  
-  Generally, if you only sell a small amount across Europe (under €10,000 total), you just charge Italian IVA. But if your European sales blow up and cross that threshold, you will actually have to start charging the local VAT rate of the country where your customer lives.
+  Generally, if you only sell a small amount across Europe (under €10,000 total), you just charge Italian IVA. But if your European sales blow up and cross that threshold, you will actually have to start charging the local VAT rate of the country where your customer lives. Check this closely with your Italian accountant.
 
 </GuideChecklist>
 
 <GuideBigSis title="E-commerce warning">
 
-E-commerce IVA is its own entirely separate system heavily tied to shipping logistics, warehousing, and customs. If you are selling physical goods, you do not just need a standard accountant. Make sure you hire a _commercialista_ who specifically specializes in e-commerce and knows that world well.
+E-commerce IVA is its own entirely separate system heavily tied to shipping logistics, warehousing, and customs. If you are selling physical goods, do not get a generic accountant. **Make sure you hire a _commercialista_ who specializes in e-commerce and knows that world well. Not all standard Italian accountants are fit for these types of profiles.**
 
 </GuideBigSis>
 
-### **Why You Need to Know This (And Why You Still Need a Commercialista)**
+### **Why You Need to Know This (and why you still need a commercialista)**
 
 You might be thinking, _"If I'm going to hire an accountant, why do I need to memorize all this B2B and B2C stuff?"_
 
 Because knowing this is exactly how you distinguish between a brilliant _commercialista_ and a mediocre one. Just because someone is an accountant in Italy doesn’t mean they’ll be the best fit for your particular situation. We learned that the hard way.
+
+**Specialized accountants might charge more, but they will keep you compliant and will help you save money in taxes and expensive penalties! See it as an investment because it is.**
 
 The rules we just covered are the general framework. However, the Italian tax code is full of golden loopholes and ultra-specific exceptions (known in tax-speak as the _Articolo 7_ exceptions) that depend entirely on _what_ exactly you do.
 
@@ -765,7 +769,7 @@ Here are a few classic examples that catch Digital Nomads off guard:
 
 - **The "Nomad Services" Loophole:**  
   The government created a specific list of intellectual services that are completely exempt from Italian IVA when sold to a private individual (B2C) living outside the EU.  
-  If you do technical consulting, marketing/advertising, data processing, or license your copyrights/IP, the rules suddenly flip. You get to charge 0% IVA to your private clients outside the EU.
+  If you do technical consulting, marketing/advertising, data processing, or license your copyrights/IP, the rules suddenly flip. You might get to charge 0% IVA to your private clients outside the EU.
 
 - **The "Real Estate" Rule:**  
   If your remote work is tied to physical property (like remote architectural design, CAD engineering, or real estate consulting), the service is always taxed wherever the building is located, regardless of where your client lives.
@@ -775,7 +779,7 @@ Here are a few classic examples that catch Digital Nomads off guard:
 
 </GuideQuickFacts>
 
-Furthermore, to genuinely qualify for the standard tax-free B2B rules, the service you provide must be directly related to your client's actual business activity. (You cannot just bill a CEO's company for designing their personal wedding invitations\!)
+Furthermore, to genuinely qualify for the standard tax-free B2B rules, the service you provide must be directly related to your client's actual business activity. In Italy this is referred to as _"inerente all'attività"_ (inherent to the activity). You cannot just bill a CEO's company for designing their personal wedding invitations\! Don't risk expensive penalties. The Italian tax authorities are the eye in the sky!
 
 <GuideMistakeBox title="What a mediocre accountant does vs a great one">
 
@@ -789,29 +793,22 @@ Your _commercialista_ should be your strategic financial bodyguard, not just a t
 
 </GuideBigSis>
 
-## **Electronic Invoicing: Your Mandatory (But Easy) New Best Friend**
-
-To fill in and finish this chapter but just leaving this here for now\*
-
 # **Chapter 8 Business Deductions**
 
-<GuideHeroAccent
-  title="Business Deductions"
-  subtitle="If you are a freelancer with an Italian *Partita IVA*, you are essentially a one-person business. And just like a big corporation, you have operating costs."
-/>
+If you are a freelancer with an Italian _Partita IVA,_ you are essentially a one-person business. And just like a big corporation, you have operating costs.
 
 <PlumBadge>Money-saving chapter</PlumBadge>
-<GuideBadge>Keep more of what you earn</GuideBadge>
+<GuideBadge>Digital Nomads and Freelancers</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-## **What Does It Mean to Deduct Business Expenses? _(For Digital Nomads)_**
+## **What Does It Mean to Deduct Expenses? _(for digital nomads and freelancers)_**
 
-**A tax deduction simply means reducing the amount of money the government is allowed to tax by subtracting your legitimate business expenses from your total income.**
+A tax deduction simply means reducing the amount of money the government is allowed to tax by subtracting your legitimate business expenses from your total income.
 
 <GuideTaxSnapshot
-title="The concept in action"
-subtitle="This is the basic logic behind deductions."
+title="Business Deductions"
+subtitle="This is the basic logic behind deductions and tax write-offs in Italy."
 
 >
 
@@ -837,7 +834,7 @@ Your ability to deduct expenses depends entirely on your tax regime:
 - **Regime Impatriati:** Yes\! You deduct your business expenses _first_, and then the famous 50% tax exemption is applied to whatever is left.  
   _(This is the ultimate combo\!)_
 
-- **Regime Forfettario:** NO. In this flat-tax regime, the government gives you a fixed, automatic "flat rate" deduction based on your profession. You cannot deduct your actual, real-life expenses.
+- **Regime Forfettario:** NO. In this flat-tax regime, the government gives you a fixed, automatic "flat rate" deduction based on your profession and your corresponding ATECO code's _coefficiente di redditività_ (profitability ratio). Since this index is fixed, you cannot deduct your business expenses. There is already a lump sump that is deducted. Your real business expenses might be slightly higher or lower than that fixed number.
 
 </GuideChecklist>
 
@@ -871,17 +868,19 @@ Here are the most common deductions for Digital Nomads:
   Paid ads, courses, professional certifications, and industry books.
 
 - **Nomad Travel & Transport:**  
-  This is the tricky one. Flights, hotels, and restaurant meals while traveling for business are deductible, but usually only up to 75% of the cost, and with strict annual limits. However, if you travel for a specific client and bill those exact travel costs directly to them on your invoice, they don't count toward your taxable income at all.
+  This is the tricky one. Flights, hotels, and restaurant meals while traveling for business are deductible, but usually only up to 75% of the cost, and with strict annual limits. However, if you travel for a specific client and bill those exact travel costs directly to them on your invoice, they don't count toward your taxable income at all. Check this specifically with your Italian accountant because business travel deductions can get messy.
 
 </GuideQuickFacts>
 
 <GuideMistakeBox title="Do not guess deduction percentages">
 
-_Big-sis tip:_ Not every expense is deductible at 100%. The Italian tax code assigns different deductible percentages depending on the type of cost (for example, a business dinner is treated differently than buying a new laptop).
+_Big-sis tip:_ Not every expense is deductible at 100%, so don't go off spending money like crazy for the sake of tax write-offs. The Italian tax code assigns different deductible percentages depending on the type of cost (for example, a business dinner is treated differently than buying a new laptop).
 
 **Never guess.** Keep every single invoice, send them all to your commercialista, and let them figure out exactly how to maximize your savings under the current tax law.
 
 </GuideMistakeBox>
+
+# **Chapter 9 The Modello 730**
 
 ## **The Modello 730: Your Yearly Tax Return Explained _(For Remote Workers)_**
 
@@ -912,12 +911,12 @@ Depending on your math, the result of your 730 will be either a **debit** (meani
 
 The Modello 730 season kicks off in May and usually runs until September.
 
-_And the absolute best part?_ You don't have to wait for a random government check to arrive in the mail months later. The Italian system is beautifully integrated with your employer. If your 730 results in a tax credit, the refund is magically added directly to your standard summer paycheck (usually in July or August, depending on how early you file).  
+The good news is that you don't have to wait for a random government check to arrive in the mail months later. The Italian system is beautifully integrated with your employer. If your 730 results in a tax credit, the refund is magically added directly to your standard summer paycheck (usually in July or August, depending on how early you file).  
 If you happen to owe money, the exact amount is simply deducted from that same summer paycheck. No wire transfers, no stress.
 
 </GuideSoftPurple>
 
-### **What Can You Actually Deduct?**
+### **What Can You Deduct?**
 
 Because you are an employee, you cannot deduct "business expenses" like a freelancer can. However, the Italian government offers a huge menu of _personal_ deductions that can generate a massive tax credit. Some of the most common things you can deduct on a 730 include:
 
@@ -942,7 +941,7 @@ Because you are an employee, you cannot deduct "business expenses" like a freela
 ### **The Holy Grail: Medical Expenses**
 
 While the list above is great, the absolute most common goldmine is **medical expenses**.  
-Italy allows you to claim a flat **19% tax deduction on your medical costs** (after a tiny baseline deductible of €129.11). This includes pharmacy medications, specialist visits, blood tests, dentist appointments, and even prescription glasses or contact lenses.
+Italy allows you to claim a flat **19% tax deduction on your medical costs** (after you surpass a tiny baseline deductible of €129.11). This includes pharmacy medications, specialist visits, blood tests, dentist appointments, and even prescription glasses or contact lenses. However, supplements like Magnesium and Vitamin C are usually not deductible.
 
 <GuideChecklist title="The two golden rules">
 
@@ -953,12 +952,12 @@ Italy allows you to claim a flat **19% tax deduction on your medical costs** (af
 
 </GuideChecklist>
 
-### **How to Actually File the 730 (Your Two Options)**
+### **How to File the 730 (Your Two Options)**
 
 <GuideTaxCompare>
   <GuideTaxCompareCard
     label="Option 1"
-    title='The "Do It For Me" Route (CAF or Commercialista)'
+    title='Through a CAF or Commercialista'
   >
     <p>
       If you have a complex situation (like a messy foreign stock portfolio or you just bought a house), you can hire a professional. Employees typically use a <em>CAF</em> (<em>Centro di Assistenza Fiscale</em>), which is a local tax assistance office that will file your 730 for a very small fee (usually around €50-€80), or you can use a private <em>commercialista</em>.
@@ -970,7 +969,7 @@ Italy allows you to claim a flat **19% tax deduction on your medical costs** (af
 
 <GuideTaxCompareCard
 label="Option 2"
-title='The "I Can Do It Myself" Route (Il 730 Precompilato)'
+title='Do it Yourself (il 730 Precompilato)'
 
 >
 
@@ -994,32 +993,32 @@ _Big-sis tip: Start a physical "730 Folder" in your house on January 1st. Every 
 
 </GuideBigSis>
 
-# **Chapter 9 Crypto in Italy (2026) — What You Must Know**
+# **Chapter 10 Crypto in Italy (2026)**
 
-<GuideHeroAccent
-  title="Crypto in Italy (2026)"
-  subtitle="Crypto is simple in theory, but messy in real life. One wrong detail can change the tax result."
-/>
+If you hold cryptoassets, this chapter applies to you whether you are a remote worker or digital nomad (freelancer). One wrong detail can change the tax result, so read closely.
 
 <PlumBadge>2026 version</PlumBadge>
-<GuideBadge>High-attention chapter</GuideBadge>
+<GuideBadge>For Crypto holders</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-<GuideSoftPurple title="Why this chapter matters">
+Whether you choose to buy cryptoassets or not is a personal decision. We're not here to offer investment or financial advice. However, we cannot deny that crypto and blockchain are revolutionizing payments worldwide. Nomadissimi is forward-thinking, and we wanted to include this in our tax portal as well.
 
-If you are a Digital Nomad or a Remote Worker, there is a very high chance you hold some crypto. You might just be holding Bitcoin as a personal investment, or you might actually be invoicing your freelance clients in USDC or Ethereum.  
+<GuideSoftPurple title="Let's talk crypto">
+
+You might just be holding Bitcoin as a personal investment, or you might actually be invoicing your freelance clients in USDC or Ethereum.  
 Whatever your situation is, you need to know this: **Italy does not consider crypto a "Wild West" anymore.** The Italian tax agency (_Agenzia delle Entrate_) has very strict, highly regulated rules for how digital assets are tracked and taxed. If you hold cryptocurrencies as an Italian resident, Italy expects you to understand how they are tracked and taxed.
-
-_Here is the Nomadissimi breakdown of exactly how crypto works in Italy as of 2026\._
 
 </GuideSoftPurple>
 
+Here is the Nomadissimi breakdown of how crypto is treated in Italy as of 2026. We aim to keep this guide as updated as possible, yet here is a disclaimer. Since the crypto sector is evolving at a fast-pace and regulations are also changing, we recommend doubling down and doing your own research (or DYOR, as the crypto community says).
+
 ## **1. The General Rule: How Crypto Investments are Taxed**
 
-If you bought crypto with your own personal savings just to invest or hold, the act of buying it is not a taxable event. The tax man only comes knocking when you realize a gain (meaning you sell your crypto for fiat currency like Euros, or you use your crypto to buy something else, like an NFT or a physical good).
+If you bought crypto with your own personal savings just to invest or hold, the **act of buying** it is not a taxable event. The tax collector only comes knocking when you realize a capital gain (meaning you sell your crypto for fiat currency like Euros, or you use your crypto to purchase something else, like a physical good).
 
-If you make a profit on that sale, Italy treats it as a capital gain.
+If you sell, swap, or otherwise dispose of crypto while you’re an Italian tax resident, Italy treats your profit as a capital gain, taxed with a dedicated substitute tax (separate from your _Partita IVA_ income).
+
 
 <GuideTaxSnapshot
 title="The 2026 update"
@@ -1027,29 +1026,45 @@ subtitle="This is the number you need to remember."
 
 >
 
-**Starting January 1, 2026, the capital gains tax on standard cryptocurrencies (like Bitcoin, Ethereum, Solana, etc.) has officially been raised to 33%.**
+**Starting January 1, 2026, the capital gains tax on standard cryptocurrencies (like BTC, ETH, AVAX, etc...) has officially been raised to 33%.**
 
 _Note_: There is a tiny exception. If you are dealing strictly with specific EU-regulated Electronic Money Tokens (EMTs) tied to the Euro, the rate remains at 26%, but for the vast majority of standard crypto portfolios, expect to pay 33% on your profits.
+
+Staking rewards, airdrops, and lending yield are also subject to capital gains tax.
 
 </GuideTaxSnapshot>
 
 ## **2. Getting Paid in Crypto (The Freelancer Trap)**
 
-What if you don't just invest in crypto, but you actually let your freelance clients pay your _Partita IVA_ invoices in crypto?
+What if you don't invest in crypto, but you let your freelance clients pay your _Partita IVA_ invoices in cryptoassets?
 
 This is where Digital Nomads can get confused. **Crypto received as payment** for your work is NOT treated as a capital gain. It **is treated as standard business income**.
 
 <GuideQuickFacts title="The first taxable layer">
 
-If a client pays you €5,000 worth of Bitcoin for a web design project, that €5,000 is simply added to your _Partita IVA_ revenue. It will be taxed according to whatever tax regime you are in (Regime Ordinario, Regime Forfettario, or the 50% Regime Impatriati discount).
+If a client pays you €5,000 worth of Bitcoin for a web design project, that €5,000 is simply added to your _Partita IVA_ revenue. It will be taxed according to whatever tax regime you are in (Regime Ordinario, Regime Forfettario, or the 50% Regime Impatriati discount). 
 
 </GuideQuickFacts>
 
-<GuideMistakeBox title="But wait, there's a catch\!">
+<GuideMistakeBox title="But there's a catch!">
 
-Once that Bitcoin hits your wallet and you pay your normal freelance income tax on it, that Bitcoin now becomes your personal investment asset. If you hold onto it for six months, and its value jumps from €5,000 to €7,000 before you finally sell it for Euros, that extra €2,000 of profit is now a capital gain. You will have to pay the 33% crypto tax on that €2,000.
+Once that Bitcoin hits your wallet and you pay your normal freelance income tax on it, that Bitcoin now becomes your personal investment asset. Let's say you hold onto it for six months, and its value jumps from €5,000 to €7,000 before you finally exchange it for Euros, that extra €2,000 of profit is now a capital gain. You will have to pay the 33% crypto tax on that €2,000.
+
+A lot of people think that if the crypto already got taxed once as business income, the story is over. It isn’t yet. If the asset continues to rise after you receive it, that extra appreciation can create a second taxable layer later when you dispose of it.
+
 
 </GuideMistakeBox>
+
+<GuideQuickFacts title="Stablecoins">
+
+If a client pays you in stablecoins, it depends on the type of stablecoin and the conversion to Euros. Euro-denominated stablecoins (like EURC) that function as e-money tokens have a lower 26% tax rate, as long as they are pegged to the Euro and thoroughly comply with regulatory standards.
+
+ If it's a different type of stablecoin like USDC, the rate jumps to 33%. 
+
+ Taxes apply when you exchange stablecoins for fiat currency (Euro/USD) or when you use them to purchase goods/services. Even swapping between different stablecoins may also be a taxable event. Check closely.
+
+</GuideQuickFacts>
+
 
 ## **3. The "Hidden" Rules: Monitoring and Wealth Taxes**
 
@@ -1065,7 +1080,7 @@ Even if you are the ultimate _"HODLer"_ and you never sell a single coin all yea
 
 ## **The Importance of a Brilliant Commercialista**
 
-Crypto is simple in theory, but incredibly messy in real life.
+Cryptoassets are faciliting payments globally, yet crypto tax reporting can be messy in real life.
 
 <GuideSoftPurple title="Why this is not the place to improvise">
 
@@ -1075,91 +1090,16 @@ One wrong detail, like miscalculating the exact EUR value on the day a client pa
 
 <GuideBigSis title="What this means in practice">
 
-This is exactly why a standard, old-school accountant will not work for you. If you touch crypto, you must hire a modern, tech-forward _commercialista_ who specifically understands blockchain taxation. They will tell you exactly what transaction history to export, how to document your wallet addresses, and how to stay 100% compliant without accidentally overpaying the government.
+This is exactly why a standard, old-school accountant will not work for you. If you have crypto, you must hire a modern, tech-forward _commercialista_ who specifically understands crypto taxation. They will tell you exactly what transaction history to export, how to document your wallet addresses, and how to stay 100% compliant without accidentally overpaying the government.
 
 </GuideBigSis>
 
-<GuideSpacer size="sm" />
 
-## **General rule: how gains are taxed**
 
-If you sell, swap, or otherwise dispose of crypto while you’re an Italian tax resident, Italy treats your profit as a capital gain, taxed with a dedicated substitute tax (separate from your _Partita IVA_ income).
 
-<GuideTaxSnapshot
-title="The core rule"
-subtitle="This is the number you need to remember."
 
->
 
-For **2026**, crypto gains are taxed at **33%**.
-
-</GuideTaxSnapshot>
-
-## **Buying crypto vs. getting paid in crypto**
-
-Yes, gains can be taxed either way — but the tax logic is not the same.
-
-<GuideTaxCompare>
-  <GuideTaxCompareCard
-    label="Scenario 1"
-    title="You buy crypto with your own money"
-  >
-    <p>
-      Buying crypto is <strong>not</strong> the taxable moment.
-    </p>
-    <p>
-      Taxation happens later, when you sell, swap, or otherwise dispose of it and realize a gain.
-    </p>
-    <p>
-      That gain is taxed at <strong>33% in 2026</strong>.
-    </p>
-  </GuideTaxCompareCard>
-
-<GuideTaxCompareCard
-label="Scenario 2"
-title="You get paid in crypto for your work"
-
->
-
-    <p>
-      If you receive crypto as payment for your freelance work, that crypto is treated as <strong>business income</strong>.
-    </p>
-    <p>
-      That means it counts as <em>Partita IVA</em> revenue and is taxed according to your chosen regime (<em>Ordinario</em>, <em>Impatriati</em>, or <em>Forfettario</em>), just like if you had been paid in EUR.
-    </p>
-    <p>
-      And yes: if you later sell or swap that crypto, any <strong>additional gain</strong> between the value at receipt and the value at disposal is still taxed at <strong>33% in 2026</strong>.
-    </p>
-
-  </GuideTaxCompareCard>
-</GuideTaxCompare>
-
-<GuideMistakeBox title="Why people get this wrong">
-
-A lot of people think that if the crypto already got taxed once as business income, the story is over. It isn’t.  
-If the asset continues to rise after you receive it, that extra appreciation can create a second taxable layer later when you dispose of it.
-
-</GuideMistakeBox>
-
-## **The importance of a good commercialista**
-
-<GuideSoftPurple title="Why this is not the place to improvise">
-
-Crypto is simple in theory, but messy in real life: one wrong detail (timing, valuation in EUR, wallet/exchange statements, or how a transaction is classified) can change the result.
-
-That’s why a good _commercialista_ is not “nice to have” here: they’ll tell you exactly what to report, how to document it, and how to stay compliant without overpaying or taking unnecessary risks.
-
-</GuideSoftPurple>
-
-<GuideBigSis title="Big-sis reality check">
-
-If you hold crypto, do not leave this as a vague “I’ll figure it out later” situation. This is one of those areas where tidy records and a competent accountant can save you from expensive chaos.
-
-</GuideBigSis>
-
-To fill in and finish this chapter but just leaving this here for now\*
-
-# **Chapter 10 Taking Action**
+# **Chapter 11 Taking Action**
 
 <GuideHeroAccent
   title="Taking Action"
@@ -1272,7 +1212,7 @@ Do not sign an Autocertificazione just because you read an article online saying
 
 </GuideBigSis>
 
-# **Chapter 11 Conclusion**
+# **Chapter 12 Conclusion**
 
 <GuideHeroAccent
   title="Conclusion"
