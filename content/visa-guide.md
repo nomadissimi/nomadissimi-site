@@ -262,7 +262,7 @@ So, are you ready to stop dreaming and start packing?
 
 <GuideDivider />
 
-# **Where can I request my Italian Visa?**
+# **Where can I request my Italian visa?**
 
 The place to apply for the Digital Nomad or Remote Worker visa is the Italian embassy or consulate in the jurisdiction where you currently reside.
 
@@ -493,7 +493,9 @@ You’re beautiful no matter what, and passport photos are not meant to be photo
 
 # **Chapter 8 item 4: Residence Permit (only if you live abroad)**
 
-<GuideBadge>skip this section if you're applying from your country of citizenship</GuideBadge>
+<GuideBadge>Special cases</GuideBadge>
+
+_Skip this section if you're applying from your country of citizenship._
 
 If you’re applying in a country that is not the country of your passport, the consulate needs proof that you’re legally allowed to live there.
 
@@ -697,7 +699,7 @@ If your university issues both a “full academic transcript” and a “short t
 
 </GuideNote>
 
-## **The Golden Rule: Physical Originals Only**
+## **The Golden Rule: physical originals only**
 
 <GuideWarning>
 
@@ -1268,7 +1270,7 @@ Even though using a classic university Bachelor’s/Master’s degree (Option A)
 
 **Option B is basically a similar recognition logic as Option A (CIMEA or Dichiarazione di Valore)**, but just applied to a qualification that doesn’t have the words “Bachelor’s Degree” on the front, so the paperwork has a bit more explaining to do.
 
-## **No Bachelor’s Degree but Still Valid**
+## **No Bachelor’s degree but still valid**
 
 <GuideCard>
 
@@ -1403,7 +1405,7 @@ If Option A and B are “show your education,” Option C is “show your receip
 <GuideTOC title="In this chapter">
 
 - The Time Thresholds Requirements
-- Formalities warning
+- Formalities Warning
 - DV/CIMEA vs Option C: different tools, different goal
 - What to collect (Option C checklist)
 
@@ -1533,7 +1535,7 @@ Consulates are skeptical and thorough… so it’s best to give them things in a
 
 </GuideNote>
 
-## **Formalities warning**
+## **Formalities Warning**
 
 <GuideWarning>
 
@@ -1592,7 +1594,7 @@ This “Highly Qualified Worker” section was long on purpose, because it’s u
 
 Here’s the quick recap to lock in the main ideas.
 
-## **The 3 routes**
+## **The 3 Routes**
 
 <GuideChecklist title="Pick the option you can document best">
 
@@ -1610,7 +1612,7 @@ Contact them in writing (or, best case, confirm in person) and verify exactly wh
 
 </GuideWarning>
 
-## **A Note on Regulated Professions and Italian Authority Recognition**
+## **A note on regulated professions and Italian authority recognition**
 
 <GuideSoftPink title="Regulated professions">
 
@@ -2139,7 +2141,7 @@ You have a home, you have insurance, and you have a job. In today’s economy, w
 
 <GuideTip>
 
-This is just proving that you have a real travel reservation showing your planned entry into Italy.
+This is simply about proving that you have a real travel reservation showing your planned entry into Italy.
 
 </GuideTip>
 
@@ -2184,7 +2186,7 @@ Next up: The Visa Fees
 
 Starting off bluntly: you cannot pay online, and you cannot pay with a credit card at the window.
 
-## **The Golden Rule: Cash is King**
+## **Cash is king (in this case)**
 
 Consulates almost universally require payment in cash, in the local currency or in euros depending on the specific office (but usually, they ask for the local currency equivalent of the Euro amount).
 
@@ -2200,7 +2202,7 @@ Consulates almost universally require payment in cash, in the local currency or 
 
 If you are applying as a Digital Nomad (Freelancer), you have just crossed the finish line\!
 
-You have every single document you need to build your visa packet. You can now skip ahead to chapter _14\. Organizing your application_ to put it all together.
+You have every single document you need to build your visa packet. You can now skip ahead to chapter 21 to put it all together.
 
 </GuideSoftPurple>
 
@@ -2210,7 +2212,7 @@ Not so fast\! You have one final, crucial chapter to cover. Because you are an e
 
 _Next up: Employment Contract and Employer Declaration._
 
-# **Chapter 20 Only for Remote workers**
+# **Chapter 20 Extra items for for Remote workers**
 
 <GuideBadge>Remote Worker only</GuideBadge>
 <GuideBadge>Final two documents</GuideBadge>
@@ -2504,5 +2506,3 @@ _Walk into that appointment with a smile. You are ready. We are cheering you on.
 If one document is confusing or feels "impossible," or if you just want that extra layer of safety, we are here.
 
 If you purchased a package with a consultation, we go over key things in our private call. If you'd like to book a separate call, it may be booked for a fee in the portal below: https://www.nomadissimi.com/book
-
-

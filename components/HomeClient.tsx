@@ -278,7 +278,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="Private member portals"
-                    desc="Structured guidance, resources, and tips in an interactive, organized way."
+                    desc="Detailed guidance, resources, and tips in an interactive, organized way."
                   />
 
                   <Feature

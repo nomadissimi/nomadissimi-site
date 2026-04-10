@@ -100,7 +100,6 @@ By accessing or using this material, you acknowledge and agree to these terms.
 
 For our full list of Terms & Conditions, visit [nomadissimi.com/terms](https://www.nomadissimi.com/terms).
 
-
 </GuideCard>
 
 # **Chapter 2 Tax Foundations and Work Classifications**
@@ -463,7 +462,7 @@ Every case requires specific number-crunching with an Italian _commercialista_, 
 
 </GuideQuickFacts>
 
-### **The Rule of One: You Cannot Double Dip _(Freelancers Only)_**
+### **The Rule of One: you cannot double dip _(Freelancers)_**
 
 <GuideMistakeBox title="You cannot combine these two">
 
@@ -883,7 +882,7 @@ _Big-sis tip:_ Not every expense is deductible at 100%, so don't go off spending
 
 # **Chapter 9 The Modello 730**
 
-## **The Modello 730: Your Yearly Tax Return Explained _(For Remote Workers)_**
+## **The Modello 730: Your Yearly Tax Return Explained _(for Both)_**
 
 As a remote employee, you might be thinking, _"Wait, my employer already deducts taxes from my paycheck every month. Why do I need to worry about a tax return?"_  
 Because this is your chance to ask the Italian government for some of your money back\!
@@ -1199,7 +1198,7 @@ Do not sign an Autocertificazione just because you read an article online saying
 
 # **Chapter 12 Conclusion**
 
-Italian taxes aren’t something you pay blindly. They are a highly structured system that you can strategically navigate.
+Italian taxes are a highly structured system that you can navigate with strategy. You can remain compliant instead of blindly paying the highest amount.
 
 <GuideSoftPurple title="Take an espresso break">
 
@@ -1221,7 +1220,7 @@ You can now be more aligned with your _commercialista_ and not be a clueless for
 
 </GuideQuickFacts>
 
-### **In Boca Al Lupo!**
+### **In Bocca al Lupo!**
 
 That's an Italian way to say "Good luck!"
 
@@ -1231,6 +1230,6 @@ We created this agency because we’ve been exactly where you are. We are here t
 
 We're not saying it will be perfect (there's no perfect place, and we're not here to sell you something that doesn't exist). But what we aim to do through our work is to make you feel supported and lighten the load of navigating Italian bureaucracy.
 
-We wish you the best in your Italian life, and are truly grateful you have chosen to include us in the process. You can do this. In boca al lupo! Good luck!
+We wish you the best in your Italian life, and are truly grateful you have chosen to include us in the process. You can do this. In bocca al lupo! Good luck!
 
 </GuideSoftPurple>

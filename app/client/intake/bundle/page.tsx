@@ -160,10 +160,10 @@ export default function BundleIntakePage() {
           </h1>
 
           <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
-            Please complete this onboarding form before your private "Welcome to
-            Italy" session. It helps us understand your residence setup, tax
-            context, and settling-in priorities so we can make the call focused,
-            strategic, and genuinely useful.
+            Please complete this onboarding form before your comprehensive
+            "Welcome to Italy" session. It helps us understand your residence
+            setup, tax context, and settling-in priorities so we can make the
+            call focused and strategic.
           </p>
 
           <div className="mt-7 rounded-2xl border border-black/10 bg-[#FBF8F2] px-5 py-4">
@@ -492,8 +492,6 @@ export default function BundleIntakePage() {
                 Settling-in priorities
               </h2>
 
-            
-
               <div className="mt-5">
                 <p className="mb-3 sans text-sm text-black/70">
                   What matters most to you in daily life?
@@ -643,3 +641,5 @@ function Field({
     </div>
   );
 }
+
+
