@@ -95,14 +95,14 @@ But first, check if you qualify for the visa; and from there, determine if you�
       Italy welcomes people with a University degree obtained through a 3-year minimum education.  
        _This is the most common option, but it needs to be proven properly. We will explain to you how in this guide._
 
-  2.  **Professional qualification**:
+  2.  **OR Professional qualification**:
 
       If you don't have a traditional university degree, Italy accepts post-secondary professional qualifications: as long as they're at least 3 years long and issued by a recognized tertiary institution (like a polytechnic, higher technical institute, or university of applied sciences). You’ll need to prove that this qualification is equivalent to a Bachelor's degree. _We will also explain to you how to do so in this guide._
 
-  3.  **Proven Work Experience:**
+  3.  **OR Proven Work Experience:**
 
       No degree? No problem. You can also qualify by showing you've mastered your craft through actual work experience.
-      - **For Tech Professionals** (Developers & IT Specialists): If you are a software developer, web engineer, systems administrator, IT manager, or similar, you only need 3 years of relevant work experience gained within these last 7 years.
+      - **For Tech Professionals** (Developers & IT Specialists): If you are a software developer, web engineer, systems administrator, IT manager, or similar, you only need 3 years of relevant work experience gained within these last 7 years (in your industry, not necessarily in just one company).
       - **For Other Professions:** You need at least 5 years of professional experience in your specific sector (this would be somewhat comparable to a “Bachelor’s” level).
 
         _Note: You’ll need solid proof like contracts, payslips, or reference letters. We’ll show you exactly what works later on in the guide._

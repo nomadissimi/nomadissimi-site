@@ -1164,8 +1164,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <p className="sans text-[#2B2B2B]/70 mt-0 md:mt-1 px-3">
                 But once that approval lands, real life in Italy begins: more
                 paperwork, residency registration, taxes, and all those little
-                <em> “Wait, how do I ____ ?”</em> moments, as you
-                navigateanother culture, language, and way of doing things.{" "}
+                <em> “Wait, how do I ____ ?”</em> moments, as you navigate
+                another culture, language, and way of doing things.{" "}
                 <strong>
                   You do not need to figure this out alone. That’s where we stay
                   by your side.{" "}
@@ -1444,7 +1444,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   “I’d been sitting on the idea of moving to Europe for a while.
                   I found out about the new digital nomad visa for Italy but was
                   lost on the application. After my call with nomadissimi, it
-                  stopped feeling impossible, and I have advanced a lot in
+                  stopped feeling impossible, and I have advanced a lot in the
                   process. Thanks again!”
                 </strong>{" "}
                 --Rafael, Software Engineer from Illinois
@@ -1521,10 +1521,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h4 className="serif text-3xl font-semibold">
-                    Get the Free Guide
+                    Get the Free Starter Guide (Eligibility and Sample)
                   </h4>
                   <p className="sans mt-2 text-[#2B2B2B]/80">
-                    Drop your email and we’ll send you your free starter guide.
+                    Drop your email and we’ll send you your free starter guide
+                    and newsletter updates.
                   </p>
                 </div>
                 <form

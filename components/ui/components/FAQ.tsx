@@ -56,12 +56,15 @@ const faqs: QA[] = [
     ),
   },
   {
-    q: "What happens after I buy one of your visa packages?",
+    q: "What happens after I buy one of your packages?",
     a: (
       <>
-        Once you book, you’ll receive an intake form so we can better understand
-        your specific profile, visa goals, and timeline. This helps us optimize
-        your consultation, so we can get straight into your tailored strategy.
+        Once your payment is confirmed, you will be prompted to create your
+        account, where you will obtain access to your portal. If your package
+        includes a private consultation, you’ll receive an intake form so we can
+        better understand your specific profile, visa goals, and timeline. This
+        helps us optimize your call, so we can get straight into your tailored
+        strategy.
       </>
     ),
   },
