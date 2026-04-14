@@ -89,17 +89,17 @@ But first, check if you qualify for the visa; and from there, determine if you�
 - **Your work is fully location-independent,** meaning you can deliver everything online as long as you have a stable Internet connection.
 - **You earn at least €25,000 gross per year.** (It doesn’t matter whether the monthly payments differ. What matters is the yearly sum).
 - **You have at least 6 months of experience** doing the kind of work you plan to do as a digital nomad or remote worker.
-- **Pick just one of the following:**
-  1.  **Bachelor’s degree:**
+- **Pick JUST ONE of the following:**
+  1.  **option 1: Bachelor’s degree:**
 
       Italy welcomes people with a University degree obtained through a 3-year minimum education.  
        _This is the most common option, but it needs to be proven properly. We will explain to you how in this guide._
 
-  2.  **OR Professional qualification**:
+  2.  **OR option 2: Professional qualification**:
 
       If you don't have a traditional university degree, Italy accepts post-secondary professional qualifications: as long as they're at least 3 years long and issued by a recognized tertiary institution (like a polytechnic, higher technical institute, or university of applied sciences). You’ll need to prove that this qualification is equivalent to a Bachelor's degree. _We will also explain to you how to do so in this guide._
 
-  3.  **OR Proven Work Experience:**
+  3.  **OR option 3: Proven Work Experience:**
 
       No degree? No problem. You can also qualify by showing you've mastered your craft through actual work experience.
       - **For Tech Professionals** (Developers & IT Specialists): If you are a software developer, web engineer, systems administrator, IT manager, or similar, you only need 3 years of relevant work experience gained within these last 7 years (in your industry, not necessarily in just one company).
