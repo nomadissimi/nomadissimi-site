@@ -363,12 +363,16 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
         {/* ——— Hero narrative ——— */}
         <FadeIn y={16}>
           <div className="card">
-            <h2 className="serif text-3xl md:text-4xl font-semibold text-center">
-              Italy is so much more than just a move: it’s an upgrade to your
-              entire lifestyle.
+            <h2 className="serif text-[40px] md:text-[52px] xl:text-[58px] font-semibold text-center leading-[1.12] tracking-[-0.015em] max-w-6xl mx-auto">
+              <span className="block">
+                Italy is so much more than just a move:
+              </span>
+              <span className="block mt-2 md:mt-3 text-black/92">
+                it’s an upgrade to your entire lifestyle.
+              </span>
             </h2>
             {/* Centered + constrained */}
-            <div className="mx-auto max-w-4xl px-4 text-center mt-4 space-y-6">
+            <div className="mx-auto max-w-4xl px-4 text-center mt-5 md:mt-6 space-y-5">
               <p className="lead-soft">
                 If you’re reading this, there’s probably a part of you that’s
                 done: done with burnout, expensive housing, artificial food, and
@@ -905,17 +909,19 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           <div className="mx-auto max-w-6xl">
             <FadeIn y={14}>
               <div className="text-center max-w-4xl mx-auto">
-                <p className="sans text-sm md:text-base uppercase tracking-[0.18em] text-[#4B5D44]/70">
+                <p className="sans text-[12px] md:text-[13px] uppercase tracking-[0.18em] text-[#4B5D44]/65">
                   The Nomadissimi difference
                 </p>
 
-                <h3 className="serif text-4xl md:text-5xl font-semibold mt-3">
-                  What is the Nomadissimi Visa Portal?
+                <h3 className="serif text-4xl md:text-5xl xl:text-[58px] font-semibold mt-3 leading-[1.08] tracking-[-0.01em]">
+                  What is the Nomadissimi
+                  <span className="block mt-1 md:mt-2">Visa Portal?</span>
                 </h3>
 
-                <p className="sans text-[#2B2B2B]/75 mt-5 text-lg leading-8">
-                  A private members-only portal designed to turn the Italian
-                  visa process into something organized, fun, and doable.
+                <p className="sans text-[#2B2B2B]/72 mt-5 text-lg md:text-[21px] leading-[1.75] max-w-3xl mx-auto">
+                  A private members-only portal that turns the Italian visa
+                  process into something clearer, calmer, and much more
+                  structured.
                 </p>
 
                 <div className="mt-5">
@@ -924,89 +930,127 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               </div>
             </FadeIn>
 
-            <div className="mt-10 grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
-              <FadeIn y={16}>
-                <div className="card lux-card">
-                  <h4 className="serif text-2xl md:text-3xl font-semibold">
-                    More than a checklist. Much more.
-                  </h4>
+            <div className="mt-10 grid lg:grid-cols-[1.08fr_0.92fr] gap-6 md:gap-8 items-stretch">
+              {/* LEFT: editorial feature card */}
+              <FadeIn y={18}>
+                <div className="relative overflow-hidden rounded-[34px] border border-[#E2D4BC] bg-[linear-gradient(135deg,#FFFDF9_0%,#FBF6EE_48%,#F7F1E6_100%)] p-7 md:p-10 shadow-[0_30px_80px_rgba(0,0,0,0.07)]">
+                  {/* glow layers */}
+                  <div className="pointer-events-none absolute -top-20 -right-16 h-52 w-52 rounded-full bg-[#C9A86A]/12 blur-3xl" />
+                  <div className="pointer-events-none absolute -bottom-24 -left-12 h-56 w-56 rounded-full bg-[#4B5D44]/8 blur-3xl" />
 
-                  <div className="mt-5 space-y-5 sans text-[17px] md:text-[18px] leading-[1.9] text-[#2B2B2B]/88">
-                    <p>
-                      The Nomadissimi Visa Portal is not a random folder of
-                      documents, and it is not a vague PDF download.
-                    </p>
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-3 mb-5">
+                      <div className="grid h-12 w-12 place-items-center rounded-2xl border border-[#DCC7A0]/55 bg-white/80 shadow-[0_10px_24px_rgba(0,0,0,0.05)]">
+                        <span className="text-[24px]" aria-hidden="true">
+                          ✦
+                        </span>
+                      </div>
 
-                    <p>
-                      It is a private, interactive,{" "}
-                      <strong>22-chapter guidance portal</strong> built to walk
-                      you through the Italian Digital Nomad Visa process step by
-                      step.
-                    </p>
+                      <div>
+                        <p className="sans text-[12px] uppercase tracking-[0.16em] text-[#4B5D44]/68">
+                          Private member experience
+                        </p>
+                        <p className="serif text-[24px] md:text-[28px] font-semibold text-[#1C1C1C]">
+                          More than a checklist. Much more.
+                        </p>
+                      </div>
+                    </div>
 
-                    <p>
-                      Inside, we explain{" "}
-                      <strong>what documents you need</strong>,{" "}
-                      <strong>where to get them</strong>,{" "}
-                      <strong>what each requirement actually means</strong>,{" "}
-                      <strong>when to prepare each piece</strong>, and{" "}
-                      <strong>how to avoid the mistakes</strong> that often lead
-                      to delays, confusion, and expensive do-overs.
-                    </p>
+                    <div className="space-y-5 sans text-[17px] md:text-[18px] leading-[1.9] text-[#2B2B2B]/88">
+                      <p>
+                        The Nomadissimi Visa Portal is <strong>not</strong> a
+                        random folder of documents and it is{" "}
+                        <strong>not</strong> a vague PDF download.
+                      </p>
 
-                    <p>
-                      It is designed for both <strong>remote workers</strong>{" "}
-                      and <strong>online freelancers</strong>, so you can
-                      understand the path that fits your profile instead of
-                      trying to piece everything together from scattered
-                      internet advice.
-                    </p>
+                      <p>
+                        It is a private, interactive,{" "}
+                        <strong>22-chapter guidance portal</strong> designed to
+                        walk you through the Italian Digital Nomad Visa process
+                        step by step, in normal human English.
+                      </p>
 
-                    <p>
-                      Think of it as the difference between being handed a list…
-                      and being given a calm, beautifully organized roadmap.
-                    </p>
+                      <p>
+                        Inside, we explain{" "}
+                        <strong>what documents you need</strong>,{" "}
+                        <strong>where to get them</strong>,{" "}
+                        <strong>what each requirement actually means</strong>,{" "}
+                        <strong>when to prepare each piece</strong>, and{" "}
+                        <strong>how to avoid the mistakes</strong> that so often
+                        lead to confusion, delays, and expensive do-overs.
+                      </p>
+
+                      <p>
+                        It is built for both <strong>remote workers</strong> and{" "}
+                        <strong>online freelancers</strong>, so you can
+                        understand the path that fits your profile instead of
+                        trying to piece it all together from scattered internet
+                        advice.
+                      </p>
+                    </div>
+
+                    <div className="mt-7 rounded-[26px] border border-white/70 bg-white/70 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] backdrop-blur">
+                      <p className="serif text-[24px] md:text-[28px] leading-[1.35] text-[#1F1F1F]">
+                        Think of it as the difference between being handed a
+                        list…
+                      </p>
+                      <p className="serif mt-2 text-[24px] md:text-[28px] leading-[1.35] text-[#4B5D44]">
+                        and being given a calm, beautifully organized roadmap.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </FadeIn>
 
-              <FadeIn delay={0.08} y={16}>
-                <div className="card p-7 md:p-8">
-                  <h4 className="serif text-2xl md:text-3xl font-semibold">
-                    Inside the portal
-                  </h4>
+              {/* RIGHT: structured portal contents panel */}
+              <FadeIn delay={0.08} y={18}>
+                <div className="h-full rounded-[34px] border border-black/8 bg-white p-6 md:p-7 shadow-[0_28px_70px_rgba(0,0,0,0.06)]">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="sans text-[12px] uppercase tracking-[0.16em] text-[#4B5D44]/65">
+                        Inside the portal
+                      </p>
+                      <h4 className="serif text-[30px] md:text-[34px] font-semibold mt-2 leading-[1.08]">
+                        What you actually get
+                      </h4>
+                    </div>
 
-                  <div className="mt-3 h-px w-24 bg-gradient-to-r from-transparent via-[#C9A86A]/70 to-transparent" />
+                    <div className="hidden md:grid h-12 w-12 place-items-center rounded-2xl bg-[#F7F1E8] border border-[#E7D9BF] text-[22px] shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
+                      🫒
+                    </div>
+                  </div>
+
+                  <div className="mt-5 h-px w-24 bg-gradient-to-r from-[#C9A86A]/75 to-transparent" />
 
                   <div className="mt-6 space-y-4">
-                    <PortalHighlight
+                    <PortalFeatureRow
                       title="22 interactive chapters"
-                      desc="A deep, structured member experience built from roughly 80 pages of guidance, organized into a calm step-by-step portal."
+                      desc="A structured member experience built from deep guidance, turned into a calm step-by-step portal."
                     />
-                    <PortalHighlight
+                    <PortalFeatureRow
                       title="What, where, when, how"
                       desc="Not just what to gather, but what each document is, where to get it, when it matters, and how it fits into your case."
                     />
-                    <PortalHighlight
+                    <PortalFeatureRow
                       title="Built for real applicants"
                       desc="Guidance for both remote employees and freelancers, with explanations that help you understand which path applies to you."
                     />
-                    <PortalHighlight
+                    <PortalFeatureRow
                       title="Myths debunked"
-                      desc="We clarify the parts people most often misunderstand online, so you are not relying on Reddit threads and outdated blog posts."
+                      desc="We clarify the parts people most often misunderstand online, so you are not relying on chaotic forums and outdated posts."
                     />
-                    <PortalHighlight
+                    <PortalFeatureRow
                       title="A calmer process"
-                      desc="The goal is not just information. It is confidence, order, and momentum."
+                      desc="The goal is not just information. It is confidence, order, momentum, and less nervous-system chaos."
                     />
                   </div>
 
-                  <div className="mt-8 grid sm:grid-cols-2 gap-3">
+                  <div className="mt-7 grid sm:grid-cols-2 gap-3">
                     <a
                       href="#guide"
-                      className="relative inline-flex items-center justify-center text-center px-4 py-3 rounded-2xl
+                      className="relative inline-flex items-center justify-center text-center px-4 py-3.5 rounded-2xl
               bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-              text-[#1A1A1A] font-serif text-[16px] leading-tight tracking-wide
+              text-[#1A1A1A] font-serif text-[16px] md:text-[18px] leading-tight tracking-wide
               ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
               transition-all duration-300 ease-out overflow-hidden
               hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
@@ -1016,9 +1060,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                     <a
                       href="#guide"
-                      className="relative inline-flex items-center justify-center text-center px-4 py-3 rounded-2xl
+                      className="relative inline-flex items-center justify-center text-center px-4 py-3.5 rounded-2xl
               bg-[#4B5D44]
-              text-white font-serif text-[16px] leading-tight tracking-wide
+              text-white font-serif text-[16px] md:text-[18px] leading-tight tracking-wide
               shadow-[0_2px_12px_rgba(75,93,68,0.25)]
               transition-all duration-300 ease-out overflow-hidden
               hover:shadow-[0_4px_20px_rgba(75,93,68,0.4)] hover:scale-[1.02]"
@@ -1029,11 +1073,48 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 </div>
               </FadeIn>
             </div>
+
+            {/* bottom credibility strip */}
+            <FadeIn delay={0.12} y={12}>
+              <div className="mt-6 grid md:grid-cols-3 gap-4">
+                <div className="rounded-2xl border border-black/8 bg-white px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
+                  <p className="sans text-[12px] uppercase tracking-[0.14em] text-[#4B5D44]/65">
+                    22 chapters
+                  </p>
+                  <p className="serif mt-2 text-[24px] leading-[1.25]">
+                    Deep guidance, broken into a clear member journey.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-black/8 bg-white px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
+                  <p className="sans text-[12px] uppercase tracking-[0.14em] text-[#4B5D44]/65">
+                    Built for your profile
+                  </p>
+                  <p className="serif mt-2 text-[24px] leading-[1.25]">
+                    Designed for remote workers and online freelancers alike.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-black/8 bg-white px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
+                  <p className="sans text-[12px] uppercase tracking-[0.14em] text-[#4B5D44]/65">
+                    Not just a PDF
+                  </p>
+                  <p className="serif mt-2 text-[24px] leading-[1.25]">
+                    A structured portal that explains the process in normal
+                    human English.
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
           </div>
         </section>
 
         {/* Visa packages nav bar jump */}
-        <section id="packages" className="scroll-mt-28 md:scroll-mt-38">
+        <section
+          id="packages"
+          className="scroll-mt-28 md:scroll-mt-38 pt-2 md:pt-4"
+        >
+          {" "}
           <div className="text-center mb-6 md:mb-11">
             <FadeIn>
               <h3 className="serif text-4xl md:text-5xl font-semibold">
@@ -1067,7 +1148,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
             <GoldRule />
           </div>
-
           {/* cards are narrower so they don't touch page edges */}
           <div className="mx-auto max-w-[1020px] mb-16 md:mb-22">
             <div className="grid md:grid-cols-3 gap-5 lg:gap-8 items-start">
@@ -1694,11 +1774,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h4 className="serif text-3xl font-semibold">
-                    Get a free initial sample of the Visa Portal
+                    Get a free sample of the Visa Portal
                   </h4>
                   <p className="sans mt-2 text-[#2B2B2B]/80">
-                    Drop your email and we’ll send you a sample of the Visa
-                    Portal and occasional Nomadissimi updates.
+                    Drop your email and we’ll send you an initial sample of the
+                    Visa Portal and occasional Nomadissimi updates.
                   </p>
                 </div>
                 <form
@@ -2090,13 +2170,20 @@ function GoldRule() {
   );
 }
 
-function PortalHighlight({ title, desc }: { title: string; desc: string }) {
+function PortalFeatureRow({ title, desc }: { title: string; desc: string }) {
   return (
-    <div className="border border-black/8 bg-white px-4 py-4 rounded-2xl shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
-      <p className="serif text-[20px] font-semibold text-[#1F1F1F]">{title}</p>
-      <p className="sans mt-2 text-[15px] leading-relaxed text-black/65">
-        {desc}
-      </p>
+    <div className="rounded-[22px] border border-black/8 bg-[#FCFBF8] px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.035)]">
+      <div className="flex items-start gap-3">
+        <span className="mt-[7px] h-2 w-2 rounded-full bg-[#C9A86A] shrink-0" />
+        <div>
+          <p className="serif text-[22px] md:text-[24px] leading-[1.2] text-[#1F1F1F]">
+            {title}
+          </p>
+          <p className="sans mt-2 text-[15px] md:text-[16px] leading-[1.75] text-black/65">
+            {desc}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
