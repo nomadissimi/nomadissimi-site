@@ -219,8 +219,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 </p>
 
                 <h1 className="serif text-4xl md:text-5xl xl:text-6xl leading-[1.1] font-semibold tracking-[0.01em]">
-                  Move to Italy (and settle in) without the headaches and
-                  expensive lawyers.
+                  Move to Italy without the headaches and expensive lawyers.
                 </h1>
 
                 <p className="sans mt-4 text-lg/7 text-[#2B2B2B]/80">
@@ -228,11 +227,8 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                   nomads, remote workers, and online freelancers who want{" "}
                   <em>la dolce vita</em> without drowning in Italian
                   bureaucracy. We combine private member portals, clear
-                  step-by-step guidance, and practical support for both the visa
-                  process and real life after arrival. From documents and
-                  consulates to residence, taxes, and settling in well, we make
-                  the process feel more structured, professional, and far less
-                  overwhelming.
+                  step-by-step guidance, and personalized support so your move
+                  feels structured, calm, and professional.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-row">
@@ -898,175 +894,32 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           </div>
         </section>
 
-        {/* What is the Nomadissimi Portal? */}
-        <section
-          id="portal"
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-18"
-        >
-          <div className="mx-auto max-w-6xl">
-            <FadeIn y={14}>
-              <div className="text-center max-w-4xl mx-auto">
-                <p className="sans text-sm md:text-base uppercase tracking-[0.18em] text-[#4B5D44]/70">
-                  The Nomadissimi difference
-                </p>
-
-                <h3 className="serif text-4xl md:text-5xl font-semibold mt-3">
-                  What is the Nomadissimi Visa Portal?
-                </h3>
-
-                <p className="sans text-[#2B2B2B]/75 mt-5 text-lg leading-8">
-                  A private members-only portal designed to turn the Italian
-                  visa process into something clear, structured, and actually
-                  doable.
-                </p>
-
-                <div className="mt-5">
-                  <GoldRule />
-                </div>
-              </div>
-            </FadeIn>
-
-            <div className="mt-10 grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
-              <FadeIn y={16}>
-                <div className="card lux-card">
-                  <h4 className="serif text-2xl md:text-3xl font-semibold">
-                    More than a checklist. Much more.
-                  </h4>
-
-                  <div className="mt-5 space-y-5 sans text-[17px] md:text-[18px] leading-[1.9] text-[#2B2B2B]/88">
-                    <p>
-                      The Nomadissimi Visa Portal is not a random folder of
-                      documents, and it is not a vague PDF download.
-                    </p>
-
-                    <p>
-                      It is a private, interactive,{" "}
-                      <strong>22-chapter guidance portal</strong> built to walk
-                      you through the Italian Digital Nomad Visa process step by
-                      step, in normal human English.
-                    </p>
-
-                    <p>
-                      Inside, we explain{" "}
-                      <strong>what documents you need</strong>,{" "}
-                      <strong>where to get them</strong>,{" "}
-                      <strong>what each requirement actually means</strong>,{" "}
-                      <strong>when to prepare each piece</strong>, and{" "}
-                      <strong>how to avoid the mistakes</strong> that often lead
-                      to delays, confusion, and expensive do-overs.
-                    </p>
-
-                    <p>
-                      It is designed for both <strong>remote workers</strong>{" "}
-                      and <strong>online freelancers</strong>, so you can
-                      understand the path that fits your profile instead of
-                      trying to piece everything together from scattered
-                      internet advice.
-                    </p>
-
-                    <p>
-                      Think of it as the difference between being handed a list…
-                      and being given a calm, beautifully organized roadmap.
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-
-              <FadeIn delay={0.08} y={16}>
-                <div className="card p-7 md:p-8">
-                  <h4 className="serif text-2xl md:text-3xl font-semibold">
-                    Inside the portal
-                  </h4>
-
-                  <div className="mt-3 h-px w-24 bg-gradient-to-r from-transparent via-[#C9A86A]/70 to-transparent" />
-
-                  <div className="mt-6 space-y-4">
-                    <PortalHighlight
-                      title="22 interactive chapters"
-                      desc="A deep, structured member experience built from roughly 80 pages of guidance, organized into a calm step-by-step portal."
-                    />
-                    <PortalHighlight
-                      title="What, where, when, how"
-                      desc="Not just what to gather, but what each document is, where to get it, when it matters, and how it fits into your case."
-                    />
-                    <PortalHighlight
-                      title="Built for real applicants"
-                      desc="Guidance for both remote employees and freelancers, with explanations that help you understand which path applies to you."
-                    />
-                    <PortalHighlight
-                      title="Myths debunked"
-                      desc="We clarify the parts people most often misunderstand online, so you are not relying on Reddit threads and outdated blog posts."
-                    />
-                    <PortalHighlight
-                      title="A calmer process"
-                      desc="The goal is not just information. It is confidence, order, and momentum."
-                    />
-                  </div>
-
-                  <div className="mt-8 grid sm:grid-cols-2 gap-3">
-                    <a
-                      href="#guide"
-                      className="relative inline-flex items-center justify-center text-center px-4 py-3 rounded-2xl
-              bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-              text-[#1A1A1A] font-serif text-[16px] leading-tight tracking-wide
-              ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
-              transition-all duration-300 ease-out overflow-hidden
-              hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
-                    >
-                      Get the free guide
-                    </a>
-
-                    <a
-                      href="#guide"
-                      className="relative inline-flex items-center justify-center text-center px-4 py-3 rounded-2xl
-              bg-[#4B5D44]
-              text-white font-serif text-[16px] leading-tight tracking-wide
-              shadow-[0_2px_12px_rgba(75,93,68,0.25)]
-              transition-all duration-300 ease-out overflow-hidden
-              hover:shadow-[0_4px_20px_rgba(75,93,68,0.4)] hover:scale-[1.02]"
-                    >
-                      Get a sample of the portal
-                    </a>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-          </div>
-        </section>
-
         {/* Visa packages nav bar jump */}
         <section id="packages" className="scroll-mt-28 md:scroll-mt-38">
           <div className="text-center mb-6 md:mb-11">
             <FadeIn>
               <h3 className="serif text-4xl md:text-5xl font-semibold">
-                Choose your visa plan
+                Choose your visa plan:
               </h3>
             </FadeIn>
-
             <FadeIn delay={0.05}>
-              <p className="sans text-[#2B2B2B]/72 mt-4 md:mt-3 max-w-4xl mx-auto px-4 text-[16px] md:text-[17px] leading-[1.85]">
-                Whether you want a self-guided start, expert review, or
-                high-touch strategic support, every Nomadissimi visa plan is
-                built around the same foundation: a clear private portal, a
-                smarter document process, and guidance that helps you move
-                forward with less chaos.
+              <p className="sans text-[#2B2B2B]/70 mt-4 md:mt-3">
+                From self-guided clarity to high-touch private support, each
+                option is designed to move you forward with more confidence and
+                less chaos.
               </p>
-
-              <p className="sans text-[#2B2B2B]/72 mt-3 max-w-4xl mx-auto px-4 text-[16px] md:text-[17px] leading-[1.85]">
-                The difference between the plans is how much personalized
-                review, strategic support, and hands-on guidance you want around
-                that portal.
+              <p className="sans text-[#2B2B2B]/70 mt-2 md:mt-1">
+                Let’s turn the dream into a clear, confident plan
               </p>
             </FadeIn>
-
-            <p className="sans mt-4 max-w-3xl mx-auto px-4 text-[15px] md:text-[16px] leading-[1.75] text-[#2B2B2B]/60">
-              Let’s turn the dream into a clear plan.
+            <p className="sans mt-3 max-w-3xl mx-auto px-4 text-[15px] md:text-[16px] leading-[1.75] text-[#2B2B2B]/55">
+              Depending on the level you choose, your support may include
+              private digital portals, structured roadmaps, professional review,
+              and personalized consultations.
             </p>
-
-            <p className="sans text-sm md:text-base text-[#2B2B2B]/70 mt-2 italic">
+            <p className="sans text-sm md:text-base text-[#2B2B2B]/70 mt-1 italic">
               ✨ Special pricing for a limited time ✨
             </p>
-
             <GoldRule />
           </div>
 
@@ -1080,37 +933,22 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   bullets={[
                     <>
                       <strong>
-                        Private access to the Nomadissimi Visa Portal
-                      </strong>
-                      : our members-only 22-chapter guidance experience covering
-                      eligibility, documents, consulate expectations,
-                      application structure, and what to do next.
-                    </>,
-                    <>
-                      <strong>
-                        Built for both remote workers and freelancers
-                      </strong>
-                      , so you can understand the path that fits your profile.
-                    </>,
-                    <>
-                      <strong>A real document roadmap</strong>, not just a
-                      checklist: what to prepare, where to get it, when it
-                      matters, and how to stay organized.
-                    </>,
-                    <>
-                      <strong>“Next Steps” playbook</strong> to help you move
-                      from research mode into real preparation with more
-                      confidence.
-                    </>,
-                    <>
-                      <strong>
-                        Clear explanations in normal human English
+                        Private access to the Nomadissimi Visa Portal:
                       </strong>{" "}
-                      so the process feels less confusing, less scattered, and
-                      far more doable.
+                      a structured self-guided experience covering eligibility,
+                      documents, consulate expectations, how to obtain each
+                      document, and more.
+                    </>,
+                    <>
+                      <strong>Clear document roadmap</strong> so you know what
+                      to gather, in what order, and how to stay on track.
+                    </>,
+
+                    <>
+                      <strong>"Next Steps"</strong> Playbook
                     </>,
                   ]}
-                  bestFor="Best for applicants who want a calm, self-guided start with real structure before paying for more hands-on support."
+                  bestFor="Best for independent applicants who want a calm, self-guided start with real structure."
                 >
                   <CheckoutButton
                     plan="Clarity"
@@ -1152,36 +990,36 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   featured
                   bullets={[
                     <>
-                      <strong>Everything inside Clarity</strong>, including the
-                      full Nomadissimi Visa Portal and structured document
-                      roadmap.
+                      <strong>
+                        📞 45-minute personalized strategy consultation
+                      </strong>{" "}
+                      to review your case, timing, and application direction.
                     </>,
                     <>
-                      <strong>45-minute private strategy consultation</strong>{" "}
-                      to review your case, timing, and application direction
-                      once you have gone through the material and are ready for
-                      sharper guidance.
+                      <strong>
+                        Private access to the Nomadissimi Visa Portal
+                      </strong>{" "}
+                      with structured guidance on the full visa process.
                     </>,
                     <>
-                      <strong>Professional document review</strong> so you can
-                      catch issues earlier and move forward with more
-                      confidence.
+                      <strong>Professional document review</strong>
                     </>,
                     <>
-                      <strong>30 days of follow-up email support</strong> for
-                      the questions that come up once the process becomes real.
+                      <strong>Clear document roadmap</strong> to keep you
+                      organized and moving with confidence.
                     </>,
                     <>
-                      <strong>Portal + strategy working together</strong>: not
-                      just information, but help applying that information to
-                      your actual case.
+                      <strong>30 days of follow-up email support</strong>
                     </>,
                     <>
-                      <strong>10% off our Residence Registration portal</strong>{" "}
+                      <strong>Next Steps playbook</strong>
+                    </>,
+                    <>
+                      <strong>10% off our Residence Registration add-on</strong>{" "}
                       for a smoother landing once your visa is approved.
                     </>,
                   ]}
-                  bestFor="Best for applicants who want the portal plus expert eyes on their case, documents, and next decisions."
+                  bestFor="Best for applicants who want private portal access plus professional reassurance and review."
                 >
                   <CheckoutButton
                     plan="Guidance"
@@ -1222,43 +1060,50 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   accent="#C9A86A"
                   bullets={[
                     <>
-                      <strong>Everything inside Guidance</strong>, including the
-                      full Visa Portal, strategy consultation, document review,
-                      and follow-up support.
-                    </>,
-                    <>
-                      <strong>45-minute deep-dive strategy session</strong>{" "}
-                      tailored to your timeline, case complexity, and
-                      application direction.
+                      <strong>
+                        📞 45-minute deep-dive strategy consultation
+                      </strong>{" "}
+                      tailored to your case and timeline.
                     </>,
                     <>
                       <strong>
-                        Additional 45-minute refinement consultation
+                        Private access to the Nomadissimi Visa Portal
                       </strong>{" "}
-                      plus
-                      <strong> consulate interview preparation</strong> so you
-                      feel more prepared for the appointment itself.
+                      with our full step-by-step digital guidance.
                     </>,
                     <>
-                      <strong>More comprehensive document review</strong> with
-                      deeper oversight and more detailed feedback.
+                      <strong>Early access to the Codice Fiscale Portal</strong>{" "}
+                      so you can understand one of the first practical pieces of
+                      life in Italy.
+                    </>,
+
+                    <>
+                      <strong>📞 Additional 45-minute refinement call</strong>{" "}
+                      plus
+                      <strong> interview coaching</strong> for your consulate
+                      appointment.
+                    </>,
+                    <>
+                      <strong>Comprehensive document review</strong> with more
+                      detailed oversight and feedback.
                     </>,
                     <>
                       <strong>60 days of follow-up email support</strong> with
                       priority response from our team.
                     </>,
                     <>
-                      <strong>Early access to the Codice Fiscale Portal</strong>{" "}
-                      so you can understand one of the first practical
-                      essentials of life in Italy: what it is, why it matters,
-                      and where it shows up in real life.
+                      <strong>
+                        Clear document roadmap + Next Steps playbook
+                      </strong>{" "}
+                      so you feel supported before, during, and after the key
+                      stages.
                     </>,
                     <>
-                      <strong>15% off our Residence Registration portal</strong>{" "}
-                      for a softer, more organized landing after approval.
+                      <strong>15% off our Residence Registration add-on</strong>{" "}
+                      for a soft landing after approval.
                     </>,
                   ]}
-                  bestFor="Best for clients who want the most strategic, private, and high-touch Nomadissimi support from planning through soft landing."
+                  bestFor="Best for clients who want the most hands-on, high-touch Nomadissimi experience."
                 >
                   <CheckoutButton
                     plan="Concierge"
@@ -1312,29 +1157,25 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               Live in Italy Like a Pro...
             </h3>
             {/* remove p’s top margin; if you still want it closer, swap mt-0 → -mt-1 */}
-            <p className="sans text-[#2B2B2B]/72 mt-4 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              Your visa is not the end of the process. It is the beginning of
-              real life in Italy.
-            </p>
-
-            <p className="sans text-[#2B2B2B]/72 mt-3 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              Once approval lands, the next layer begins: residence
-              registration, codice fiscale, taxes, housing, local systems, and
-              all the practical details that shape whether your move feels
-              smooth or stressful.
-            </p>
-
-            <p className="sans text-[#2B2B2B]/72 mt-3 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              Nomadissimi’s settling-in portals are designed for exactly this
-              chapter. They are available both for existing Nomadissimi visa
-              clients and for people who are already moving to Italy and want
-              dedicated support for the next practical steps.
-            </p>
-
-            <p className="sans text-[#2B2B2B]/72 mt-3 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              In other words: these are not random extras. They are the
-              practical side of building your life in Italy, Welcome to la dolce
-              vita, done the right way.
+            <p className="sans text-[#2B2B2B]/70 mt-4 max-w-5xl mx-auto px-3">
+              {" "}
+              Your visa is just the beginning, the key that unlocks your Italian
+              chapter.
+              <p className="sans text-[#2B2B2B]/70 mt-0 md:mt-1 px-3">
+                But once that approval lands, real life in Italy begins: more
+                paperwork, residency registration, taxes, and all those little
+                <em> “Wait, how do I ____ ?”</em> moments, as you navigate
+                another culture, language, and way of doing things.{" "}
+                <strong>
+                  You do not need to figure this out alone. That’s where we stay
+                  by your side.{" "}
+                </strong>
+                With Nomadissimi, settling in will feel like a soft landing, not
+                a stressful guessing game. Our "In-Italy" Add-ons are carefully
+                designed to help you register, settle, and fully enjoy the life
+                you came here for.
+              </p>
+              Welcome to la dolce vita, done the right way.
             </p>
             <Aceituna />
           </div>
@@ -1344,30 +1185,28 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             {/* Card 1 — Residence Registration */}
             <FadeIn y={14}>
               <AddonCard
-                title="Residence Registration Portal"
+                title="Residence Registration"
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
                     <strong>
-                      One of the first major practical steps after arrival in
-                      Italy.
+                      This is what makes your stay in Italy official and legal!
                     </strong>{" "}
-                    This portal is designed to help you understand the residence
-                    process, the documents involved, the steps people most often
-                    get confused by, and the time-sensitive tasks for when you
-                    arrive.
+                    ⚠️ Get guided support for the residence steps that usually
+                    confuse newcomers most.{" "}
+                    <em>
+                      Permesso di soggiorno, Comune registration, Italian ID
+                      card...
+                    </em>{" "}
+                    explained with expertise and care.
                   </span>
                 }
                 items={[
                   <>
-                    <strong>Dedicated Residence Registration Portal</strong>{" "}
-                    covering the key residence steps in a more structured,
-                    understandable way.
+                    <strong>📞 Dedicated 30-minute consultation</strong> walking
+                    you through the essential documents you must obtain once you
+                    move to Italy.
                   </>,
-                  <>
-                    <strong>30-minute private consultation</strong> for your
-                    questions and practical next steps once you are ready to
-                    discuss your situation.
-                  </>,
+
                   <>
                     How to obtain your{" "}
                     <strong>
@@ -1387,12 +1226,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     another essential)
                   </>,
                   <>
-                    🎁 Includes our dedicated{" "}
-                    <strong>Codice Fiscale Portal</strong>, because this code
-                    shows up a lot in your daily life in Italy.
+                    <strong>Codice Fiscale</strong> guidance
                   </>,
                   <>
-                    <strong>30 days of email support</strong> from our team.
+                    <strong>Email support</strong> for 30 days
                   </>,
                 ]}
                 footer={
@@ -1418,25 +1255,20 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             {/* Card 2 — Tax & Partita IVA */}
             <FadeIn delay={0.08} y={14}>
               <AddonCard
-                title="Tax & Partita IVA Portal"
+                title="Tax & Partita IVA Consultation"
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
                     <strong>
                       Italy has tax opportunities most newcomers miss at the
                       start.
                     </strong>{" "}
-                    This package helps you understand Italy's tax regimes the
-                    setup process so you can make informed decisions early.
-                    Choosing the right path from the start can mean keeping
-                    thousands more in your pocket.{" "}
+                    Get clearer guidance on regimes, structure, and practical
+                    setup so you can make informed decisions early. Choosing the
+                    right path from the start can mean keeping thousands more in
+                    your pocket.{" "}
                   </span>
                 }
                 items={[
-                  <>
-                    <strong>Access to our Tax & Partita IVA Portal</strong>{" "}
-                    explaining the practical setup side of working and
-                    structuring yourself in Italy.
-                  </>,
                   <>
                     <strong>📞 Personalized 30-minute consultation</strong> to
                     discuss opening a{" "}
@@ -1446,14 +1278,14 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     Breakdown of key <strong>tax benefits</strong> that could
                     help you <strong>save more</strong>
                   </>,
+
+                  <>
+                    Critical details so you can plan ahead and make decisions
+                    confidently
+                  </>,
                   <>
                     Are you <strong>paid in crypto?</strong> How does that work?
                     We cover that too.
-                  </>,
-                  <>
-                    🎁 Includes our dedicated{" "}
-                    <strong>Codice Fiscale Portal</strong>, because it is an
-                    important building block for tax and professional setup.
                   </>,
                   <>
                     <strong>Common mistakes to avoid</strong> when setting up
@@ -1483,12 +1315,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             {/* Card 3 — La Dolce Vita */}
             <FadeIn delay={0.16} y={14}>
               <AddonCard
-                title="La Dolce Vita Consultation"
+                title="La Dolce Vita Integration"
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
                     This exclusive package gives you insider guidance on the
-                    <strong> real-life</strong> side of moving to Italy and
-                    integrating well.
+                    <strong> real-life</strong> side of moving to Italy.
                   </span>
                 }
                 items={[
@@ -1581,9 +1412,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             </p>
 
             <p className="price-subtext">
-              • Includes one private comprehensive 1-hr “Welcome to Italy"
-              consultation covering residence registration, taxation, and
-              lifestyle integration.
+              • Private comprehensive 1-hr “Welcome to Italy" consultation
+              covering residence registration, taxation, and lifestyle
+              integration.
             </p>
           </div>
         </section>
@@ -1690,11 +1521,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h4 className="serif text-3xl font-semibold">
-                    Get a free sample of the Visa Portal (first 3 chapters)
+                    Get the Free Starter Guide (Eligibility and Sample)
                   </h4>
                   <p className="sans mt-2 text-[#2B2B2B]/80">
-                    Drop your email and we’ll send you a sample of the Visa
-                    Portal and occasional Nomadissimi updates.
+                    Drop your email and we’ll send you your free starter guide
+                    and newsletter updates.
                   </p>
                 </div>
                 <form
@@ -2082,17 +1913,6 @@ function GoldRule() {
   return (
     <div className="relative mx-auto my-6 w-28 h-px bg-[#C9A86A]/50">
       <span className="absolute -top-[6px] left-1/2 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-[#C9A86A]/70"></span>
-    </div>
-  );
-}
-
-function PortalHighlight({ title, desc }: { title: string; desc: string }) {
-  return (
-    <div className="border border-black/8 bg-white px-4 py-4 rounded-2xl shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
-      <p className="serif text-[20px] font-semibold text-[#1F1F1F]">{title}</p>
-      <p className="sans mt-2 text-[15px] leading-relaxed text-black/65">
-        {desc}
-      </p>
     </div>
   );
 }

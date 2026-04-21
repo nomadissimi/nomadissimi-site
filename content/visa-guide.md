@@ -153,7 +153,7 @@ You count as a “remote worker” when you’re on a company payroll and that c
 
 <GuideIllustrationCard title="Example">
 
-_For example John. He is a software developer at “Fancy Applications Company”. He has an employment contract, and the company takes care of withholding and paying his taxes. John is a remote worker, and he’ll apply for the Remote Worker Visa at the Italian embassy._
+_For example John. He is a software developer at “Fancy Applications Company”. He has an employment contract, and the company takes care of withholding and paying his taxes. John is a remote worker, and he’ll apply for the Remote Worker Visa at the Italian consulate._
 
 </GuideIllustrationCard>
 
