@@ -207,55 +207,27 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
         {/* Hero */}
         <section
           id="top"
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-14 pb-8 md:pb-10"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 md:pt-10 pb-8 md:pb-10"
         >
           {/* ⬇️ This grid makes it two columns on desktop, stacked on mobile */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center md:items-start">
             {" "}
             {/* LEFT column */}
             <FadeIn y={12}>
-              <div>
+              <div className="md:-translate-y-3 lg:-translate-y-4">
                 <p className="serif italic text-[24px] md:text-[30px] leading-[1.3] text-[#5A5A5A] tracking-[-0.01em] mt-1 mb-7">
                   We take the stress. You take the plane.
                 </p>
 
-                <h1 className="serif text-[46px] md:text-[64px] xl:text-[78px] leading-[0.98] font-semibold tracking-[-0.03em] text-[#111111] max-w-[780px] text-balance">
-                  Move to Italy
-                  <span className="block">(and settle in)</span>
-                  <span className="block text-[#4B5D44]">
-                    without headaches and expensive lawyers
-                  </span>
+                <h1 className="serif text-4xl md:text-5xl xl:text-6xl leading-[1.1] font-semibold tracking-[0.01em]">
+                  Move to Italy without headaches and expensive lawyers.
                 </h1>
 
                 <div className="mt-5 max-w-[680px]">
-                  <p className="sans text-[20px] md:text-[22px] leading-[1.85] tracking-[-0.01em] text-[#2F2F2F]">
-                    <span className="text-[#1A1A1A] font-medium">
-                      Nomadissimi is the specialized relocation agency
-                    </span>{" "}
-                    for digital nomads, remote workers, and online freelancers
-                    who want{" "}
-                    <em className="text-[#4B5D44] not-italic font-medium">
-                      la dolce vita
-                    </em>{" "}
-                    without drowning in Italian bureaucracy.
-                  </p>
-
                   <p className="sans mt-4 text-[18px] md:text-[19px] leading-[1.9] text-[#4A4A4A]">
-                    We combine{" "}
-                    <span className="text-[#4B5D44] font-medium">
-                      private member portals
-                    </span>
-                    ,{" "}
-                    <span className="text-[#4B5D44] font-medium">
-                      structured step-by-step guidance
-                    </span>
-                    , and{" "}
-                    <span className="text-[#4B5D44] font-medium">
-                      practical support for both the visa process and real life
-                      after arrival
-                    </span>{" "}
-                    so your move feels calmer, smarter, and beautifully
-                    organized from the beginning.
+                    Nomadissimi is the specialized relocation agency for digital
+                    nomads, remote workers, and online freelancers who want la
+                    dolce vita without drowning in Italian bureaucracy.{" "}
                   </p>
                 </div>
 
@@ -306,7 +278,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="Private member portals"
-                    desc="Detailed guidance, resources, and tips in an interactive, organized way."
+                    desc="Detailed guidance, resources, and tips in an interactive way."
                   />
 
                   <Feature
@@ -355,7 +327,8 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
             </FadeIn>
             {/* RIGHT column */}
             <FadeIn delay={0.15} y={20}>
-              <div className="relative md:-translate-y-3 lg:-translate-y-5">
+              <div className="relative md:translate-y-4 lg:translate-y-5">
+                {" "}
                 <div className="aspect-[4/3] md:aspect-[5/4] rounded-3xl overflow-hidden shadow-[0_24px_70px_rgba(0,0,0,0.14)]">
                   {" "}
                   <div
@@ -388,12 +361,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
         {/* ——— Hero narrative ——— */}
         <FadeIn y={16}>
           <div className="card">
-            <h2 className="serif text-[40px] md:text-[52px] xl:text-[58px] font-semibold text-center leading-[1.12] tracking-[-0.015em] max-w-6xl mx-auto">
+            <h2 className="serif text-[30px] md:text-[32px] xl:text-[38px] font-semibold text-center leading-[1.12] tracking-[-0.015em] max-w-6xl mx-auto">
               <span className="block">
-                Italy is so much more than just a move:
-              </span>
-              <span className="block mt-2 md:mt-3 text-black/92">
-                it’s an upgrade to your entire lifestyle.
+                Italy is so much more than just a move: it’s an upgrade to your
+                entire lifestyle.
               </span>
             </h2>
             {/* Centered + constrained */}
@@ -919,6 +890,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     </div>
                   </div>
                 </div>
+                {/* tiny caption like a magazine */}
+                <div className="mt-3 relative text-s sans text-black/50">
+                  <span className="top-0 tracking-[0.18em] text-left">
+                    What are you waiting for?
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1015,10 +992,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     <div className="mt-7 rounded-[26px] border border-white/70 bg-white/70 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] backdrop-blur">
                       <p className="serif text-[24px] md:text-[28px] leading-[1.35] text-[#1F1F1F]">
                         Think of it as the difference between being handed a
-                        list…
-                      </p>
-                      <p className="serif mt-2 text-[24px] md:text-[28px] leading-[1.35] text-[#4B5D44]">
-                        and being given a calm, beautifully organized roadmap.
+                        list… and being given a calm, beautifully organized
+                        roadmap.
                       </p>
                     </div>
                   </div>
@@ -1063,68 +1038,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       desc="We clarify the parts people most often misunderstand online, so you are not relying on chaotic forums and outdated posts."
                     />
                   </div>
-
-                  <div className="mt-7 grid sm:grid-cols-2 gap-3">
-                    <a
-                      href="#guide"
-                      className="relative inline-flex items-center justify-center text-center px-4 py-3.5 rounded-2xl
-              bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-              text-[#1A1A1A] font-serif text-[16px] md:text-[18px] leading-tight tracking-wide
-              ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
-              transition-all duration-300 ease-out overflow-hidden
-              hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
-                    >
-                      Get the free guide
-                    </a>
-
-                    <a
-                      href="#guide"
-                      className="relative inline-flex items-center justify-center text-center px-4 py-3.5 rounded-2xl
-              bg-[#4B5D44]
-              text-white font-serif text-[16px] md:text-[18px] leading-tight tracking-wide
-              shadow-[0_2px_12px_rgba(75,93,68,0.25)]
-              transition-all duration-300 ease-out overflow-hidden
-              hover:shadow-[0_4px_20px_rgba(75,93,68,0.4)] hover:scale-[1.02]"
-                    >
-                      Get a sample of the portal
-                    </a>
-                  </div>
                 </div>
               </FadeIn>
             </div>
-
-            {/* bottom credibility strip */}
-            <FadeIn delay={0.12} y={12}>
-              <div className="mt-6 grid md:grid-cols-3 gap-4">
-                <div className="rounded-2xl border border-black/8 bg-white px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
-                  <p className="sans text-[12px] uppercase tracking-[0.14em] text-[#4B5D44]/65">
-                    22 chapters
-                  </p>
-                  <p className="serif mt-2 text-[24px] leading-[1.25]">
-                    Deep guidance, broken into a clear member journey.
-                  </p>
-                </div>
-
-                <div className="rounded-2xl border border-black/8 bg-white px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
-                  <p className="sans text-[12px] uppercase tracking-[0.14em] text-[#4B5D44]/65">
-                    Built for your profile
-                  </p>
-                  <p className="serif mt-2 text-[24px] leading-[1.25]">
-                    Designed for remote workers and online freelancers alike.
-                  </p>
-                </div>
-
-                <div className="rounded-2xl border border-black/8 bg-white px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
-                  <p className="sans text-[12px] uppercase tracking-[0.14em] text-[#4B5D44]/65">
-                    Not just a PDF
-                  </p>
-                  <p className="serif mt-2 text-[24px] leading-[1.25]">
-                    A structured portal that explains the process in normal
-                    human English.
-                  </p>
-                </div>
-              </div>
-            </FadeIn>
           </div>
         </section>
 
@@ -1136,29 +1052,33 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           {" "}
           <div className="text-center mb-6 md:mb-11">
             <FadeIn>
-              <h3 className="serif text-4xl md:text-5xl font-semibold">
+              <h3 className="serif text-4xl md:text-5xl font-semibold leading-[1.05]">
                 Choose your visa plan
               </h3>
             </FadeIn>
 
             <FadeIn delay={0.05}>
-              <p className="sans text-[#2B2B2B]/72 mt-4 md:mt-3 max-w-4xl mx-auto px-4 text-[16px] md:text-[17px] leading-[1.85]">
-                Whether you want a self-guided start, expert review, or
-                high-touch strategic support, every Nomadissimi visa plan is
-                built around the same foundation: a clear private portal, a
-                smarter document process, and guidance that helps you move
-                forward with less chaos.
-              </p>
+              <div className="max-w-[1100px] mx-auto px-4 text-center mt-3 md:mt-4">
+                <p className="sans text-[17px] md:text-[19px] leading-[1.7] tracking-[-0.01em] text-[#2F2F2F] max-w-[980px] mx-auto text-balance">
+                  Every Nomadissimi visa plan is built around the same core:
+                  <span className="text-[#4B5D44] font-medium">
+                    {" "}
+                    a private portal, a smarter document process, and guidance
+                    that helps you move forward with less chaos.
+                  </span>
+                </p>
 
-              <p className="sans text-[#2B2B2B]/72 mt-3 max-w-4xl mx-auto px-4 text-[16px] md:text-[17px] leading-[1.85]">
-                The difference between the plans is how much personalized
-                review, strategic support, and hands-on guidance you want around
-                that portal.
-              </p>
+                <p className="sans mt-5 text-[15px] md:text-[17px] leading-[1.8] text-[#5A5A5A] max-w-[860px] mx-auto text-balance">
+                  What changes from plan to plan is how much personalized
+                  review, strategic support, and hands-on guidance you want
+                  around that portal.
+                </p>
+              </div>
             </FadeIn>
 
-            <p className="sans mt-4 max-w-3xl mx-auto px-4 text-[15px] md:text-[16px] leading-[1.75] text-[#2B2B2B]/60">
-              Let’s turn the dream into a clear plan.
+            <p className="serif mt-5 text-[24px] md:text-[28px] leading-[1.45] text-[#1F1F1F] max-w-4xl mx-auto">
+              Let's turn the dream
+              <span className="text-[#4B5D44]"> into an attainable goal.</span>
             </p>
 
             <p className="sans text-sm md:text-base text-[#2B2B2B]/70 mt-2 italic">
@@ -1168,8 +1088,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             <GoldRule />
           </div>
           {/* cards are narrower so they don't touch page edges */}
-          <div className="mx-auto max-w-[1020px] mb-16 md:mb-22">
-            <div className="grid md:grid-cols-3 gap-5 lg:gap-8 items-start">
+          <div className="mx-auto max-w-[1180px] mb-16 md:mb-22">
+            {" "}
+            <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-start">
+              {" "}
               <FadeIn y={18}>
                 <PackageCard
                   badge="💡 Clarity"
@@ -1187,19 +1109,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           covering eligibility, documents, consulate
                           expectations, application structure, and what to do
                           next.
-                        </>
-                      ),
-                    },
-                    {
-                      icon: "dot",
-
-                      content: (
-                        <>
-                          <strong>
-                            Built for both remote workers and freelancers
-                          </strong>
-                          , so you can understand the path that fits your
-                          profile.
                         </>
                       ),
                     },
@@ -1261,7 +1170,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   />
                 </PackageCard>
               </FadeIn>
-
               <FadeIn delay={0.08} y={18}>
                 <PackageCard
                   badge="🔍 Guidance"
@@ -1296,8 +1204,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       content: (
                         <>
                           <strong>Professional document review</strong> so you
-                          can catch issues earlier and move forward with more
-                          confidence.
+                          can catch issues earlier.
                         </>
                       ),
                     },
@@ -1305,22 +1212,13 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       icon: "dot",
                       content: (
                         <>
-                          <strong>30 days of follow-up email support</strong>{" "}
-                          for the questions that come up once the process
-                          becomes real.
+                          <strong>
+                            30 days of follow-up email support
+                          </strong>{" "}
                         </>
                       ),
                     },
-                    {
-                      icon: "dot",
-                      content: (
-                        <>
-                          <strong>Portal + strategy working together</strong>:
-                          not just information, but help applying that
-                          information to your actual case.
-                        </>
-                      ),
-                    },
+
                     {
                       icon: "dot",
                       content: (
@@ -1367,7 +1265,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   />
                 </PackageCard>
               </FadeIn>
-
               <FadeIn delay={0.16} y={18}>
                 <PackageCard
                   badge="💎 Concierge"
@@ -1377,9 +1274,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       icon: "dot",
                       content: (
                         <>
-                          <strong>Everything inside Guidance</strong>, including
-                          the full Visa Portal, strategy consultation, document
-                          review, and follow-up support.
+                          <strong>Everything inside Clarity</strong>, including
+                          the full Nomadissimi Visa Portal and structured
+                          document roadmap.
                         </>
                       ),
                     },
@@ -1400,9 +1297,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           <strong>
                             Additional 45-minute refinement consultation
                           </strong>{" "}
-                          plus
+                          with
                           <strong> consulate interview preparation</strong> so
-                          you feel more prepared for the appointment itself.
+                          you feel more prepared for your visa appointment.
                         </>
                       ),
                     },
@@ -1410,8 +1307,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       icon: "dot",
                       content: (
                         <>
-                          <strong>More comprehensive document review</strong>{" "}
-                          with deeper oversight and more detailed feedback.
+                          <strong>Comprehensive document review</strong> with
+                          deeper oversight and more detailed feedback.
                         </>
                       ),
                     },
@@ -1432,8 +1329,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                             Early access to the Codice Fiscale Portal
                           </strong>{" "}
                           so you can understand one of the first practical
-                          essentials of life in Italy: what it is, why it
-                          matters, and where it shows up in real life.
+                          essentials of life in Italy.
                         </>
                       ),
                     },
@@ -1498,36 +1394,41 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             </div>
           </div>
 
-          <div className="text-center mb-9">
+          <div className="text-center mb-10">
             <h3 className="serif text-4xl md:text-5xl font-semibold">
               Live in Italy Like a Pro...
             </h3>
-            {/* remove p’s top margin; if you still want it closer, swap mt-0 → -mt-1 */}
-            <p className="sans text-[#2B2B2B]/72 mt-4 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              Your visa is not the end of the process. It is the beginning of
-              real life in Italy.
-            </p>
 
-            <p className="sans text-[#2B2B2B]/72 mt-3 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              Once approval lands, the next layer begins: residence
-              registration, codice fiscale, taxes, housing, local systems, and
-              all the practical details that shape whether your move feels
-              smooth or stressful.
-            </p>
+            <div className="max-w-5xl mx-auto px-3 mt-5">
+              <p className="sans text-[18px] md:text-[21px] leading-[1.75] tracking-[-0.01em] text-[#2F2F2F]">
+                Your visa is not the end of the process.
+                <span className="text-[#4B5D44] font-medium">
+                  {" "}
+                  It is the beginning of real life in Italy.
+                </span>
+              </p>
 
-            <p className="sans text-[#2B2B2B]/72 mt-3 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              Nomadissimi’s settling-in portals are designed for exactly this
-              chapter. They are available both for existing Nomadissimi visa
-              clients and for people who are already moving to Italy and want
-              dedicated support for the next practical steps.
-            </p>
+              <p className="sans mt-5 text-[16px] md:text-[18px] leading-[1.9] text-[#555555] max-w-4xl mx-auto">
+                Once approval lands, the next layer begins: residence
+                registration, codice fiscale, taxes, local systems... and all
+                the practical details that shape whether your move feels smooth
+                or stressful.
+              </p>
 
-            <p className="sans text-[#2B2B2B]/72 mt-3 max-w-5xl mx-auto px-3 text-[16px] md:text-[17px] leading-[1.85]">
-              In other words: these are not random extras. They are the
-              practical side of building your life in Italy, Welcome to la dolce
-              vita, done the right way.
-            </p>
-            <Aceituna />
+              <p className="sans mt-5 text-[16px] md:text-[18px] leading-[1.9] text-[#555555] max-w-4xl mx-auto">
+                These portals are designed to help you build your life in Italy
+                seamlessly. They are available both for existing Nomadissimi
+                visa clients and for people who are already moving to Italy and
+                want dedicated support for the next practical steps.
+              </p>
+
+              <p className="serif mt-5 text-[24px] md:text-[28px] leading-[1.45] text-[#1F1F1F] max-w-4xl mx-auto">
+                Welcome to la dolce vita,
+                <span className="text-[#4B5D44]"> done the right way.</span>
+              </p>
+            </div>
+
+            <Aceituna className="mt-4" />
           </div>
 
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8"></div>
@@ -1544,35 +1445,26 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 }
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
-                    <strong>
-                      One of the first major practical steps after arrival in
-                      Italy.
-                    </strong>{" "}
-                    This portal is designed to help you understand the residence
-                    process, the documents involved, the steps people most often
-                    get confused by, and the time-sensitive tasks for when you
-                    arrive.
+                    One of the first major practical steps after arrival in
+                    Italy.{" "}
+                    <strong>An 8-day deadline you can't miss.</strong>{" "}
                   </span>
                 }
                 items={[
                   <>
                     <strong>Dedicated Residence Registration Portal</strong>{" "}
-                    covering the key residence steps in a more structured,
-                    understandable way.
+                    covering the residence process, the documents involved, and
+                    the steps people most often get confused by.
                   </>,
                   <>
-                    <strong>30-minute private consultation</strong> for your
-                    questions and practical next steps once you are ready to
-                    discuss your situation.
+                    <strong>30-minute private consultation</strong> walking you
+                    through the essential documents you must obtain once you
+                    move to Italy.
                   </>,
                   <>
-                    How to obtain your{" "}
-                    <strong>
-                      {" "}
-                      residence permit (the famous Permesso di soggiorno):
-                    </strong>{" "}
-                    kit, appointments, fingerprints. It might seem a bit
-                    dauting, but don't worry: we explain it to you.
+                    How to obtain your <strong> residence permit</strong> (the
+                    famous Permesso di soggiorno): kit, appointments,
+                    fingerprints.
                   </>,
                   <>
                     Insider guidance on the
@@ -1584,9 +1476,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     another essential)
                   </>,
                   <>
-                    🎁 Includes our dedicated{" "}
-                    <strong>Codice Fiscale Portal</strong>, because this code
-                    shows up a lot in your daily life in Italy.
+                    🎁 Access to our dedicated{" "}
+                    <strong>Codice Fiscale Portal</strong>
                   </>,
                   <>
                     <strong>30 days of email support</strong> from our team.
@@ -1619,13 +1510,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
                     <strong>
-                      Italy has tax opportunities most newcomers miss at the
-                      start.
+                      Italy has tax opportunities most newcomers miss.
                     </strong>{" "}
-                    This package helps you understand Italy's tax regimes the
-                    setup process so you can make informed decisions early.
-                    Choosing the right path from the start can mean keeping
-                    thousands more in your pocket.{" "}
+                    This package helps you understand Italy's tax regimes so you
+                    can make informed decisions early. Choosing the right path
+                    from the start can mean keeping thousands more in your
+                    pocket.{" "}
                   </span>
                 }
                 items={[
@@ -1636,8 +1526,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   </>,
                   <>
                     <strong>📞 Personalized 30-minute consultation</strong> to
-                    discuss opening a{" "}
-                    <strong>professional activity (Partita IVA)</strong>
+                    discuss opening a professional activity (Partita IVA)
                   </>,
                   <>
                     Breakdown of key <strong>tax benefits</strong> that could
@@ -1648,7 +1537,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     We cover that too.
                   </>,
                   <>
-                    🎁 Includes our dedicated{" "}
+                    🎁 Access to our dedicated{" "}
                     <strong>Codice Fiscale Portal</strong>, because it is an
                     important building block for tax and professional setup.
                   </>,
@@ -1702,8 +1591,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     priorities, not just Instagram pictures)
                   </>,
                   <>
-                    <strong>How renting actually works in Italy:</strong>{" "}
-                    contracts, fees, condominio, TARI, and more.
+                    <strong>How renting works in Italy:</strong> contracts,
+                    fees, condominio, TARI, and more.
                   </>,
                   <>
                     <strong>Healthcare:</strong> how to access care like an
@@ -2226,17 +2115,22 @@ type FeatureProps = {
 
 function Feature({ icon, title, desc }: FeatureProps) {
   return (
-    <li className="flex items-start gap-3">
-      <span className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-black/5 ring-1 ring-black/10">
+    <li className="flex items-start gap-3.5">
+      <span className="mt-1 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#F8F5EF] border border-[#E7DDCC] shadow-[0_8px_20px_rgba(0,0,0,0.04)]">
         {typeof icon === "string" ? (
           <span className="text-lg leading-none">{icon}</span>
         ) : (
           icon
         )}
       </span>
-      <div>
-        <p className="font-semibold">{title}</p>
-        <p className="text-[--ink-500]">{desc}</p>
+
+      <div className="pt-[2px]">
+        <p className="sans text-[17px] md:text-[18px] font-medium tracking-[-0.01em] text-[#1F1F1F]">
+          {title}
+        </p>
+        <p className="sans mt-1 text-[15px] md:text-[16px] leading-[1.75] text-[#5A5A5A]">
+          {desc}
+        </p>
       </div>
     </li>
   );
@@ -2365,7 +2259,7 @@ function PackageCard({
       return (
         <span
           aria-hidden="true"
-          className="inline-flex h-5 w-5 items-center justify-center text-[14px] leading-none"
+          className="inline-flex h-5 w-5 items-center justify-center text-[13px] leading-none"
         >
           📞
         </span>
@@ -2419,7 +2313,7 @@ function PackageCard({
     return (
       <span
         aria-hidden="true"
-        className="mt-[6px] inline-block h-2 w-2 rounded-full bg-[#C9A86A]"
+        className="inline-block h-2.5 w-2.5 rounded-full bg-[#C9A86A]"
       />
     );
   }
@@ -2481,14 +2375,17 @@ function PackageCard({
       </div>
 
       {/* Bullets — add more top margin */}
-      <ul className="mt-4 space-y-3 text-[15px] md:text-[16px] leading-[1.75] sans">
+      <ul className="mt-4 space-y-4 text-[15px] md:text-[16px] leading-[1.8] sans">
         {bullets.map((bullet, i) => (
-          <li key={i} className="flex gap-3 items-start">
-            <span className="mt-[4px] shrink-0">
+          <li
+            key={i}
+            className="grid grid-cols-[18px_minmax(0,1fr)] gap-x-4 items-start"
+          >
+            <span className="pt-[4px] flex justify-center">
               <PackageBulletIcon icon={bullet.icon ?? "dot"} />
             </span>
 
-            <span className="package-bullet-copy">{bullet.content}</span>
+            <span className="package-bullet-copy block">{bullet.content}</span>
           </li>
         ))}
       </ul>
