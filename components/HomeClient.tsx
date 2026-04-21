@@ -207,7 +207,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
         {/* Hero */}
         <section
           id="top"
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-10"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-14 pb-8 md:pb-10"
         >
           {/* ⬇️ This grid makes it two columns on desktop, stacked on mobile */}
           <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -219,8 +219,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 </p>
 
                 <h1 className="serif text-4xl md:text-5xl xl:text-6xl leading-[1.1] font-semibold tracking-[0.01em]">
-                  Move to Italy (and settle in) without the headaches and
-                  expensive lawyers.
+                  Move to Italy without headaches and expensive lawyers.
                 </h1>
 
                 <p className="sans mt-4 text-lg/7 text-[#2B2B2B]/80">
@@ -916,8 +915,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                 <p className="sans text-[#2B2B2B]/75 mt-5 text-lg leading-8">
                   A private members-only portal designed to turn the Italian
-                  visa process into something clear, structured, and actually
-                  doable.
+                  visa process into something organized, fun, and doable.
                 </p>
 
                 <div className="mt-5">
@@ -943,7 +941,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       It is a private, interactive,{" "}
                       <strong>22-chapter guidance portal</strong> built to walk
                       you through the Italian Digital Nomad Visa process step by
-                      step, in normal human English.
+                      step.
                     </p>
 
                     <p>
@@ -1071,7 +1069,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           </div>
 
           {/* cards are narrower so they don't touch page edges */}
-          <div className="mx-auto max-w-[1000px] mb-20 md:mb-28">
+          <div className="mx-auto max-w-[1020px] mb-16 md:mb-22">
             <div className="grid md:grid-cols-3 gap-5 lg:gap-8 items-start">
               <FadeIn y={18}>
                 <PackageCard
@@ -1298,7 +1296,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
         <section
           id="settling"
-          className="scroll-mt-28 md:scroll-mt-34 mt-10 md:mt-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          className="scroll-mt-28 md:scroll-mt-34 mt-6 md:mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           {/* 👇 add this wrapper if you like a boutique width */}
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -1345,6 +1343,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             <FadeIn y={14}>
               <AddonCard
                 title="Residence Registration Portal"
+                badge={
+                  <span className="inline-flex items-center gap-2 rounded-full border border-[#D9B16E]/45 bg-[#FBF4E7] px-3 py-1 text-[12px] md:text-[13px] font-medium tracking-[0.08em] uppercase text-[#8B5E2B] shadow-[0_4px_14px_rgba(201,168,106,0.10)]">
+                    <span aria-hidden="true">⏳</span>
+                    Time-sensitive step
+                  </span>
+                }
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
                     <strong>
@@ -1690,7 +1694,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h4 className="serif text-3xl font-semibold">
-                    Get a free sample of the Visa Portal (first 3 chapters)
+                    Get a free initial sample of the Visa Portal
                   </h4>
                   <p className="sans mt-2 text-[#2B2B2B]/80">
                     Drop your email and we’ll send you a sample of the Visa
@@ -2208,8 +2212,8 @@ function PackageCard({
       {/* Bullets — add more top margin */}
       <ul className="mt-5 space-y-3 text-sm sans">
         {bullets.map((b, i) => (
-          <li key={i} className="flex gap-2">
-            <span>•</span>
+          <li key={i} className="flex gap-2.5 items-start">
+            <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-[#C9A86A] shrink-0" />
             <span>{b}</span>
           </li>
         ))}
@@ -2233,8 +2237,9 @@ function PackageCard({
 type AddonCardProps = {
   title: string;
   items: ReactNode[];
-  blurb?: ReactNode; // NEW
-  footer?: ReactNode; // NEW
+  blurb?: ReactNode;
+  footer?: ReactNode;
+  badge?: ReactNode;
   className?: string;
 };
 
@@ -2243,6 +2248,7 @@ function AddonCard({
   items,
   blurb,
   footer,
+  badge,
   className = "",
 }: AddonCardProps) {
   // Split "Name — €297" into parts so we can gray-out the €
@@ -2255,7 +2261,11 @@ function AddonCard({
       className={`addon-card h-full w-full max-w-[360px] mx-auto ${className}`}
     >
       <div className="addon-header">
-        <h5 className="addon-title">{name}</h5>
+        <div className="min-w-0">
+          <h5 className="addon-title">{name}</h5>
+          {badge ? <div className="mt-3">{badge}</div> : null}
+        </div>
+
         <span className="addon-price">
           {isEuro && (
             <span className="text-black/40 mr-1 align-[-0.05em]">€</span>
