@@ -210,31 +210,57 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-14 pb-8 md:pb-10"
         >
           {/* ⬇️ This grid makes it two columns on desktop, stacked on mobile */}
-          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center md:items-start">
+            {" "}
             {/* LEFT column */}
             <FadeIn y={12}>
               <div>
-                <p className="serif italic text-lg md:text-xl text-neutral-700 tracking-tight mt-1 mb-6">
+                <p className="serif italic text-[24px] md:text-[30px] leading-[1.3] text-[#5A5A5A] tracking-[-0.01em] mt-1 mb-7">
                   We take the stress. You take the plane.
                 </p>
 
-                <h1 className="serif text-4xl md:text-5xl xl:text-6xl leading-[1.1] font-semibold tracking-[0.01em]">
-                  Move to Italy without headaches and expensive lawyers.
+                <h1 className="serif text-[46px] md:text-[64px] xl:text-[78px] leading-[0.98] font-semibold tracking-[-0.03em] text-[#111111] max-w-[780px] text-balance">
+                  Move to Italy
+                  <span className="block">(and settle in)</span>
+                  <span className="block text-[#4B5D44]">
+                    without headaches and expensive lawyers
+                  </span>
                 </h1>
 
-                <p className="sans mt-4 text-lg/7 text-[#2B2B2B]/80">
-                  Nomadissimi is the specialized relocation agency for digital
-                  nomads, remote workers, and online freelancers who want{" "}
-                  <em>la dolce vita</em> without drowning in Italian
-                  bureaucracy. We combine private member portals, clear
-                  step-by-step guidance, and practical support for both the visa
-                  process and real life after arrival. From documents and
-                  consulates to residence, taxes, and settling in well, we make
-                  the process feel more structured, professional, and far less
-                  overwhelming.
-                </p>
+                <div className="mt-5 max-w-[680px]">
+                  <p className="sans text-[20px] md:text-[22px] leading-[1.85] tracking-[-0.01em] text-[#2F2F2F]">
+                    <span className="text-[#1A1A1A] font-medium">
+                      Nomadissimi is the specialized relocation agency
+                    </span>{" "}
+                    for digital nomads, remote workers, and online freelancers
+                    who want{" "}
+                    <em className="text-[#4B5D44] not-italic font-medium">
+                      la dolce vita
+                    </em>{" "}
+                    without drowning in Italian bureaucracy.
+                  </p>
 
-                <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-row">
+                  <p className="sans mt-4 text-[18px] md:text-[19px] leading-[1.9] text-[#4A4A4A]">
+                    We combine{" "}
+                    <span className="text-[#4B5D44] font-medium">
+                      private member portals
+                    </span>
+                    ,{" "}
+                    <span className="text-[#4B5D44] font-medium">
+                      structured step-by-step guidance
+                    </span>
+                    , and{" "}
+                    <span className="text-[#4B5D44] font-medium">
+                      practical support for both the visa process and real life
+                      after arrival
+                    </span>{" "}
+                    so your move feels calmer, smarter, and beautifully
+                    organized from the beginning.
+                  </p>
+                </div>
+
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:flex sm:flex-row">
+                  {" "}
                   <a
                     href="#guide"
                     className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
@@ -250,7 +276,6 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                   >
                     Get the free starter guide
                   </a>
-
                   <Link
                     href="#packages"
                     className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
@@ -328,11 +353,11 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 </div>
               </div>
             </FadeIn>
-
             {/* RIGHT column */}
             <FadeIn delay={0.15} y={20}>
-              <div className="relative">
-                <div className="aspect-[4/3] md:aspect-[5/4] rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+              <div className="relative md:-translate-y-3 lg:-translate-y-5">
+                <div className="aspect-[4/3] md:aspect-[5/4] rounded-3xl overflow-hidden shadow-[0_24px_70px_rgba(0,0,0,0.14)]">
+                  {" "}
                   <div
                     className="group relative aspect-[4/3] md:aspect-[5/4] overflow-hidden bg-[#F8F5EF]
 rounded-tl-[56px] rounded-tr-[14px] rounded-br-[72px] rounded-bl-[14px]
@@ -760,7 +785,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               </div>
 
               {/* Callouts grid */}
-              <div className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sans">
+                {" "}
                 {/* CALLOUT 1 — Piggy */}
                 <div className="group relative border border-black/10 bg-white px-5 py-5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-[2px] hover:shadow-[0_18px_46px_rgba(0,0,0,0.10)]">
                   <div className="absolute right-0 top-0 h-px w-16 bg-gradient-to-l from-[#C9A86A]/70 to-transparent" />
@@ -796,7 +822,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     </div>
                   </div>
                 </div>
-
                 {/* CALLOUT 2 — Healthcare */}
                 <div className="group relative border border-black/10 bg-white px-5 py-5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-[2px] hover:shadow-[0_18px_46px_rgba(0,0,0,0.10)]">
                   <div className="absolute right-0 top-0 h-px w-16 bg-gradient-to-l from-[#4B5D44]/60 to-transparent" />
@@ -829,7 +854,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     </div>
                   </div>
                 </div>
-
                 {/* CALLOUT 3 — Real ingredients */}
                 <div className="group relative border border-black/10 bg-white px-5 py-5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-[2px] hover:shadow-[0_18px_46px_rgba(0,0,0,0.10)]">
                   <div className="absolute right-0 top-0 h-px w-16 bg-gradient-to-l from-[#C9A86A]/70 to-transparent" />
@@ -863,7 +887,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     </div>
                   </div>
                 </div>
-
                 {/* CALLOUT 4 — Schengen */}
                 <div className="group relative border border-black/10 bg-white px-5 py-5 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition hover:-translate-y-[2px] hover:shadow-[0_18px_46px_rgba(0,0,0,0.10)]">
                   <div className="absolute right-0 top-0 h-px w-16 bg-gradient-to-l from-[#4B5D44]/60 to-transparent" />
@@ -960,7 +983,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       <p>
                         The Nomadissimi Visa Portal is <strong>not</strong> a
                         random folder of documents and it is{" "}
-                        <strong>not</strong> a vague PDF download.
+                        <strong>not</strong> a boring PDF download.
                       </p>
 
                       <p>
@@ -974,7 +997,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                         Inside, we explain{" "}
                         <strong>what documents you need</strong>,{" "}
                         <strong>where to get them</strong>,{" "}
-                        <strong>what each requirement actually means</strong>,{" "}
+                        <strong>what each requirement entails</strong>,{" "}
                         <strong>when to prepare each piece</strong>, and{" "}
                         <strong>how to avoid the mistakes</strong> that so often
                         lead to confusion, delays, and expensive do-overs.
@@ -1011,12 +1034,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                         Inside the portal
                       </p>
                       <h4 className="serif text-[30px] md:text-[34px] font-semibold mt-2 leading-[1.08]">
-                        What you actually get
+                        What you get
                       </h4>
                     </div>
 
                     <div className="hidden md:grid h-12 w-12 place-items-center rounded-2xl bg-[#F7F1E8] border border-[#E7D9BF] text-[22px] shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
-                      🫒
+                      ✈️
                     </div>
                   </div>
 
@@ -1038,10 +1061,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     <PortalFeatureRow
                       title="Myths debunked"
                       desc="We clarify the parts people most often misunderstand online, so you are not relying on chaotic forums and outdated posts."
-                    />
-                    <PortalFeatureRow
-                      title="A calmer process"
-                      desc="The goal is not just information. It is confidence, order, momentum, and less nervous-system chaos."
                     />
                   </div>
 
@@ -1156,37 +1175,57 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   badge="💡 Clarity"
                   accent="#4B5D44"
                   bullets={[
-                    <>
-                      <strong>
-                        Private access to the Nomadissimi Visa Portal
-                      </strong>
-                      : our members-only 22-chapter guidance experience covering
-                      eligibility, documents, consulate expectations,
-                      application structure, and what to do next.
-                    </>,
-                    <>
-                      <strong>
-                        Built for both remote workers and freelancers
-                      </strong>
-                      , so you can understand the path that fits your profile.
-                    </>,
-                    <>
-                      <strong>A real document roadmap</strong>, not just a
-                      checklist: what to prepare, where to get it, when it
-                      matters, and how to stay organized.
-                    </>,
-                    <>
-                      <strong>“Next Steps” playbook</strong> to help you move
-                      from research mode into real preparation with more
-                      confidence.
-                    </>,
-                    <>
-                      <strong>
-                        Clear explanations in normal human English
-                      </strong>{" "}
-                      so the process feels less confusing, less scattered, and
-                      far more doable.
-                    </>,
+                    {
+                      icon: "star",
+
+                      content: (
+                        <>
+                          <strong>
+                            Private access to the Nomadissimi Visa Portal
+                          </strong>
+                          : our members-only 22-chapter guidance experience
+                          covering eligibility, documents, consulate
+                          expectations, application structure, and what to do
+                          next.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+
+                      content: (
+                        <>
+                          <strong>
+                            Built for both remote workers and freelancers
+                          </strong>
+                          , so you can understand the path that fits your
+                          profile.
+                        </>
+                      ),
+                    },
+
+                    {
+                      icon: "dot",
+
+                      content: (
+                        <>
+                          <strong>A real document roadmap</strong>, not just a
+                          checklist: what to prepare, where to get it, when it
+                          matters, and how to stay organized.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+
+                      content: (
+                        <>
+                          <strong>“Next Steps” playbook</strong> to help you
+                          move from research mode into real preparation with
+                          more confidence.
+                        </>
+                      ),
+                    },
                   ]}
                   bestFor="Best for applicants who want a calm, self-guided start with real structure before paying for more hands-on support."
                 >
@@ -1229,35 +1268,70 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   accent="#AEC2A1"
                   featured
                   bullets={[
-                    <>
-                      <strong>Everything inside Clarity</strong>, including the
-                      full Nomadissimi Visa Portal and structured document
-                      roadmap.
-                    </>,
-                    <>
-                      <strong>45-minute private strategy consultation</strong>{" "}
-                      to review your case, timing, and application direction
-                      once you have gone through the material and are ready for
-                      sharper guidance.
-                    </>,
-                    <>
-                      <strong>Professional document review</strong> so you can
-                      catch issues earlier and move forward with more
-                      confidence.
-                    </>,
-                    <>
-                      <strong>30 days of follow-up email support</strong> for
-                      the questions that come up once the process becomes real.
-                    </>,
-                    <>
-                      <strong>Portal + strategy working together</strong>: not
-                      just information, but help applying that information to
-                      your actual case.
-                    </>,
-                    <>
-                      <strong>10% off our Residence Registration portal</strong>{" "}
-                      for a smoother landing once your visa is approved.
-                    </>,
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>Everything inside Clarity</strong>, including
+                          the full Nomadissimi Visa Portal and structured
+                          document roadmap.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "phone",
+                      content: (
+                        <>
+                          <strong>
+                            45-minute private strategy consultation
+                          </strong>{" "}
+                          to review your case, timing, and application direction
+                          once you have gone through the material and are ready
+                          for sharper guidance.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>Professional document review</strong> so you
+                          can catch issues earlier and move forward with more
+                          confidence.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>30 days of follow-up email support</strong>{" "}
+                          for the questions that come up once the process
+                          becomes real.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>Portal + strategy working together</strong>:
+                          not just information, but help applying that
+                          information to your actual case.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>
+                            10% off our Residence Registration portal
+                          </strong>{" "}
+                          for a smoother landing once your visa is approved.
+                        </>
+                      ),
+                    },
                   ]}
                   bestFor="Best for applicants who want the portal plus expert eyes on their case, documents, and next decisions."
                 >
@@ -1299,42 +1373,81 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   badge="💎 Concierge"
                   accent="#C9A86A"
                   bullets={[
-                    <>
-                      <strong>Everything inside Guidance</strong>, including the
-                      full Visa Portal, strategy consultation, document review,
-                      and follow-up support.
-                    </>,
-                    <>
-                      <strong>45-minute deep-dive strategy session</strong>{" "}
-                      tailored to your timeline, case complexity, and
-                      application direction.
-                    </>,
-                    <>
-                      <strong>
-                        Additional 45-minute refinement consultation
-                      </strong>{" "}
-                      plus
-                      <strong> consulate interview preparation</strong> so you
-                      feel more prepared for the appointment itself.
-                    </>,
-                    <>
-                      <strong>More comprehensive document review</strong> with
-                      deeper oversight and more detailed feedback.
-                    </>,
-                    <>
-                      <strong>60 days of follow-up email support</strong> with
-                      priority response from our team.
-                    </>,
-                    <>
-                      <strong>Early access to the Codice Fiscale Portal</strong>{" "}
-                      so you can understand one of the first practical
-                      essentials of life in Italy: what it is, why it matters,
-                      and where it shows up in real life.
-                    </>,
-                    <>
-                      <strong>15% off our Residence Registration portal</strong>{" "}
-                      for a softer, more organized landing after approval.
-                    </>,
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>Everything inside Guidance</strong>, including
+                          the full Visa Portal, strategy consultation, document
+                          review, and follow-up support.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "phone",
+                      content: (
+                        <>
+                          <strong>45-minute deep-dive strategy session</strong>{" "}
+                          tailored to your timeline, case complexity, and
+                          application direction.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "phone",
+                      content: (
+                        <>
+                          <strong>
+                            Additional 45-minute refinement consultation
+                          </strong>{" "}
+                          plus
+                          <strong> consulate interview preparation</strong> so
+                          you feel more prepared for the appointment itself.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>More comprehensive document review</strong>{" "}
+                          with deeper oversight and more detailed feedback.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>60 days of follow-up email support</strong>{" "}
+                          with priority response from our team.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "star",
+                      content: (
+                        <>
+                          <strong>
+                            Early access to the Codice Fiscale Portal
+                          </strong>{" "}
+                          so you can understand one of the first practical
+                          essentials of life in Italy: what it is, why it
+                          matters, and where it shows up in real life.
+                        </>
+                      ),
+                    },
+                    {
+                      icon: "dot",
+                      content: (
+                        <>
+                          <strong>
+                            15% off our Residence Registration portal
+                          </strong>{" "}
+                          for a softer, more organized landing after approval.
+                        </>
+                      ),
+                    },
                   ]}
                   bestFor="Best for clients who want the most strategic, private, and high-touch Nomadissimi support from planning through soft landing."
                 >
@@ -1567,7 +1680,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             {/* Card 3 — La Dolce Vita */}
             <FadeIn delay={0.16} y={14}>
               <AddonCard
-                title="La Dolce Vita Consultation"
+                title="La Dolce Vita Integration"
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
                     This exclusive package gives you insider guidance on the
@@ -2232,7 +2345,10 @@ function PackageCard({
 }: {
   badge: string;
   price?: string;
-  bullets: ReactNode[];
+  bullets: {
+    icon?: "dot" | "phone" | "star" | "sparkle" | "check" | "olive";
+    content: ReactNode;
+  }[];
   bestFor: string;
   ctaText?: string;
   className?: string;
@@ -2240,6 +2356,74 @@ function PackageCard({
   accent: string;
   featured?: boolean;
 }) {
+  function PackageBulletIcon({
+    icon,
+  }: {
+    icon: "dot" | "phone" | "star" | "sparkle" | "check" | "olive";
+  }) {
+    if (icon === "phone") {
+      return (
+        <span
+          aria-hidden="true"
+          className="inline-flex h-5 w-5 items-center justify-center text-[14px] leading-none"
+        >
+          📞
+        </span>
+      );
+    }
+
+    if (icon === "star") {
+      return (
+        <span
+          aria-hidden="true"
+          className="inline-flex h-5 w-5 items-center justify-center text-[14px] leading-none text-[#C9A86A]"
+        >
+          ✦
+        </span>
+      );
+    }
+
+    if (icon === "sparkle") {
+      return (
+        <span
+          aria-hidden="true"
+          className="inline-flex h-5 w-5 items-center justify-center text-[14px] leading-none text-[#C9A86A]"
+        >
+          ✨
+        </span>
+      );
+    }
+
+    if (icon === "check") {
+      return (
+        <span
+          aria-hidden="true"
+          className="inline-flex h-5 w-5 items-center justify-center text-[14px] leading-none text-[#4B5D44]"
+        >
+          ✓
+        </span>
+      );
+    }
+
+    if (icon === "olive") {
+      return (
+        <span
+          aria-hidden="true"
+          className="inline-flex h-5 w-5 items-center justify-center text-[14px] leading-none"
+        >
+          🫒
+        </span>
+      );
+    }
+
+    return (
+      <span
+        aria-hidden="true"
+        className="mt-[6px] inline-block h-2 w-2 rounded-full bg-[#C9A86A]"
+      />
+    );
+  }
+
   // capsule color keyed to your accent
   const capClass =
     accent === "#4B5D44"
@@ -2258,7 +2442,7 @@ function PackageCard({
 
   return (
     <div
-      className={`card relative flex flex-col ${
+      className={`card package-card relative flex flex-col ${
         featured ? "featured-gradient" : ""
       } transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_30px_70px_rgba(0,0,0,0.08)] hover:ring-1 ring-[#C9A86A]/25`}
       style={
@@ -2297,11 +2481,14 @@ function PackageCard({
       </div>
 
       {/* Bullets — add more top margin */}
-      <ul className="mt-5 space-y-3 text-sm sans">
-        {bullets.map((b, i) => (
-          <li key={i} className="flex gap-2.5 items-start">
-            <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-[#C9A86A] shrink-0" />
-            <span>{b}</span>
+      <ul className="mt-4 space-y-3 text-[15px] md:text-[16px] leading-[1.75] sans">
+        {bullets.map((bullet, i) => (
+          <li key={i} className="flex gap-3 items-start">
+            <span className="mt-[4px] shrink-0">
+              <PackageBulletIcon icon={bullet.icon ?? "dot"} />
+            </span>
+
+            <span className="package-bullet-copy">{bullet.content}</span>
           </li>
         ))}
       </ul>

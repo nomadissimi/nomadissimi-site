@@ -1579,3 +1579,25 @@ animation: addonRaySweep 0.5s ease-out 1;}
   }
 }
 
+.package-card strong {
+  color: #4B5D44;
+  font-weight: 700;
+}
+
+.package-bullet-copy {
+  color: rgba(43, 43, 43, 0.92);
+}
+
+
+.hero-lead {
+  color: #2f2f2f;
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
+}
+
+.hero-lead em {
+  color: #4b5d44;
+  font-style: normal;
+  font-weight: 500;
+}
+
