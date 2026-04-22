@@ -278,7 +278,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="Private member portals"
-                    desc="Detailed guidance, resources, and tips in an interactive way."
+                    desc="Detailed instructions, resources, and tips in an interactive way."
                   />
 
                   <Feature
@@ -320,7 +320,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                       />
                     }
                     title="Realistic guidance"
-                    desc="Honest assessment. No false promises."
+                    desc="Honest assessment and transparent pricing. No false promises."
                   />
                 </div>
               </div>
@@ -425,9 +425,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       <span className="font-semibold">
                         Confusing information:
                       </span>{" "}
-                      Consulate websites are vague, Reddit is chaotic, and much
-                      of the online advice is outdated or flat-out wrong…
-                      leaving you overwhelmed and misinformed.
+                      Consulate websites are vague, Reddit is chaotic, AI
+                      hallucinates, and much of the online advice is outdated or
+                      flat-out wrong… leaving you overwhelmed and misinformed.
                     </span>
                   </li>
 
@@ -471,7 +471,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     />
                     <span>
                       <span className="font-semibold">Stalled plans:</span>{" "}
-                      Without guidance or momentum, months pass with no
+                      Without qualified guidance, months pass with no
                       progress—and the dream of Italy keeps getting pushed to
                       “someday.”
                     </span>
@@ -497,9 +497,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       className="mt-1.5 flex-none"
                     />
                     <span>
-                      <strong>Clarity from the start:</strong> guidance on
-                      eligibility, pathways, and timing so you can stop guessing
-                      and start moving.
+                      <strong>Clarity from the start:</strong> efficient
+                      guidance on eligibility, pathways, and timing so you can
+                      stop guessing and start moving. We show you how to
+                      optimize your application in full detail.
                     </span>
                   </li>
 
@@ -531,8 +532,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     <span>
                       <strong>Beyond the visa:</strong> We guide you on how to
                       register your residency, secure your Permesso di
-                      Soggiorno, understand taxes, and integrate like a local,
-                      not a lost tourist.
+                      Soggiorno, understand taxes, and integrate like a
+                      proficient local, not a lost tourist.
                     </span>
                   </li>
 
@@ -547,8 +548,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     />
                     <span>
                       <strong>A true soft landing:</strong> Practical tools and
-                      support to help you not just move to Italy, but settle and
-                      enjoy your life in Italy.
+                      quality support to help you not just move to Italy, but
+                      settle and enjoy your life in Italy to the fullest.
                     </span>
                   </li>
                 </ul>
@@ -852,7 +853,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       </p>
                       <p className="sans mt-2 text-[15px] text-black/60 leading-relaxed">
                         A variety of clean and delicious ingredients. UNESCO
-                        cuisine.
+                        cuisine
                       </p>
                       <div className="mt-4 h-px w-10 bg-black/10" />
                     </div>
@@ -884,7 +885,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                         Full Schengen access
                       </p>
                       <p className="sans mt-2 text-[15px] text-black/60 leading-relaxed">
-                        Travel throughout Europe beyond the 90-day limit
+                        Travel freely throughout Europe beyond the 90-day limit
                       </p>
                       <div className="mt-4 h-px w-10 bg-black/10" />
                     </div>
@@ -921,7 +922,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 <p className="sans text-[#2B2B2B]/72 mt-5 text-lg md:text-[21px] leading-[1.75] max-w-3xl mx-auto">
                   A private members-only portal that turns the Italian visa
                   process into something clearer, calmer, and much more
-                  structured.
+                  organized.
                 </p>
 
                 <div className="mt-5">
@@ -964,36 +965,41 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       </p>
 
                       <p>
-                        It is a private, interactive,{" "}
-                        <strong>22-chapter guidance portal</strong> designed to
-                        walk you through the Italian Digital Nomad Visa process
-                        step by step, in normal human English.
+                        It is a private <strong>22-chapter portal</strong> built
+                        to walk you through the process in full: from
+                        understanding whether you are applying as a
+                        <strong> digital nomad or remote worker</strong>, to
+                        gathering documents, preparing the bureaucratic
+                        sub-steps behind them, and assembling a very strong
+                        consulate packet.
                       </p>
 
                       <p>
-                        Inside, we explain{" "}
-                        <strong>what documents you need</strong>,{" "}
-                        <strong>where to get them</strong>,{" "}
-                        <strong>what each requirement entails</strong>,{" "}
-                        <strong>when to prepare each piece</strong>, and{" "}
-                        <strong>how to avoid the mistakes</strong> that so often
-                        lead to confusion, delays, and expensive do-overs.
+                        Inside, we define the confusing parts clearly. We
+                        explain the visa categories, the eligibility rules, the
+                        complex “highly qualified worker” requirement, the
+                        different routes you can take, and the misunderstood
+                        pieces that tend to send people into a spiral halfway
+                        through.
                       </p>
 
                       <p>
-                        It is built for both <strong>remote workers</strong> and{" "}
-                        <strong>online freelancers</strong>, so you can
-                        understand the path that fits your profile instead of
-                        trying to piece it all together from scattered internet
-                        advice.
+                        We dissect the full process with
+                        <strong>
+                          {" "}
+                          illustrative examples, quizzes, detailed checklists,
+                          big-sis tips, and decision guides
+                        </strong>{" "}
+                        that help you understand each component and what smaller
+                        requirements sit behind it.
                       </p>
                     </div>
 
                     <div className="mt-7 rounded-[26px] border border-white/70 bg-white/70 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] backdrop-blur">
                       <p className="serif text-[24px] md:text-[28px] leading-[1.35] text-[#1F1F1F]">
                         Think of it as the difference between being handed a
-                        list… and being given a calm, beautifully organized
-                        roadmap.
+                        list of requirements and being shown how to prepare the
+                        whole case from beginning to end.
                       </p>
                     </div>
                   </div>
@@ -1026,16 +1032,21 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       desc="A structured member experience built from deep guidance, turned into a calm step-by-step portal."
                     />
                     <PortalFeatureRow
-                      title="What, where, when, how"
-                      desc="Not just what to gather, but what each document is, where to get it, when it matters, and how it fits into your case."
+                      title="What, where, when, HOW"
+                      desc="Not just what to gather, but what each document is, when and where to obtain it, and how it fits into your case."
                     />
-                    <PortalFeatureRow
-                      title="Built for real applicants"
-                      desc="Guidance for both remote employees and freelancers, with explanations that help you understand which path applies to you."
-                    />
+
                     <PortalFeatureRow
                       title="Myths debunked"
-                      desc="We clarify the parts people most often misunderstand online, so you are not relying on chaotic forums and outdated posts."
+                      desc="We clarify the parts people most often get wrong, so you can maximize your chances of success."
+                    />
+                    <PortalFeatureRow
+                      title="Constantly updated information"
+                      desc="This is not a static document. The living portal is maintained so it can stay far more useful than a one-time PDF download."
+                    />
+                    <PortalFeatureRow
+                      title="More than the visa"
+                      desc="Once your visa is approved, Nomadissimi also offers dedicated portals for residence, taxes, codice fiscale, and insider help on how to settle in Italy."
                     />
                   </div>
                 </div>
@@ -1070,7 +1081,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                 <p className="sans mt-5 text-[15px] md:text-[17px] leading-[1.8] text-[#5A5A5A] max-w-[860px] mx-auto text-balance">
                   What changes from plan to plan is how much personalized
-                  review, strategic support, and hands-on guidance you want
+                  review, strategic support, and hands-on assistance you want
                   around that portal.
                 </p>
               </div>
@@ -1105,22 +1116,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           <strong>
                             Private access to the Nomadissimi Visa Portal
                           </strong>
-                          : our members-only 22-chapter guidance experience
-                          covering eligibility, documents, consulate
-                          expectations, application structure, and what to do
-                          next.
-                        </>
-                      ),
-                    },
-
-                    {
-                      icon: "dot",
-
-                      content: (
-                        <>
-                          <strong>A real document roadmap</strong>, not just a
-                          checklist: what to prepare, where to get it, when it
-                          matters, and how to stay organized.
+                          : our members-only 22-chapter immersive roadmap
+                          covering eligibility, application structure, what to
+                          prepare, where to get it, and how to stay organized.
                         </>
                       ),
                     },
@@ -1129,14 +1127,14 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                       content: (
                         <>
-                          <strong>“Next Steps” playbook</strong> to help you
-                          move from research mode into real preparation with
-                          more confidence.
+                          <strong>“Next Steps Playbook"</strong> to help you
+                          move from visa research mode into deeper preparation
+                          with more confidence.
                         </>
                       ),
                     },
                   ]}
-                  bestFor="Best for applicants who want a calm, self-guided start with real structure before paying for more hands-on support."
+                  bestFor="Best for applicants who want a calm, self-guided start with solid structure before paying for more hands-on support."
                 >
                   <CheckoutButton
                     plan="Clarity"
@@ -1181,8 +1179,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       content: (
                         <>
                           <strong>Everything inside Clarity</strong>, including
-                          the full Nomadissimi Visa Portal and structured
-                          document roadmap.
+                          the full Nomadissimi Visa Portal and the "Next Steps
+                          Playbook."
                         </>
                       ),
                     },
@@ -1275,8 +1273,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       content: (
                         <>
                           <strong>Everything inside Clarity</strong>, including
-                          the full Nomadissimi Visa Portal and structured
-                          document roadmap.
+                          the full Nomadissimi Visa Portal and the "Next Steps
+                          Playbook."
                         </>
                       ),
                     },
@@ -1340,12 +1338,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           <strong>
                             15% off our Residence Registration portal
                           </strong>{" "}
-                          for a softer, more organized landing after approval.
+                          for a more organized landing after visa approval.
                         </>
                       ),
                     },
                   ]}
-                  bestFor="Best for clients who want the most strategic, private, and high-touch Nomadissimi support from planning through soft landing."
+                  bestFor="Best for clients who want the most strategic and high-touch Nomadissimi support from planning through soft landing."
                 >
                   <CheckoutButton
                     plan="Concierge"
@@ -1415,7 +1413,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 or stressful.
               </p>
 
-              <p className="sans mt-5 text-[16px] md:text-[18px] leading-[1.9] text-[#555555] max-w-4xl mx-auto">
+              <p className="sans mt-5 text-[16px] md:text-[18px] leading-[1.9] text-[#4B5D44] max-w-4xl mx-auto">
                 These portals are designed to help you build your life in Italy
                 seamlessly. They are available both for existing Nomadissimi
                 visa clients and for people who are already moving to Italy and
@@ -1603,6 +1601,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     our local team: north/center/south, cities vs. coast, and
                     how each region shapes your lifestyle
                   </>,
+                  <>
+                    🎁 Access to our dedicated{" "}
+                    <strong>Codice Fiscale Portal</strong>
+                  </>,
                 ]}
                 footer={
                   <div className="text-center mt-8">
@@ -1710,7 +1712,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <blockquote className="card italic serif text-xl leading-relaxed">
                 <strong>
                   “Worth it. They made the most confusing paperwork much more
-                  doable and I actually enjoyed it. All the team was
+                  doable and I have to say that I enjoyed it. All the team was
                   professional and kind.”
                 </strong>{" "}
                 --Samantha, Marketing Analyst from Canada
