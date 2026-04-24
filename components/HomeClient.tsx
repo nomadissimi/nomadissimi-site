@@ -892,7 +892,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   What are you waiting for?
                 </span>
               </div>
-
             </div>
           </div>
         </section>
@@ -960,8 +959,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       </p>
 
                       <p>
-                        It is a private <strong>22-chapter portal</strong> built
-                        to walk you through the process in full: from
+                        It is an interactive <strong>22-chapter portal</strong>{" "}
+                        built to walk you through the process in full: from
                         understanding whether you are applying as a
                         <strong> digital nomad or remote worker</strong>, to
                         gathering documents, preparing the bureaucratic
@@ -970,7 +969,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       </p>
 
                       <p>
-                        Inside, we define the confusing parts clearly. We
+                        Inside, we define the complicated parts clearly. We
                         explain the visa categories, the eligibility rules, the
                         complex “highly qualified worker” requirement, the
                         different routes you can take, and the misunderstood
@@ -991,10 +990,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     </div>
 
                     <div className="mt-7 rounded-[26px] border border-white/70 bg-white/70 px-5 py-5 shadow-[0_12px_30px_rgba(0,0,0,0.04)] backdrop-blur">
-                      <p className="serif text-[24px] md:text-[28px] leading-[1.35] text-[#1F1F1F]">
+                      <p className="serif mx-auto max-w-[620px] text-center text-[21px] md:text-[24px] leading-[1.28] text-[#1F1F1F]">
                         Think of it as the difference between being handed a
-                        list of requirements and being shown how to prepare the
-                        whole case from beginning to end.
+                        list of confusing requirements and being shown how to
+                        prepare the whole case from beginning to end.
                       </p>
                     </div>
                   </div>
@@ -1015,7 +1014,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     </div>
 
                     <div className="hidden md:grid h-12 w-12 place-items-center rounded-2xl bg-[#F7F1E8] border border-[#E7D9BF] text-[22px] shadow-[0_10px_24px_rgba(0,0,0,0.04)]">
-                      ✈️
+                      🇮🇹
                     </div>
                   </div>
 
@@ -1023,23 +1022,25 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                   <div className="mt-6 space-y-4">
                     <PortalFeatureRow
+                      iconSrc="/iconspaghetti.png"
                       title="What, where, when, HOW"
                       desc="Not just what to gather, but what each document is, when and where to obtain it, and how it fits into your case."
                     />
+
                     <PortalFeatureRow
+                      iconSrc="/iconlemon.png"
                       title="Constantly updated information"
                       desc="This is not a static document. The living portal is maintained so it can stay far more useful than a one-time PDF download."
                     />
+
                     <PortalFeatureRow
+                      iconSrc="/iconpizza.png"
                       title="Myths debunked"
-                      desc="We clarify the parts people most often get wrong, so you can maximize your chances of success."
+                      desc="We clarify the parts people most often get wrong, so you can move with more confidence and fewer wrong turns."
                     />
 
                     <PortalFeatureRow
-                      title="22 interactive chapters"
-                      desc="A structured member experience built from deep guidance, turned into a calm step-by-step portal."
-                    />
-                    <PortalFeatureRow
+                      iconSrc="/iconsinglewine.png"
                       title="More than the visa"
                       desc="Once your visa is approved, Nomadissimi also offers dedicated portals for residence, taxes, codice fiscale, and insider help on how to settle in Italy."
                     />
@@ -1373,8 +1374,44 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 </PackageCard>
               </FadeIn>
             </div>
+            <div className="mt-8 md:mt-10 flex justify-center">
+              <div className="max-w-2xl rounded-[28px] border border-[#E8DCC6] bg-[#FBF7F0] px-6 py-5 md:px-8 md:py-6 text-center shadow-[0_12px_34px_rgba(0,0,0,0.04)]">
+                <p className="sans text-[12px] md:text-[13px] uppercase tracking-[0.16em] text-[#4B5D44]/62">
+                  Having trouble deciding?
+                </p>
+
+                <p className="mt-3 serif text-[25px] md:text-[30px] leading-[1.25] text-[#1F1F1F]">
+                  Not sure which plan fits you best?
+                </p>
+
+                <p className="mt-3 sans text-[15px] md:text-[16px] leading-[1.65] text-[#2B2B2B]/70 max-w-xl mx-auto">
+                  Send us a message and we’ll help you choose the Nomadissimi
+                  option that best fits your case, goals, and level of support.
+                </p>
+
+                <div className="mt-5">
+                  <Link
+                    href="/contact"
+                    className="serif inline-flex items-center justify-center px-5 py-2.5
+        border border-[#C9A86A]/65 bg-white text-[#1A1A1A]
+        text-[17px] md:text-[18px] tracking-[0.03em]
+        transition-all duration-300 ease-out
+        hover:bg-[#F9F5EE] hover:-translate-y-[1px]
+        hover:shadow-[0_10px_24px_rgba(193,168,125,0.14)]"
+                  >
+                    Help me choose
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+<div className="mt-10 md:mt-12 mb-8 md:mb-10 flex justify-center">
+  <div className="relative w-28 h-px bg-gradient-to-r from-transparent via-[#8A9B7B]/55 to-transparent">
+    <span className="absolute -top-[5px] left-1/2 -translate-x-1/2 h-2.5 w-2.5 rounded-full bg-[#C9A86A]/75" />
+  </div>
+</div>
 
         <section
           id="settling"
@@ -2174,16 +2211,41 @@ function GoldRule() {
   );
 }
 
-function PortalFeatureRow({ title, desc }: { title: string; desc: string }) {
+function PortalFeatureRow({
+  title,
+  desc,
+  iconSrc,
+}: {
+  title: string;
+  desc: string;
+  iconSrc?: string;
+}) {
   return (
-    <div className="rounded-[22px] border border-black/8 bg-[#FCFBF8] px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.035)]">
-      <div className="flex items-start gap-3">
-        <span className="mt-[7px] h-2 w-2 rounded-full bg-[#C9A86A] shrink-0" />
-        <div>
-          <p className="serif text-[22px] md:text-[24px] leading-[1.2] text-[#1F1F1F]">
+    <div className="rounded-[26px] border border-black/8 bg-[#FFFDFC] px-5 py-5 shadow-[0_10px_26px_rgba(0,0,0,0.035)]">
+      <div className="flex items-start gap-4">
+        {iconSrc ? (
+          <div className="mt-1 flex-none">
+            <Image
+              src={iconSrc}
+              alt=""
+              width={40}
+              height={40}
+              aria-hidden="true"
+              className="h-10 w-10 object-contain"
+            />
+          </div>
+        ) : (
+          <span
+            aria-hidden="true"
+            className="mt-[10px] inline-block h-2.5 w-2.5 rounded-full bg-[#C9A86A] flex-none"
+          />
+        )}
+
+        <div className="min-w-0">
+          <h5 className="serif text-[22px] md:text-[24px] leading-[1.2] text-[#1F1F1F]">
             {title}
-          </p>
-          <p className="sans mt-2 text-[15px] md:text-[16px] leading-[1.75] text-black/65">
+          </h5>
+          <p className="sans mt-1.5 text-[15px] md:text-[16px] leading-[1.42] text-[#2B2B2B]/72">
             {desc}
           </p>
         </div>
