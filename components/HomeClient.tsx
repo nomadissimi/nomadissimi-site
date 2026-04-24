@@ -623,8 +623,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 Based in Sicily, Sylvie and Marco built Nomadissimi to offer
                 Italian relocation support that feels more personal,
                 intelligent, and realistic. Together, they bring cultural
-                fluency, emotional intelligence, and proven knowledge of Italian
-                immigration and integration systems.
+                fluency, emotional intelligence, and grounded knowledge of
+                Italian immigration and integration systems.
               </p>
 
               <div className="mt-4 grid gap-5 md:grid-cols-2">
@@ -985,7 +985,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           big-sis tips, and decision guides
                         </strong>{" "}
                         that help you understand each component and what smaller
-                        requirements sit behind it.
+                        tricky requirements sit behind it.
                       </p>
                     </div>
 
@@ -1030,7 +1030,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     <PortalFeatureRow
                       iconSrc="/iconlemon.png"
                       title="Constantly updated information"
-                      desc="This is not a static document. The living portal is maintained so it can stay far more useful than a one-time PDF download."
+                      desc="This is not a static document. The living portal is maintained so it can stay far more useful than a one-time dry PDF download."
                     />
 
                     <PortalFeatureRow
@@ -1407,11 +1407,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           </div>
         </section>
 
-<div className="mt-10 md:mt-12 mb-8 md:mb-10 flex justify-center">
-  <div className="relative w-28 h-px bg-gradient-to-r from-transparent via-[#8A9B7B]/55 to-transparent">
-    <span className="absolute -top-[5px] left-1/2 -translate-x-1/2 h-2.5 w-2.5 rounded-full bg-[#C9A86A]/75" />
-  </div>
-</div>
+        <div className="mt-10 md:mt-12 mb-8 md:mb-10 flex justify-center">
+          <div className="relative w-28 h-px bg-gradient-to-r from-transparent via-[#8A9B7B]/55 to-transparent">
+            <span className="absolute -top-[5px] left-1/2 -translate-x-1/2 h-2.5 w-2.5 rounded-full bg-[#C9A86A]/75" />
+          </div>
+        </div>
 
         <section
           id="settling"
@@ -1487,9 +1487,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     the steps people most often get confused by.
                   </>,
                   <>
-                    <strong>30-minute private consultation</strong> walking you
-                    through the essential documents you must obtain once you
-                    move to Italy.
+                    <strong>
+                      📞 Personalized 30-minute private consultation
+                    </strong>{" "}
+                    walking you through the essential documents you must obtain
+                    once you move to Italy.
                   </>,
                   <>
                     How to obtain your <strong> residence permit</strong> (the
@@ -1555,7 +1557,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     structuring yourself in Italy.
                   </>,
                   <>
-                    <strong>📞 Personalized 30-minute consultation</strong> to
+                    <strong>📞 Strategic 30-minute consultation</strong> to
                     discuss opening a professional activity (Partita IVA)
                   </>,
                   <>
