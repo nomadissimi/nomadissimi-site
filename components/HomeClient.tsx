@@ -327,10 +327,8 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
             </FadeIn>
             {/* RIGHT column */}
             <FadeIn delay={0.15} y={20}>
-              <div className="relative md:translate-y-4 lg:translate-y-5">
-                {" "}
+              <div className="md:translate-y-4 lg:translate-y-5">
                 <div className="aspect-[4/3] md:aspect-[5/4] rounded-3xl overflow-hidden shadow-[0_24px_70px_rgba(0,0,0,0.14)]">
-                  {" "}
                   <div
                     className="group relative aspect-[4/3] md:aspect-[5/4] overflow-hidden bg-[#F8F5EF]
 rounded-tl-[56px] rounded-tr-[14px] rounded-br-[72px] rounded-bl-[14px]
@@ -352,6 +350,17 @@ hover:-translate-y-2 hover:shadow-[0_42px_140px_rgba(0,0,0,0.20)]"
 bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparent_70%)]"
                     />
                   </div>
+                </div>
+
+                <div className="hidden md:flex justify-center mt-8 lg:mt-10 opacity-[0.9]">
+                  <Image
+                    src="/hero/silueta.png"
+                    alt=""
+                    width={460}
+                    height={260}
+                    aria-hidden="true"
+                    className="h-auto w-[360px] lg:w-[430px]"
+                  />
                 </div>
               </div>
             </FadeIn>
@@ -598,91 +607,73 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <h3 className="serif text-3xl md:text-4xl font-semibold">
                 Meet Nomadissimi
               </h3>
-              <div className="mt-2 mb-2">
+
+              <div className="mt-2 mb-4">
                 <GoldRule />
               </div>
 
-              {/* unified copy size */}
-              <p className="sans text-[18px] md:text-[19px] leading-[1.85] text-[#2B2B2B]/90">
-                We are a specialized agency built by two worlds: international
-                professionals who successfully made the move to Italy and
-                Italian locals who know the systems, the culture, and the
-                shortcuts.{" "}
-                <strong>
-                  We’ve lived both sides: the dreamer and the insider.
-                </strong>{" "}
-                That’s why our guidance isn’t theoretical or abstract. It’s
-                lived, local, and proven. Big agencies treat you like a generic
-                case number. We treat you like family moving into our
-                neighborhood.
-                <br />
-                <br />
-                We believe relocation support should feel clear, professional,
-                and respectful. Nomadissimi welcomes clients of all backgrounds,
-                orientations, and identities. You are safe here.
-                {/* Baby luxe divider */}
-                <hr className="my-8 border-0 h-[1px] bg-gradient-to-r from-transparent via-[#C8A86B]/40 to-transparent" />
+              <p className="sans mt-4 text-[15px] md:text-[16px] leading-[1.68] text-[#2B2B2B]/84">
+                Nomadissimi was built from a rare combination: an international,
+                multilingual perspective shaped by the real experience of moving
+                abroad, and a deeply local expertise of how Italy works on the
+                ground.
               </p>
 
-              {/* Bullet list */}
-              <ul className="mt-7 md:mt-12 space-y-4 md:space-y-5">
-                <li className="flex items-start gap-4 md:gap-5">
-                  <Image
-                    src="/iconspaghetti.png"
-                    alt=""
-                    width={40}
-                    height={40}
-                    className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
-                    aria-hidden="true"
-                  />
-                  <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
-                    We speak the language of visas, bureaucracy, and pasta.
-                  </p>
-                </li>
+              <p className="sans mt-4 text-[15px] md:text-[16px] leading-[1.68] text-[#2B2B2B]/84">
+                Based in Sicily, Sylvie and Marco built Nomadissimi to offer
+                Italian relocation support that feels more personal,
+                intelligent, and realistic. Together, they bring cultural
+                fluency, emotional intelligence, and proven knowledge of Italian
+                immigration and integration systems.
+              </p>
 
-                <li className="flex items-start gap-4 md:gap-5">
+              <div className="mt-4 grid gap-5 md:grid-cols-2">
+                <div className="overflow-hidden rounded-[24px] border border-[#E6DCCB] bg-white/70 p-2.5 shadow-[0_12px_26px_rgba(0,0,0,0.045)]">
                   <Image
-                    src="/iconlemon.png"
-                    alt=""
-                    width={40}
-                    height={40}
-                    className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
-                    aria-hidden="true"
+                    src="/about/sylvia.jpg"
+                    alt="Sylvie, co-founder of Nomadissimi"
+                    width={900}
+                    height={1200}
+                    className="aspect-square w-full object-cover object-center rounded-[22px]"
                   />
-                  <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
-                    We know the consulates, the pitfalls, the hidden tricks.
-                  </p>
-                </li>
+                </div>
 
-                <li className="flex items-start gap-4 md:gap-5">
+                <div className="overflow-hidden rounded-[24px] border border-[#E6DCCB] bg-white/70 p-2.5 shadow-[0_12px_26px_rgba(0,0,0,0.045)]">
                   <Image
-                    src="/iconpizza.png"
-                    alt=""
-                    width={40}
-                    height={40}
-                    className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
-                    aria-hidden="true"
+                    src="/about/marco.jpg"
+                    alt="Marco, co-founder of Nomadissimi"
+                    width={900}
+                    height={1200}
+                    className="aspect-square w-full object-cover object-center rounded-[22px]"
                   />
-                  <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
-                    We guide you with realism, clarity, and care.
-                  </p>
-                </li>
+                </div>
+              </div>
 
-                <li className="flex items-start gap-4 md:gap-5">
-                  <Image
-                    src="/iconsinglewine.png"
-                    alt=""
-                    width={40}
-                    height={40}
-                    className="mt-1 h-9 w-9 md:h-10 md:w-10 flex-none drop-shadow-[0_1px_2px_rgba(0,0,0,.12)]"
-                    aria-hidden="true"
-                  />
-                  <p className="sans text-[18px] md:text-[19px] leading-[1.85]">
-                    With us, you won’t just move to Italy… you’ll land softly
-                    into <em>la dolce vita</em>.
-                  </p>
-                </li>
-              </ul>
+              <div className="mt-4 text-center">
+                <p className="serif text-[28px] md:text-[30px] text-[#1C1C1C]">
+                  Sylvie <span className="text-[#C9A86A]/70">·</span> Marco
+                </p>
+                <p className="sans mt-1 text-[11px] uppercase tracking-[0.16em] text-[#4B5D44]/68">
+                  Co-Founders of Nomadissimi
+                </p>
+              </div>
+
+              <p className="sans mt-4 text-[15px] md:text-[16px] leading-[1.68] text-[#2B2B2B]/84">
+                Sylvie is a Colombian-American tech builder, business
+                strategist, and global-minded creative who made the move to
+                Italy. Marco is a dynamic researcher and born-and-raised
+                Italian, with a thorough understanding of Italian bureaucracy,
+                laws, and culture. That’s why our guidance isn’t theoretical or
+                abstract. It’s lived, local, and proven.
+              </p>
+
+              <p className="sans mt-4 text-[15px] md:text-[16px] leading-[1.68] text-[#2B2B2B]/84">
+                Big agencies treat you like a generic case number. We treat you
+                like family moving into our neighborhood. We believe relocation
+                support should feel clear, professional, and respectful.
+                Nomadissimi welcomes clients of all backgrounds, orientations,
+                and identities. You are safe here.
+              </p>
             </div>
 
             <div className="card p-7 md:p-8 h-full">
@@ -740,7 +731,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                     <div className="absolute bottom-4 left-4 right-4">
                       <p className="serif text-white text-xl leading-tight">
-                        A calmer life. A richer one.
+                        A calmer life and new adventures.
                       </p>
                     </div>
                   </div>
@@ -891,13 +882,17 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     </div>
                   </div>
                 </div>
-                {/* tiny caption like a magazine */}
-                <div className="mt-3 relative text-s sans text-black/50">
-                  <span className="top-0 tracking-[0.18em] text-left">
-                    What are you waiting for?
-                  </span>
-                </div>
               </div>
+
+              <hr className="my-8 border-0 h-[1px] bg-gradient-to-r from-transparent via-[#C8A86B]/40 to-transparent" />
+
+              {/* tiny caption like a magazine */}
+              <div className="mt-3 text-center text-s sans text-black/50">
+                <span className="inline-block tracking-[0.18em]">
+                  What are you waiting for?
+                </span>
+              </div>
+
             </div>
           </div>
         </section>
@@ -1028,21 +1023,21 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                   <div className="mt-6 space-y-4">
                     <PortalFeatureRow
-                      title="22 interactive chapters"
-                      desc="A structured member experience built from deep guidance, turned into a calm step-by-step portal."
-                    />
-                    <PortalFeatureRow
                       title="What, where, when, HOW"
                       desc="Not just what to gather, but what each document is, when and where to obtain it, and how it fits into your case."
-                    />
-
-                    <PortalFeatureRow
-                      title="Myths debunked"
-                      desc="We clarify the parts people most often get wrong, so you can maximize your chances of success."
                     />
                     <PortalFeatureRow
                       title="Constantly updated information"
                       desc="This is not a static document. The living portal is maintained so it can stay far more useful than a one-time PDF download."
+                    />
+                    <PortalFeatureRow
+                      title="Myths debunked"
+                      desc="We clarify the parts people most often get wrong, so you can maximize your chances of success."
+                    />
+
+                    <PortalFeatureRow
+                      title="22 interactive chapters"
+                      desc="A structured member experience built from deep guidance, turned into a calm step-by-step portal."
                     />
                     <PortalFeatureRow
                       title="More than the visa"
