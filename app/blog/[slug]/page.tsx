@@ -91,6 +91,7 @@ export default async function BlogPostPage({
             source={content}
             components={{
               CTA,
+              BlogCTA,
               ConsultCTA,
             }}
           />
