@@ -8,13 +8,16 @@ type HeroVideoProps = {
 export default function HeroVideo({ mp4Src, poster }: HeroVideoProps) {
   return (
     <video
-      className="w-full h-full object-cover"
+      className="nomadissimi-decorative-video pointer-events-none h-full w-full object-cover"
       autoPlay
       muted
       loop
       playsInline
-      preload="metadata"
+      preload="auto"
       poster={poster}
+      aria-hidden="true"
+      tabIndex={-1}
+      disablePictureInPicture
     >
       <source src={mp4Src} type="video/mp4" />
     </video>
