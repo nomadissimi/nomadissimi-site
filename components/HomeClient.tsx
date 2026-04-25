@@ -696,18 +696,20 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <div className="group">
                     <video
                       className="
-      pointer-events-none w-full h-[150px] md:h-[170px] object-cover
-      transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)]
-      group-hover:-translate-y-[2.5px]
-      group-hover:scale-[1.02]
-    "
+    nomadissimi-decorative-video
+    pointer-events-none w-full h-[150px] md:h-[170px] object-cover
+    transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)]
+    group-hover:-translate-y-[2.5px]
+    group-hover:scale-[1.02]
+  "
                       autoPlay
                       muted
                       loop
                       playsInline
-                      preload="metadata"
+                      preload="auto"
                       aria-hidden="true"
                       tabIndex={-1}
+                      disablePictureInPicture
                     >
                       <source src="/italyiscallingvideo.mp4" type="video/mp4" />
                     </video>

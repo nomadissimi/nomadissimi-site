@@ -1601,3 +1601,18 @@ animation: addonRaySweep 0.5s ease-out 1;}
   font-weight: 500;
 }
 
+.nomadissimi-decorative-video::-webkit-media-controls {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.nomadissimi-decorative-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.nomadissimi-decorative-video::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
