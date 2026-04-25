@@ -621,10 +621,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
               <p className="sans mt-4 text-[15px] md:text-[16px] leading-[1.68] text-[#2B2B2B]/84">
                 Based in Sicily, Sylvie and Marco built Nomadissimi to offer
-                Italian relocation support that feels more personal,
-                intelligent, and realistic. Together, they bring cultural
-                fluency, emotional intelligence, and grounded knowledge of
-                Italian immigration and integration systems.
+                Italian relocation support that feels more personal, competent,
+                and realistic. Together, they bring cultural fluency, emotional
+                intelligence, and grounded knowledge of Italian immigration and
+                integration systems.
               </p>
 
               <div className="mt-4 grid gap-5 md:grid-cols-2">
@@ -651,7 +651,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
               <div className="mt-4 text-center">
                 <p className="serif text-[28px] md:text-[30px] text-[#1C1C1C]">
-                  Sylvie <span className="text-[#C9A86A]/70">·</span> Marco
+                  <span className="text-[#C9A86A]/70">·</span> Sylvie & Marco{" "}
+                  <span className="text-[#C9A86A]/70">·</span>
                 </p>
                 <p className="sans mt-1 text-[11px] uppercase tracking-[0.16em] text-[#4B5D44]/68">
                   Co-Founders of Nomadissimi
@@ -669,10 +670,13 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
               <p className="sans mt-4 text-[15px] md:text-[16px] leading-[1.68] text-[#2B2B2B]/84">
                 Big agencies treat you like a generic case number. We treat you
-                like family moving into our neighborhood. We believe relocation
-                support should feel clear, professional, and respectful.
-                Nomadissimi welcomes clients of all backgrounds, orientations,
-                and identities. You are safe here.
+                like family moving into our neighborhood.{" "}
+                <strong>
+                  We believe relocation support should feel clear, professional,
+                  and respectful. Nomadissimi welcomes clients of all
+                  backgrounds, orientations, and identities.
+                </strong>{" "}
+                You are safe here.
               </p>
             </div>
 
@@ -1482,16 +1486,17 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 }
                 items={[
                   <>
-                    <strong>Dedicated Residence Registration Portal</strong>{" "}
-                    covering the residence process, the documents involved, and
-                    the steps people most often get confused by.
+                    <strong>
+                      Access to our best-selling Residence Registration Portal:
+                    </strong>{" "}
+                    8 descriptive chapters covering the full residence process,
+                    the documents involved, and the steps people most often get
+                    confused by.
                   </>,
                   <>
-                    <strong>
-                      📞 Personalized 30-minute private consultation
-                    </strong>{" "}
-                    walking you through the essential documents you must obtain
-                    once you move to Italy.
+                    <strong>📞 Private 30-minute consultation</strong> walking
+                    you through the essential documents you must obtain once you
+                    move to Italy.
                   </>,
                   <>
                     How to obtain your <strong> residence permit</strong> (the
@@ -1508,7 +1513,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     another essential)
                   </>,
                   <>
-                    🎁 Access to our dedicated{" "}
+                    🎁 Bonus access to our dedicated{" "}
                     <strong>Codice Fiscale Portal</strong>
                   </>,
                   <>
@@ -1552,9 +1557,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 }
                 items={[
                   <>
-                    <strong>Access to our Tax & Partita IVA Portal</strong>{" "}
-                    explaining the practical setup side of working and
-                    structuring yourself in Italy.
+                    <strong>Access to our Tax & Partita IVA Portal:</strong> 12
+                    insightful chapters explaining the practical setup side of
+                    working and structuring yourself in Italy.
                   </>,
                   <>
                     <strong>📞 Strategic 30-minute consultation</strong> to
@@ -1569,7 +1574,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     We cover that too.
                   </>,
                   <>
-                    🎁 Access to our dedicated{" "}
+                    🎁 Bonus access to our dedicated{" "}
                     <strong>Codice Fiscale Portal</strong>, because it is an
                     important building block for tax and professional setup.
                   </>,
@@ -1604,9 +1609,12 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 title="La Dolce Vita Integration"
                 blurb={
                   <span className="text-[#1E1E1E] leading-relaxed">
-                    This exclusive package gives you insider guidance on the
-                    <strong> real-life</strong> side of moving to Italy and
-                    integrating well.
+                    By popular demand, we created this package to help you
+                    navigate the
+                    <strong> real-life side of moving to Italy.</strong> It
+                    includes a practical written guide plus a private
+                    consultation where you can ask your questions and get more
+                    personalized support as you adjust into life in Italy.
                   </span>
                 }
                 items={[
@@ -1615,7 +1623,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       📞 Personalized 30-minute cultural & lifestyle
                       consultation:
                     </strong>{" "}
-                    ask your questions, get real-world guidance, and feel
+                    bring your questions, get real-world guidance, and feel
                     prepared for life in Italy beyond the postcards
                   </>,
                   <>
@@ -1636,8 +1644,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     how each region shapes your lifestyle
                   </>,
                   <>
-                    🎁 Access to our dedicated{" "}
-                    <strong>Codice Fiscale Portal</strong>
+                    🎁 Bonus access to our dedicated{" "}
+                    <strong>Codice Fiscale Portal</strong> because it is a
+                    crucial part of accessing local systems.
                   </>,
                 ]}
                 footer={
