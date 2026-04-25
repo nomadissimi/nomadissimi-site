@@ -135,17 +135,17 @@ const faqs: QA[] = [
     a: (
       <>
         Yes. You can absolutely still work with Nomadissimi even if you already
-        have your visa. We do not only support the visa process. We also help
-        with the next layers of the move, including residence registration,
-        taxes, codice fiscale, and our La Dolce Vita consultations for the
-        real-life side of settling into Italy well. These resources are
+        have your visa. We support so much more than the visa process. 😄 We
+        also help with the next layers of the move, including residence
+        registration, taxes, codice fiscale, and our La Dolce Vita consultations
+        for the real-life side of settling into Italy well. These resources are
         available to anyone moving to Italy. One of our core purposes is helping
-        people integrate well into Italy, not just arrive and live in a bubble.
-        We love and respect Italy deeply, and we want the people moving here to
-        understand it, navigate it more confidently, and build a life that feels
-        grounded and connected. So if your visa is already handled, but you
-        still want help landing smoothly and settling in well, you are
-        absolutely in the right place.
+        people integrate well into Italy, not just arrive and live in a bubble
+        detached from reality. We love and respect Italy deeply, and we want the
+        people moving here to understand its culture, navigate its systems more
+        confidently, and build a life that feels grounded and connected. So if
+        your visa is already handled, but you still want help landing smoothly
+        and settling in well, you are absolutely in the right place.
       </>
     ),
   },
@@ -166,15 +166,15 @@ const faqs: QA[] = [
     q: "What’s your refund policy?",
     a: (
       <>
-        All sales are final and non-refundable. All sales are final and
-        non-refundable. Because Nomadissimi products include immediate access to
-        private digital resources, carefully researched guidance, and, depending
-        on the package, reserved time and support from our team, we do not offer
-        refunds once a purchase has been made. We take our work seriously and
-        put a lot of care into building resources that are thoughtful,
-        strategic, and genuinely useful from the moment you join us. That is
-        also why we encourage clients to read each package carefully before
-        purchasing and to message us if they need help choosing the right fit.
+        All sales are final and non-refundable. Because Nomadissimi products
+        include immediate access to private digital resources, carefully
+        researched guidance, and, depending on the package, reserved time and
+        support from our team, we do not offer refunds once a purchase has been
+        made. We take our work seriously and put a lot of care into building
+        resources that are thoughtful, strategic, and genuinely useful from the
+        moment you join us. That is also why we encourage clients to read each
+        package carefully before purchasing and to message us if they need help
+        choosing the right fit.
       </>
     ),
   },

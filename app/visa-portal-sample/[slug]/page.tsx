@@ -86,6 +86,14 @@ export default async function VisaPortalSampleChapterPage({ params }: Props) {
   const activeChapter =
     slug === "full-access" ? null : getVisaGuideSampleChapter(slug);
 
+  const currentIndex = sampleNavItems.findIndex((item) => item.slug === slug);
+  const previousItem =
+    currentIndex > 0 ? sampleNavItems[currentIndex - 1] : null;
+  const nextItem =
+    currentIndex < sampleNavItems.length - 1
+      ? sampleNavItems[currentIndex + 1]
+      : null;
+
   if (slug !== "full-access" && !activeChapter) notFound();
   return (
     <div className="min-h-screen bg-[#F7F5F0]">
@@ -328,6 +336,35 @@ export default async function VisaPortalSampleChapterPage({ params }: Props) {
                 </article>
               </>
             )}
+
+            <div className="mt-10 flex flex-col gap-3 border-t border-black/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                {previousItem ? (
+                  <Link
+                    href={`/visa-portal-sample/${previousItem.slug}`}
+                    className="inline-flex w-full justify-center items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-5 py-3 text-black/70 transition hover:bg-white sm:w-auto"
+                  >
+                    ← Previous
+                  </Link>
+                ) : (
+                  <div />
+                )}
+              </div>
+
+              <div>
+                {nextItem ? (
+                  <Link
+                    href={`/visa-portal-sample/${nextItem.slug}`}
+                    className="inline-flex w-full justify-center items-center gap-2 rounded-full bg-[#4B5D44] px-5 py-3 text-white transition hover:bg-[#3E4E38] sm:w-auto"
+                  >
+                    {nextItem.isCta ? "Continue to Chapter 4" : "Next chapter"}{" "}
+                    →
+                  </Link>
+                ) : (
+                  <div />
+                )}
+              </div>
+            </div>
           </main>
         </div>
       </div>
