@@ -1575,8 +1575,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   </>,
                   <>
                     🎁 Bonus access to our dedicated{" "}
-                    <strong>Codice Fiscale Portal</strong>, because it is an
-                    important building block for tax and professional setup.
+                    <strong>Codice Fiscale Portal</strong>, as it is an
+                    important building block for your tax and professional
+                    setup.
                   </>,
                   <>
                     <strong>Common mistakes to avoid</strong> when setting up
@@ -1623,7 +1624,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       📞 Personalized 30-minute cultural & lifestyle
                       consultation:
                     </strong>{" "}
-                    bring your questions, get real-world guidance, and feel
+                    bring your questions, receive real-world guidance, and feel
                     prepared for life in Italy beyond the postcards
                   </>,
                   <>

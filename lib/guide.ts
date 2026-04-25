@@ -110,6 +110,15 @@ export function detectGuideThemeFromSlug(slug: string): GuideTheme | null {
   return null;
 }
 
+
+export function getVisaGuideSampleChapters(): GuideChapter[] {
+  return getGuideChapters("visa").slice(0, 3);
+}
+
+export function getVisaGuideSampleChapter(slug: string) {
+  return getVisaGuideSampleChapters().find((chapter) => chapter.slug === slug) ?? null;
+}
+
 /**
  * Backwards-compatible helpers
  * Keep these for now so existing imports don't explode while we migrate page logic.
