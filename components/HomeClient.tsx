@@ -743,8 +743,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                 {/* tiny caption like a magazine */}
                 <div className="mt-3 relative text-xs sans text-black/50">
-                  <span className="tracking-[0.18em] text-left">▶▶▶</span>
-
+                  <span className="hidden md:inline tracking-[0.18em]">
+                    ▶▶▶
+                  </span>
                   <span className="absolute right-0 top-0 tracking-[0.18em] text-right">
                     OH HEY, ITALY LOOKS GOOD ON YOU
                   </span>
@@ -1748,7 +1749,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   stopped feeling impossible, and I have advanced a lot in the
                   process. Thanks again!”
                 </strong>{" "}
-                --Rafael, Software Engineer from Illinois
+                -Rafael, Software Engineer from Illinois
               </blockquote>
             </FadeIn>
 
@@ -1759,7 +1760,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   doable and I have to say that I enjoyed it. All the team was
                   professional and kind.”
                 </strong>{" "}
-                --Samantha, Marketing Analyst from Canada
+                -Samantha, Marketing Analyst from Canada
               </blockquote>
             </FadeIn>
           </div>
@@ -1923,7 +1924,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
         </div>
 
         <footer className="bg-[#4B5D44] text-white mt-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 pb-24 md:pb-10">
+            {" "}
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
                 <p className="serif text-xl font-semibold">
@@ -1982,13 +1984,15 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 </a>
               </nav>
             </div>
-            <button
-              type="button"
-              className="underline underline-offset-4 hover:text-[#4B5D44] transition"
-              onClick={() => window.__openCookiePrefs?.()}
-            >
-              Cookie Preferences
-            </button>
+            <div className="mt-5 flex justify-center md:justify-start">
+              <button
+                type="button"
+                className="sans text-white/90 underline underline-offset-4 transition hover:text-white"
+                onClick={() => window.__openCookiePrefs?.()}
+              >
+                Cookie Preferences
+              </button>
+            </div>
           </div>
         </footer>
       </div>
