@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllPosts, getPostPage } from "@/lib/blog";
 import CTA from "@/components/blog/CTA";
+import BlogCTA from "@/components/blog/BlogCTA";
 import ConsultCTA from "@/components/blog/ConsultCTA";
 
 export async function generateStaticParams() {
