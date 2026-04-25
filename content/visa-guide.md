@@ -87,7 +87,7 @@ But first, check if you qualify for the visa; and from there, determine if you�
 
 - **Being a non-EU citizen** (EU folks can simply move to Italy by being European).
 - **Your work is fully location-independent,** meaning you can deliver everything online as long as you have a stable Internet connection.
-- **You earn at least €25,000 gross per year.** (It doesn’t matter whether the monthly payments differ. What matters is the yearly sum).
+- **You earn at least €28,000 gross per year.** (It doesn’t matter whether the monthly payments differ. What matters is the yearly sum).
 - **You have at least 6 months of experience** doing the kind of work you plan to do as a digital nomad or remote worker.
 - **Pick JUST ONE of the following:**
   1.  **option 1: Bachelor’s degree:**
@@ -247,7 +247,7 @@ To apply for the Italian Digital Nomad or Remote Worker Visa, you simply need to
 - **You are a citizen from a country NOT in the European Union**. Otherwise, just buy a plane ticket and come over\! (and then get set up as a _resident in Italy,_ but that’s a different story)
 - **You are Location-Independent**: Your job is 100% online. You can work from Rome, Milan, or a beach in Sicily without any problems.
 - **You are "Highly Qualified"**: You have the credentials: either a University Degree, a recognized 3-year professional qualification, OR proven work experience (3 years for Tech pros, 5 years for others).
-- **You have the Funds**: You earn at least €25,000 gross per year to support yourself.
+- **You have the Funds**: You earn at least €28,000 gross per year to support yourself.
 
 </GuideChecklist>
 
@@ -343,7 +343,7 @@ Both Digital Nomads (freelancers) and Remote Workers (employees) have to collect
 - **Color passport photo** with white background, recent
 - Valid **residence permit** from the country where you currently reside (only if you leave abroad)
 - Complete documentation to prove you are a **“highly qualified worker”.**
-- Proof of **minimum annual income** of at least €25,000 gross
+- Proof of **minimum annual income** of at least €28,000 gross
 - Proof that you have **at least six months of professional experience** in the kind of work you’ll do as a digital nomad or remote worker
 - **Health insurance valid in Italy** for the entire duration of your stay
 - Proof of **accommodation in Italy**
@@ -1654,7 +1654,7 @@ Italy wants proof that you earn a stable, legal income that’s high enough to s
 
 Legally, the rule is “at least three times the minimum level for exemption from healthcare copayments.” In practice, consulates translate that into a specific annual figure (for example, some consulates indicated €24,789/year for a single applicant), and they can update it at any time, so always confirm the current amount with your own consulate.
 
-In practical terms, if you can show your job pays **at least €25,000 gross per year**, you’ll usually be within the required range.  
+In practical terms, if you can show your job pays **at least €28,000 gross per year**, you’ll usually be within the required range.  
 _Just don’t trip on the math: the threshold is in euros, so be precise about the exchange rate you use when converting from your currency._
 
 _Note:_ Adding family members can raise the threshold, and their visas are often handled separately. For example, some consulates explain that after you arrive in Italy, you can sponsor a spouse and minor children, and the process starts in Italy (often through the local Italian _Questura_ or police office).
@@ -2304,7 +2304,7 @@ If you use a Binding Offer for a new job, remember Chapter 7 (_the 6-month exper
 <GuideCard>
 
 Your contract must clearly state your annual gross salary.  
-_The Rule:_ It must meet the minimum income threshold we discussed in Chapter 6 (generally €25,000+), AND it must comply with the minimum wage standards for that specific category of work in Italy (defined by "National Collective Agreements").
+_The Rule:_ It must meet the minimum income threshold we discussed in Chapter 6 (generally €28,000+), AND it must comply with the minimum wage standards for that specific category of work in Italy (defined by "National Collective Agreements").
 
 _The Reality: If you are earning €35,000 or more, you are almost certainly safe._
 
