@@ -10,7 +10,7 @@ type Props = {
 
 export default function CTA({
   title = "Prefer to start quietly?",
-  body = "Get the starter guide with realistic timelines, requirements, and common mistakes to avoid.",
+  body = "Get an initial sample of our Visa Portal.",
   primaryLabel = "Get the free guide",
   primaryHref = "/#guide",
 }: Props) {

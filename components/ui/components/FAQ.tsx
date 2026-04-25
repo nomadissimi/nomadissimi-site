@@ -87,11 +87,12 @@ const faqs: QA[] = [
         That’s when the real Italian adventure begins! It's also one of the most
         important (and time-sensitive) steps that starts right away. Within days
         of landing, you’ll need to register your residency and apply for your
-        Permesso di Soggiorno, your official residence permit. It’s a crucial
-        step that many people overlook or delay, and missing the deadline can
-        cause serious complications later. Our best-selling "Residence
-        Registration" Portal gives you step-by-step guidance through the
-        process: from completing your kit to booking your appointments and
+        Permesso di Soggiorno, your official residence permit.
+        <br />
+        It’s a crucial step that many people overlook or delay, and missing the
+        deadline can cause serious complications later. Our best-selling
+        "Residence Registration" Portal gives you step-by-step guidance through
+        the process: from completing your kit to booking your appointments and
         submitting your fingerprints. We make sure you get it done correctly and
         on time, so your new Italian life begins without stress or surprises.
       </>
@@ -138,14 +139,15 @@ const faqs: QA[] = [
         have your visa. We support so much more than the visa process. 😄 We
         also help with the next layers of the move, including residence
         registration, taxes, codice fiscale, and our La Dolce Vita consultations
-        for the real-life side of settling into Italy well. These resources are
-        available to anyone moving to Italy. One of our core purposes is helping
-        people integrate well into Italy, not just arrive and live in a bubble
-        detached from reality. We love and respect Italy deeply, and we want the
-        people moving here to understand its culture, navigate its systems more
-        confidently, and build a life that feels grounded and connected. So if
-        your visa is already handled, but you still want help landing smoothly
-        and settling in well, you are absolutely in the right place.
+        for the real-life side of settling into Italy well.
+        <br /> These resources are available to anyone moving to Italy. One of
+        our core purposes is helping people integrate into Italy, not just
+        arrive and live in a bubble detached from reality. We love and respect
+        Italy deeply, and we want the people moving here to understand its
+        culture, navigate its systems more confidently, and build a life that
+        feels grounded and connected. So if your visa is already handled, but
+        you still want help landing smoothly and adjusting well, you are
+        absolutely in the right place.
       </>
     ),
   },
@@ -155,10 +157,14 @@ const faqs: QA[] = [
       <>
         Rejections are rare when everything is prepared correctly, but
         ultimately, the final decision lies with the Italian government and its
-        affiliated entities. No consulting agency or law firm can guarantee an
-        approval, and if someone promises you that… run! Our role is to minimize
-        risk through careful strategy, organization, and personalized
-        preparation... giving you the strongest possible chance of success.
+        affiliated entities.{" "}
+        <strong>
+          No consulting agency or law firm can guarantee an approval, and if
+          someone promises you that… run!
+        </strong>{" "}
+        Our role is to minimize risk through careful strategy, organization, and
+        personalized preparation... giving you the strongest possible chance of
+        success.
       </>
     ),
   },
@@ -170,7 +176,8 @@ const faqs: QA[] = [
         include immediate access to private digital resources, carefully
         researched guidance, and, depending on the package, reserved time and
         support from our team, we do not offer refunds once a purchase has been
-        made. We take our work seriously and put a lot of care into building
+        made.
+        <br /> We take our work seriously and put a lot of care into building
         resources that are thoughtful, strategic, and genuinely useful from the
         moment you join us. That is also why we encourage clients to read each
         package carefully before purchasing and to message us if they need help

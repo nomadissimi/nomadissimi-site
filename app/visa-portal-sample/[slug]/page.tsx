@@ -118,7 +118,7 @@ export default async function VisaPortalSampleChapterPage({ params }: Props) {
               Sample
             </p>
 
-            <h2 className="serif mt-4 text-[33px] leading-[1.15]">
+            <h2 className="serif mt-3 text-2xl font-semibold leading-tight text-black">
               {portal.title}
             </h2>
 
@@ -176,7 +176,7 @@ export default async function VisaPortalSampleChapterPage({ params }: Props) {
                   Chapter 4
                 </p>
 
-                <h3 className="serif mt-3 text-4xl leading-[1.04] md:text-5xl lg:text-[58px]">
+                <h3 className="serif mt-3 text-3xl font-semibold leading-tight tracking-[0.01em] text-black md:text-5xl">
                   Ready for the full portal?
                 </h3>
 
@@ -276,7 +276,7 @@ export default async function VisaPortalSampleChapterPage({ params }: Props) {
                   Sample chapter
                 </p>
 
-                <h3 className="serif mt-3 text-4xl leading-[1.04] md:text-5xl lg:text-[58px]">
+                <h3 className="serif mt-3 text-3xl font-semibold leading-tight tracking-[0.01em] text-black md:text-5xl">
                   {activeChapter!.title}
                 </h3>
 
