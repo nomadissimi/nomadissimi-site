@@ -25,10 +25,11 @@ const faqs: QA[] = [
     a: (
       <>
         From your first call to the visa sticker in your passport, plan for a
-        few months. Timelines vary depending on your consulate’s backlog and how
+        few months. We're not here to sell you a fake completion date, since
+        actual timelines vary depending on your consulate’s backlog and how
         quickly you can gather the required documents. We’ll map it all out for
         you step-by-step so you always know what’s next. (Italy runs on
-        espresso, not speed -- but we’ll keep you moving.)
+        espresso, not speed - but we’ll keep you moving.)
       </>
     ),
   },
@@ -38,9 +39,9 @@ const faqs: QA[] = [
       <>
         Because we’ve been through it, and we know the many places where people
         get stuck. Instead of losing months to confusing consulate websites or
-        unreliable online forums, you’ll have a clear, personalized roadmap,
-        expert oversight, and people who genuinely care about your Italian
-        dream.
+        unreliable online forums, you’ll have a clear, thoroughly researched
+        roadmap, expert oversight, and people who genuinely care about your
+        Italian dream.
       </>
     ),
   },
@@ -88,11 +89,11 @@ const faqs: QA[] = [
         of landing, you’ll need to register your residency and apply for your
         Permesso di Soggiorno, your official residence permit. It’s a crucial
         step that many people overlook or delay, and missing the deadline can
-        cause serious complications later. Our "Residence Registration" Add-On
-        gives you step-by-step guidance through the process: from completing
-        your kit to booking your appointments and submitting your fingerprints.
-        We make sure you get it done correctly and on time, so your new Italian
-        life begins without stress or surprises.
+        cause serious complications later. Our best-selling "Residence
+        Registration" Portal gives you step-by-step guidance through the
+        process: from completing your kit to booking your appointments and
+        submitting your fingerprints. We make sure you get it done correctly and
+        on time, so your new Italian life begins without stress or surprises.
       </>
     ),
   },
@@ -102,9 +103,9 @@ const faqs: QA[] = [
       <>
         Your visa is an immigration permission, not a tax setup. They’re two
         different worlds (and Italy’s tax world is a labyrinth of its own). We
-        offer a Tax & Partita IVA Consultation Add-On that gives you tips on how
-        to open your professional activity in Italy, understand key tax
-        benefits, and avoid the common pitfalls most newcomers face.
+        offer a dedicated Tax & Partita IVA Portal that gives you tips on how to
+        open your professional activity in Italy, understand key tax benefits,
+        and avoid the common pitfalls most newcomers face.
       </>
     ),
   },
@@ -124,7 +125,27 @@ const faqs: QA[] = [
       <>
         It depends, family reunion is possible in certain cases. La dolce vita
         is even sweeter when shared, but please note that the request for family
-        reunification is done once you have already become an Italian resident.
+        reunification is done once you have already become an Italian resident
+        and can take some time.
+      </>
+    ),
+  },
+  {
+    q: "Can I still work with Nomadissimi if I already have my visa?",
+    a: (
+      <>
+        Yes. You can absolutely still work with Nomadissimi even if you already
+        have your visa. We do not only support the visa process. We also help
+        with the next layers of the move, including residence registration,
+        taxes, codice fiscale, and our La Dolce Vita consultations for the
+        real-life side of settling into Italy well. These resources are
+        available to anyone moving to Italy. One of our core purposes is helping
+        people integrate well into Italy, not just arrive and live in a bubble.
+        We love and respect Italy deeply, and we want the people moving here to
+        understand it, navigate it more confidently, and build a life that feels
+        grounded and connected. So if your visa is already handled, but you
+        still want help landing smoothly and settling in well, you are
+        absolutely in the right place.
       </>
     ),
   },
@@ -145,8 +166,15 @@ const faqs: QA[] = [
     q: "What’s your refund policy?",
     a: (
       <>
-        All sales are final and non-refundable. We take pride in offering
-        attentive, high-touch support from the moment you join us.
+        All sales are final and non-refundable. All sales are final and
+        non-refundable. Because Nomadissimi products include immediate access to
+        private digital resources, carefully researched guidance, and, depending
+        on the package, reserved time and support from our team, we do not offer
+        refunds once a purchase has been made. We take our work seriously and
+        put a lot of care into building resources that are thoughtful,
+        strategic, and genuinely useful from the moment you join us. That is
+        also why we encourage clients to read each package carefully before
+        purchasing and to message us if they need help choosing the right fit.
       </>
     ),
   },

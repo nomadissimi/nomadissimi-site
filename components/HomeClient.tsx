@@ -743,7 +743,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
                 {/* tiny caption like a magazine */}
                 <div className="mt-3 relative text-xs sans text-black/50">
-                  <span className="tracking-[0.12em]">▶▶▶</span>
+                  <span className="tracking-[0.18em] text-left">▶▶▶</span>
 
                   <span className="absolute right-0 top-0 tracking-[0.18em] text-right">
                     OH HEY, ITALY LOOKS GOOD ON YOU
@@ -1939,8 +1939,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               </div>
               <nav
                 className="
-    flex items-center
-    gap-3
+    flex flex-wrap items-center justify-center md:justify-end
+    gap-x-4 gap-y-3
     font-serif
     text-[14px]
     tracking-[0.12em]
@@ -1955,8 +1955,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   Terms
                 </Link>
 
-                <span className="mx-2 text-white/40">·</span>
-
+                <span className="mx-2 hidden text-white/40 md:inline">·</span>
                 <Link
                   href="/privacy"
                   className="relative transition hover:text-white after:absolute after:left-0 after:-bottom-[2px] after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-white/70 after:transition-transform hover:after:scale-x-100"
@@ -1964,7 +1963,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   Privacy
                 </Link>
 
-                <span className="mx-2 text-white/40">·</span>
+                <span className="mx-2 hidden text-white/40 md:inline">·</span>
 
                 <Link
                   href="/cookies"
@@ -1973,7 +1972,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   Cookies
                 </Link>
 
-                <span className="mx-2 text-white/40">·</span>
+                <span className="mx-2 hidden text-white/40 md:inline">·</span>
 
                 <a
                   href="/contact"
@@ -2692,7 +2691,7 @@ function MobileDrawer({
               onClick={() => onClose()}
               className="btn btn-primary w-full justify-center"
             >
-              Book a Call
+              Contact Us
             </Link>
           </div>
         </div>

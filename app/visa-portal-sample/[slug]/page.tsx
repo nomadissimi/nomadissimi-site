@@ -107,7 +107,7 @@ export default async function VisaPortalSampleChapterPage({ params }: Props) {
           {/* Sidebar */}
           <aside className="rounded-[32px] border border-[#E2D4BC] bg-white/80 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.04)]">
             <p className="sans text-[12px] uppercase tracking-[0.14em] text-black/40">
-              Sample portal
+              Sample
             </p>
 
             <h2 className="serif mt-4 text-[33px] leading-[1.15]">
@@ -254,7 +254,7 @@ export default async function VisaPortalSampleChapterPage({ params }: Props) {
                     </p>
 
                     <Link
-                      href="/#visa-packages"
+                      href="/#packages"
                       className="mt-6 inline-flex rounded-full bg-[#556B4F] px-6 py-3 text-white transition hover:opacity-90"
                     >
                       Unlock the full portal
