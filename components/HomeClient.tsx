@@ -57,7 +57,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
   return (
     <>
       {/* YOUR EXISTING PAGE CONTENT */}
-      <div>
+      <div className="overflow-x-hidden">
         <header
           className={`sticky top-0 z-50 backdrop-blur bg-[#F8F5EF]/95 border-b border-black/5 shadow-[0_8px_20px_rgba(0,0,0,0.03)] transition-all duration-300`}
         >
@@ -210,7 +210,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 md:pt-10 pb-8 md:pb-10"
         >
           {/* ⬇️ This grid makes it two columns on desktop, stacked on mobile */}
-          <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center md:items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-16 items-center md:items-start overflow-x-hidden">
             {" "}
             {/* LEFT column */}
             <FadeIn y={12}>
@@ -1467,7 +1467,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           </div>
 
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8"></div>
-          <div className="relative grid md:grid-cols-3 gap-6 md:gap-8 px-4 sm:px-6 lg:px-8">
+          <div className="relative grid md:grid-cols-3 gap-6 md:gap-8">
+            {" "}
             {/* Card 1 — Residence Registration */}
             <FadeIn y={14}>
               <AddonCard
@@ -1540,7 +1541,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 className="bg-[#F3F6F1] border border-[#DCDDD8] rounded-3xl p-8 shadow-[0_0_40px_rgba(0,0,0,0.03)]"
               />
             </FadeIn>
-
             {/* Card 2 — Tax & Partita IVA */}
             <FadeIn delay={0.08} y={14}>
               <AddonCard
@@ -1604,7 +1604,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 className="bg-[#F3F6F1] border border-[#DCDDD8] rounded-3xl p-8 shadow-[0_0_40px_rgba(0,0,0,0.03)]"
               />
             </FadeIn>
-
             {/* Card 3 — La Dolce Vita */}
             <FadeIn delay={0.16} y={14}>
               <AddonCard
@@ -2586,7 +2585,7 @@ function MobileDrawer({
   return (
     <div
       className={[
-        "fixed inset-0 z-[99999] overflow-hidden md:hidden",
+        "fixed inset-0 z-[99999] md:hidden",
         open ? "pointer-events-auto" : "pointer-events-none",
       ].join(" ")}
       aria-hidden={!open}
@@ -2606,8 +2605,8 @@ function MobileDrawer({
           "absolute right-0 top-0 h-full w-[84%] max-w-[360px]",
           "bg-[#FFFDF8] ring-1 ring-black/10 shadow-2xl rounded-l-3xl",
           "p-5 flex flex-col",
-          "will-change-transform transition-transform duration-200 ease-out",
-          open ? "translate-x-0" : "translate-x-[102%]",
+          "transition-transform duration-200 ease-out",
+          open ? "translate-x-0" : "translate-x-full",
         ].join(" ")}
         role="dialog"
         aria-modal="true"
