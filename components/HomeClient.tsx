@@ -2586,7 +2586,7 @@ function MobileDrawer({
   return (
     <div
       className={[
-        "fixed inset-0 z-[99999] md:hidden",
+        "fixed inset-0 z-[99999] overflow-hidden md:hidden",
         open ? "pointer-events-auto" : "pointer-events-none",
       ].join(" ")}
       aria-hidden={!open}
@@ -2606,8 +2606,8 @@ function MobileDrawer({
           "absolute right-0 top-0 h-full w-[84%] max-w-[360px]",
           "bg-[#FFFDF8] ring-1 ring-black/10 shadow-2xl rounded-l-3xl",
           "p-5 flex flex-col",
-          "transition-transform duration-200 ease-out",
-          open ? "translate-x-0" : "translate-x-full",
+          "will-change-transform transition-transform duration-200 ease-out",
+          open ? "translate-x-0" : "translate-x-[102%]",
         ].join(" ")}
         role="dialog"
         aria-modal="true"
