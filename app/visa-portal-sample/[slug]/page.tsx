@@ -59,12 +59,14 @@ import {
 } from "@/lib/guide";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export default function VisaPortalSampleChapterPage({ params }: Props) {
+export default async function VisaPortalSampleChapterPage({ params }: Props) {
+  const { slug } = await params;
+
   const portal = getGuidePortal("visa");
   const chapters = getVisaGuideSampleChapters();
 
@@ -82,12 +84,9 @@ export default function VisaPortalSampleChapterPage({ params }: Props) {
   ];
 
   const activeChapter =
-    params.slug === "full-access"
-      ? null
-      : getVisaGuideSampleChapter(params.slug);
+    slug === "full-access" ? null : getVisaGuideSampleChapter(slug);
 
-  if (params.slug !== "full-access" && !activeChapter) notFound();
-
+  if (slug !== "full-access" && !activeChapter) notFound();
   return (
     <div className="min-h-screen bg-[#F7F5F0]">
       <div className="mx-auto max-w-7xl px-4 py-8 md:px-6 lg:px-8">
@@ -119,7 +118,7 @@ export default function VisaPortalSampleChapterPage({ params }: Props) {
               {sampleNavItems.map((item, index) => {
                 const isActive =
                   item.slug === "full-access"
-                    ? params.slug === "full-access"
+                    ? slug === "full-access"
                     : activeChapter?.slug === item.slug;
 
                 return (
@@ -163,7 +162,7 @@ export default function VisaPortalSampleChapterPage({ params }: Props) {
 
           {/* Main content */}
           <main className="rounded-[32px] border border-[#E2D4BC] bg-white/85 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.04)] md:p-8 lg:p-10">
-            {params.slug === "full-access" ? (
+            {slug === "full-access" ? (
               <>
                 <p className="sans text-[12px] uppercase tracking-[0.14em] text-black/40">
                   Chapter 4
