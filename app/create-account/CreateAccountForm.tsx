@@ -19,7 +19,7 @@ export default function CreateAccountForm() {
   useEffect(() => {
     const emailFromUrl = searchParams.get("email");
     if (emailFromUrl) {
-      setEmail(emailFromUrl);
+      setEmail(emailFromUrl.trim().toLowerCase());
     }
   }, [searchParams]);
 
@@ -29,6 +29,20 @@ export default function CreateAccountForm() {
     setError(null);
     setSuccess(false);
 
+    const normalizedEmail = email.trim().toLowerCase();
+
+    if (!normalizedEmail) {
+      setLoading(false);
+      setError("Please enter your email address.");
+      return;
+    }
+
+    if (password.length < 8) {
+      setLoading(false);
+      setError("Your password must be at least 8 characters.");
+      return;
+    }
+
     if (password !== confirmPassword) {
       setLoading(false);
       setError("Your passwords do not match yet.");
@@ -37,8 +51,8 @@ export default function CreateAccountForm() {
 
     const supabase = createSupabaseBrowserClient();
 
-    const { error } = await supabase.auth.signUp({
-      email,
+    const { data, error } = await supabase.auth.signUp({
+      email: normalizedEmail,
       password,
       options: {
         emailRedirectTo: `${window.location.origin}/email-confirmed`,
@@ -52,7 +66,19 @@ export default function CreateAccountForm() {
       return;
     }
 
+    const identities = data.user?.identities ?? [];
+
+    // Supabase duplicate-email behavior can still return a "user" object.
+    // If identities is empty, this usually means the user already exists.
+    if (data.user && identities.length === 0) {
+      setError(
+        "An account already exists with this email address. Please log in instead, or reset your password if needed.",
+      );
+      return;
+    }
+
     setSuccess(true);
+    setEmail(normalizedEmail);
   }
 
   return (
@@ -72,6 +98,7 @@ export default function CreateAccountForm() {
             onChange={(e) => setEmail(e.target.value)}
             className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
             placeholder="you@example.com"
+            autoComplete="email"
           />
         </div>
 
@@ -106,8 +133,7 @@ export default function CreateAccountForm() {
 
         {success ? (
           <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-            Your account has been created successfully! Just one more step: check your email to confirm your
-            address, then log in when you’re ready.
+            Your account has been created successfully. Check your email to confirm your address, then log in when you’re ready.
           </div>
         ) : null}
 
@@ -120,10 +146,17 @@ export default function CreateAccountForm() {
         </button>
       </form>
 
-      <div className="mt-8 sans text-sm text-black/55">
-        <Link href="/login" className="hover:text-black/75">
-          Already have an account? Log in
-        </Link>
+      <div className="mt-8 sans text-sm text-black/55 space-y-2">
+        <div>
+          <Link href="/login" className="hover:text-black/75">
+            Already have an account? Log in
+          </Link>
+        </div>
+        <div>
+          <Link href="/forgot-password" className="hover:text-black/75">
+            Forgot your password?
+          </Link>
+        </div>
       </div>
     </>
   );

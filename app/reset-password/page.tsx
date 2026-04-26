@@ -2,14 +2,16 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 import PasswordField from "@/components/ui/PasswordField";
 
 export default function ResetPasswordPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [checkingSession, setCheckingSession] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -18,19 +20,38 @@ export default function ResetPasswordPage() {
   useEffect(() => {
     const supabase = createSupabaseBrowserClient();
 
+    const invalid = searchParams.get("error");
+    if (invalid) {
+      setError("This reset link is invalid or has expired.");
+      setCheckingSession(false);
+      return;
+    }
+
     supabase.auth.getSession().then(({ data, error }) => {
       if (error || !data.session) {
         setError("This reset link is invalid or has expired.");
       }
       setCheckingSession(false);
     });
-  }, []);
+  }, [searchParams]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
     setError(null);
     setSuccess(false);
+
+    if (password.length < 8) {
+      setLoading(false);
+      setError("Your password must be at least 8 characters.");
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      setLoading(false);
+      setError("Your passwords do not match yet.");
+      return;
+    }
 
     const supabase = createSupabaseBrowserClient();
 
@@ -50,7 +71,7 @@ export default function ResetPasswordPage() {
     setTimeout(() => {
       router.push("/password-reset-success");
       router.refresh();
-    }, 900);
+    }, 1000);
   }
 
   return (
@@ -84,7 +105,17 @@ export default function ResetPasswordPage() {
               required
               minLength={8}
               placeholder="At least 8 characters"
-              helperText="You can reveal your password if you want to double-check your typing before saving."
+            />
+
+            <PasswordField
+              label="Confirm new password"
+              name="confirmPassword"
+              value={confirmPassword}
+              onChange={setConfirmPassword}
+              autoComplete="new-password"
+              required
+              minLength={8}
+              placeholder="Repeat your new password"
             />
 
             {error ? (
@@ -101,7 +132,7 @@ export default function ResetPasswordPage() {
 
             <button
               type="submit"
-              disabled={loading || !!error}
+              disabled={loading || checkingSession}
               className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-6 py-3 text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] transition hover:bg-[#3E4E38] disabled:cursor-not-allowed disabled:opacity-60"
             >
               {loading ? "Saving..." : "Save new password"}

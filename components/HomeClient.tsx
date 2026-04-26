@@ -1124,6 +1124,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                           : our members-only 22-chapter immersive roadmap
                           covering eligibility, application structure, what to
                           prepare, where to get it, and how to stay organized.
+                          Access valid for one full year.
                         </>
                       ),
                     },
