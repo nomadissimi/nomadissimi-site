@@ -1833,6 +1833,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     Visa Portal and occasional Nomadissimi updates.
                   </p>
                 </div>
+
                 <form
                   className="sans grid sm:grid-cols-[1fr_auto] gap-3"
                   action="https://app.kit.com/forms/8987671/subscriptions"
@@ -1844,8 +1845,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     required
                     placeholder="you@example.com"
                     className="w-full border border-black/10 bg-white px-4 py-3
-    text-[16px] md:text-[17px]
-    focus:outline-none focus:ring-2 focus:ring-[#4B5D44]/40"
+      text-[16px] md:text-[17px]
+      focus:outline-none focus:ring-2 focus:ring-[#4B5D44]/40"
                   />
 
                   <button
@@ -1856,7 +1857,13 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   </button>
 
                   <label className="text-xs text-[#2B2B2B]/70 flex items-start gap-2 mt-1 sm:col-span-2">
-                    <input type="checkbox" required className="mt-0.5" />
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      value="yes"
+                      required
+                      className="mt-0.5"
+                    />
                     <span>
                       I agree to the service terms and privacy policy.
                       Occasional emails only. Unsubscribe anytime.

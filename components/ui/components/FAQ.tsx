@@ -13,7 +13,7 @@ const faqs: QA[] = [
         Italy’s Digital Nomad Visa is designed for non-EU citizens who work
         remotely using technology, whether you’re self-employed, freelance, or
         employed by a company outside Italy. Applicants need to show
-        professional experience and a stable income, but don’t worry — we’ll
+        professional experience and a stable income, but don’t worry - we’ll
         help you understand what “qualified” actually means in real life (not
         just on government websites). In short: if you can do your job from
         anywhere, why not do it from Italy?
@@ -62,11 +62,10 @@ const faqs: QA[] = [
       <>
         Once your payment is confirmed, you will be prompted to create your
         account, where you will obtain access to your portal.
-        <br />  If your package
-        includes a private consultation, you’ll receive an intake form so we can
-        better understand your specific profile, visa goals, and timeline. This
-        helps us optimize your call, so we can get straight into your tailored
-        strategy.
+        <br /> If your package includes a private consultation, you’ll receive
+        an intake form so we can better understand your specific profile, visa
+        goals, and timeline. This helps us optimize your call, so we can get
+        straight into your tailored strategy.
       </>
     ),
   },
@@ -90,7 +89,7 @@ const faqs: QA[] = [
         of landing, you’ll need to register your residency and apply for your
         Permesso di Soggiorno, your official residence permit.
         <br />
-        <br /> 
+        <br />
         It’s a crucial step that many people overlook or delay, and missing the
         deadline can cause serious complications later. Our best-selling
         "Residence Registration" Portal gives you step-by-step guidance through
@@ -142,15 +141,15 @@ const faqs: QA[] = [
         also help with the next layers of the move, including residence
         registration, taxes, codice fiscale, and our La Dolce Vita consultations
         for the real-life side of settling into Italy well.
-        <br /> 
+        <br />
         <br /> These resources are available to anyone moving to Italy. One of
         our core purposes is helping people integrate into Italy, not just
         arrive and live in a bubble detached from reality. We love and respect
         Italy deeply, and we want the people moving here to understand its
         culture, navigate its systems more confidently, and build a life that
         feels grounded and connected. So if your visa is already handled, but
-        you still want help landing smoothly and adjusting well, you are
-        absolutely in the right place.
+        you still want help landing smoothly and adjusting well, you are in the
+        right place.
       </>
     ),
   },
@@ -180,7 +179,7 @@ const faqs: QA[] = [
         researched guidance, and, depending on the package, reserved time and
         support from our team, we do not offer refunds once a purchase has been
         made.
-        <br /> 
+        <br />
         <br /> We take our work seriously and put a lot of care into building
         resources that are thoughtful, strategic, and genuinely useful from the
         moment you join us. That is also why we encourage clients to read each
