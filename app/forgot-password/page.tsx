@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { ChevronLeft } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 
 export default function ForgotPasswordPage() {
@@ -90,9 +91,16 @@ export default function ForgotPasswordPage() {
           </button>
         </form>
 
-        <div className="mt-8 sans text-sm text-black/55">
-          <Link href="/login" className="hover:text-black/75">
-            Back to login
+        <div className="mt-8">
+          <Link
+            href="/login"
+            className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-4 py-2.5 sans text-sm text-black/70 transition hover:border-black/15 hover:bg-white hover:text-black"
+          >
+            <ChevronLeft
+              aria-hidden="true"
+              className="h-4 w-4 transition-transform group-hover:-translate-x-0.5"
+            />
+            <span>Back to login</span>
           </Link>
         </div>
       </div>

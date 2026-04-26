@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { ArrowRight, KeyRound } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 import PasswordField from "@/components/ui/PasswordField";
 
@@ -23,7 +24,7 @@ export default function LoginForm() {
     const supabase = createSupabaseBrowserClient();
 
     const { data, error } = await supabase.auth.signInWithPassword({
-      email,
+      email: email.trim().toLowerCase(),
       password,
     });
 
@@ -46,7 +47,7 @@ export default function LoginForm() {
     <>
       <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
         Access your private library, guides, and portal content. Use the same
-        email address you used at checkout whenever possible.{" "}
+        email address you used at checkout whenever possible.
       </p>
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
@@ -56,9 +57,10 @@ export default function LoginForm() {
             type="email"
             required
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value.toLowerCase())}
             className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
             placeholder="you@example.com"
+            autoComplete="email"
           />
         </div>
 
@@ -74,7 +76,7 @@ export default function LoginForm() {
         />
 
         {error ? (
-          <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-[15px] leading-[1.55] text-red-700">
             {error}
           </div>
         ) : null}
@@ -87,26 +89,34 @@ export default function LoginForm() {
           {loading ? "Logging in..." : "Log in"}
         </button>
 
-        <p className="sans text-sm text-black/45">
+        <p className="sans text-sm leading-[1.7] text-black/45">
           After login, we’ll take you straight into your private library.
         </p>
       </form>
 
-      <div className="mt-8 flex flex-col gap-4">
+      <div className="mt-8 space-y-3">
         <Link
           href="/create-account"
-          className="inline-flex w-fit items-center gap-2 sans text-[15px] text-black/70 transition hover:text-black"
+          className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-4 py-2.5 sans text-sm text-black/70 transition hover:border-black/15 hover:bg-white hover:text-black"
         >
-          Create your portal account →
+          <ArrowRight
+            aria-hidden="true"
+            className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+          />
+          <span>Create your portal account</span>
         </Link>
 
-        <Link
-          href="/forgot-password"
-          className="sans text-sm text-black/55 transition hover:text-black/75"
-        >
-          Forgot your password? No worries! Click here to reset it.
-        </Link>
+        <div>
+          <Link
+            href="/forgot-password"
+            className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-4 py-2.5 sans text-sm text-black/70 transition hover:border-black/15 hover:bg-white hover:text-black"
+          >
+            <KeyRound aria-hidden="true" className="h-4 w-4" />
+            <span>Forgot your password?</span>
+          </Link>
+        </div>
       </div>
     </>
   );
 }
+

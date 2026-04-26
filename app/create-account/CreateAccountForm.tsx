@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 import PasswordField from "@/components/ui/PasswordField";
+import { ArrowRight, KeyRound } from "lucide-react";
 
 export default function CreateAccountForm() {
   const searchParams = useSearchParams();
@@ -68,8 +69,6 @@ export default function CreateAccountForm() {
 
     const identities = data.user?.identities ?? [];
 
-    // Supabase duplicate-email behavior can still return a "user" object.
-    // If identities is empty, this usually means the user already exists.
     if (data.user && identities.length === 0) {
       setError(
         "An account already exists with this email address. Please log in instead, or reset your password if needed.",
@@ -126,13 +125,13 @@ export default function CreateAccountForm() {
         />
 
         {error ? (
-          <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-[15px] leading-[1.55] text-red-700">
             {error}
           </div>
         ) : null}
 
         {success ? (
-          <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
+          <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-[15px] leading-[1.55] text-green-700">
             Your account has been created successfully. Check your email to
             confirm your address, then log in when you’re ready.
           </div>
@@ -147,15 +146,25 @@ export default function CreateAccountForm() {
         </button>
       </form>
 
-      <div className="mt-8 sans text-sm text-black/55 space-y-2">
+      <div className="mt-8 space-y-3">
+        <Link
+          href="/login"
+          className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-4 py-2.5 sans text-sm text-black/70 transition hover:border-black/15 hover:bg-white hover:text-black"
+        >
+          <ArrowRight
+            aria-hidden="true"
+            className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+          />
+          <span>Already have an account? Log in</span>
+        </Link>
+
         <div>
-          <Link href="/login" className="hover:text-black/75">
-            Already have an account? Log in
-          </Link>
-        </div>
-        <div>
-          <Link href="/forgot-password" className="hover:text-black/75">
-            Forgot your password?
+          <Link
+            href="/forgot-password"
+            className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-4 py-2.5 sans text-sm text-black/70 transition hover:border-black/15 hover:bg-white hover:text-black"
+          >
+            <KeyRound aria-hidden="true" className="h-4 w-4" />
+            <span>Forgot your password?</span>
           </Link>
         </div>
       </div>

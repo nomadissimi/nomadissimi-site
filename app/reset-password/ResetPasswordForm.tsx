@@ -1,14 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 import PasswordField from "@/components/ui/PasswordField";
+import { ArrowRight } from "lucide-react";
 
-export default function ResetPasswordPage() {
+export default function ResetPasswordForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const firstPasswordWrapperRef = useRef<HTMLDivElement | null>(null);
 
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -34,6 +36,15 @@ export default function ResetPasswordPage() {
       setCheckingSession(false);
     });
   }, [searchParams]);
+
+  useEffect(() => {
+    if (checkingSession) return;
+
+    const input = firstPasswordWrapperRef.current?.querySelector("input");
+    if (input instanceof HTMLInputElement) {
+      input.focus();
+    }
+  }, [checkingSession]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -96,16 +107,18 @@ export default function ResetPasswordPage() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-            <PasswordField
-              label="New password"
-              name="password"
-              value={password}
-              onChange={setPassword}
-              autoComplete="new-password"
-              required
-              minLength={8}
-              placeholder="At least 8 characters"
-            />
+            <div ref={firstPasswordWrapperRef}>
+              <PasswordField
+                label="New password"
+                name="password"
+                value={password}
+                onChange={setPassword}
+                autoComplete="new-password"
+                required
+                minLength={8}
+                placeholder="At least 8 characters"
+              />
+            </div>
 
             <PasswordField
               label="Confirm new password"
@@ -119,13 +132,13 @@ export default function ResetPasswordPage() {
             />
 
             {error ? (
-              <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+              <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-[15px] leading-[1.55] text-red-700">
                 {error}
               </div>
             ) : null}
 
             {success ? (
-              <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
+              <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-[15px] leading-[1.55] text-green-700">
                 Password updated. Taking you to the next step...
               </div>
             ) : null}
@@ -140,9 +153,16 @@ export default function ResetPasswordPage() {
           </form>
         )}
 
-        <div className="mt-8 sans text-sm text-black/55">
-          <Link href="/login" className="hover:text-black/75">
-            Back to login
+        <div className="mt-8">
+          <Link
+            href="/login"
+            className="group inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#FBF8F2] px-4 py-2.5 sans text-sm text-black/70 transition hover:border-black/15 hover:bg-white hover:text-black"
+          >
+            <ArrowRight
+              aria-hidden="true"
+              className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+            />
+            <span>Back to login</span>
           </Link>
         </div>
       </div>
