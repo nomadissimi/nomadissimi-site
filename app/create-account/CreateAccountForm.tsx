@@ -95,7 +95,7 @@ export default function CreateAccountForm() {
             type="email"
             required
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value.toLowerCase())}
             className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
             placeholder="you@example.com"
             autoComplete="email"
@@ -133,7 +133,8 @@ export default function CreateAccountForm() {
 
         {success ? (
           <div className="rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-sm text-green-700">
-            Your account has been created successfully. Check your email to confirm your address, then log in when you’re ready.
+            Your account has been created successfully. Check your email to
+            confirm your address, then log in when you’re ready.
           </div>
         ) : null}
 
