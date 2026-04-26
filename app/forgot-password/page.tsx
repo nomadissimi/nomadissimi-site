@@ -26,11 +26,13 @@ export default function ForgotPasswordPage() {
 
     if (error) {
       console.error("resetPasswordForEmail error:", error);
-      setError(
-        typeof error.message === "string" && error.message.trim().length > 0
-          ? error.message
-          : JSON.stringify(error, null, 2),
-      );
+
+      const message =
+        typeof error === "object" && error !== null
+          ? JSON.stringify(error, Object.getOwnPropertyNames(error), 2)
+          : String(error);
+
+      setError(message);
       return;
     }
 
