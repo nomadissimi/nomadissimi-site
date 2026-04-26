@@ -25,7 +25,12 @@ export default function ForgotPasswordPage() {
     setLoading(false);
 
     if (error) {
-      setError(error.message);
+      console.error("resetPasswordForEmail error:", error);
+      setError(
+        typeof error.message === "string" && error.message.trim().length > 0
+          ? error.message
+          : JSON.stringify(error, null, 2),
+      );
       return;
     }
 
@@ -63,7 +68,7 @@ export default function ForgotPasswordPage() {
           </div>
 
           {error ? (
-            <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+            <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 whitespace-pre-wrap break-words">
               {error}
             </div>
           ) : null}
