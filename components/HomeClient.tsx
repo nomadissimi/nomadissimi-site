@@ -1749,28 +1749,24 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <FadeIn y={14}>
               <blockquote className="card italic serif text-xl leading-relaxed">
-                <strong>
-                  “I’d been sitting on the idea of moving to Europe for a while.
-                  I found out about the new digital nomad visa for Italy but was
-                  lost on the application. After my call with Nomadissimi, it
-                  stopped feeling impossible, and I have advanced a lot in the
-                  process. Thanks again!”
-                </strong>{" "}
-                -Rafael, Software Engineer from Illinois
+                “I’d been sitting on the idea of moving to Europe for a while. I
+                found out about the new digital nomad visa for Italy but was
+                lost on the application. After my call with Nomadissimi, it
+                stopped feeling impossible, and I have advanced a lot in the
+                process. Thanks again!”
+                <strong>-Rafael, Software Engineer from Illinois</strong>
               </blockquote>
             </FadeIn>
 
             <FadeIn delay={0.08} y={14}>
               <blockquote className="card italic serif text-xl leading-relaxed">
-                <strong>
-                  “Worth it. They made the most confusing paperwork much more
-                  doable and I have to say that I am enjoying it. The visa
-                  portal is super easy to use, and all the team has been
-                  professional and kind. As someone managing a big international
-                  move while juggling health issues, having clear guidance has
-                  made all the difference.”
-                </strong>{" "}
-                -Samantha, Marketing Analyst from Canada
+                “Worth it. They made the most confusing paperwork much more
+                doable and I have to say that I am enjoying it. The visa portal
+                is super easy to use, and all the team has been professional and
+                kind. As someone managing a big international move while
+                juggling health issues, having clear guidance has made all the
+                difference.”
+                <strong>-Samantha, Marketing Analyst from Canada</strong>
               </blockquote>
             </FadeIn>
           </div>
@@ -1891,9 +1887,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
             <p className="sans mt-2 text-[#2B2B2B]/80">
               If you’re still reading this, something in you already knows it’s
               time. Give yourself the chance to see what life feels like when
-              you stop waiting for it to start. You can keep Googling and
-              getting frustrated… or you can get on a plane and start enjoying
-              your Italian dream. You’re in good hands.
+              you stop waiting for it to start. You can keep Googling,
+              second-guessing every step, and getting frustrated… or you can get
+              on a plane and start enjoying your Italian dream. You’re in good
+              hands.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <a
