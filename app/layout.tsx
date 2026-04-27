@@ -22,12 +22,15 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Nomadissi​mi — Escape the chaos. Move to Italy without the headaches.",
+  title: "Nomadissi​mi — Move to Italy affordably and clearly.",
   description:
-    "Boutique guidance for Italy’s Digital Nomad Visa. Clear checklists, expert reviews, and a soft landing into la dolce vita.",
+    "Specialized guidance for Italy’s Digital Nomad Visa. Interactive portals, expert reviews, and a soft landing into la dolce vita.",
   icons: {
-    icon: "/favicon.png", // change the filename if your icon is something else
+    icon: "/favicon.png",
+
+    shortcut: "/favicon.png",
+
+    apple: "/favicon.png",
   },
 };
 
