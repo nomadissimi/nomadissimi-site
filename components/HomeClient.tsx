@@ -539,8 +539,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       className="mt-1.5 flex-none"
                     />
                     <span>
-                      <strong>Beyond the visa:</strong> We guide you on how to
-                      register your residency, secure your Permesso di
+                      <strong>Beyond the visa:</strong> We carefully guide you
+                      on how to register your residency, secure your Permesso di
                       Soggiorno, understand taxes, and integrate like a
                       proficient local.
                     </span>
@@ -556,9 +556,11 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       className="mt-1.5 flex-none"
                     />
                     <span>
-                      <strong>A true soft landing:</strong> Practical tools and
-                      quality support to help you not just move to Italy, but
-                      settle and enjoy your life in Italy to the fullest.
+                      <strong>Quality support adapted to real life:</strong>{" "}
+                      During onboarding (for consultation packages), we ask
+                      about communication preferences, accessibility needs, or
+                      anything else that may shape your relocation. Bureaucracy
+                      is rigid, but not us! ☺️
                     </span>
                   </li>
                 </ul>
@@ -1051,7 +1053,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                     <PortalFeatureRow
                       iconSrc="/iconsinglewine.png"
                       title="More than the visa"
-                      desc="Once your visa is approved, Nomadissimi also offers dedicated portals for residence, taxes, codice fiscale, and insider help on how to settle in Italy."
+                      desc="Once your visa is approved, Nomadissimi also offers dedicated portals for residence, taxes, codice fiscale, and insider help on how to settle in Italy and enjoy your new move to the fullest."
                     />
                   </div>
                 </div>
@@ -1647,7 +1649,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   <>
                     <strong>Insider regional & cultural insights</strong> from
                     our local team: north, center, south, cities vs. coast, and
-                    how each region shapes your lifestyle. 
+                    how each region shapes your lifestyle.
                   </>,
 
                   <>
@@ -1764,7 +1766,9 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   “Worth it. They made the most confusing paperwork much more
                   doable and I have to say that I am enjoying it. The visa
                   portal is super easy to use, and all the team has been
-                  professional and kind.”
+                  professional and kind. As someone managing a big international
+                  move while juggling health issues, having clear guidance has
+                  made all the difference.”
                 </strong>{" "}
                 -Samantha, Marketing Analyst from Canada
               </blockquote>

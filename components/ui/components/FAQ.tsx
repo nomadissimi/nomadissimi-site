@@ -38,9 +38,9 @@ const faqs: QA[] = [
     a: (
       <>
         Because we’ve been through it, and we know the many places where people
-        get stuck. Instead of losing months to confusing consulate websites or
-        unreliable online forums, you’ll have a clear, thoroughly researched
-        roadmap, expert oversight, and people who genuinely care about your
+        get stuck. Instead of losing months to confusing consulate websites, silly AI hallucinations, or
+        unreliable online forums, you’ll have a <strong>clear, thoroughly researched
+        roadmap,</strong> expert oversight, and people who genuinely care about your
         Italian dream.
       </>
     ),
@@ -52,7 +52,7 @@ const faqs: QA[] = [
         Each package is designed for a different level of support: from an
         initial roadmap to full concierge guidance. You can see the complete
         breakdown on our Visa Packages page, or you can write to us and we can
-        help you pick the right fit.
+        help you pick the best fit for your needs. 
       </>
     ),
   },
@@ -61,11 +61,11 @@ const faqs: QA[] = [
     a: (
       <>
         Once your payment is confirmed, you will be prompted to create your
-        account, where you will obtain access to your portal.
-        <br /> If your package includes a private consultation, you’ll receive
-        an intake form so we can better understand your specific profile, visa
-        goals, and timeline. This helps us optimize your call, so we can get
-        straight into your tailored strategy.
+        account, where you will obtain access to your portal. <br />
+        <br /> 📞 If your package includes a private consultation, you’ll
+        receive an intake form so we can better understand your specific
+        profile, visa goals, and timeline. This helps us optimize your call, so
+        we can get straight into your tailored strategy.
       </>
     ),
   },
@@ -90,12 +90,15 @@ const faqs: QA[] = [
         Permesso di Soggiorno, your official residence permit.
         <br />
         <br />
-        It’s a crucial step that many people overlook or delay, and missing the
-        deadline can cause serious complications later. Our best-selling
-        "Residence Registration" Portal gives you step-by-step guidance through
-        the process: from completing your kit to booking your appointments and
-        submitting your fingerprints. We make sure you get it done correctly and
-        on time, so your new Italian life begins without stress or surprises.
+        <strong>
+          It’s a crucial step that many people overlook or delay, and missing
+          the deadline can cause serious complications later.
+        </strong>{" "}
+        Our best-selling "Residence Registration" Portal gives you step-by-step
+        guidance through the process: from completing your kit to booking your
+        appointments and submitting your fingerprints. We make sure you get it
+        done correctly and on time, so your new Italian life begins without
+        stress or surprises.
       </>
     ),
   },
@@ -133,12 +136,14 @@ const faqs: QA[] = [
       </>
     ),
   },
+
   {
-    q: "Can I still work with Nomadissimi if I already have my visa?",
+    q: "Can Nomadissimi help me if I already have my visa?",
     a: (
       <>
         Yes. You can absolutely still work with Nomadissimi even if you already
-        have your visa. We support so much more than the visa process. 😄 We
+        have your visa.{" "}
+        <strong>We support so much more than the visa process!</strong> 😄 We
         also help with the next layers of the move, including residence
         registration, taxes, codice fiscale, and our La Dolce Vita consultations
         for the real-life side of settling into Italy well.
@@ -148,9 +153,33 @@ const faqs: QA[] = [
         arrive and live in a bubble detached from reality. We love and respect
         Italy deeply, and we want the people moving here to understand its
         culture, navigate its systems more confidently, and build a life that
-        feels grounded and connected. So if your visa is already handled, but
-        you still want help landing smoothly and adjusting well, you are in the
-        right place.
+        feels grounded and connected. <br /> <br />
+        So if your visa is already handled, but you still want help landing
+        smoothly and adjusting well, you are in the right place.
+      </>
+    ),
+  },
+  {
+    q: "Is Nomadissimi an inclusive space?",
+    a: (
+      <>
+        Absolutely! ❤️ Nomadissimi is proudly LGBTQ+ friendly,
+        neurodivergent-aware, and built for real people with real lives.
+        <br />
+        We provide a warm, respectful space for clients of <strong>
+          all
+        </strong>{" "}
+        identities, ethnicities, spiritual paths, family structures, and ways of
+        moving through the world.
+        <br />
+        <br />
+        You don’t need to over-explain, perform, or shrink your life here. One
+        of our favorite things about doing what we do is meeting wonderful
+        people from multiple walks of life.
+        <br />
+        <br />
+        We’ll guide you clearly, communicate respectfully, and adapt where we
+        can. Italian bureaucracy is rigid enough, but not us!
       </>
     ),
   },
