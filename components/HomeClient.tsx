@@ -1749,7 +1749,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 <strong>
                   “I’d been sitting on the idea of moving to Europe for a while.
                   I found out about the new digital nomad visa for Italy but was
-                  lost on the application. After my call with nomadissimi, it
+                  lost on the application. After my call with Nomadissimi, it
                   stopped feeling impossible, and I have advanced a lot in the
                   process. Thanks again!”
                 </strong>{" "}
@@ -1761,7 +1761,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <blockquote className="card italic serif text-xl leading-relaxed">
                 <strong>
                   “Worth it. They made the most confusing paperwork much more
-                  doable and I have to say that I enjoyed it. All the team was
+                  doable and I have to say that I am enjoying it. The visa
+                  portal is super easy to use, and all the team has been
                   professional and kind.”
                 </strong>{" "}
                 -Samantha, Marketing Analyst from Canada

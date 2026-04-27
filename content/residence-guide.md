@@ -58,7 +58,6 @@ By accessing or using this material, you acknowledge and agree to these terms.
 
 For our full list of Terms & Conditions, visit [nomadissimi.com/terms](https://www.nomadissimi.com/terms).
 
-
 </GuideCard>
 
 # **Chapter 2 The Italian Resident Roadmap**
@@ -181,7 +180,7 @@ Once the forms are filled out, place them inside the open envelope. According to
 
 <GuideChecklist title="What goes inside the envelope">
 
-- **Photocopies of your entire passport** (in theory, you must photocopy every single page, even the blank ones).
+- **Photocopies of your passport** (in theory, you must photocopy every single page, even the blank ones). How strict this requirement is followed depends on each location. However, the "must-have" pages are the pages with your picture and identifiable information, the page with your signature (like with passports from the USA that have a separate page with your signature), all visas, and travel stamps. If you have blank pages, there's usually no need to photocopy those.
 - _Very important:_ The photocopy of the specific page with your Italian Visa stamp.
 - A copy of your Codice Fiscale (if you obtained it before arrival). If you don’t have one, it’s okay. The Italian authorities will automatically generate a codice fiscale for you in this process. However, if you already have a codice fiscale (because for example you requested it at the consulate, it is important to highlight it inside the Permesso di Soggiorno request. The Questura will probably double check, but it is not legal to have 2 active fiscal codes related to the same person. Fixing this silly mistake could require time and avoidable stress. Better be safe than sorry.
 - Photocopies in A4 format of ALL the supporting documents you submitted to the consulate in your home country to get your Italian visa several weeks ago (proof of income, health insurance, accommodation contract, boarding pass for the flight you took to Italy).  
