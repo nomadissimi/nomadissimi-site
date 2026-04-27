@@ -164,11 +164,8 @@ const faqs: QA[] = [
     a: (
       <>
         Absolutely! ❤️ Nomadissimi is proudly LGBTQ+ friendly,
-        neurodivergent-aware, and built for real people with real lives.
-        <br />
-        We provide a warm, respectful space for clients of <strong>
-          all
-        </strong>{" "}
+        neurodivergent-aware, and built for real people with real lives. We
+        provide a warm, respectful space for clients of <strong>all</strong>{" "}
         identities, ethnicities, spiritual paths, family structures, and ways of
         moving through the world.
         <br />

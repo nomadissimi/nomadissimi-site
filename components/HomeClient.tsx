@@ -220,7 +220,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 </p>
 
                 <h1 className="serif text-4xl md:text-5xl xl:text-6xl leading-[1.1] font-semibold tracking-[0.01em]">
-                  Move to Italy without headaches and expensive lawyers.
+                  Move to Italy without the headaches or expensive lawyers.
                 </h1>
 
                 <div className="mt-5 max-w-[680px]">
@@ -675,10 +675,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 like family moving into our neighborhood.{" "}
                 <strong>
                   We believe relocation support should feel clear, professional,
-                  and respectful. Nomadissimi warmly welcomes clients of all
-                  backgrounds, sexual orientations, and identities.
+                  and respectful.
                 </strong>{" "}
-                You are safe here.
+                Nomadissimi warmly welcomes clients of all backgrounds, sexual
+                orientations, and identities. You are safe here.
               </p>
             </div>
 
@@ -1753,7 +1753,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 found out about the new digital nomad visa for Italy but was
                 lost on the application. After my call with Nomadissimi, it
                 stopped feeling impossible, and I have advanced a lot in the
-                process. Thanks again!”
+                process. Thanks again!”{" "}
                 <strong>-Rafael, Software Engineer from Illinois</strong>
               </blockquote>
             </FadeIn>
@@ -1765,7 +1765,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 is super easy to use, and all the team has been professional and
                 kind. As someone managing a big international move while
                 juggling health issues, having clear guidance has made all the
-                difference.”
+                difference.”{" "}
                 <strong>-Samantha, Marketing Analyst from Canada</strong>
               </blockquote>
             </FadeIn>
