@@ -125,10 +125,11 @@ const faqs: QA[] = [
     q: "Can my spouse/partner and kids come?",
     a: (
       <>
-        It depends, family reunion is possible in certain cases. La dolce vita
-        is even sweeter when shared, but please note that the request for family
-        reunification is done once you have already become an Italian resident
-        and can take some time.
+        It depends, Italy allows family reunification in many cases, including
+        for spouses and dependent children. La dolce vita is even sweeter when
+        shared, but please note that the request for family reunification is
+        done once you have already become an Italian resident and can take some
+        time.
       </>
     ),
   },

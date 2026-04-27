@@ -542,7 +542,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                       <strong>Beyond the visa:</strong> We guide you on how to
                       register your residency, secure your Permesso di
                       Soggiorno, understand taxes, and integrate like a
-                      proficient local, not a lost tourist.
+                      proficient local.
                     </span>
                   </li>
 
@@ -673,8 +673,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                 like family moving into our neighborhood.{" "}
                 <strong>
                   We believe relocation support should feel clear, professional,
-                  and respectful. Nomadissimi welcomes clients of all
-                  backgrounds, orientations, and identities.
+                  and respectful. Nomadissimi warmly welcomes clients of all
+                  backgrounds, sexual orientations, and identities.
                 </strong>{" "}
                 You are safe here.
               </p>
@@ -1646,9 +1646,10 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
                   </>,
                   <>
                     <strong>Insider regional & cultural insights</strong> from
-                    our local team: north/center/south, cities vs. coast, and
-                    how each region shapes your lifestyle
+                    our local team: north, center, south, cities vs. coast, and
+                    how each region shapes your lifestyle. 
                   </>,
+
                   <>
                     🎁 Bonus access to our dedicated{" "}
                     <strong>Codice Fiscale Portal</strong> because it is a

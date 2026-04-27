@@ -451,9 +451,21 @@ export default function VisaIntakePage() {
                   />
                 </Field>
 
-                <Field label="Is there anything else about your specific context you'd like us to know before the call?">
+                <Field label="Is there anything we should know to make this process easier or more accessible for you?">
+                  <p className="mt-2 max-w-2xl sans text-[13px] leading-[1.8] text-black/65">
+                    🌻 This may include chronic illness, disability,
+                    neurodivergence, caregiving responsibilities, family
+                    logistics, scheduling needs, communication preferences, or
+                    anything else that shapes how you move through relocation.
+                  </p>
+                  <p className="mt-2 max-w-2xl sans text-[12px] leading-[1.8] text-black/65">
+                    Sharing is optional. We only use this information to adapt
+                    our support to your needs and make the process smoother for
+                    you.
+                  </p>
+
                   <textarea
-                    name="notes"
+                    name="accessibility_needs"
                     rows={4}
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
