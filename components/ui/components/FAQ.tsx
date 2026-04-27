@@ -38,10 +38,10 @@ const faqs: QA[] = [
     a: (
       <>
         Because we’ve been through it, and we know the many places where people
-        get stuck. Instead of losing months to confusing consulate websites, silly AI hallucinations, or
-        unreliable online forums, you’ll have a <strong>clear, thoroughly researched
-        roadmap,</strong> expert oversight, and people who genuinely care about your
-        Italian dream.
+        get stuck. Instead of losing months to confusing consulate websites,
+        silly AI hallucinations, or unreliable online forums, you’ll have a{" "}
+        <strong>clear, thoroughly researched roadmap,</strong> expert oversight,
+        and people who genuinely care about your Italian dream.
       </>
     ),
   },
@@ -52,7 +52,7 @@ const faqs: QA[] = [
         Each package is designed for a different level of support: from an
         initial roadmap to full concierge guidance. You can see the complete
         breakdown on our Visa Packages page, or you can write to us and we can
-        help you pick the best fit for your needs. 
+        help you pick the best fit for your needs.
       </>
     ),
   },
