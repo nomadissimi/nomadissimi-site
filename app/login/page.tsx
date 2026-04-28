@@ -1,5 +1,7 @@
 import { Suspense } from "react";
 import LoginForm from "./LoginForm";
+import Link from "next/link";
+import { House } from "lucide-react";
 
 export default function LoginPage() {
   return (
@@ -23,6 +25,25 @@ export default function LoginPage() {
           <LoginForm />
         </Suspense>
       </div>
+      <div className="mt-6 text-center">
+
+        <Link
+
+          href="/"
+
+          className="inline-flex items-center gap-2 sans text-sm text-black/50 transition hover:text-black/70"
+
+        >
+
+          <House aria-hidden="true" className="h-4 w-4" />
+
+          <span>Back to homepage</span>
+
+        </Link>
+
+      </div>
+
+     
     </main>
   );
 }

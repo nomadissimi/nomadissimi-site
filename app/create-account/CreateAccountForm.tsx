@@ -144,6 +144,11 @@ export default function CreateAccountForm() {
         >
           {loading ? "Creating account..." : "Create account"}
         </button>
+
+        <p className="sans text-sm leading-[1.7] text-black/45">
+         If you don’t see the email within a couple minutes, please check
+          your spam or promotions folder.
+        </p>
       </form>
 
       <div className="mt-8 space-y-3">

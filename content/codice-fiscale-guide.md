@@ -523,7 +523,7 @@ We’ve been exactly where you are, staring at confusing government websites and
 
 <GuideDecisionBox title="What to do next">
 
-If you want us to hold your hand through the rest of your relocation journey, explore our full suite of practical guides, consultation calls, and step-by-step add-ons at **Nomadissimi.com**.
+If you want us to hold your hand through the rest of your relocation journey, explore our full suite of practical resources, consultation calls, and step-by-step add-ons at **Nomadissimi.com**.
 
 </GuideDecisionBox>
 

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getAllPosts } from "@/lib/blog";
+import { House } from "lucide-react";
 
 export const metadata = {
   title: "Blog | Nomadissimi",
@@ -77,6 +78,17 @@ export default function BlogIndexPage() {
           </Link>
         ))}
       </div>
+
+   <div className="mt-20 text-center">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 sans text-sm text-black/50 transition hover:text-black/70"
+        >
+          <House aria-hidden="true" className="h-4 w-4" />
+          <span>Back to homepage</span>
+        </Link>
+      </div>
+
     </main>
   );
 }

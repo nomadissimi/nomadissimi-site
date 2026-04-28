@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
+import Link from "next/link";
+import { House } from "lucide-react";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
@@ -54,8 +55,7 @@ export default function ForgotPasswordPage() {
         <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
           Enter your email and we’ll send you a secure password reset link.
           Please make sure to use the same email you used when making your
-          purchase. If you don’t see the email within a couple minutes, check
-          your spam or promotions folder.
+          purchase. 
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-5">
@@ -92,6 +92,12 @@ export default function ForgotPasswordPage() {
           >
             {loading ? "Sending..." : "Send reset link"}
           </button>
+
+           <p className="sans text-sm leading-[1.7] text-black/45">
+         If you don’t see the email within a couple minutes, please check
+          your spam or promotions folder.
+        </p>
+
         </form>
 
         <div className="mt-8">
@@ -107,6 +113,15 @@ export default function ForgotPasswordPage() {
           </Link>
         </div>
       </div>
+      <div className="mt-6 text-center">
+  <Link
+    href="/"
+    className="inline-flex items-center gap-2 sans text-sm text-black/50 transition hover:text-black/70"
+  >
+    <House aria-hidden="true" className="h-4 w-4" />
+    <span>Back to homepage</span>
+  </Link>
+</div>
     </main>
   );
 }

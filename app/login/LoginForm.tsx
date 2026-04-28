@@ -3,9 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { ArrowRight, KeyRound } from "lucide-react";
+import { ArrowRight, House, KeyRound } from "lucide-react";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 import PasswordField from "@/components/ui/PasswordField";
+
 
 export default function LoginForm() {
   const searchParams = useSearchParams();
@@ -46,8 +47,8 @@ export default function LoginForm() {
   return (
     <>
       <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
-        Access your private library, guides, and portal content. Remember to use the same
-        email address you used at checkout.
+        Access your private library, guides, and portal content. Please remember
+        to use the same email address you used at checkout.
       </p>
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
@@ -115,8 +116,11 @@ export default function LoginForm() {
             <span>Forgot your password?</span>
           </Link>
         </div>
+        
       </div>
+
+      
     </>
+    
   );
 }
-
