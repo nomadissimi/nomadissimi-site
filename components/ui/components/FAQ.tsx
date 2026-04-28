@@ -30,7 +30,7 @@ const faqs: QA[] = [
         quickly you can gather the required documents. We keep it real with you,
         and we map out the process for you step-by-step so you always know
         what’s next. ☕️ Italy runs on espresso pauses and aperitivo, not speed
-        (but we’ll keep you moving).
+        (but we’ll help you keep your momentum).
       </>
     ),
   },
@@ -38,12 +38,12 @@ const faqs: QA[] = [
     q: "✈️ Why work with Nomadissimi instead of doing it myself?",
     a: (
       <>
-        Because the process is almost never as simple as it first appears. There
-        are many hidden details, timing tricks, and confusing sub-steps. People
-        lose time when they rely on scattered consulate pages, outdated forum
-        advice, contradictory online opinions, or generic AI answers that miss
-        the details of their specific case and deliver confident (yet very
-        wrong) hallucinations. <br />
+        Because the process is never as simple as it first appears. There are
+        many hidden details, timing tricks, and confusing sub-steps. People lose
+        time when they rely on scattered consulate pages, outdated forum advice,
+        contradictory online opinions, or generic AI answers that miss the
+        details of their specific case and deliver confident (yet very wrong)
+        hallucinations. <br />
         <br /> We’ve been through it, and we know the many places where people
         get stuck. With us, you’ll have a{" "}
         <strong>clear, thoroughly researched roadmap,</strong> expert oversight,
@@ -170,11 +170,11 @@ const faqs: QA[] = [
     q: "💍 Can my spouse/partner and kids come?",
     a: (
       <>
-        It depends. Italy allows family reunification in many cases, including
-        for spouses and dependent children. La dolce vita is even sweeter when
-        shared, but please note that the request for family reunification is
-        done once you have already become an Italian resident and can take more
-        time.
+        It depends. Italy allows family reunification in certain cases,
+        including for spouses and dependent children. La dolce vita is even
+        sweeter when shared, but please note that the request for family
+        reunification is done once you have already become an Italian resident
+        and can take more time.
       </>
     ),
   },
@@ -186,11 +186,11 @@ const faqs: QA[] = [
         ultimately, the final decision lies with the Italian government and its
         affiliated entities.{" "}
         <strong>
-          No consulting agency or law firm can guarantee an approval, and if
-          someone promises you that… run! 🚩
+          🚩 No consulting agency or law firm can guarantee an approval, and if
+          someone promises you that… run!
         </strong>{" "}
         Our role is to minimize risk through careful strategy, organization, and
-        personalized preparation... giving you the strongest possible chance of
+        personalized preparation, giving you the strongest possible chance of
         success.
       </>
     ),
@@ -234,8 +234,8 @@ const faqs: QA[] = [
     q: "🇮🇹 Can Nomadissimi help me if I already have my visa?",
     a: (
       <>
-        Yes. You can absolutely still work with Nomadissimi even if you already
-        have your visa.{" "}
+        Yes, you can absolutely still work with Nomadissimi even if you already
+        have your Italian visa.{" "}
         <strong>We support so much more than the visa process!</strong> 😄 We
         also help with the next layers of the move, including residence
         registration, taxes, codice fiscale, and our La Dolce Vita consultations
