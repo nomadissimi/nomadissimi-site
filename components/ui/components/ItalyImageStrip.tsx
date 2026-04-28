@@ -27,7 +27,7 @@ export default function ItalyImageStrip() {
       {/* editorial label */}
       <div className="mx-auto mb-4 flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <p className="serif text-sm tracking-[0.22em] text-black/55 uppercase">
-          Italy, unfiltered... no need for AI
+          📸 Italy, unfiltered... no need for AI
         </p>
         {/* top right gradient line */}
         <div className="ml-auto -mr-6 sm:-mr-10 lg:-mr-16 h-px w-36 bg-gradient-to-r from-transparent via-[#E6D8B9] to-[#C9A86A]/90 animate-couture-line" />

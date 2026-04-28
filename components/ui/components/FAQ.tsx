@@ -80,10 +80,9 @@ const faqs: QA[] = [
         <br />
         <br />
         Visibility is not the same as depth. Some brands are very good at
-        marketing themselves and posting exaggerated claims on social media.
-        That does not always mean they are the most qualified, the most local,
-        or the most personally invested in helping someone build a real life in
-        Italy.{" "}
+        marketing tactics and posting exaggerated claims on social media. That
+        does not always mean they are the most qualified, the most local, or the
+        most personally invested in helping someone build a real life in Italy.{" "}
         <strong>
           We are, and we show up for our clients in a way that reflects that.
         </strong>{" "}
@@ -100,14 +99,14 @@ const faqs: QA[] = [
         Nomadissimi currently offers two main categories of support.
         <br />
         <br />
-        The first is our <strong>visa package line</strong>, which is built
+        1️⃣ The first is our <strong>visa package line</strong>, which is built
         around the private Nomadissimi Visa Portal. All three visa packages
         include access to that portal, and then differ in how much personalized
         support you want around it: from a more self-guided roadmap to deeper
-        strategy, private consultations, and higher-touch guidance.
+        strategy, private consultations, and higher-touch services.
         <br />
         <br />
-        The second is our <strong>post-visa and integration support</strong>.
+        2️⃣ The second is our <strong>post-visa and integration support</strong>.
         These offers are designed for the next layers of the move and include
         dedicated new portals of their own, such as our Residence Registration
         Portal and our Tax & Partita IVA Portal. We also offer our{" "}
@@ -135,8 +134,8 @@ const faqs: QA[] = [
     a: (
       <>
         Once your payment is confirmed, you will be prompted to create your
-        account, where you will obtain access to your portal and detailed
-        instructions. <br />
+        Nomadissimi account, where you will obtain access to your purchased
+        portal(s) and will receive further detailed instructions. <br />
         <br /> 📞 If your package includes a private consultation, you’ll
         receive an intake form so we can better understand your specific
         profile, visa goals, and timeline. This helps us optimize your call, so
@@ -199,10 +198,10 @@ const faqs: QA[] = [
     q: "🎉 What happens after my visa is approved?",
     a: (
       <>
-        That’s when the real Italian adventure begins! It's also one of the most
-        important (and time-sensitive) steps that starts right away. ⚠️ Within
-        DAYS of landing, you’ll need to register your residency and apply for
-        your Permesso di Soggiorno, your official residence permit.
+        Yay! That’s when the real Italian adventure begins! It's also one of the
+        most important (and time-sensitive) steps that starts right away. ⚠️
+        Within DAYS of landing, you’ll need to register your residency and apply
+        for your Permesso di Soggiorno, your official residence permit.
         <br />
         <br />
         <strong>
@@ -225,7 +224,7 @@ const faqs: QA[] = [
         different worlds (and Italy’s tax world is a labyrinth of its own). We
         offer a dedicated Tax & Partita IVA Portal that gives you tips on how to
         open your professional activity in Italy, understand key tax benefits,
-        and avoid the common pitfalls most newcomers face.
+        and avoid the common and costly mistakes most newcomers face.
       </>
     ),
   },
@@ -281,7 +280,7 @@ const faqs: QA[] = [
       <>
         All sales are final and non-refundable. Because Nomadissimi products
         include immediate access to private digital resources, carefully
-        researched guidance, and, depending on the package, reserved time and
+        researched materials, and (depending on the package) reserved time and
         support from our team, we do not offer refunds once a purchase has been
         made.
         <br />

@@ -224,16 +224,16 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
                 {" "}
                 <a
                   href="#guide"
-                  className="relative inline-flex items-center justify-center text-center px-4 py-3 md:px-7 md:py-3.5 rounded-2xl
-      bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
-      text-[#1A1A1A] font-serif text-[15px] md:text-lg leading-tight tracking-wide
-      ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
-      transition-all duration-300 ease-out
-      overflow-hidden w-full
-      before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)]
-      before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
-      hover:before:opacity-80 hover:before:translate-x-[100%]
-      hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
+                  className="relative inline-flex items-center justify-center text-center pl-6 pr-5 py-3 md:pl-8 md:pr-7 md:py-3.5 rounded-2xl
+bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
+text-[#1A1A1A] font-serif text-[15px] md:text-lg leading-tight tracking-wide
+ring-1 ring-[#C9A86A]/60 shadow-[0_2px_12px_rgba(193,168,125,0.15)]
+transition-all duration-300 ease-out
+w-full
+before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.6),transparent)]
+before:opacity-0 before:translate-x-[-100%] before:transition-all before:duration-500
+hover:before:opacity-80 hover:before:translate-x-[100%]
+hover:shadow-[0_4px_20px_rgba(193,168,125,0.28)] hover:scale-[1.02]"
                 >
                   Get the free starter guide
                 </a>
