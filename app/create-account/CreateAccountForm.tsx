@@ -83,7 +83,7 @@ export default function CreateAccountForm() {
   return (
     <>
       <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
-        Use the same email address you used at checkout so your purchases can
+        Please use the same email address you used at checkout so your purchases can
         appear inside your private library.
       </p>
 

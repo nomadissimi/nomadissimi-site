@@ -53,6 +53,9 @@ export default function ForgotPasswordPage() {
 
         <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
           Enter your email and we’ll send you a secure password reset link.
+          Please make sure to use the same email you used when making your
+          purchase. If you don’t see the email within a couple minutes, check
+          your spam or promotions folder.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-5">

@@ -46,8 +46,8 @@ export default function LoginForm() {
   return (
     <>
       <p className="mt-4 sans text-[16px] leading-[1.8] text-black/65">
-        Access your private library, guides, and portal content. Use the same
-        email address you used at checkout whenever possible.
+        Access your private library, guides, and portal content. Remember to use the same
+        email address you used at checkout.
       </p>
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
