@@ -107,12 +107,13 @@ html { scroll-behavior: smooth; }
 /* — Subtle page-load fade — */
 @media (prefers-reduced-motion: no-preference) {
   @keyframes nomadissimiFadeIn {
-    from { opacity: 0; transform: translateY(6px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
+
   body {
     opacity: 0;
-    animation: nomadissimiFadeIn .6s ease-out .05s forwards;
+    animation: nomadissimiFadeIn .45s ease-out .05s forwards;
   }
 }
 
@@ -1616,4 +1617,6 @@ animation: addonRaySweep 0.5s ease-out 1;}
   -webkit-appearance: none;
 }
 
-
+.pb-safe {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+}

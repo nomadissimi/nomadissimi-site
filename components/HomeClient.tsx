@@ -2542,6 +2542,7 @@ function MobileDrawer({
   onClose: () => void;
 }) {
   const [mounted, setMounted] = useState(false);
+  const drawerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -2549,54 +2550,52 @@ function MobileDrawer({
 
   useEffect(() => {
     if (!open) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = prev;
-    };
-  }, [open]);
 
-  useEffect(() => {
-    if (!open) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
+
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
+  useEffect(() => {
+    if (!open) return;
+
+    requestAnimationFrame(() => {
+      if (drawerRef.current) {
+        drawerRef.current.scrollTop = 0;
+      }
+    });
+  }, [open]);
+
   const go = (hash: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     onClose();
+
     setTimeout(() => {
-      window.location.hash = hash;
-    }, 80);
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.location.hash = hash;
+      }
+    }, 100);
   };
 
-  if (!mounted) return null;
+  if (!mounted || !open) return null;
 
   return createPortal(
-    <>
+    <div className="fixed inset-0 z-[99999] md:hidden">
       <div
-        className={[
-          "fixed inset-0 z-[99998] bg-black/35 md:hidden transition-opacity duration-200",
-          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
-        ].join(" ")}
+        className="absolute inset-0 bg-black/35"
         onClick={onClose}
-        aria-hidden={!open}
+        aria-hidden="true"
       />
 
-      <aside
-        className={[
-          "fixed top-0 right-0 z-[99999] h-dvh w-[86vw] max-w-[360px] md:hidden",
-          "bg-[#FFFDF8] shadow-[-12px_0_40px_rgba(0,0,0,0.12)]",
-          "transition-transform duration-250 ease-out",
-          "flex flex-col overflow-y-auto",
-          open ? "translate-x-0" : "translate-x-full",
-        ].join(" ")}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Mobile menu"
+      <div
+        ref={drawerRef}
+        className="absolute top-0 right-0 h-screen w-[86vw] max-w-[360px] bg-[#FFFDF8] border-l border-black/10 shadow-[-12px_0_40px_rgba(0,0,0,0.12)] overflow-y-auto"
       >
         <div className="flex items-center justify-between px-5 pt-6 pb-4">
           <span className="serif text-[32px] leading-none text-black">
@@ -2607,7 +2606,7 @@ function MobileDrawer({
             type="button"
             onClick={onClose}
             aria-label="Close menu"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-black transition hover:bg-black/5"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-black hover:bg-black/5"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
               <path
@@ -2622,13 +2621,13 @@ function MobileDrawer({
 
         <div className="mx-5 h-px bg-[#E8DEC9]" />
 
-        <nav className="px-5 py-5">
+        <div className="px-5 py-5">
           <div className="rounded-[28px] border border-black/10 bg-white/55 px-4 py-4">
             <div className="flex flex-col">
               <a
                 href="#how"
                 onClick={go("#how")}
-                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black hover:bg-black/[.04]"
               >
                 Who We Are
               </a>
@@ -2636,7 +2635,7 @@ function MobileDrawer({
               <a
                 href="#packages"
                 onClick={go("#packages")}
-                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black hover:bg-black/[.04]"
               >
                 Visa Packages
               </a>
@@ -2644,7 +2643,7 @@ function MobileDrawer({
               <a
                 href="#settling"
                 onClick={go("#settling")}
-                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black hover:bg-black/[.04]"
               >
                 Settling in Italy
               </a>
@@ -2652,7 +2651,7 @@ function MobileDrawer({
               <a
                 href="#faq"
                 onClick={go("#faq")}
-                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black hover:bg-black/[.04]"
               >
                 FAQ
               </a>
@@ -2660,13 +2659,13 @@ function MobileDrawer({
               <a
                 href="#blog"
                 onClick={go("#blog")}
-                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black hover:bg-black/[.04]"
               >
                 Blog
               </a>
             </div>
           </div>
-        </nav>
+        </div>
 
         <div className="px-5 pb-6">
           <div className="rounded-[28px] border border-black/10 bg-white/55 px-4 py-4">
@@ -2689,8 +2688,8 @@ function MobileDrawer({
             </div>
           </div>
         </div>
-      </aside>
-    </>,
+      </div>
+    </div>,
     document.body
   );
 }
