@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 import type { Metadata, Viewport } from "next";
 
