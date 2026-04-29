@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { submitContactForm } from "./actions";
+import Link from "next/link";
+import { House } from "lucide-react";
 
 <span className="text-[#C9A86A] ml-1">*</span>;
 
@@ -240,6 +242,22 @@ export default function ContactPage() {
               By submitting, you agree we may reply to your message by email.
             </p>
           </form>
+        </div>
+
+        <div className="mt-8">
+          <div className="flex justify-center">
+            <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#C9A86A]/60 to-transparent" />
+          </div>
+
+          <div className="mt-4 flex justify-center">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 rounded-full px-4 py-2.5 sans text-sm text-[#4B5D44]/72 transition hover:bg-white/70 hover:text-[#4B5D44]"
+            >
+              <House aria-hidden="true" className="h-4 w-4" />
+              <span>Back to homepage</span>
+            </Link>
+          </div>
         </div>
       </section>
     </main>
