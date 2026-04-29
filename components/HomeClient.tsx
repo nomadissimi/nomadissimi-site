@@ -2541,7 +2541,12 @@ function MobileDrawer({
   open: boolean;
   onClose: () => void;
 }) {
-  // lock scroll when open
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     if (!open) return;
     const prev = document.body.style.overflow;
@@ -2551,7 +2556,6 @@ function MobileDrawer({
     };
   }, [open]);
 
-  // close on ESC
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -2561,136 +2565,132 @@ function MobileDrawer({
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
-  const go = (hash: string) => (e: React.MouseEvent) => {
+  const go = (hash: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     onClose();
-    // wait a beat so close feels smooth
     setTimeout(() => {
       window.location.hash = hash;
     }, 80);
   };
 
-  return (
-    <div
-      className={[
-        "fixed inset-0 z-[99999] md:hidden",
-        open ? "pointer-events-auto" : "pointer-events-none",
-      ].join(" ")}
-      aria-hidden={!open}
-    >
-      {/* Backdrop */}
+  if (!mounted) return null;
+
+  return createPortal(
+    <>
       <div
-        onClick={onClose}
         className={[
-          "absolute inset-0 bg-black/40 backdrop-blur-[2px] transition-opacity duration-200",
-          open ? "opacity-100" : "opacity-0",
+          "fixed inset-0 z-[99998] bg-black/35 md:hidden transition-opacity duration-200",
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
         ].join(" ")}
+        onClick={onClose}
+        aria-hidden={!open}
       />
 
-      {/* Panel */}
       <aside
         className={[
-          "absolute right-0 top-0 h-full w-[84%] max-w-[360px]",
-          "bg-[#FFFDF8] ring-1 ring-black/10 shadow-2xl rounded-l-3xl",
-          "p-5 flex flex-col",
-          "transition-transform duration-200 ease-out",
+          "fixed top-0 right-0 z-[99999] h-dvh w-[86vw] max-w-[360px] md:hidden",
+          "bg-[#FFFDF8] shadow-[-12px_0_40px_rgba(0,0,0,0.12)]",
+          "transition-transform duration-250 ease-out",
+          "flex flex-col overflow-y-auto",
           open ? "translate-x-0" : "translate-x-full",
         ].join(" ")}
         role="dialog"
         aria-modal="true"
+        aria-label="Mobile menu"
       >
-        {/* Header */}
-        <div className="flex items-center justify-between">
-          <span className="serif text-xl font-semibold tracking-tight">
+        <div className="flex items-center justify-between px-5 pt-6 pb-4">
+          <span className="serif text-[32px] leading-none text-black">
             Menu
           </span>
+
           <button
             type="button"
             onClick={onClose}
             aria-label="Close menu"
-            className="inline-flex items-center justify-center p-2 rounded-lg hover:bg-black/5 transition"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-black transition hover:bg-black/5"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M6 6l12 12M18 6L6 18"
                 stroke="currentColor"
-                strokeWidth="1.8"
+                strokeWidth="1.9"
                 strokeLinecap="round"
               />
             </svg>
           </button>
         </div>
 
-        <div className="mt-5 h-px bg-gradient-to-r from-transparent via-[#C9A86A]/50 to-transparent" />
+        <div className="mx-5 h-px bg-[#E8DEC9]" />
 
-        {/* Links */}
-        <div className="mt-4 rounded-2xl bg-[#FFFDF8] ring-1 ring-black/10 shadow-[0_18px_50px_rgba(0,0,0,0.08)] p-2 relative z-10">
-          <nav className="mt-4 flex flex-col gap-2.5 text-[15px] sans text-black">
-            <a
-              href="#how"
-              onClick={go("#how")}
-              className="px-3 py-3 bg-[#FFFDF8] rounded-xl hover:bg-black/[.04] active:bg-black/[.06]"
-            >
-              Who We Are
-            </a>
-            <a
-              href="#packages"
-              onClick={go("#packages")}
-              className="px-3 py-3 bg-[#FFFDF8]  rounded-xl hover:bg-black/[.04] active:bg-black/[.06]"
-            >
-              Visa Packages
-            </a>
-            <a
-              href="#settling"
-              onClick={go("#settling")}
-              className="px-3 py-3 rounded-xl hover:bg-black/[.04] active:bg-black/[.06]"
-            >
-              Settling in Italy
-            </a>
-            <a
-              href="#faq"
-              onClick={go("#faq")}
-              className="px-3 py-3 rounded-xl hover:bg-black/[.04] active:bg-black/[.06]"
-            >
-              FAQ
-            </a>
-            <a
-              href="/blog"
-              onClick={() => onClose()}
-              className="px-3 py-3 rounded-xl hover:bg-black/[.04] active:bg-black/[.06]"
-            >
-              Blog
-            </a>
-          </nav>
-        </div>
+        <nav className="px-5 py-5">
+          <div className="rounded-[28px] border border-black/10 bg-white/55 px-4 py-4">
+            <div className="flex flex-col">
+              <a
+                href="#how"
+                onClick={go("#how")}
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+              >
+                Who We Are
+              </a>
 
-        {/* Divider */}
-        <div className="mt-2 h-px bg-gradient-to-r from-transparent via-[#C9A86A]/50 to-transparent" />
+              <a
+                href="#packages"
+                onClick={go("#packages")}
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+              >
+                Visa Packages
+              </a>
 
-        {/* CTAs */}
-        <div className="mt-3 rounded-2xl bg-[#FFFDF8] ring-1 ring-black/10 shadow-[0_18px_50px_rgba(0,0,0,0.08)] p-3 relative z-10">
-          <div className="mt-2 grid grid-cols-1 gap-2">
-            <a
-              href="#guide"
-              onClick={go("#guide")}
-              className="btn btn-champagne w-full justify-center"
-            >
-              Free Starter Guide
-            </a>
-            <Link
-              href="/contact"
-              onClick={() => onClose()}
-              className="btn btn-primary w-full justify-center"
-            >
-              Contact Us
-            </Link>
+              <a
+                href="#settling"
+                onClick={go("#settling")}
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+              >
+                Settling in Italy
+              </a>
+
+              <a
+                href="#faq"
+                onClick={go("#faq")}
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+              >
+                FAQ
+              </a>
+
+              <a
+                href="#blog"
+                onClick={go("#blog")}
+                className="rounded-2xl px-4 py-4 sans text-[18px] text-black transition hover:bg-black/[.04]"
+              >
+                Blog
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <div className="px-5 pb-6">
+          <div className="rounded-[28px] border border-black/10 bg-white/55 px-4 py-4">
+            <div className="flex flex-col gap-3">
+              <a
+                href="#guide"
+                onClick={go("#guide")}
+                className="inline-flex w-full items-center justify-center rounded-full border border-[#D8BF8A] bg-[#FBF8F2] px-5 py-4 serif text-[18px] font-semibold text-black"
+              >
+                Free Starter Guide
+              </a>
+
+              <Link
+                href="/contact"
+                onClick={() => onClose()}
+                className="inline-flex w-full items-center justify-center rounded-full bg-[#4B5D44] px-5 py-4 serif text-[18px] font-semibold text-white"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
-
-        <div className="mt-auto pt-5 text-xs text-[#2B2B2B]/60">
-          <div className="flex items-center gap-2"></div>
-        </div>
       </aside>
-    </div>
+    </>,
+    document.body
   );
 }
