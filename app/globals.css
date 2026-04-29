@@ -1620,3 +1620,15 @@ animation: addonRaySweep 0.5s ease-out 1;}
 .pb-safe {
   padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
 }
+
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+
+body {
+  position: relative;
+}
