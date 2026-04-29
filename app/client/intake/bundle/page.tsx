@@ -65,14 +65,13 @@ export default function BundleIntakePage() {
           .join("\n\n") ?? "",
       topQuestions: formData.get("topQuestions")?.toString() ?? "",
       biggestStress: formData.get("biggestStress")?.toString() ?? "",
+      accessibilityNeeds: formData.get("accessibility_needs")?.toString() ?? "",
       notes:
         [
           `Occupation: ${formData.get("occupation")?.toString() ?? ""}`,
           `Income range: ${formData.get("incomeRange")?.toString() ?? ""}`,
           `Payment method/currency: ${formData.get("paymentCurrency")?.toString() ?? ""}`,
-          `Italy experience: ${formData.get("italyExperience")?.toString() ?? ""}`,
           `Help topics: ${formData.get("helpTopics")?.toString() ?? ""}`,
-          formData.get("notes")?.toString() ?? "",
         ]
           .filter(Boolean)
           .join("\n\n") ?? "",
@@ -88,15 +87,21 @@ export default function BundleIntakePage() {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit form");
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          data?.error || `Request failed with status ${res.status}`,
+        );
       }
 
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert(
-        "Something went wrong while submitting the form. Please try again.",
-      );
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong while submitting the form. Please try again.";
+
+      alert(message);
     } finally {
       setSubmitting(false);
     }

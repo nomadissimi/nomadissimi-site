@@ -27,15 +27,23 @@ export default function TaxIntakePage() {
       degreeTitle: "",
       workExperience: "",
       workSituation: formData.get("incomeContext")?.toString() ?? "",
-      pathway: formData.get("taxPath")?.toString() ?? "",
+      pathway: formData.get("mainNeed")?.toString() ?? "",
       moveDate: "",
       consulate: "",
       contactedConsulate: "",
       documentsStarted: formData.get("alreadyInItaly")?.toString() ?? "",
-      stage: formData.get("partitaStatus")?.toString() ?? "",
+      stage: formData.get("taxResident")?.toString() ?? "",
       topQuestions: formData.get("topQuestions")?.toString() ?? "",
       biggestStress: formData.get("biggestStress")?.toString() ?? "",
-      notes: formData.get("notes")?.toString() ?? "",
+      accessibilityNeeds: formData.get("accessibility_needs")?.toString() ?? "",
+      notes:
+        [
+          `Income range: ${formData.get("incomeRange")?.toString() ?? ""}`,
+          `Payment currency: ${formData.get("paymentCurrency")?.toString() ?? ""}`,
+          `Crypto income: ${formData.get("cryptoIncome")?.toString() ?? ""}`,
+        ]
+          .filter(Boolean)
+          .join("\n\n") ?? "",
     };
 
     try {
@@ -48,15 +56,21 @@ export default function TaxIntakePage() {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit form");
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          data?.error || `Request failed with status ${res.status}`,
+        );
       }
 
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert(
-        "Something went wrong while submitting the form. Please try again.",
-      );
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong while submitting the form. Please try again.";
+
+      alert(message);
     } finally {
       setSubmitting(false);
     }
@@ -294,6 +308,7 @@ export default function TaxIntakePage() {
                 <Field label="Are you already an Italian tax resident?">
                   <select
                     name="taxResident"
+                    required
                     defaultValue=""
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   >

@@ -25,7 +25,7 @@ export default function DolceVitaIntakePage() {
       country: formData.get("country")?.toString() ?? "",
       citizenships: formData.get("citizenships")?.toString() ?? "",
       occupation: "",
-      workSetup: formData.get("movingWith")?.toString() ?? "",
+      workSetup: "",
       degreeTitle: "",
       workExperience: "",
       workSituation: formData.get("lifestyleVision")?.toString() ?? "",
@@ -34,10 +34,16 @@ export default function DolceVitaIntakePage() {
       consulate: formData.get("citiesConsidering")?.toString() ?? "",
       contactedConsulate: "",
       documentsStarted: "",
-      stage: lifestylePriorities.join(", "),
+      stage: formData
+        .getAll("lifestylePriorities")
+        .map((item) => item.toString())
+        .join(", "),
       topQuestions: formData.get("topQuestions")?.toString() ?? "",
       biggestStress: formData.get("biggestStress")?.toString() ?? "",
-      notes: formData.get("notes")?.toString() ?? "",
+      accessibilityNeeds: formData.get("accessibility_needs")?.toString() ?? "",
+      notes: [`Help topics: ${formData.get("helpTopics")?.toString() ?? ""}`]
+        .filter(Boolean)
+        .join("\n\n"),
     };
 
     try {
@@ -50,15 +56,21 @@ export default function DolceVitaIntakePage() {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit form");
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          data?.error || `Request failed with status ${res.status}`,
+        );
       }
 
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert(
-        "Something went wrong while submitting the form. Please try again.",
-      );
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong while submitting the form. Please try again.";
+
+      alert(message);
     } finally {
       setSubmitting(false);
     }
@@ -269,6 +281,7 @@ export default function DolceVitaIntakePage() {
               >
                 <textarea
                   name="lifestyleVision"
+                  required
                   rows={4}
                   className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                 />
@@ -281,6 +294,7 @@ export default function DolceVitaIntakePage() {
               >
                 <textarea
                   name="biggestStress"
+                  required
                   rows={4}
                   className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                 />
@@ -293,6 +307,7 @@ export default function DolceVitaIntakePage() {
               >
                 <textarea
                   name="helpTopics"
+                  required
                   placeholder="ex: where to live, renting, healthcare, cultural adaptation, regional differences, Italian vacation itineraries..."
                   rows={4}
                   className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"

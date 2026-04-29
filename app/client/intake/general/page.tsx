@@ -31,11 +31,12 @@ export default function GeneralIntakePage() {
       moveDate: formData.get("deadline")?.toString() ?? "",
       consulate: formData.get("relatedService")?.toString() ?? "",
       contactedConsulate: "",
-      documentsStarted: formData.get("stepsTaken")?.toString() ?? "",
+      documentsStarted: "",
       stage: formData.get("currentStage")?.toString() ?? "",
       topQuestions: formData.get("topQuestions")?.toString() ?? "",
       biggestStress: formData.get("mainIssue")?.toString() ?? "",
-      notes: formData.get("notes")?.toString() ?? "",
+      accessibilityNeeds: formData.get("accessibility_needs")?.toString() ?? "",
+      notes: "",
     };
 
     try {
@@ -48,15 +49,21 @@ export default function GeneralIntakePage() {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit form");
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          data?.error || `Request failed with status ${res.status}`,
+        );
       }
 
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert(
-        "Something went wrong while submitting the form. Please try again.",
-      );
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong while submitting the form. Please try again.";
+
+      alert(message);
     } finally {
       setSubmitting(false);
     }

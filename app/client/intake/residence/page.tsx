@@ -26,16 +26,27 @@ export default function ResidenceIntakePage() {
       workSetup: "",
       degreeTitle: "",
       workExperience: "",
-      workSituation: formData.get("currentStatus")?.toString() ?? "",
+      workSituation: [
+        `Visa approved: ${formData.get("visaApproved")?.toString() ?? ""}`,
+        `Currently in Italy: ${formData.get("currentlyInItaly")?.toString() ?? ""}`,
+      ]
+        .filter(Boolean)
+        .join("\n\n"),
       pathway: formData.get("entryStatus")?.toString() ?? "",
       moveDate: formData.get("arrivalDate")?.toString() ?? "",
       consulate: formData.get("comune")?.toString() ?? "",
       contactedConsulate: "",
-      documentsStarted: formData.get("permessoStatus")?.toString() ?? "",
-      stage: formData.get("mainNeed")?.toString() ?? "",
+      documentsStarted: [
+        `Codice Fiscale: ${formData.get("codiceFiscale")?.toString() ?? ""}`,
+        `Housing status: ${formData.get("housingStatus")?.toString() ?? ""}`,
+      ]
+        .filter(Boolean)
+        .join("\n\n"),
+      stage: "",
       topQuestions: formData.get("topQuestions")?.toString() ?? "",
       biggestStress: formData.get("biggestStress")?.toString() ?? "",
-      notes: formData.get("notes")?.toString() ?? "",
+      accessibilityNeeds: formData.get("accessibility_needs")?.toString() ?? "",
+      notes: "",
     };
 
     try {
@@ -48,15 +59,21 @@ export default function ResidenceIntakePage() {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit form");
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          data?.error || `Request failed with status ${res.status}`,
+        );
       }
 
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert(
-        "Something went wrong while submitting the form. Please try again.",
-      );
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong while submitting the form. Please try again.";
+
+      alert(message);
     } finally {
       setSubmitting(false);
     }
@@ -196,7 +213,7 @@ export default function ResidenceIntakePage() {
               <div className="mt-5 grid gap-5 md:grid-cols-2">
                 <Field label="Was your visa already approved?" required>
                   <select
-                    name="currentStatus"
+                    name="visaApproved"
                     required
                     defaultValue=""
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
@@ -216,6 +233,7 @@ export default function ResidenceIntakePage() {
                 >
                   <input
                     name="entryStatus"
+                    required
                     placeholder="ex: Digital Nomad Visa"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
@@ -223,7 +241,7 @@ export default function ResidenceIntakePage() {
 
                 <Field label="Are you currently in Italy?" required>
                   <select
-                    name="currentStatus"
+                    name="currentlyInItaly"
                     required
                     defaultValue=""
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
@@ -242,6 +260,7 @@ export default function ResidenceIntakePage() {
                 >
                   <input
                     name="arrivalDate"
+                    required
                     placeholder="ex: April 2026"
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
@@ -253,6 +272,7 @@ export default function ResidenceIntakePage() {
                 >
                   <input
                     name="comune"
+                    required
                     placeholder="ex: Florence, Catania, Milan..."
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
@@ -261,6 +281,7 @@ export default function ResidenceIntakePage() {
                 <Field label="Do you already have a Codice Fiscale?" required>
                   <select
                     name="codiceFiscale"
+                    required
                     defaultValue=""
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   >
@@ -279,6 +300,7 @@ export default function ResidenceIntakePage() {
                 >
                   <select
                     name="housingStatus"
+                    required
                     defaultValue=""
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   >

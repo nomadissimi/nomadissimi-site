@@ -1,10 +1,25 @@
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { sendIntakeNotification } from "@/lib/email/sendIntakeNotification";
+import { headers } from "next/headers";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
+
+    const headersList = await headers();
+const forwardedFor = headersList.get("x-forwarded-for") || "";
+const ip = forwardedFor.split(",")[0]?.trim() || "unknown";
+
+const rateLimit = checkRateLimit(`client-intake:${ip}`, 5, 15 * 60 * 1000);
+
+if (!rateLimit.allowed) {
+  return NextResponse.json(
+    { error: "Too many submissions. Please wait a bit and try again." },
+    { status: 429 }
+  );
+}
 
     const {
       intakeType,
@@ -27,6 +42,7 @@ export async function POST(req: Request) {
       stage,
       topQuestions,
       biggestStress,
+        accessibilityNeeds,
       notes,
     } = body ?? {};
 
@@ -59,6 +75,7 @@ export async function POST(req: Request) {
       stage,
       top_questions: topQuestions,
       biggest_stress: biggestStress,
+      accessibility_needs: accessibilityNeeds,
       notes,
     });
 

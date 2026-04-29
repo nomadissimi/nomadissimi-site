@@ -35,7 +35,15 @@ export default function VisaIntakePage() {
       stage: formData.get("stage")?.toString() ?? "",
       topQuestions: formData.get("topQuestions")?.toString() ?? "",
       biggestStress: formData.get("biggestStress")?.toString() ?? "",
-      notes: formData.get("notes")?.toString() ?? "",
+      accessibilityNeeds: formData.get("accessibility_needs")?.toString() ?? "",
+      notes:
+        [
+          `Education level: ${formData.get("educationLevel")?.toString() ?? ""}`,
+          `Works in tech sector: ${formData.get("ICT")?.toString() ?? ""}`,
+          `Moving with: ${formData.get("movingWith")?.toString() ?? ""}`,
+        ]
+          .filter(Boolean)
+          .join("\n\n") ?? "",
     };
 
     try {
@@ -48,15 +56,21 @@ export default function VisaIntakePage() {
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit form");
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          data?.error || `Request failed with status ${res.status}`,
+        );
       }
 
       setSubmitted(true);
       form.reset();
     } catch (error) {
-      alert(
-        "Something went wrong while submitting the form. Please try again.",
-      );
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong while submitting the form. Please try again.";
+
+      alert(message);
     } finally {
       setSubmitting(false);
     }
@@ -167,6 +181,7 @@ export default function VisaIntakePage() {
                 <Field label="Current city of residence" required>
                   <input
                     name="city"
+                    required
                     className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
                   />
                 </Field>
