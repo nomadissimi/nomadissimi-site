@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import CookieBanner from "@/components/CookieBanner";
 import AnalyticsGate from "@/components/AnalyticsGate";
@@ -32,6 +32,11 @@ export const metadata: Metadata = {
 
     apple: "/favicon.png",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

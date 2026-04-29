@@ -1622,3 +1622,12 @@ animation: addonRaySweep 0.5s ease-out 1;}
 }
 
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  position: relative;
+}
