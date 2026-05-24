@@ -1,237 +1,420 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState, type FormEvent, type ReactNode } from "react";
 import Link from "next/link";
-import Script from "next/script";
 
-export const metadata: Metadata = {
-  title: "Italy Residence Registration Support",
-  description:
-    "Boutique Italy residence registration support for digital nomads, remote workers, and new arrivals. Clear help with permesso, comune registration, and post-arrival practical setup.",
-  alternates: {
-    canonical: "/residence",
-  },
-};
+export default function ResidenceIntakePage() {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-export default function ResidencePage() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Who is Nomadissimi residence support best for?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Nomadissimi residence support is best for people who have already moved to Italy, are about to arrive, or have recently received visa approval and want clearer help with the residence registration process.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What does the Residence Registration Portal help with?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The Residence Registration Portal helps clients understand the key practical steps after arrival in Italy, including residence permit questions, comune registration, and the early administrative process that often feels confusing or time-sensitive.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does Nomadissimi only help with the visa?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "No. Nomadissimi also helps clients beyond the visa, including residence registration, tax-related orientation, codice fiscale, and the practical realities of settling into life in Italy more smoothly and strategically.",
-        },
-      },
-    ],
-  };
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSubmitting(true);
 
-  return (
-    <>
-      <main className="min-h-screen bg-[#F8F5EF] text-[#1F1F1F]">
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10 md:pt-24 md:pb-14">
-          <p className="sans text-xs md:text-sm uppercase tracking-[0.18em] text-[#4B5D44]/65">
-            Nomadissimi residence support
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const payload = {
+      intakeType: "residence",
+      firstName: formData.get("firstName")?.toString() ?? "",
+      lastName: formData.get("lastName")?.toString() ?? "",
+      email: formData.get("email")?.toString() ?? "",
+      city: formData.get("city")?.toString() ?? "",
+      country: formData.get("country")?.toString() ?? "",
+      citizenships: formData.get("citizenships")?.toString() ?? "",
+      occupation: "",
+      workSetup: "",
+      degreeTitle: "",
+      workExperience: "",
+      workSituation: [
+        `Visa approved: ${formData.get("visaApproved")?.toString() ?? ""}`,
+        `Currently in Italy: ${formData.get("currentlyInItaly")?.toString() ?? ""}`,
+      ]
+        .filter(Boolean)
+        .join("\n\n"),
+      pathway: formData.get("entryStatus")?.toString() ?? "",
+      moveDate: formData.get("arrivalDate")?.toString() ?? "",
+      consulate: formData.get("comune")?.toString() ?? "",
+      contactedConsulate: "",
+      documentsStarted: [
+        `Codice Fiscale: ${formData.get("codiceFiscale")?.toString() ?? ""}`,
+        `Housing status: ${formData.get("housingStatus")?.toString() ?? ""}`,
+      ]
+        .filter(Boolean)
+        .join("\n\n"),
+      stage: "",
+      topQuestions: formData.get("topQuestions")?.toString() ?? "",
+      biggestStress: formData.get("biggestStress")?.toString() ?? "",
+      accessibilityNeeds: formData.get("accessibility_needs")?.toString() ?? "",
+      notes: "",
+    };
+
+    try {
+      const res = await fetch("/api/client-intake", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          data?.error || `Request failed with status ${res.status}`,
+        );
+      }
+
+      setSubmitted(true);
+      form.reset();
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Something went wrong while submitting the form. Please try again.";
+
+      alert(message);
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  if (submitted) {
+    return (
+      <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl rounded-[28px] border border-black/10 bg-white/70 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.08)] md:p-10">
+          <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
+            Nomadissimi client onboarding
           </p>
 
-          <h1 className="serif mt-4 text-4xl md:text-5xl lg:text-6xl leading-[1.08] font-semibold tracking-[0.01em] max-w-4xl">
-            Italy residence registration support, without the panic spiral
+          <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
+            You’re all set
           </h1>
 
-          <p className="serif mt-3 max-w-3xl text-[24px] md:text-[30px] leading-[1.3] text-black/65 tracking-[-0.01em]">
-            Because getting approved is one thing. Settling in correctly is
-            another.
+          <p className="mt-4 max-w-xl sans text-[16px] leading-[1.8] text-black/65">
+            We’ve received your onboarding form. Our team will review your
+            answers and send your private consultation booking link by email as
+            soon as possible.
           </p>
 
-          <p className="sans mt-6 max-w-3xl text-[18px] md:text-[20px] leading-[1.85] text-black/72">
-            Nomadissimi helps new arrivals navigate the early practical
-            bureaucracy of life in Italy with more calm, more structure, and far
-            less confusion.
-          </p>
+          <div className="mt-7 rounded-2xl border border-black/10 bg-[#FBF8F2] px-5 py-4">
+            <p className="sans text-[15px] leading-[1.75] text-black/70">
+              Please keep an eye on your inbox and promotions/spam folder just
+              in case.
+            </p>
+          </div>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
-              href="/#settling"
-              className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-6 py-3 serif text-[18px] text-white transition hover:bg-[#3E4E38]"
+              href="/"
+              className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-6 py-3 text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] transition hover:bg-[#3E4E38]"
             >
-              View residence support
+              Return to homepage
             </Link>
 
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full border border-black/12 bg-white px-6 py-3 serif text-[18px] text-[#1F1F1F] transition hover:bg-[#F7F2EA]"
+              className="sans text-sm text-black/55 transition hover:text-black/75"
             >
-              Contact us
+              Need help? Contact us →
             </Link>
           </div>
-
-          <div className="mt-8 h-px w-28 bg-gradient-to-r from-transparent via-[#C9A86A]/70 to-transparent" />
-        </section>
-
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 md:pb-10">
-          <div className="rounded-[30px] border border-black/8 bg-white/70 p-7 md:p-10 shadow-[0_24px_70px_rgba(0,0,0,0.06)]">
-            <h2 className="serif text-3xl md:text-4xl font-semibold leading-tight">
-              What this service helps with
-            </h2>
-
-            <div className="mt-5 space-y-5 sans text-[16px] md:text-[17px] leading-[1.9] text-black/75">
-              <p>
-                Many people prepare intensely for the visa, only to discover
-                that the real-life setup after arrival in Italy comes with its
-                own stress, local logic, and practical deadlines.
-              </p>
-
-              <p>
-                Residence registration is one of the first major practical steps
-                after arrival, and it can feel especially disorienting when you
-                are newly moved, adjusting to a different system, and trying not
-                to make mistakes that slow everything down.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-6">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-[28px] border border-black/8 bg-[#FBF7F0] p-7 shadow-[0_18px_50px_rgba(0,0,0,0.04)]">
-              <h2 className="serif text-2xl md:text-3xl font-semibold">
-                Who this is best for
-              </h2>
-
-              <ul className="mt-5 space-y-4 sans text-[16px] leading-[1.8] text-black/75">
-                <li>
-                  People who have recently arrived in Italy or are about to
-                  arrive soon
-                </li>
-                <li>
-                  Digital nomads, remote workers, and freelancers moving into
-                  the post-visa phase
-                </li>
-                <li>
-                  Clients who feel unsure about permesso, comune registration,
-                  or local practical steps
-                </li>
-                <li>
-                  New arrivals who want more than vague advice or improvised
-                  guesswork
-                </li>
-              </ul>
-            </div>
-
-            <div className="rounded-[28px] border border-black/8 bg-[#FBF7F0] p-7 shadow-[0_18px_50px_rgba(0,0,0,0.04)]">
-              <h2 className="serif text-2xl md:text-3xl font-semibold">
-                What clients usually need help with
-              </h2>
-
-              <ul className="mt-5 space-y-4 sans text-[16px] leading-[1.8] text-black/75">
-                <li>Understanding the early residence process after arrival</li>
-                <li>Knowing what practical steps matter first</li>
-                <li>Making sense of the residence permit process</li>
-                <li>Clarifying comune registration and local documentation</li>
-                <li>
-                  Reducing stress around timing-sensitive post-arrival steps
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
-          <div className="rounded-[30px] border border-[#E5D6BA] bg-[linear-gradient(135deg,#FFFDF9_0%,#FBF6EE_48%,#F7F1E6_100%)] p-7 md:p-10 shadow-[0_24px_70px_rgba(0,0,0,0.05)]">
-            <h2 className="serif text-3xl md:text-4xl font-semibold leading-tight">
-              Why this phase feels harder than people expect
-            </h2>
-
-            <div className="mt-6 grid gap-5">
-              <div>
-                <h3 className="serif text-[24px] md:text-[28px]">
-                  The visa was only phase one
-                </h3>
-                <p className="sans mt-2 text-[16px] md:text-[17px] leading-[1.85] text-black/75">
-                  Approval often opens the door to a second layer of bureaucracy
-                  that feels more immediate, more practical, and sometimes more
-                  confusing.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="serif text-[24px] md:text-[28px]">
-                  Italian systems are local and contextual
-                </h3>
-                <p className="sans mt-2 text-[16px] md:text-[17px] leading-[1.85] text-black/75">
-                  Residence-related steps are not always experienced in a
-                  perfectly uniform way. Local expectations and office culture
-                  can feel surprisingly nuanced for newcomers.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="serif text-[24px] md:text-[28px]">
-                  You are doing bureaucracy while starting a new life
-                </h3>
-                <p className="sans mt-2 text-[16px] md:text-[17px] leading-[1.85] text-black/75">
-                  This phase often happens while you are also adjusting to
-                  housing, language, routines, and the emotional weight of a
-                  major move. That is exactly why support should feel calmer and
-                  clearer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
-          <div className="text-center rounded-[32px] border border-black/8 bg-[#4B5D44] px-6 py-10 md:px-10 md:py-12 shadow-[0_26px_70px_rgba(75,93,68,0.22)]">
-            <h2 className="serif text-3xl md:text-4xl font-semibold text-white leading-tight">
-              Need help getting your first steps in Italy right?
-            </h2>
-
-            <p className="sans mt-4 max-w-2xl mx-auto text-[16px] md:text-[17px] leading-[1.85] text-white/82">
-              Explore residence support, or contact us if you want help deciding
-              what makes the most sense next.
-            </p>
-
-            <div className="mt-7 flex flex-col sm:flex-row justify-center gap-3">
-              <Link
-                href="/#settling"
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 serif text-[18px] text-[#1F1F1F] transition hover:bg-[#F7F2EA]"
-              >
-                View residence support
-              </Link>
-
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 serif text-[18px] text-white transition hover:bg-white/10"
-              >
-                Contact us
-              </Link>
-            </div>
-          </div>
-        </section>
+        </div>
       </main>
+    );
+  }
 
-      <Script
-        id="faq-schema-residence"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-    </>
+  return (
+    <main className="min-h-screen bg-[#FBF8F2] px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl">
+        <div className="rounded-[28px] border border-black/10 bg-white/70 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.08)] md:p-10">
+          <p className="sans text-xs tracking-[0.22em] uppercase text-black/45">
+            Nomadissimi client onboarding
+          </p>
+
+          <h1 className="serif mt-3 text-3xl md:text-5xl font-semibold tracking-[0.01em] text-black leading-tight">
+            Before we prepare your residence consultation
+          </h1>
+
+          <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
+            Please complete this short onboarding form before your consultation.
+            It helps us understand where you are in the Italian residence
+            process so we can make your session practical, targeted, and
+            efficient.
+          </p>
+
+          <div className="mt-7 rounded-2xl border border-black/10 bg-[#FBF8F2] px-5 py-4">
+            <p className="sans text-[15px] leading-[1.75] text-black/70">
+              This form should take around 3-5 minutes. Once reviewed, we’ll
+              send your private scheduling link by email.
+            </p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="mt-8 space-y-8">
+            <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
+              <h2 className="serif text-2xl text-black">Personal details</h2>
+
+              <div className="mt-5 grid gap-5 md:grid-cols-2">
+                <Field label="First name" required>
+                  <input
+                    name="firstName"
+                    required
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Last name" required>
+                  <input
+                    name="lastName"
+                    required
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Email address" required>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Current city of residence">
+                  <input
+                    name="city"
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Current country of residence" required>
+                  <input
+                    name="country"
+                    required
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Citizenship(s)" required>
+                  <input
+                    name="citizenships"
+                    required
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+              </div>
+            </section>
+
+            <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
+              <h2 className="serif text-2xl text-black">
+                Current Italy status
+              </h2>
+
+              <div className="mt-5 grid gap-5 md:grid-cols-2">
+                <Field label="Was your visa already approved?" required>
+                  <select
+                    name="visaApproved"
+                    required
+                    defaultValue=""
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>I don't know</option>
+                  </select>
+                </Field>
+
+                <Field
+                  label="What type of visa or entry status are you using?"
+                  required
+                >
+                  <input
+                    name="entryStatus"
+                    required
+                    placeholder="ex: Digital Nomad Visa"
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Are you currently in Italy?" required>
+                  <select
+                    name="currentlyInItaly"
+                    required
+                    defaultValue=""
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </Field>
+
+                <Field
+                  label="When did you arrive in Italy? Or when do you plan to arrive?"
+                  required
+                >
+                  <input
+                    name="arrivalDate"
+                    required
+                    placeholder="ex: April 2026"
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field
+                  label="What city/region are you living in (or plan to live in)?"
+                  required
+                >
+                  <input
+                    name="comune"
+                    required
+                    placeholder="ex: Florence, Catania, Milan..."
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Do you already have a Codice Fiscale?" required>
+                  <select
+                    name="codiceFiscale"
+                    required
+                    defaultValue=""
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes</option>
+                    <option>Not yet</option>
+                    <option>I don't know</option>
+                  </select>
+                </Field>
+
+                <Field
+                  label="Do you already have a rental contract or declared place of residence?"
+                  required
+                >
+                  <select
+                    name="housingStatus"
+                    required
+                    defaultValue=""
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  >
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>In the process</option>
+                  </select>
+                </Field>
+              </div>
+            </section>
+
+            <section className="rounded-[24px] border border-black/10 bg-[#FBF8F2] p-6">
+              <h2 className="serif text-2xl text-black">
+                Consultation priorities
+              </h2>
+
+              <p className="mt-4 max-w-2xl sans text-[16px] leading-[1.8] text-black/65">
+                You can share as much or as little context as feels relevant.
+              </p>
+
+              <div className="mt-5 space-y-5">
+                <Field
+                  label="What are your top questions for this consultation?"
+                  required
+                >
+                  <textarea
+                    name="topQuestions"
+                    required
+                    rows={5}
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field
+                  label="What part of the residence registration process feels most confusing right now?"
+                  required
+                >
+                  <textarea
+                    name="biggestStress"
+                    required
+                    rows={4}
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+
+                <Field label="Is there anything we should know to make this process easier or more accessible for you?">
+                  <p className="mt-2 max-w-2xl sans text-[13px] leading-[1.8] text-black/65">
+                    🌻 This may include chronic illness, disability,
+                    neurodivergence, caregiving responsibilities, family
+                    logistics, scheduling needs, communication preferences, or
+                    anything else that shapes how you move through relocation.
+                  </p>
+                  <p className="mt-2 max-w-2xl sans text-[12px] leading-[1.8] text-black/65">
+                    Sharing is optional. We only use this information to adapt
+                    our support to your needs and make the process smoother for
+                    you.
+                  </p>
+
+                  <textarea
+                    name="accessibility_needs"
+                    rows={4}
+                    className="w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-black outline-none transition focus:border-black/20"
+                  />
+                </Field>
+              </div>
+            </section>
+
+            <div className="pt-2">
+              <button
+                type="submit"
+                disabled={submitting}
+                className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-6 py-3 text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] transition hover:bg-[#3E4E38] disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {submitting ? "Submitting..." : "Submit onboarding form"}
+              </button>
+
+              <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
+                We review each submission personally before sending your private
+                scheduling link.
+              </p>
+
+              <p className="mt-4 sans text-sm leading-[1.7] text-black/45">
+                {" "}
+                We'll be in touch soon. Looking forward to our session together!
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
   );
 }
+
+function Field({
+  label,
+  required,
+  children,
+  className = "",
+}: {
+  label: string;
+  required?: boolean;
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={className}>
+      <label className="mb-2 block sans text-sm text-black/70">
+        {label} {required ? <span className="text-black/40">*</span> : null}
+      </label>
+      {children}
+    </div>
+  );
+}
+
