@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { House } from "lucide-react";
+import { House, Instagram } from "lucide-react";
 
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
@@ -246,7 +246,7 @@ export default function ContactPage() {
             <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#C9A86A]/60 to-transparent" />
           </div>
 
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex flex-wrap justify-center gap-3">
             <Link
               href="/"
               className="inline-flex items-center gap-2 rounded-full px-4 py-2.5 sans text-sm text-[#4B5D44]/72 transition hover:bg-white/70 hover:text-[#4B5D44]"
@@ -254,6 +254,17 @@ export default function ContactPage() {
               <House aria-hidden="true" className="h-4 w-4" />
               <span>Back to homepage</span>
             </Link>
+
+            <a
+              href="https://www.instagram.com/nomadissimi/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Nomadissimi on Instagram"
+              className="inline-flex items-center gap-2 rounded-full px-4 py-2.5 sans text-sm text-[#4B5D44]/72 transition hover:bg-white/70 hover:text-[#4B5D44]"
+            >
+              <Instagram aria-hidden="true" className="h-4 w-4" />
+              <span>Instagram</span>
+            </a>
           </div>
         </div>
       </section>

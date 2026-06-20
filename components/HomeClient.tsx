@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import type { ReactNode, RefObject } from "react";
 import { useEffect, useRef, useState } from "react";
+import { Instagram } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { createPortal } from "react-dom";
 import FAQ from "../components/ui/components/FAQ";
@@ -117,7 +118,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
             <span className="hidden md:inline-block mx-1 h-1 w-1 rounded-full bg-[#C9A86A]/70" />
             {/* Free Guide — quiet couture */}
             <a
-              href="#guide"
+              href="/visa-portal-sample/visa-welcome"
               className="serif relative hidden sm:inline-flex items-center justify-center
              px-4 py-2.5
              border border-[#C9A86A]/60
@@ -223,7 +224,7 @@ export default function NomadissimiLanding({ blogPosts }: Props) {
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:flex sm:flex-row">
                 {" "}
                 <a
-                  href="#guide"
+                  href="/visa-portal-sample/visa-welcome"
                   className="relative inline-flex items-center justify-center text-center pl-6 pr-5 py-3 md:pl-8 md:pr-7 md:py-3.5 rounded-2xl
 bg-gradient-to-b from-[#F9F5EE] to-[#EFE7DA]
 text-[#1A1A1A] font-serif text-[15px] md:text-lg leading-tight tracking-wide
@@ -1779,33 +1780,54 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
         <div className="h-px w-40 bg-gradient-to-r from-transparent via-[#C9A86A]/60 to-transparent" />
       </div>
 
-      {/* --- get the free guide newsletter --- */}
-      <section
-        id="guide"
-        className="scroll-mt-28 md:scroll-mt-36 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-6"
-      >
-        <FadeIn y={14}>
-          <div
-            className="group relative bg-white border border-black/5
-             shadow-[0_30px_80px_rgba(0,0,0,0.08)]
-             px-8 py-8 md:px-10 md:py-10
-             transition-all duration-500 ease-out
-             hover:-translate-y-[2px]
-             hover:shadow-[0_40px_110px_rgba(0,0,0,0.12)]"
+{/* --- free sample CTA --- */}
+<section
+  id="guide"
+  className="scroll-mt-28 md:scroll-mt-36 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-8"
+>
+  <FadeIn y={14}>
+    <div
+      className="group relative bg-white border border-black/5
+      shadow-[0_30px_80px_rgba(0,0,0,0.08)]
+      px-8 py-8 md:px-10 md:py-10
+      transition-all duration-500 ease-out
+      hover:-translate-y-[2px]
+      hover:shadow-[0_40px_110px_rgba(0,0,0,0.12)]"
+    >
+      <div className="max-w-4xl">
+        <h4 className="serif text-3xl font-semibold">
+          Get a free sample of the Visa Portal
+        </h4>
+
+        <p className="sans mt-2 text-[#2B2B2B]/80 max-w-2xl">
+          Explore a free preview of the Nomadissimi Visa Portal and see how we
+          make the Italy move process feel clearer, calmer, and much more
+          organized.
+        </p>
+
+        <div className="mt-6 flex flex-col sm:flex-row gap-3">
+          <Link
+            href="/visa-portal-sample/visa-welcome"
+            className="inline-flex items-center justify-center rounded-full bg-[#4B5D44] px-6 py-3 serif text-[18px] text-white transition hover:bg-[#3E4E38]"
           >
-            {/* soft editorial “light” on hover */}
-            <span className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500">
-              <span className="absolute -top-24 -left-24 h-56 w-56 rounded-full bg-[#C9A86A]/10 blur-2xl" />
-              <span className="absolute -bottom-28 -right-28 h-64 w-64 rounded-full bg-[#4B5D44]/8 blur-2xl" />
-            </span>
+            Open the free sample
+          </Link>
 
-            {/* keep your existing content below */}
+          <a
+            href="https://www.instagram.com/nomadissimi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-[#C9A86A]/65 bg-white px-6 py-3 serif text-[18px] text-[#1A1A1A] transition hover:bg-[#F9F5EE]"
+          >
+            Come say ciao on Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </FadeIn>
+</section>
 
-          </div>
-        </FadeIn>
-      </section>
-
-      {/* Final CTA + Footer */}
+  {/* Final CTA + Footer */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-center">
         <FadeIn y={10}>
           <h4 className="serif text-3xl md:text-4xl font-semibold">
@@ -1852,6 +1874,7 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
         </FadeIn>
       </section>
 
+
       {/* Brand Reinforcement Logo - Refined Spacing */}
       <div className="flex justify-center pt-[2px] pb-[12px] md:pt-[4px] md:pb-[20px]">
         <Image
@@ -1878,7 +1901,21 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               <p className="sans text-white/80 text-sm">
                 Made with love and espresso.
               </p>
+              <div className="mt-4 flex justify-center md:justify-start">
+  <a
+    href="https://www.instagram.com/nomadissimi/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visit Nomadissimi on Instagram"
+    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2.5 text-white/85 transition hover:bg-white/10 hover:text-white"
+  >
+    <Instagram className="h-4 w-4" />
+    <span className="sans text-sm tracking-[0.04em]">Instagram</span>
+  </a>
+</div>
             </div>
+
+            
             <nav
               className="
     flex flex-wrap items-center justify-center md:justify-end
@@ -1922,6 +1959,8 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
               >
                 Contact
               </a>
+
+              
             </nav>
           </div>
           <div className="mt-5 flex justify-center md:justify-start">
@@ -2623,7 +2662,7 @@ function MobileDrawer({
           <div className="rounded-[28px] border border-black/10 bg-white/55 px-4 py-4">
             <div className="flex flex-col gap-3">
               <a
-                href="#guide"
+                href="/visa-portal-sample/visa-welcome"
                 onClick={go("#guide")}
                 className="inline-flex w-full items-center justify-center rounded-full border border-[#D8BF8A] bg-[#FBF8F2] px-5 py-4 serif text-[18px] font-semibold text-black"
               >
