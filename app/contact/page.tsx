@@ -1,11 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { submitContactForm } from "./actions";
 import Link from "next/link";
 import { House } from "lucide-react";
-
-<span className="text-[#C9A86A] ml-1">*</span>;
 
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(

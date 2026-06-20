@@ -1801,54 +1801,6 @@ bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.18)_45%,transparen
 
             {/* keep your existing content below */}
 
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h4 className="serif text-3xl font-semibold">
-                  Get a free sample of the Visa Portal
-                </h4>
-                <p className="sans mt-2 text-[#2B2B2B]/80">
-                  Enter your email and we’ll send you an initial sample of the
-                  Visa Portal and occasional Nomadissimi updates.
-                </p>
-              </div>
-
-              <form
-                className="sans grid sm:grid-cols-[1fr_auto] gap-3"
-                action="https://app.kit.com/forms/8987671/subscriptions"
-                method="post"
-              >
-                <input
-                  type="email"
-                  name="email_address"
-                  required
-                  placeholder="you@example.com"
-                  className="w-full border border-black/10 bg-white px-4 py-3
-      text-[16px] md:text-[17px]
-      focus:outline-none focus:ring-2 focus:ring-[#4B5D44]/40"
-                />
-
-                <button
-                  type="submit"
-                  className="bg-[#4B5D44] text-white px-6 py-3"
-                >
-                  Send me the guide
-                </button>
-
-                <label className="text-xs text-[#2B2B2B]/70 flex items-start gap-2 mt-1 sm:col-span-2">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    value="yes"
-                    required
-                    className="mt-0.5"
-                  />
-                  <span>
-                    I agree to the service terms and privacy policy. Occasional
-                    emails only. Unsubscribe anytime.
-                  </span>
-                </label>
-              </form>
-            </div>
           </div>
         </FadeIn>
       </section>
