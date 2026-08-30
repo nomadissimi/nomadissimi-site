@@ -61,6 +61,18 @@ const GUIDE_CARD_CONFIG: Record<GuideTheme, GuideCard> = {
     badgeLabel: "Codice Fiscale",
     badgeClass: "border-[#BFD9D4] bg-[#F3FBF8] text-[#3B6F69]",
   },
+
+  integration: {
+    key: "integration",
+    title: "La Dolce Vita Integration Guide",
+    description:
+      "Your practical guide to everyday life in Italy: renting, healthcare, banking, phone plans, digital identity, driving, family life, and the rhythms that make Italy feel like home.",
+    href: "/premium/guide/integration-welcome-to-real-life-in-italy",
+    buttonClass:
+      "bg-[#A56D5D] text-white shadow-[0_14px_40px_rgba(165,109,93,0.25)] hover:bg-[#8F5C4E]",
+    badgeLabel: "La Dolce Vita",
+    badgeClass: "border-[#E3C8BE] bg-[#FFF7F3] text-[#8F5C4E]",
+  },
 };
 
 export default async function PremiumLibraryPage() {

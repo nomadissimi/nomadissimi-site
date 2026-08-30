@@ -2,7 +2,12 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 
-export type GuideTheme = "visa" | "residence" | "tax" | "codice-fiscale";
+export type GuideTheme =
+  | "visa"
+  | "residence"
+  | "tax"
+  | "codice-fiscale"
+  | "integration";
 
 export type GuideChapter = {
   slug: string;
@@ -17,7 +22,8 @@ export type GuidePortal = {
   chapterPrefix: string;
 };
 
-//here is where the guide portals are defined, with their corresponding markdown file paths and chapter slug prefixes and portal titles. This allows us to easily manage multiple guides in a structured way.
+// Guide portals are defined here with their markdown files,
+// chapter slug prefixes, and portal titles.
 
 const GUIDE_PORTALS: Record<GuideTheme, GuidePortal> = {
   visa: {
@@ -26,23 +32,41 @@ const GUIDE_PORTALS: Record<GuideTheme, GuidePortal> = {
     filePath: path.join(process.cwd(), "content", "visa-guide.md"),
     chapterPrefix: "visa",
   },
+
   residence: {
     key: "residence",
     title: "From Tourist to Italian Resident",
     filePath: path.join(process.cwd(), "content", "residence-guide.md"),
     chapterPrefix: "residence",
   },
+
   tax: {
     key: "tax",
     title: "Tax & Partita IVA Portal",
     filePath: path.join(process.cwd(), "content", "tax-guide.md"),
     chapterPrefix: "tax",
   },
+
   "codice-fiscale": {
     key: "codice-fiscale",
     title: "Codice Fiscale Portal",
-    filePath: path.join(process.cwd(), "content", "codice-fiscale-guide.md"),
+    filePath: path.join(
+      process.cwd(),
+      "content",
+      "codice-fiscale-guide.md",
+    ),
     chapterPrefix: "codice-fiscale",
+  },
+
+  integration: {
+    key: "integration",
+    title: "La Dolce Vita Integration Guide",
+    filePath: path.join(
+      process.cwd(),
+      "content",
+      "integration-guide.md",
+    ),
+    chapterPrefix: "integration",
   },
 };
 
@@ -59,15 +83,16 @@ function parseGuideFile(portal: GuidePortal): GuideChapter[] {
 
   const raw = fs.readFileSync(portal.filePath, "utf8");
 
-const chapterRegex = /^#\s+\*\*Chapter\s+\d+\s+(.+?)\*\*\s*$/gm;
-const matches: RegExpExecArray[] = [];
+  const chapterRegex = /^#\s+\*\*Chapter\s+\d+\s+(.+?)\*\*\s*$/gm;
+  const matches: RegExpExecArray[] = [];
 
-let match: RegExpExecArray | null;
-while ((match = chapterRegex.exec(raw)) !== null) {
-  matches.push(match);
-}
+  let match: RegExpExecArray | null;
 
-if (matches.length === 0) return [];
+  while ((match = chapterRegex.exec(raw)) !== null) {
+    matches.push(match);
+  }
+
+  if (matches.length === 0) return [];
 
   const chapters: GuideChapter[] = [];
 
@@ -76,7 +101,8 @@ if (matches.length === 0) return [];
     const title = match[1].trim();
 
     const start = match.index! + match[0].length;
-    const end = i + 1 < matches.length ? matches[i + 1].index! : raw.length;
+    const end =
+      i + 1 < matches.length ? matches[i + 1].index! : raw.length;
 
     const content = raw.slice(start, end).trim();
 
@@ -99,29 +125,40 @@ export function getGuideChapters(theme: GuideTheme): GuideChapter[] {
 }
 
 export function getGuideChapter(theme: GuideTheme, slug: string) {
-  return getGuideChapters(theme).find((chapter) => chapter.slug === slug) ?? null;
+  return (
+    getGuideChapters(theme).find(
+      (chapter) => chapter.slug === slug,
+    ) ?? null
+  );
 }
 
-export function detectGuideThemeFromSlug(slug: string): GuideTheme | null {
+export function detectGuideThemeFromSlug(
+  slug: string,
+): GuideTheme | null {
   if (slug.startsWith("visa-")) return "visa";
   if (slug.startsWith("residence-")) return "residence";
   if (slug.startsWith("tax-")) return "tax";
   if (slug.startsWith("codice-fiscale-")) return "codice-fiscale";
+  if (slug.startsWith("integration-")) return "integration";
+
   return null;
 }
-
 
 export function getVisaGuideSampleChapters(): GuideChapter[] {
   return getGuideChapters("visa").slice(0, 3);
 }
 
 export function getVisaGuideSampleChapter(slug: string) {
-  return getVisaGuideSampleChapters().find((chapter) => chapter.slug === slug) ?? null;
+  return (
+    getVisaGuideSampleChapters().find(
+      (chapter) => chapter.slug === slug,
+    ) ?? null
+  );
 }
 
 /**
- * Backwards-compatible helpers
- * Keep these for now so existing imports don't explode while we migrate page logic.
+ * Backwards-compatible helpers.
+ * Keep these so existing imports continue to work.
  */
 export function getVisaGuideChapters(): GuideChapter[] {
   return getGuideChapters("visa");
@@ -130,5 +167,3 @@ export function getVisaGuideChapters(): GuideChapter[] {
 export function getVisaGuideChapter(slug: string) {
   return getGuideChapter("visa", slug);
 }
-
-

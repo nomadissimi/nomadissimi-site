@@ -128,30 +128,36 @@ export default async function PremiumGuideChapterPage({
     chapterIndex < chapters.length - 1 ? chapters[chapterIndex + 1] : null;
 
   const activeChapterClasses =
-    guideTheme === "residence"
-      ? "bg-[#2F466B] text-white shadow-[0_12px_30px_rgba(47,70,107,0.22)]"
-      : guideTheme === "tax"
-        ? "bg-[#6E4B7E] text-white shadow-[0_12px_30px_rgba(110,75,126,0.22)]"
-        : guideTheme === "codice-fiscale"
-          ? "bg-[#3B6F69] text-white shadow-[0_12px_30px_rgba(59,111,105,0.22)]"
+  guideTheme === "residence"
+    ? "bg-[#2F466B] text-white shadow-[0_12px_30px_rgba(47,70,107,0.22)]"
+    : guideTheme === "tax"
+      ? "bg-[#6E4B7E] text-white shadow-[0_12px_30px_rgba(110,75,126,0.22)]"
+      : guideTheme === "codice-fiscale"
+        ? "bg-[#3B6F69] text-white shadow-[0_12px_30px_rgba(59,111,105,0.22)]"
+        : guideTheme === "integration"
+          ? "bg-[#A56D5D] text-white shadow-[0_12px_30px_rgba(165,109,93,0.22)]"
           : "bg-[#4B5D44] text-white shadow-[0_12px_30px_rgba(75,93,68,0.22)]";
 
-  const primaryButtonClasses =
-    guideTheme === "residence"
-      ? "bg-[#2F466B] text-white shadow-[0_14px_40px_rgba(47,70,107,0.25)] hover:bg-[#263A59]"
-      : guideTheme === "tax"
-        ? "bg-[#6E4B7E] text-white shadow-[0_14px_40px_rgba(110,75,126,0.25)] hover:bg-[#5C3D69]"
-        : guideTheme === "codice-fiscale"
-          ? "bg-[#3B6F69] text-white shadow-[0_14px_40px_rgba(59,111,105,0.25)] hover:bg-[#315E59]"
+ const primaryButtonClasses =
+  guideTheme === "residence"
+    ? "bg-[#2F466B] text-white shadow-[0_14px_40px_rgba(47,70,107,0.25)] hover:bg-[#263A59]"
+    : guideTheme === "tax"
+      ? "bg-[#6E4B7E] text-white shadow-[0_14px_40px_rgba(110,75,126,0.25)] hover:bg-[#5C3D69]"
+      : guideTheme === "codice-fiscale"
+        ? "bg-[#3B6F69] text-white shadow-[0_14px_40px_rgba(59,111,105,0.25)] hover:bg-[#315E59]"
+        : guideTheme === "integration"
+          ? "bg-[#A56D5D] text-white shadow-[0_14px_40px_rgba(165,109,93,0.25)] hover:bg-[#8F5C4E]"
           : "bg-[#4B5D44] text-white shadow-[0_14px_40px_rgba(75,93,68,0.25)] hover:bg-[#3E4E38]";
 
-  const topLibraryButtonClasses =
-    guideTheme === "residence"
-      ? "bg-[#2F466B] text-white shadow-[0_10px_28px_rgba(47,70,107,0.20)] hover:bg-[#263A59]"
-      : guideTheme === "tax"
-        ? "bg-[#6E4B7E] text-white shadow-[0_10px_28px_rgba(110,75,126,0.20)] hover:bg-[#5C3D69]"
-        : guideTheme === "codice-fiscale"
-          ? "bg-[#3B6F69] text-white shadow-[0_10px_28px_rgba(59,111,105,0.20)] hover:bg-[#315E59]"
+ const topLibraryButtonClasses =
+  guideTheme === "residence"
+    ? "bg-[#2F466B] text-white shadow-[0_10px_28px_rgba(47,70,107,0.20)] hover:bg-[#263A59]"
+    : guideTheme === "tax"
+      ? "bg-[#6E4B7E] text-white shadow-[0_10px_28px_rgba(110,75,126,0.20)] hover:bg-[#5C3D69]"
+      : guideTheme === "codice-fiscale"
+        ? "bg-[#3B6F69] text-white shadow-[0_10px_28px_rgba(59,111,105,0.20)] hover:bg-[#315E59]"
+        : guideTheme === "integration"
+          ? "bg-[#A56D5D] text-white shadow-[0_10px_28px_rgba(165,109,93,0.20)] hover:bg-[#8F5C4E]"
           : "bg-[#4B5D44] text-white shadow-[0_10px_28px_rgba(75,93,68,0.20)] hover:bg-[#3E4E38]";
 
   return (

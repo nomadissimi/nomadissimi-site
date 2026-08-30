@@ -10,7 +10,8 @@ export type PortalKey =
   | "visa"
   | "residence"
   | "tax"
-  | "codice-fiscale";
+  | "codice-fiscale"
+  | "integration";
 
 export type ProductConfig = {
   key: string;
@@ -66,20 +67,25 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     sendIntakeEmail: true,
   },
 
-  dolceVita: {
-    key: "dolceVita",
-    label: "La Dolce Vita",
-    priceId: "price_1TCZfuQnDSGgUETvfoegwJ4J",
-    portalKeys: ["codice-fiscale"],
-    intakeType: "dolce-vita",
-    sendIntakeEmail: true,
-  },
+dolceVita: {
+  key: "dolceVita",
+  label: "La Dolce Vita Integration",
+  priceId: "price_1TCZfuQnDSGgUETvfoegwJ4J",
+  portalKeys: ["integration", "codice-fiscale"],
+  intakeType: "dolce-vita",
+  sendIntakeEmail: true,
+},
 
   bundle: {
     key: "bundle",
     label: "Welcome to Italy Bundle",
     priceId: "price_1TCZgvQnDSGgUETvyzjPlw0M",
-    portalKeys: ["residence", "tax", "codice-fiscale"],
+portalKeys: [
+  "residence",
+  "tax",
+  "codice-fiscale",
+  "integration",
+],
     intakeType: "bundle",
     sendIntakeEmail: true,
   },
@@ -94,6 +100,15 @@ export const PRODUCTS: Record<string, ProductConfig> = {
   },
 };
 
+
 export function getProductByPriceId(priceId: string) {
-  return Object.values(PRODUCTS).find((product) => product.priceId === priceId);
+  return Object.values(PRODUCTS).find(
+    (product) => product.priceId === priceId,
+  );
+}
+
+export function getProductByKey(key: string) {
+  return Object.values(PRODUCTS).find(
+    (product) => product.key === key,
+  );
 }
