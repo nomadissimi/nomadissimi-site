@@ -281,7 +281,7 @@ The place to apply for the Digital Nomad or Remote Worker visa is the Italian em
 <GuideNote>
 
 You can find the Italian embassy/consulate in your jurisdiction through the following official website:  
-[https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
+[https://serviziconsolari.esteri.it/home/cerca-consolato](https://serviziconsolari.esteri.it/home/cerca-consolato)
 
 </GuideNote>
 
@@ -386,7 +386,7 @@ The **National Visa Application Form** is the official form you must complete to
 <GuideCard>
 
 As previously explained, you can find the right embassy/consulate from which to apply through the website:  
-[https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
+[https://serviziconsolari.esteri.it/home/cerca-consolato](https://serviziconsolari.esteri.it/home/cerca-consolato)
 
 </GuideCard>
 
@@ -1154,7 +1154,7 @@ For example:
 - _Sofía lives in Minneapolis, but she got her degree from Caltech in Pasadena, California—so she’ll request her DV through the Italian Consulate in Los Angeles._
 
 **Pro tip:** You can find the right Italian embassy/consulate for your city using the official link to be super sure:  
-[https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco](https://serviziconsolarionline.esteri.it/ScoFE/services/consulate/find-consulate.sco)
+[https://serviziconsolari.esteri.it/home/cerca-consolato](https://serviziconsolari.esteri.it/home/cerca-consolato)
 
 ## **DV method (simple steps)**
 

@@ -25,6 +25,7 @@ We believe that your first months in Italy should be start of a beautiful advent
 We are going to dissect all of this process together in the right order, while optimizing your time and protecting your nervous system.  
 <GuideSpacer size="sm" />
 **Getting your _Permesso di Soggiorno_ (residence permit), registering your address at the _Comune_, and obtaining your Italian ID card (_CIE_) are absolute must-do steps to access the Italian system.**  
+<GuideSpacer size="sm" />
 You will need these documents to do everything from accessing healthcare to opening a _Partita IVA_ if you are a freelancer.
 
 </GuideBlueNote>
@@ -74,183 +75,515 @@ Here is your exact path to becoming a fully established resident:
 
 <GuideChecklist title="Your exact path">
 
-- **Step 1: Sending the Poste Italiane Kit (within 8 days!)**  
-  Securing your receipt and booking your police appointment. This key step must be done within the specified timeframe, so be careful!
+- **Step 1: The 8-Day Mission (Getting Your Receipt!)**
 
-- **Step 2: Attending your Questura Appointment**  
-  Collecting your fingerprints at the police station at the time given to you.
+  For your visa category, the official rule says your Permesso application begins directly at the Questura — not at the post office.
 
-- **Step 3: Collecting Your Permesso di Soggiorno**  
+  Your real deadline is simple: **within 8 working days of your arrival, you must hold a dated receipt in your hands.**
+
+  We explain exactly how to get it, and what to do if your Questura sends you to Poste Italiane anyway.
+
+- **Step 2: Attending your Questura Appointment**
+
+  Completing your police appointment and fingerprinting, unless the Questura already processed this when you submitted your application directly.
+
+- **Step 3: Collecting Your Permesso di Soggiorno**
+
   Picking up your official physical residence permit.
 
-- **Step 4: Registering your Residency at the Comune**  
-  Officially registering your home address with the town hall (remember that the residency is different from the visa).
+- **Step 4: Registering your Residency at the Comune**
 
-- **Step 5: The Italian ID Card (CIE)**  
-  Securing your digital key to the Italian system.
+  Officially registering your home address with the town hall. Remember: your residency registration is different from your visa and your Permesso.
+
+- **Step 5: The Italian ID Card (CIE)**
+
+  Securing your Italian ID card and one of your main digital keys to the Italian system.
 
 </GuideChecklist>
 
 <GuideWarning title="Be careful">
 
-There is just one golden rule you absolutely cannot ignore right now: an invisible clock started ticking the moment your feet touched Italian soil.
+There is one golden rule you absolutely cannot ignore right now: an invisible clock started ticking the moment your feet touched Italian soil.
 
-**You have exactly 8 working days from your arrival to initiate Step 1**.
+**You have exactly 8 working days from your arrival to complete Step 1.**
+
+And "complete" has a very precise meaning:
+
+**By day 8, you must hold a dated receipt proving that you moved forward with your Permesso di Soggiorno application.**
+
+Not "I went to an office."
+
+Not "I asked around."
+
+Not "someone told me to come back next week."
+
+**A receipt, with a date on it.**
 
 </GuideWarning>
 
 <GuideBigSis title="Andiamo, let's go">
 
-Let's not waste any time and get straight into your very first mission.
+This first mission is time-sensitive, so we are not going to leave it until day seven and hope Italian bureaucracy feels generous.
+
+Start early, stay organized, and keep your eye on the one thing that matters most at this stage: **getting that dated application receipt into your hands.**
 
 </GuideBigSis>
 
-# **Chapter 3 Step 1: The Poste Italiane Kit**
+# **Chapter 3 Step 1: The 8-Day Mission — Getting Your Receipt (Questura or Poste)**
 
-<GuideBlueNote title="Important timing rule">
+<GuideBlueNote title="Your 8-day finish line">
 
-Remember one of our golden rules: you must complete this step WITHIN 8 working days following your entry into Italy.
+Before we talk offices, forms, stamps, or Italian bureaucracy, remember the one result you need from this chapter:
+
+**Within 8 working days of arriving in Italy, you need a dated receipt proving that you moved forward with your first Permesso di Soggiorno application.**
+
+That receipt is the finish line for Step 1.
 
 </GuideBlueNote>
 
 <NavyBadge>Step 1</NavyBadge>
+
 <GuideBadge>8 working days</GuideBadge>
 
 <GuideSpacer size="sm" />
 
-Go to a _Poste Italiane office_ (the Italian postal service) and secure the famous “Yellow Kit” to request your _Permesso di Soggiorno_.
+This chapter is slightly different from the usual Permesso advice you may find online.
 
-<GuideOfficeCard title="What are the Poste Italiane?">
+That is because Italy's Digital Nomad and Remote Worker visas are newer categories, and **the official procedure for your visa category is not the same as the classic postal-kit route used for many older types of residence permits.**
 
-_Poste Italiane_ is the national postal service, but in Italy, the post office does way more than just mail letters. They handle bill payments, banking, and immigration documents.  
-You can easily find the closest one by searching "_Poste Italiane_" on Google Maps, but _please check the opening hours\!_ Many smaller offices close at 1:30 PM.
+<GuideBigSis title="Why this works differently for you">
 
-</GuideOfficeCard>
+Under the interministerial decree of February 29, 2024 governing Italy's Digital Nomad and Remote Worker visa framework, the first Permesso di Soggiorno request for this category is officially initiated **directly through the Questura**.
 
-<GuideBigSis title="How to skip the line">
+In other words:
 
-Italian post offices are notorious for their long, chaotic lines. But you don't have to wait in one\! You can actually book a specific time slot (a “ticket”) without having an Italian ID or a SPID (digital identity).
+**Your official first stop is the Questura's immigration office, not automatically Poste Italiane.**
 
-**The easiest hack is to use WhatsApp:** Just save the official Poste Italiane number \+39 371 500 3715 to your phone and send a quick "Ciao".
-Note: The automated bot will reply in Italian, but you can simply use WhatsApp's built-in translation feature or just Google Translate.
-Then reply with "Prenotare ticket," type your address when it asks, and pick a time slot for the nearest office.
+However — and welcome to Italy — local implementation is not always perfectly uniform.
 
-Book this for a few days after you arrive so you have time to prepare everything (but within the 8-day timeframe). Let’s say you arrive on Monday morning. That same day, text the Poste WhatsApp system to secure your appointment for that week (ideally Wednesday or Thursday).
+Some Questure may process you directly.
+
+Others may still instruct you to use the Poste Italiane kit.
+
+That is why this chapter gives you **both paths**, in the correct order.
 
 </GuideBigSis>
 
-<GuideWarning title="Do not be late">
+<GuideWarning title="Do not wait until day 7">
 
-**One more important thing:** if you have your appointment for 10:30am and you don’t pay attention to when they call you, or arrive literally one minute later, you will probably miss your slot and will have to wait in line all over again. This is also the case in general for when you need to do anything at the Poste Italiane. Let’s say you have to pick up a package or mail something in the future: you need to be punctual for your allotted time.
+Start dealing with this on **day 1 or day 2 after arrival whenever possible.**
 
-_I thought that since I was in Italy, the concept of “Italian time” would also apply at the small (and not so modern) post offices. I arrived just one minute late and thought I would be fine since I was in the south of Italy and not in Germany… but nope, that’s not the case!_
+Why?
 
-Since many Poste Italiane offices close relatively early (or stop attending people before the closing times), try to get one of the morning slots and arrive at least 10 minutes before. Trust me, you don’t wanna wait an hour in those boring offices.
+Because if your local Questura tells you to use the postal route instead, you still need enough time to collect the kit, prepare the paperwork, return to a Sportello Amico office, and obtain your dated receipt before your 8-working-day window closes.
+
+**The earlier you start, the more breathing room you have if the local office gives you a different procedure.**
 
 </GuideWarning>
+
+<GuideDivider />
+
+## **Path A: The Questura Route — the official route**
+
+<NavyBadge>Path A</NavyBadge>
+
+<GuideBadge>Start here</GuideBadge>
+
+<GuideSpacer size="sm" />
+
+<GuideOfficeCard office="Questura" title="Your official first stop">
+
+Your Questura is the provincial police headquarters responsible for immigration matters in the area where you live.
+
+You are looking specifically for the **Ufficio Immigrazione**.
+
+There is no single national appointment system that works identically for every Questura, so **research your specific Questura before you arrive in Italy if possible.**
+
+Search:
+
+**"Questura + your province + Ufficio Immigrazione permesso di soggiorno"**
+
+Then check the official Polizia di Stato or local Questura information for opening hours, appointment procedures, email addresses, or instructions for first-time applications.
+
+</GuideOfficeCard>
+
+<GuideBigSis title="Do your homework before you show up">
+
+Some Questure operate largely by appointment.
+
+Some accept certain first applications during specific walk-in hours.
+
+Some provide instructions by email.
+
+And some may tell you to go directly to Poste Italiane despite the national rule for this visa category.
+
+**Do not interpret a local redirect as meaning that you did something wrong.**
+
+Your job is simply to follow the instruction given by the authority handling your specific application — while protecting your 8-day deadline.
+
+</GuideBigSis>
+
+## **What to bring to the Questura**
+
+Do not arrive with just your passport and optimism.
+
+Italian immigration offices are paper-heavy, and being overprepared is infinitely better than being sent home for something you already had sitting in a drawer.
+
+<GuideChecklist title="Your Questura application packet">
+
+- **Your original passport**
+
+- **Your Italian Digital Nomad or Remote Worker visa**
+
+- **Photocopies of your passport identification pages, visa, and relevant entry stamps**
+
+- **Copies of the supporting documents from your consulate application**
+
+  Bring copies of the core documents you used to obtain the visa, including your work or professional documentation, proof of financial resources, health insurance, and accommodation documentation.
+
+- **Your original supporting documents**
+
+  Keep the originals with you in a separate organized folder in case the officer asks to verify them.
+
+- **Proof of your arrival in Italy**
+
+  Bring your boarding pass, flight confirmation, or other documentation showing when you entered Italy.
+
+- **Recent passport-style photographs**
+
+  Bring several recent biometric passport photos so you are not caught short if the office requests them.
+
+- **A €16,00 Marca da Bollo**
+
+  You can buy this official tax stamp at a Tabacchino.
+
+- **Your Codice Fiscale, if you already have one**
+
+  Bring a copy and clearly flag it in your application so another fiscal code is not accidentally generated for you.
+
+- **A printed copy of the official information supporting the direct-Questura procedure for your visa category**
+
+  This is useful if the person at the desk is less familiar with the newer Digital Nomad / Remote Worker permit procedure.
+
+- **A payment method and some cash**
+
+  Government-office payment arrangements vary, and being prepared for more than one payment method is never a bad idea.
+
+</GuideChecklist>
+
+<GuideWarning title="Bring the consulate folder back out">
+
+Remember that beautiful folder of paperwork you thought you were finally done with after your visa appointment?
+
+Sorry, amore. We need it one more time.
+
+**Bring the same core evidence you used for your visa application, neatly organized and easy to retrieve.**
+
+The Questura is entitled to verify the basis on which your residence permit is being requested.
+
+</GuideWarning>
+
+## **What can happen at the Questura?**
+
+<GuideDecisionBox title="There are two realistic outcomes">
+
+### **Outcome 1: They process the application directly**
+
+Amazing.
+
+The Questura accepts your application under the Digital Nomad / Remote Worker procedure and begins processing your Permesso.
+
+Depending on the office and how they handle first applications, they may also take your fingerprints during the same visit or give you another appointment for fingerprinting.
+
+**Before you leave, make sure you receive written, dated proof that your application was accepted or initiated.**
+
+That is the receipt you are protecting.
+
+---
+
+### **Outcome 2: They tell you to use the Poste Italiane kit**
+
+Do not argue with the clerk for twenty minutes while your 8-day clock keeps ticking.
+
+Politely confirm that they want your application submitted through Poste Italiane, and if possible, ask which permit category or code they want you to use on the postal form.
+
+Then move immediately to **Path B below.**
+
+</GuideDecisionBox>
+
+<GuideBlueNote title="About the fees">
+
+The government fee associated with a standard one-year electronic residence permit remains **€70,46** under the fee structure referenced in this guide.
+
+If your Questura processes the application directly, you are not using Poste Italiane's separate €30,00 mailing service.
+
+If the Questura redirects you to the postal-kit route, the separate Poste Italiane submission fee applies as explained below.
+
+Because government fees can change, always verify current amounts before paying.
+
+</GuideBlueNote>
+
+<GuideDivider />
+
+## **Path B: The Poste Italiane Kit — if your Questura sends you there**
+
+<NavyBadge>Path B</NavyBadge>
+
+<GuideBadge>Fallback route</GuideBadge>
+
+<GuideSpacer size="sm" />
+
+If the Questura tells you to submit through Poste Italiane, do not panic.
+
+This is the classic residence-permit application route, and the process is very manageable once you understand the sequence.
+
+Your goal is still exactly the same:
+
+**submit the application and walk away with a dated receipt within your 8-working-day window.**
+
+<GuideOfficeCard title="What are the Poste Italiane?">
+
+_Poste Italiane_ is Italy's national postal service, but Italian post offices do much more than mail letters.
+
+They handle payments, banking services, government procedures, and many residence-permit applications.
+
+For immigration applications, you specifically want an office in the **Sportello Amico** network.
+
+Use the official Poste Italiane office finder and booking page:
+
+[poste.it/uffici-postali](https://www.poste.it/uffici-postali)
+
+Look for an office offering **Sportello Amico** services and check its opening hours carefully.
+
+</GuideOfficeCard>
+
+<GuideBigSis title="Move quickly">
+
+Because you are only on this path after dealing with the Questura first, this is not the moment to book something leisurely for next week.
+
+If possible:
+
+**Get the kit today.**
+
+**Fill it out today or tomorrow.**
+
+**Return it as soon as it is complete.**
+
+The goal is not elegance. The goal is your receipt before the deadline.
+
+</GuideBigSis>
 
 ## **What you need to do**
 
 <GuideSteps title="Your Poste Italiane checklist">
 
-**1. Get the Kit:**  
-Go to the post office and simply ask the clerk for the "Kit per il permesso di soggiorno." They will hand you a large envelope with a yellow stripe containing several blank forms. **They will give it to you for free**. Nobody should charge you for the _package_ itself.
+**1. Get the Kit**
 
-**2. Buy the _Marca da Bollo_:**  
-Before you fill out the forms, you need to walk into a _Tabacchino_ (a tobacco shop: you’ll see them everywhere, usually marked with a big white letter T on a blue background).  
-Ask to buy a €16,00 _Marca da bollo_. This is essentially an official, adhesive tax stamp issued by the government that makes your application legally valid.
+Go to a Poste Italiane office with a Sportello Amico and ask:
 
-**3. Fill out the Kit:**  
-Do not try to fill out the forms right there at the post office counter. It is NOT a short easy form, and you need to be cautious with how you fill it in. It is entirely in bureaucratic Italian and asks for very specific visa codes. Take the kit home, compile it carefully, and then bring it back to the Poste Italiane.
+**"Kit per il permesso di soggiorno."**
+
+They will give you a large envelope containing the residence-permit forms.
+
+**The kit itself is free.**
+
+Nobody should charge you for the paper package.
+
+---
+
+**2. Buy the Marca da Bollo**
+
+Go to a **Tabacchino** — usually identifiable by a large white "T" sign — and ask for a:
+
+**€16,00 Marca da Bollo**
+
+This is the government tax stamp used on the application.
+
+---
+
+**3. Fill out the Kit carefully**
+
+Do not try to improvise this at the post-office counter.
+
+Take the forms home and complete them carefully.
+
+**Important:** the postal paperwork may not show a clean, dedicated category for the newer Digital Nomad / Remote Worker permit.
+
+Do **not guess** which category or code should be entered.
+
+If the Questura redirected you to Poste, ask the Questura or the Sportello Amico clerk which category they expect you to use for your application.
 
 </GuideSteps>
 
 <GuideBigSis title="Feeling overwhelmed?">
 
-_We know this form can be tricky, and making a mistake means starting over. If you don't want to risk it, you can book an extra 30-minute “Kit-Filling Call” with us at a discounted rate, and we will help you fill it out._
+We know this form can be tricky, especially when the permit category does not map neatly onto an older postal form.
 
-Book your call here: https://www.nomadissimi.com/book
-In the form, write "Poste Italiane Kit", and we'll get back to you as soon as we can.
+If you do not want to risk filling it out alone, you can book an additional **Kit-Filling Call** with us and we can walk through the form together.
+
+Book your call here:
+
+[nomadissimi.com/book](https://www.nomadissimi.com/book)
+
+In the form, write **"Poste Italiane Kit"** so we know exactly what you need help with.
 
 </GuideBigSis>
 
 ## **Prepare the Documents**
 
-Once the forms are filled out, place them inside the open envelope. According to the official immigration guidelines, you must also include the following documents:
+Once your forms are complete, place them inside the envelope.
 
 <GuideChecklist title="What goes inside the envelope">
 
-- **Photocopies of your passport** (in theory, you must photocopy every single page, even the blank ones). How strict this requirement is followed depends on each location. However, the "must-have" pages are the pages with your picture and identifiable information, the page with your signature (like with passports from the USA that have a separate page with your signature), all visas, and travel stamps. If you have blank pages, there's usually no need to photocopy those.
-- _Very important:_ The photocopy of the specific page with your Italian Visa stamp.
-- A copy of your Codice Fiscale (if you obtained it before arrival). If you don’t have one, it’s okay. The Italian authorities will automatically generate a codice fiscale for you in this process. However, if you already have a codice fiscale (because for example you requested it at the consulate, it is important to highlight it inside the Permesso di Soggiorno request. The Questura will probably double check, but it is not legal to have 2 active fiscal codes related to the same person. Fixing this silly mistake could require time and avoidable stress. Better be safe than sorry.
-- Photocopies in A4 format of ALL the supporting documents you submitted to the consulate in your home country to get your Italian visa several weeks ago (proof of income, health insurance, accommodation contract, boarding pass for the flight you took to Italy).  
-  _In this case, avoid putting your original documents in the envelope because you probably won’t get them back. They’re just asking for photocopies of what you submitted. However, have the original ones handy in case they ask to see (but not keep) the original ones for further verification._
-- The **Marca da Bollo** you already purchased at the tobacco shop for €16,00 (stick it exactly where indicated on Form 1).
+- **Photocopies of your passport**
+
+  At minimum, include the pages containing your identifying information, signature where applicable, Italian visa, and relevant travel stamps.
+
+- **A clear photocopy of the page containing your Italian visa**
+
+- **A copy of your Codice Fiscale, if you already have one**
+
+  If you already have a Codice Fiscale, make that clear in the application.
+
+  It is important to avoid accidentally ending up with two fiscal codes associated with the same person.
+
+- **Photocopies in A4 format of the supporting documents used for your visa application**
+
+  This can include your proof of income, employment or professional documentation, health insurance, accommodation documentation, and evidence of your arrival.
+
+- **Your €16,00 Marca da Bollo**
+
+  Attach it where instructed on the relevant application form.
 
 </GuideChecklist>
 
+<GuideWarning title="Do not put your only originals in the envelope">
+
+The postal application is based on photocopies.
+
+Keep your original documents with you because you may need to show them later at the Questura.
+
+**Do not send away the only original copy of something important unless the authorities specifically instruct you to do so.**
+
+</GuideWarning>
+
 <GuideWarning title="Do not seal the envelope">
 
-Please be careful and **DO NOT seal the envelope\!** The postal worker needs to verify the contents before they send it.
+**Do not seal the envelope before you reach the counter.**
+
+The postal employee needs to inspect the contents before accepting the application.
 
 </GuideWarning>
 
 ## **Returning to the Post Office & The Costs**
 
-Once your kit is ready, return to the post office _(book another ticket on WhatsApp)_. Hand the **open** envelope to the clerk (but be careful that nothing slips out).
+Once everything is ready, return to a Poste Italiane office with Sportello Amico and bring the **open envelope**.
 
 <GuideDecisionBox title="Fees">
 
-_Now, let's talk money._  
-Inside the kit, you will find a rectangular, pre-printed payment slip with a barcode at the bottom called a _bollettino_.
+Inside the kit is a pre-printed payment slip called a **bollettino**.
 
-_Big-sis warning: The postal clerk usually won’t always know the exact fee for your specific visa type. You need to know the right amount before you walk in, or you might risk paying more unnecessarily._
+For the standard one-year permit fee structure used in this guide:
 
-For a standard 1-year residence permit for a single applicant (the standard for this visa), the total cost is **€100,46**. Here is exactly how that works:
+- **€70,46** is paid through the bollettino.
 
-- You must write **€70,46** on the _bollettino_ (postal payment slip).  
-  (This covers €30,46 for the physical production of the electronic card \+ €40,00 for the government tax contribution).
+  This consists of the electronic residence-card production cost plus the applicable government contribution.
 
-- Then, you will pay a separate **€30,00** fee directly to the Poste Italiane clerk at the counter for the _mailing service_ itself.
+- **€30,00** is paid separately to Poste Italiane for the postal submission service.
+
+That makes the postal-route total:
+
+**€100,46**
+
+The €16,00 Marca da Bollo is separate and should already have been purchased.
 
 </GuideDecisionBox>
 
 <GuideBlueNote title="Verify the current rates">
 
-\_These fees can change, so we recommend verifying the current rates on the official immigration portal: [https://www.portaleimmigrazione.it/ITA/tabelleCosti.html](https://www.portaleimmigrazione.it/ITA/tabelleCosti.html)
+Fees can change.
+
+Before paying, verify the current official residence-permit costs here:
+
+[portaleimmigrazione.it/ITA/tabelleCosti.html](https://www.portaleimmigrazione.it/ITA/tabelleCosti.html)
 
 </GuideBlueNote>
 
 ## **The Super Important Receipt**
 
-Once you pay, the clerk will hand you a few pieces of paper. Guard these with your life\! This is so much more than a proof of payment.
+Once your application is accepted and payment is complete, the clerk will give you several pieces of paper.
 
-<GuideCard title="Why this receipt is important">
+**Do not walk out of the office and shove them randomly into your handbag.**
 
-One of those slips of paper is a receipt showing the date, time, and exact address of your official **appointment at the _Questura_ (Police Station)** to collect your fingerprints.
+This receipt is one of the most important documents you will have during the waiting period.
+
+<GuideCard title="Why this receipt matters">
+
+Your receipt proves that you submitted your residence-permit application.
+
+Depending on the procedure, it may also contain information about your future Questura appointment.
+
+Most importantly for your first eight days:
+
+**it is dated proof that you completed Step 1.**
 
 </GuideCard>
 
 <GuideBigSis title="Reality check">
 
-Do not panic if the appointment date they give you is several months later.  
-This is completely normal in Italy.
+Do not panic if your next Questura appointment is several weeks or months away.
 
-**The critical thing is that you submitted the complete kit at the Poste Italiane within your first 8 days.** As long as you did that and are in the system within the deadline, you are 100% legal to live in Italy while you wait (even if your appointment at the Police station is still a long time out).
+Italian immigration processing can be slow.
+
+What mattered during your initial deadline was getting your application into the system and obtaining that dated proof.
+
+Your next job is simply to keep the receipt safe and attend whatever appointment the authorities give you.
 
 </GuideBigSis>
 
 <GuideWarning title="Protect this receipt with your life">
 
-We recommend taking some photocopies of that receipt, to be on the safe side. Take a picture of it on your phone, laminate it, and **never lose it.** Until you get your actual permit card, this receipt is your legal safety net. Think of it as a “temporary” yet super important residence slip.
+Make copies.
+
+Take clear photos.
+
+Save a scan somewhere secure.
+
+Put the original somewhere you will not accidentally throw it away with an old grocery receipt.
+
+**Until your physical Permesso di Soggiorno is issued, this receipt is extremely important evidence of your pending application.**
 
 </GuideWarning>
+
+<GuideDivider />
+
+## **One mission, one piece of paper**
+
+<GuideSoftPurple title="Step 1 complete">
+
+Whether your application was accepted **directly by the Questura** or your Questura instructed you to use **Poste Italiane**, the finish line is the same:
+
+**You now hold dated proof that your Permesso di Soggiorno application is underway.**
+
+That is exactly what you needed to accomplish within your first 8 working days.
+
+</GuideSoftPurple>
+
+<GuideBigSis title="You can breathe now">
+
+That first clock is officially behind you.
+
+Keep your application receipt safe, keep your original documents organized, and pay attention to any appointment information the authorities gave you.
+
+Next up: fingerprints and the Questura.
+
+</GuideBigSis>
 
 # **Chapter 4 Step 2: The Questura Appointment (fingerprints & paperwork)**
 
 <GuideCard>
 
-By this step, you’ll have survived the Italian post office system (you’ll know what we mean), and you’ll be enjoying your best life in Italy with your super important post office receipt.
+By this step, you’ll have survived your 8-day mission — whether that meant the Questura's immigration desk or the Italian post office system — and you’ll be enjoying your best life in Italy with your super important application receipt.
 
 </GuideCard>
 
@@ -259,7 +592,13 @@ By this step, you’ll have survived the Italian post office system (you’ll kn
 
 <GuideSpacer size="sm" />
 
-Eventually, the day will come for your official appointment at the **_Questura_** (your city's police station).
+Eventually, the day will come for your official appointment at the **Questura** (the provincial police headquarters).
+
+<GuideBlueNote title="Already fingerprinted?">
+
+If the Questura processed your application directly during Step 1 and already took your fingerprints on the spot, lucky you: **you can skim this chapter and jump ahead to Step 3.**
+
+</GuideBlueNote>
 
 <GuideOfficeCard office="Questura" title="Your official police appointment">
 
@@ -287,7 +626,7 @@ _We know the bureaucracy can feel overwhelming and can take place in ugly and ov
 ## **The Golden Rule of the Questura: Bring Everything**
 
 The officer at the desk is going to process your application and verify your identity (sometimes even more thoroughly than the consulate appointment).  
-Even though you have already mailed photocopies in your Yellow Kit, the police officer has the right to ask to see the physical originals. Remember when we told you to keep the original stuff you brought to your visa appointment many weeks ago?
+Even though you have already submitted photocopies with your application — either in your Yellow Kit or directly at the Questura — the police officer has the right to ask to see the physical originals. Remember when we told you to keep the original stuff you brought to your visa appointment many weeks ago?
 
 <GuideWarning title="Big-sis advice">
 
@@ -301,7 +640,7 @@ Here is exactly what you need in your folder:
 
 <GuideChecklist title="What to bring to the Questura">
 
-- The **Poste Italiane receipt** (The original slip they gave you in Step 1: that super important document we told you not to lose).
+- **Your application receipt** — the original proof from Step 1, whether it came from Poste Italiane or directly from the Questura. Yes, that super important document we told you not to lose.
 - Your **original passport** (The physical booklet).
 - 4 identical, recent passport-sized **photos** (45x35 mm). They have to be _different photos_ from what you submitted in your visa application. Take them in Italy ideally to have the most recent pictures and avoid any problems. The photo of your Permesso di Soggiorno should be different from your Italian Visa on your passport.
 - **Original Proof of Accommodation:** The registered lease agreement or property deed in your name.
@@ -317,7 +656,7 @@ Here is exactly what you need in your folder:
 <GuideCard>
 
 When it’s your turn, the officer will review your file. If everything looks good, they will ask you to place your fingers on a digital scanner to register your fingerprints.  
-Once they have your fingerprints, they will hand you back your post office receipt: often with a new stamp or a piece of paper attached to it. **Keep it carefully also** You still don't have the Permesso di Soggiorno card.
+Once they have your fingerprints, they will hand you back your application receipt, often with a new stamp or another piece of paper attached to it. **Keep it carefully too.** You still do not have the physical Permesso di Soggiorno card, so this receipt remains important.
 
 </GuideCard>
 
@@ -335,7 +674,9 @@ You’ve done the paperwork, you’ve given your fingerprints, and now you are o
 <GuideBlueNote title="Track it online">
 
 You don't have to guess when your card is ready and make a bunch of trips to the ugly Questura to ask. You can simply track its progress online (yay).  
-Go to the official State Police website (it’s a different link depending on what city you live in), and type in the 12-digit _Numero di Pratica_ (file number) printed on your post office receipt.
+Go to the official State Police website and enter the _Numero di Pratica_ (file number) printed on your application receipt from Step 1.
+
+The exact tracking instructions can vary depending on how your application was processed, so follow the information printed on your receipt or provided by your Questura.
 
 When the screen flashes with a green checkmark saying **“_Il documento di soggiorno è pronto per la consegna_”** (The residence document is ready for delivery), it is time to celebrate\!
 
@@ -354,7 +695,7 @@ When you finally hold that hard plastic card in your hand, take a moment to real
 
 <GuideUnlockCard>
 
-Your Codice FIscale is finally printed on a document! By applying for a permesso di soggiorno for the first time, the Italian authorities generate your codice fiscale.
+Your Codice Fiscale is finally printed on a document! By applying for a permesso di soggiorno for the first time, the Italian authorities generate your codice fiscale.
 
 Look closely at the front of your new card: you will see a 16-character alphanumeric string printed on it. That is your official **Codice Fiscale\!** _This code is your absolute lifeline in Italy and will be the same, even after you renew your Permesso di Soggiorno in the future._
 
@@ -369,7 +710,9 @@ You cannot use it to invoice clients as a freelancer. But you can use it to acce
 
 <GuideBigSis title="What comes next">
 
-You have the residence permit (the actual physical card instead of the receipt from the Poste, finally). Now, it is time to make your address official. Let's head to the Comune (town hall).
+You have the residence permit — the actual physical card instead of that receipt you've been guarding since Step 1, finally.
+
+Now, it is time to make your address official. Let's head to the Comune (town hall).
 
 </GuideBigSis>
 
@@ -471,7 +814,7 @@ _Big-Sis Tips:_
 
 <GuideSoftPurple title="What happens after the check">
 
-Once the police officer verifies you, the Comune will formally confirm your registration a few days after the officer visits you and rectifies you live there.
+The Comune will formally confirm your registration a few days after the officer visits you and verifies that you live there.
 
 _Good news:_ Step 4 is free (the Comune does not charge a fee to submit your residency registration request).
 
